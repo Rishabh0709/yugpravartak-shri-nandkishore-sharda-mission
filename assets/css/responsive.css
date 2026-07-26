@@ -500,6 +500,25 @@
     }
 }
 
+@media (max-width: 480px) {
+
+    .leadership-highlight {
+        padding: 25px 22px 25px 26px;
+        border-radius: 18px;
+    }
+
+    .leadership-highlight::before {
+        right: 8px;
+        bottom: -12px;
+        font-size: 4.8rem;
+    }
+
+    .leadership-highlight__eyebrow {
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+    }
+}
+
 @media (max-width: 768px) {
 
     .beginnings-heading {
@@ -567,15 +586,40 @@
 
 @media (max-width: 480px) {
 
-    .journey-cta {
-        padding: 24px 22px;
-    }
-
-    .journey-cta .btn {
+    .journey-read-more {
         width: 100%;
-        text-align: center;
+        justify-content: space-between;
+        padding-left: 18px;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
     }
 }
+
+@media (max-width: 768px) {
+
+    .journey-cta__actions {
+        flex-direction: column;
+    }
+
+    .journey-action {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .journey-cta--featured {
+        padding: 24px 20px;
+        border-radius: 20px;
+    }
+
+    .journey-action {
+        padding-left: 17px;
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+    }
+}
+
 
 @media (max-width: 768px) {
 
