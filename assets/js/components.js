@@ -123,3 +123,7 @@ function highlightActiveNavigation() {
         }
     });
 }
+
+document.dispatchEvent(
+    new CustomEvent("componentsLoaded")
+);
