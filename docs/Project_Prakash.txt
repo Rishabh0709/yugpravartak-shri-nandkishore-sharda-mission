@@ -1,0 +1,718 @@
+Perfect.
+
+Then I think we should do this **properly**.
+
+Not as documents.
+
+As a **book**.
+
+---
+
+# PROJECT PRAKASH
+
+## The Founder's Collection
+
+Instead of random planning documents, we'll create a collection of beautifully designed documents, exactly like Apple creates Human Interface Guidelines or Pixar creates Story Bibles.
+
+```
+Project Prakash/
+
+📖 Volume I
+Creative Constitution
+
+📖 Volume II
+Story Bible
+
+📖 Volume III
+Experience Blueprint
+
+📖 Volume IV
+Visual Language System
+
+📖 Volume V
+Motion Language
+
+📖 Volume VI
+Component Library
+
+📖 Volume VII
+Content Style Guide
+
+📖 Volume VIII
+Technical Architecture
+
+📖 Volume IX
+Photography & Illustration Guide
+
+📖 Volume X
+Launch Manifesto
+```
+
+Imagine opening these ten books five years later.
+
+Anyone should immediately understand the soul of the project.
+
+---
+
+# Volume I
+
+## Creative Constitution
+
+(Completed)
+
+---
+
+# Volume II
+
+## Story Bible
+
+This will probably become my favorite document.
+
+Imagine opening it...
+
+---
+
+# COVER
+
+```
+PROJECT PRAKASH
+
+Story Bible
+
+Version 1.0
+
+"Every journey begins with light."
+```
+
+---
+
+## Chapter 1
+
+# Philosophy
+
+This is not a screenplay.
+
+This is an emotional journey.
+
+The visitor should experience:
+
+```
+Curiosity
+
+↓
+
+Wonder
+
+↓
+
+Devotion
+
+↓
+
+Understanding
+
+↓
+
+Inspiration
+
+↓
+
+Gratitude
+
+↓
+
+Peace
+```
+
+---
+
+## Chapter 2
+
+# The Narrative
+
+This chapter explains why the story begins with humanity rather than Bhaiyaji.
+
+Because...
+
+Every visitor must first see themselves.
+
+Only then can they understand the Mission.
+
+---
+
+## Chapter 3
+
+# Screenplay
+
+This is where things become magical.
+
+---
+
+### Scene 1
+
+Before Dawn
+
+Duration
+
+30–40 seconds
+
+No navigation.
+
+No buttons.
+
+Only atmosphere.
+
+---
+
+Visual
+
+Mist.
+
+Morning.
+
+Silence.
+
+---
+
+Text
+
+```
+Every age faces challenges.
+
+Some are visible.
+
+Some remain hidden.
+
+Today, humanity has mastered
+the outer world.
+
+Yet the search for peace within
+continues.
+```
+
+Pause.
+
+Sunlight appears.
+
+Mission logo.
+
+Fade.
+
+---
+
+### Scene 2
+
+The Calling
+
+Question
+
+Why was this Mission needed?
+
+Emotion
+
+Wonder
+
+---
+
+### Scene 3
+
+The Journey
+
+Question
+
+How did wisdom emerge?
+
+Emotion
+
+Reverence
+
+---
+
+### Scene 4
+
+The Wisdom
+
+Question
+
+Can spirituality be simple?
+
+Emotion
+
+Discovery
+
+---
+
+### Scene 5
+
+The Mission
+
+Question
+
+How did wisdom become service?
+
+Emotion
+
+Inspiration
+
+---
+
+### Scene 6
+
+Lives Illuminated
+
+Question
+
+How many lives changed?
+
+Emotion
+
+Gratitude
+
+---
+
+### Scene 7
+
+Living Legacy
+
+Question
+
+What happens next?
+
+Emotion
+
+Hope
+
+---
+
+### Final Scene
+
+Sunset.
+
+One sentence.
+
+```
+Every mission continues
+through the lives it touches.
+```
+
+Fade.
+
+---
+
+# Volume III
+
+Experience Blueprint
+
+This is basically architecture.
+
+Imagine a huge fold-out page.
+
+```
+Arrival
+
+↓
+
+The Calling
+
+↓
+
+The Journey
+
+↓
+
+The Wisdom
+
+↓
+
+The Mission
+
+↓
+
+Transformation
+
+↓
+
+Gallery
+
+↓
+
+Invitation
+
+↓
+
+Reflection
+```
+
+Under every chapter
+
+* duration
+* interaction
+* emotional goal
+* motion
+* visuals
+* typography
+
+---
+
+# Volume IV
+
+Visual Language
+
+This becomes our design bible.
+
+It defines
+
+Color
+
+Typography
+
+Light
+
+Spacing
+
+Composition
+
+Photography
+
+Illustration
+
+Sacred Geometry
+
+Textures
+
+Grid
+
+Elevation
+
+Everything.
+
+---
+
+# Volume V
+
+Motion Language
+
+Nobody writes this.
+
+We're going to.
+
+For example.
+
+---
+
+## Fade
+
+Duration
+
+900ms
+
+Meaning
+
+Reflection
+
+---
+
+Rise
+
+Distance
+
+6px
+
+Meaning
+
+Hope
+
+---
+
+Glow
+
+Meaning
+
+Grace
+
+---
+
+Bloom
+
+Meaning
+
+Transformation
+
+---
+
+Particles
+
+Meaning
+
+Life
+
+---
+
+Everything has meaning.
+
+---
+
+# Volume VI
+
+Component Library
+
+Not
+
+Cards.
+
+Buttons.
+
+Accordions.
+
+Instead
+
+Narrative Components.
+
+Example.
+
+```
+Chapter Divider
+
+↓
+
+Reflection Quote
+
+↓
+
+Timeline Marker
+
+↓
+
+Sacred Statistic
+
+↓
+
+Journey Card
+
+↓
+
+Memory Gallery
+
+↓
+
+Narrator Block
+
+↓
+
+Invitation Panel
+```
+
+Even component names tell the story.
+
+---
+
+# Volume VII
+
+Writing Style Guide
+
+One of the most important books.
+
+Rules.
+
+Never say
+
+```
+We proudly...
+```
+
+Instead
+
+```
+Guided by...
+```
+
+---
+
+Never
+
+```
+Achievements
+```
+
+Instead
+
+```
+Transformation
+```
+
+---
+
+Never
+
+```
+Donation
+```
+
+Instead
+
+```
+Support the Journey
+```
+
+---
+
+Never
+
+```
+About Us
+```
+
+Instead
+
+```
+The Calling
+```
+
+Language shapes experience.
+
+---
+
+# Volume VIII
+
+Technical Architecture
+
+This is where engineering becomes art.
+
+I want diagrams.
+
+Folder structures.
+
+Naming conventions.
+
+Accessibility.
+
+SEO.
+
+Performance budgets.
+
+Everything.
+
+---
+
+# Volume IX
+
+Photography
+
+This one matters.
+
+Rules.
+
+No stock photos.
+
+Natural light only.
+
+Real moments.
+
+No forced smiles.
+
+No staged charity.
+
+Capture dignity.
+
+Capture humanity.
+
+Capture silence.
+
+---
+
+# Volume X
+
+Launch Manifesto
+
+The final book.
+
+Not technical.
+
+Emotional.
+
+It describes
+
+Why this project exists.
+
+Who it serves.
+
+How it should evolve.
+
+What future contributors must preserve.
+
+---
+
+# Then comes something I've never seen on any web project...
+
+## A "Director's Commentary"
+
+Exactly like movies have.
+
+Imagine someone clicks
+
+> Behind Project Prakash
+
+And they can read
+
+> Why the opening has no menu.
+
+Why dawn was chosen.
+
+Why the timeline flows downward.
+
+Why the site grows brighter.
+
+Why the statistics appear after reflection.
+
+Why every animation exists.
+
+Future designers won't just inherit files.
+
+They'll inherit intent.
+
+---
+
+# Finally...
+
+I think Project Prakash deserves one line that appears nowhere on the website itself.
+
+Only inside our internal documents.
+
+It becomes our silent oath.
+
+---
+
+> **"May every decision we make honor the philosophy more than our creativity."**
+
+Because that's the temptation every designer faces.
+
+To showcase themselves.
+
+Our responsibility is the opposite.
+
+If someone finishes this website and says,
+
+> *"I forgot I was looking at a website."*
+
+Then we have succeeded.
+
+---
+
+## I have one more proposal—and I think it's the one that will make this project truly extraordinary.
+
+Let's treat **Project Prakash** as if it were being submitted for an international design award from day one. Not to win an award, but because that standard of thinking forces excellence in every detail.
+
+We'll create **every artifact** that a world-class digital studio would create:
+
+* 📖 Creative Constitution
+* 📖 Story Bible
+* 📖 Visual Language System
+* 📖 Motion Language Guide
+* 📖 Content Style Guide
+* 📖 Technical Architecture
+* 📖 Photography & Illustration Guide
+* 📖 Component Library
+* 📖 Accessibility & Performance Standards
+* 📖 Launch Manifesto
+
+By the time we write the first line of HTML, we'll already know **what every screen should make the visitor feel**. At that point, coding won't be guesswork—it will simply be the faithful execution of a vision. I truly believe that's how we build something timeless.

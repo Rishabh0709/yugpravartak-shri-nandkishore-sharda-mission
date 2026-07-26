@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yugpravarktak Shri Nandkishore Sharda Mission — Universal Brotherhood & World Peace</title>
+  <meta name="description" content="Official portal of Yugpravarktak Shri Nandkishore Sharda Mission, Manidweep, Jodhpur." />
+
+  <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <style>
+    /* ══════════════════════════════════════════════════════════════════
+       SPIRITUAL & SOOTHING PALETTE OVERRIDES
+    ══════════════════════════════════════════════════════════════════ */
+    :root {
+      --bg-light: #FDFBF7;        /* Soft Sandalwood Cream */
+      --bg-warm: #FAF2E6;         /* Warm Sacred Light */
+      --card-bg: #FFFFFF;         /* Crisp White Card */
+      --text-main: #2C221E;       /* Deep Earth Brown */
+      --text-muted: #5C4D44;      /* Soft Muted Text */
+      --saffron: #D96B27;         /* Logo Saffron */
+      --gold: #C88E31;            /* Logo Gold */
+      --maroon: #7A1C1C;          /* Deep Crimson / Sindoor */
+      --border-line: #EADCC9;     /* Soothing Border */
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    /* Section Background Classes */
+    .sec-spiritual-light {
+      background-color: var(--bg-light);
+      padding: 60px 0;
+    }
+
+    .sec-spiritual-warm {
+      background-color: var(--bg-warm);
+      border-top: 1px solid var(--border-line);
+      border-bottom: 1px solid var(--border-line);
+      padding: 60px 0;
+    }
+
+    /* Typography Adjustments for Light Backgrounds */
+    .eyebrow-spiritual {
+      font-family: 'Mukta', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--saffron);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .heading-spiritual {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.2rem;
+      color: var(--maroon);
+      margin-bottom: 24px;
+    }
+
+    /* Card Styling */
+    .spiritual-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 4px 15px rgba(122, 28, 28, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .spiritual-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(217, 107, 39, 0.08);
+    }
+
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .pillar-card {
+      background: var(--card-bg);
+      border-top: 3px solid var(--saffron);
+      border-left: 1px solid var(--border-line);
+      border-right: 1px solid var(--border-line);
+      border-bottom: 1px solid var(--border-line);
+      padding: 20px;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .pillar-card h4 {
+      color: var(--maroon);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .pillar-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Expandable Collapsible Styling */
+    details.expandable-about {
+      background: #F8F1E5;
+      border: 1px solid var(--border-line);
+      border-radius: 6px;
+      padding: 14px 20px;
+      margin-top: 16px;
+    }
+
+    details.expandable-about summary {
+      color: var(--saffron);
+      cursor: pointer;
+      font-weight: 600;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    details.expandable-about p {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-top: 12px;
+    }
+
+    /* Stats styling */
+    .stat-card-light {
+      background: var(--card-bg);
+      border: 1px solid var(--border-line);
+      border-bottom: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .stat-card-light__number {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--saffron);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .stat-card-light__label {
+      font-family: 'Mukta', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <header class="site-nav" id="siteNav">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__mark">
+        <img class="site-nav__logo" src="assets/img/logo.png" width="42" height="42" alt="Mission Emblem" />
+        <span class="site-nav__mark-words">
+          <span data-i18n="nav.brandTitle">Yugpravarktak Mission</span>
+          <small data-i18n="footer.brandSub">Manidweep, Jodhpur</small>
+        </span>
+      </a>
+
+      <button class="site-nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navLinks" class="site-nav__links">
+        <a href="#about" data-i18n="nav.about">About Mission</a>
+        <a href="#vision" data-i18n="nav.vision">Vision &amp; Purpose</a>
+        <a href="#activities" data-i18n="nav.activities">Activities</a>
+        <a href="#torchbearers" data-i18n="nav.torchbearers">Torchbearers</a>
+        <a href="#impact" data-i18n="nav.impact">Our Impact</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#visit" class="site-nav__cta" data-i18n="nav.visit">Visit Us</a>
+
+        <div class="site-nav__lang" role="group">
+          <button type="button" class="site-nav__lang-btn" data-lang="en" aria-pressed="true">/en</button>
+          <span class="site-nav__lang-sep">|</span>
+          <button type="button" class="site-nav__lang-btn" data-lang="hi" aria-pressed="false">/hi</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Mission Introduction">
+      <div class="hero__sky" aria-hidden="true"></div>
+      <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--hero">
+          <span class="devanagari">युगप्रवर्तक श्री नंदकिशोर शारदा मिशन</span>
+          <span class="eyebrow__sep">·</span> MANIDWEEP, JODHPUR
+        </p>
+
+        <h1 class="hero__title" data-i18n="hero.title">
+          Yugpravarktak Shri Nandkishore Sharda Mission
+        </h1>
+
+        <p class="hero__sub">
+          <span class="devanagari hero__sub-hindi">विश्व शांति, सार्वभौमिक बंधुत्व एवं मानव जीवन के कल्याण हेतु समर्पित</span>
+          <span class="hero__sub-gloss" data-i18n="hero.subGloss">
+            Dedicated to spiritual awakening, <em>Buddhi-Vivek Yoga Sadhana</em>, and holistic human development under divine grace.
+          </span>
+        </p>
+
+        <div class="hero__actions">
+          <a href="#about" class="btn-ember" data-i18n="hero.ctaMain">Explore Mission</a>
+          <a href="#vision" class="hero__scroll-cue">
+            <span data-i18n="hero.ctaScroll">Begin Journey</span>
+            <span class="hero__scroll-line"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION & PURPOSE -->
+    <section class="sec-spiritual-warm" id="vision">
+      <div class="band__inner reveal">
+        <span class="eyebrow-spiritual" data-i18n="vision.eyebrow">Our Foundation</span>
+        <h2 class="heading-spiritual" data-i18n="vision.heading">Vision &amp; Purpose</h2>
+        
+        <div class="practice__grid">
+          <div class="spiritual-card" style="border-left: 4px solid var(--saffron);">
+            <h3 class="heading-spiritual" style="font-size:1.5rem; margin-bottom: 10px;" data-i18n="vision.vTitle">Our Vision</h3>
+            <p data-i18n="vision.vText" style="color: var(--text-muted); line-height: 1.7; margin:0;">
+              Elevating human life and establishing universal peace, harmony, and brotherhood through spiritual realization and selfless service.
+            </p>
+          </div>
+
+          <div class="spiritual-card" style="border-left: 4px solid var(--maroon);">
+            <h3 class="heading-spiritual" style="font-size:1.5rem; margin-bottom: 10px;" data-i18n="vision.pTitle">Our Purpose</h3>
+            <p data-i18n="vision.pText" style="color: var(--text-muted); line-height: 1.7; margin:0;">
+              Guiding seekers through the divine wisdom of Bhaiya Shri Nandkishore Ji Sharda via the practical <em>Buddhi-Vivek Yoga Sadhana</em> framework.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT MISSION (SOOTHING & SCANNABLE) -->
+    <section class="sec-spiritual-light" id="about">
+      <div class="band__inner reveal">
+        <span class="eyebrow-spiritual" data-i18n="about.eyebrow">Genesis &amp; Philosophy</span>
+        <h2 class="heading-spiritual" data-i18n="about.heading">About the Mission</h2>
+
+        <!-- Part I Summary -->
+        <div style="margin-bottom: 36px;">
+          <h3 class="eyebrow-spiritual" style="color:var(--maroon); font-size:1rem;" data-i18n="about.p1Title">I. Divine Origin &amp; Spiritual Path</h3>
+          <p style="color:var(--text-main); line-height: 1.7; margin-bottom: 10px;" data-i18n="about.p1_summary">
+            Shri Nandkishore Ji Sharda (Bhaiyaji) introduced <em>Buddhi-Vivek Yoga Sadhana</em>—a balanced, modern path uniting Wisdom (Gyan), Devotion (Bhakti), and Unselfish Action (Nishkama Karma) under the divine grace of Jagatjanani Maa Tripurasundari.
+          </p>
+          
+          <details class="expandable-about">
+            <summary data-i18n="about.readMore">Read Complete Divine Origin Narrative ↓</summary>
+            <p data-i18n="about.p1_full">
+              Under a special mission, Jagatjanani Maa Tripurasundari brought Shri Nandkishore Ji Sharda down to Earth to give a simplified spiritual path for the modern scientific age. By establishing Maa as his Guru, Bhaiyaji attained divine wisdom and paved the spiritual path alongside Sushri Basanti Ji Manihar and Sushri Madhubala Ji Advani, founding the "Manidweep Adhyatma Parivar".
+            </p>
+          </details>
+        </div>
+
+        <!-- Part II Pillars -->
+        <div style="margin-bottom: 36px;">
+          <h3 class="eyebrow-spiritual" style="color:var(--maroon); font-size:1rem;" data-i18n="about.p2Title">II. Four Pillars of Development</h3>
+          <div class="pillar-grid">
+            <div class="pillar-card">
+              <h4>Value Education</h4>
+              <p>Scholarships paired with Sunday character-building mentorship.</p>
+            </div>
+            <div class="pillar-card">
+              <h4>4D Wellness</h4>
+              <p>Daily physical, mental, emotional, and spiritual harmony.</p>
+            </div>
+            <div class="pillar-card">
+              <h4>Self-Reliance</h4>
+              <p>Free vocational tailoring and skill training for women.</p>
+            </div>
+            <div class="pillar-card">
+              <h4>Environmental Care</h4>
+              <p>Responsible resource use, tree planting, and nature preservation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part III Activities Timeline -->
+        <div id="activities" style="margin-bottom: 20px;">
+          <h3 class="eyebrow-spiritual" style="color:var(--maroon); font-size:1rem;" data-i18n="about.p3Title">III. Key Initiatives</h3>
+          
+          <div class="activities-grid">
+            <div class="activity-card" style="background: var(--card-bg); border: 1px solid var(--border-line);">
+              <span class="activity-card__year" style="background: var(--saffron);">1996</span>
+              <h4 class="activity-card__title" style="color: var(--maroon);">School Girl Scholarships</h4>
+              <p class="activity-card__text" style="color: var(--text-muted);">Founded by Kumari Basanti Manihar to ensure no girl drops out due to financial hardship.</p>
+            </div>
+
+            <div class="activity-card" style="background: var(--card-bg); border: 1px solid var(--border-line);">
+              <span class="activity-card__year" style="background: var(--saffron);">2001</span>
+              <h4 class="activity-card__title" style="color: var(--maroon);">College Education Wing</h4>
+              <p class="activity-card__text" style="color: var(--text-muted);">Assisting economically disadvantaged young women through degree and professional courses.</p>
+            </div>
+
+            <div class="activity-card" style="background: var(--card-bg); border: 1px solid var(--border-line);">
+              <span class="activity-card__year" style="background: var(--saffron);">2010</span>
+              <h4 class="activity-card__title" style="color: var(--maroon);">Boys' Higher Education</h4>
+              <p class="activity-card__text" style="color: var(--text-muted);">Supporting technical/professional male aspirants integrated with moral mentorship.</p>
+            </div>
+
+            <div class="activity-card" style="background: var(--card-bg); border: 1px solid var(--border-line);">
+              <span class="activity-card__year" style="background: var(--saffron);">2020</span>
+              <h4 class="activity-card__title" style="color: var(--maroon);">Dignified Relief Support</h4>
+              <p class="activity-card__text" style="color: var(--text-muted);">Monthly ration kit distribution ensuring food security for ~300 vulnerable families.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TORCHBEARERS -->
+    <section class="sec-spiritual-warm" id="torchbearers">
+      <div class="band__inner reveal">
+        <span class="eyebrow-spiritual" data-i18n="torch.eyebrow">The Lineage of Faith</span>
+        <h2 class="heading-spiritual" data-i18n="torch.heading">Our Torch-Bearers</h2>
+
+        <div class="lineage">
+          <div class="lineage__figure">
+            <span class="lineage__portrait" style="background: var(--saffron); color:#fff;"><span class="lineage__monogram">न</span></span>
+            <span class="lineage__years" style="color:var(--saffron);">1944 – 2003</span>
+            <span class="lineage__name" style="color:var(--maroon);">Shri Nandkishore Sharda (Bhaiyaji)</span>
+            <span class="lineage__hook" style="color:var(--text-muted);">Spiritual Pioneer &amp; Creator of Buddhi-Vivek Yoga Sadhana</span>
+          </div>
+
+          <span class="lineage__line" style="background: var(--border-line);"></span>
+
+          <div class="lineage__figure">
+            <span class="lineage__portrait" style="background: var(--saffron); color:#fff;"><span class="lineage__monogram">ब</span></span>
+            <span class="lineage__years" style="color:var(--saffron);">1964 – 2021</span>
+            <span class="lineage__name" style="color:var(--maroon);">Vatsalyamayi Maa Basanti Manihar</span>
+            <span class="lineage__hook" style="color:var(--text-muted);">Pillar of Selfless Service &amp; Scholarship Trust Founder</span>
+          </div>
+
+          <span class="lineage__line" style="background: var(--border-line);"></span>
+
+          <div class="lineage__figure">
+            <span class="lineage__portrait" style="background: var(--saffron); color:#fff;"><span class="lineage__monogram">म</span></span>
+            <span class="lineage__years" style="color:var(--saffron);">Present</span>
+            <span class="lineage__name" style="color:var(--maroon);">Kumari Madhubala Advani (Madhu Maa)</span>
+            <span class="lineage__hook" style="color:var(--text-muted);">Guiding the Mission Forward with Identical Methodology</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS -->
+    <section class="sec-spiritual-light" id="impact">
+      <div class="band__inner reveal">
+        <span class="eyebrow-spiritual" data-i18n="impact.eyebrow">Measurable Grace</span>
+        <h2 class="heading-spiritual" data-i18n="impact.heading">Our Impact</h2>
+
+        <div class="impact-stats">
+          <div class="stat-card-light">
+            <span class="stat-card-light__number">₹4.51 Cr+</span>
+            <span class="stat-card-light__label">School Girl Scholarships</span>
+          </div>
+          <div class="stat-card-light">
+            <span class="stat-card-light__number">₹1.64 Cr+</span>
+            <span class="stat-card-light__label">College Support</span>
+          </div>
+          <div class="stat-card-light">
+            <span class="stat-card-light__number">₹57 Lakh+</span>
+            <span class="stat-card-light__label">Boys Higher Education</span>
+          </div>
+          <div class="stat-card-light">
+            <span class="stat-card-light__number">₹1.07 Cr+</span>
+            <span class="stat-card-light__label">Food Support Kits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT US CTA -->
+    <section class="sec-spiritual-warm" id="visit" style="text-align: center;">
+      <div class="band__inner band__inner--narrow reveal">
+        <span class="eyebrow-spiritual" data-i18n="closing.eyebrow">Visit Us</span>
+        <h2 class="heading-spiritual" data-i18n="closing.heading">Welcome to Manidweep</h2>
+        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 24px;">
+          Yugpravarktak Shri Nandkishore Sharda Mission<br>
+          Manidweep, A-183 Shastri Nagar, Jodhpur, Rajasthan 342001
+        </p>
+        <a href="mailto:contact@manidweepjodhpur.org" class="btn-ember" style="background: var(--maroon); color: #fff;" data-i18n="closing.cta">Contact Mission Center</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" style="background: #231B18; color: #D8C9BF;">
+    <p class="site-footer__bottom" style="margin: 0; padding: 20px 0; text-align: center;">
+      &copy; <span id="footerYear">2026</span> Yugpravarktak Shri Nandkishore Sharda Mission, Manidweep. All Rights Reserved.
+    </p>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

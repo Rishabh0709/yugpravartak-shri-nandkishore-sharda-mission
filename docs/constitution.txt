@@ -1,0 +1,842 @@
+Creative Constitution v1.0
+
+"We are not building a website. We are preserving a living legacy."
+
+1. Introduction
+
+Project Prakash is the official digital experience of Yugpravartak Shri Nandkishore Sharda Mission.
+
+This project is not merely intended to present information about the Mission. It is intended to communicate its spirit.
+
+Our objective is to create a timeless digital experience that reflects the philosophy, compassion, simplicity, and service that define the Mission.
+
+Every design decision, every line of code, every photograph, every animation, and every word should contribute toward a single purpose:
+
+Helping visitors experience the philosophy of the Mission rather than simply reading about it.
+
+This document serves as the creative foundation of the entire project.
+
+Whenever a design decision becomes difficult, we will return to this document.
+
+2. Our Purpose
+
+Most websites communicate information.
+
+This website should communicate transformation.
+
+The objective is not merely to explain:
+
+who we are,
+what we do,
+or what we have achieved.
+
+The objective is to help visitors understand:
+
+why the Mission exists,
+how it emerged,
+what philosophy guides it,
+how that philosophy became selfless service,
+and how that service continues to transform lives.
+
+The visitor should leave with greater clarity, peace, and inspiration than when they arrived.
+
+3. Our Vision
+
+To create one of the most thoughtful, timeless, and emotionally meaningful spiritual websites ever built.
+
+A website that feels less like browsing and more like taking part in a quiet spiritual journey.
+
+A website that future generations can continue to experience without it feeling outdated.
+
+4. Our North Star
+
+Every creative decision must answer one question:
+
+"Does this help visitors experience the spirit of the Mission?"
+
+If the answer is no, the decision should be reconsidered.
+
+5. What We Are Building
+
+We are not building:
+
+an NGO website
+a religious website
+a brochure
+an information portal
+a fundraising website
+
+We are building:
+
+A Digital Pilgrimage
+
+The visitor should gradually travel through:
+
+Curiosity
+
+↓
+
+Understanding
+
+↓
+
+Reflection
+
+↓
+
+Inspiration
+
+↓
+
+Participation
+
+6. The Emotional Journey
+
+The website should gently guide visitors through the following emotional progression.
+
+Prelude
+
+Emotion
+
+Curiosity
+
+Question
+
+"Why was this Mission needed?"
+
+Act I — The Calling
+
+Emotion
+
+Wonder
+
+Question
+
+"Why did Bhaiyaji come?"
+
+Act II — The Journey
+
+Emotion
+
+Reverence
+
+Question
+
+"How did the spiritual journey unfold?"
+
+Act III — The Wisdom
+
+Emotion
+
+Clarity
+
+Question
+
+"What path was given to humanity?"
+
+Act IV — The Mission
+
+Emotion
+
+Inspiration
+
+Question
+
+"How did wisdom become service?"
+
+Act V — Lives Illuminated
+
+Emotion
+
+Gratitude
+
+Question
+
+"How many lives have been transformed?"
+
+Act VI — The Living Legacy
+
+Emotion
+
+Belonging
+
+Question
+
+"How can this journey continue?"
+
+Epilogue
+
+Emotion
+
+Peace
+
+Final feeling
+
+"The story continues through every life it touches."
+
+7. The Invisible Hero
+
+The central hero of this website is not an individual.
+
+The hero is the path.
+
+The website should respectfully present Bhaiyaji as the guide through whom this path became accessible.
+
+Maa is the source.
+
+The Mission is the expression.
+
+Humanity is the beneficiary.
+
+This philosophy should remain visible throughout the website.
+
+8. Design Philosophy
+
+The website should not imitate traditional spiritual websites.
+
+Instead, spirituality should be expressed through:
+
+Light
+Simplicity
+Space
+Nature
+Balance
+Silence
+Craftsmanship
+
+The visitor should feel peace before consciously recognizing why.
+
+9. Visual Language
+
+The primary visual metaphor of the website is:
+
+Light
+
+The entire experience represents movement from darkness toward light.
+
+Beginning
+
+Soft dawn
+
+↓
+
+Morning
+
+↓
+
+Golden daylight
+
+↓
+
+Warm sunset
+
+The gradual increase in light should mirror the visitor's journey toward understanding.
+
+10. Motion Philosophy
+
+Every movement should carry meaning.
+
+Motion	Meaning
+Rising	Hope
+Blooming	Transformation
+Flowing	Compassion
+Gentle Drift	Continuity
+Fade	Reflection
+Expansion	Growth
+
+Animation exists to support storytelling.
+
+Never to attract attention.
+
+11. Writing Philosophy
+
+The website should speak with humility.
+
+Never boast.
+
+Never exaggerate.
+
+Never market spirituality.
+
+Instead, write with quiet confidence.
+
+The writing should be calm, respectful, and timeless.
+
+It should resemble thoughtful conversation rather than promotional copy.
+
+12. Photography Philosophy
+
+Every image should represent truth.
+
+Authentic photographs should always be preferred.
+
+If an authentic image is unavailable, original illustrations should be created.
+
+Stock photography should never be used.
+
+Every image should answer one question:
+
+"Why does this memory matter?"
+
+13. Color Philosophy
+
+Colors represent emotions rather than decoration.
+
+Ivory
+
+Purity
+
+Golden
+
+Hope
+
+Blue
+
+Wisdom
+
+Green
+
+Life
+
+Warm Earth
+
+Service
+
+The palette should remain soft and calming throughout.
+
+14. Typography Philosophy
+
+Typography should never dominate.
+
+Headings should feel thoughtful.
+
+Body text should remain highly readable.
+
+Whitespace is considered an essential design element.
+
+Silence between ideas is as important as the ideas themselves.
+
+15. Accessibility Philosophy
+
+Spirituality welcomes everyone.
+
+Therefore, the website should welcome everyone.
+
+Accessibility is not a feature.
+
+Accessibility is hospitality.
+
+Every visitor should be able to experience the Mission regardless of ability.
+
+16. Performance Philosophy
+
+Beauty should never delay understanding.
+
+The website should remain lightweight, accessible, and performant.
+
+Animations should enhance the experience without compromising speed.
+
+Technology should quietly disappear behind the story.
+
+17. Things We Will Never Do
+
+We will never include:
+
+autoplay music
+flashing animations
+unnecessary decoration
+excessive spiritual symbolism
+stock photography
+aggressive donation requests
+intrusive popups
+overwhelming paragraphs
+visual clutter
+animations without meaning
+
+Every element must earn its place.
+
+18. The Final Test
+
+Before approving any screen, ask:
+
+"If a visitor remained on this screen for thirty seconds without scrolling, would they feel calm?"
+
+If the answer is no,
+
+the screen is not finished.
+
+19. Our Commitment
+
+Project Prakash is more than a website.
+
+It is a digital preservation of a living philosophy.
+
+Our responsibility is not merely to communicate information but to create an experience worthy of the Mission it represents.
+
+Every contribution to this project should embody patience, humility, craftsmanship, and purpose.
+
+If, after experiencing this website, visitors remember only one thing, let it not be the animations, the interface, or the technology.
+
+Let them remember how the experience made them feel.
+
+May every visitor leave with a little more peace than they brought with them.
+
+Closing Statement
+
+"Don't build a website about spirituality. Build an experience that quietly practices it."
+
+I have one suggestion before we proceed
+
+I think this document deserves to become a beautifully designed PDF with elegant typography, generous whitespace, subtle spiritual motifs, and a cover page titled "Project Prakash – Creative Constitution". It would feel like the founding charter of the project rather than a plain text document. As we continue, we'll create similar companion documents—the Story Bible, Visual Language Guide, Motion Language Guide, and Technical Architecture Guide—forming a complete design system that will guide the project from concept to launch.Absolutely.
+
+In fact, I'd recommend that this **not** be just a "page". This should become the **Project Prakash Creative Constitution**, the very first document in the repository. Every designer, developer, writer, photographer, and volunteer should read this before contributing.
+
+I'd write it something like this.
+
+---
+
+# Project Prakash
+
+## Creative Constitution v1.0
+
+*"We are not building a website. We are preserving a living legacy."*
+
+---
+
+# 1. Introduction
+
+Project Prakash is the official digital experience of **Yugpravartak Shri Nandkishore Sharda Mission**.
+
+This project is not merely intended to present information about the Mission. It is intended to communicate its spirit.
+
+Our objective is to create a timeless digital experience that reflects the philosophy, compassion, simplicity, and service that define the Mission.
+
+Every design decision, every line of code, every photograph, every animation, and every word should contribute toward a single purpose:
+
+> **Helping visitors experience the philosophy of the Mission rather than simply reading about it.**
+
+This document serves as the creative foundation of the entire project.
+
+Whenever a design decision becomes difficult, we will return to this document.
+
+---
+
+# 2. Our Purpose
+
+Most websites communicate information.
+
+This website should communicate transformation.
+
+The objective is not merely to explain:
+
+* who we are,
+* what we do,
+* or what we have achieved.
+
+The objective is to help visitors understand:
+
+* why the Mission exists,
+* how it emerged,
+* what philosophy guides it,
+* how that philosophy became selfless service,
+* and how that service continues to transform lives.
+
+The visitor should leave with greater clarity, peace, and inspiration than when they arrived.
+
+---
+
+# 3. Our Vision
+
+To create one of the most thoughtful, timeless, and emotionally meaningful spiritual websites ever built.
+
+A website that feels less like browsing and more like taking part in a quiet spiritual journey.
+
+A website that future generations can continue to experience without it feeling outdated.
+
+---
+
+# 4. Our North Star
+
+Every creative decision must answer one question:
+
+> **"Does this help visitors experience the spirit of the Mission?"**
+
+If the answer is no, the decision should be reconsidered.
+
+---
+
+# 5. What We Are Building
+
+We are **not** building:
+
+* an NGO website
+* a religious website
+* a brochure
+* an information portal
+* a fundraising website
+
+We are building:
+
+> **A Digital Pilgrimage**
+
+The visitor should gradually travel through:
+
+Curiosity
+
+↓
+
+Understanding
+
+↓
+
+Reflection
+
+↓
+
+Inspiration
+
+↓
+
+Participation
+
+---
+
+# 6. The Emotional Journey
+
+The website should gently guide visitors through the following emotional progression.
+
+## Prelude
+
+Emotion
+
+Curiosity
+
+Question
+
+*"Why was this Mission needed?"*
+
+---
+
+## Act I — The Calling
+
+Emotion
+
+Wonder
+
+Question
+
+*"Why did Bhaiyaji come?"*
+
+---
+
+## Act II — The Journey
+
+Emotion
+
+Reverence
+
+Question
+
+*"How did the spiritual journey unfold?"*
+
+---
+
+## Act III — The Wisdom
+
+Emotion
+
+Clarity
+
+Question
+
+*"What path was given to humanity?"*
+
+---
+
+## Act IV — The Mission
+
+Emotion
+
+Inspiration
+
+Question
+
+*"How did wisdom become service?"*
+
+---
+
+## Act V — Lives Illuminated
+
+Emotion
+
+Gratitude
+
+Question
+
+*"How many lives have been transformed?"*
+
+---
+
+## Act VI — The Living Legacy
+
+Emotion
+
+Belonging
+
+Question
+
+*"How can this journey continue?"*
+
+---
+
+## Epilogue
+
+Emotion
+
+Peace
+
+Final feeling
+
+*"The story continues through every life it touches."*
+
+---
+
+# 7. The Invisible Hero
+
+The central hero of this website is not an individual.
+
+The hero is the path.
+
+The website should respectfully present Bhaiyaji as the guide through whom this path became accessible.
+
+Maa is the source.
+
+The Mission is the expression.
+
+Humanity is the beneficiary.
+
+This philosophy should remain visible throughout the website.
+
+---
+
+# 8. Design Philosophy
+
+The website should not imitate traditional spiritual websites.
+
+Instead, spirituality should be expressed through:
+
+* Light
+* Simplicity
+* Space
+* Nature
+* Balance
+* Silence
+* Craftsmanship
+
+The visitor should feel peace before consciously recognizing why.
+
+---
+
+# 9. Visual Language
+
+The primary visual metaphor of the website is:
+
+## Light
+
+The entire experience represents movement from darkness toward light.
+
+Beginning
+
+Soft dawn
+
+↓
+
+Morning
+
+↓
+
+Golden daylight
+
+↓
+
+Warm sunset
+
+The gradual increase in light should mirror the visitor's journey toward understanding.
+
+---
+
+# 10. Motion Philosophy
+
+Every movement should carry meaning.
+
+| Motion       | Meaning        |
+| ------------ | -------------- |
+| Rising       | Hope           |
+| Blooming     | Transformation |
+| Flowing      | Compassion     |
+| Gentle Drift | Continuity     |
+| Fade         | Reflection     |
+| Expansion    | Growth         |
+
+Animation exists to support storytelling.
+
+Never to attract attention.
+
+---
+
+# 11. Writing Philosophy
+
+The website should speak with humility.
+
+Never boast.
+
+Never exaggerate.
+
+Never market spirituality.
+
+Instead, write with quiet confidence.
+
+The writing should be calm, respectful, and timeless.
+
+It should resemble thoughtful conversation rather than promotional copy.
+
+---
+
+# 12. Photography Philosophy
+
+Every image should represent truth.
+
+Authentic photographs should always be preferred.
+
+If an authentic image is unavailable, original illustrations should be created.
+
+Stock photography should never be used.
+
+Every image should answer one question:
+
+*"Why does this memory matter?"*
+
+---
+
+# 13. Color Philosophy
+
+Colors represent emotions rather than decoration.
+
+Ivory
+
+Purity
+
+Golden
+
+Hope
+
+Blue
+
+Wisdom
+
+Green
+
+Life
+
+Warm Earth
+
+Service
+
+The palette should remain soft and calming throughout.
+
+---
+
+# 14. Typography Philosophy
+
+Typography should never dominate.
+
+Headings should feel thoughtful.
+
+Body text should remain highly readable.
+
+Whitespace is considered an essential design element.
+
+Silence between ideas is as important as the ideas themselves.
+
+---
+
+# 15. Accessibility Philosophy
+
+Spirituality welcomes everyone.
+
+Therefore, the website should welcome everyone.
+
+Accessibility is not a feature.
+
+Accessibility is hospitality.
+
+Every visitor should be able to experience the Mission regardless of ability.
+
+---
+
+# 16. Performance Philosophy
+
+Beauty should never delay understanding.
+
+The website should remain lightweight, accessible, and performant.
+
+Animations should enhance the experience without compromising speed.
+
+Technology should quietly disappear behind the story.
+
+---
+
+# 17. Things We Will Never Do
+
+We will never include:
+
+* autoplay music
+* flashing animations
+* unnecessary decoration
+* excessive spiritual symbolism
+* stock photography
+* aggressive donation requests
+* intrusive popups
+* overwhelming paragraphs
+* visual clutter
+* animations without meaning
+
+Every element must earn its place.
+
+---
+
+# 18. The Final Test
+
+Before approving any screen, ask:
+
+> **"If a visitor remained on this screen for thirty seconds without scrolling, would they feel calm?"**
+
+If the answer is no,
+
+the screen is not finished.
+
+---
+
+# 19. Our Commitment
+
+Project Prakash is more than a website.
+
+It is a digital preservation of a living philosophy.
+
+Our responsibility is not merely to communicate information but to create an experience worthy of the Mission it represents.
+
+Every contribution to this project should embody patience, humility, craftsmanship, and purpose.
+
+If, after experiencing this website, visitors remember only one thing, let it not be the animations, the interface, or the technology.
+
+Let them remember how the experience made them feel.
+
+May every visitor leave with a little more peace than they brought with them.
+
+---
+
+# Closing Statement
+
+> **"Don't build a website about spirituality. Build an experience that quietly practices it."**
+
+---

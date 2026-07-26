@@ -1,0 +1,124 @@
+Home
+│
+├── The Mission
+│
+├── Our Guiding Lights
+│     ├── Yugpravartak Shri Nandkishore Sharda
+│     ├── Basanti Manihar
+│     └── Madhu Advani
+│
+├── Buddhi Vivek Yog Sadhna
+│
+├── Mission Activities
+│
+├── Impact
+│
+├── Gallery
+│
+├── Publications
+│
+├── News & Events
+│
+├── Contact
+│
+└── Support the Journey
+
+
+
+Homepage Layout (Final)
+Hero
+
+Beautiful sunrise
+
+Mission logo
+
+Mission statement
+
+One CTA
+
+↓
+
+Our Mission
+
+What is the Mission?
+
+Why it exists?
+
+Mission statement
+
+↓
+
+Our Guiding Lights
+
+Three elegant portrait cards
+
+Shri Nandkishore Sharda
+Basanti Manihar
+Madhu Advani
+
+Short introduction only.
+
+Button
+
+Discover Their Journey →
+
+↓
+
+Buddhi Vivek Yog Sadhna
+
+Only a teaser.
+
+One paragraph.
+
+Three principles.
+
+Button
+
+Learn More →
+
+↓
+
+Mission Activities
+
+Cards
+
+Education
+Spiritual Development
+Women Empowerment
+Health
+Social Service
+Environment
+
+↓
+
+Timeline
+
+The journey of the Mission.
+
+↓
+
+Impact
+
+Beautiful counters.
+
+Stories.
+
+↓
+
+Gallery
+
+Featured moments.
+
+↓
+
+Join the Journey
+
+Volunteer
+
+Visit
+
+Support
+
+↓
+
+Footer
