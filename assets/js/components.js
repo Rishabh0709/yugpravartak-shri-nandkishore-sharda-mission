@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeNavigation();
     setCurrentYear();
     highlightActiveNavigation();
+	initHeaderScroll();
+    initLangToggle();
 });
 
 async function loadComponent(selector, filePath) {
@@ -43,6 +45,42 @@ async function loadComponent(selector, filePath) {
             </p>
         `;
     }
+}
+
+function initHeaderScroll() {
+    const header = document.getElementById("header");
+
+    if (!header) {
+        return;
+    }
+
+    const onScroll = () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 40);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+}
+
+function initLangToggle() {
+    const buttons = document.querySelectorAll(".lang-btn");
+
+    if (!buttons.length) {
+        return;
+    }
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const chosenLang = button.getAttribute("data-lang");
+
+            document.querySelectorAll(".lang-btn").forEach((btn) => {
+                btn.classList.toggle(
+                    "is-active",
+                    btn.getAttribute("data-lang") === chosenLang
+                );
+            });
+        });
+    });
 }
 
 function initializeNavigation() {

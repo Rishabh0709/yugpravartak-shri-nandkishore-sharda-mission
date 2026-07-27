@@ -6,7 +6,7 @@
 /* Compact desktop */
 @media (max-width: 1120px) {
     :root {
-        --header-height: 82px;
+        --header-height: 100px;
     }
 
     .container,
@@ -14,10 +14,12 @@
         width: min(calc(100% - 40px), var(--container));
     }
 
+    /* FLAG: .logo-subtitle has no matching element in current header.html — orphaned from an earlier header layout. Verify before removing. */
     .logo-subtitle {
         display: none;
     }
 
+    /* FLAG: .leaders-grid / .leader-content have no matching markup anywhere in the current site. Likely leftover from an earlier "Guiding Lights" page concept. */
     .leaders-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 22px;
@@ -27,6 +29,7 @@
         padding: 26px;
     }
 
+    /* FLAG: .activity-card is unused — current activities are rendered via .service-timeline-card, not .activity-card. */
     .activity-card {
         padding-inline: 26px;
     }
@@ -38,11 +41,13 @@
         overflow: hidden;
     }
 
+    /* FLAG: selectors target #header .container / .site-header .container directly — current header uses .header-grid, not a bare .container child layout. This rule is currently inert. */
     #header .container,
     .site-header .container {
         gap: 18px;
     }
 
+    /* FLAG: .language-btn does not exist in current header.html — the live toggle uses .lang-toggle / .lang-btn. This appears to be an earlier naming pass. */
     .language-btn {
         margin-left: auto;
     }
@@ -122,6 +127,7 @@
         visibility: visible;
     }
 
+    /* FLAG: targets .site-nav ul — current nav is a flat list of <a> tags with no <ul>/<li> wrapper, so this rule is currently inert. */
     .site-nav ul,
     #header .site-nav ul,
     .site-header .site-nav ul {
@@ -132,6 +138,7 @@
         gap: 0;
     }
 
+    /* FLAG: .site-nav li — same issue, no <li> elements exist in current nav markup. */
     .site-nav li {
         border-bottom: 1px solid var(--color-border);
     }
@@ -181,6 +188,7 @@
         grid-template-columns: 1fr;
     }
 
+    /* FLAG: .leaders-grid / .leader-card.founder / .leader-image — no matching markup in current site. See earlier flag above. */
     .leaders-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -196,6 +204,7 @@
         aspect-ratio: auto;
     }
 
+    /* FLAG: .activities-grid unused — activities render via .service-timeline, not a card grid, on the current homepage. */
     .activities-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -214,7 +223,7 @@
 /* Small tablet */
 @media (max-width: 768px) {
     :root {
-        --header-height: 74px;
+        --header-height: 84px;
     }
 
     .container,
@@ -223,11 +232,13 @@
         width: min(calc(100% - 32px), var(--container));
     }
 
+    /* FLAG: #header .container / .site-header .container — inert, see flag above. Current header sizing is handled via .header-grid's min-height: var(--header-height), inherited automatically. */
     #header .container,
     .site-header .container {
         min-height: var(--header-height);
     }
 
+    /* FLAG: .logo / .logo img / .logo-title — no matching markup. Current brand block is .site-brand / .site-brand-logo / .site-title. */
     .logo {
         gap: 10px;
     }
@@ -242,6 +253,7 @@
         font-size: 1.08rem;
     }
 
+    /* FLAG: .language-btn — see flag above, current class is .lang-btn. */
     .language-btn {
         padding: 8px 13px;
         font-size: 0.82rem;
@@ -288,6 +300,7 @@
         gap: 20px;
     }
 
+    /* FLAG: .leader-card.founder / .leaders-grid / .leader-image — see flag above, unmatched. */
     .leader-card.founder {
         display: flex;
         grid-column: auto;
@@ -315,6 +328,7 @@
         padding-block: 100px;
     }
 
+    /* FLAG: .activities-grid — unmatched, see flag above. */
     .activities-grid {
         grid-template-columns: 1fr;
     }
@@ -331,13 +345,43 @@
     }
 }
 
+/* Header row consolidation — mobile single-row header */
+@media (max-width: 640px) {
+    .header-grid {
+        grid-template-columns: auto 1fr;
+    }
+
+    .header-row-top {
+        display: none;
+    }
+
+    .header-row-bottom {
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .lang-toggle--desktop {
+        display: none;
+    }
+
+    .lang-toggle--mobile {
+        display: flex;
+    }
+
+    .header-row-bottom .site-nav {
+        margin-left: 0;
+    }
+}
+
 /* Phones */
 @media (max-width: 560px) {
+    /* FLAG: .logo-title — unmatched, see flag above. */
     .logo-title {
         max-width: 170px;
         font-size: 0.98rem;
     }
 
+    /* FLAG: .language-btn — unmatched, see flag above. This rule also hides the language control entirely at this breakpoint, which would need to be revisited if/when .language-btn is reconciled with .lang-toggle. */
     .language-btn {
         display: none;
     }
@@ -361,6 +405,7 @@
         padding-bottom: 52px;
     }
 
+    /* FLAG: .hero-logo / .hero-hindi — no matching elements in current hero markup (index.html hero has no logo image or Hindi subline). Possibly from the abandoned "Manidweep" concept alongside the orphaned i18n.js. */
     .hero-logo {
         width: 118px;
         margin-bottom: 18px;
@@ -391,20 +436,24 @@
         font-size: 0.98rem;
     }
 
+    /* FLAG: .mission-grid article / .activity-card share this rule — .activity-card unmatched, see flag above. .mission-grid article is valid and still used. */
     .mission-grid article,
     .activity-card,
     .contact-card {
         padding: 28px 24px;
     }
 
+    /* FLAG: .leader-content — unmatched, see flag above. */
     .leader-content {
         padding: 26px 24px 28px;
     }
 
+    /* FLAG: .leader-image — unmatched, see flag above. */
     .leader-image {
         aspect-ratio: 4 / 3;
     }
 
+    /* FLAG: .founder::before — no .founder element exists in current markup. */
     .founder::before {
         top: 14px;
         right: 14px;
@@ -452,6 +501,7 @@
         width: min(calc(100% - 24px), var(--container));
     }
 
+    /* FLAG: .logo-title / .logo img — unmatched, see flag above. */
     .logo-title {
         max-width: 150px;
         font-size: 0.9rem;
@@ -502,6 +552,7 @@
 
 @media (max-width: 480px) {
 
+    /* FLAG: .leadership-highlight and children — no matching markup anywhere in the current site's HTML. Purpose unclear; likely from an unbuilt or removed section. */
     .leadership-highlight {
         padding: 25px 22px 25px 26px;
         border-radius: 18px;
@@ -586,6 +637,7 @@
 
 @media (max-width: 480px) {
 
+    /* FLAG: .journey-read-more IS used (index.html links use this class) — not orphaned, just noting it lives outside the main .journey-content block group above. */
     .journey-read-more {
         width: 100%;
         justify-content: space-between;
@@ -597,6 +649,7 @@
 
 @media (max-width: 768px) {
 
+    /* FLAG: .journey-cta__actions / .journey-action — no matching markup. Current .journey-cta block only contains a <p> and a single .btn, not this actions/action structure. Possibly planned but unbuilt. */
     .journey-cta__actions {
         flex-direction: column;
     }
@@ -608,6 +661,7 @@
 
 @media (max-width: 480px) {
 
+    /* FLAG: .journey-cta--featured / .journey-action — unmatched, see flag above. */
     .journey-cta--featured {
         padding: 24px 20px;
         border-radius: 20px;
@@ -671,6 +725,8 @@
         line-height: 1.72;
     }
 }
+
+/* FLAG: the entire block below (.hero-content, .hero-opening, .hero-logo, .hero-mountains, .hero-rays, .hero-mist, .hero-particles span, .hero-journey-arrow, .hero-journey-link, .hero-description, .hero-sky) targets a completely different hero implementation than the current one (canvas-based #heroParticles + .hero-bg). This looks like it belongs to the same abandoned "Manidweep" storyboard concept as main.js and i18n.js. None of these classes exist in the live index.html hero. Safe to archive alongside those files once confirmed. */
 @media (max-width: 768px) {
 
     .hero {
@@ -727,6 +783,7 @@
 
 @media (prefers-reduced-motion: reduce) {
 
+    /* FLAG: .hero-sky, .hero-rays, .hero-mist, .hero-journey-arrow — unmatched, part of the same flagged block above. .hero-particles span is ALSO currently unmatched since the live particle effect uses a <canvas id="heroParticles"> with no child <span> elements — the canvas-based version already self-disables under reduced motion via its own JS early-return, so this rule is redundant even if the class name partially overlaps by coincidence. */
     .hero-sky,
     .hero-rays,
     .hero-mist,
@@ -736,6 +793,7 @@
     }
 }
 
+/* FLAG: background-position rules for .hero — current .hero has no background-image (it uses .hero-bg as a separate layered div with gradients), so background-position here has no visible effect. Part of the same flagged legacy hero block. */
 @media (min-width: 1200px) {
     .hero {
         background-position: center 42%;
@@ -752,6 +810,7 @@
         padding-bottom: 70px;
     }
 
+    /* FLAG: .hero::before — current .hero has no ::before background-image treatment matching this gradient; .hero::before/::after in the live CSS are the decorative ring outlines, not this overlay. */
     .hero::before {
         background:
             linear-gradient(
@@ -762,6 +821,7 @@
     }
 }
 
+/* FLAG: the entire "Impact" block below (.impact-stats-grid, .impact-story-slider, .impact-slider-button, .impact-story-card and its children, .impact-stat-card, .impact-subheading) does not match the .impact-grid / .impact-card markup we just built for the homepage Impact section. This looks like styling for a more elaborate future Impact page (with a testimonial slider) that hasn't been built yet — worth checking whether this was intended for impact.html rather than being dead weight. Don't delete without confirming which direction you want for that page. */
 @media (max-width: 992px) {
 
     .impact-stats-grid {
