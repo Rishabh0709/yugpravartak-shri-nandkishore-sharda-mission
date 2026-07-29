@@ -22,7 +22,7 @@
     --radius-md: 22px;
     --radius-lg: 30px;
     --container: 1200px;
-    --header-height: 140px;
+    --header-height: 116px;
     --transition: 280ms ease;
 }
 
@@ -116,15 +116,9 @@ ol {
    Header and navigation
 ========================================================== */
 
-#header-placeholder {
-    position: relative;
-    width: 100%;
-    height: var(--header-height);
-}
-
 #header,
 .site-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -142,11 +136,10 @@ ol {
 
 .header-grid {
     display: grid;
-    grid-template-columns: 156px minmax(0, 1fr);
+    grid-template-columns: 25% 75%;
     align-items: stretch;
-    gap: 34px;
+    gap: 24px;
     min-height: var(--header-height);
-    transition: min-height 320ms ease;
 }
 
 .site-brand {
@@ -155,18 +148,14 @@ ol {
     max-height: var(--header-height);
     align-items: center;
     justify-content: center;
-    padding-block: 7px;
-    transition: max-height 320ms ease;
+    padding-block: 10px;
 }
 
 .site-brand-logo {
     width: auto;
     height: 100%;
     max-width: 100%;
-    max-height: 126px;
     object-fit: contain;
-    filter: drop-shadow(0 8px 16px rgba(89, 64, 26, 0.08));
-    transition: max-height 320ms ease, filter 320ms ease;
 }
 
 .header-right {
@@ -174,7 +163,6 @@ ol {
     min-width: 0;
     flex-direction: column;
     justify-content: center;
-    padding-block: 11px 10px;
 }
 
 .header-row {
@@ -206,11 +194,9 @@ ol {
     min-width: 0;
     color: var(--color-text);
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(1.55rem, 2.15vw, 2rem);
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.005em;
-    text-align: center;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-weight: 600;
+    line-height: 1.28;
 }
 
 .lang-toggle {
@@ -243,35 +229,19 @@ ol {
 }
 
 .header-row-bottom {
-    position: relative;
-    justify-content: center;
-    padding-top: 17px;
-    border-top: 0;
-    transition: padding-top 260ms ease;
-}
-
-.header-row-bottom::before {
-    position: absolute;
-    top: 4px;
-    right: 7%;
-    left: 7%;
-    height: 1px;
-    content: "";
-    background: linear-gradient(90deg, transparent, rgba(154, 118, 34, 0.27) 18%, rgba(154, 118, 34, 0.27) 82%, transparent);
-    opacity: 1;
-    transition: opacity 240ms ease;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+    transition: border-color 260ms ease, padding-top 260ms ease;
 }
 
 .site-header.is-scrolled .header-row-bottom {
     padding-top: 0;
-}
-
-.site-header.is-scrolled .header-row-bottom::before {
-    opacity: 0;
+    border-top-color: transparent;
 }
 
 .header-row-bottom .site-nav {
-    margin-left: 0;
+    margin-left: 20px;
 }
 
 .logo,
@@ -287,7 +257,7 @@ ol {
 .site-brand-logo {
     width: auto;
     height: 100%;
-    max-height: 126px;
+    max-height: var(--header-height);
     object-fit: contain;
 }
 
@@ -310,12 +280,11 @@ ol {
 .site-nav {
     display: flex;
     min-width: 0;
-    width: 100%;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     align-items: center;
-    justify-content: center;
-    gap: clamp(30px, 4.4vw, 56px);
-    margin-inline: auto;
+    justify-content: space-between;
+    gap: clamp(14px, 1.8vw, 28px);
+    margin-left: auto;
 }
 
 .site-nav ul,
@@ -331,72 +300,10 @@ ol {
 .site-header nav a {
     position: relative;
     display: inline-block;
-    padding-block: 9px;
+    padding-block: 10px;
     font-size: 0.95rem;
     font-weight: 500;
-    letter-spacing: 0.015em;
     white-space: nowrap;
-}
-
-@media (min-width: 993px) {
-    .site-header.is-scrolled .header-grid {
-        min-height: 84px;
-    }
-
-    .site-header.is-scrolled .site-brand {
-        max-height: 84px;
-    }
-
-    .site-header.is-scrolled .site-brand-logo {
-        max-height: 70px;
-        filter: drop-shadow(0 5px 10px rgba(89, 64, 26, 0.06));
-    }
-}
-
-@media (min-width: 993px) and (max-width: 1120px) {
-    :root {
-        --header-height: 118px;
-    }
-
-    .header-grid {
-        grid-template-columns: 132px minmax(0, 1fr);
-        gap: 24px;
-    }
-
-    .site-brand-logo {
-        max-height: 104px;
-    }
-
-    .site-title {
-        font-size: 1.55rem;
-    }
-
-    .site-nav {
-        gap: clamp(22px, 3vw, 38px);
-    }
-}
-
-@media (max-width: 992px) {
-    :root {
-        --header-height: 96px;
-    }
-
-    .header-grid {
-        grid-template-columns: 104px minmax(0, 1fr);
-        gap: 18px;
-    }
-
-    .site-brand-logo {
-        max-height: 84px;
-    }
-
-    .header-right {
-        padding-block: 8px;
-    }
-
-    .header-row-bottom::before {
-        display: none;
-    }
 }
 
 .site-nav a::after,
@@ -456,26 +363,6 @@ ol {
     padding: 0;
     border: 0;
     background: transparent;
-}
-
-@media (max-width: 992px) {
-    .header-row-top {
-        display: none;
-    }
-
-    .header-row-bottom {
-        justify-content: flex-end;
-        padding-top: 0;
-    }
-
-    .nav-toggle {
-        display: flex;
-        margin-left: auto;
-    }
-
-    .nav-overlay {
-        display: block;
-    }
 }
 
 /* ==========================================================

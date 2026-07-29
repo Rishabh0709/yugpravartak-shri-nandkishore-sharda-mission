@@ -9,7 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeSmoothLinks();
     initializeRevealAnimations();
 	initializeImpactStories();
+
+    setTimeout(initializeHeaderScroll, 100);
 });
+
+document.addEventListener(
+    "componentsLoaded",
+    initializeHeaderScroll
+);
 /* ==========================================================
    HERO
 ========================================================== */
@@ -386,6 +393,42 @@ function initializeSmoothLinks() {
             });
         });
     });
+}
+
+/* ==========================================================
+   HEADER SCROLL STATE
+========================================================== */
+
+function initializeHeaderScroll() {
+    const header = document.querySelector(".site-header");
+
+    if (!header) {
+        return;
+    }
+
+    let ticking = false;
+
+    const updateHeader = () => {
+        header.classList.toggle(
+            "is-scrolled",
+            window.scrollY > 40
+        );
+
+        ticking = false;
+    };
+
+    updateHeader();
+
+    window.addEventListener(
+        "scroll",
+        () => {
+            if (!ticking) {
+                requestAnimationFrame(updateHeader);
+                ticking = true;
+            }
+        },
+        { passive: true }
+    );
 }
 
 /* ==========================================================

@@ -54,38 +54,12 @@ function initHeaderScroll() {
         return;
     }
 
-    const collapseAt = 150;
-    const expandAt = 24;
-    let isCompact = false;
-    let ticking = false;
-
-    const updateHeader = () => {
-        const scrollPosition = Math.max(
-            window.scrollY,
-            document.documentElement.scrollTop
-        );
-
-        const shouldCompact = isCompact
-            ? scrollPosition > expandAt
-            : scrollPosition > collapseAt;
-
-        if (shouldCompact !== isCompact) {
-            isCompact = shouldCompact;
-            header.classList.toggle("is-scrolled", isCompact);
-        }
-
-        ticking = false;
-    };
-
     const onScroll = () => {
-        if (!ticking) {
-            requestAnimationFrame(updateHeader);
-            ticking = true;
-        }
+        header.classList.toggle("is-scrolled", window.scrollY > 40);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    updateHeader();
+    onScroll();
 }
 
 function initLangToggle() {

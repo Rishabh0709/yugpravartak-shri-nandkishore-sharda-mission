@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities & Initiatives | Yugpravartak Shri Nandkishore Sharda Mission</title>
+<meta name="description" content="Explore the education, family support, holistic wellness and women's self-reliance initiatives of Yugpravartak Shri Nandkishore Sharda Mission.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  :root{
+    --ink:#241B2E;
+    --parchment:#F7F1E6;
+    --parchment-2:#F0E8D8;
+    --flame:#C1552C;
+    --flame-bright:#E07A45;
+    --gold:#A9832F;
+    --teal:#1E3A34;
+    --muted:#6B5F52;
+    --cream-text:#EFE7D8;
+    --max:1120px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Karla',sans-serif; background:var(--parchment); color:var(--ink);
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  :focus-visible{outline:2px solid var(--flame); outline-offset:4px;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
+
+  .initiatives-hero{
+    position:relative; overflow:hidden; padding:154px 0 86px;
+    background:
+      radial-gradient(circle at 18% 20%, rgba(193,85,44,.13), transparent 34%),
+      radial-gradient(circle at 84% 80%, rgba(169,131,47,.14), transparent 36%),
+      linear-gradient(180deg,var(--parchment),var(--parchment-2));
+    text-align:center;
+  }
+  .initiatives-hero::before{
+    content:''; position:absolute; width:460px; height:460px; border:1px solid rgba(169,131,47,.14);
+    border-radius:50%; left:50%; top:46%; transform:translate(-50%,-50%); pointer-events:none;
+  }
+  .hero-content{position:relative; z-index:1; max-width:820px; margin:0 auto;}
+  .eyebrow{
+    display:block; font-family:'Cinzel',serif; font-size:11px; letter-spacing:.25em;
+    text-transform:uppercase; font-weight:600; color:var(--flame); margin-bottom:18px;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif; font-weight:400; letter-spacing:-.01em;}
+  h1{font-size:clamp(38px,6vw,66px); line-height:1.08;}
+  .hero-copy{max-width:660px; margin:24px auto 0; color:var(--muted); font-size:17px;}
+  .back-link{
+    display:inline-flex; align-items:center; gap:9px; min-height:44px; margin-top:28px;
+    font-family:'Cinzel',serif; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+    font-weight:600; color:var(--flame); border-bottom:1px solid rgba(193,85,44,.3);
+  }
+  .back-link::before{content:'\2190'; font-family:'Karla',sans-serif; font-size:17px;}
+
+  .initiative-nav{padding:30px 0; background:rgba(255,255,255,.38); border-block:1px solid rgba(36,27,46,.08);}
+  .initiative-nav .wrap{display:flex; flex-wrap:wrap; justify-content:center; gap:10px;}
+  .initiative-nav a{
+    display:inline-flex; align-items:center; min-height:42px; padding:8px 15px;
+    border:1px solid rgba(169,131,47,.25); border-radius:999px;
+    font-size:13px; color:var(--muted); background:rgba(247,241,230,.7);
+    transition:background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .initiative-nav a:hover{background:var(--ink); border-color:var(--ink); color:var(--cream-text);}
+
+  main{background:linear-gradient(180deg,var(--parchment) 0%,#FBF8F1 46%,var(--parchment) 100%);}
+  .initiatives{padding:88px 0 100px;}
+  .section-intro{max-width:700px; margin:0 auto 64px; text-align:center;}
+  .section-intro h2{font-size:clamp(30px,4.5vw,46px); line-height:1.14;}
+  .section-intro p{color:var(--muted); margin-top:18px; font-size:16px;}
+  .initiative-list{max-width:880px; margin:0 auto; position:relative;}
+  .initiative-list::before{
+    content:''; position:absolute; left:31px; top:20px; bottom:20px; width:1px;
+    background:linear-gradient(180deg,rgba(193,85,44,.55),rgba(169,131,47,.28));
+  }
+  .initiative{
+    position:relative; scroll-margin-top:110px; margin-bottom:34px; padding:38px 40px 36px 92px;
+    background:
+      radial-gradient(circle at 100% 0%,rgba(169,131,47,.1),transparent 38%),
+      rgba(255,255,255,.64);
+    border:1px solid rgba(36,27,46,.09); border-top-color:rgba(169,131,47,.35);
+    border-radius:16px; box-shadow:0 16px 42px rgba(36,27,46,.055);
+  }
+  .initiative:last-child{margin-bottom:0;}
+  .initiative-mark{
+    position:absolute; left:13px; top:38px; width:38px; height:38px; display:grid; place-items:center;
+    border:1px solid rgba(193,85,44,.45); border-radius:50%; background:var(--parchment);
+    color:var(--flame); font-family:'Fraunces',serif; font-size:15px;
+    box-shadow:0 0 0 8px var(--parchment);
+  }
+  .initiative-year{
+    display:inline-block; font-family:'Cinzel',serif; font-size:10.5px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--flame); font-weight:600; margin-bottom:8px;
+  }
+  .initiative h2{font-size:clamp(25px,3.4vw,36px); line-height:1.18;}
+  .initiative-lead{
+    margin-top:14px; color:var(--ink); font-family:'Fraunces',serif;
+    font-size:clamp(17px,2vw,20px); font-style:italic; line-height:1.55;
+  }
+  .initiative-body{display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:26px; padding-top:24px; border-top:1px solid rgba(36,27,46,.09);}
+  .detail-label{
+    display:block; font-family:'Cinzel',serif; font-size:10px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:7px;
+  }
+  .initiative-body p{color:var(--muted); font-size:14.5px;}
+
+  .closing{padding:88px 0; text-align:center; background:linear-gradient(180deg,var(--teal),#274A42); color:var(--cream-text);}
+  .closing .eyebrow{color:#D3AF58;}
+  .closing h2{font-size:clamp(30px,4.6vw,46px); max-width:720px; margin:0 auto; line-height:1.16;}
+  .closing p{max-width:600px; margin:20px auto 0; color:#D6CEC1;}
+  .closing-actions{display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:30px;}
+  .closing-actions a{
+    display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:12px 24px;
+    font-family:'Cinzel',serif; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+    font-weight:600; border:1px solid rgba(239,231,216,.55);
+  }
+  .closing-actions .primary{background:var(--cream-text); color:var(--teal); border-color:var(--cream-text);}
+
+  @media(max-width:700px){
+    .wrap{padding:0 20px;}
+    .initiatives-hero{padding:124px 0 68px;}
+    .initiative-nav .wrap{justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; padding-bottom:5px;}
+    .initiative-nav a{white-space:nowrap;}
+    .initiatives{padding:68px 0 76px;}
+    .section-intro{margin-bottom:48px;}
+    .initiative-list::before{left:19px;}
+    .initiative{padding:30px 22px 28px 58px; border-radius:13px;}
+    .initiative-mark{left:2px; top:30px; width:34px; height:34px; box-shadow:0 0 0 6px var(--parchment);}
+    .initiative-body{grid-template-columns:1fr; gap:18px;}
+    .closing{padding:70px 0;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<header class="initiatives-hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Compassion in Action</span>
+      <h1>Every Initiative Began by Listening</h1>
+      <p class="hero-copy">What began with one girl's education grew, one observed need at a time, into a family of initiatives supporting learning, wellbeing, dignity and self-reliance.</p>
+      <a class="back-link" href="index4.html#timeline">Back to the journey</a>
+    </div>
+  </div>
+</header>
+
+<nav class="initiative-nav" aria-label="Initiatives on this page">
+  <div class="wrap">
+    <a href="#school-education">School education</a>
+    <a href="#higher-education">Higher education</a>
+    <a href="#boys-education">Mentorship for boys</a>
+    <a href="#family-support">Family support</a>
+    <a href="#holistic-wellness">Holistic wellness</a>
+    <a href="#sewing-centre">Women's self-reliance</a>
+  </div>
+</nav>
+
+<main>
+  <section class="initiatives">
+    <div class="wrap">
+      <div class="section-intro">
+        <span class="eyebrow">The Work in Detail</span>
+        <h2>Six Responses. One Spirit of Service.</h2>
+        <p>Each programme is shaped by the same principle: understand the person and the family, respond with dignity, and remain present beyond the immediate need.</p>
+      </div>
+
+      <div class="initiative-list">
+        <article class="initiative" id="school-education">
+          <span class="initiative-mark" aria-hidden="true">01</span>
+          <span class="initiative-year">Established 10 June 1996</span>
+          <h2>School Education for Girls</h2>
+          <p class="initiative-lead">No deserving girl should be denied an education merely because her family cannot afford it.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>Girls from economically disadvantaged families, particularly those studying in government schools, were at risk of leaving education when household finances became strained.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Swami Vivekanand Students' Welfare Charitable Trust began by providing financial support for school education, creating continuity and confidence for students and their families.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="initiative" id="higher-education">
+          <span class="initiative-mark" aria-hidden="true">02</span>
+          <span class="initiative-year">Established 2001</span>
+          <h2>Higher Education for Young Women</h2>
+          <p class="initiative-lead">Support should not end at the school gate when a young woman is ready to pursue a larger ambition.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>Students who had successfully completed school still faced financial and academic barriers when moving into college and higher education.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Maa Shardamani Trust was established to carry that support forward through financial and academic assistance for young women pursuing advanced study.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="initiative" id="boys-education">
+          <span class="initiative-mark" aria-hidden="true">03</span>
+          <span class="initiative-year">Established 2010</span>
+          <h2>Education and Mentorship for Boys</h2>
+          <p class="initiative-lead">The same families revealed another need: their sons were also leaving education early for want of resources.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>Boys from economically disadvantaged households required both educational assistance and dependable guidance through long, demanding courses.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra supports and mentors students pursuing Engineering, Medicine, Pharmacy, MBA and Chartered Accountancy, continuing guidance into their professional lives.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="initiative" id="family-support">
+          <span class="initiative-mark" aria-hidden="true">04</span>
+          <span class="initiative-year">Begun October 2020</span>
+          <h2>Ration and Family Support</h2>
+          <p class="initiative-lead">When livelihoods disappeared during the pandemic, educational support alone could not protect a family's stability.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>A survey among students' families revealed widowed mothers, parents too ill to earn, and households struggling to balance rent, education and food.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Food assistance began with 50 families and now supports roughly 300. The process is designed to preserve dignity, with recovering households voluntarily making space for others in greater need.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="initiative" id="holistic-wellness">
+          <span class="initiative-mark" aria-hidden="true">05</span>
+          <span class="initiative-year">An ongoing practice</span>
+          <h2>Yoga, Pranayama and Meditation</h2>
+          <p class="initiative-lead">A person grows whole when the physical, mental, spiritual and emotional dimensions develop together.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>Academic and material assistance are most effective when people also develop self-control, positive thinking and the steadiness to meet difficulty with clarity.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Yoga, Pranayama and meditation are offered as disciplines of balance and inner awareness—not as fitness alone—supporting calmness, resilience and purposeful living.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="initiative" id="sewing-centre">
+          <span class="initiative-mark" aria-hidden="true">06</span>
+          <span class="initiative-year">Established 2025</span>
+          <h2>Women's Self-Reliance through Sewing</h2>
+          <p class="initiative-lead">Practical skill can become a quiet source of confidence, livelihood and independence.</p>
+          <div class="initiative-body">
+            <div>
+              <span class="detail-label">The need</span>
+              <p>Women and girls from underprivileged families needed accessible vocational skills that could support both household income and personal self-reliance.</p>
+            </div>
+            <div>
+              <span class="detail-label">The response</span>
+              <p>Vatsalyamayi Maa Basanti Ji Manihar Sewing Centre provides free training in sewing, tailoring and garment construction, building practical ability alongside self-respect.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <span class="eyebrow">Continue the Journey</span>
+      <h2>Service Becomes Meaningful When It Meets a Real Person, at the Right Time.</h2>
+      <p>Learn more about the Mission, ask about an initiative, or discover how you can take part in this continuing work.</p>
+      <div class="closing-actions">
+        <a class="primary" href="index4.html#contact">Connect with the Mission</a>
+        <a href="index4.html#timeline">Return to the timeline</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

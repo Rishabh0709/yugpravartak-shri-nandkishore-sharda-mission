@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhubala Ji Advani (Madhu Maa) | Yugpravartak Mission</title>
+    <meta name="description" content="Discover the spiritual journey and present-day leadership of Madhubala Ji Advani, lovingly known as Madhu Maa, President of the Mission.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/torch-bearers.css">
+</head>
+<body class="profile-page">
+    <a class="profile-skip-link" href="#main-content">Skip to main content</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="profile-hero">
+            <div class="profile-wrap">
+                <nav class="profile-breadcrumb" aria-label="Breadcrumb"><a href="index4.html">Home</a><span aria-hidden="true">/</span><span>Guiding Lights</span></nav>
+                <div class="profile-hero-grid">
+                    <div>
+                        <span class="profile-eyebrow">Leadership Today</span>
+                        <h1 class="profile-title">Madhubala Ji Advani</h1>
+                        <p class="profile-role">Lovingly known as Madhu Maa · President since 2021</p>
+                        <p class="profile-lead">Rooted in the wisdom of Bhaiyaji and the guidance of Maa Basanti, Madhu Maa sustains the Mission’s spiritual methodology while leading its educational, welfare and self-reliance initiatives with clarity and compassion.</p>
+                    </div>
+                    <figure class="profile-portrait-shell"><img class="profile-portrait" src="assets/images/madhu-advani.jpg" alt="Portrait of Madhubala Ji Advani, lovingly known as Madhu Maa and current President of the Mission"></figure>
+                </div>
+            </div>
+        </section>
+
+        <div class="profile-wrap">
+            <div class="profile-facts" aria-label="Key milestones">
+                <div class="profile-fact"><span>Born</span><strong>1951<br>Sirsa</strong></div>
+                <div class="profile-fact"><span>Divine meeting</span><strong>Met Maa Basanti<br>on 9 December 1970</strong></div>
+                <div class="profile-fact"><span>Present responsibility</span><strong>President of the Trust<br>since 2021</strong></div>
+            </div>
+        </div>
+
+        <section class="profile-story">
+            <div class="profile-wrap">
+                <header class="profile-story-intro">
+                    <span class="profile-eyebrow">A Living Continuity</span>
+                    <h2>A quiet life of preparation, service and sacred responsibility</h2>
+                    <p>Long before leadership became visible, Madhu Maa’s life had been shaped by spiritual inquiry and decades of selfless work. Her presidency is a continuation of that inner preparation—not a departure from it.</p>
+                </header>
+
+                <article class="profile-chapter">
+                    <div><span class="profile-chapter-number">Chapter I</span><h2>The day destiny unfolded</h2></div>
+                    <div class="profile-chapter-copy">
+                        <p>Madhubala Advani was born in 1951 in Sirsa, the youngest child of Late Shri Jeevanlal Advani and Late Smt. Lakshmi Devi. Her family had migrated from Sindh following Partition and settled in India through her father’s work with the Railways.</p>
+                        <p>On 9 December 1970, while attending to her mother in a hospital, the nineteen-year-old Madhu Maa unexpectedly met Maa Basanti Manihar. Within the hospital itself, Maa Basanti introduced her to Bhaiyaji Shri Nandkishore Sharda. What appeared accidental became the defining spiritual meeting of her life.</p>
+                    </div>
+                </article>
+
+                <article class="profile-chapter">
+                    <div><span class="profile-chapter-number">Chapter II</span><h2>The dawn of an inner journey</h2></div>
+                    <div class="profile-chapter-copy">
+                        <p>While pursuing an M.A. in Psychology in Jodhpur from 1971, Madhu Maa spent her days in spiritual contemplation and discussion with Maa Basanti and Bhaiyaji. Questions were met with clear, reasoned guidance, laying a foundation of knowledge that brought maturity and freedom from material attraction.</p>
+                        <p>Under Bhaiyaji’s gentle guidance, she undertook demanding spiritual disciplines and received profound inner experiences. Maa Basanti guided her toward the realization of the formless Supreme Absolute. Bhaiyaji also entrusted her with transcribing his spiritual work, <em>Wonderful World After Death</em>—a responsibility reflecting their deep spiritual trust.</p>
+                    </div>
+                </article>
+
+                <div class="profile-reflection">Leadership appeared in 2021, but its foundation had been laid through five decades of Sadhna, humility and unseen service.</div>
+
+                <article class="profile-chapter">
+                    <div><span class="profile-chapter-number">Chapter III</span><h2>From grassroots service to sacred responsibility</h2></div>
+                    <div class="profile-chapter-copy">
+                        <p>Madhu Maa joined the Swami Vivekanand Students’ Welfare Charitable Trust at its inception in 1996. She visited schools with Bhaiyaji, engaged personally with teachers, students and families, explained the Trust’s value-based approach and quietly coordinated essential work behind the scenes.</p>
+                        <p>After Maa Basanti left her mortal form in 2021, Madhu Maa humbly accepted responsibility as President. Today she oversees the Trust’s administration, spiritual literature, Sunday classes, educational assistance and lifelong mentorship, supported by a highly qualified and selfless team.</p>
+                        <p>Her leadership also carries the Mission’s compassion into food assistance, Yoga, Pranayama and meditation, and vocational training for women and girls. Through Sunday evening discourses, she continues to guide seekers toward inner growth while keeping the founding methodology intact.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="profile-contribution">
+            <div class="profile-wrap">
+                <header class="profile-contribution-header"><span class="profile-eyebrow">The Mission Today</span><h2>Ancient wisdom, actively sustained in the present</h2></header>
+                <div class="profile-principles">
+                    <article class="profile-principle"><span>01 · Continuity</span><h3>The original spirit</h3><p>Bhaiyaji’s principles and Maa Basanti’s stewardship remain the reference point for every decision and initiative.</p></article>
+                    <article class="profile-principle"><span>02 · Belonging</span><h3>Lifelong support</h3><p>Students and families receive more than assistance: they gain mentorship, values and the confidence that the Mission stands beside them.</p></article>
+                    <article class="profile-principle"><span>03 · Wholeness</span><h3>Service in four dimensions</h3><p>Education, welfare and self-reliance are joined with physical, mental, spiritual and emotional development.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-lineage">
+            <div class="profile-wrap">
+                <header class="profile-lineage-header"><span class="profile-eyebrow">The Living Lineage</span><h2>Three lives, one continuous light</h2></header>
+                <div class="profile-lineage-grid">
+                    <a class="profile-lineage-card" href="bhaiyaji.html"><div><span class="profile-lineage-role">The Spiritual Vision</span><strong>Shri Nandkishore Sharda</strong></div><span class="profile-lineage-action">Discover Bhaiyaji’s journey →</span></a>
+                    <a class="profile-lineage-card" href="basanti-manihar.html"><div><span class="profile-lineage-role">The Torchbearer</span><strong>Maa Basanti Manihar</strong></div><span class="profile-lineage-action">Continue her journey →</span></a>
+                    <article class="profile-lineage-card is-current" aria-current="page"><div><span class="profile-lineage-role">Leadership Today</span><strong>Madhu Maa</strong></div><span class="profile-lineage-action">You are here</span></article>
+                </div>
+                <div class="profile-closing"><a class="profile-button" href="index4.html#origin">Return to the Mission story</a><a class="profile-button profile-button--primary" href="activities.html">Explore the work</a></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

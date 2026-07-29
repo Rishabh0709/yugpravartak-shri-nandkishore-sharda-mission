@@ -117,14 +117,15 @@ ol {
 ========================================================== */
 
 #header-placeholder {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    height: var(--header-height);
 }
 
 #header,
 .site-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;

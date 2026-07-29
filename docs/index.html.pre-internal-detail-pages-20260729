@@ -320,7 +320,7 @@
 
         <p class="closing__crosslink">
           <span data-i18n="closing.crosslinkLead">Looking for the scholarship trust this mission inspired?</span>
-          <a href="../index4.html" data-i18n="closing.crosslinkA">Visit the Mission homepage →</a>
+          <a href="https://www.manidweepjodhpur.org" target="_blank" rel="noopener" data-i18n="closing.crosslinkA">Visit Swami Vivekanand Students' Welfare Charitable Trust →</a>
         </p>
       </div>
     </section>
