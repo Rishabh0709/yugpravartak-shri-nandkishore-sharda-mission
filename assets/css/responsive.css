@@ -647,6 +647,27 @@
     }
 }
 
+@media (max-width: 992px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .activity-card__body {
+        padding: 20px 20px 24px;
+    }
+
+    .activity-card__body h3 {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* FLAG: .journey-cta__actions / .journey-action — no matching markup. Current .journey-cta block only contains a <p> and a single .btn, not this actions/action structure. Possibly planned but unbuilt. */
@@ -675,56 +696,6 @@
 }
 
 
-@media (max-width: 768px) {
-
-    .service-timeline::before {
-        left: 25px;
-    }
-
-    .service-timeline-card {
-        grid-template-columns: 52px minmax(0, 1fr);
-        gap: 18px;
-        margin-bottom: 26px;
-    }
-
-    .service-timeline-card__year {
-        width: 52px;
-        height: 52px;
-        font-size: 0.95rem;
-    }
-
-    .service-timeline-card__content {
-        padding: 24px;
-        border-radius: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .service-timeline::before {
-        left: 21px;
-    }
-
-    .service-timeline-card {
-        grid-template-columns: 44px minmax(0, 1fr);
-        gap: 14px;
-    }
-
-    .service-timeline-card__year {
-        width: 44px;
-        height: 44px;
-        font-size: 0.82rem;
-    }
-
-    .service-timeline-card__content {
-        padding: 21px 19px;
-    }
-
-    .service-timeline-card__content p {
-        font-size: 0.95rem;
-        line-height: 1.72;
-    }
-}
 
 /* FLAG: the entire block below (.hero-content, .hero-opening, .hero-logo, .hero-mountains, .hero-rays, .hero-mist, .hero-particles span, .hero-journey-arrow, .hero-journey-link, .hero-description, .hero-sky) targets a completely different hero implementation than the current one (canvas-based #heroParticles + .hero-bg). This looks like it belongs to the same abandoned "Manidweep" storyboard concept as main.js and i18n.js. None of these classes exist in the live index.html hero. Safe to archive alongside those files once confirmed. */
 @media (max-width: 768px) {
