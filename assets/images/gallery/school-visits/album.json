@@ -1,0 +1,38 @@
+{
+  "album": "school-visits",
+  "generatedAt": "2026-07-30T05:49:47.349Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\manidweep_latest_website\\assets\\images\\gallery\\sanskar_classes3.png",
+  "photographCount": 1,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "school-visits",
+      "original": {
+        "file": "sanskar_classes3.png",
+        "width": 1180,
+        "height": 546,
+        "bytes": 1822540
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15518
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 546,
+        "bytes": 55298
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1180,
+        "height": 546,
+        "bytes": 85286
+      },
+      "alt": "Students listening during a value-based guidance session at a school visit",
+      "caption": "Students participating in a value-based guidance session during a Mission school visit."
+    }
+  ]
+}

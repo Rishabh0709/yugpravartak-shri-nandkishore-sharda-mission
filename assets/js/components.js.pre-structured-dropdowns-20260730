@@ -114,20 +114,10 @@ function initializeNavigation() {
     const navigation = document.querySelector(".site-nav");
     const overlay = document.querySelector(".nav-overlay");
     const navigationLinks = document.querySelectorAll(".site-nav a");
-    const submenuItems = [...document.querySelectorAll(".has-submenu")];
-    const submenuButtons = [...document.querySelectorAll(".nav-submenu-toggle")];
 
     if (!toggleButton || !navigation || !overlay) {
         return;
     }
-
-    const closeSubmenus = (exception = null) => {
-        submenuItems.forEach((item) => {
-            if (item === exception) return;
-            item.classList.remove("is-open");
-            item.querySelector(".nav-submenu-toggle")?.setAttribute("aria-expanded", "false");
-        });
-    };
 
     const openNavigation = () => {
         navigation.classList.add("is-open");
@@ -143,7 +133,6 @@ function initializeNavigation() {
         toggleButton.classList.remove("is-active");
         toggleButton.setAttribute("aria-expanded", "false");
         document.body.classList.remove("nav-open");
-        closeSubmenus();
     };
 
     toggleButton.addEventListener("click", () => {
@@ -158,42 +147,15 @@ function initializeNavigation() {
 
     overlay.addEventListener("click", closeNavigation);
 
-    submenuButtons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-            event.stopPropagation();
-            const item = button.closest(".has-submenu");
-            const willOpen = !item.classList.contains("is-open");
-
-            closeSubmenus(item);
-            item.classList.toggle("is-open", willOpen);
-            button.setAttribute("aria-expanded", String(willOpen));
-        });
-    });
-
     navigationLinks.forEach((link) => {
         link.addEventListener("click", closeNavigation);
     });
 
-    document.addEventListener("click", (event) => {
-        if (!navigation.contains(event.target)) closeSubmenus();
-    });
-
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
-            const openItem = document.querySelector(".has-submenu.is-open");
-
-            if (openItem) {
-                const openButton = openItem.querySelector(".nav-submenu-toggle");
-                closeSubmenus();
-                openButton?.focus();
-            } else {
-                closeNavigation();
-                toggleButton.focus();
-            }
+            closeNavigation();
         }
     });
-
-    window.matchMedia("(min-width: 993px)").addEventListener("change", closeSubmenus);
 }
 
 function setCurrentYear() {
@@ -211,33 +173,17 @@ function setCurrentYear() {
 function highlightActiveNavigation() {
     const currentPage =
         window.location.pathname.split("/").pop() || "index.html";
-    const currentHash = window.location.hash;
 
     const navigationLinks = document.querySelectorAll(
         ".site-nav a, .footer-navigation a"
     );
 
     navigationLinks.forEach((link) => {
-        const rawHref = link.getAttribute("href");
+        const linkPage = link.getAttribute("href");
 
-        if (!rawHref || /^(https?:|mailto:|tel:)/.test(rawHref)) return;
-
-        const destination = new URL(rawHref, window.location.href);
-        const linkPage = destination.pathname.split("/").pop() || "index.html";
-        const samePage = linkPage === currentPage;
-        const exactDestination = samePage && (
-            destination.hash
-                ? destination.hash === currentHash
-                : !currentHash
-        );
-
-        if (exactDestination) {
+        if (linkPage === currentPage) {
             link.classList.add("active");
             link.setAttribute("aria-current", "page");
-        }
-
-        if (samePage) {
-            link.closest(".has-submenu")?.classList.add("is-current");
         }
     });
 }

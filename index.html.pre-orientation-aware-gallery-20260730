@@ -596,38 +596,21 @@
   .testi .who{font-family:'Cinzel'; font-size:12.5px; letter-spacing:.09em; color:var(--flame); margin-top:18px; text-transform:uppercase; display:block;}
 
   /* ---------- GALLERY ---------- */
-  .home-gallery-intro{max-width:680px; margin:16px auto 0; text-align:center;}
-  .home-gallery-shell{position:relative; margin-top:42px;}
-  .home-gallery-track{
-    --rail-height:clamp(280px,29vw,368px);
-    display:flex; gap:15px; overflow-x:auto; overscroll-behavior-inline:contain;
-    scroll-snap-type:x mandatory; scrollbar-width:none; padding:8px 2px 24px;
+  .gal-grid{display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:130px; gap:8px; margin-top:50px;}
+  .gal-grid img{width:100%; height:100%; object-fit:cover;}
+  .gal-grid a:nth-child(1){grid-column:span 3; grid-row:span 2;}
+  .gal-grid a:nth-child(2){grid-column:span 3; grid-row:span 1;}
+  .gal-grid a:nth-child(3){grid-column:span 3; grid-row:span 1;}
+  .gal-grid a:nth-child(4){grid-column:span 2; grid-row:span 1;}
+  .gal-grid a:nth-child(5){grid-column:span 2; grid-row:span 1;}
+  .gal-grid a:nth-child(6){grid-column:span 2; grid-row:span 1;}
+  @media(max-width:760px){
+    .gal-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:150px;}
+    .gal-grid a:nth-child(n){grid-column:span 1 !important; grid-row:span 1 !important;}
   }
-  .home-gallery-track::-webkit-scrollbar{display:none;}
-  .home-gallery-card{
-    flex:0 0 auto; height:var(--rail-height); aspect-ratio:var(--photo-ratio,1.5);
-    position:relative; overflow:hidden;
-    border-radius:18px; scroll-snap-align:start; background:#D8CDBD;
-    box-shadow:0 14px 38px rgba(52,38,25,.12); isolation:isolate;
-  }
-  .home-gallery-card img{width:100%; height:100%; object-fit:contain; background:#D8CDBD; transition:transform .55s ease;}
-  .home-gallery-card::after{content:""; position:absolute; inset:36% 0 0; z-index:1; pointer-events:none; background:linear-gradient(to bottom,transparent,rgba(24,18,14,.78));}
-  .home-gallery-caption{position:absolute; z-index:2; inset:auto 22px 20px; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.34);}
-  .home-gallery-caption strong{display:block; font-family:'Fraunces'; font-size:clamp(20px,2vw,26px); font-weight:500; line-height:1.12;}
-  .home-gallery-caption span{display:block; margin-top:5px; font-size:14px; line-height:1.35; color:rgba(255,255,255,.86);}
-  .home-gallery-card:hover img{transform:scale(1.025);}
-  .home-gallery-card:focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
-  .home-gallery-controls{display:flex; justify-content:flex-end; gap:10px; margin-bottom:12px;}
-  .home-gallery-control{width:44px; height:44px; border-radius:50%; border:1px solid rgba(115,77,34,.22); background:rgba(255,255,255,.72); color:var(--ink); font-size:22px; line-height:1; cursor:pointer; box-shadow:0 6px 18px rgba(52,38,25,.07); transition:.25s ease;}
-  .home-gallery-control:hover:not(:disabled){background:#fff; border-color:var(--gold); transform:translateY(-1px);}
-  .home-gallery-control:disabled{opacity:.35; cursor:default;}
-  @media(max-width:700px){
-    .home-gallery-shell{margin-top:34px;}
-    .home-gallery-track{--rail-height:270px; gap:12px; padding-bottom:18px;}
-    .home-gallery-card{border-radius:14px;}
-    .home-gallery-caption{inset:auto 17px 16px;}
-    .home-gallery-controls{display:none;}
-  }
+  .gal-grid a{overflow:hidden; display:block; position:relative;}
+  .gal-grid img{transition:transform .5s ease;}
+  .gal-grid a:hover img{transform:scale(1.06);}
 
   /* ---------- CONTACT ---------- */
   .band-ink{background:var(--ink);}
@@ -757,13 +740,14 @@
       <p style="margin-top:22px;">That divine purpose found an organised and enduring form through Madhu Maa. Rooted in the eternal principles established, practised and taught by Bhaiyaji—and carried forward with unwavering devotion by Maa Basanti—she established the <span class="mission-name-highlight">Yugpravartak Shri Nandkishore Sharda Mission</span> to preserve the same spiritual methodology and extend it through accessible education and selfless service.</p>
       <p style="margin-top:16px;">The Mission continues in that original spirit. Every initiative—from spiritual guidance and scholarships to family support and self-reliance—serves one deliberate vision: the holistic development of every life it touches, in pursuit of universal brotherhood, world peace and human welfare.</p>
     </div>
+  </div>
+</section>
 
-    <blockquote class="name-quote">
+<!-- ================= BHAIYAJI'S QUOTE ================= -->
+<blockquote class="name-quote">
       “Selfless service is the highest expression of spiritual realization.”
       <cite>— Yugpravartak Shri Nandkishore Sharda</cite>
     </blockquote>
-  </div>
-</section>
 
 <!-- ================= SADHNA ================= -->
 <section class="sadhna-band" id="sadhna">
@@ -936,7 +920,7 @@
         <div class="num">₹1.07 Cr+</div>
         <h3>Ration and Family Assistance</h3>
         <p>Essential food support delivered to families through a thoughtful process that preserves dignity and continuity of care.</p>
-        <span class="micro-note">Approximately 300 families supported</span>
+        <span class="micro-note">Approximately 300 families supported every month</span>
       </article>
 
       <article class="stat">
@@ -991,43 +975,14 @@
     <div class="section-head center">
       <span class="eyebrow">Moments of Service</span>
       <h2>A Journey Captured</h2>
-      <p class="home-gallery-intro">Real moments from a living tradition of learning, inner growth and service. Each photograph opens the story it belongs to.</p>
     </div>
-    <div class="home-gallery-shell">
-      <div class="home-gallery-controls" aria-label="Gallery controls">
-        <button class="home-gallery-control" type="button" data-gallery-prev aria-label="View previous photographs">&#8592;</button>
-        <button class="home-gallery-control" type="button" data-gallery-next aria-label="View next photographs">&#8594;</button>
-      </div>
-      <div class="home-gallery-track" data-home-gallery tabindex="0" aria-label="Selected moments from the Mission">
-        <a class="home-gallery-card" href="gallery.html#album=sunday-sanskar-classes&amp;photo=1">
-          <img src="assets/images/gallery/sunday-sanskar-classes/01-card.webp" alt="Children gathered for a Sunday Sanskar class" loading="lazy">
-          <span class="home-gallery-caption"><strong>Sunday Sanskar Classes</strong><span>Character growing alongside knowledge</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#education">
-          <img src="assets/images/gallery/cheque.jpg" alt="A student receiving an education-support cheque at a presentation ceremony" loading="lazy">
-          <span class="home-gallery-caption"><strong>Education Support</strong><span>Opportunity made possible with dignity</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#welfare">
-          <img src="assets/images/gallery/ration.jpg" alt="Mission volunteers presenting ration supplies to a family" loading="lazy">
-          <span class="home-gallery-caption"><strong>Family Assistance</strong><span>Care offered with continuity and respect</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#spiritual">
-          <img src="assets/images/gallery/yoga_class.jpg" alt="School students practising yoga together in an open courtyard" loading="lazy">
-          <span class="home-gallery-caption"><strong>Yoga &amp; Well-being</strong><span>Stillness, discipline and inner balance</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#spiritual">
-          <img src="assets/images/gallery/guidance1.jpg" alt="A spiritual guidance session attended by young students" loading="lazy">
-          <span class="home-gallery-caption"><strong>Spiritual Guidance</strong><span>Wisdom shared through attentive dialogue</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#album=school-visits&amp;photo=1">
-          <img src="assets/images/gallery/school-visits/01-full.webp" alt="Students seated together during a Mission school visit" loading="lazy">
-          <span class="home-gallery-caption"><strong>School Visits</strong><span>Values carried into learning spaces</span></span>
-        </a>
-        <a class="home-gallery-card" href="gallery.html#education">
-          <img src="assets/images/gallery/scholarship3.jpg" alt="A student receiving a scholarship cheque in the presence of Mission members" loading="lazy">
-          <span class="home-gallery-caption"><strong>Scholarship Support</strong><span>Encouraging aspiration through education</span></span>
-        </a>
-      </div>
+    <div class="gal-grid">
+      <a href="gallery.html"><img src="assets/images/ration.jpg" alt="Placeholder — replace with a signature Mission photo"></a>
+      <a href="gallery.html"><img src="https://picsum.photos/seed/gal-scholar/500/300" alt="Placeholder — replace with scholarship handover photo"></a>
+      <a href="gallery.html"><img src="https://picsum.photos/seed/gal-yoga/500/300" alt="Placeholder — replace with yoga class photo"></a>
+      <a href="gallery.html"><img src="https://picsum.photos/seed/gal-ration/400/300" alt="Placeholder — replace with ration distribution photo"></a>
+      <a href="gallery.html"><img src="https://picsum.photos/seed/gal-sewing/400/300" alt="Placeholder — replace with sewing centre photo"></a>
+      <a href="gallery.html"><img src="https://picsum.photos/seed/gal-community/400/300" alt="Placeholder — replace with community gathering photo"></a>
     </div>
     <div class="btn-row" style="justify-content:center; margin-top:50px;">
       <a class="btn btn-ghost" href="gallery.html">View Complete Gallery →</a>
@@ -1080,6 +1035,5 @@
 
 <script src="assets/js/components.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/home-gallery.js"></script>
 </body>
 </html>

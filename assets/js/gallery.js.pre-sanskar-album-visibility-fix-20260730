@@ -1,0 +1,365 @@
+"use strict";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filters = Array.from(document.querySelectorAll(".gallery-filter"));
+    const groups = Array.from(document.querySelectorAll("[data-gallery-group]"));
+    const albumCards = Array.from(document.querySelectorAll(".gallery-card"));
+    const featuredLinks = Array.from(document.querySelectorAll(".gallery-feature-link"));
+    const collection = document.querySelector(".gallery-collection");
+    const dialog = document.querySelector(".gallery-lightbox");
+
+    if (!filters.length || !groups.length || !albumCards.length || !dialog) {
+        return;
+    }
+
+    const image = dialog.querySelector(".lightbox-image");
+    const title = dialog.querySelector("#lightbox-title");
+    const caption = dialog.querySelector(".lightbox-caption");
+    const counter = dialog.querySelector(".lightbox-counter");
+    const thumbnails = dialog.querySelector(".lightbox-thumbnails");
+    const closeButton = dialog.querySelector(".lightbox-close");
+    const previousButton = dialog.querySelector(".lightbox-prev");
+    const nextButton = dialog.querySelector(".lightbox-next");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let activeFilter = "all";
+    let activeAlbum = null;
+    let activeIndex = 0;
+    let opener = null;
+    let albumOpenedWithHistory = false;
+    let touchStartX = 0;
+
+    const slugify = (value) => value
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[’']/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+
+    const albums = new Map(albumCards.map((card) => {
+        const cardImage = card.querySelector("img");
+        const albumSlug = card.dataset.album || slugify(card.dataset.title || "mission-album");
+        const albumTitle = card.dataset.title || "Mission Album";
+        const albumCaption = card.dataset.caption || "A moment from the Mission’s continuing work.";
+        const category = card.dataset.category || "all";
+        const coverFull = card.dataset.full || cardImage.currentSrc || cardImage.src;
+        const coverThumb = card.dataset.thumb || cardImage.currentSrc || cardImage.src;
+        const photos = [{
+            full: coverFull,
+            thumb: coverThumb,
+            alt: cardImage.alt,
+            caption: albumCaption
+        }];
+
+        for (let index = 2; index <= 10; index += 1) {
+            const seed = `${albumSlug}-${index}`;
+            photos.push({
+                full: `https://picsum.photos/seed/${seed}/1600/1100`,
+                thumb: `https://picsum.photos/seed/${seed}/240/165`,
+                alt: `Temporary stock photograph ${index} for ${albumTitle}`,
+                caption: `${albumTitle} — representative photograph ${index} of 10.`
+            });
+        }
+
+        card.dataset.album = albumSlug;
+        card.setAttribute("aria-label", `Open ${albumTitle} album, 10 photographs`);
+
+        return [albumSlug, {
+            slug: albumSlug,
+            title: albumTitle,
+            description: albumCaption,
+            category,
+            photos,
+            card,
+            manifestLoaded: false
+        }];
+    }));
+
+    const createPlaceholderPhoto = (album, index) => {
+        const seed = `${album.slug}-${index}`;
+        return {
+            full: `https://picsum.photos/seed/${seed}/1600/1100`,
+            thumb: `https://picsum.photos/seed/${seed}/240/165`,
+            alt: `Temporary stock photograph ${index} for ${album.title}`,
+            caption: `${album.title} — representative photograph ${index} of 10.`
+        };
+    };
+
+    const hydrateAlbumFromManifest = async (album) => {
+        if (album.manifestLoaded) {
+            return;
+        }
+
+        album.manifestLoaded = true;
+
+        try {
+            const albumPath = `assets/images/gallery/${album.slug}`;
+            const response = await fetch(`${albumPath}/album.json`);
+            if (!response.ok) {
+                return;
+            }
+
+            const manifest = await response.json();
+            if (!Array.isArray(manifest.photographs) || !manifest.photographs.length) {
+                return;
+            }
+
+            const localPhotos = manifest.photographs.map((photo, index) => ({
+                full: `${albumPath}/${photo.full.file}`,
+                thumb: `${albumPath}/${photo.thumbnail.file}`,
+                alt: photo.alt || `Photograph ${index + 1} from ${album.title}`,
+                caption: photo.caption || album.description
+            }));
+
+            for (let index = localPhotos.length + 1; index <= 10; index += 1) {
+                localPhotos.push(createPlaceholderPhoto(album, index));
+            }
+
+            album.photos = localPhotos;
+        } catch (error) {
+            console.info(`Using temporary photographs for ${album.title}.`, error);
+        }
+    };
+
+    const applyFilter = (filterValue, shouldFocusCollection = false, updateAddress = true) => {
+        const validFilter = filters.some((filter) => filter.dataset.filter === filterValue)
+            ? filterValue
+            : "all";
+
+        activeFilter = validFilter;
+
+        filters.forEach((filter) => {
+            const isActive = filter.dataset.filter === activeFilter;
+            filter.classList.toggle("is-active", isActive);
+            filter.setAttribute("aria-pressed", String(isActive));
+        });
+
+        groups.forEach((group) => {
+            group.hidden = activeFilter !== "all" && group.dataset.galleryGroup !== activeFilter;
+        });
+
+        if (updateAddress) {
+            const hash = activeFilter === "all" ? "gallery" : activeFilter;
+            history.replaceState(null, "", `#${hash}`);
+        }
+
+        if (shouldFocusCollection && collection) {
+            collection.setAttribute("tabindex", "-1");
+            collection.focus({ preventScroll: true });
+        }
+    };
+
+    const createThumbnails = () => {
+        thumbnails.replaceChildren();
+
+        activeAlbum.photos.forEach((photo, index) => {
+            const button = document.createElement("button");
+            const thumbnail = document.createElement("img");
+
+            button.type = "button";
+            button.className = "lightbox-thumbnail";
+            button.setAttribute("role", "listitem");
+            button.setAttribute("aria-label", `View photograph ${index + 1} of ${activeAlbum.photos.length}`);
+            thumbnail.src = photo.thumb;
+            thumbnail.alt = "";
+            thumbnail.loading = "lazy";
+            button.append(thumbnail);
+            button.addEventListener("click", () => showPhoto(index));
+            thumbnails.append(button);
+        });
+    };
+
+    const updateAlbumAddress = () => {
+        if (!activeAlbum) {
+            return;
+        }
+        history.replaceState(history.state, "", `#album=${activeAlbum.slug}&photo=${activeIndex + 1}`);
+    };
+
+    const showPhoto = (index, updateAddress = true) => {
+        if (!activeAlbum) {
+            return;
+        }
+
+        const photoCount = activeAlbum.photos.length;
+        activeIndex = (index + photoCount) % photoCount;
+        const photo = activeAlbum.photos[activeIndex];
+
+        image.src = photo.full;
+        image.alt = photo.alt;
+        title.textContent = activeAlbum.title;
+        caption.textContent = photo.caption;
+        counter.textContent = `Photograph ${activeIndex + 1} of ${photoCount}`;
+
+        Array.from(thumbnails.children).forEach((thumbnail, thumbnailIndex) => {
+            const isCurrent = thumbnailIndex === activeIndex;
+            thumbnail.classList.toggle("is-active", isCurrent);
+            if (isCurrent) {
+                thumbnail.setAttribute("aria-current", "true");
+                thumbnail.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", inline: "center", block: "nearest" });
+            } else {
+                thumbnail.removeAttribute("aria-current");
+            }
+        });
+
+        if (updateAddress) {
+            updateAlbumAddress();
+        }
+    };
+
+    const openAlbum = async (album, requestedPhoto = 0, pushHistory = true) => {
+        if (!album) {
+            return;
+        }
+
+        await hydrateAlbumFromManifest(album);
+        activeAlbum = album;
+        opener = album.card;
+        applyFilter(album.category, false, false);
+        createThumbnails();
+
+        if (pushHistory) {
+            history.pushState({ galleryAlbum: album.slug }, "", `#album=${album.slug}&photo=${requestedPhoto + 1}`);
+            albumOpenedWithHistory = true;
+        } else {
+            albumOpenedWithHistory = false;
+        }
+
+        showPhoto(requestedPhoto, false);
+
+        if (!dialog.open) {
+            dialog.showModal();
+        }
+        closeButton.focus();
+    };
+
+    const closeAlbum = (useHistory = true) => {
+        if (!activeAlbum) {
+            return;
+        }
+
+        const category = activeAlbum.category;
+
+        if (dialog.open) {
+            dialog.close();
+        }
+
+        if (useHistory && albumOpenedWithHistory) {
+            history.back();
+        } else {
+            history.replaceState(null, "", `#${category}`);
+        }
+
+        activeAlbum = null;
+        albumOpenedWithHistory = false;
+    };
+
+    const parseAlbumHash = () => {
+        const hash = window.location.hash.slice(1);
+
+        if (!hash.startsWith("album=")) {
+            return null;
+        }
+
+        const parameters = new URLSearchParams(hash);
+        const album = albums.get(parameters.get("album"));
+        const requestedPhoto = Math.max(0, Number.parseInt(parameters.get("photo") || "1", 10) - 1);
+
+        return album ? { album, requestedPhoto } : null;
+    };
+
+    filters.forEach((filter) => {
+        filter.addEventListener("click", () => applyFilter(filter.dataset.filter, true));
+    });
+
+    featuredLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            const targetCategory = link.dataset.galleryNav;
+            const targetGroup = groups.find((group) => group.dataset.galleryGroup === targetCategory);
+
+            applyFilter(targetCategory);
+
+            if (targetGroup) {
+                const targetHeading = targetGroup.querySelector("h2");
+                targetGroup.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" });
+
+                if (targetHeading) {
+                    targetHeading.setAttribute("tabindex", "-1");
+                    targetHeading.focus({ preventScroll: true });
+                }
+            }
+        });
+    });
+
+    albumCards.forEach((card) => {
+        card.addEventListener("click", () => void openAlbum(albums.get(card.dataset.album)));
+    });
+
+    closeButton.addEventListener("click", () => closeAlbum());
+    previousButton.addEventListener("click", () => showPhoto(activeIndex - 1));
+    nextButton.addEventListener("click", () => showPhoto(activeIndex + 1));
+
+    dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) {
+            closeAlbum();
+        }
+    });
+
+    dialog.addEventListener("cancel", (event) => {
+        event.preventDefault();
+        closeAlbum();
+    });
+
+    dialog.addEventListener("close", () => {
+        image.removeAttribute("src");
+        thumbnails.replaceChildren();
+        if (opener) {
+            opener.focus();
+        }
+    });
+
+    dialog.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            showPhoto(activeIndex - 1);
+        }
+        if (event.key === "ArrowRight") {
+            event.preventDefault();
+            showPhoto(activeIndex + 1);
+        }
+    });
+
+    dialog.addEventListener("touchstart", (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+
+    dialog.addEventListener("touchend", (event) => {
+        const distance = event.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(distance) > 55) {
+            showPhoto(distance > 0 ? activeIndex - 1 : activeIndex + 1);
+        }
+    }, { passive: true });
+
+    window.addEventListener("popstate", () => {
+        const albumHash = parseAlbumHash();
+
+        if (albumHash) {
+            void openAlbum(albumHash.album, albumHash.requestedPhoto, false);
+            return;
+        }
+
+        if (dialog.open) {
+            closeAlbum(false);
+        }
+
+        const categoryHash = window.location.hash.slice(1);
+        applyFilter(categoryHash && categoryHash !== "gallery" ? categoryHash : "all", false, false);
+    });
+
+    const initialAlbum = parseAlbumHash();
+    if (initialAlbum) {
+        void openAlbum(initialAlbum.album, initialAlbum.requestedPhoto, false);
+    } else {
+        const initialHash = window.location.hash.slice(1);
+        applyFilter(initialHash && initialHash !== "gallery" ? initialHash : "all", false, false);
+    }
+});
