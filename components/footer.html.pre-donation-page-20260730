@@ -1,0 +1,65 @@
+<footer class="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+
+    <div class="container footer-inner">
+        <div class="footer-introduction">
+            <a href="index.html" class="footer-brand" aria-label="Yugpravartak Shri Nandkishore Sharda Mission homepage">
+                <img src="assets/images/logo.png" alt="" class="footer-logo" width="120" height="120">
+            </a>
+            <div class="footer-identity">
+                <span class="footer-kicker">Divine wisdom · Selfless service · Inner transformation</span>
+                <h2 class="footer-title">Yugpravartak Shri Nandkishore Sharda Mission</h2>
+                <p class="footer-tagline">Rooted in eternal wisdom and expressed through education, compassionate service and spiritual awakening—toward universal brotherhood and world peace.</p>
+            </div>
+            <div class="footer-primary-actions">
+                <a class="footer-action footer-action--primary" href="activities.html">Explore Our Work</a>
+                <a class="footer-action" href="impact.html">View Our Impact</a>
+            </div>
+        </div>
+
+        <div class="footer-navigation" aria-label="Footer navigation">
+            <nav class="footer-link-group" aria-labelledby="footer-about-heading">
+                <h3 id="footer-about-heading">About the Mission</h3>
+                <a href="index.html#origin">About Overview</a>
+                <a href="index.html#timeline">Our Journey</a>
+                <a href="bhaiyaji.html">Bhaiyaji</a>
+                <a href="basanti-manihar.html">Maa Basanti</a>
+                <a href="madhubala-advani.html">Madhu Maa</a>
+            </nav>
+
+            <nav class="footer-link-group" aria-labelledby="footer-work-heading">
+                <h3 id="footer-work-heading">Our Work</h3>
+                <a href="activities.html">All Trusts &amp; Activities</a>
+                <a href="swami-vivekanand-trust.html">Swami Vivekanand Students’ Trust</a>
+                <a href="activities.html#maa-shardamani-trust">Maa Shardamani Trust</a>
+                <a href="activities.html#adhyatm-kendra">Adhyatm Kendra</a>
+                <a href="activities.html#gyan-ganga-mission">Gyan Ganga Mission</a>
+            </nav>
+
+            <nav class="footer-link-group" aria-labelledby="footer-explore-heading">
+                <h3 id="footer-explore-heading">Explore</h3>
+                <a href="sunday-sanskar-classes.html">Sunday Sanskar Classes</a>
+                <a href="infrastructure-support.html">Infrastructure Support</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="impact.html">Our Collective Impact</a>
+                <a href="transparency.html">Governance &amp; Documents</a>
+            </nav>
+
+            <section class="footer-contact" aria-labelledby="footer-contact-heading">
+                <h3 id="footer-contact-heading">Visit &amp; Connect</h3>
+                <address>
+                    <span>‘Manidweep’, A-183 Shastri Nagar,<br>Jodhpur, Rajasthan – 342001</span>
+                    <a href="tel:+919414917901">+91 94149 17901</a>
+                    <a href="mailto:kishoreggm@gmail.com">kishoreggm@gmail.com</a>
+                </address>
+                <a class="footer-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Manidweep+A-183+Shastri+Nagar+Jodhpur+Rajasthan" target="_blank" rel="noopener">Plan your visit <span aria-hidden="true">↗</span></a>
+            </section>
+        </div>
+
+        <div class="footer-closing">
+            <p class="copyright">© <span data-current-year></span> Yugpravartak Shri Nandkishore Sharda Mission. All rights reserved.</p>
+            <p class="footer-closing-thought">May knowledge awaken discernment, and discernment become compassionate action.</p>
+            <a class="footer-top-link" href="#main-content">Return to top <span aria-hidden="true">↑</span></a>
+        </div>
+    </div>
+</footer>

@@ -631,14 +631,28 @@
 
   /* ---------- CONTACT ---------- */
   .band-ink{background:var(--ink);}
-  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; margin-top:50px;}
-  @media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
-  .contact-item{margin-bottom:26px;}
-  .contact-item .tag{font-family:'Cinzel'; font-size:12.5px; letter-spacing:.11em; color:#D0AA56; text-transform:uppercase; margin-bottom:6px; display:block;}
-  .contact-item p, .contact-item a{color:#F4EEE4; font-size:17.5px;}
-  .contact-item a:hover{color:var(--gold);}
-  .map-frame{width:100%; aspect-ratio:4/3; border:1px solid rgba(239,231,216,0.18); overflow:hidden;}
-  .map-frame img{width:100%; height:100%; object-fit:cover;}
+  .contact-compact{padding:58px 0; overflow:hidden;}
+  .contact-compact-grid{display:grid; grid-template-columns:minmax(0,1.25fr) minmax(250px,.72fr) 176px; gap:clamp(30px,5vw,68px); align-items:center;}
+  .contact-compact-copy h2{max-width:650px; margin-top:10px; font-size:clamp(34px,4vw,50px); line-height:1.08;}
+  .contact-compact-copy p{max-width:680px; margin-top:14px; color:#D9D1C6; font-size:17px; line-height:1.7;}
+  .contact-compact-copy .btn-row{margin-top:23px;}
+  .contact-quick{display:grid; gap:17px; padding-left:27px; border-left:1px solid rgba(208,170,86,.32);}
+  .contact-quick-item span{display:block; margin-bottom:3px; color:#D0AA56; font-family:'Cinzel'; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;}
+  .contact-quick-item a,.contact-quick-item p{color:#F4EEE4; font-size:15.5px; line-height:1.45;}
+  .contact-quick-item a:hover{color:var(--gold);}
+  .contact-compact-photo{position:relative; width:176px; aspect-ratio:2/3; justify-self:end; overflow:hidden; border:1px solid rgba(208,170,86,.34); border-radius:88px 88px 14px 14px; background:#efe5d4; box-shadow:0 18px 42px rgba(8,18,16,.25);}
+  .contact-compact-photo img{width:100%; height:100%; object-fit:cover; object-position:center center;}
+  @media(max-width:900px){
+    .contact-compact-grid{grid-template-columns:minmax(0,1fr) 150px; gap:28px;}
+    .contact-quick{grid-column:1/-1; grid-template-columns:repeat(3,1fr); padding:22px 0 0; border-top:1px solid rgba(208,170,86,.25); border-left:0;}
+    .contact-compact-photo{width:150px;}
+  }
+  @media(max-width:620px){
+    .contact-compact{padding:48px 0;}
+    .contact-compact-grid{grid-template-columns:1fr;}
+    .contact-compact-photo{display:none;}
+    .contact-quick{grid-template-columns:1fr; gap:14px;}
+  }
 
   footer{padding:32px 0; text-align:center; background:var(--ink); border-top:1px solid rgba(239,231,216,0.1);}
   footer p{font-size:14px; color:#BEB5C8;}
@@ -809,7 +823,7 @@
         <span class="chapter-year">10 June 1996</span>
         <h3>Swami Vivekanand Students' Welfare Charitable Trust</h3>
         <p>Established so that no deserving girl would be denied school education for want of money, beginning with financial support for girls from disadvantaged families.</p>
-        <a class="chapter-link" href="activities.html#school-education" aria-label="Know more about school education support">Know more</a>
+        <a class="chapter-link" href="swami-vivekanand-trust.html" aria-label="Know more about Swami Vivekanand Students’ Welfare Charitable Trust">Know more</a>
       </div>
 
       <div class="story-why">
@@ -1036,40 +1050,26 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="band-ink on-dark" id="contact">
+<section class="contact-compact band-ink on-dark" id="contact">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Join the Journey</span>
-      <h2>Together, We Can Continue This Journey of Service</h2>
-      <p style="margin-top:16px;">Whether you wish to visit the Mission, take part in our Sunday sessions, volunteer your time, or simply learn more — we warmly welcome you.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Manidweep+A-183+Shastri+Nagar+Jodhpur+Rajasthan" target="_blank" rel="noopener">Visit the Mission</a>
-        <a class="btn btn-ghost" href="mailto:kishoreggm@gmail.com?subject=I'd like to volunteer">Become a Volunteer</a>
-      </div>
-    </div>
-
-    <div class="contact-grid">
-      <div>
-        <div class="contact-item">
-          <span class="tag">Address</span>
-          <p>'Manidweep', A-183 Shastri Nagar, Near Lachoo Memorial College, Jodhpur, Rajasthan, India – 342001</p>
-        </div>
-        <div class="contact-item">
-          <span class="tag">Phone</span>
-          <a href="tel:+919414917901">+91-9414917901</a>
-        </div>
-        <div class="contact-item">
-          <span class="tag">Email</span>
-          <a href="mailto:kishoreggm@gmail.com">kishoreggm@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <span class="tag">Office Hours</span>
-          <p>Monday – Sunday, 10:00 AM – 8:00 PM</p>
+    <div class="contact-compact-grid">
+      <div class="contact-compact-copy">
+        <span class="eyebrow">Visit &amp; Connect</span>
+        <h2>A conversation can be the beginning of a journey.</h2>
+        <p>Come to Manidweep, join a Sunday session, offer your time, or simply write to us with a question. You will be warmly received.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Contact Us</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Manidweep+A-183+Shastri+Nagar+Jodhpur+Rajasthan" target="_blank" rel="noopener">Get Directions</a>
         </div>
       </div>
-      <div class="map-frame">
-        <img src="https://picsum.photos/seed/mission-map/600/450" alt="Placeholder — replace with a map or exterior photo of the Mission building">
+      <div class="contact-quick" aria-label="Contact details">
+        <div class="contact-quick-item"><span>Call</span><a href="tel:+919414917901">+91 94149 17901</a></div>
+        <div class="contact-quick-item"><span>Email</span><a href="mailto:kishoreggm@gmail.com">kishoreggm@gmail.com</a></div>
+        <div class="contact-quick-item"><span>Visit</span><p>A-183 Shastri Nagar, Jodhpur</p></div>
       </div>
+      <figure class="contact-compact-photo">
+        <img src="assets/images/manidweep-office.jpg" alt="Exterior of Manidweep in Shastri Nagar, Jodhpur" loading="lazy">
+      </figure>
     </div>
   </div>
 </section>

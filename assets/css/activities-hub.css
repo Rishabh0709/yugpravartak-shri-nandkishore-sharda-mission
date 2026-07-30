@@ -344,6 +344,11 @@ body.activity-page {
     line-height: 1.7;
 }
 
+.trust-card .trust-card-link {
+    position: relative;
+    z-index: 1;
+}
+
 .trust-tags {
     position: relative;
     z-index: 1;

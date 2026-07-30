@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Yugpravartak Shri Nandkishore Sharda Mission</title>
+    <meta name="description" content="Choose the activity you wish to support and view its verified bank-transfer and UPI donation details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/activities-hub.css">
+    <link rel="stylesheet" href="assets/css/donation.css">
+</head>
+<body class="activity-page donation-page">
+    <a class="activity-skip-link" href="#main-content">Skip to main content</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <header class="donation-hero">
+            <div class="activity-wrap">
+                <nav class="donation-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Donate</span></nav>
+                <div class="donation-hero-grid">
+                    <div>
+                        <span class="activity-eyebrow">A Gift with a Clear Purpose</span>
+                        <h1>Choose the service your contribution will strengthen.</h1>
+                    </div>
+                    <div class="donation-hero-copy"><strong>Giving should feel personal and transparent.</strong>Select the activity closest to your heart. The page will show the corresponding Trust and its verified transfer details.</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="donation-principles" aria-label="Donation principles">
+            <div><span>Direct transfer</span><strong>No payment gateway</strong></div>
+            <div><span>Clear intention</span><strong>Choose where you wish to help</strong></div>
+            <div><span>Responsible giving</span><strong>Receipts and records available</strong></div>
+        </div>
+
+        <section class="donation-section" id="donation-details">
+            <div class="activity-wrap">
+                <header class="donation-heading">
+                    <div><span class="activity-eyebrow">Direct Your Contribution</span><h2>What would you like to support?</h2></div>
+                    <p>Each activity may be administered by a different Trust. Choosing first ensures that you see only the appropriate account and UPI details.</p>
+                </header>
+
+                <div class="donation-selector-card">
+                    <label for="donation-purpose">Select an activity</label>
+                    <div class="donation-select-shell">
+                        <select id="donation-purpose" name="donation-purpose">
+                            <option value="school-education">School education scholarships for girls</option>
+                            <option value="higher-education">Higher education for young women</option>
+                            <option value="boys-education">Education support for boys</option>
+                            <option value="ration-family">Ration and family assistance</option>
+                            <option value="women-self-reliance">Women’s self-reliance and sewing training</option>
+                            <option value="spiritual-wellbeing">Spiritual education and holistic wellbeing</option>
+                        </select>
+                    </div>
+                    <p class="donation-selector-help">The displayed Trust and payment route update automatically with your selection.</p>
+                </div>
+
+                <section class="donation-route" aria-live="polite" aria-labelledby="selected-trust">
+                    <header class="donation-route-header">
+                        <div><span id="selected-activity">School education scholarships for girls</span><h3 id="selected-trust">Swami Vivekanand Students’ Welfare Charitable Trust</h3></div>
+                        <strong class="donation-status" id="route-status">Verified details available</strong>
+                    </header>
+
+                    <div class="donation-route-grid" id="available-route">
+                        <div class="bank-details">
+                            <h3>Bank transfer details</h3>
+                            <p class="bank-details-intro">Use NEFT, RTGS, IMPS or your bank’s transfer facility. Please verify the account name before confirming the transaction.</p>
+                            <div class="bank-fields">
+                                <div class="bank-field"><span>Account name</span><strong id="account-name">Swami Vivekanand Students’ Welfare Charitable Trust</strong><button class="copy-button" type="button" data-copy-field="accountName" data-copy-label="Account name">Copy</button></div>
+                                <div class="bank-field"><span>Bank</span><strong id="bank-name">ICICI Bank</strong></div>
+                                <div class="bank-field"><span>Branch</span><strong id="bank-branch">Shastri Nagar Branch, Jodhpur</strong></div>
+                                <div class="bank-field"><span>Account number</span><strong id="account-number">683301420518</strong><button class="copy-button" type="button" data-copy-field="accountNumber" data-copy-label="Account number">Copy</button></div>
+                                <div class="bank-field"><span>IFSC</span><strong id="ifsc-code">ICIC0006833</strong><button class="copy-button" type="button" data-copy-field="ifsc" data-copy-label="IFSC code">Copy</button></div>
+                            </div>
+                            <div class="donation-compliance"><span>80G approval</span><strong>AAATS3452LF20218</strong><a href="transparency.html#swami-vivekanand-trust-records">Review statutory documents →</a></div>
+                            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+                        </div>
+
+                        <aside class="upi-panel">
+                            <h3>Donate through UPI</h3>
+                            <div class="upi-qr-shell"><img id="upi-qr" src="assets/images/donation/swami-vivekanand-trust-upi-qr.png" alt="UPI QR code for Swami Vivekanand Students’ Welfare Charitable Trust"></div>
+                            <div class="upi-id" id="upi-id">vivekanand@upi</div>
+                            <p class="upi-caption">Scan with a UPI app, or open the payment address directly on a supported mobile device.</p>
+                            <div class="upi-actions">
+                                <a class="upi-button" id="open-upi" href="upi://pay?pa=vivekanand@upi&amp;pn=Swami%20Vivekanand%20Students%20Welfare%20Charitable%20Trust&amp;cu=INR">Open UPI app</a>
+                                <button class="upi-button secondary" type="button" data-copy-field="upi" data-copy-label="UPI ID">Copy UPI ID</button>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <div class="donation-unavailable" id="unavailable-route" hidden>
+                        <div class="donation-unavailable-mark" aria-hidden="true">ॐ</div>
+                        <h3>Verified payment details will be added here.</h3>
+                        <p><strong id="unavailable-trust"></strong> administers <span id="unavailable-activity"></span>. Until its verified bank and UPI details are supplied, please contact the Mission before transferring funds.</p>
+                        <a class="donation-contact-button" id="donation-contact-link" href="mailto:kishoreggm@gmail.com">Ask for verified details</a>
+                    </div>
+                </section>
+
+                <aside class="gateway-note">
+                    <div class="gateway-note-mark" aria-hidden="true">₹</div>
+                    <div><strong>Why we have chosen not to use a payment gateway</strong><p>We want the entire donation amount to be used for its intended cause, with no amount deducted as a payment-gateway fee. Direct bank transfer or UPI helps your complete contribution reach the selected work.</p></div>
+                </aside>
+
+                <noscript><p class="donation-selector-help">JavaScript is required to switch between activity-specific payment details. Please contact the Mission before transferring funds.</p></noscript>
+            </div>
+        </section>
+
+        <section class="donation-guidance">
+            <div class="activity-wrap">
+                <header class="donation-heading">
+                    <div><span class="activity-eyebrow">A Simple, Careful Process</span><h2>Three steps from intention to acknowledgement</h2></div>
+                    <p>Direct giving asks for one additional moment of care: select the right activity, verify the beneficiary account and retain your transaction reference.</p>
+                </header>
+                <div class="donation-guidance-grid">
+                    <article class="donation-step"><span>01</span><h3>Choose the activity</h3><p>Select the work you wish to support so that the correct Trust and transfer route are shown.</p></article>
+                    <article class="donation-step"><span>02</span><h3>Verify and transfer</h3><p>Confirm the displayed account name or UPI ID in your banking application before authorising the contribution.</p></article>
+                    <article class="donation-step"><span>03</span><h3>Share the reference</h3><p>Retain the UTR or transaction ID and email it with the information required for acknowledgement or a donation receipt.</p></article>
+                </div>
+
+                <div class="receipt-panel">
+                    <div><h3>Need a donation receipt?</h3><p>Email your name, postal address, PAN where applicable, donated amount, date, selected activity and transaction reference. The relevant Trust can then verify the transfer and guide you regarding the applicable receipt or tax documentation.</p></div>
+                    <a class="receipt-button" href="mailto:kishoreggm@gmail.com?subject=Donation%20receipt%20request">Request a receipt</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-safety">
+            <div class="activity-wrap donation-safety-grid">
+                <article><h3>Verify before sending</h3><p>The beneficiary name shown by your bank or UPI application should match the selected Trust. Pause and contact us if it does not.</p></article>
+                <article><h3>Protect your credentials</h3><p>The Mission will never ask for your banking password, card PIN, UPI PIN or one-time password.</p></article>
+                <article><h3>Foreign contributions</h3><p>Please contact the Mission before sending any contribution from outside India so the designated FCRA route and current compliance guidance can be shared.</p></article>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/donation.js"></script>
+</body>
+</html>

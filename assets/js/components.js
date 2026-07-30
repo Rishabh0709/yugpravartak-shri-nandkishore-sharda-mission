@@ -27,7 +27,7 @@ async function loadComponent(selector, filePath) {
     }
 
     try {
-        const response = await fetch(filePath);
+        const response = await fetch(filePath, { cache: "no-store" });
 
         if (!response.ok) {
             throw new Error(
