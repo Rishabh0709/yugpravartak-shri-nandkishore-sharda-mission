@@ -465,20 +465,55 @@
     text-decoration-thickness:2px;
     text-underline-offset:4px;
   }
-  .name-quote{
-    position:relative; max-width:760px; margin:38px auto 0; padding:30px 28px;
-    font-family:'Fraunces'; font-style:italic; font-weight:300;
-    font-size:clamp(22px,2.6vw,28px); line-height:1.4; color:var(--ink);
-    text-align:center; border-top:1px solid rgba(156,29,36,.24); border-bottom:1px solid rgba(156,29,36,.24);
-  }
-  .name-quote::before{
-    content:'✦'; position:absolute; top:0; left:50%; transform:translate(-50%,-50%);
-    padding:0 14px; background:#FCEBCB; color:#B67916; font-size:16px; font-style:normal;
-  }
-  .name-quote cite{display:block; font-style:normal; font-family:'Cinzel'; font-size:12.5px; letter-spacing:.11em; color:#18518F; margin-top:16px; text-transform:uppercase;}
   @media(max-width:640px){
     .mission-name{text-align:left;}
-    .name-quote{margin-top:34px; padding:26px 18px;}
+  }
+
+  /* ---------- BHAIYAJI MEDITATION INTERLUDE ---------- */
+  .bhaiyaji-interlude{
+    position:relative; min-height:620px; padding:0; overflow:hidden; isolation:isolate;
+    color:#F8F0E5; background:#1B1424;
+  }
+  .bhaiyaji-interlude-media{position:absolute; z-index:-1; inset:0; margin:0; background:#1B1424;}
+  .bhaiyaji-interlude-media img{
+    position:absolute; top:0; right:0; width:52%; height:100%; object-fit:cover; object-position:center 43%;
+    filter:saturate(.78) contrast(1.04) brightness(.88);
+  }
+  .bhaiyaji-interlude-media::after{
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background:
+      linear-gradient(90deg,#1B1424 0%,#1B1424 40%,rgba(27,20,36,.94) 49%,rgba(27,20,36,.56) 67%,rgba(27,20,36,.12) 88%,rgba(27,20,36,.22) 100%),
+      linear-gradient(180deg,rgba(27,20,36,.2),transparent 30%,transparent 70%,rgba(27,20,36,.44));
+  }
+  .bhaiyaji-interlude .wrap{min-height:620px; display:flex; align-items:center;}
+  .bhaiyaji-quote-panel{width:min(53%,620px); padding:82px 0;}
+  .bhaiyaji-quote-panel .eyebrow{color:#D8AB4E;}
+  .bhaiyaji-quote-panel blockquote{
+    margin:24px 0 0; color:#FFF8ED; font-family:'Fraunces',serif;
+    font-size:clamp(34px,4.2vw,53px); font-style:italic; font-weight:300;
+    letter-spacing:-.018em; line-height:1.2;
+  }
+  .bhaiyaji-quote-panel blockquote::before{
+    content:'“'; display:block; height:38px; margin-bottom:12px; color:#D8AB4E;
+    font-family:'Fraunces',serif; font-size:76px; font-style:normal; line-height:.8;
+  }
+  .bhaiyaji-quote-panel cite{
+    display:flex; margin-top:28px; align-items:center; gap:13px; color:#D7CAD5;
+    font-family:'Cinzel',serif; font-size:11px; font-style:normal; letter-spacing:.14em; line-height:1.6; text-transform:uppercase;
+  }
+  .bhaiyaji-quote-panel cite::before{content:''; width:34px; height:1px; flex:0 0 auto; background:#D8AB4E;}
+  @media(max-width:760px){
+    .bhaiyaji-interlude{min-height:0; background:#1B1424;}
+    .bhaiyaji-interlude-media{position:relative; z-index:0; height:460px;}
+    .bhaiyaji-interlude-media img{width:100%; object-position:center 40%; filter:saturate(.8) contrast(1.03) brightness(.9);}
+    .bhaiyaji-interlude-media::after{background:linear-gradient(180deg,rgba(27,20,36,.06) 55%,#1B1424 100%);}
+    .bhaiyaji-interlude .wrap{min-height:0;}
+    .bhaiyaji-quote-panel{width:100%; padding:48px 0 64px;}
+    .bhaiyaji-quote-panel blockquote{font-size:clamp(31px,9vw,42px);}
+  }
+  @media(max-width:480px){
+    .bhaiyaji-interlude-media{height:390px;}
+    .bhaiyaji-quote-panel{padding-top:38px;}
   }
 
   /* ---------- STORY FLOW (a calm, text-led timeline) ---------- */
@@ -578,6 +613,88 @@
   }
   .story-coda .leaf{width:22px; height:22px; color:var(--gold); margin:0 auto 16px;}
   .story-coda p{font-size:17px; line-height:1.72;}
+
+  /* ---------- SERVICE REFLECTION ---------- */
+  .service-reflection{
+    padding:0;
+    overflow:hidden;
+    background:#21152B;
+    color:#F8F0E5;
+  }
+  .service-reflection-grid{
+    display:grid;
+    min-height:450px;
+    grid-template-columns:minmax(0,1.38fr) minmax(330px,.92fr);
+  }
+  .service-reflection-photo{
+    position:relative;
+    min-height:450px;
+    margin:0;
+    overflow:hidden;
+    background:#DDD2C1;
+  }
+  .service-reflection-photo::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+      linear-gradient(90deg,transparent 68%,rgba(33,21,43,.28) 88%,rgba(33,21,43,.82) 100%),
+      linear-gradient(180deg,rgba(33,21,43,.05),transparent 62%,rgba(33,21,43,.18));
+  }
+  .service-reflection-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 56%;
+    filter:saturate(.88) contrast(1.02) brightness(.94);
+  }
+  .service-reflection-copy{
+    position:relative;
+    display:flex;
+    padding:clamp(52px,6vw,78px) clamp(38px,5vw,72px);
+    justify-content:center;
+    flex-direction:column;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 100% 0%,rgba(213,166,67,.13),transparent 38%),
+      #21152B;
+  }
+  .service-reflection-copy::before{
+    content:'';
+    width:44px;
+    height:1px;
+    margin-bottom:25px;
+    background:#D7A84B;
+  }
+  .service-reflection-copy .eyebrow{color:#D7A84B;}
+  .service-reflection-copy p{
+    max-width:500px;
+    margin-top:20px;
+    color:#FFF8ED;
+    font-family:'Fraunces',serif;
+    font-size:clamp(29px,3.1vw,43px);
+    font-weight:300;
+    letter-spacing:-.015em;
+    line-height:1.25;
+  }
+  .service-reflection-copy p em{
+    color:#E1B75D;
+    font-style:italic;
+  }
+  @media(max-width:820px){
+    .service-reflection-grid{grid-template-columns:1fr;}
+    .service-reflection-photo{min-height:420px;}
+    .service-reflection-photo::after{
+      background:linear-gradient(180deg,transparent 65%,#21152B 100%);
+    }
+    .service-reflection-copy{padding:48px max(24px,6vw) 64px;}
+  }
+  @media(max-width:520px){
+    .service-reflection-photo{min-height:330px;}
+    .service-reflection-copy{padding:42px 24px 54px;}
+    .service-reflection-copy p{font-size:29px;}
+  }
 
   /* ---------- IMPACT ---------- */
   .impact-section{
@@ -841,10 +958,22 @@
       <p style="margin-top:16px;">The Mission continues in that original spirit. Every initiative—from spiritual guidance and scholarships to family support and self-reliance—serves one deliberate vision: the holistic development of every life it touches, in pursuit of universal brotherhood, world peace and human welfare.</p>
     </div>
 
-    <blockquote class="name-quote">
-      “Selfless service is the highest expression of spiritual realization.”
-      <cite>— Yugpravartak Shri Nandkishore Sharda</cite>
-    </blockquote>
+  </div>
+</section>
+
+<!-- ================= BHAIYAJI MEDITATION INTERLUDE ================= -->
+<section class="bhaiyaji-interlude" aria-labelledby="bhaiyaji-guiding-presence">
+  <figure class="bhaiyaji-interlude-media">
+    <img src="assets/images/bhaiyaji-sadhna-interlude.webp" alt="Bhaiyaji, Shri Nandkishore Ji Sharda, seated in Sadhna amid a natural landscape" loading="lazy" width="750" height="1200">
+  </figure>
+  <div class="wrap">
+    <div class="bhaiyaji-quote-panel">
+      <span class="eyebrow" id="bhaiyaji-guiding-presence">A Guiding Presence</span>
+      <blockquote>
+        Selfless service is the highest expression of spiritual realization.
+        <cite>Yugpravartak Shri Nandkishore Sharda</cite>
+      </blockquote>
+    </div>
   </div>
 </section>
 
@@ -980,6 +1109,21 @@
 
     <div class="btn-row" style="justify-content:center; margin-top:56px;">
       <a class="btn btn-ghost" href="activities.html">Explore All Our Initiatives →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE REFLECTION ================= -->
+<section class="service-reflection" aria-labelledby="service-reflection-heading">
+  <div class="service-reflection-grid">
+    <figure class="service-reflection-photo">
+      <img src="assets/images/madhu-maa-guiding-students.webp"
+           alt="Madhu Maa guiding a gathering of students at Manidweep"
+           loading="lazy" width="1600" height="1066">
+    </figure>
+    <div class="service-reflection-copy">
+      <span class="eyebrow" id="service-reflection-heading">The Spirit Behind the Work</span>
+      <p>When inner awakening becomes compassionate action, <em>service itself becomes Sadhna.</em></p>
     </div>
   </div>
 </section>
