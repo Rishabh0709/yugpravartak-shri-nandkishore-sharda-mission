@@ -759,19 +759,204 @@
     .impact-voices-head{margin-top:62px;}
   }
 
-  .testi-row{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:30px;
-    border-top:1px solid rgba(169,131,47,.22); border-bottom:1px solid rgba(169,131,47,.22);
+  .voices-feature{
+    display:grid;
+    grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr);
+    grid-template-areas:
+      'heading heading'
+      'photo copy';
+    margin-top:34px;
+    overflow:hidden;
+    border:1px solid rgba(169,131,47,.24);
+    border-radius:22px;
+    background:#21152B;
+    box-shadow:0 24px 60px rgba(44,27,26,.16);
   }
-  .testi{background:transparent; padding:34px 30px; position:relative;}
-  .testi + .testi{border-left:1px solid rgba(169,131,47,.18);}
-  @media(max-width:860px){
-    .testi-row{grid-template-columns:1fr;}
-    .testi + .testi{border-left:0; border-top:1px solid rgba(169,131,47,.18);}
+  .voice-feature-heading{
+    grid-area:heading;
+    padding:30px 36px 27px;
+    border-bottom:1px solid rgba(225,183,93,.18);
+    text-align:center;
+    background:
+      radial-gradient(circle at 50% 0%,rgba(213,166,67,.14),transparent 48%),
+      #21152B;
   }
-  .testi .flame{width:16px; height:26px; color:var(--flame); margin-bottom:16px;}
-  .testi p.quote{font-family:'Fraunces'; font-style:italic; font-size:18px; color:var(--ink); line-height:1.62;}
-  .testi .who{font-family:'Cinzel'; font-size:12.5px; letter-spacing:.09em; color:var(--flame); margin-top:18px; text-transform:uppercase; display:block;}
+  .voice-feature-heading .eyebrow{color:#D7A84B;}
+  .voice-feature-heading h4{
+    margin-top:11px;
+    color:#FFF8ED;
+    font-size:clamp(26px,3vw,38px);
+    line-height:1.2;
+  }
+  .voices-photo{
+    grid-area:photo;
+    position:relative;
+    display:grid;
+    place-items:center;
+    min-height:365px;
+    margin:0;
+    padding:38px 42px 54px;
+    overflow:hidden;
+    isolation:isolate;
+    background:#D9CEBD;
+  }
+  .voices-photo::before{
+    content:'';
+    position:absolute;
+    z-index:-2;
+    inset:-28px;
+    background:url('assets/images/poonam-mishra.webp') center / cover no-repeat;
+    filter:blur(18px) saturate(.7);
+    opacity:.42;
+  }
+  .voices-photo::after{
+    content:'';
+    position:absolute;
+    z-index:-1;
+    inset:0;
+    pointer-events:none;
+    background:
+      linear-gradient(90deg,rgba(248,239,222,.58),rgba(234,220,197,.35) 68%,rgba(33,21,43,.46) 100%),
+      rgba(238,225,204,.36);
+  }
+  .voices-photo img{
+    position:relative;
+    width:min(100%,520px);
+    height:auto;
+    object-fit:cover;
+    border:7px solid rgba(255,251,243,.84);
+    border-radius:12px;
+    box-shadow:0 22px 48px rgba(42,27,37,.28);
+    filter:saturate(.9) contrast(1.02);
+  }
+  .voices-photo figcaption{
+    position:absolute;
+    z-index:2;
+    left:28px;
+    bottom:22px;
+    color:rgba(255,248,237,.84);
+    font-size:13px;
+    letter-spacing:.035em;
+  }
+  .voice-feature-copy{
+    grid-area:copy;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding:38px clamp(38px,5vw,64px) 44px;
+    color:#FFF8ED;
+    background:#21152B;
+  }
+  .voice-story{
+    margin-top:0;
+    color:rgba(255,248,237,.76);
+    font-size:16.5px;
+    line-height:1.7;
+  }
+  .voice-feature-quote{
+    position:relative;
+    margin-top:28px;
+    padding:23px 0 0 30px;
+    border-top:1px solid rgba(225,183,93,.25);
+    color:#FFF8ED;
+    font-family:'Fraunces',serif;
+    font-size:clamp(20px,2.2vw,27px);
+    font-style:italic;
+    line-height:1.47;
+  }
+  .voice-feature-quote::before{
+    content:'“';
+    position:absolute;
+    left:0;
+    top:14px;
+    color:#E1B75D;
+    font-family:'Fraunces',serif;
+    font-size:45px;
+    font-style:normal;
+    line-height:1;
+  }
+  .voice-person{
+    display:block;
+    margin-top:20px;
+    color:#E1B75D;
+    font-family:'Cinzel',serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.09em;
+    line-height:1.65;
+    text-transform:uppercase;
+  }
+  .voice-person small{
+    display:block;
+    color:rgba(255,248,237,.62);
+    font-family:'Manrope',sans-serif;
+    font-size:12.5px;
+    font-weight:400;
+    letter-spacing:.02em;
+    text-transform:none;
+  }
+  .voice-cards{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+    margin-top:20px;
+  }
+  .voice-card{
+    position:relative;
+    min-height:210px;
+    padding:31px 28px 27px;
+    border:1px solid rgba(169,131,47,.19);
+    border-radius:16px;
+    background:rgba(255,253,248,.72);
+  }
+  .voice-card::before{
+    content:'“';
+    color:var(--gold);
+    font-family:'Fraunces',serif;
+    font-size:40px;
+    line-height:.7;
+  }
+  .voice-card p{
+    margin-top:14px;
+    color:var(--ink);
+    font-family:'Fraunces',serif;
+    font-size:19px;
+    font-style:italic;
+    line-height:1.52;
+  }
+  .voice-card .who{
+    display:block;
+    margin-top:18px;
+    color:var(--flame);
+    font-family:'Cinzel',serif;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:.085em;
+    text-transform:uppercase;
+  }
+  @media(max-width:900px){
+    .voices-feature{
+      grid-template-columns:1fr;
+      grid-template-areas:'heading' 'photo' 'copy';
+    }
+    .voices-photo{min-height:380px;}
+    .voices-photo::after{
+      background:
+        linear-gradient(180deg,rgba(248,239,222,.5),rgba(234,220,197,.28) 62%,#21152B 100%);
+    }
+    .voice-cards{grid-template-columns:1fr;}
+    .voice-card{min-height:0;}
+  }
+  @media(max-width:540px){
+    .voices-feature{border-radius:16px;}
+    .voice-feature-heading{padding:27px 22px 24px;}
+    .voice-feature-heading h4{font-size:26px;}
+    .voices-photo{min-height:320px; padding:44px 28px 58px;}
+    .voices-photo figcaption{left:20px; bottom:18px;}
+    .voice-feature-copy{padding:40px 24px 46px;}
+    .voice-card{padding:28px 24px 25px;}
+  }
 
   /* ---------- GALLERY ---------- */
   .home-gallery-intro{max-width:680px; margin:16px auto 0; text-align:center;}
@@ -1188,22 +1373,39 @@
       <h3>Every Figure Holds a Human Story</h3>
     </div>
 
-    <div class="testi-row">
-      <div class="testi">
-        <svg class="flame" viewBox="0 0 20 32" fill="none"><path d="M10 0C10 0 3 9 3 17C3 24 6 27 10 27C14 27 17 24 17 17C17 11 13 7 13 7C13 11 11 13 9 13C7 13 6 11 6 9C6 6 10 0 10 0Z"/></svg>
-        <p class="quote">"My daughter finished school because of them. Now she teaches others."</p>
-        <span class="who">Anonymous parent of a scholarship recipient</span>
+    <div class="voices-feature">
+      <div class="voice-feature-heading">
+        <span class="eyebrow">A Journey of Possibility</span>
+        <h4>From supported student to school principal</h4>
       </div>
-      <div class="testi">
-        <svg class="flame" viewBox="0 0 20 32" fill="none"><path d="M10 0C10 0 3 9 3 17C3 24 6 27 10 27C14 27 17 24 17 17C17 11 13 7 13 7C13 11 11 13 9 13C7 13 6 11 6 9C6 6 10 0 10 0Z"/></svg>
-        <p class="quote">"They never asked what I could give. They only ever asked how I was."</p>
-        <span class="who">Anonymous volunteer with the Mission</span>
-      </div>
-      <div class="testi">
-        <svg class="flame" viewBox="0 0 20 32" fill="none"><path d="M10 0C10 0 3 9 3 17C3 24 6 27 10 27C14 27 17 24 17 17C17 11 13 7 13 7C13 11 11 13 9 13C7 13 6 11 6 9C6 6 10 0 10 0Z"/></svg>
-        <p class="quote">"I came for one Sunday session to accompany my mother. I never stopped coming."</p>
-        <span class="who">Anonymous regular visitor</span>
-      </div>
+
+      <figure class="voices-photo">
+        <img src="assets/images/poonam-mishra.webp"
+             alt="Poonam Mishra, Principal of Wisdom International School"
+             loading="lazy" width="381" height="283">
+        <figcaption>Poonam Mishra · Principal and former scholarship recipient</figcaption>
+      </figure>
+
+      <article class="voice-feature-copy">
+        <p class="voice-story">Poonam Mishra joined the Trust in 1998 while studying in Class 6. When her father lost his job and even meeting basic household expenses became difficult, sustained educational support enabled her to continue learning through the completion of her M.Sc. in 2010. Today, she leads Wisdom International School in Jodhpur as its Principal.</p>
+        <blockquote class="voice-feature-quote">The Trust refused to let our circumstances define our ceiling.</blockquote>
+        <span class="voice-person">Poonam Mishra<small>Principal · Wisdom International School, Jodhpur</small></span>
+      </article>
+    </div>
+
+    <div class="voice-cards" aria-label="Student reflections">
+      <article class="voice-card">
+        <p>A guiding light that builds both education and character.</p>
+        <span class="who">Raj Kumari Panwar · Student</span>
+      </article>
+      <article class="voice-card">
+        <p>Helping me face challenges with confidence and composure.</p>
+        <span class="who">Krishna Rajpurohit · Student</span>
+      </article>
+      <article class="voice-card">
+        <p>Volunteers who treat me like family and mentors.</p>
+        <span class="who">Bhavika Chanda · Student</span>
+      </article>
     </div>
 
     <div class="btn-row" style="justify-content:center; margin-top:50px;">
