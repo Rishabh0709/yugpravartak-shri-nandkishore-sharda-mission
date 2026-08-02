@@ -160,6 +160,82 @@
     .vision-purpose p{font-size:20px;}
   }
 
+  /* ---------- OUR SPIRITUAL FOUNDATION ---------- */
+  .foundation-band{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+    background:
+      radial-gradient(circle at 69% 28%,rgba(255,231,121,.46),transparent 28%),
+      radial-gradient(circle at 8% 88%,rgba(123,175,197,.22),transparent 32%),
+      linear-gradient(135deg,#C8E1E4 0%,#E8E3C2 52%,#B8D6DF 100%);
+    border-top:1px solid rgba(28,47,91,.09);
+    border-bottom:1px solid rgba(28,47,91,.12);
+  }
+  .foundation-band::before{
+    content:'';
+    position:absolute;
+    z-index:-1;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(90deg,rgba(255,255,255,.2),transparent 42%,rgba(255,255,255,.1));
+  }
+  .foundation-band::after{
+    content:'';
+    position:absolute;
+    z-index:-1;
+    width:420px;
+    height:420px;
+    right:-250px;
+    bottom:-285px;
+    border:1px solid rgba(28,47,91,.11);
+    border-radius:50%;
+    box-shadow:0 0 0 48px rgba(255,255,255,.06);
+  }
+  .foundation-grid{
+    display:grid;
+    grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);
+    gap:clamp(44px,7vw,90px);
+    align-items:start;
+  }
+  .foundation-heading .eyebrow{color:#A34359;}
+  .foundation-heading h2{
+    max-width:470px;
+    margin-top:13px;
+    color:var(--ink);
+    font-size:clamp(38px,4.8vw,58px);
+    line-height:1.1;
+  }
+  .foundation-heading p{
+    max-width:430px;
+    margin-top:20px;
+    color:#7B5522;
+    font-family:'Fraunces',serif;
+    font-size:clamp(19px,2vw,23px);
+    font-style:italic;
+    line-height:1.55;
+  }
+  .foundation-copy{
+    padding:5px 0 5px clamp(28px,4vw,52px);
+    border-left:1px solid rgba(28,47,91,.18);
+  }
+  .foundation-copy p{
+    max-width:690px;
+    color:#343E49;
+    font-size:18px;
+    line-height:1.78;
+  }
+  .foundation-copy p + p{margin-top:20px;}
+  .foundation-copy strong{color:#73352C; font-weight:650;}
+  @media(max-width:820px){
+    .foundation-grid{grid-template-columns:1fr; gap:34px;}
+    .foundation-heading h2,.foundation-heading p{max-width:680px;}
+    .foundation-copy{max-width:720px; padding:28px 0 0; border-left:0; border-top:1px solid rgba(28,47,91,.18);}
+  }
+  @media(max-width:520px){
+    .foundation-copy p{font-size:17px; line-height:1.72;}
+  }
+
   /* ---------- FLAME ICON ---------- */
   .flame{display:inline-block; flex-shrink:0;}
   .flame path{fill:currentColor;}
@@ -440,6 +516,204 @@
     .mission-story-step{padding:22px 20px 24px; border-radius:15px;}
     .mission-story-step::before{left:-30px;}
     .mission-story-close{margin-top:45px; padding-left:0; padding-right:0;}
+  }
+
+  /* ---------- THE MODEL: BENEFICIARY TO BENEFACTOR ---------- */
+  .model-section{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+    color:#FFF8ED;
+    background:
+      radial-gradient(circle at 50% -5%,rgba(225,183,93,.22),transparent 34%),
+      radial-gradient(circle at 92% 82%,rgba(172,72,44,.18),transparent 32%),
+      linear-gradient(145deg,#21152B 0%,#2D1D37 54%,#24162C 100%);
+    border-top:1px solid rgba(225,183,93,.14);
+    border-bottom:1px solid rgba(225,183,93,.16);
+  }
+  .model-section::before{
+    content:'';
+    position:absolute;
+    z-index:-1;
+    width:520px;
+    height:520px;
+    left:-330px;
+    top:80px;
+    border:1px solid rgba(225,183,93,.11);
+    border-radius:50%;
+    box-shadow:0 0 0 54px rgba(225,183,93,.025),0 0 0 108px rgba(225,183,93,.018);
+  }
+  .model-section .section-head{max-width:820px;}
+  .model-section .eyebrow{color:#E1B75D;}
+  .model-section h2{color:#FFF8ED;}
+  .model-intro{
+    max-width:690px;
+    margin:17px auto 0;
+    color:rgba(255,248,237,.73);
+    font-size:18px;
+    line-height:1.72;
+  }
+  .model-loop{
+    position:relative;
+    width:min(100%,680px);
+    aspect-ratio:1;
+    margin:55px auto 0;
+  }
+  .model-loop::before,
+  .model-loop::after{
+    content:'';
+    position:absolute;
+    inset:13%;
+    border:1px solid rgba(225,183,93,.5);
+    border-radius:50%;
+    box-shadow:0 0 26px rgba(225,183,93,.12),inset 0 0 34px rgba(225,183,93,.06);
+  }
+  .model-loop::after{
+    inset:18%;
+    border-color:rgba(225,183,93,.12);
+    box-shadow:0 0 42px rgba(225,183,93,.08);
+  }
+  .model-loop-orbit{
+    position:absolute;
+    z-index:1;
+    inset:13%;
+    border:2px dashed rgba(225,183,93,.48);
+    border-radius:50%;
+    box-shadow:0 0 20px rgba(225,183,93,.12),inset 0 0 20px rgba(225,183,93,.055);
+    animation:model-orbit-spin 18s linear infinite;
+  }
+  .model-loop-orbit::after{
+    content:'';
+    position:absolute;
+    inset:-7px;
+    border:1px solid rgba(225,183,93,.11);
+    border-radius:50%;
+  }
+  .model-loop-center{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    display:grid;
+    width:230px;
+    aspect-ratio:1;
+    padding:28px;
+    place-content:center;
+    transform:translate(-50%,-50%);
+    border:1px solid rgba(225,183,93,.34);
+    border-radius:50%;
+    background:
+      radial-gradient(circle,rgba(225,183,93,.17),rgba(225,183,93,.035) 58%,rgba(33,21,43,.92) 74%),
+      #21152B;
+    box-shadow:0 0 0 9px rgba(225,183,93,.025),0 0 54px rgba(225,183,93,.16);
+    text-align:center;
+    animation:model-center-breathe 5.5s ease-in-out infinite;
+  }
+  .model-loop-center span{
+    color:#E1B75D;
+    font-family:'Cinzel',serif;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+  }
+  .model-loop-center strong{
+    display:block;
+    margin-top:10px;
+    color:#FFF8ED;
+    font-family:'Fraunces',serif;
+    font-size:30px;
+    font-weight:400;
+    line-height:1.18;
+  }
+  .model-loop-center em{
+    display:block;
+    margin-top:10px;
+    color:#E1B75D;
+    font-family:'Fraunces',serif;
+    font-size:17px;
+    font-style:italic;
+  }
+  .model-loop-node{
+    position:absolute;
+    z-index:2;
+    width:190px;
+    padding:17px 19px 18px;
+    border:1px solid rgba(225,183,93,.24);
+    border-radius:16px;
+    background:rgba(38,24,47,.94);
+    box-shadow:0 15px 38px rgba(10,5,14,.28),inset 0 1px 0 rgba(255,255,255,.05);
+    text-align:center;
+    animation:model-node-awaken 8s ease-in-out infinite;
+  }
+  .model-loop-node span{
+    display:block;
+    color:#E1B75D;
+    font-family:'Cinzel',serif;
+    font-size:9px;
+    font-weight:600;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  .model-loop-node strong{display:block; margin-top:5px; color:#FFF8ED; font-family:'Fraunces',serif; font-size:21px; font-weight:400; line-height:1.2;}
+  .model-loop-node--top{top:0; left:50%; transform:translate(-50%,-4%);}
+  .model-loop-node--right{top:50%; right:0; transform:translate(8%,-50%); animation-delay:2s;}
+  .model-loop-node--bottom{bottom:0; left:50%; transform:translate(-50%,4%); animation-delay:4s;}
+  .model-loop-node--left{top:50%; left:0; transform:translate(-8%,-50%); animation-delay:6s;}
+  .model-loop-spark{
+    position:absolute;
+    z-index:3;
+    top:0;
+    left:0;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:#FFE09A;
+    box-shadow:0 0 8px #FFE09A,0 0 20px rgba(225,183,93,.88),-10px 0 18px rgba(193,85,44,.5);
+    offset-path:circle(37% at 50% 50%);
+    offset-rotate:0deg;
+    animation:model-spark-travel 8s linear infinite;
+  }
+  .model-loop-spark--two{animation-delay:-2s; opacity:.86;}
+  .model-loop-spark--three{animation-delay:-4s; opacity:.72;}
+  .model-loop-spark--four{animation-delay:-6s; opacity:.58;}
+  @keyframes model-orbit-spin{to{transform:rotate(360deg);}}
+  @keyframes model-spark-travel{from{offset-distance:0%;}to{offset-distance:100%;}}
+  @keyframes model-center-breathe{
+    0%,100%{box-shadow:0 0 0 9px rgba(225,183,93,.025),0 0 42px rgba(225,183,93,.12);}
+    50%{box-shadow:0 0 0 13px rgba(225,183,93,.045),0 0 72px rgba(225,183,93,.24);}
+  }
+  @keyframes model-node-awaken{
+    0%,18%,100%{border-color:rgba(225,183,93,.24); box-shadow:0 15px 38px rgba(10,5,14,.28),inset 0 1px 0 rgba(255,255,255,.05);}
+    25%,42%{border-color:rgba(255,224,154,.68); box-shadow:0 15px 42px rgba(10,5,14,.3),0 0 28px rgba(225,183,93,.2),inset 0 1px 0 rgba(255,255,255,.08);}
+  }
+  @media(max-width:700px){
+    .model-loop{width:min(100%,540px); margin-top:46px;}
+    .model-loop-node{width:160px; padding:14px 13px 15px;}
+    .model-loop-node strong{font-size:18px;}
+    .model-loop-center{width:190px; padding:23px;}
+    .model-loop-center strong{font-size:25px;}
+  }
+  @media(max-width:480px){
+    .model-intro{font-size:16.5px;}
+    .model-loop{width:100%; min-height:340px; margin-top:40px;}
+    .model-loop::before{inset:15%;}
+    .model-loop::after{inset:21%;}
+    .model-loop-node{width:116px; padding:11px 7px 12px; border-radius:12px;}
+    .model-loop-node span{font-size:7.5px; letter-spacing:.08em;}
+    .model-loop-node strong{font-size:15px;}
+    .model-loop-node--top{transform:translate(-50%,0);}
+    .model-loop-node--right{transform:translate(0,-50%);}
+    .model-loop-node--bottom{transform:translate(-50%,0);}
+    .model-loop-node--left{transform:translate(0,-50%);}
+    .model-loop-center{width:132px; padding:14px;}
+    .model-loop-center span{font-size:7.5px;}
+    .model-loop-center strong{margin-top:6px; font-size:18px;}
+    .model-loop-center em{margin-top:6px; font-size:13px;}
+    .model-loop-spark{width:7px; height:7px; offset-path:circle(35% at 50% 50%);}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .model-loop-orbit,.model-loop-center,.model-loop-node,.model-loop-spark{animation:none;}
   }
 
   /* ---------- STORY FLOW (a calm, text-led timeline) ---------- */
@@ -730,6 +1004,16 @@
     .impact-voices-head{margin-top:62px;}
   }
 
+  .voices-section{
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 88% 12%,rgba(169,131,47,.11),transparent 28%),
+      linear-gradient(180deg,#F7EFE2 0%,#EEE2D1 100%);
+    border-bottom:1px solid rgba(169,131,47,.12);
+  }
+  .voices-section .impact-voices-head{margin:0 auto;}
+
   .voices-feature{
     display:grid;
     grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr);
@@ -1010,7 +1294,7 @@
       <div class="hero-concept-copy">
         <span class="eyebrow">Yugpravartak Shri Nandkishore Sharda Mission · Manidweep, Jodhpur</span>
         <h1>Where one flame still <em>lights every lamp.</em></h1>
-        <p class="sub">Through timeless spiritual wisdom, accessible education and selfless service, the Mission helps every person move toward higher consciousness—one life, one act of compassion and one lamp at a time.</p>
+        <p class="sub">Through timeless spiritual wisdom, accessible education and selfless service, the Mission nurtures people who become self-reliant, value-rooted and ready to uplift another—one life and one lamp at a time.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="#why-mission">Discover the Mission</a>
           <a class="btn btn-ghost" href="activities.html">Explore Our Work</a>
@@ -1041,6 +1325,24 @@
         <span class="vision-purpose-label">Our Purpose</span>
         <p>To address humanity’s deepest spiritual questions and foster universal harmony by guiding individuals toward higher consciousness, joyful service, moral integrity and spiritual self-realization through wisdom that is timeless in essence and relevant to modern life.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR SPIRITUAL FOUNDATION ================= -->
+<section class="foundation-band" id="spiritual-foundation" aria-labelledby="foundation-heading">
+  <div class="wrap">
+    <div class="foundation-grid">
+      <header class="foundation-heading">
+        <span class="eyebrow">Our Spiritual Foundation</span>
+        <h2 id="foundation-heading">When Sadhna Became Service</h2>
+        <p>Service to humanity became a natural continuation of inner spiritual practice.</p>
+      </header>
+
+      <div class="foundation-copy">
+        <p>Rooted in decades of collective Sadhna and spiritual practice, <strong>Shri Nandkishore Sharda</strong>, <strong>Kumari Basanti Manihar</strong> and <strong>Kumari Madhubala Advani</strong> began the work that now forms this Mission in 1996. With the grace of Jagatjanani Maa Tripurasundari, they regarded service to humanity not as separate from spiritual practice, but as its natural extension—an offering dedicated to human welfare, universal brotherhood and world peace.</p>
+        <p>What began as a scholarship programme for economically disadvantaged schoolgirls gradually evolved into a holistic system of care. Financial assistance grew together with Sanskar, mentoring, career guidance, personality development and spiritual grounding—helping individuals become educated, self-reliant, compassionate and prepared to uplift others.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1086,13 +1388,55 @@
   </div>
 </section>
 
+<!-- ================= A MODEL THAT MULTIPLIES GOODNESS ================= -->
+<section class="model-section" id="our-model" aria-labelledby="model-heading">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">How the Mission Lives</span>
+      <h2 id="model-heading">One Flame Lights Another</h2>
+      <p class="model-intro">Every act of support enters a living circle: compassion nurtures character, character grows into self-reliance, and self-reliance returns as Seva.</p>
+    </div>
+
+    <div class="model-loop" role="list" aria-label="The Mission's continuing circle from support to service">
+      <span class="model-loop-orbit" aria-hidden="true"></span>
+      <div class="model-loop-center">
+        <span>The living transformation</span>
+        <strong>Beneficiary becomes Benefactor</strong>
+        <em>The circle continues</em>
+      </div>
+
+      <div class="model-loop-node model-loop-node--top" role="listitem">
+        <span>Compassion</span>
+        <strong>Support with Dignity</strong>
+      </div>
+      <div class="model-loop-node model-loop-node--right" role="listitem">
+        <span>Inner Growth</span>
+        <strong>Sanskar &amp; Guidance</strong>
+      </div>
+      <div class="model-loop-node model-loop-node--bottom" role="listitem">
+        <span>Empowerment</span>
+        <strong>Self-Reliance</strong>
+      </div>
+      <div class="model-loop-node model-loop-node--left" role="listitem">
+        <span>Gratitude</span>
+        <strong>Seva for Another</strong>
+      </div>
+
+      <span class="model-loop-spark model-loop-spark--one" aria-hidden="true"></span>
+      <span class="model-loop-spark model-loop-spark--two" aria-hidden="true"></span>
+      <span class="model-loop-spark model-loop-spark--three" aria-hidden="true"></span>
+      <span class="model-loop-spark model-loop-spark--four" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
 <!-- ================= TIMELINE ================= -->
 <section id="timeline">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Compassion in Action</span>
-      <h2>How Compassion Became Action</h2>
-      <p class="timeline-intro">Each initiative began by listening closely to a real need. Follow the journey, then explore the work behind every milestone.</p>
+      <span class="eyebrow">An Expanding Circle of Care</span>
+      <h2>Compassion Expanded with Every Need</h2>
+      <p class="timeline-intro">The work was never designed as a collection of separate programmes. Each initiative emerged naturally from a life, family or spiritual need encountered along the way.</p>
     </div>
 
     <div class="story">
@@ -1122,6 +1466,18 @@
         <h3>Maa Shardamani Trust</h3>
         <p>Created to extend financial and academic assistance into college and higher education, so a young woman's ambition would not have to end where school did.</p>
         <a class="chapter-link" href="activities.html#higher-education" aria-label="Know more about higher education support for young women">Know more</a>
+      </div>
+
+      <div class="story-why">
+        <p>Educational opportunity answered an immediate need, but the deeper purpose remained inner transformation. The wisdom guiding the work also needed to remain accessible to every sincere seeker.</p>
+      </div>
+
+      <div class="story-chapter">
+        <svg class="chapter-dot flame" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="11" cy="11" r="4" fill="currentColor"/></svg>
+        <span class="chapter-year">2003</span>
+        <h3>Shri Nandkishore Sharda Gyan Ganga Mission</h3>
+        <p>Created to preserve and freely share Shri Nandkishore Sharda’s logical, spiritually grounded teachings through publications, public discourse and inspirational literature.</p>
+        <a class="chapter-link" href="activities.html#gyan-ganga-mission" aria-label="Know more about Shri Nandkishore Sharda Gyan Ganga Mission">Know more</a>
       </div>
 
       <div class="story-why">
@@ -1234,58 +1590,63 @@
     <div class="section-head center">
       <span class="eyebrow">Our Impact</span>
       <h2>Compassion, Measured in Lives Changed</h2>
-      <p class="impact-intro">A living record of sustained support across education, family welfare, self-reliance and the complete development of every individual.</p>
+      <p class="impact-intro">Three decades of sustained relationships across education, family welfare and holistic development—measured separately so the scale and purpose of each intervention remain clear.</p>
     </div>
 
     <div class="stat-grid">
       <article class="stat">
-        <div class="num">₹4.51 Cr+</div>
-        <h3>School Education Scholarships</h3>
-        <p>Scholarship assistance helping deserving girls continue their school education with dignity and confidence.</p>
-        <span class="micro-note">Swami Vivekanand Students' Welfare Charitable Trust</span>
+        <div class="num">8,000+</div>
+        <h3>Girls Supported through Education</h3>
+        <p>Need-based assistance enabling girls to pursue school, higher and professional education with confidence.</p>
+        <span class="micro-note">Across 45 schools and 32 colleges</span>
       </article>
 
       <article class="stat">
-        <div class="num">₹1.64 Cr+</div>
-        <h3>Higher Education for Young Women</h3>
-        <p>College and higher-education scholarships enabling young women to carry their aspirations beyond school.</p>
-        <span class="micro-note">Maa Shardamani Trust</span>
+        <div class="num">₹6.14 Cr+</div>
+        <h3>Scholarships for Girls</h3>
+        <p>Educational assistance delivered through the school and higher-education trusts for girls and young women.</p>
+        <span class="micro-note">School, college and professional education</span>
+      </article>
+
+      <article class="stat">
+        <div class="num">630+</div>
+        <h3>Boys Supported through Education</h3>
+        <p>Financial assistance and sustained encouragement helping economically vulnerable boys continue their studies.</p>
+        <span class="micro-note">School, higher and professional courses</span>
       </article>
 
       <article class="stat">
         <div class="num">₹57 Lakh+</div>
-        <h3>Education Support for Boys</h3>
-        <p>Scholarships and sustained mentorship supporting boys from economically disadvantaged families.</p>
-        <span class="micro-note">Education and long-term mentorship</span>
+        <h3>Scholarships for Boys</h3>
+        <p>Need-based educational support extended through the Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra.</p>
+        <span class="micro-note">Education strengthened by mentorship</span>
       </article>
 
       <article class="stat">
         <div class="num">₹1.07 Cr+</div>
-        <h3>Ration and Family Assistance</h3>
-        <p>Essential food support delivered to families through a thoughtful process that preserves dignity and continuity of care.</p>
-        <span class="micro-note">Approximately 300 families supported</span>
+        <h3>Food and Family Assistance</h3>
+        <p>Monthly ration support for economically vulnerable families, offered with continuity, dignity and compassion.</p>
+        <span class="micro-note">Nearly 300 families supported</span>
       </article>
 
       <article class="stat">
-        <div class="num num--symbol"><span aria-hidden="true">✦</span><span class="sr-only">An expanding initiative</span></div>
-        <h3>Women's Self-Reliance</h3>
-        <p>Free vocational training in sewing, tailoring and garment construction for women and girls.</p>
-        <span class="micro-note">Practical skills for independent livelihoods</span>
-      </article>
-
-      <article class="stat">
-        <div class="num">4-D</div>
-        <h3>Holistic Wellness</h3>
-        <p>Physical, mental, spiritual and emotional development through Yoga, Pranayama, meditation and value-based guidance.</p>
-        <span class="micro-note">The whole person, supported together</span>
+        <div class="num">30 Years</div>
+        <h3>Continuity of Grassroots Service</h3>
+        <p>A sustained journey integrating education, values, spirituality, self-reliance and community welfare.</p>
+        <span class="micro-note">Serving continuously since 1996</span>
       </article>
     </div>
 
-    <p class="impact-note">The three education initiatives together represent ₹6.72 Cr+ in scholarships and educational support. Figures are cumulative and supplied by the Mission; the reporting period and audited source will accompany the full impact report.</p>
+    <p class="impact-note">Figures are cumulative and drawn from the Mission’s 2026–27 award-nomination record. The girls’ figures combine the Swami Vivekanand Students’ Welfare Charitable Trust and Maa Shardamani Trust; the boys’ figures relate to the Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra.</p>
+  </div>
+</section>
 
+<!-- ================= STORIES OF TRANSFORMATION ================= -->
+<section class="voices-section" id="stories" aria-labelledby="stories-heading">
+  <div class="wrap">
     <div class="impact-voices-head">
       <span class="eyebrow">Beyond the Numbers</span>
-      <h3>Every Figure Holds a Human Story</h3>
+      <h3 id="stories-heading">Every Figure Holds a Human Story</h3>
     </div>
 
     <div class="voices-feature">
