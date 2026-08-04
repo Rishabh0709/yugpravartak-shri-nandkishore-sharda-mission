@@ -192,48 +192,98 @@
     border-radius:50%;
     box-shadow:0 0 0 48px rgba(255,255,255,.06);
   }
-  .foundation-grid{
-    display:grid;
-    grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);
-    gap:clamp(44px,7vw,90px);
-    align-items:start;
+  .foundation-opening{max-width:900px; margin:0 auto; text-align:center;}
+  .foundation-opening .eyebrow{color:#A34359;}
+  .foundation-opening h2{
+    max-width:790px; margin:13px auto 0; color:var(--ink);
+    font-size:clamp(38px,4.8vw,58px); line-height:1.08;
   }
-  .foundation-heading .eyebrow{color:#A34359;}
-  .foundation-heading h2{
-    max-width:470px;
-    margin-top:13px;
-    color:var(--ink);
-    font-size:clamp(38px,4.8vw,58px);
-    line-height:1.1;
+  .foundation-intro{
+    max-width:850px; margin:24px auto 0; color:#35414A;
+    font-size:clamp(18px,1.8vw,20px); line-height:1.76;
   }
-  .foundation-heading p{
-    max-width:430px;
-    margin-top:20px;
-    color:#7B5522;
-    font-family:'Fraunces',serif;
-    font-size:clamp(19px,2vw,23px);
-    font-style:italic;
-    line-height:1.55;
+  .foundation-lineage-head{
+    display:flex; align-items:end; justify-content:space-between; gap:24px;
+    margin:50px 0 20px; padding-bottom:13px; border-bottom:1px solid rgba(28,47,91,.16);
   }
-  .foundation-copy{
-    padding:5px 0 5px clamp(28px,4vw,52px);
-    border-left:1px solid rgba(28,47,91,.18);
+  .foundation-lineage-head span{
+    color:#8A3E4E; font-family:'Cinzel',serif; font-size:12px; font-weight:700;
+    letter-spacing:.17em; text-transform:uppercase;
   }
-  .foundation-copy p{
-    max-width:690px;
-    color:#343E49;
-    font-size:18px;
-    line-height:1.78;
+  .foundation-lineage-head p{color:#5D5960; font-family:'Fraunces',serif; font-size:17px; font-style:italic;}
+  .foundation-people-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px;}
+  .foundation-person{
+    overflow:hidden; background:rgba(255,255,255,.54); border:1px solid rgba(28,47,91,.1);
+    border-top-color:rgba(169,131,47,.38); border-radius:18px;
+    box-shadow:0 18px 48px rgba(29,43,60,.075),inset 0 1px 0 rgba(255,255,255,.72);
+    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
   }
-  .foundation-copy p + p{margin-top:20px;}
-  .foundation-copy strong{color:#73352C; font-weight:650;}
+  @media(hover:hover){
+    .foundation-person:hover{transform:translateY(-3px); border-color:rgba(169,131,47,.3); box-shadow:0 23px 54px rgba(29,43,60,.105),inset 0 1px 0 rgba(255,255,255,.8);}
+  }
+  .foundation-person-img{width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center 18%;}
+  .foundation-person-body{padding:30px 32px 29px;}
+  .foundation-role{
+    display:inline-flex; min-height:27px; align-items:center; padding:5px 11px;
+    border-radius:999px; background:rgba(163,67,89,.08); color:#8A3E4E;
+    font-family:'Cinzel',serif; font-size:11px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  }
+  .foundation-person h3{margin:13px 0 12px; font-size:clamp(23px,2.6vw,30px); line-height:1.18;}
+  .foundation-person p{color:#414A51; font-size:17px; line-height:1.72;}
+  .foundation-person p + p{margin-top:14px;}
+  .foundation-person-link{
+    display:inline-flex; min-height:44px; align-items:center; gap:8px; margin-top:15px;
+    border-bottom:1px solid rgba(138,62,78,.3); color:#833A4A;
+    font-family:'Cinzel',serif; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    transition:gap .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .foundation-person-link::after{content:'\2192'; font-family:'Karla',sans-serif; font-size:17px;}
+  .foundation-person-link:hover{gap:12px; color:var(--ink); border-color:var(--ink);}
+  .foundation-continuity{display:grid; justify-items:center; margin:30px 0 28px; color:#9A7331;}
+  .foundation-continuity::before,.foundation-continuity::after{content:''; width:1px; height:24px; background:linear-gradient(180deg,transparent,currentColor); opacity:.55;}
+  .foundation-continuity::after{background:linear-gradient(180deg,currentColor,transparent);}
+  .foundation-continuity span{margin:8px 0; color:#833A4A; font-family:'Fraunces',serif; font-size:17px; font-style:italic;}
+  .foundation-person--madhu{
+    display:grid; grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);
+    border-top:2px solid rgba(169,131,47,.78);
+  }
+  .foundation-person--madhu .foundation-person-img{height:100%; min-height:430px; aspect-ratio:auto; object-position:center 20%;}
+  .foundation-person--madhu .foundation-person-body{display:flex; flex-direction:column; justify-content:center; padding:43px 48px;}
+  .foundation-service{
+    display:grid; grid-template-columns:minmax(270px,.78fr) minmax(0,1.22fr); gap:clamp(38px,6vw,76px);
+    align-items:start; margin-top:64px; padding:clamp(34px,5vw,58px);
+    border:1px solid rgba(28,47,91,.14); border-top:2px solid rgba(169,131,47,.66); border-radius:20px;
+    background:linear-gradient(135deg,rgba(255,253,243,.72),rgba(239,244,229,.52));
+    box-shadow:0 22px 58px rgba(29,43,60,.075),inset 0 1px 0 rgba(255,255,255,.75);
+  }
+  .foundation-service-heading .eyebrow{color:#8A3E4E;}
+  .foundation-service-heading h3{margin-top:12px; font-size:clamp(31px,3.8vw,46px); line-height:1.1;}
+  .foundation-service-thesis{
+    margin-top:18px; color:#7B5522; font-family:'Fraunces',serif;
+    font-size:clamp(18px,1.9vw,22px); font-style:italic; line-height:1.52;
+  }
+  .foundation-service-copy{padding-left:clamp(24px,3.5vw,46px); border-left:1px solid rgba(28,47,91,.16);}
+  .foundation-service-copy p{color:#3F4850; font-size:18px; line-height:1.76;}
+  .foundation-service-copy p + p{margin-top:20px;}
   @media(max-width:820px){
-    .foundation-grid{grid-template-columns:1fr; gap:34px;}
-    .foundation-heading h2,.foundation-heading p{max-width:680px;}
-    .foundation-copy{max-width:720px; padding:28px 0 0; border-left:0; border-top:1px solid rgba(28,47,91,.18);}
+    .foundation-lineage-head{align-items:start; flex-direction:column; gap:4px;}
+    .foundation-person--madhu{grid-template-columns:1fr;}
+    .foundation-person--madhu .foundation-person-img{min-height:0; aspect-ratio:4/3; object-position:center 20%;}
+    .foundation-person--madhu .foundation-person-body{padding:30px 32px 29px;}
+    .foundation-service{grid-template-columns:1fr; gap:30px;}
+    .foundation-service-copy{padding:27px 0 0; border-top:1px solid rgba(28,47,91,.16); border-left:0;}
   }
+  @media(max-width:680px){.foundation-people-grid{grid-template-columns:1fr;}}
   @media(max-width:520px){
-    .foundation-copy p{font-size:17px; line-height:1.72;}
+    .foundation-opening{text-align:left;}
+    .foundation-opening h2{font-size:37px;}
+    .foundation-intro{font-size:17px; line-height:1.7;}
+    .foundation-lineage-head{margin-top:40px;}
+    .foundation-person{border-radius:14px;}
+    .foundation-person-body,.foundation-person--madhu .foundation-person-body{padding:25px 23px 24px;}
+    .foundation-person-img,.foundation-person--madhu .foundation-person-img{aspect-ratio:5/4;}
+    .foundation-service{margin-top:46px; padding:29px 23px; border-radius:15px;}
+    .foundation-service-copy p{font-size:17px; line-height:1.7;}
   }
 
   /* ---------- FLAME ICON ---------- */
@@ -279,6 +329,8 @@
   }
   .hero h1 em{color:#E0AD43; font-weight:300;}
   .hero .sub{max-width:650px; margin:27px 0 0; color:#D8CDD7; font-size:18px; line-height:1.7;}
+  .hero .sub strong{color:#F3E3BC; font-weight:600;}
+  .hero .sub em{color:#E8C86E; font-family:'Fraunces',serif; font-style:italic;}
   .hero .btn-row{justify-content:flex-start; margin-top:31px;}
   .hero .btn-primary{background:#DDAE49; color:#211429;}
   .hero .btn-primary:hover{background:#EDC46F;}
@@ -958,50 +1010,125 @@
   .impact-section .wrap{position:relative; z-index:1;}
   .impact-section .section-head{max-width:720px; margin-bottom:0;}
   .impact-intro{max-width:700px; margin:16px auto 0; font-size:18px; line-height:1.7;}
-  .stat-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:52px;}
-  .stat{
-    position:relative; min-height:292px; overflow:hidden; padding:36px 34px 32px;
-    background:rgba(255,255,255,.64); border:1px solid rgba(169,131,47,.17);
-    border-top-color:rgba(169,131,47,.34); border-radius:18px;
-    box-shadow:0 16px 42px rgba(36,27,46,.055),inset 0 1px 0 rgba(255,255,255,.8);
-    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+  .impact-stage{
+    position:relative; min-height:clamp(570px,64vw,720px); margin-top:48px; overflow:hidden;
+    border:1px solid rgba(255,255,255,.46); border-radius:24px; background:#211A22;
+    box-shadow:0 28px 70px rgba(45,29,27,.18),0 2px 10px rgba(45,29,27,.09);
+    isolation:isolate;
   }
-  .stat::after{
-    content:''; position:absolute; width:150px; height:150px; right:-58px; bottom:-76px;
-    border:1px solid rgba(169,131,47,.13); border-radius:50%; pointer-events:none;
+  .impact-tabs{
+    position:absolute; z-index:5; top:26px; left:50%; display:flex; gap:10px;
+    width:max-content; max-width:calc(100% - 44px); padding:3px;
+    overflow-x:auto; overscroll-behavior-inline:contain; scrollbar-width:none;
+    transform:translateX(-50%); scroll-snap-type:x proximity;
   }
-  @media(hover:hover){
-    .stat:hover{transform:translateY(-3px); border-color:rgba(169,131,47,.3); box-shadow:0 22px 52px rgba(36,27,46,.085),inset 0 1px 0 rgba(255,255,255,.85);}
+  .impact-tabs::-webkit-scrollbar{display:none;}
+  .impact-tab{
+    flex:0 0 auto; min-height:46px; padding:11px 17px; border:1px solid rgba(255,255,255,.68);
+    border-radius:999px; background:rgba(255,253,248,.9); box-shadow:0 5px 20px rgba(21,16,22,.14);
+    color:#302638; cursor:pointer; font-family:'Cinzel',serif; font-size:11px; font-weight:700;
+    letter-spacing:.08em; line-height:1.2; text-transform:uppercase; white-space:nowrap;
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    scroll-snap-align:center; transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease;
   }
-  .stat .num{
-    min-height:70px; display:flex; align-items:center;
-    font-family:'Fraunces',serif; font-size:clamp(40px,4.5vw,58px);
-    line-height:1; color:var(--gold); font-weight:400; letter-spacing:-.025em;
+  .impact-tab:hover{transform:translateY(-1px); background:#FFFDF8;}
+  .impact-tab:focus-visible{outline:3px solid rgba(255,221,139,.95); outline-offset:3px;}
+  .impact-tab[aria-selected="true"]{
+    background:linear-gradient(135deg,#F4D889 0%,#D5A342 100%); color:#2A2030;
+    border-color:rgba(255,232,169,.95); box-shadow:0 7px 24px rgba(22,16,20,.2),inset 0 1px 0 rgba(255,255,255,.6);
   }
-  .stat .num--symbol{
-    width:64px; min-height:64px; justify-content:center; border:1px solid rgba(169,131,47,.28);
-    border-radius:50%; background:rgba(247,241,230,.62); color:var(--flame); font-size:23px;
+  .impact-slide{
+    position:absolute; inset:0; z-index:0; opacity:0; visibility:hidden;
+    transition:opacity .55s ease,visibility .55s ease;
   }
-  .stat h3{font-size:clamp(20px,2.2vw,25px); margin-top:14px; line-height:1.24;}
-  .stat p{font-size:17px; margin-top:13px; line-height:1.7;}
-  .stat .micro-note{
-    display:block; margin-top:16px; padding-top:13px; border-top:1px solid rgba(36,27,46,.08);
-    font-family:'Cinzel',serif; font-size:12px; letter-spacing:.1em;
-    text-transform:uppercase; color:var(--flame); font-weight:600;
+  .impact-slide.is-active{z-index:1; opacity:1; visibility:visible;}
+  .impact-slide::after{
+    content:''; position:absolute; inset:0; z-index:1; pointer-events:none;
+    background:
+      linear-gradient(90deg,rgba(19,14,22,.88) 0%,rgba(24,17,25,.62) 38%,rgba(23,18,21,.13) 72%),
+      linear-gradient(0deg,rgba(14,11,15,.84) 0%,rgba(15,12,16,.12) 57%,rgba(15,12,16,.24) 100%);
   }
+  .impact-slide img{
+    width:100%; height:100%; object-fit:cover; transform:scale(1.025);
+    transition:transform 1.1s cubic-bezier(.2,.7,.2,1); filter:saturate(.9) contrast(1.03);
+  }
+  .impact-slide.is-active img{transform:scale(1);}
+  .impact-slide--girls img{object-position:center 42%;}
+  .impact-slide--boys img{object-position:center center;}
+  .impact-slide--wellness img{object-position:center 48%;}
+  .impact-slide--self-reliance img{object-position:center 46%;}
+  .impact-slide--family img{object-position:center 42%;}
+  .impact-slide--archive img{object-position:center center; filter:sepia(.1) saturate(.78) contrast(1.05);}
+  .impact-slide-content{
+    position:absolute; z-index:2; left:clamp(28px,5vw,72px); bottom:clamp(34px,6vw,70px);
+    width:min(760px,calc(100% - 56px)); color:#FFFDF8; text-shadow:0 2px 16px rgba(15,10,14,.28);
+  }
+  .impact-number{
+    display:block; font-family:'Fraunces',serif; font-size:clamp(58px,8.2vw,104px);
+    font-weight:400; letter-spacing:-.035em; line-height:.93; color:#F3D783;
+  }
+  .impact-metrics{display:flex; align-items:flex-end; gap:clamp(24px,4vw,52px);}
+  .impact-metric{min-width:0;}
+  .impact-metric + .impact-metric{padding-left:clamp(24px,4vw,52px); border-left:1px solid rgba(255,255,255,.34);}
+  .impact-metric .impact-number{font-size:clamp(48px,6.4vw,82px); white-space:nowrap;}
+  .impact-metric-label{
+    display:block; margin-top:10px; color:#F8EBC7; font-family:'Cinzel',serif;
+    font-size:11px; font-weight:700; letter-spacing:.1em; line-height:1.4; text-transform:uppercase;
+  }
+  .impact-slide-content h3{
+    max-width:610px; margin-top:16px; color:#FFFDF8; font-size:clamp(27px,3.5vw,43px); line-height:1.12;
+  }
+  .impact-slide-content p{
+    max-width:590px; margin-top:13px; color:rgba(255,253,248,.9); font-size:clamp(17px,1.8vw,20px); line-height:1.62;
+  }
+  .impact-micro-note{
+    display:inline-flex; align-items:center; gap:10px; margin-top:19px; color:#F7E8B9;
+    font-family:'Cinzel',serif; font-size:11px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  }
+  .impact-micro-note::before{content:''; width:28px; height:1px; background:#E8C66B;}
   .impact-note{
-    max-width:760px; margin:24px auto 0; text-align:left; color:var(--muted);
+    max-width:900px; margin:24px auto 0; text-align:left; color:var(--muted);
     font-size:15.5px; line-height:1.62; font-style:italic;
   }
   .impact-voices-head{max-width:620px; margin:62px auto 0; text-align:center;}
   .impact-voices-head h3{font-size:clamp(24px,3vw,32px); margin-top:9px;}
   .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
-  @media(max-width:940px){.stat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media(max-width:940px){
+    .impact-stage{min-height:620px;}
+    .impact-tabs{left:22px; right:22px; width:auto; max-width:none; transform:none;}
+  }
   @media(max-width:600px){
-    .stat-grid{grid-template-columns:1fr; gap:18px; margin-top:42px;}
-    .stat{min-height:0; padding:29px 26px 27px; border-radius:14px;}
-    .stat .num{min-height:58px;}
+    .impact-section .wrap{width:min(100% - 24px,var(--max));}
+    .impact-section .section-head{padding-inline:8px;}
+    .impact-intro{font-size:16.5px; line-height:1.62;}
+    .impact-stage{min-height:700px; margin-top:34px; border-radius:18px; background:#241B27;}
+    .impact-tabs{top:14px; left:10px; right:10px; gap:7px; padding:3px 10px 8px 2px;}
+    .impact-tab{min-height:40px; padding:9px 13px; font-size:9.5px; box-shadow:0 4px 14px rgba(21,16,22,.18);}
+    .impact-slide{background:#241B27;}
+    .impact-slide img{
+      height:47%; object-fit:cover; transform:scale(1.018);
+      filter:saturate(.9) contrast(1.03) brightness(.92);
+    }
+    .impact-slide::after{
+      background:
+        linear-gradient(180deg,rgba(18,13,20,.18) 0%,rgba(20,15,22,.06) 32%,#241B27 48%,#241B27 100%),
+        linear-gradient(90deg,rgba(18,13,20,.28) 0%,rgba(22,16,22,.04) 74%);
+    }
+    .impact-slide-content{top:calc(47% + 22px); left:22px; bottom:auto; width:calc(100% - 44px); text-shadow:none;}
+    .impact-number{font-size:clamp(52px,16vw,70px);}
+    .impact-metrics{display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); gap:12px; align-items:end;}
+    .impact-metric + .impact-metric{padding-left:12px;}
+    .impact-metric .impact-number{font-size:clamp(32px,9.6vw,46px);}
+    .impact-metric-label{font-size:9px; letter-spacing:.08em;}
+    .impact-slide-content h3{margin-top:15px; font-size:clamp(24px,7vw,31px); line-height:1.13;}
+    .impact-slide-content p{margin-top:11px; font-size:16px; line-height:1.5;}
+    .impact-micro-note{align-items:flex-start; margin-top:16px; font-size:9.5px; line-height:1.45;}
+    .impact-micro-note::before{flex:0 0 22px; width:22px; margin-top:6px;}
+    .impact-note{margin-top:19px; padding-inline:8px; font-size:14px; line-height:1.55;}
     .impact-voices-head{margin-top:62px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .impact-slide,.impact-slide img,.impact-tab{transition:none;}
   }
 
   .voices-section{
@@ -1293,8 +1420,8 @@
     <div class="hero-concept-grid">
       <div class="hero-concept-copy">
         <span class="eyebrow">Yugpravartak Shri Nandkishore Sharda Mission · Manidweep, Jodhpur</span>
-        <h1>Where one flame still <em>lights every lamp.</em></h1>
-        <p class="sub">Through timeless spiritual wisdom, accessible education and selfless service, the Mission nurtures people who become self-reliant, value-rooted and ready to uplift another—one life and one lamp at a time.</p>
+        <h1>Universal Brotherhood, <em>World Peace and Human Welfare.</em></h1>
+        <p class="sub">Born from Kumari Madhubala Advani’s deep reverence for her spiritual master, <strong>Shri Nandkishore Sharda</strong>, the Mission carries his timeless teachings into living service. By preserving its founding methodology and nurturing its sacred vision, she sustains an unbroken stream of spiritual wisdom, accessible education and selfless <em>Seva</em>—advancing global harmony, inner peace and human welfare.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="#why-mission">Discover the Mission</a>
           <a class="btn btn-ghost" href="activities.html">Explore Our Work</a>
@@ -1332,63 +1459,73 @@
 <!-- ================= OUR SPIRITUAL FOUNDATION ================= -->
 <section class="foundation-band" id="spiritual-foundation" aria-labelledby="foundation-heading">
   <div class="wrap">
-    <div class="foundation-grid">
-      <header class="foundation-heading">
-        <span class="eyebrow">Our Spiritual Foundation</span>
-        <h2 id="foundation-heading">When Sadhna Became Service</h2>
-        <p>Service to humanity became a natural continuation of inner spiritual practice.</p>
+    <header class="foundation-opening">
+      <span class="eyebrow">Our Spiritual Foundation</span>
+      <h2 id="foundation-heading">The Beginning — A Flame Lit by Divine Purpose</h2>
+      <p class="foundation-intro">The work carried forward through this Mission began three decades ago, but the spiritual flame from which it grew reaches much further back. Its roots lie in years of disciplined Sadhna and spiritual practice undertaken by <strong>Kumari Madhubala Advani</strong> under the guidance of <strong>Kumari Basanti Manihar</strong> and her spiritual master, <strong>Shri Nandkishore Sharda</strong>. Their shared inner discipline formed the living foundation from which contemplation gradually became compassionate action.</p>
+    </header>
+
+    <div class="foundation-lineage-head">
+      <span>The Spiritual Lineage</span>
+      <p>Wisdom, guidance and devoted practice</p>
+    </div>
+
+    <div class="foundation-people-grid">
+      <article class="foundation-person">
+        <img class="foundation-person-img" src="assets/images/bhaiyaji_2.jpg" alt="Portrait of Shri Nandkishore Ji Sharda, lovingly known as Bhaiyaji" loading="lazy">
+        <div class="foundation-person-body">
+          <span class="foundation-role">The Spiritual Guru</span>
+          <h3>Shri Nandkishore Sharda</h3>
+          <p>At fifteen, a profound encounter with mortality at his father's pyre in 1959 turned Nandkishore Sharda inward. Years of disciplined Sadhna transformed that search into Buddhi-Vivek Yog Sadhna—a universal path of wisdom, discernment and inner steadiness that continues to guide seekers today.</p>
+          <a class="foundation-person-link" href="bhaiyaji.html">Read Bhaiyaji's journey</a>
+        </div>
+      </article>
+
+      <article class="foundation-person">
+        <img class="foundation-person-img" src="assets/images/basanti-manihar.jpg" alt="Portrait of Maa Basanti Ji Manihar" loading="lazy">
+        <div class="foundation-person-body">
+          <span class="foundation-role">The Spiritual Guide</span>
+          <h3>Basanti Ji Manihar</h3>
+          <p>Beginning her spiritual journey under Bhaiyaji's guidance in 1964, Maa Basanti devoted her life to translating his wisdom into compassionate service. After his passing in 2003, she carried their spiritual work forward with unwavering resolve, preserving its essence while expanding its service until 2021.</p>
+          <a class="foundation-person-link" href="basanti-manihar.html">Read Maa Basanti's journey</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="foundation-continuity" aria-hidden="true"><span>The light continues through devoted practice</span></div>
+
+    <article class="foundation-person foundation-person--madhu">
+      <img class="foundation-person-img" src="assets/images/madhu-advani.jpg" alt="Portrait of Madhubala Ji Advani, current President of the Mission" loading="lazy">
+      <div class="foundation-person-body">
+        <span class="foundation-role">Devoted Disciple · Living Stewardship</span>
+        <h3>Madhubala Ji Advani</h3>
+        <p>Madhu Maa's journey began in 1970, when Maa Basanti introduced the then 19-year-old Madhubala Advani to Bhaiyaji. That meeting marked a profound turning point, transforming a carefree young woman into a devoted spiritual seeker. Under the guidance of Maa Basanti and Shri Nandkishore Sharda, she undertook years of profound Sadhna and received the blessings of Jagatjanani Maa Tripurasundari.</p>
+        <p>When this spiritual commitment found expression in organised service three decades ago, she began working quietly at the grassroots. Alongside students, families, schools and volunteers, she listened closely, identified genuine need and ensured that assistance was offered with dignity and without discrimination. </p> 
+		<p>Following Maa Basanti Ji's passing in 2021, she became President. Today, she guides the Mission with spiritual clarity and leads a qualified, selfless team carrying its educational, welfare and developmental initiatives forward.</p>
+       <!--
+	   <p>Kumari Madhubala Advani pioneered an innovative, institution-based model of holistic educational empowerment that redefines scholarships as a lifelong movement of social responsibility. Unlike conventional scholarship programmes, her model integrates financial assistance with Sanskar, mentoring, spiritual guidance and community service. </p> 
+		<p>Institutionalised through four complementary charitable trusts, it creates a self-sustaining cycle in which financially independent beneficiaries educate and mentor future generations—creating enduring intergenerational impact and contributing to nation-building.</p>
+		-->
+        <a class="foundation-person-link" href="madhubala-advani.html">Meet our President</a>
+      </div>
+    </article>
+
+    <div class="foundation-service">
+      <header class="foundation-service-heading">
+        <span class="eyebrow">From Inner Practice to Living Service</span>
+        <h3>When Sadhna Became Service</h3>
+        <p class="foundation-service-thesis">Service to humanity became a natural continuation of inner spiritual practice.</p>
       </header>
 
-      <div class="foundation-copy">
-        <p>Rooted in decades of collective Sadhna and spiritual practice, <strong>Shri Nandkishore Sharda</strong>, <strong>Kumari Basanti Manihar</strong> and <strong>Kumari Madhubala Advani</strong> began the work that now forms this Mission in 1996. With the grace of Jagatjanani Maa Tripurasundari, they regarded service to humanity not as separate from spiritual practice, but as its natural extension—an offering dedicated to human welfare, universal brotherhood and world peace.</p>
+      <div class="foundation-service-copy">
+        <p>With the grace of Jagatjanani Maa Tripurasundari, they regarded service to humanity not as separate from spiritual practice, but as its natural extension—an offering dedicated to human welfare, universal brotherhood and world peace.</p>
         <p>What began as a scholarship programme for economically disadvantaged schoolgirls gradually evolved into a holistic system of care. Financial assistance grew together with Sanskar, mentoring, career guidance, personality development and spiritual grounding—helping individuals become educated, self-reliant, compassionate and prepared to uplift others.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= WHY "MISSION" ================= -->
-<section id="why-mission">
-  <div class="wrap">
-    <div class="mission-story-grid">
-      <header class="mission-story-intro">
-        <span class="eyebrow">The Living Mission</span>
-        <h2>Long before it had a name, it was already changing lives.</h2>
-        <p>Its story is one of spiritual conviction gradually becoming organised, compassionate action—responding to every new need without losing sight of dignity, values and inner growth.</p>
-        <div class="mission-story-name" aria-label="The name the movement carries today">
-          <span>The name it carries today</span>
-          <strong>Yugpravartak Shri Nandkishore Sharda Mission</strong>
-        </div>
-      </header>
-
-      <ol class="mission-story-path" aria-label="The story of the Mission">
-        <li class="mission-story-step">
-          <span class="mission-story-year">1996 · Service Takes Root</span>
-          <h3>A conviction enters everyday life</h3>
-          <p>Guided by Shri Nandkishore Sharda and Kumari Basanti Manihar, Madhubala Ji began working closely with schools, students and families. Support was shaped by genuine need, offered without discrimination and carried with dignity.</p>
-        </li>
-        <li class="mission-story-step">
-          <span class="mission-story-year">Three Decades · A Model Evolves</span>
-          <h3>One need revealed another</h3>
-          <p>Scholarships became the beginning of a lasting relationship. Education grew together with Sanskar, mentoring, spiritual guidance, women’s self-reliance, vocational training, yoga and compassionate humanitarian service.</p>
-        </li>
-        <li class="mission-story-step">
-          <span class="mission-story-year">2022 · The Work Receives Its Name</span>
-          <h3>A tribute becomes a shared identity</h3>
-          <p>Madhubala Ji brought this evolving body of work together as the <span class="mission-story-highlight">Yugpravartak Shri Nandkishore Sharda Mission</span>—honouring her spiritual guru and the principles that inspired its journey.</p>
-        </li>
-        <li class="mission-story-step">
-          <span class="mission-story-year">Today · Four Trusts, One Purpose</span>
-          <h3>Gratitude continues the circle</h3>
-          <p>Four complementary charitable Trusts now carry the same spirit forward. Beneficiaries are encouraged, once financially independent, to educate and mentor others—turning personal opportunity into intergenerational service and nation-building.</p>
-        </li>
-      </ol>
-    </div>
-    <p class="mission-story-close">What began as support for one student has become a living movement toward dignity, higher consciousness, universal brotherhood and world peace.</p>
-  </div>
-</section>
-
-<!-- ================= A MODEL THAT MULTIPLIES GOODNESS ================= -->
+<!-- ================= A MODEL THAT MULTIPLIES GOODNESS ================= 
 <section class="model-section" id="our-model" aria-labelledby="model-heading">
   <div class="wrap">
     <div class="section-head center">
@@ -1429,6 +1566,7 @@
     </div>
   </div>
 </section>
+-->
 
 <!-- ================= TIMELINE ================= -->
 <section id="timeline">
@@ -1495,11 +1633,7 @@
 
       </div>
 
-      <div class="story-pull">
-        <span class="eyebrow">Our Guiding Principle</span>
-        <p>"We do not select for merit. We select for need — and then we build the person, not just the marksheet." Through weekly Sunday sessions, values, and steady moral support, quiet transformation follows: in discipline, in confidence, in how a young person carries themselves in the world.</p>
-      </div>
-
+     
       <div class="story-rail">
 
       <div class="story-why">
@@ -1556,7 +1690,7 @@
   </div>
 </section>
 
-<!-- ================= GUIDING THE MISSION TODAY ================= -->
+<!-- ================= GUIDING THE MISSION TODAY ================= 
 <section class="service-reflection leadership-current" id="madhu-maa" aria-labelledby="madhu-leadership-heading">
   <div class="service-reflection-grid">
     <figure class="service-reflection-photo">
@@ -1583,6 +1717,7 @@
     </div>
   </div>
 </section>
+-->
 
 <!-- ================= IMPACT ================= -->
 <section id="impact" class="impact-section">
@@ -1593,47 +1728,92 @@
       <p class="impact-intro">Three decades of sustained relationships across education, family welfare and holistic development—measured separately so the scale and purpose of each intervention remain clear.</p>
     </div>
 
-    <div class="stat-grid">
-      <article class="stat">
-        <div class="num">8,000+</div>
-        <h3>Girls Supported through Education</h3>
-        <p>Need-based assistance enabling girls to pursue school, higher and professional education with confidence.</p>
-        <span class="micro-note">Across 45 schools and 32 colleges</span>
+    <div class="impact-stage" data-impact-stage>
+      <div class="impact-tabs" role="tablist" aria-label="Explore the Mission's impact">
+        <button class="impact-tab" id="impact-tab-girls" type="button" role="tab" aria-selected="true" aria-controls="impact-panel-girls" tabindex="0" data-impact-target="impact-panel-girls">Girls' Education</button>
+        <button class="impact-tab" id="impact-tab-boys" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-boys" tabindex="-1" data-impact-target="impact-panel-boys">Boys' Education</button>
+        <button class="impact-tab" id="impact-tab-self-reliance" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-self-reliance" tabindex="-1" data-impact-target="impact-panel-self-reliance">Women's Self-Reliance</button>
+        <button class="impact-tab" id="impact-tab-wellness" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-wellness" tabindex="-1" data-impact-target="impact-panel-wellness">4-D Wellness</button>
+        <button class="impact-tab" id="impact-tab-families" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-families" tabindex="-1" data-impact-target="impact-panel-families">Family Support</button>
+        <button class="impact-tab" id="impact-tab-years" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-years" tabindex="-1" data-impact-target="impact-panel-years">30 Years</button>
+      </div>
+
+      <article class="impact-slide impact-slide--girls is-active" id="impact-panel-girls" role="tabpanel" aria-labelledby="impact-tab-girls" aria-hidden="false">
+        <img src="assets/images/girls2.png" alt="Schoolgirls supported in continuing their education" loading="lazy">
+        <div class="impact-slide-content">
+          <div class="impact-metrics" aria-label="Girls' education impact figures">
+            <div class="impact-metric">
+              <span class="impact-number">8,000+</span>
+              <span class="impact-metric-label">Girls supported</span>
+            </div>
+            <div class="impact-metric">
+              <span class="impact-number">&#8377;6.14 Cr+</span>
+              <span class="impact-metric-label">Scholarship assistance</span>
+            </div>
+          </div>
+          <h3>Education that Opens Lifelong Possibilities</h3>
+          <p>Need-based assistance enables girls to pursue school, higher and professional education with confidence.</p>
+          <span class="impact-micro-note">Across 45 schools and 32 colleges</span>
+        </div>
       </article>
 
-      <article class="stat">
-        <div class="num">₹6.14 Cr+</div>
-        <h3>Scholarships for Girls</h3>
-        <p>Educational assistance delivered through the school and higher-education trusts for girls and young women.</p>
-        <span class="micro-note">School, college and professional education</span>
+      <article class="impact-slide impact-slide--boys" id="impact-panel-boys" role="tabpanel" aria-labelledby="impact-tab-boys" aria-hidden="true">
+        <img src="assets/images/gallery/main_page3.jpg" alt="Schoolboys attending an educational guidance session" loading="lazy">
+        <div class="impact-slide-content">
+          <div class="impact-metrics" aria-label="Boys' education impact figures">
+            <div class="impact-metric">
+              <span class="impact-number">630+</span>
+              <span class="impact-metric-label">Boys supported</span>
+            </div>
+            <div class="impact-metric">
+              <span class="impact-number">&#8377;57 Lakh+</span>
+              <span class="impact-metric-label">Scholarship assistance</span>
+            </div>
+          </div>
+          <h3>Support that Keeps Education Within Reach</h3>
+          <p>Financial assistance and sustained encouragement help economically vulnerable boys continue their studies.</p>
+          <span class="impact-micro-note">School, higher and professional courses</span>
+        </div>
       </article>
 
-      <article class="stat">
-        <div class="num">630+</div>
-        <h3>Boys Supported through Education</h3>
-        <p>Financial assistance and sustained encouragement helping economically vulnerable boys continue their studies.</p>
-        <span class="micro-note">School, higher and professional courses</span>
+      <article class="impact-slide impact-slide--self-reliance" id="impact-panel-self-reliance" role="tabpanel" aria-labelledby="impact-tab-self-reliance" aria-hidden="true">
+        <img src="https://images.pexels.com/photos/3869086/pexels-photo-3869086.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1800" alt="A woman developing practical skills at a sewing machine" loading="lazy">
+        <div class="impact-slide-content">
+          <span class="impact-number">Free</span>
+          <h3>Women's Self-Reliance through Practical Skills</h3>
+          <p>Training in sewing, tailoring and garment construction helps women and girls build confidence, capability and pathways toward dignified livelihoods.</p>
+          <span class="impact-micro-note">Skill becomes confidence; confidence becomes freedom</span>
+        </div>
       </article>
 
-      <article class="stat">
-        <div class="num">₹57 Lakh+</div>
-        <h3>Scholarships for Boys</h3>
-        <p>Need-based educational support extended through the Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra.</p>
-        <span class="micro-note">Education strengthened by mentorship</span>
+      <article class="impact-slide impact-slide--wellness" id="impact-panel-wellness" role="tabpanel" aria-labelledby="impact-tab-wellness" aria-hidden="true">
+        <img src="assets/images/gallery/yoga_class.jpg" alt="Students participating together in a guided yoga and meditation session" loading="lazy">
+        <div class="impact-slide-content">
+          <span class="impact-number">4-D</span>
+          <h3>Holistic Wellness for the Whole Person</h3>
+          <p>Yoga, Pranayama, meditation and value-based guidance nurture balanced development across the physical, mental, emotional and spiritual dimensions of life.</p>
+          <span class="impact-micro-note">Physical · Mental · Emotional · Spiritual</span>
+        </div>
       </article>
 
-      <article class="stat">
-        <div class="num">₹1.07 Cr+</div>
-        <h3>Food and Family Assistance</h3>
-        <p>Monthly ration support for economically vulnerable families, offered with continuity, dignity and compassion.</p>
-        <span class="micro-note">Nearly 300 families supported</span>
+      <article class="impact-slide impact-slide--family" id="impact-panel-families" role="tabpanel" aria-labelledby="impact-tab-families" aria-hidden="true">
+        <img src="assets/images/gallery/ration.jpg" alt="Volunteers distributing monthly food assistance to families" loading="lazy">
+        <div class="impact-slide-content">
+          <span class="impact-number">&#8377;1.07 Cr+</span>
+          <h3>Food and Family Assistance</h3>
+          <p>Monthly ration support for economically vulnerable families, offered with continuity, dignity and compassion.</p>
+          <span class="impact-micro-note">Nearly 300 families supported</span>
+        </div>
       </article>
 
-      <article class="stat">
-        <div class="num">30 Years</div>
-        <h3>Continuity of Grassroots Service</h3>
-        <p>A sustained journey integrating education, values, spirituality, self-reliance and community welfare.</p>
-        <span class="micro-note">Serving continuously since 1996</span>
+      <article class="impact-slide impact-slide--archive" id="impact-panel-years" role="tabpanel" aria-labelledby="impact-tab-years" aria-hidden="true">
+        <img src="assets/images/early-days.jpg" alt="An archival view of the Mission's early educational work" loading="lazy">
+        <div class="impact-slide-content">
+          <span class="impact-number">30 Years</span>
+          <h3>Continuity of Grassroots Service</h3>
+          <p>A sustained journey integrating education, values, spirituality, self-reliance and community welfare.</p>
+          <span class="impact-micro-note">Serving continuously since 1996</span>
+        </div>
       </article>
     </div>
 
@@ -1772,5 +1952,47 @@
 <script src="assets/js/components.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/home-gallery.js"></script>
+<script>
+  (() => {
+    const stage = document.querySelector('[data-impact-stage]');
+    if (!stage) return;
+
+    const tabs = Array.from(stage.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(stage.querySelectorAll('[role="tabpanel"]'));
+
+    const activateImpact = (tab, moveFocus = false) => {
+      const targetId = tab.dataset.impactTarget;
+
+      tabs.forEach((item) => {
+        const isActive = item === tab;
+        item.setAttribute('aria-selected', String(isActive));
+        item.tabIndex = isActive ? 0 : -1;
+      });
+
+      panels.forEach((panel) => {
+        const isActive = panel.id === targetId;
+        panel.classList.toggle('is-active', isActive);
+        panel.setAttribute('aria-hidden', String(!isActive));
+      });
+
+      if (moveFocus) tab.focus({preventScroll:true});
+      tab.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateImpact(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = null;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = tabs.length - 1;
+        if (nextIndex === null) return;
+        event.preventDefault();
+        activateImpact(tabs[nextIndex], true);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

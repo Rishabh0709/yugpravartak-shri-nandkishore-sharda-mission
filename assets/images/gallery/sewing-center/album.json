@@ -1,0 +1,218 @@
+{
+  "album": "sewing-center",
+  "generatedAt": "2026-08-04T20:08:29.644Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\sewing-center",
+  "photographCount": 7,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "sewing-center",
+      "original": {
+        "file": "01.jpg",
+        "width": 638,
+        "height": 386,
+        "bytes": 72843
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11338
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 638,
+        "height": 386,
+        "bytes": 32816
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 638,
+        "height": 386,
+        "bytes": 38948
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "sewing-center",
+      "original": {
+        "file": "02.jpg",
+        "width": 590,
+        "height": 394,
+        "bytes": 89656
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15436
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 590,
+        "height": 394,
+        "bytes": 47328
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 590,
+        "height": 394,
+        "bytes": 54984
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "sewing-center",
+      "original": {
+        "file": "03.jpg",
+        "width": 590,
+        "height": 326,
+        "bytes": 70196
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14732
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 590,
+        "height": 326,
+        "bytes": 36800
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 590,
+        "height": 326,
+        "bytes": 42116
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "sewing-center",
+      "original": {
+        "file": "04.jpg",
+        "width": 591,
+        "height": 333,
+        "bytes": 60988
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11160
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 591,
+        "height": 333,
+        "bytes": 29098
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 591,
+        "height": 333,
+        "bytes": 34310
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "sewing-center",
+      "original": {
+        "file": "05.jpg",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 949135
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14424
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 97160
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 1350,
+        "bytes": 299668
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "sewing-center",
+      "original": {
+        "file": "06.jpg",
+        "width": 4080,
+        "height": 3060,
+        "bytes": 776670
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12834
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 72120
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1350,
+        "bytes": 213004
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "sewing-center",
+      "original": {
+        "file": "07.jpg",
+        "width": 4080,
+        "height": 3060,
+        "bytes": 911319
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11954
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 76510
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1350,
+        "bytes": 249652
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}
