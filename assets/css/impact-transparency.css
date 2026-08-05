@@ -1,10 +1,9 @@
 :root {
-    --evidence-navy: #202a36;
-    --evidence-navy-soft: #2b3745;
-    --evidence-cream: #fbf7ef;
-    --evidence-blue: #355c87;
-    --evidence-gold: #a67b2b;
-    --evidence-rose: #b95732;
+    --evidence-navy: var(--color-navy);
+    --evidence-cream: var(--color-paper-soft);
+    --evidence-blue: var(--color-blue);
+    --evidence-gold: var(--color-gold-dark);
+    --evidence-rose: var(--color-flame);
 }
 
 .evidence-page {
@@ -767,4 +766,3 @@
         min-height: 48px;
     }
 }
-

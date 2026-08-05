@@ -1,12 +1,12 @@
 :root {
-    --profile-ink: #241b2e;
-    --profile-parchment: #f7f1e6;
-    --profile-parchment-deep: #eee3d0;
-    --profile-flame: #b94f2b;
-    --profile-gold: #987020;
-    --profile-teal: #1e3a34;
-    --profile-muted: #554b42;
-    --profile-line: rgba(36, 27, 46, 0.12);
+    --profile-ink: var(--color-ink);
+    --profile-parchment: var(--color-parchment);
+    --profile-parchment-deep: var(--color-paper-deep);
+    --profile-flame: var(--color-flame);
+    --profile-gold: var(--color-gold-dark);
+    --profile-teal: var(--color-maroon-deep);
+    --profile-muted: var(--color-muted-strong);
+    --profile-line: var(--color-line);
 }
 
 html {
@@ -16,29 +16,8 @@ html {
 body.profile-page {
     background: var(--profile-parchment);
     color: var(--profile-ink);
-    font-family: "Karla", sans-serif;
     font-size: 18px;
     line-height: 1.7;
-}
-
-.profile-page .site-header,
-.profile-page .site-nav,
-.profile-page .footer {
-    font-family: "Karla", sans-serif;
-}
-
-.profile-page .site-title,
-.profile-page .footer-title {
-    font-family: "Fraunces", serif;
-}
-
-.profile-page .site-nav a,
-.profile-page .footer-navigation a {
-    font-size: 16.5px;
-}
-
-.profile-page .copyright {
-    font-size: 14px;
 }
 
 .profile-skip-link {
@@ -487,7 +466,7 @@ body.profile-page {
     border-radius: 24px;
     background:
         radial-gradient(circle at 88% 14%, rgba(211, 173, 92, 0.2), transparent 28%),
-        linear-gradient(145deg, #2f554b, #223f39);
+        linear-gradient(145deg, #71362b, #4b1f22);
 }
 
 .profile-turning-point::after {
@@ -613,7 +592,7 @@ body.profile-page {
     color: #f2eadf;
     background:
         radial-gradient(circle at 85% 0%, rgba(152, 112, 32, 0.2), transparent 34%),
-        linear-gradient(180deg, var(--profile-teal), #274a42);
+        linear-gradient(180deg, var(--profile-teal), #71362b);
 }
 
 .profile-contribution-header {

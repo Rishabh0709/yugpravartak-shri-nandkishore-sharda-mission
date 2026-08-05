@@ -9,19 +9,42 @@
     --color-bg: #f8f5ef;
     --color-surface: #fffdf9;
     --color-white: #ffffff;
+    --color-ink: #241b2e;
+    --color-paper: #f8f3e9;
+    --color-parchment: #f7f1e6;
+    --color-paper-soft: #faf6ee;
+    --color-paper-deep: #efe5d4;
+    --color-cream-text: #efe7d8;
     --color-gold: #c8a13b;
     --color-gold-dark: #9a7622;
     --color-maroon: #7b2426;
+    --color-maroon-deep: #5a2528;
+    --color-maroon-warm: #71362b;
+    --color-flame: #b95732;
+    --color-flame-bright: #e07a45;
     --color-blue: #355c87;
+    --color-blue-deep: #263f62;
+    --color-navy: #202a36;
+    --color-navy-soft: #2b3745;
+    --color-aubergine: #20182a;
+    --color-rose: #a84f51;
     --color-text: #302d29;
     --color-muted: #6e6962;
+    --color-muted-strong: #5f574f;
     --color-border: rgba(91, 70, 37, 0.13);
+    --color-line: rgba(45, 34, 29, 0.12);
+    --font-body: "Karla", sans-serif;
+    --font-heading: "Fraunces", serif;
+    --font-devotional: "Cormorant Garamond", serif;
+    --font-label: "Cinzel", serif;
+    --font-devanagari: "Noto Serif Devanagari", serif;
     --shadow-soft: 0 18px 55px rgba(53, 41, 24, 0.08);
     --shadow-hover: 0 24px 65px rgba(53, 41, 24, 0.13);
     --radius-sm: 14px;
     --radius-md: 22px;
     --radius-lg: 30px;
     --container: 1200px;
+    --container-content: 1180px;
     --header-height: 140px;
     --transition: 280ms ease;
 }
@@ -44,7 +67,7 @@ body {
     overflow-x: hidden;
     color: var(--color-text);
     background: var(--color-bg);
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.7;
     text-rendering: optimizeLegibility;
@@ -205,7 +228,7 @@ ol {
     flex: 1 1 auto;
     min-width: 0;
     color: var(--color-text);
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-size: clamp(1.55rem, 2.15vw, 2rem);
     font-weight: 500;
     line-height: 1.2;
@@ -332,7 +355,7 @@ ol {
     position: relative;
     display: inline-block;
     padding-block: 9px;
-    font-size: 0.95rem;
+    font-size: 1.03rem;
     font-weight: 500;
     letter-spacing: 0.015em;
     white-space: nowrap;
@@ -415,7 +438,7 @@ ol {
         min-height: 0;
         margin: 10px 0 13px;
         padding: 11px 22px;
-        font-family: "Inter", sans-serif;
+        font-family: var(--font-body);
         font-size: 0.9rem;
     }
 }
@@ -622,7 +645,7 @@ ol {
     #header .nav-submenu a,
     .site-header .nav-submenu a {
         padding: 8px 10px;
-        font-family: "Inter", sans-serif;
+        font-family: var(--font-body);
         font-size: 0.94rem;
         font-weight: 500;
     }
@@ -2513,7 +2536,7 @@ ol {
     background:
         radial-gradient(circle at 8% 5%, rgba(200, 161, 59, 0.17), transparent 25%),
         radial-gradient(circle at 92% 90%, rgba(53, 92, 135, 0.13), transparent 28%),
-        linear-gradient(145deg, #25342f, #17251f 66%, #18242c);
+        linear-gradient(145deg, #512729, #351a1b 66%, #44231f);
     text-align: left;
 }
 
@@ -2584,7 +2607,7 @@ ol {
     max-width: 720px;
     margin: 8px 0 0;
     color: #fffaf1;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 3.3vw, 2.55rem);
     font-weight: 400;
     line-height: 1.14;
@@ -2627,14 +2650,14 @@ ol {
 }
 
 .footer-action:hover {
-    color: #1d2b26;
+    color: #4b2222;
     border-color: #fff7e9;
     background: #fff7e9;
     transform: translateY(-2px);
 }
 
 .footer-action--primary {
-    color: #203029;
+    color: #4b2222;
     border-color: #d3ad5c;
     background: #d3ad5c;
 }
@@ -2670,7 +2693,7 @@ ol {
     width: fit-content;
     padding: 4px 0;
     color: #d5d0c7;
-    font-size: 0.91rem;
+    font-size: 1rem;
     line-height: 1.45;
     transition: color var(--transition), transform var(--transition);
 }
@@ -2693,7 +2716,7 @@ ol {
 
 .footer-contact address {
     color: #d5d0c7;
-    font-size: 0.91rem;
+    font-size: 1rem;
     font-style: normal;
     line-height: 1.68;
 }
@@ -2732,7 +2755,7 @@ ol {
     margin: 0;
     color: #9f9b94 !important;
     border: 0;
-    font-size: 0.74rem;
+    font-size: 0.875rem;
     line-height: 1.55;
 }
 
@@ -2856,7 +2879,7 @@ ol {
         min-height: 0;
         margin: 10px 0 13px;
         padding: 11px 22px;
-        font-family: "Inter", sans-serif;
+        font-family: var(--font-body);
         font-size: 0.9rem;
     }
 }

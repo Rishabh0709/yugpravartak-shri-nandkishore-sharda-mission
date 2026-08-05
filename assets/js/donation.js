@@ -5,46 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!selector) return;
 
-    const routes = {
-        "school-education": {
-            available: true,
-            trust: "Swami Vivekanand Students’ Welfare Charitable Trust",
-            activity: "School education scholarships for girls",
-            accountName: "Swami Vivekanand Students’ Welfare Charitable Trust",
-            bankName: "ICICI Bank",
-            branch: "Shastri Nagar Branch, Jodhpur",
-            accountNumber: "683301420518",
-            ifsc: "ICIC0006833",
-            upi: "vivekanand@upi",
-            qr: "assets/images/donation/swami-vivekanand-trust-upi-qr.png",
-            upiLink: "upi://pay?pa=vivekanand@upi&pn=Swami%20Vivekanand%20Students%20Welfare%20Charitable%20Trust&cu=INR"
-        },
-        "higher-education": {
-            available: false,
-            trust: "Maa Shardamani Trust",
-            activity: "Higher education for young women"
-        },
-        "boys-education": {
-            available: false,
-            trust: "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
-            activity: "Education support for boys"
-        },
-        "ration-family": {
-            available: false,
-            trust: "Nandkishore Sharda Gyan Ganga Mission",
-            activity: "Ration and family assistance"
-        },
-        "women-self-reliance": {
-            available: false,
-            trust: "Vatsalyamayi Maa Basanti Ji Manihar Sewing Centre",
-            activity: "Women’s self-reliance and vocational training"
-        },
-        "spiritual-wellbeing": {
-            available: false,
-            trust: "Yugpravartak Shri Nandkishore Sharda Mission",
-            activity: "Spiritual education and holistic wellbeing"
-        }
-    };
+    let routes = {};
 
     const availablePanel = document.querySelector("#available-route");
     const unavailablePanel = document.querySelector("#unavailable-route");
@@ -52,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const trustName = document.querySelector("#selected-trust");
     const activityName = document.querySelector("#selected-activity");
     const unavailableTrust = document.querySelector("#unavailable-trust");
-    const unavailableActivity = document.querySelector("#unavailable-activity");
+    const unavailableMessage = document.querySelector("#unavailable-message");
     const contactLink = document.querySelector("#donation-contact-link");
     const qrImage = document.querySelector("#upi-qr");
     const upiLink = document.querySelector("#open-upi");
@@ -64,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const certificateCopyButton = document.querySelector("#copy-certificate-details");
     const panInput = document.querySelector("#donor-pan");
     const donationDate = document.querySelector("#donation-date");
+    const complianceLabel = document.querySelector("#compliance-label");
+    const complianceNumber = document.querySelector("#compliance-number");
+    const complianceLink = document.querySelector("#compliance-link");
 
     const fields = {
         accountName: document.querySelector("#account-name"),
@@ -75,9 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const updateRoute = () => {
-        const route = routes[selector.value];
+        const activity = routes.activities?.[selector.value];
+        const profile = routes.paymentProfiles?.[activity?.paymentProfile];
 
-        if (!route) return;
+        if (!activity || !profile) return;
+
+        const route = {
+            ...profile,
+            activity: activity.label
+        };
 
         trustName.textContent = route.trust;
         activityName.textContent = route.activity;
@@ -90,20 +60,60 @@ document.addEventListener("DOMContentLoaded", () => {
             availablePanel.hidden = false;
             unavailablePanel.hidden = true;
 
+            const displayValues = {
+                accountName: route.bank.accountName,
+                bankName: route.bank.bankName,
+                branch: route.bank.branch,
+                accountNumber: route.bank.accountNumber,
+                ifsc: route.bank.ifsc,
+                upi: route.upi.id
+            };
+
             Object.entries(fields).forEach(([key, element]) => {
-                element.textContent = route[key];
+                if (element) element.textContent = displayValues[key];
             });
 
-            qrImage.src = route.qr;
-            qrImage.alt = `UPI QR code for ${route.trust}`;
-            upiLink.href = route.upiLink;
+            qrImage.src = route.upi.qrImage;
+            qrImage.alt = `${route.upi.qrCodeName} for ${route.trust}`;
+            qrImage.hidden = false;
+            upiLink.href = `upi://pay?pa=${encodeURIComponent(route.upi.id)}&pn=${encodeURIComponent(route.upi.payeeName)}&cu=${encodeURIComponent(route.upi.currency || "INR")}`;
+            complianceLabel.textContent = route.compliance.label;
+            complianceNumber.textContent = route.compliance.approvalNumber;
+            complianceLink.href = route.compliance.documentsUrl;
         } else {
             status.textContent = "Details to be added";
             availablePanel.hidden = true;
             unavailablePanel.hidden = false;
             unavailableTrust.textContent = route.trust;
-            unavailableActivity.textContent = route.activity;
+            unavailableMessage.textContent = ` does not yet have verified bank and UPI details for ${route.activity}. Please contact the Mission before transferring funds.`;
             contactLink.href = `mailto:kishoreggm@gmail.com?subject=${encodeURIComponent(`Donation enquiry: ${route.activity}`)}`;
+        }
+    };
+
+    const loadRoutes = async () => {
+        selector.disabled = true;
+        status.textContent = "Loading verified details";
+
+        try {
+            const response = await fetch("assets/data/donation-details.json", { cache: "no-store" });
+
+            if (!response.ok) throw new Error(`Donation data request failed with status ${response.status}`);
+
+            const data = await response.json();
+
+            if (!data.activities || !data.paymentProfiles) throw new Error("Donation data is incomplete");
+
+            routes = data;
+            selector.disabled = false;
+            updateRoute();
+        } catch (error) {
+            console.error("Unable to load donation details", error);
+            status.textContent = "Payment details unavailable";
+            availablePanel.hidden = true;
+            unavailablePanel.hidden = false;
+            unavailableTrust.textContent = "Payment information could not be loaded.";
+            unavailableMessage.textContent = " Please refresh the page or contact the Mission before transferring funds.";
+            contactLink.href = "mailto:kishoreggm@gmail.com?subject=Donation%20payment%20details";
         }
     };
 
@@ -199,5 +209,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     selector.addEventListener("change", updateRoute);
-    updateRoute();
+    loadRoutes();
 });

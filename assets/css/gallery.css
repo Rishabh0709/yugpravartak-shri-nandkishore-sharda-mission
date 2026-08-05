@@ -1,30 +1,19 @@
 :root{
-    --gallery-ink:#241B2E;
-    --gallery-parchment:#F7F1E6;
-    --gallery-parchment-deep:#EEE2CF;
-    --gallery-flame:#C1552C;
-    --gallery-gold:#987020;
-    --gallery-muted:#554B42;
-    --gallery-blue:#18518F;
-    --gallery-rose:#9C1D24;
-    --gallery-max:1180px;
+    --gallery-ink:var(--color-ink);
+    --gallery-parchment:var(--color-parchment);
+    --gallery-flame:var(--color-flame);
+    --gallery-gold:var(--color-gold-dark);
+    --gallery-muted:var(--color-muted-strong);
+    --gallery-max:var(--container-content);
 }
 
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
 body.gallery-page{
-    margin:0;
     background:var(--gallery-parchment);
     color:var(--gallery-ink);
-    font-family:'Karla',sans-serif;
     font-size:18px;
     line-height:1.68;
-    -webkit-font-smoothing:antialiased;
 }
 body.gallery-page.nav-open{overflow:hidden;}
-.gallery-page img{display:block;max-width:100%;}
-.gallery-page button,.gallery-page a{font:inherit;}
-.gallery-page button{color:inherit;}
 .gallery-page :focus-visible{outline:2px solid var(--gallery-flame);outline-offset:4px;}
 .gallery-wrap{width:min(100% - 64px,var(--gallery-max));margin-inline:auto;}
 .gallery-skip-link{

@@ -1,11 +1,11 @@
 .contact-page {
-    --contact-navy: #20182a;
-    --contact-paper: #faf6ee;
-    --contact-mist: #efe7d9;
-    --contact-gold: #a27b2b;
-    --contact-flame: #b85a36;
-    --contact-teal: #244a42;
-    --contact-muted: #665c52;
+    --contact-navy: var(--color-aubergine);
+    --contact-paper: var(--color-paper-soft);
+    --contact-mist: var(--color-paper-deep);
+    --contact-gold: var(--color-gold-dark);
+    --contact-flame: var(--color-flame);
+    --contact-teal: var(--color-maroon-deep);
+    --contact-muted: var(--color-muted-strong);
 }
 
 .contact-hero {

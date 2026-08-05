@@ -60,32 +60,32 @@
 
                 <section class="donation-route" aria-live="polite" aria-labelledby="selected-trust">
                     <header class="donation-route-header">
-                        <div><span id="selected-activity">School education scholarships for girls</span><h3 id="selected-trust">Swami Vivekanand Students’ Welfare Charitable Trust</h3></div>
-                        <strong class="donation-status" id="route-status">Verified details available</strong>
+                        <div><span id="selected-activity">School education scholarships for girls</span><h3 id="selected-trust">Loading payment details…</h3></div>
+                        <strong class="donation-status" id="route-status">Loading verified details</strong>
                     </header>
 
-                    <div class="donation-route-grid" id="available-route">
+                    <div class="donation-route-grid" id="available-route" hidden>
                         <div class="bank-details">
                             <h3>Bank transfer details</h3>
                             <p class="bank-details-intro">Use NEFT, RTGS, IMPS or your bank’s transfer facility. Please verify the account name before confirming the transaction.</p>
                             <div class="bank-fields">
-                                <div class="bank-field"><span>Account name</span><strong id="account-name">Swami Vivekanand Students’ Welfare Charitable Trust</strong><button class="copy-button" type="button" data-copy-field="accountName" data-copy-label="Account name">Copy</button></div>
-                                <div class="bank-field"><span>Bank</span><strong id="bank-name">ICICI Bank</strong></div>
-                                <div class="bank-field"><span>Branch</span><strong id="bank-branch">Shastri Nagar Branch, Jodhpur</strong></div>
-                                <div class="bank-field"><span>Account number</span><strong id="account-number">683301420518</strong><button class="copy-button" type="button" data-copy-field="accountNumber" data-copy-label="Account number">Copy</button></div>
-                                <div class="bank-field"><span>IFSC</span><strong id="ifsc-code">ICIC0006833</strong><button class="copy-button" type="button" data-copy-field="ifsc" data-copy-label="IFSC code">Copy</button></div>
+                                <div class="bank-field"><span>Account name</span><strong id="account-name">—</strong><button class="copy-button" type="button" data-copy-field="accountName" data-copy-label="Account name">Copy</button></div>
+                                <div class="bank-field"><span>Bank</span><strong id="bank-name">—</strong></div>
+                                <div class="bank-field"><span>Branch</span><strong id="bank-branch">—</strong></div>
+                                <div class="bank-field"><span>Account number</span><strong id="account-number">—</strong><button class="copy-button" type="button" data-copy-field="accountNumber" data-copy-label="Account number">Copy</button></div>
+                                <div class="bank-field"><span>IFSC</span><strong id="ifsc-code">—</strong><button class="copy-button" type="button" data-copy-field="ifsc" data-copy-label="IFSC code">Copy</button></div>
                             </div>
-                            <div class="donation-compliance"><span>80G approval</span><strong>AAATS3452LF20218</strong><a href="transparency.html#swami-vivekanand-trust-records">Review statutory documents →</a></div>
+                            <div class="donation-compliance"><span id="compliance-label">Tax approval</span><strong id="compliance-number">—</strong><a id="compliance-link" href="transparency.html">Review statutory documents →</a></div>
                             <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
                         </div>
 
                         <aside class="upi-panel">
                             <h3>Donate through UPI</h3>
-                            <div class="upi-qr-shell"><img id="upi-qr" src="assets/images/donation/swami-vivekanand-trust-upi-qr.png" alt="UPI QR code for Swami Vivekanand Students’ Welfare Charitable Trust"></div>
-                            <div class="upi-id" id="upi-id">vivekanand@upi</div>
+                            <div class="upi-qr-shell"><img id="upi-qr" alt="" hidden></div>
+                            <p class="upi-id" id="upi-id">—</p>
                             <p class="upi-caption">Scan with a UPI app, or open the payment address directly on a supported mobile device.</p>
                             <div class="upi-actions">
-                                <a class="upi-button" id="open-upi" href="upi://pay?pa=vivekanand@upi&amp;pn=Swami%20Vivekanand%20Students%20Welfare%20Charitable%20Trust&amp;cu=INR">Open UPI app</a>
+                                <a class="upi-button" id="open-upi" href="#">Open UPI app</a>
                                 <button class="upi-button secondary" type="button" data-copy-field="upi" data-copy-label="UPI ID">Copy UPI ID</button>
                             </div>
                         </aside>
@@ -94,7 +94,7 @@
                     <div class="donation-unavailable" id="unavailable-route" hidden>
                         <div class="donation-unavailable-mark" aria-hidden="true">ॐ</div>
                         <h3>Verified payment details will be added here.</h3>
-                        <p><strong id="unavailable-trust"></strong> administers <span id="unavailable-activity"></span>. Until its verified bank and UPI details are supplied, please contact the Mission before transferring funds.</p>
+                        <p><strong id="unavailable-trust"></strong><span id="unavailable-message"></span></p>
                         <a class="donation-contact-button" id="donation-contact-link" href="mailto:kishoreggm@gmail.com">Ask for verified details</a>
                     </div>
                 </section>

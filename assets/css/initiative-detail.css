@@ -211,7 +211,7 @@
     color: #f7f0e6;
     background:
         radial-gradient(circle at 88% 0%, rgba(211, 173, 92, 0.18), transparent 30%),
-        linear-gradient(150deg, var(--activity-teal), #1e3d37);
+        linear-gradient(150deg, var(--activity-teal), #71362b);
 }
 
 .detail-band-header {

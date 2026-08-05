@@ -19,41 +19,27 @@
 
 <style>
   :root{
-    --ink:#241B2E;
-    --parchment:#F7F1E6;
-    --parchment-2:#F0E8D8;
-    --flame:#C1552C;
-    --flame-bright:#E07A45;
-    --gold:#987020;
-    --teal:#1E3A34;
-    --teal-2:#274A42;
-    --muted:#554B42;
-    --cream-text:#EFE7D8;
-    --max:1180px;
+    --ink:var(--color-ink);
+    --parchment:var(--color-parchment);
+    --parchment-2:var(--color-paper-deep);
+    --flame:var(--color-flame);
+    --flame-bright:var(--color-flame-bright);
+    --gold:var(--color-gold-dark);
+    --teal:var(--color-maroon-deep);
+    --teal-2:var(--color-maroon-warm);
+    --muted:var(--color-muted-strong);
+    --cream-text:var(--color-cream-text);
+    --max:var(--container-content);
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
   body{
-    font-family:'Karla', sans-serif;
     background:var(--parchment);
     color:var(--ink);
     font-size:18px;
     line-height:1.68;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
   }
-  img{max-width:100%; display:block;}
-  a{color:inherit; text-decoration:none;}
   :focus-visible{outline:2px solid var(--flame); outline-offset:3px;}
 
   .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
-
-  /* Keep the shared header and footer in the same type system as this page. */
-  body .site-header, body .site-nav, body .footer{font-family:'Karla',sans-serif;}
-  body .site-title, body .footer-title{font-family:'Fraunces',serif;}
-  body .site-nav a, body .footer-navigation a{font-family:'Karla',sans-serif; font-size:16.5px;}
-  body .footer-tagline, body .copyright{font-family:'Karla',sans-serif;}
-  body .copyright{font-size:14px;}
 
   .skip-link{
     position:fixed; z-index:2000; top:12px; left:12px; transform:translateY(-150%);

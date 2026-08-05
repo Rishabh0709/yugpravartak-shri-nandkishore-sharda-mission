@@ -1,44 +1,19 @@
 :root {
-    --activity-ink: #241b2e;
-    --activity-paper: #f8f3e9;
-    --activity-paper-deep: #efe5d4;
-    --activity-flame: #b95732;
-    --activity-gold: #9d7627;
-    --activity-teal: #244a42;
-    --activity-muted: #655b51;
-    --activity-line: rgba(45, 34, 29, 0.12);
-    --activity-max: 1180px;
-}
-
-html {
-    scroll-behavior: smooth;
+    --activity-ink: var(--color-ink);
+    --activity-paper: var(--color-paper);
+    --activity-paper-deep: var(--color-paper-deep);
+    --activity-flame: var(--color-flame);
+    --activity-gold: var(--color-gold-dark);
+    --activity-teal: var(--color-maroon-deep);
+    --activity-muted: var(--color-muted-strong);
+    --activity-line: var(--color-line);
+    --activity-max: var(--container-content);
 }
 
 body.activity-page {
     color: var(--activity-ink);
     background: var(--activity-paper);
-    font-family: "Karla", sans-serif;
     line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-}
-
-.activity-page *,
-.activity-page *::before,
-.activity-page *::after {
-    box-sizing: border-box;
-}
-
-.activity-page h1,
-.activity-page h2,
-.activity-page h3,
-.activity-page p,
-.activity-page figure {
-    margin: 0;
-}
-
-.activity-page a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .activity-page :focus-visible {
@@ -577,7 +552,7 @@ body.activity-page {
     color: #f7f0e6;
     background:
         radial-gradient(circle at 85% 0%, rgba(211, 173, 92, 0.18), transparent 30%),
-        linear-gradient(150deg, var(--activity-teal), #1f3d37);
+        linear-gradient(150deg, var(--activity-teal), #71362b);
 }
 
 .activity-bridge-grid {

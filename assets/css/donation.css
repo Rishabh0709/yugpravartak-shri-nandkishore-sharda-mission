@@ -1,12 +1,12 @@
 :root {
-    --donation-ink: #241b2e;
-    --donation-paper: #faf5ec;
-    --donation-deep: #efe4d3;
-    --donation-flame: #b95732;
-    --donation-gold: #a47a2c;
-    --donation-teal: #1f3a34;
-    --donation-blue: #355c87;
-    --donation-muted: #655b51;
+    --donation-ink: var(--color-ink);
+    --donation-paper: var(--color-paper-soft);
+    --donation-deep: var(--color-paper-deep);
+    --donation-flame: var(--color-flame);
+    --donation-gold: var(--color-gold-dark);
+    --donation-teal: var(--color-maroon-deep);
+    --donation-blue: var(--color-blue);
+    --donation-muted: var(--color-muted-strong);
 }
 
 body.donation-page {

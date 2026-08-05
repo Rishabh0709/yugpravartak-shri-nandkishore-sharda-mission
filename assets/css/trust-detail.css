@@ -1,7 +1,7 @@
 .trust-detail-page {
-    --trust-blue: #355c87;
-    --trust-blue-deep: #263f62;
-    --trust-rose: #a84f51;
+    --trust-blue: var(--color-blue);
+    --trust-blue-deep: var(--color-blue-deep);
+    --trust-rose: var(--color-rose);
 }
 
 .trust-detail-page .sr-only {
