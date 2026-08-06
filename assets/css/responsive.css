@@ -1,55 +1,156 @@
 /* ==========================================================
-   Responsive styles
-   Loaded by style.css; no additional HTML <link> is required.
+   Production responsive system
+   Loaded after global and page-specific styles.
+   Layout responds to available space, not named devices.
 ========================================================== */
 
-/* Compact desktop */
-@media (max-width: 1120px) {
+:root {
+    --page-gutter: clamp(16px, 4vw, 48px);
+    --section-space: clamp(72px, 8vw, 112px);
+    --section-space-compact: clamp(52px, 6vw, 82px);
+    --readable-measure: 68ch;
+    --touch-target: 44px;
+}
+
+html {
+    overflow-x: clip;
+    text-size-adjust: 100%;
+}
+
+body {
+    min-width: 320px;
+}
+
+:where(main, section, article, header, footer, nav, div, figure, form) {
+    min-width: 0;
+}
+
+:where(img, video, iframe, canvas, svg) {
+    max-width: 100%;
+}
+
+:where(video, iframe, canvas) {
+    display: block;
+}
+
+:where(input, select, textarea) {
+    width: 100%;
+    max-width: 100%;
+    font-size: max(16px, 1em);
+}
+
+:where(button, .btn, .activity-button, .profile-button, .detail-button,
+       .evidence-button, .gallery-button, .footer-action, .donation-button,
+       .certificate-submit, .copy-button) {
+    min-height: var(--touch-target);
+}
+
+:where(h1, h2, h3, .site-title) {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+:where(p, li, figcaption, address) {
+    overflow-wrap: break-word;
+}
+
+:where(.container, .activity-wrap, .profile-wrap, .gallery-wrap) {
+    max-width: calc(100% - var(--page-gutter) - var(--page-gutter));
+}
+
+:where(.activity-index-links, .profile-jump-links, .trust-index-links,
+       .gallery-filters, .document-links) {
+    scrollbar-width: thin;
+    overscroll-behavior-inline: contain;
+}
+
+:where(.trust-chart-scroll, .table-scroll, .legal-table-scroll) {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+:where(.activity-hero-grid, .profile-hero-grid, .detail-hero-grid,
+       .gallery-hero-grid, .evidence-hero-grid, .contact-hero-grid,
+       .donation-hero-grid, .activity-section-header, .selection-header,
+       .detail-intro, .evidence-heading, .contact-enquiry-grid,
+       .donation-route-grid) > * {
+    min-width: 0;
+}
+
+/* Four living pillars: the grid chooses 4, 2 or 1 columns from its own width. */
+.activity-pillars-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+.activity-pillar {
+    min-height: clamp(330px, 35vw, 430px);
+}
+
+/* ==========================================================
+   Compact desktop and navigation changeover
+========================================================== */
+
+@media (max-width: 70rem) {
     :root {
-        --header-height: 100px;
+        --header-height: 118px;
     }
 
     .container,
-    .leaders-grid {
-        width: min(calc(100% - 40px), var(--container));
+    .activity-wrap,
+    .profile-wrap,
+    .gallery-wrap {
+        width: min(calc(100% - var(--page-gutter) - var(--page-gutter)), var(--container-content, 1200px));
     }
 
-    /* FLAG: .logo-subtitle has no matching element in current header.html — orphaned from an earlier header layout. Verify before removing. */
-    .logo-subtitle {
-        display: none;
+    .header-grid {
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: clamp(18px, 3vw, 28px);
     }
 
-    /* FLAG: .leaders-grid / .leader-content have no matching markup anywhere in the current site. Likely leftover from an earlier "Guiding Lights" page concept. */
-    .leaders-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 22px;
+    .site-title {
+        font-size: clamp(1.4rem, 2.4vw, 1.7rem);
     }
 
-    .leader-content {
-        padding: 26px;
-    }
-
-    /* FLAG: .activity-card is unused — current activities are rendered via .service-timeline-card, not .activity-card. */
-    .activity-card {
-        padding-inline: 26px;
+    .activity-pillars-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Tablet and mobile navigation */
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
+    :root {
+        --header-height: 94px;
+    }
+
     body.nav-open {
         overflow: hidden;
     }
 
-    /* FLAG: selectors target #header .container / .site-header .container directly — current header uses .header-grid, not a bare .container child layout. This rule is currently inert. */
-    #header .container,
-    .site-header .container {
-        gap: 18px;
+    .header-grid {
+        grid-template-columns: 102px minmax(0, 1fr);
+        gap: 16px;
+        min-height: var(--header-height);
     }
 
-    /* FLAG: .language-btn does not exist in current header.html — the live toggle uses .lang-toggle / .lang-btn. This appears to be an earlier naming pass. */
-    .language-btn {
-        margin-left: auto;
+    .site-brand,
+    .site-brand-logo {
+        max-height: 82px;
+    }
+
+    .header-row-top {
+        display: none;
+    }
+
+    .header-right {
+        padding-block: 7px;
+    }
+
+    .header-row-bottom {
+        height: 100%;
+        padding-top: 0;
+        justify-content: flex-end;
+        border-top: 0;
     }
 
     .nav-toggle {
@@ -58,6 +159,7 @@
         display: flex;
         width: 46px;
         height: 46px;
+        margin-left: auto;
         flex: 0 0 auto;
         cursor: pointer;
         align-items: center;
@@ -66,7 +168,7 @@
         gap: 6px;
         border: 1px solid rgba(200, 161, 59, 0.28);
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.92);
         box-shadow: 0 8px 24px rgba(45, 37, 27, 0.08);
     }
 
@@ -76,9 +178,7 @@
         height: 2px;
         border-radius: 99px;
         background: var(--color-text);
-        transition:
-            opacity 220ms ease,
-            transform 320ms ease;
+        transition: opacity 220ms ease, transform 320ms ease;
     }
 
     .nav-toggle.is-active span:nth-child(1) {
@@ -101,10 +201,10 @@
         top: 0;
         right: 0;
         display: flex;
-        width: min(86vw, 390px);
+        width: min(88vw, 390px);
         height: 100vh;
         height: 100dvh;
-        padding: 116px 38px 44px;
+        padding: 108px clamp(24px, 7vw, 38px) 40px;
         overflow-y: auto;
         align-items: stretch;
         justify-content: flex-start;
@@ -115,9 +215,7 @@
         box-shadow: -20px 0 60px rgba(40, 31, 20, 0.15);
         transform: translateX(105%);
         visibility: hidden;
-        transition:
-            transform 420ms ease,
-            visibility 420ms ease;
+        transition: transform 420ms ease, visibility 420ms ease;
     }
 
     .site-nav.is-open,
@@ -127,37 +225,13 @@
         visibility: visible;
     }
 
-    /* FLAG: targets .site-nav ul — current nav is a flat list of <a> tags with no <ul>/<li> wrapper, so this rule is currently inert. */
-    .site-nav ul,
-    #header .site-nav ul,
-    .site-header .site-nav ul {
-        display: flex;
+    .site-nav .nav-list {
         width: 100%;
-        align-items: stretch;
-        flex-direction: column;
-        gap: 0;
     }
 
-    /* FLAG: .site-nav li — same issue, no <li> elements exist in current nav markup. */
-    .site-nav li {
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    .site-nav a,
-    #header .site-nav a,
-    .site-header .site-nav a {
-        display: block;
-        padding: 15px 2px;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.45rem;
-        font-weight: 600;
-        white-space: normal;
-    }
-
-    .site-nav a::after {
-        bottom: 9px;
-        width: 42px;
-        transform-origin: left center;
+    .site-nav .nav-item > a,
+    .nav-submenu-toggle {
+        min-height: 56px;
     }
 
     .nav-overlay {
@@ -169,9 +243,7 @@
         cursor: pointer;
         background: rgba(29, 25, 21, 0.48);
         opacity: 0;
-        transition:
-            opacity 320ms ease,
-            visibility 320ms ease;
+        transition: opacity 320ms ease, visibility 320ms ease;
     }
 
     .nav-overlay.is-visible {
@@ -179,716 +251,278 @@
         opacity: 1;
     }
 
-    .section {
-        padding-block: 96px;
+    .footer-introduction {
+        grid-template-columns: auto minmax(0, 1fr);
     }
 
-    .mission-grid,
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    /* FLAG: .leaders-grid / .leader-card.founder / .leader-image — no matching markup in current site. See earlier flag above. */
-    .leaders-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .leader-card.founder {
+    .footer-primary-actions {
         grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+        justify-content: flex-start;
     }
 
-    .leader-card.founder .leader-image {
-        height: 100%;
-        aspect-ratio: auto;
-    }
-
-    /* FLAG: .activities-grid unused — activities render via .service-timeline, not a card grid, on the current homepage. */
-    .activities-grid {
+    .footer-navigation {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .gallery-grid {
-        grid-auto-rows: 215px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .contact-wrapper {
-        max-width: 760px;
-        margin-inline: auto;
     }
 }
 
-/* Small tablet */
-@media (max-width: 768px) {
+/* ==========================================================
+   Content reflow
+========================================================== */
+
+@media (max-width: 50rem) {
     :root {
-        --header-height: 84px;
+        --page-gutter: clamp(18px, 5vw, 32px);
     }
 
-    .container,
-    .leaders-grid,
-    .section-divider {
-        width: min(calc(100% - 32px), var(--container));
+    .section {
+        padding-block: var(--section-space);
     }
 
-    /* FLAG: #header .container / .site-header .container — inert, see flag above. Current header sizing is handled via .header-grid's min-height: var(--header-height), inherited automatically. */
-    #header .container,
-    .site-header .container {
-        min-height: var(--header-height);
+    :is(.activity-hero, .profile-hero, .detail-hero, .gallery-hero,
+        .evidence-hero, .contact-hero, .donation-hero) h1 {
+        font-size: clamp(2.65rem, 9.5vw, 3.65rem);
+        line-height: 1.02;
     }
 
-    /* FLAG: .logo / .logo img / .logo-title — no matching markup. Current brand block is .site-brand / .site-brand-logo / .site-title. */
-    .logo {
+    :is(.activity-hero-grid, .profile-hero-grid, .detail-hero-grid,
+        .gallery-hero-grid, .evidence-hero-grid, .contact-hero-grid,
+        .donation-hero-grid, .activity-section-header, .selection-header,
+        .activity-bridge-grid, .contact-enquiry-grid, .donation-route-grid,
+        .detail-intro, .evidence-heading) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .activity-pillars-heading {
+        align-items: flex-start;
+        flex-direction: column;
         gap: 10px;
     }
 
-    .logo img {
-        width: 50px;
-        height: 50px;
+    .activity-pillars-heading h2 {
+        max-width: 30ch;
+        text-align: left;
     }
 
-    .logo-title {
-        max-width: 210px;
-        font-size: 1.08rem;
+    .activity-pillar {
+        min-height: clamp(330px, 56vw, 390px);
     }
 
-    /* FLAG: .language-btn — see flag above, current class is .lang-btn. */
-    .language-btn {
-        padding: 8px 13px;
-        font-size: 0.82rem;
+    .activity-pillars-core {
+        display: none;
     }
 
-    .nav-toggle {
-        width: 43px;
-        height: 43px;
+    .practice-item,
+    .practice-item.is-reversed {
+        grid-template-columns: minmax(0, 1fr);
     }
 
-    .hero {
-        min-height: auto;
-        padding-block: 48px 62px;
+    .practice-item.is-reversed .practice-copy {
+        order: 0;
     }
 
-    .hero h1 {
-        font-size: clamp(2.65rem, 12vw, 4rem);
+    .profile-jump-links,
+    .trust-index-links,
+    .activity-index-links,
+    .gallery-filters {
+        display: flex;
+        padding-bottom: 7px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x proximity;
     }
 
-    .hero-buttons,
-    .contact-buttons {
-        width: min(100%, 360px);
-        align-items: stretch;
+    .profile-jump-links > *,
+    .trust-index-links > *,
+    .activity-index-links > *,
+    .gallery-filters > * {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .contact-form-grid,
+    .certificate-fields {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-field--wide,
+    .certificate-field--wide {
+        grid-column: auto;
+    }
+
+    .footer-closing {
+        align-items: flex-start;
         flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-    .scroll-indicator {
-        margin-top: 40px;
-    }
-
-    .section-heading {
-        margin-bottom: 48px;
-    }
-
-    .section-divider {
-        margin-block: 58px;
-    }
-
-    .mission-grid {
-        gap: 20px;
-    }
-
-    /* FLAG: .leader-card.founder / .leaders-grid / .leader-image — see flag above, unmatched. */
-    .leader-card.founder {
-        display: flex;
-        grid-column: auto;
-    }
-
-    .leader-card.founder .leader-image {
-        height: auto;
-        aspect-ratio: 4 / 5;
-    }
-
-    .leaders-grid {
-        margin-bottom: 88px;
-        grid-template-columns: 1fr;
-    }
-
-    .leader-image {
-        aspect-ratio: 5 / 4;
-    }
-
-    .leader-image img {
-        object-position: center 24%;
-    }
-
-    .reflection {
-        padding-block: 100px;
-    }
-
-    /* FLAG: .activities-grid — unmatched, see flag above. */
-    .activities-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-grid {
-        grid-auto-rows: 250px;
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-large,
-    .gallery-wide {
-        grid-column: auto;
-        grid-row: auto;
+        text-align: left;
     }
 }
 
-/* Header row consolidation — mobile single-row header */
-@media (max-width: 640px) {
+/* ==========================================================
+   Narrow content: prioritise reading and touch interaction
+========================================================== */
+
+@media (max-width: 35rem) {
+    :root {
+        --header-height: 82px;
+        --page-gutter: clamp(16px, 5vw, 22px);
+    }
+
     .header-grid {
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 82px minmax(0, 1fr);
+        gap: 12px;
     }
 
-    .header-row-top {
-        display: none;
-    }
-
-    .header-row-bottom {
-        padding-top: 0;
-        border-top: 0;
-    }
-
-    .lang-toggle--desktop {
-        display: none;
-    }
-
-    .lang-toggle--mobile {
-        display: flex;
-    }
-
-    .header-row-bottom .site-nav {
-        margin-left: 0;
-    }
-}
-
-/* Phones */
-@media (max-width: 560px) {
-    /* FLAG: .logo-title — unmatched, see flag above. */
-    .logo-title {
-        max-width: 170px;
-        font-size: 0.98rem;
-    }
-
-    /* FLAG: .language-btn — unmatched, see flag above. This rule also hides the language control entirely at this breakpoint, which would need to be revisited if/when .language-btn is reconciled with .lang-toggle. */
-    .language-btn {
-        display: none;
+    .site-brand,
+    .site-brand-logo {
+        max-height: 70px;
     }
 
     .nav-toggle {
-        margin-left: auto;
+        width: 44px;
+        height: 44px;
     }
 
     .site-nav,
     #header .site-nav,
     .site-header .site-nav {
-        width: min(90vw, 360px);
-        padding: 104px 28px 38px;
+        width: min(92vw, 360px);
+        padding: 92px 24px 34px;
     }
 
-    .section {
-        padding-block: 78px;
+    :is(.activity-hero, .profile-hero, .detail-hero, .gallery-hero,
+        .evidence-hero, .contact-hero, .donation-hero) h1 {
+        font-size: clamp(2.35rem, 11vw, 3rem);
+        line-height: 1.03;
     }
 
-    .hero {
-        padding-bottom: 52px;
+    :is(.activity-hero-copy, .gallery-hero-copy, .evidence-hero-copy,
+        .contact-hero-copy, .donation-hero-copy) {
+        font-size: 1.05rem;
+        line-height: 1.65;
     }
 
-    /* FLAG: .hero-logo / .hero-hindi — no matching elements in current hero markup (index.html hero has no logo image or Hindi subline). Possibly from the abandoned "Manidweep" concept alongside the orphaned i18n.js. */
-    .hero-logo {
-        width: 118px;
-        margin-bottom: 18px;
+    .activity-pillars {
+        margin-top: 42px;
     }
 
-    .hero-hindi {
-        font-size: 1.35rem;
+    .activity-pillars-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+        padding: 8px;
     }
 
-    .hero h1 {
-        font-size: clamp(2.35rem, 12.5vw, 3.35rem);
-        line-height: 1.04;
+    .activity-pillar {
+        min-height: clamp(360px, 112vw, 430px);
     }
 
-    .hero-tagline {
-        margin-block: 18px 14px;
+    .activity-pillar-copy {
+        min-height: 54%;
+        padding: 26px 22px 23px;
     }
 
-    .hero-buttons {
-        margin-top: 30px;
-    }
-
-    .section-heading h2 {
-        font-size: clamp(2.25rem, 11vw, 3rem);
-    }
-
-    .section-heading p {
-        font-size: 0.98rem;
-    }
-
-    /* FLAG: .mission-grid article / .activity-card share this rule — .activity-card unmatched, see flag above. .mission-grid article is valid and still used. */
-    .mission-grid article,
-    .activity-card,
-    .contact-card {
-        padding: 28px 24px;
-    }
-
-    /* FLAG: .leader-content — unmatched, see flag above. */
-    .leader-content {
-        padding: 26px 24px 28px;
-    }
-
-    /* FLAG: .leader-image — unmatched, see flag above. */
-    .leader-image {
-        aspect-ratio: 4 / 3;
-    }
-
-    /* FLAG: .founder::before — no .founder element exists in current markup. */
-    .founder::before {
-        top: 14px;
-        right: 14px;
-    }
-
-    .reflection {
-        padding-block: 82px;
-    }
-
-    .reflection-icon {
-        width: 58px;
-        height: 58px;
-        margin-bottom: 28px;
-    }
-
-    .reflection blockquote {
+    .activity-pillar-copy strong {
         font-size: clamp(2rem, 10vw, 2.65rem);
     }
 
-    .reflection-author {
-        font-size: 0.72rem;
-        letter-spacing: 0.11em;
+    .activity-pillar-copy > span:not(.activity-pillar-number):not(.activity-pillar-action) {
+        max-width: 28ch;
+        font-size: 0.95rem;
     }
 
-    .gallery-grid {
-        grid-auto-rows: 220px;
-        gap: 16px;
-    }
-
-    .contact-content h2 {
-        font-size: clamp(2.35rem, 11vw, 3rem);
-    }
-
-    .footer,
-    .site-footer {
-        padding-block: 64px 34px;
-    }
-}
-
-/* Very small phones */
-@media (max-width: 380px) {
-    .container,
-    .leaders-grid,
-    .section-divider {
-        width: min(calc(100% - 24px), var(--container));
-    }
-
-    /* FLAG: .logo-title / .logo img — unmatched, see flag above. */
-    .logo-title {
-        max-width: 150px;
-        font-size: 0.9rem;
-    }
-
-    .logo img {
-        width: 46px;
-        height: 46px;
-    }
-
-    .nav-toggle {
-        width: 40px;
-        height: 40px;
-    }
-
-    .hero h1 {
-        font-size: 2.22rem;
-    }
-
-    .btn {
-        min-height: 52px;
-        padding-inline: 22px;
-    }
-}
-
-@media (max-width: 1050px) {
-
-    .journey-block,
-    .journey-block.reverse {
-        grid-template-columns: 1fr;
-        gap: 55px;
-        margin-bottom: 80px;
-    }
-
-    .journey-block.reverse .journey-visual {
-        order: 2;
-    }
-
-    .journey-block.reverse .journey-content {
-        order: 1;
-    }
-
-    .journey-visual {
-        width: min(100%, 600px);
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 480px) {
-
-    /* FLAG: .leadership-highlight and children — no matching markup anywhere in the current site's HTML. Purpose unclear; likely from an unbuilt or removed section. */
-    .leadership-highlight {
-        padding: 25px 22px 25px 26px;
-        border-radius: 18px;
-    }
-
-    .leadership-highlight::before {
-        right: 8px;
-        bottom: -12px;
-        font-size: 4.8rem;
-    }
-
-    .leadership-highlight__eyebrow {
+    .activity-pillar-action {
+        min-height: 44px;
+        margin-top: 10px;
+        align-items: center;
         font-size: 0.68rem;
-        letter-spacing: 0.12em;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .beginnings-heading {
-        margin-bottom: 60px;
     }
 
-    .journey-content p {
-        font-size: 0.98rem;
-        line-height: 1.8;
+    .activity-pillars-purpose {
+        max-width: 28ch;
+        margin-inline: auto;
     }
 
-    .journey-image-frame,
-    .journey-image-frame img {
-        min-height: 520px;
+    .activity-index-inner,
+    .profile-jump-nav-inner,
+    .trust-index-inner {
+        display: block;
     }
 
-    .journey-image-frame {
-        border-radius: 170px 170px 26px 26px;
+    .activity-index-label {
+        display: block;
+        margin-bottom: 10px;
     }
 
-    .journey-image-frame::before {
-        border-radius: 154px 154px 18px 18px;
-    }
-
-    .journey-visual figcaption {
-        right: 18px;
-        bottom: 18px;
-        left: 18px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .journey-block,
-    .journey-block.reverse {
-        margin-bottom: 65px;
-    }
-
-    .journey-divider {
-        margin: 22px 0 24px;
-    }
-
-    .journey-image-frame,
-    .journey-image-frame img {
-        min-height: 430px;
-    }
-
-    .journey-image-frame {
-        border-radius: 130px 130px 22px 22px;
-    }
-
-    .journey-image-frame::before {
-        inset: 12px;
-        border-radius: 116px 116px 15px 15px;
-    }
-
-    .journey-visual figcaption {
-        right: 12px;
-        bottom: 12px;
-        left: 12px;
-        padding: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    /* FLAG: .journey-read-more IS used (index.html links use this class) — not orphaned, just noting it lives outside the main .journey-content block group above. */
-    .journey-read-more {
+    .hero-buttons,
+    .activity-actions,
+    .footer-primary-actions,
+    .contact-form-actions,
+    .certificate-actions {
         width: 100%;
-        justify-content: space-between;
-        padding-left: 18px;
-        font-size: 0.72rem;
-        letter-spacing: 0.08em;
-    }
-}
-
-@media (max-width: 992px) {
-    .activities-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 640px) {
-    .activities-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-
-    .activity-card__body {
-        padding: 20px 20px 24px;
-    }
-
-    .activity-card__body h3 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* FLAG: .journey-cta__actions / .journey-action — no matching markup. Current .journey-cta block only contains a <p> and a single .btn, not this actions/action structure. Possibly planned but unbuilt. */
-    .journey-cta__actions {
+        align-items: stretch;
         flex-direction: column;
     }
 
-    .journey-action {
+    .hero-buttons > *,
+    .activity-actions > *,
+    .footer-primary-actions > *,
+    .contact-form-actions > *,
+    .certificate-actions > * {
         width: 100%;
+        justify-content: center;
+    }
+
+    .footer-introduction,
+    .footer-navigation {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer-brand {
+        justify-self: start;
+    }
+
+    .footer-primary-actions {
+        grid-column: auto;
+    }
+
+    .practice-copy p,
+    .trust-card p,
+    .activity-bridge p {
+        text-align: left;
+        hyphens: none;
     }
 }
 
-@media (max-width: 480px) {
-
-    /* FLAG: .journey-cta--featured / .journey-action — unmatched, see flag above. */
-    .journey-cta--featured {
-        padding: 24px 20px;
-        border-radius: 20px;
+@media (max-width: 23.75rem) {
+    :root {
+        --page-gutter: 14px;
     }
 
-    .journey-action {
-        padding-left: 17px;
-        font-size: 0.7rem;
-        letter-spacing: 0.06em;
-    }
-}
-
-
-
-/* FLAG: the entire block below (.hero-content, .hero-opening, .hero-logo, .hero-mountains, .hero-rays, .hero-mist, .hero-particles span, .hero-journey-arrow, .hero-journey-link, .hero-description, .hero-sky) targets a completely different hero implementation than the current one (canvas-based #heroParticles + .hero-bg). This looks like it belongs to the same abandoned "Manidweep" storyboard concept as main.js and i18n.js. None of these classes exist in the live index.html hero. Safe to archive alongside those files once confirmed. */
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: 100svh;
+    :is(.activity-hero, .profile-hero, .detail-hero, .gallery-hero,
+        .evidence-hero, .contact-hero, .donation-hero) h1 {
+        font-size: clamp(2.15rem, 11.5vw, 2.65rem);
     }
 
-    .hero-content {
-        padding-top: 125px;
-        padding-bottom: 70px;
-    }
-
-    .hero-opening {
-        margin-bottom: 14px;
-    }
-
-    .hero-logo {
-        margin-top: 28px;
-    }
-
-    .hero-mountains--back {
-        height: 46%;
-    }
-
-    .hero-mountains--front {
-        height: 34%;
-    }
-
-    .hero-rays {
-        top: -5%;
-        width: 620px;
-        height: 620px;
+    .activity-pillar {
+        min-height: 350px;
     }
 }
 
-@media (max-width: 480px) {
-
-    .hero-content {
-        padding-right: 8px;
-        padding-left: 8px;
-    }
-
-    .hero h1 {
-        line-height: 1.02;
-    }
-
-    .hero-description {
-        max-width: 340px;
-    }
-
-    .hero-journey-link {
-        margin-top: 28px;
+@media (hover: none) {
+    :where(a, button) {
+        -webkit-tap-highlight-color: rgba(200, 161, 59, 0.12);
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
-    /* FLAG: .hero-sky, .hero-rays, .hero-mist, .hero-journey-arrow — unmatched, part of the same flagged block above. .hero-particles span is ALSO currently unmatched since the live particle effect uses a <canvas id="heroParticles"> with no child <span> elements — the canvas-based version already self-disables under reduced motion via its own JS early-return, so this rule is redundant even if the class name partially overlaps by coincidence. */
-    .hero-sky,
-    .hero-rays,
-    .hero-mist,
-    .hero-particles span,
-    .hero-journey-arrow {
-        animation: none;
-    }
-}
-
-/* FLAG: background-position rules for .hero — current .hero has no background-image (it uses .hero-bg as a separate layered div with gradients), so background-position here has no visible effect. Part of the same flagged legacy hero block. */
-@media (min-width: 1200px) {
-    .hero {
-        background-position: center 42%;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        background-position: center center;
+    html {
+        scroll-behavior: auto;
     }
 
-    .hero-content {
-        padding-top: 120px;
-        padding-bottom: 70px;
-    }
-
-    /* FLAG: .hero::before — current .hero has no ::before background-image treatment matching this gradient; .hero::before/::after in the live CSS are the decorative ring outlines, not this overlay. */
-    .hero::before {
-        background:
-            linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.02),
-                rgba(28, 24, 20, 0.18)
-            );
-    }
-}
-
-/* FLAG: the entire "Impact" block below (.impact-stats-grid, .impact-story-slider, .impact-slider-button, .impact-story-card and its children, .impact-stat-card, .impact-subheading) does not match the .impact-grid / .impact-card markup we just built for the homepage Impact section. This looks like styling for a more elaborate future Impact page (with a testimonial slider) that hasn't been built yet — worth checking whether this was intended for impact.html rather than being dead weight. Don't delete without confirming which direction you want for that page. */
-@media (max-width: 992px) {
-
-    .impact-stats-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-
-    .impact-story-slider {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-slider-button {
-        position: absolute;
-        z-index: 3;
-        top: 50%;
-        width: 44px;
-        height: 44px;
-        transform: translateY(-50%);
-    }
-
-    .impact-slider-button:hover,
-    .impact-slider-button:focus-visible {
-        transform: translateY(-50%) scale(1.05);
-    }
-
-    .impact-slider-button--previous {
-        left: -8px;
-    }
-
-    .impact-slider-button--next {
-        right: -8px;
-    }
-
-    .impact-story-card {
-        padding: 34px 28px;
-    }
-
-    .impact-story-card__identity {
-        padding: 0 20px;
-    }
-
-    .impact-story-card blockquote {
-        padding: 0 20px;
-    }
-
-    .impact-story-card__name {
-        padding: 0 20px;
-    }
-
-    .impact-stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-stat-card {
-        min-height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .impact-subheading {
-        margin-bottom: 34px;
-    }
-
-    .impact-story-card {
-        padding: 28px 20px;
-        border-radius: 22px;
-    }
-
-    .impact-story-card__identity {
-        padding: 0 14px;
-        align-items: flex-start;
-    }
-
-    .impact-story-card__avatar {
-        width: 54px;
-        height: 54px;
-        font-size: 0.95rem;
-    }
-
-    .impact-story-card blockquote,
-    .impact-story-card__name {
-        padding: 0 14px;
-    }
-
-    .impact-slider-button--previous {
-        left: -4px;
-    }
-
-    .impact-slider-button--next {
-        right: -4px;
-    }
-
-    .impact-stat-card {
-        padding: 28px 24px;
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }

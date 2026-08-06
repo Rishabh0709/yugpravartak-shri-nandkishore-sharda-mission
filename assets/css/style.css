@@ -1,5 +1,3 @@
-@import url("./responsive.css");
-
 /* ==========================================================
    YUGPRAVARTAK SHRI NANDKISHORE SHARDA MISSION
    Global styles
@@ -488,7 +486,7 @@ ol {
 }
 
 .nav-submenu--impact {
-    width: 310px;
+    width: 340px;
 }
 
 .nav-submenu-panel {
