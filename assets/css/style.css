@@ -2679,6 +2679,11 @@ ol {
     min-width: 0;
 }
 
+/* A footer contact column is structural content, not a full-page section. */
+.footer .footer-contact {
+    padding: 0;
+}
+
 .footer .footer-link-group h3,
 .footer .footer-contact h3 {
     margin: 0 0 18px;
