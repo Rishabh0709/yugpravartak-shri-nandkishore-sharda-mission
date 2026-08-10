@@ -14,53 +14,126 @@
     <link rel="stylesheet" href="assets/css/responsive.css?v=20260806-2">
 </head>
 <body class="profile-page">
-    <a class="profile-skip-link" href="#main-content">Skip to main content</a>
+    <a class="profile-skip-link" href="#main-content" onclick="setTimeout(()=>document.getElementById('main-content').focus(),100)">Skip to main content</a>
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
-        <section class="profile-hero">
+    <main id="main-content" tabindex="-1">
+        <section class="profile-hero" aria-labelledby="profile-title">
             <div class="profile-wrap">
                 <nav class="profile-breadcrumb" aria-label="Breadcrumb">
-                    <a href="index4.html">Home</a><span aria-hidden="true">/</span><span>Guiding Lights</span>
+                    <a href="homepage-mission-flow.html">Home</a><span aria-hidden="true">/</span><a href="activities.html">Our Work</a><span aria-hidden="true">/</span><span>Guiding Lights</span>
                 </nav>
 
                 <div class="profile-hero-grid">
                     <div>
                         <span class="profile-eyebrow">The Spiritual Vision</span>
-                        <h1 class="profile-title">Shri Nandkishore Sharda</h1>
+                        <h1 class="profile-title" id="profile-title">Shri Nandkishore Sharda</h1>
                         <p class="profile-role">Lovingly remembered as Bhaiyaji · 1944–2003</p>
                         <p class="profile-lead">A brilliant young seeker whose uncompromising search for truth became a contemporary spiritual path—and whose compassion gave thousands of girls the dignity of education, values and hope.</p>
                     </div>
 
                     <figure class="profile-portrait-shell">
-                        <img class="profile-portrait profile-portrait--bhaiyaji" src="assets/images/bhaiyaji_2.jpg" alt="Portrait of Yugpravartak Shri Nandkishore Sharda, lovingly known as Bhaiyaji">
+                        <img class="profile-portrait profile-portrait--bhaiyaji" src="assets/images/bhaiyaji_2.jpg" alt="Portrait of Yugpravartak Shri Nandkishore Sharda, lovingly known as Bhaiyaji" loading="lazy" decoding="async">
                     </figure>
                 </div>
             </div>
         </section>
 
-        <div class="profile-wrap">
-            <div class="profile-facts" aria-label="Key milestones">
-                <div class="profile-fact"><span>Born</span><strong>16 July 1944<br>Jodhpur</strong></div>
-                <div class="profile-fact"><span>Spiritual quest</span><strong>Began in 1959<br>at the age of fifteen</strong></div>
-                <div class="profile-fact"><span>Mission in action</span><strong>Founding President<br>from 1996</strong></div>
+        <section class="profile-facts-section" aria-label="Key milestones in Bhaiyaji's life">
+            <div class="profile-wrap">
+                <div class="profile-facts" role="list">
+                    <div class="profile-fact" role="listitem"><span>Born</span><strong>16 July 1944<br>Jodhpur</strong></div>
+                    <div class="profile-fact" role="listitem"><span>Spiritual quest</span><strong>Began in 1959<br>at the age of fifteen</strong></div>
+                    <div class="profile-fact" role="listitem"><span>Mission in action</span><strong>Founding President<br>from 1996</strong></div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <nav class="profile-jump-nav" aria-label="Explore Bhaiyaji's life">
+        <nav class="profile-jump-nav" aria-label="Explore Bhaiyaji's life journey">
             <div class="profile-wrap profile-jump-nav-inner">
                 <span class="profile-jump-label">Explore the life</span>
-                <div class="profile-jump-links">
-                    <a href="#awakening">The awakening</a>
-                    <a href="#spiritual-path">Spiritual path</a>
-                    <a href="#service-in-action">Service in action</a>
-                    <a href="#path-he-gave">The path he gave</a>
-                    <a href="#living-lineage">Living lineage</a>
+                <div class="profile-jump-links" role="list">
+                    <a href="#awakening" role="listitem">The awakening</a>
+                    <a href="#spiritual-path" role="listitem">Spiritual path</a>
+                    <a href="#service-in-action" role="listitem">Service in action</a>
+                    <a href="#path-he-gave" role="listitem">The path he gave</a>
+                    <a href="#living-lineage" role="listitem">Living lineage</a>
                 </div>
             </div>
         </nav>
 
-        <section class="profile-story" id="awakening">
+        <section class="profile-story" id="awakening" aria-labelledby="awakening-title">
+            <div class="profile-wrap">
+                <header class="profile-story-intro">
+                    <span class="profile-eyebrow">A Life Awakened by a Question</span>
+                    <h2 id="awakening-title">Before he became a guide, he was a grieving fifteen-year-old searching for an answer</h2>
+                    <p>Bhaiyaji's spiritual journey did not begin with certainty. It began with loss—with a young mind refusing to look away from death, and a tender heart asking what remains when the person we love is suddenly no longer before us.</p>
+                </header>
+
+                <article class="profile-emotion-opening">
+                    <figure>
+                        <img class="portrait-top" src="assets/images/young_bhaiyaji1.jpg" alt="A youthful portrait of Shri Nandkishore Sharda as a teenager" loading="lazy" decoding="async">
+                    </figure>
+                    <div class="profile-emotion-copy">
+                        <span class="profile-scene-kicker">Jodhpur · 1959</span>
+                        <h2>The fire that changed everything</h2>
+                        <p>His father, Shri Vijaykishan Ji Sharda, had passed away. Before the funeral pyre stood a boy of fifteen—old enough to feel the finality of the moment, yet young enough for every unanswered question to arrive with overwhelming force.</p>
+                        <p>The body before him looked like his father, but the warmth, the voice and the familiar presence were gone. Grief became bewilderment; bewilderment became inquiry. Something had departed—but what was it? Where had it gone? And what, then, was life?</p>
+                    </div>
+                </article>
+
+                <div class="profile-inner-voice">
+                    <span>The questions within him</span>
+                    Why is my father not speaking? What has left this body? Where has he gone—and what is the power that makes us alive?
+                </div>
+
+                <article class="profile-narrative-pair">
+                    <div class="profile-narrative-copy">
+                        <span class="profile-scene-kicker">A search without borrowed answers</span>
+                        <h2>He would not silence the questions with convention</h2>
+                        <p>An exceptional student of science, young Nandkishore could not accept an explanation merely because it was old, familiar or widely repeated. Ritual without understanding did not satisfy him. Neither did fear, superstition or blind belief.</p>
+                        <p>He resolved to know through experience. What began in sorrow slowly became a disciplined search for the eternal principle behind the body, consciousness and the universe. The pain of losing one beloved person widened into compassion for every human being living with the same questions.</p>
+                    </div>
+                    <figure class="profile-archival-frame">
+                        <img src="assets/images/bhaiyaji_sadhna.jpg" alt="Bhaiyaji seated in meditation during Sadhna" loading="lazy" decoding="async">
+                        <figcaption>Inquiry became discipline: Bhaiyaji during Sadhna.</figcaption>
+                    </figure>
+                </article>
+
+                <article class="profile-narrative-pair is-reversed" id="spiritual-path">
+                    <div class="profile-narrative-copy">
+                        <span class="profile-scene-kicker">Surrender and realization</span>
+                        <h2>At the feet of Jagatjanani Maa, the restless search found direction</h2>
+                        <p>With complete devotion, he surrendered himself to Maa Tripurasundari. Years of intense Sadhna transformed intellectual inquiry into lived understanding. Yet he never turned spiritual realization into distance or mystery.</p>
+                        <p>He wanted the ordinary householder—the student, parent and working person—to understand, examine and practise spiritual knowledge while remaining fully engaged with life. From this compassion emerged Buddhi-Vivek Yog Sadhna: a contemporary path of awakened intelligence, discernment and inner steadiness.</p>
+                    </div>
+                    <figure class="profile-archival-frame">
+                        <img src="assets/images/maa_bhaiya.jpg" alt="Bhaiyaji offering prayer before Jagatjanani Maa in devotion" loading="lazy" decoding="async">
+                        <figcaption>For Bhaiyaji, knowledge ripened through surrender to Jagatjanani Maa.</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="profile-turning-point" id="service-in-action">
+                    <span class="profile-scene-kicker">When inner realization turned outward</span>
+                    <h2>Wisdom could not remain private while a child's future was being denied</h2>
+                    <p>In 1996, Bhaiyaji and Maa Basanti turned their spiritual conviction toward the education of girls from disadvantaged families in western Rajasthan. The Swami Vivekanand Students' Welfare Charitable Trust was established on 10 June, with Maa Basanti as Founder and Bhaiyaji as President.</p>
+                    <p>To him, assistance was never a transaction. A scholarship could open a classroom door, but education joined with Sanskar could restore confidence, dignity and the courage to shape one's own life.</p>
+                </aside>
+
+                <figure class="profile-wide-memory">
+                    <img src="assets/images/trust2.jpg" alt="Bhaiyaji writing at Manidweep with Madhu Maa and Maa Basanti nearby during a spiritual session" loading="lazy" decoding="async">
+                    <figcaption>A living fellowship of knowledge and service: Bhaiyaji with Madhu Maa and Maa Basanti at Manidweep.</figcaption>
+                </figure>
+
+                <article class="profile-narrative-copy">
+                    <span class="profile-scene-kicker">A presence that did not end</span>
+                    <h2>The mortal journey closed; the questions continued to illuminate</h2>
+                    <p>The Trust received Rajasthan's Bhamashah Award for five consecutive years from 1999 to 2003. Bhaiyaji saw that honour not as his own, but as recognition of students who kept moving forward despite hardship.</p>
+                    <p>On 24 January 2003, Vivekananda Jayanti, he left his mortal form. The boy who once stood before his father's pyre had spent his life discovering what death could not take away. His writings, Sadhna, institutions and the people transformed by his guidance continue to carry that discovery forward.</p>
+                    <div class="profile-reflection">He began by asking what leaves the body. He answered by building a life whose light did not leave with him.</div>
+                </article>
+            </div>
+        </section>
             <div class="profile-wrap">
                 <header class="profile-story-intro">
                     <span class="profile-eyebrow">A Life Awakened by a Question</span>
