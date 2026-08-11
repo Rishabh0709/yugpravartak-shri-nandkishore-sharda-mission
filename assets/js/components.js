@@ -244,16 +244,40 @@ function highlightActiveNavigation() {
 }
 
 function initMobileUtilities() {
-    const backToTop = document.createElement("button");
-    backToTop.className = "mobile-back-to-top";
-    backToTop.type = "button";
-    backToTop.setAttribute("aria-label", "Back to top");
-    backToTop.innerHTML = '<span aria-hidden="true">â†‘</span>';
+    initBackToTop();
+    initHorizontalScrollCues();
+}
+
+function initBackToTop() {
+    let backToTop = document.getElementById("back-to-top");
+
+    // Defensive fallback for a stale cached footer partial. The shared footer
+    // remains the normal source; this creates one control only when it is absent.
+    if (!backToTop) {
+        backToTop = document.createElement("button");
+        backToTop.className = "mobile-back-to-top";
+        backToTop.id = "back-to-top";
+        backToTop.type = "button";
+        backToTop.setAttribute("aria-label", "Back to top");
+        backToTop.innerHTML = `
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+            </svg>
+        `;
+    }
+
+    if (backToTop.dataset.initialized === "true") {
+        return;
+    }
+
+    // The button is authored once in the shared footer, then moved outside
+    // the footer's overflow-clipped decorative container for fixed positioning.
     document.body.appendChild(backToTop);
+    backToTop.dataset.initialized = "true";
 
     let scrollTicking = false;
     const updateBackToTop = () => {
-        backToTop.classList.toggle("is-visible", window.scrollY > 700);
+        backToTop.classList.toggle("is-visible", window.scrollY > 400);
         scrollTicking = false;
     };
 
@@ -274,7 +298,6 @@ function initMobileUtilities() {
     });
 
     updateBackToTop();
-    initHorizontalScrollCues();
 }
 
 function initHorizontalScrollCues() {
