@@ -71,9 +71,9 @@
 },
 "gyan-ganga-mission": {
   "available": true,
-  "trust": "3.	Shri Nandkishore Sharada Gyan Ganga Mission",
+  "trust": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
   "bank": {
-    "accountName": "3.	Shri Nandkishore Sharada Gyan Ganga Mission",
+    "accountName": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
     "bankName": "ICICI Bank",
     "branch": "Shastri Nagar Branch, Jodhpur",
     "accountNumber": "683301426725",
@@ -81,7 +81,7 @@
   },
   "upi": {
     "id": "ENTER_UPI_ID",
-    "payeeName": "3.	Shri Nandkishore Sharada Gyan Ganga Mission",
+    "payeeName": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
     "currency": "INR",
     "qrCodeName": "Gyan Ganga Mission UPI QR",
     "qrImage": "assets/images/donation/snksggm-upi-qr.png"

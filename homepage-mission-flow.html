@@ -218,6 +218,15 @@
   .foundation-person h3{margin:13px 0 12px; font-size:clamp(23px,2.6vw,30px); line-height:1.18;}
   .foundation-person p{color:#414A51; font-size:17px; line-height:1.72;}
   .foundation-person p + p{margin-top:14px;}
+  .foundation-more{margin-top:14px;}
+  .foundation-more > summary{
+    display:none; min-height:44px; cursor:pointer; align-items:center; color:#833A4A;
+    font-family:'Cinzel',serif; font-size:11px; font-weight:700; letter-spacing:.09em;
+    list-style:none; text-transform:uppercase;
+  }
+  .foundation-more > summary::-webkit-details-marker{display:none;}
+  .foundation-more > summary::after{content:'+'; margin-left:9px; font-family:'Karla',sans-serif; font-size:18px;}
+  .foundation-more[open] > summary::after{content:'âˆ’';}
   .foundation-person-link{
     display:inline-flex; min-height:44px; align-items:center; gap:8px; margin-top:15px;
     border-bottom:1px solid rgba(138,62,78,.3); color:#833A4A;
@@ -281,6 +290,8 @@
     .foundation-person-img,.foundation-person--madhu .foundation-person-img{aspect-ratio:5/4;}
     .foundation-service{margin-top:46px; padding:29px 23px; border-radius:15px;}
     .foundation-service-copy p{font-size:17px; line-height:1.7;}
+    .foundation-more > summary{display:flex;}
+    .foundation-more[open] > summary{margin-bottom:12px;}
   }
 
   /* ---------- FLAME ICON ---------- */
@@ -1547,7 +1558,7 @@
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
   }
 </style>
-<link rel="stylesheet" href="assets/css/responsive.css?v=20260806-2">
+<link rel="stylesheet" href="assets/css/responsive.css?v=20260811-1">
 </head>
 <body>
 
@@ -1565,13 +1576,13 @@
         <h1>Universal Brotherhood, <em>World Peace and Human Welfare.</em></h1>
         <p class="sub">Born from Kumari Madhubala Advani’s deep reverence for her spiritual master, <strong>Shri Nandkishore Sharda</strong>, the Mission carries his timeless teachings into living service. By preserving its founding methodology and nurturing its sacred vision, she sustains an unbroken stream of spiritual wisdom, accessible education and selfless <em>Seva</em>—advancing global harmony, inner peace and human welfare.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#why-mission">Discover the Mission</a>
+          <a class="btn btn-primary" href="#impact">Our Impact</a>
           <a class="btn btn-ghost" href="activities.html">Explore Our Work</a>
         </div>
       </div>
       <aside class="hero-concept-symbol">
         <div class="hero-concept-emblem">
-          <img class="hero-diya" src="assets/images/illustrated-diya.webp" alt="Illustrated brass diya with a lit flame" width="720" height="720">
+          <img class="hero-diya" src="assets/images/illustrated-diya.webp" alt="Illustrated brass diya with a lit flame" width="720" height="720" loading="eager" fetchpriority="high" decoding="async">
           <strong class="hero-concept-sanskrit">वसुधैव कुटुम्बकम्</strong>
           <span class="hero-concept-meaning">The world is one family</span>
           <p class="hero-concept-principle">Universal brotherhood<br>·<br>World peace</p>
@@ -1597,6 +1608,16 @@
     </div>
   </div>
 </section>
+
+<nav class="mobile-quick-nav" aria-label="Quick links on this page">
+  <div class="mobile-quick-nav__inner mobile-scroll-cue">
+    <a href="#spiritual-foundation">Foundation</a>
+    <a href="#timeline">Our Work</a>
+    <a href="#impact">Impact</a>
+    <a href="#stories">Stories</a>
+    <a href="#gallery">Gallery</a>
+  </div>
+</nav>
 
 <!-- ================= EARLY PROOF ================= -->
 <section class="proof-strip on-dark" aria-labelledby="proof-strip-heading">
@@ -1672,8 +1693,11 @@
         <span class="foundation-role">Devoted Disciple · Living Stewardship</span>
         <h3>Madhubala Ji Advani</h3>
         <p>Madhu Maa's spiritual journey began in 1970, when Maa Basanti introduced the then 19-year-old Madhubala Advani to Bhaiyaji. That meeting marked a profound turning point, transforming a carefree young woman into a devoted spiritual seeker. Under the guidance of Maa Basanti and Shri Nandkishore Sharda, she undertook years of profound Sadhna and received the blessings of Jagatjanani Maa Tripurasundari.</p>
-        <p>When this spiritual commitment found expression in organised service three decades ago, she began working quietly at the grassroots. Alongside students, families, schools and volunteers, she listened closely, identified genuine need and ensured that assistance was offered with dignity and without discrimination.</p>
-		<p>Following Maa Basanti Ji's passing in 2021, she became President. Today, she guides the Mission with spiritual clarity and leads a qualified, selfless team carrying its educational, welfare and developmental initiatives forward.</p>
+        <details class="foundation-more" open data-mobile-disclosure>
+          <summary>Continue her journey</summary>
+          <p>When this spiritual commitment found expression in organised service three decades ago, she began working quietly at the grassroots. Alongside students, families, schools and volunteers, she listened closely, identified genuine need and ensured that assistance was offered with dignity and without discrimination.</p>
+          <p>Following Maa Basanti Ji's passing in 2021, she became President. Today, she guides the Mission with spiritual clarity and leads a qualified, selfless team carrying its educational, welfare and developmental initiatives forward.</p>
+        </details>
        
         <a class="foundation-person-link" href="madhubala-advani.html">Meet our President</a>
       </div>
@@ -2067,8 +2091,8 @@
 
 <div id="footer-placeholder"></div>
 
-<script src="assets/js/components.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/components.js?v=20260811-1"></script>
+<script src="assets/js/main.js?v=20260811-1"></script>
 <script src="assets/js/home-gallery.js"></script>
 <script>
   (() => {

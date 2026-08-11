@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     highlightActiveNavigation();
 	initHeaderScroll();
     initLangToggle();
+    initMobileUtilities();
 });
 
 async function loadComponent(selector, filePath) {
@@ -239,6 +240,75 @@ function highlightActiveNavigation() {
         if (samePage) {
             link.closest(".has-submenu")?.classList.add("is-current");
         }
+    });
+}
+
+function initMobileUtilities() {
+    const backToTop = document.createElement("button");
+    backToTop.className = "mobile-back-to-top";
+    backToTop.type = "button";
+    backToTop.setAttribute("aria-label", "Back to top");
+    backToTop.innerHTML = '<span aria-hidden="true">â†‘</span>';
+    document.body.appendChild(backToTop);
+
+    let scrollTicking = false;
+    const updateBackToTop = () => {
+        backToTop.classList.toggle("is-visible", window.scrollY > 700);
+        scrollTicking = false;
+    };
+
+    window.addEventListener("scroll", () => {
+        if (!scrollTicking) {
+            requestAnimationFrame(updateBackToTop);
+            scrollTicking = true;
+        }
+    }, { passive: true });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? "auto"
+                : "smooth"
+        });
+    });
+
+    updateBackToTop();
+    initHorizontalScrollCues();
+}
+
+function initHorizontalScrollCues() {
+    const scrollers = document.querySelectorAll([
+        "[role='tablist']",
+        ".activity-index-links",
+        ".profile-jump-links",
+        ".trust-index-links",
+        ".gallery-filters",
+        ".document-links",
+        ".home-gallery-track",
+        ".impact-chart-scroll",
+        ".trust-chart-scroll",
+        ".table-scroll",
+        ".legal-table-scroll"
+    ].join(","));
+
+    scrollers.forEach((scroller) => {
+        const updateCue = () => {
+            const isScrollable = scroller.scrollWidth > scroller.clientWidth + 4;
+            const isAtEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 4;
+            scroller.classList.toggle("mobile-scroll-cue", isScrollable);
+            scroller.classList.toggle("is-at-end", isAtEnd);
+
+            if (isScrollable && !scroller.hasAttribute("tabindex")) {
+                scroller.tabIndex = 0;
+                scroller.setAttribute("role", "region");
+                scroller.setAttribute("aria-label", "Scrollable content");
+            }
+        };
+
+        scroller.addEventListener("scroll", updateCue, { passive: true });
+        window.addEventListener("resize", updateCue, { passive: true });
+        requestAnimationFrame(updateCue);
     });
 }
 

@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeSmoothLinks();
     initializeRevealAnimations();
 	initializeImpactStories();
+    initializeMobileDisclosures();
+    initializeImageHints();
 });
 /* ==========================================================
    HERO
@@ -450,6 +452,30 @@ function initializeRevealAnimations() {
 
     elements.forEach((element) => {
         observer.observe(element);
+    });
+}
+
+/* ==========================================================
+   MOBILE READING + IMAGE HINTS
+========================================================== */
+
+function initializeMobileDisclosures() {
+    const disclosures = document.querySelectorAll("[data-mobile-disclosure]");
+
+    if (!disclosures.length) {
+        return;
+    }
+
+    const narrowScreen = window.matchMedia("(max-width: 520px)").matches;
+
+    disclosures.forEach((disclosure) => {
+        disclosure.open = !narrowScreen;
+    });
+}
+
+function initializeImageHints() {
+    document.querySelectorAll('img[loading="lazy"]:not([decoding])').forEach((image) => {
+        image.decoding = "async";
     });
 }
 
