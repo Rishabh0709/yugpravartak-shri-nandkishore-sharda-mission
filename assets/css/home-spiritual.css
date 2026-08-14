@@ -200,51 +200,134 @@ body.spiritual-home {
 }
 .sp-section-heading > p { margin-top: 22px; color: #665b52; font-size: 1.08rem; line-height: 1.8; }
 
-.sp-roots {
-    background:
-        radial-gradient(circle at 85% 15%, rgba(207,164,74,.13), transparent 28%),
-        linear-gradient(180deg, #fffaf0, #f6eddf);
-}
-.sp-roots__intro {
-    display: block;
-}
-.sp-roots__heading { max-width: none; }
-.sp-roots__heading h2 { font-size: clamp(3rem, 5vw, 4.75rem); }
-.sp-roots__body {
-    display: grid;
-    margin-top: 42px;
-    grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
-    align-items: start;
-    gap: clamp(42px, 7vw, 96px);
-}
-.sp-roots__narrative { padding-top: 22px; }
-.sp-roots__narrative p { color: #5e554d; font-size: 1.06rem; line-height: 1.85; }
-.sp-roots__narrative p + p { margin-top: 22px; }
 
-.sp-roots__portrait {
-    margin: 34px 0 0;
-    overflow: hidden;
-    border: 1px solid rgba(121, 81, 37, .16);
-    border-radius: 150px 150px 24px 24px;
-    background: #e3e8c8;
-    box-shadow: 0 22px 46px rgba(68, 53, 29, .11);
+.sp-roots__intro {
+    
+	background:
+ linear-gradient(rgba(33, 25, 39, 0.35), rgba(33, 25, 39, 0.45)),
+        url("../images/bhaiyaji_sadhna_1.jpg") center center / contain  no-repeat;
+    color: #fff9ef;
+	
 }
-.sp-roots__portrait img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
+
+
+.sp-roots__intro .sp-section-heading h2 { 
+    color: #fff9ef; 
 }
-.sp-roots__portrait figcaption {
-    padding: 17px 20px 19px;
-    color: #685c50;
-    background: rgba(255, 251, 240, .94);
+
+.sp-roots__intro .sp-section-heading > p { 
+    color: rgba(255, 249, 239, .78); 
+}
+
+.sp-roots__intro .sp-section-eyebrow { 
+    color: #e8c468; 
+}
+
+.sp-roots__body {
+    /* Glassmorphism Styling */
+    background: rgba(34, 25, 39, 0.62);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    
+    /* Sacred Gold Border & Radius */
+    border: 1px solid rgba(240, 205, 126, 0.27);
+    border-radius: 18px;
+    padding: 36px 40px;
+
+    /* Sizing & Centering */
+    max-width: 860px;
+    margin: 40px auto 0 auto;
+    
+    /* Soft shadow to elevate the glass above the background image */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Text & Link Formatting Inside the Card */
+.sp-roots__body p {
+    color: rgba(255, 249, 239, 0.88);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.sp-roots__body p + p {
+    margin-top: 18px;
+}
+
+.sp-roots__body .sp-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 24px;
+    color: #edcb7b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.sp-roots__body .sp-inline-link:hover {
+    color: #e8c468;
+    transform: translateX(4px);
+}	
+
+/* Floating Narrative with Left Sacred Accent Line */
+.sp-roots__narrative {
+    max-width: 780px;
+    margin: 20px auto;
+    padding-left: 28px;
+    border-left: 2px solid rgba(232, 196, 104, 0.5); /* Gold manuscript margin line */
+}
+
+/* Paragraph Formatting with Generous Breathing Room */
+.sp-roots__narrative p {
+    color: rgba(255, 249, 239, 0.88);
+    font-size: 1.12rem;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+}
+
+.sp-roots__narrative p + p {
+    margin-top: 22px;
+}
+
+/* Sacred Illuminated Drop Cap */
+.sp-roots__narrative p.has-dropcap::first-letter {
     font-family: var(--font-heading, serif);
-    font-size: .98rem;
-    font-style: italic;
-    line-height: 1.5;
-    text-align: center;
+    font-size: 3.6rem;
+    float: left;
+    line-height: 0.8;
+    margin-right: 12px;
+    margin-top: 4px;
+    color: #edcb7b;
 }
+
+/* Link Styling */
+.sp-roots__narrative .sp-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    color: #edcb7b;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.sp-roots__narrative .sp-inline-link:hover {
+    color: #e8c468;
+    transform: translateX(5px);
+}
+/* Responsive Adjustments for Mobile */
+@media (max-width: 600px) {
+    .sp-roots__intro {
+        padding: 50px 16px;
+    }
+
+    .sp-roots__body {
+        padding: 24px 20px;
+    }
+}
+
 
 .sp-inline-link,
 .sp-wisdom-chapter__copy a,
@@ -253,6 +336,7 @@ body.spiritual-home {
     align-items: center;
     width: fit-content;
     color: var(--sp-maroon);
+	
     font-size: .88rem;
     font-weight: 700;
     gap: 8px;
@@ -268,9 +352,8 @@ body.spiritual-home {
 
 /* Subheading styles for the section */
 .sp-wisdom-chapters {
-    margin-top: clamp(62px, 8vw, 108px);
+    padding: clamp(60px, 8vw, 100px) 0;
 }
-
 .sp-wisdom-chapters__header {
     text-align: center;
     margin-bottom: clamp(32px, 4vw, 48px);
@@ -285,72 +368,74 @@ body.spiritual-home {
     letter-spacing: -.025em;
 }
 
-/* Grid arrangement for side-by-side cards */
 .sp-wisdom-chapters__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 32px;
-}
-
-/* Modified Card Layout (Vertical Card Stack) */
-.sp-wisdom-chapter {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid rgba(125, 77, 38, .14);
-    border-radius: 32px;
-    box-shadow: 0 28px 65px rgba(76, 47, 27, .1);
+    gap: 40px;
+    margin-top: 48px;
 }
 
+/* Card Main Outer Container */
+.sp-wisdom-chapter {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+    align-items: stretch;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(127, 80, 33, 0.16);
+    box-shadow: 0 20px 45px rgba(68, 43, 26, 0.07);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.sp-wisdom-chapter:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 60px rgba(68, 43, 26, 0.12);
+}
+
+/* Card Background Themes */
 .sp-wisdom-chapter--book {
-    background:
-        radial-gradient(circle at 18% 45%, rgba(255, 247, 175, .62), transparent 27%),
-        linear-gradient(125deg, #b9dce8, #e8e6c5 48%, #fff7dc 100%);
+    background: linear-gradient(135deg, #fbf7ee 0%, #f4ead5 100%);
 }
 
 .sp-wisdom-chapter--sadhna {
-    background:
-        radial-gradient(circle at 81% 35%, rgba(255, 231, 107, .62), transparent 31%),
-        linear-gradient(130deg, #d7edf0, #f9e5a8 48%, #b8d7e8 100%);
+    background: linear-gradient(135deg, #f5f8f8 0%, #e3eee9 100%);
 }
 
-/* Reset image order so both cards display image at top */
-.sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image { 
-    order: initial; 
+/* Left Column: Visual Area */
+.sp-wisdom-chapter__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(32px, 4vw, 48px);
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    border-right: 1px solid rgba(127, 80, 33, 0.08);
 }
 
-.sp-wisdom-chapter__image {
-    position: relative;
-    display: grid;
+/* Frame ensuring ZERO Image Distortion or Clipping */
+.sp-wisdom-chapter__frame {
     width: 100%;
-    height: 280px;
-    margin: 0;
-    overflow: hidden;
-    place-items: center;
-    background: rgba(255, 255, 255, .08);
+    max-width: 260px; /* Controls ideal size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sp-wisdom-chapter__image::before {
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    content: "";
-    border: 1px solid rgba(170, 116, 40, .17);
-    border-radius: 50%;
-    box-shadow: 0 0 0 28px rgba(255,255,255,.13), 0 0 0 56px rgba(255,255,255,.08);
-}
-
-.sp-wisdom-chapter__image img {
-    position: relative;
-    z-index: 1;
+.sp-wisdom-chapter__frame img {
     width: auto;
-    height: calc(100% - 40px);
-    max-width: calc(100% - 40px);
-    object-fit: contain;
-    filter: drop-shadow(0 18px 22px rgba(57, 43, 48, .18));
+    height: auto;
+    max-width: 100%;
+    max-height: 340px; /* Keeps book/artwork at proportional scale */
+    object-fit: contain; /* CRITICAL: Never crop or clip */
+    border-radius: 8px; /* Soft rounding for book edges */
+    filter: drop-shadow(0 16px 24px rgba(40, 20, 10, 0.18)); /* Elegant depth */
+    transition: transform 0.4s ease;
 }
+
+.sp-wisdom-chapter:hover .sp-wisdom-chapter__frame img {
+    transform: scale(1.03); /* Subtle lift on hover */
+}
+
 
 .sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image img { 
     width: calc(100% - 38px); 
@@ -358,45 +443,61 @@ body.spiritual-home {
     max-width: none; 
 }
 
+/* Right Column: Copy Area */
 .sp-wisdom-chapter__copy {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    padding: clamp(28px, 4vw, 42px);
-    background: rgba(255, 252, 243, .62);
-    backdrop-filter: blur(4px);
+    justify-content: center;
+    padding: clamp(36px, 5vw, 56px);
 }
 
 .sp-wisdom-chapter__copy h3 {
-    margin-top: 10px;
-    color: var(--sp-ink);
     font-family: var(--font-heading, serif);
-    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
     font-weight: 400;
-    line-height: 1.15;
+    line-height: 1.25;
+    margin-top: 8px;
+    color: var(--sp-ink, #211927);
 }
 
-.sp-wisdom-chapter__copy p { 
-    margin-top: 16px; 
-    color: #5f554d; 
-    font-size: 1rem; 
-    line-height: 1.7; 
+.sp-wisdom-chapter__copy p {
+    margin-top: 16px;
+    color: #534840;
+    line-height: 1.75;
+    font-size: 1.05rem;
 }
 
-.sp-wisdom-chapter__copy a { 
-    margin-top: auto;
-    padding-top: 24px;
+.sp-wisdom-chapter__copy .sp-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    color: var(--sp-maroon, #7f2b2b);
+    font-weight: 700;
+    text-decoration: none;
+    transition: gap 0.2s ease;
 }
 
-/* Responsive adjustment for screens <= 992px */
-@media (max-width: 992px) {
-    .sp-wisdom-chapters__grid {
-        grid-template-columns: 1fr;
+.sp-wisdom-chapter__copy .sp-inline-link:hover {
+    gap: 12px;
+}
+
+/* Responsive Handling for Mobile & Tablet */
+@media (max-width: 900px) {
+    .sp-wisdom-chapter {
+        grid-template-columns: 1fr; /* Switch to stacked layout */
+    }
+
+    .sp-wisdom-chapter__visual {
+        border-right: none;
+        border-bottom: 1px solid rgba(127, 80, 33, 0.08);
+        padding: 36px 24px;
+    }
+
+    .sp-wisdom-chapter__frame img {
+        max-height: 260px;
     }
 }
-
 .sp-universal-path {
     background:
         radial-gradient(circle at 7% 22%, rgba(106, 151, 162, .15), transparent 27%),
@@ -576,6 +677,7 @@ body.spiritual-home {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .sp-transformation { background-attachment: scroll; }
-    .sp-path-card { transition: none; }
+    .sp-transformation  { background-attachment: scroll; }
+    .sp-roots__intro { background-attachment: scroll; }
+	.sp-path-card { transition: none; }
 }
