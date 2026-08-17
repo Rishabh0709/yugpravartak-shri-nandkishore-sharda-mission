@@ -14,6 +14,20 @@ body.spiritual-home {
     background: var(--sp-cream);
 }
 
+.spiritual-home .skip-link {
+    position: fixed;
+    z-index: 3000;
+    top: 10px;
+    left: 10px;
+    padding: 10px 14px;
+    color: #fffaf0;
+    border-radius: 6px;
+    background: #562630;
+    transform: translateY(-160%);
+    transition: transform .2s ease;
+}
+.spiritual-home .skip-link:focus { transform: translateY(0); }
+
 .spiritual-home #header-placeholder {
     position: absolute;
     z-index: 1000;
@@ -21,16 +35,16 @@ body.spiritual-home {
     height: 0;
 }
 
-.spiritual-home .site-header {
+body.spiritual-home #header.site-header:not(.is-scrolled) {
     color: var(--sp-ink);
-    border-bottom-color: rgba(92, 54, 27, .08);
+    border-bottom-color: transparent;
     background: transparent;
     box-shadow: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
 }
 
-.spiritual-home .site-header.is-scrolled {
+body.spiritual-home #header.site-header.is-scrolled {
     background: rgba(255, 250, 240, .95);
     box-shadow: 0 10px 30px rgba(65, 39, 25, .12);
     backdrop-filter: blur(18px);
@@ -43,34 +57,68 @@ body.spiritual-home {
 }
 
 .spiritual-home .header-grid {
-    grid-template-columns: 132px minmax(0, 1fr);
-    min-height: 112px;
+    grid-template-columns: 158px minmax(0, 1fr);
+    min-height: 126px;
 }
 
 .spiritual-home .header-right { padding-block: 0; }
 .spiritual-home .header-row-bottom { justify-content: flex-end; }
-.spiritual-home .site-brand-logo { max-height: 96px; }
+.spiritual-home .header-row-bottom::before { display: none; }
+.spiritual-home .site-brand-logo {
+    width: auto;
+    max-height: 114px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+}
+
+@media (min-width: 62.001rem) {
+    body.spiritual-home #header.site-header:not(.is-scrolled) .site-nav > .nav-list > .nav-item > a,
+    body.spiritual-home #header.site-header:not(.is-scrolled) .nav-submenu-toggle {
+        color: #4c2831;
+        text-shadow: none;
+    }
+    body.spiritual-home #header.site-header:not(.is-scrolled) .has-submenu.is-current > .nav-submenu-toggle {
+        color: #8a5426;
+    }
+    body.spiritual-home #header.site-header:not(.is-scrolled) .site-brand-logo {
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+    }
+    body.spiritual-home #header.site-header:not(.is-scrolled) .site-nav > .nav-list > .nav-item > a.nav-donate-link {
+        color: #fffaf0;
+        border: 1px solid rgba(239, 214, 154, .5);
+        background: rgba(105, 31, 42, .88);
+    }
+}
 
 .sp-home-hero {
     position: relative;
     display: grid;
-    min-height: min(920px, 100svh);
+    min-height: max(780px, 100svh);
     overflow: hidden;
     isolation: isolate;
     background:
-        radial-gradient(circle at 76% 40%, rgba(255, 249, 223, .96) 0 9%, rgba(246, 186, 89, .42) 28%, transparent 56%),
-        linear-gradient(120deg, #f5e6ce 0%, #f8d49f 46%, #efb36d 100%);
+        radial-gradient(circle at 18% 32%, rgba(255, 248, 232, .92), transparent 40%),
+        linear-gradient(135deg, #f7eadb 0%, #f2d7ba 58%, #efc492 100%);
 }
 
 .sp-home-hero::before {
     position: absolute;
-    z-index: -2;
-    inset: 0;
+    z-index: 0;
+    inset: 0 0 0 42%;
     content: "";
-    opacity: .32;
-    background: repeating-conic-gradient(from 228deg at 75% 46%, rgba(255,255,255,.42) 0 4deg, transparent 4deg 10deg);
-    -webkit-mask-image: radial-gradient(circle at 75% 46%, #000 0 12%, transparent 68%);
-    mask-image: radial-gradient(circle at 75% 46%, #000 0 12%, transparent 68%);
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, #f3ddc7 0%, rgba(243, 221, 199, .74) 12%, rgba(243, 221, 199, .12) 28%, transparent 46%),
+        url("../images/bhaiyaji-maa-home-hero.jpg") 54% 42% / cover no-repeat;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .7) 15%, #000 35%);
+    mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .7) 15%, #000 35%);
 }
 
 .sp-home-hero::after {
@@ -79,25 +127,34 @@ body.spiritual-home {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 150px;
+    height: 120px;
     content: "";
     pointer-events: none;
-    background: linear-gradient(180deg, transparent, rgba(255, 250, 240, .96));
+    background: linear-gradient(180deg, transparent, rgba(255, 250, 240, .92));
 }
 
 .sp-home-hero__inner {
     position: relative;
     z-index: 1;
-    display: grid;
+    display: flex;
     width: min(calc(100% - 72px), 1380px);
     margin: auto;
-    padding: 160px 0 100px;
-    grid-template-columns: minmax(0, .98fr) minmax(420px, .82fr);
-    align-items: center;
-    gap: clamp(30px, 5vw, 86px);
+    padding: 180px 0 88px;
+    align-items: flex-end;
 }
 
-.sp-home-hero__copy { max-width: 790px; }
+.sp-home-hero__copy {
+    width: min(760px, 50vw);
+    padding: clamp(34px, 4.5vw, 64px);
+    overflow: hidden;
+    border: 1px solid rgba(255, 239, 205, .32);
+    border-left: 4px solid rgba(229, 190, 103, .9);
+    border-radius: 30px;
+    background: rgba(58, 40, 63, .68);
+    box-shadow: 0 28px 70px rgba(56, 34, 38, .2);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
 .sp-home-hero__eyebrow,
 .sp-section-eyebrow {
     display: block;
@@ -108,13 +165,14 @@ body.spiritual-home {
     letter-spacing: .2em;
     text-transform: uppercase;
 }
+.sp-home-hero__eyebrow { color: var(--sp-gold-light); }
 
 .sp-home-hero h1 {
-    max-width: 800px;
+    max-width: 920px;
     margin: 18px 0 0;
-    color: #362131;
+    color: #fffaf0;
     font-family: var(--font-heading, "Fraunces", serif);
-    font-size: clamp(3.45rem, 6.2vw, 6.8rem);
+    font-size: clamp(3rem, 3.85vw, 4.65rem);
     font-weight: 400;
     line-height: .95;
     letter-spacing: -.045em;
@@ -124,7 +182,7 @@ body.spiritual-home {
 .sp-home-hero__tagline {
     max-width: 700px;
     margin-top: 28px;
-    color: #6e3032;
+    color: #efcf8a;
     font-family: var(--font-heading, "Fraunces", serif);
     font-size: clamp(1.25rem, 2vw, 1.75rem);
     font-style: italic;
@@ -134,55 +192,14 @@ body.spiritual-home {
 .sp-home-hero__purpose {
     max-width: 720px;
     margin-top: 20px;
-    color: #55483d;
+    color: rgba(255, 250, 240, .82);
     font-size: clamp(1rem, 1.35vw, 1.15rem);
     line-height: 1.75;
 }
 
 .sp-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 32px; }
-.sp-home-hero .btn.btn-primary { color: #fffaf0; border-color: #732c35; background: #732c35; }
-.sp-home-hero .btn.btn-outline { color: #542631; border-color: rgba(84,38,49,.48); background: rgba(255,250,240,.38); }
-
-.sp-home-hero__portrait {
-    position: relative;
-    align-self: end;
-    justify-self: end;
-    width: min(100%, 610px);
-    margin: 0;
-}
-
-.sp-home-hero__portrait::before {
-    position: absolute;
-    z-index: -1;
-    inset: 8% -10% -3%;
-    content: "";
-    border-radius: 50% 50% 12% 12%;
-    background: radial-gradient(circle at 48% 35%, rgba(255,250,222,.95), rgba(245,184,83,.28) 48%, transparent 72%);
-    filter: blur(6px);
-}
-
-.sp-home-hero__portrait img {
-    width: 100%;
-    max-height: 710px;
-    object-fit: contain;
-    object-position: center bottom;
-    filter: drop-shadow(0 28px 45px rgba(100, 50, 25, .18));
-    -webkit-mask-image: radial-gradient(ellipse 76% 91% at 54% 53%, #000 72%, rgba(0,0,0,.9) 80%, transparent 100%);
-    mask-image: radial-gradient(ellipse 76% 91% at 54% 53%, #000 72%, rgba(0,0,0,.9) 80%, transparent 100%);
-}
-
-.sp-home-hero__portrait figcaption {
-    position: absolute;
-    right: 4%;
-    bottom: 8%;
-    padding: 9px 14px;
-    color: #5e3b2b;
-    border: 1px solid rgba(120,71,35,.16);
-    border-radius: 999px;
-    background: rgba(255,250,238,.74);
-    font-size: .78rem;
-    backdrop-filter: blur(10px);
-}
+.sp-home-hero .btn.btn-primary { color: #2d2031; border-color: #e4bf68; background: #e4bf68; }
+.sp-home-hero .btn.btn-outline { color: #fffaf0; border-color: rgba(255,250,240,.54); background: rgba(255,250,240,.08); }
 
 .sp-section { padding: clamp(76px, 9vw, 130px) 0; }
 .sp-container { width: min(calc(100% - 48px), 1220px); margin-inline: auto; }
@@ -200,134 +217,76 @@ body.spiritual-home {
 }
 .sp-section-heading > p { margin-top: 22px; color: #665b52; font-size: 1.08rem; line-height: 1.8; }
 
-
+.sp-roots {
+    background:
+        radial-gradient(circle at 85% 15%, rgba(207,164,74,.13), transparent 28%),
+        linear-gradient(180deg, #fffaf0, #f6eddf);
+}
 .sp-roots__intro {
-    
-	background:
- linear-gradient(rgba(33, 25, 39, 0.35), rgba(33, 25, 39, 0.45)),
-        url("../images/bhaiyaji_sadhna_1.webp") center center / contain  no-repeat;
-    color: #fff9ef;
-	
+    display: block;
 }
-
-
-.sp-roots__intro .sp-section-heading h2 { 
-    color: #fff9ef; 
-}
-
-.sp-roots__intro .sp-section-heading > p { 
-    color: rgba(255, 249, 239, .78); 
-}
-
-.sp-roots__intro .sp-section-eyebrow { 
-    color: #e8c468; 
-}
-
+.sp-roots__heading { max-width: none; }
+.sp-roots__heading h2 { font-size: clamp(3rem, 5vw, 4.75rem); }
 .sp-roots__body {
-    /* Glassmorphism Styling */
-    background: rgba(34, 25, 39, 0.62);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* Safari support */
-    
-    /* Sacred Gold Border & Radius */
-    border: 1px solid rgba(240, 205, 126, 0.27);
-    border-radius: 18px;
-    padding: 36px 40px;
-
-    /* Sizing & Centering */
-    max-width: 860px;
-    margin: 40px auto 0 auto;
-    
-    /* Soft shadow to elevate the glass above the background image */
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    display: grid;
+    margin-top: 42px;
+    grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
+    align-items: start;
+    gap: clamp(42px, 7vw, 96px);
+}
+.sp-roots__narrative { padding-top: 22px; }
+.sp-roots__narrative p { color: #5e554d; font-size: 1.06rem; line-height: 1.85; }
+.sp-roots__narrative p + p { margin-top: 22px; }
+.sp-roots__closing {
+    position: relative;
+    margin: 34px 0 26px;
+    padding: 24px 28px 25px 62px;
+    border: 1px solid rgba(151, 100, 39, .17);
+    border-left: 3px solid rgba(185, 135, 45, .72);
+    border-radius: 0 18px 18px 0;
+    background: linear-gradient(120deg, rgba(255, 252, 243, .88), rgba(244, 227, 201, .55));
+    box-shadow: 0 16px 34px rgba(77, 52, 27, .07);
+}
+.sp-roots__closing > span {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    color: var(--sp-gold);
+    font-size: 1rem;
+}
+.sp-roots__closing p {
+    margin: 0;
+    color: #4f4039;
+    font-family: var(--font-heading, "Fraunces", serif);
+    font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+    font-style: italic;
+    line-height: 1.65;
 }
 
-/* Text & Link Formatting Inside the Card */
-.sp-roots__body p {
-    color: rgba(255, 249, 239, 0.88);
-    font-size: 1.08rem;
-    line-height: 1.8;
+.sp-roots__portrait {
+    margin: 34px 0 0;
+    overflow: hidden;
+    border: 1px solid rgba(121, 81, 37, .16);
+    border-radius: 150px 150px 24px 24px;
+    background: #e3e8c8;
+    box-shadow: 0 22px 46px rgba(68, 53, 29, .11);
 }
-
-.sp-roots__body p + p {
-    margin-top: 18px;
+.sp-roots__portrait img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
 }
-
-.sp-roots__body .sp-inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 24px;
-    color: #edcb7b;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.sp-roots__body .sp-inline-link:hover {
-    color: #e8c468;
-    transform: translateX(4px);
-}	
-
-/* Floating Narrative with Left Sacred Accent Line */
-.sp-roots__narrative {
-    max-width: 780px;
-    margin: 20px auto;
-    padding-left: 28px;
-    border-left: 2px solid rgba(232, 196, 104, 0.5); /* Gold manuscript margin line */
-}
-
-/* Paragraph Formatting with Generous Breathing Room */
-.sp-roots__narrative p {
-    color: rgba(255, 249, 239, 0.88);
-    font-size: 1.12rem;
-    line-height: 1.85;
-    letter-spacing: 0.01em;
-}
-
-.sp-roots__narrative p + p {
-    margin-top: 22px;
-}
-
-/* Sacred Illuminated Drop Cap */
-.sp-roots__narrative p.has-dropcap::first-letter {
+.sp-roots__portrait figcaption {
+    padding: 17px 20px 19px;
+    color: #685c50;
+    background: rgba(255, 251, 240, .94);
     font-family: var(--font-heading, serif);
-    font-size: 3.6rem;
-    float: left;
-    line-height: 0.8;
-    margin-right: 12px;
-    margin-top: 4px;
-    color: #edcb7b;
+    font-size: .98rem;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
 }
-
-/* Link Styling */
-.sp-roots__narrative .sp-inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 28px;
-    color: #edcb7b;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.sp-roots__narrative .sp-inline-link:hover {
-    color: #e8c468;
-    transform: translateX(5px);
-}
-/* Responsive Adjustments for Mobile */
-@media (max-width: 600px) {
-    .sp-roots__intro {
-        padding: 50px 16px;
-    }
-
-    .sp-roots__body {
-        padding: 24px 20px;
-    }
-}
-
 
 .sp-inline-link,
 .sp-wisdom-chapter__copy a,
@@ -336,7 +295,6 @@ body.spiritual-home {
     align-items: center;
     width: fit-content;
     color: var(--sp-maroon);
-	
     font-size: .88rem;
     font-weight: 700;
     gap: 8px;
@@ -350,154 +308,103 @@ body.spiritual-home {
 .sp-wisdom-chapter__copy a:hover span,
 .sp-path-card a:hover span { transform: translateX(4px); }
 
-/* Subheading styles for the section */
-.sp-wisdom-chapters {
-    padding: clamp(60px, 8vw, 100px) 0;
-}
-.sp-wisdom-chapters__header {
-    text-align: center;
-    margin-bottom: clamp(32px, 4vw, 48px);
-}
-
-.sp-wisdom-chapters__header h2 {
-    color: var(--sp-ink);
-    font-family: var(--font-heading, "Fraunces", serif);
-    font-size: clamp(2rem, 3.5vw, 3.2rem);
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: -.025em;
-}
-
-.sp-wisdom-chapters__grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 48px;
-}
-
-/* Card Main Outer Container */
-.sp-wisdom-chapter {
-    display: grid;
-    grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
-    align-items: stretch;
-    border-radius: 28px;
+.sp-sacred-treasures {
+    position: relative;
     overflow: hidden;
-    border: 1px solid rgba(127, 80, 33, 0.16);
-    box-shadow: 0 20px 45px rgba(68, 43, 26, 0.07);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    background:
+        radial-gradient(circle at 8% 14%, rgba(222, 177, 82, .18), transparent 24%),
+        radial-gradient(circle at 91% 82%, rgba(123, 177, 190, .16), transparent 28%),
+        linear-gradient(145deg, #f9f1e4, #edf3ed 52%, #f4e8d7);
 }
-
-.sp-wisdom-chapter:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 28px 60px rgba(68, 43, 26, 0.12);
+.sp-sacred-treasures::before {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    width: 430px;
+    height: 430px;
+    content: "";
+    pointer-events: none;
+    border: 1px solid rgba(173, 118, 41, .1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 58px rgba(173,118,41,.025), 0 0 0 116px rgba(173,118,41,.018);
+    transform: translateX(-50%);
 }
-
-/* Card Background Themes */
+.sp-sacred-treasures .sp-container { position: relative; }
+.sp-sacred-treasures__heading { max-width: 900px; }
+.sp-sacred-treasures__heading h2 { font-size: clamp(2.8rem, 5vw, 5rem); }
+.sp-wisdom-chapters { display: grid; margin-top: clamp(48px, 6vw, 78px); gap: 34px; }
+.sp-wisdom-chapter {
+    position: relative;
+    display: grid;
+    min-height: 520px;
+    overflow: hidden;
+    grid-template-columns: minmax(320px, .88fr) minmax(0, 1.12fr);
+    align-items: stretch;
+    border: 1px solid rgba(125, 77, 38, .14);
+    border-radius: 32px;
+    box-shadow: 0 28px 65px rgba(76, 47, 27, .1);
+}
 .sp-wisdom-chapter--book {
-    background: linear-gradient(135deg, #fbf7ee 0%, #f4ead5 100%);
+    background:
+        radial-gradient(circle at 18% 45%, rgba(255, 247, 175, .62), transparent 27%),
+        linear-gradient(125deg, #b9dce8, #e8e6c5 48%, #fff7dc 100%);
 }
-
 .sp-wisdom-chapter--sadhna {
-    background: linear-gradient(135deg, #f5f8f8 0%, #e3eee9 100%);
+    background:
+        radial-gradient(circle at 81% 35%, rgba(255, 231, 107, .62), transparent 31%),
+        linear-gradient(130deg, #d7edf0, #f9e5a8 48%, #b8d7e8 100%);
 }
-
-/* Left Column: Visual Area */
-.sp-wisdom-chapter__visual {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: clamp(32px, 4vw, 48px);
-    background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(6px);
-    border-right: 1px solid rgba(127, 80, 33, 0.08);
+.sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image { order: 2; }
+.sp-wisdom-chapter__image {
+    position: relative;
+    display: grid;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    place-items: center;
+    background: rgba(255,255,255,.08);
 }
-
-/* Frame ensuring ZERO Image Distortion or Clipping */
-.sp-wisdom-chapter__frame {
-    width: 100%;
-    max-width: 260px; /* Controls ideal size */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sp-wisdom-chapter__image::before {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    content: "";
+    border: 1px solid rgba(170, 116, 40, .17);
+    border-radius: 50%;
+    box-shadow: 0 0 0 38px rgba(255,255,255,.13), 0 0 0 76px rgba(255,255,255,.08);
 }
-
-.sp-wisdom-chapter__frame img {
+.sp-wisdom-chapter__image img {
+    position: relative;
+    z-index: 1;
     width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 340px; /* Keeps book/artwork at proportional scale */
-    object-fit: contain; /* CRITICAL: Never crop or clip */
-    border-radius: 8px; /* Soft rounding for book edges */
-    filter: drop-shadow(0 16px 24px rgba(40, 20, 10, 0.18)); /* Elegant depth */
-    transition: transform 0.4s ease;
+    height: calc(100% - 64px);
+    max-width: calc(100% - 64px);
+    max-height: calc(100% - 64px);
+    object-fit: contain;
+    filter: drop-shadow(0 18px 22px rgba(57, 43, 48, .18));
 }
-
-.sp-wisdom-chapter:hover .sp-wisdom-chapter__frame img {
-    transform: scale(1.03); /* Subtle lift on hover */
-}
-
-
-.sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image img { 
-    width: calc(100% - 38px); 
-    height: calc(100% - 38px); 
-    max-width: none; 
-}
-
-/* Right Column: Copy Area */
+.sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image img { width: calc(100% - 38px); height: calc(100% - 38px); max-width: calc(100% - 38px); max-height: calc(100% - 38px); }
 .sp-wisdom-chapter__copy {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(36px, 5vw, 56px);
+    padding: clamp(42px, 6vw, 82px);
+    background: rgba(255, 252, 243, .62);
+    backdrop-filter: blur(4px);
 }
-
 .sp-wisdom-chapter__copy h3 {
+    margin-top: 12px;
+    color: var(--sp-ink);
     font-family: var(--font-heading, serif);
-    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 400;
-    line-height: 1.25;
-    margin-top: 8px;
-    color: var(--sp-ink, #211927);
+    line-height: 1.08;
 }
+.sp-wisdom-chapter__copy p { margin-top: 20px; color: #5f554d; font-size: 1.04rem; line-height: 1.82; }
+.sp-wisdom-chapter__copy a { margin-top: 28px; }
 
-.sp-wisdom-chapter__copy p {
-    margin-top: 16px;
-    color: #534840;
-    line-height: 1.75;
-    font-size: 1.05rem;
-}
-
-.sp-wisdom-chapter__copy .sp-inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 24px;
-    color: var(--sp-maroon, #7f2b2b);
-    font-weight: 700;
-    text-decoration: none;
-    transition: gap 0.2s ease;
-}
-
-.sp-wisdom-chapter__copy .sp-inline-link:hover {
-    gap: 12px;
-}
-
-/* Responsive Handling for Mobile & Tablet */
-@media (max-width: 900px) {
-    .sp-wisdom-chapter {
-        grid-template-columns: 1fr; /* Switch to stacked layout */
-    }
-
-    .sp-wisdom-chapter__visual {
-        border-right: none;
-        border-bottom: 1px solid rgba(127, 80, 33, 0.08);
-        padding: 36px 24px;
-    }
-
-    .sp-wisdom-chapter__frame img {
-        max-height: 260px;
-    }
-}
 .sp-universal-path {
     background:
         radial-gradient(circle at 7% 22%, rgba(106, 151, 162, .15), transparent 27%),
@@ -551,7 +458,7 @@ body.spiritual-home {
 .sp-path-card a { margin-top: auto; padding-top: 22px; }
 
 .sp-lineage { background: #fffaf1; }
-.sp-lineage__grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 54px; }
+.sp-lineage__grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 54px; }
 .sp-guide-card { display: grid; min-height: 420px; overflow: hidden; grid-template-columns: minmax(180px,.8fr) minmax(0,1.2fr); border: 1px solid rgba(127,80,33,.18); border-radius: 22px; background: #f7eddf; box-shadow: 0 24px 55px rgba(68,43,26,.08); }
 .sp-guide-card img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .sp-guide-card__copy { display: flex; flex-direction: column; justify-content: center; padding: 34px; }
@@ -574,7 +481,7 @@ body.spiritual-home {
 .sp-transformation__card p { margin-top: 14px; color: rgba(255,249,239,.78); line-height: 1.72; }
 
 .sp-seva { background: linear-gradient(180deg,#edf1e6,#dce8e6); }
-.sp-seva__lead { display: grid; grid-template-columns: 1fr; gap: clamp(42px,7vw,100px); }
+.sp-seva__lead { display: grid; grid-template-columns: minmax(0,.78fr) minmax(0,1.22fr); gap: clamp(42px,7vw,100px); }
 .sp-seva__quote { padding: 32px 0 32px 34px; color: #5b2934; border-left: 3px solid var(--sp-gold); font-family: var(--font-heading,serif); font-size: clamp(1.8rem,3vw,2.8rem); font-style: italic; line-height: 1.35; }
 .sp-seva__lead-copy p { color: #5c5751; font-size: 1.05rem; line-height: 1.85; }
 .sp-seva__lead-copy p + p { margin-top: 20px; }
@@ -624,7 +531,6 @@ body.spiritual-home {
 .sp-closing__motto { display: block; margin-top: 34px; color: var(--sp-maroon); font-family: var(--font-heading,serif); font-size: clamp(1.4rem,2.5vw,2.1rem); font-style: italic; }
 
 @media (max-width: 1050px) {
-    .sp-home-hero__inner { grid-template-columns: minmax(0,1.05fr) minmax(330px,.75fr); }
     .sp-path-grid,.sp-seva__timeline,.sp-impact__grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
     .sp-guide-card { grid-template-columns: 1fr; }
     .sp-guide-card img { height: 340px; }
@@ -632,16 +538,16 @@ body.spiritual-home {
 }
 
 @media (max-width: 62rem) {
-    .spiritual-home .header-grid { min-height: 94px; grid-template-columns: 100px minmax(0,1fr); }
-    .spiritual-home .site-header { background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
-    .sp-home-hero { min-height: auto; }
-    .sp-home-hero__inner { width: min(calc(100% - 40px),760px); padding: 126px 0 70px; grid-template-columns: 1fr; text-align: center; }
-    .sp-home-hero__copy { margin-inline: auto; }
-    .sp-home-hero h1 { font-size: clamp(3rem,10vw,5.4rem); }
-    .sp-home-hero__purpose,.sp-home-hero__tagline { margin-inline: auto; }
-    .sp-actions { justify-content: center; }
-    .sp-home-hero__portrait { width: min(82%,540px); margin-inline: auto; justify-self: center; }
-    .sp-home-hero__portrait img { max-height: 600px; }
+    .spiritual-home .header-grid { min-height: 102px; grid-template-columns: 116px minmax(0,1fr); }
+    .spiritual-home .site-brand-logo { max-height: 90px; }
+    body.spiritual-home #header.site-header:not(.is-scrolled) { background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    body.spiritual-home #header.site-header:not(.is-scrolled) .nav-toggle { border-color: rgba(96,48,38,.24); background: rgba(255,250,240,.58); box-shadow: 0 8px 24px rgba(95,51,31,.12); }
+    body.spiritual-home #header.site-header:not(.is-scrolled) .nav-toggle span { background: #562630; }
+    .sp-home-hero { min-height: max(780px, 100svh); }
+    .sp-home-hero::before { inset: 0 0 0 28%; background-position: 52% 38%; }
+    .sp-home-hero__inner { width: min(calc(100% - 40px),760px); padding: 132px 0 58px; text-align: left; }
+    .sp-home-hero__copy { width: min(100%, 720px); margin-inline: auto; }
+    .sp-home-hero h1 { font-size: clamp(3rem,10vw,5rem); }
     .sp-roots__body,.sp-seva__lead { grid-template-columns: 1fr; }
     .sp-wisdom-chapter { min-height: 0; grid-template-columns: 1fr; }
     .sp-wisdom-chapter--sadhna .sp-wisdom-chapter__image { order: 0; }
@@ -654,14 +560,27 @@ body.spiritual-home {
 @media (max-width: 640px) {
     .sp-container { width: min(calc(100% - 32px),1220px); }
     .sp-section { padding: 72px 0; }
-    .sp-home-hero__inner { width: min(calc(100% - 32px),760px); }
-    .sp-home-hero h1 { font-size: clamp(2.7rem,13.5vw,4.3rem); line-height: .98; }
+    .sp-home-hero { min-height: 1240px; background: linear-gradient(180deg, #efd0ae 0, #f6e4d1 42%, #f4dfca 100%); }
+    .sp-home-hero::before {
+        inset: 0 0 auto 0;
+        height: 620px;
+        background:
+            linear-gradient(180deg, transparent 66%, #f4dfca 100%),
+            url("../images/bhaiyaji-maa-home-hero.jpg") 51% 35% / cover no-repeat;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+    .sp-home-hero__inner { width: min(calc(100% - 24px),760px); margin: 0 auto; padding: 470px 0 42px; align-items: flex-end; }
+    .sp-home-hero__copy { padding: 28px 22px 30px; border-left-width: 3px; border-radius: 24px; }
+    .sp-home-hero h1 { font-size: clamp(2.45rem,12vw,3.65rem); line-height: 1; }
     .sp-home-hero__tagline { font-size: 1.15rem; }
     .sp-home-hero__purpose { font-size: .98rem; line-height: 1.68; }
-    .sp-home-hero__portrait { width: 100%; }
-    .sp-home-hero__portrait figcaption { right: 50%; bottom: 3%; white-space: nowrap; transform: translateX(50%); }
+    .sp-home-hero .sp-actions { gap: 10px; }
+    .sp-home-hero .btn { padding-inline: 18px; }
     .sp-section-heading h2 { font-size: clamp(2.35rem,12vw,3.65rem); }
     .sp-roots__body { margin-top: 30px; }
+    .sp-roots__closing { padding: 22px 22px 23px 50px; }
+    .sp-roots__closing > span { top: 24px; left: 20px; }
     .sp-path-grid,.sp-seva__timeline,.sp-impact__grid { grid-template-columns: 1fr; }
     .sp-path-card { min-height: 320px; border-radius: 85px 85px 18px 18px; }
     .sp-guide-card { min-height: 0; }
@@ -677,7 +596,6 @@ body.spiritual-home {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .sp-transformation  { background-attachment: scroll; }
-    .sp-roots__intro { background-attachment: scroll; }
-	.sp-path-card { transition: none; }
+    .sp-transformation { background-attachment: scroll; }
+    .sp-path-card { transition: none; }
 }

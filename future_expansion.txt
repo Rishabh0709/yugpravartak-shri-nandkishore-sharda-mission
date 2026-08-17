@@ -1,0 +1,138 @@
+For the Yugpravartak Shri Nandkishore Sharda Mission website, I recommend a modern, content-led architecture—not a heavy full-stack application.
+
+## Recommended technology stack
+
+| Layer              | Technology                                    | Why it fits                                                                                               |
+| ------------------ | --------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Framework          | **Next.js with App Router**                   | Excellent SEO, fast static pages, server rendering, image optimisation and future scalability             |
+| Language           | **TypeScript**                                | Safer, more maintainable code as the website grows                                                        |
+| Styling            | **Tailwind CSS + custom design tokens**       | Enables a completely bespoke premium design without generic templates                                     |
+| UI foundation      | **Radix UI primitives**                       | Accessible menus, dialogs and accordions while retaining full visual control                              |
+| Animation          | **Motion for React + CSS animations**         | Elegant scroll reveals, parallax, transitions, timeline effects and interactive impact figures            |
+| Content management | **Sanity CMS**                                | Non-technical administrators can update activities, events, gallery, impact figures and spiritual content |
+| Languages          | **Next.js locale routing + CMS translations** | Clean Hindi and English versions, with scope for additional languages                                     |
+| Media              | **Sanity Image CDN initially**                | Responsive images, crops and optimisation without managing another platform                               |
+| Hosting            | **Vercel**                                    | Natural deployment platform for Next.js with CDN, preview deployments and simple scaling                  |
+| Forms              | **Next.js server actions + Resend**           | Contact, volunteer and enquiry forms                                                                      |
+| Donations          | **Razorpay Payment Pages/Checkout**           | Suitable for Indian payments; donation records can later be integrated into the site                      |
+| Analytics          | **Google Analytics 4 + Search Console**       | Visitor insights and search-performance tracking                                                          |
+| Testing            | **Playwright + Vitest**                       | Browser testing and component/business-logic tests                                                        |
+| Source control     | **GitHub**                                    | Version control, deployment workflow and rollback                                                         |
+
+Next.js supports optimised responsive images, SEO metadata, multilingual routing and both static and dynamic rendering, making it particularly suitable for this type of public-facing content website. [Next.js image optimisation](https://nextjs.org/docs/app/getting-started/images), [metadata and social sharing](https://nextjs.org/docs/app/getting-started/metadata-and-og-images), [internationalisation](https://nextjs.org/docs/app/guides/internationalization).
+
+## My definitive recommendation
+
+```text
+Next.js
++ TypeScript
++ Tailwind CSS
++ Motion for React
++ Sanity CMS
++ Vercel
+```
+
+This combination offers the best balance of:
+
+* Premium, fully customised visual design
+* Excellent performance and SEO
+* Easy Hindi/English content management
+* Smooth but tasteful spiritual animations
+* Simple administration
+* Long-term scalability
+* Reasonable initial cost
+
+## How the “premium spiritual” experience should be created
+
+The technology alone will not make the website spiritually compelling. The design system should establish:
+
+* Deep maroon, warm ivory, muted saffron and antique-gold colour tokens
+* Elegant serif typography for spiritual headings
+* Highly readable Devanagari fonts for Hindi
+* Cinematic but subtle imagery
+* Slow light, mist and particle movement in the hero
+* Gentle scroll reveals and crossfades
+* Sacred geometry used as understated texture
+* Generous whitespace and restrained gold detailing
+* Storytelling sections rather than grids of repetitive cards
+* Real photographs treated consistently with warm colour grading
+
+Motion should be used selectively for the hero, impact statistics, activity timeline, image transitions and significant calls to action. Motion for React supports scroll-linked and scroll-triggered effects while also respecting visitors’ reduced-motion accessibility settings. [Motion scroll animation](https://motion.dev/docs/react-scroll-animations), [accessible animation](https://motion.dev/docs/react-accessibility).
+
+## Content architecture
+
+Sanity should manage content through structured collections such as:
+
+```text
+Site Settings
+├── Navigation
+├── Footer
+├── Contact information
+└── Social links
+
+Guiding Lights
+├── Shri Nandkishore Sharda
+├── Maa Basanti Manihar
+└── Kumari Madhubala Advani
+
+Mission
+Activities
+Impact Figures
+Journey Milestones
+Events
+Success Stories
+Reflections / Teachings
+Gallery Albums
+Downloads
+Donors and Partners
+```
+
+This keeps content separate from the visual presentation. The team could update a scholarship figure, add a gallery or publish an event without editing code. Sanity also provides structured content and visual-editing workflows. [Sanity visual editing](https://www.sanity.io/docs/changelog/b392e687-4529-4db3-924b-415c6880cc42).
+
+## Suggested project structure
+
+```text
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── page.tsx
+│   │   ├── mission/
+│   │   ├── guiding-lights/
+│   │   ├── activities/
+│   │   ├── impact/
+│   │   ├── gallery/
+│   │   └── contact/
+│   └── api/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   ├── animations/
+│   └── ui/
+├── sanity/
+├── styles/
+├── lib/
+└── types/
+```
+
+## What I would avoid
+
+* **WordPress with a page builder:** quick initially, but harder to achieve consistently refined animations, performance and maintainable custom design.
+* **Plain HTML/CSS/JavaScript as the final architecture:** acceptable for a prototype, but content duplication and maintenance will become difficult.
+* **A generic React UI kit:** likely to make the website look like a corporate dashboard rather than a spiritual mission.
+* **Three.js throughout the website:** unnecessary weight. Use it only if one specific immersive experience genuinely requires it.
+* **A separate backend and database immediately:** Next.js and Sanity can handle the first stages. PostgreSQL/Supabase can be introduced later for member accounts, scholarship applications or donor dashboards.
+
+## Migration approach
+
+Your existing HTML/CSS/JavaScript design work does not need to be discarded. It can be migrated section by section:
+
+1. Establish Next.js, typography, colour tokens and global layout.
+2. Convert the existing header, hero and homepage sections into React components.
+3. Preserve and refine the existing visual language.
+4. Add Motion-based interaction and accessibility.
+5. Move editable content into Sanity.
+6. Build Hindi and English routes.
+7. Optimise images, SEO, performance and mobile experience.
+8. Deploy through Vercel.
+
+This is the stack I would choose if we were starting the production version of the Mission website today.
