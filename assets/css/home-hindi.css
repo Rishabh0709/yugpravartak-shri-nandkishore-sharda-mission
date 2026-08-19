@@ -1,0 +1,1985 @@
+:root {
+    --hi-ink: #2d1c2d;
+    --hi-body: #655a54;
+    --hi-maroon: #792b2a;
+    --hi-saffron: #bd7429;
+    --hi-gold: #c69435;
+    --hi-cream: #fffaf1;
+    --hi-sand: #f4e6d1;
+    --hi-blue: #ddecf0;
+    --hi-sage: #dce6d8;
+    --hi-radius: 26px;
+    --hi-shadow: 0 26px 70px rgba(75, 43, 29, .12);
+}
+
+html {
+    scroll-padding-top: 110px;
+}
+
+body.hindi-home {
+    margin: 0;
+    color: var(--hi-body);
+    background: var(--hi-cream);
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-size: 1.06rem;
+    line-height: 1.85;
+    text-rendering: optimizeLegibility;
+}
+
+body.hindi-home::before {
+    display: none;
+    background-image: none;
+}
+
+.hindi-home h1,
+.hindi-home h2,
+.hindi-home h3,
+.hindi-home blockquote,
+.hindi-home .site-title,
+.hindi-home .footer-title {
+    color: var(--hi-ink);
+    font-family: "Noto Serif Devanagari", serif;
+    font-weight: 600;
+}
+
+.hindi-home h1,
+.hindi-home h2,
+.hindi-home h3,
+.hindi-home p,
+.hindi-home figure,
+.hindi-home blockquote {
+    margin-top: 0;
+}
+
+.hindi-home img {
+    max-width: 100%;
+}
+
+.hindi-home .site-header {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 20;
+    color: var(--hi-ink);
+    background: rgba(255, 248, 237, .52);
+    border-bottom: 1px solid rgba(121, 43, 42, .12);
+    box-shadow: none;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.hindi-home .site-header.is-scrolled {
+    position: fixed;
+    background: rgba(255, 250, 243, .94);
+    box-shadow: 0 10px 34px rgba(55, 31, 27, .1);
+}
+
+.hindi-home .site-title,
+.hindi-home .nav-list,
+.hindi-home .nav-submenu,
+.hindi-home .footer {
+    font-family: "Noto Sans Devanagari", sans-serif;
+}
+
+.hindi-home .nav-list {
+    gap: clamp(.7rem, 1.4vw, 1.7rem);
+}
+
+.hindi-home .nav-item > a,
+.hindi-home .nav-submenu-toggle {
+    font-size: .98rem;
+}
+
+.hindi-home .nav-language-link {
+    color: var(--hi-maroon);
+    font-weight: 700;
+}
+
+.hi-shell {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.hi-section {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(84px, 9vw, 138px);
+}
+
+.hi-kicker {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--hi-maroon);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.hi-section-heading {
+    max-width: 780px;
+    margin-bottom: clamp(34px, 5vw, 64px);
+}
+
+.hi-section-heading--center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.hi-lineage .hi-section-heading--center {
+    max-width: 1120px;
+    margin-bottom: clamp(24px, 3.2vw, 42px);
+}
+
+.hi-section-heading h2,
+.hi-profile__copy h2,
+.hi-sacred__copy h2,
+.hi-sadhna__copy h2,
+.hi-manidweep__copy h2 {
+    margin-bottom: 22px;
+    font-size: clamp(2.2rem, 4.4vw, 4.65rem);
+    line-height: 1.16;
+    letter-spacing: -.035em;
+    text-wrap: balance;
+}
+
+.hi-section-heading p,
+.hi-lead {
+    color: #765f52;
+    font-size: clamp(1.15rem, 1.7vw, 1.42rem);
+    line-height: 1.75;
+}
+
+.hi-feature-heading {
+    width: 100%;
+    margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.hi-feature-heading h2 {
+    margin-bottom: 12px;
+    color: var(--hi-ink);
+    font-size: clamp(2.25rem, 4.35vw, 4.65rem);
+    line-height: 1.16;
+    letter-spacing: -.035em;
+}
+
+.hi-feature-tagline {
+    max-width: 900px;
+    margin: 0;
+    color: #765f52;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.16rem, 1.7vw, 1.46rem);
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+@media (min-width: 901px) {
+    .hi-mission .hi-section-heading h2 {
+        font-size: clamp(2.5rem, 4.15vw, 4.4rem);
+        white-space: nowrap;
+    }
+
+    .hi-feature-heading h2 {
+        white-space: nowrap;
+    }
+
+    .hi-lineage .hi-section-heading--center h2 {
+        font-size: clamp(2.5rem, 4.1vw, 4.3rem);
+        white-space: nowrap;
+    }
+}
+
+.hi-prose p {
+    margin-bottom: 1.28em;
+}
+
+.hi-prose strong {
+    color: var(--hi-ink);
+    font-weight: 700;
+}
+
+.hi-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.hi-btn {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: transform .3s ease, background-color .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.hi-btn:hover,
+.hi-btn:focus-visible {
+    transform: translateY(-3px);
+}
+
+.hi-btn--primary {
+    color: #fffaf2;
+    background: var(--hi-maroon);
+    box-shadow: 0 12px 28px rgba(121, 43, 42, .2);
+}
+
+.hi-btn--primary:hover,
+.hi-btn--primary:focus-visible {
+    color: white;
+    background: #63201f;
+    box-shadow: 0 16px 34px rgba(121, 43, 42, .28);
+}
+
+.hi-btn--soft {
+    color: var(--hi-ink);
+    background: rgba(255, 252, 246, .68);
+    border-color: rgba(121, 43, 42, .24);
+}
+
+.hi-btn--outline {
+    color: var(--hi-maroon);
+    border-color: rgba(121, 43, 42, .34);
+}
+
+.hi-text-link {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--hi-maroon);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hi-text-link span {
+    transition: transform .25s ease;
+}
+
+.hi-text-link:hover span,
+.hi-text-link:focus-visible span {
+    transform: translateX(5px);
+}
+
+/* Hero */
+.hi-hero {
+    position: relative;
+    min-height: max(760px, 100svh);
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    padding: clamp(150px, 17vh, 205px) 0 clamp(80px, 9vh, 110px);
+    background-color: #f4dec0;
+    background-image:
+        linear-gradient(90deg, rgba(247, 229, 201, 1) 0%, rgba(247, 229, 201, .96) 37%, rgba(247, 229, 201, .54) 56%, rgba(247, 229, 201, .08) 77%),
+        linear-gradient(0deg, rgba(255, 247, 232, .34), rgba(255, 247, 232, .05)),
+        url("../images/bhaiyaji-maa-home-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center, right center;
+    background-size: cover, cover, auto 100%;
+}
+
+.hi-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 28% 42%, rgba(255, 248, 213, .78), transparent 34%);
+}
+
+.hi-hero__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.hi-hero__copy {
+    width: min(720px, 62%);
+}
+
+.hi-hero h1 {
+    max-width: 720px;
+    margin-bottom: 20px;
+    color: #301b2d;
+    font-size: clamp(3rem, 5.6vw, 6.35rem);
+    line-height: 1.04;
+    letter-spacing: -.05em;
+    text-wrap: balance;
+}
+
+.hi-hero__motto {
+    margin-bottom: 34px;
+    color: var(--hi-maroon);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.05rem, 1.65vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.hi-hero__motto span {
+    margin-inline: .35em;
+    color: var(--hi-gold);
+}
+
+.hi-hero__purpose {
+    max-width: 690px;
+    margin: 0;
+    padding: 23px 26px;
+    color: #4f423b;
+    border: 1px solid rgba(121, 43, 42, .16);
+    border-radius: 20px;
+    background: rgba(255, 252, 246, .66);
+    box-shadow: 0 16px 45px rgba(84, 47, 30, .09);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1rem, 1.35vw, 1.14rem);
+    line-height: 1.85;
+}
+
+/* Mission */
+.hi-mission {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(199, 151, 63, .15), transparent 28%),
+        linear-gradient(145deg, #fffaf2 0%, #f7ead8 100%);
+}
+
+.hi-narrative {
+    display: grid;
+    grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr);
+    gap: clamp(48px, 8vw, 110px);
+}
+
+.hi-narrative .hi-section-heading {
+    grid-column: 1 / -1;
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.hi-mission__media {
+    position: relative;
+    align-self: start;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(121, 43, 42, .14);
+    border-radius: 30px 30px 96px 30px;
+    background: rgba(255, 252, 245, .68);
+    box-shadow: 0 24px 64px rgba(83, 51, 35, .13);
+}
+
+.hi-mission__media img {
+    display: block;
+    width: 100%;
+    min-height: 470px;
+    max-height: 590px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: 21px 21px 82px 21px;
+}
+
+.hi-mission__media figcaption {
+    padding: 14px 12px 5px;
+    color: #75675c;
+    font-size: .86rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.hi-narrative__body {
+    font-size: 1.08rem;
+}
+
+.hi-callout {
+    position: relative;
+    grid-column: 1 / -1;
+    isolation: isolate;
+    margin-top: 10px;
+    padding: clamp(42px, 6vw, 76px) clamp(30px, 8vw, 110px);
+    overflow: hidden;
+    color: #38293a;
+    text-align: center;
+    border: 1px solid rgba(164, 134, 77, .3);
+    border-radius: 32px;
+    background:
+        radial-gradient(circle at 50% -30%, rgba(255, 255, 255, .86), transparent 42%),
+        linear-gradient(125deg, #dceae5 0%, #e8eee5 48%, #f2e3d1 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .82),
+        0 28px 72px rgba(58, 71, 69, .14);
+}
+
+.hi-callout::before {
+    content: "“";
+    position: absolute;
+    z-index: -1;
+    top: -54px;
+    left: clamp(18px, 5vw, 72px);
+    color: rgba(92, 61, 79, .08);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(10rem, 18vw, 17rem);
+    line-height: 1;
+}
+
+.hi-callout::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: min(520px, 54vw);
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(151, 120, 67, .14);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 70px rgba(255, 255, 255, .13);
+}
+
+.hi-callout blockquote {
+    max-width: 1000px;
+    margin: 0;
+    color: #38293a;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.8rem, 3.35vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1.55;
+    text-wrap: balance;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .72);
+}
+
+.hi-callout cite {
+    display: block;
+    margin-top: 22px;
+    color: #8a6233;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(.95rem, 1.4vw, 1.18rem);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .025em;
+}
+
+/* Profiles */
+.hi-bhaiyaji {
+    background:
+        radial-gradient(circle at 9% 75%, rgba(128, 149, 91, .16), transparent 29%),
+        #f8f3e8;
+}
+
+.hi-profile {
+    display: grid;
+    grid-template-columns: minmax(320px, .82fr) minmax(0, 1.18fr);
+    gap: clamp(42px, 7vw, 94px);
+    align-items: center;
+}
+
+.hi-profile__media {
+    position: relative;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid rgba(121, 43, 42, .15);
+    border-radius: 34px 34px 120px 34px;
+    background: rgba(255, 252, 247, .82);
+    box-shadow: var(--hi-shadow);
+}
+
+.hi-profile__media::after {
+    content: "";
+    position: absolute;
+    right: -22px;
+    bottom: -22px;
+    width: 90px;
+    aspect-ratio: 1;
+    border: 1px solid rgba(198, 148, 53, .45);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hi-profile__media img {
+    display: block;
+    width: 100%;
+    min-height: 430px;
+    max-height: 610px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px 24px 106px 24px;
+}
+
+.hi-profile--bhaiyaji .hi-profile__media img {
+    object-position: 50% 24%;
+}
+
+.hi-profile__media figcaption {
+    padding: 13px 10px 4px;
+    color: #75675c;
+    font-size: .86rem;
+    text-align: center;
+}
+
+.hi-profile__copy h2 small,
+.hi-profile__copy h3 small {
+    display: inline;
+    color: var(--hi-maroon);
+    font: inherit;
+    font-size: .54em;
+}
+
+.hi-profile__copy h3 {
+    margin-bottom: 22px;
+    font-size: clamp(2rem, 3.5vw, 3.55rem);
+    line-height: 1.2;
+    letter-spacing: -.03em;
+}
+
+.hi-lineage {
+    background:
+        linear-gradient(rgba(255, 250, 242, .94), rgba(255, 250, 242, .94)),
+        radial-gradient(circle at center, rgba(198, 148, 53, .22), transparent 44%);
+}
+
+.hi-lineage .hi-profile {
+    padding: clamp(30px, 4vw, 54px);
+    border: 1px solid rgba(121, 43, 42, .11);
+    border-radius: 32px;
+    background: rgba(255, 255, 255, .68);
+    box-shadow: 0 20px 60px rgba(80, 48, 35, .08);
+}
+
+.hi-lineage .hi-profile + .hi-profile {
+    margin-top: clamp(36px, 5vw, 62px);
+}
+
+.hi-profile--reverse .hi-profile__media {
+    order: 2;
+}
+
+.hi-profile__media--portrait img {
+    object-fit: contain;
+    background: #efe1d5;
+}
+
+/* Sacred book */
+.hi-sacred {
+    color: #344858;
+    background:
+        radial-gradient(circle at 17% 45%, rgba(255, 241, 164, .66), transparent 29%),
+        linear-gradient(145deg, #d8eef2, #f2edcd 48%, #f9e0b9 100%);
+}
+
+.hi-sacred__layout {
+    display: grid;
+    grid-template-columns: minmax(260px, .62fr) minmax(0, 1.38fr);
+    gap: clamp(52px, 9vw, 120px);
+    align-items: center;
+}
+
+.hi-sacred__media {
+    margin: 0;
+    align-self: stretch;
+}
+
+.hi-sacred__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    max-height: 760px;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 25px rgba(37, 62, 75, .18));
+}
+
+.hi-sacred__copy h2 {
+    color: #283e52;
+}
+
+.hi-book-legacy,
+.hi-sadhna-lived {
+    display: grid;
+    align-items: stretch;
+    margin-top: clamp(42px, 6vw, 76px);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .58);
+    border-radius: 26px;
+    background: rgba(255, 252, 244, .38);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .72),
+        0 26px 68px rgba(92, 60, 33, .13);
+    -webkit-backdrop-filter: blur(18px) saturate(118%);
+    backdrop-filter: blur(18px) saturate(118%);
+}
+
+.hi-book-legacy {
+    grid-template-columns: minmax(0, .88fr) minmax(460px, 1.12fr);
+}
+
+.hi-book-legacy__copy,
+.hi-sadhna-lived__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: clamp(34px, 5vw, 70px);
+    background: rgba(255, 250, 235, .58);
+}
+
+.hi-book-legacy__copy blockquote,
+.hi-sadhna-lived__copy blockquote {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 28px;
+    color: var(--hi-ink);
+    border-left: 3px solid var(--hi-gold);
+    font-family: var(--hi-serif);
+    font-size: clamp(1.35rem, 2.2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.hi-book-legacy__figure,
+.hi-sadhna-lived__figure {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    min-width: 0;
+    margin: 0;
+    background: #4a3a2e;
+}
+
+.hi-book-legacy__media {
+    min-height: 390px;
+    overflow: hidden;
+}
+
+.hi-book-legacy__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    object-fit: cover;
+    object-position: 49% 8%;
+    transform: scale(1.015);
+}
+
+.hi-book-legacy__figure figcaption,
+.hi-sadhna-lived__figure figcaption {
+    padding: 14px 22px 16px;
+    color: rgba(255, 250, 237, .9);
+    background: #4a3a2e;
+    font-size: .93rem;
+    line-height: 1.55;
+}
+
+.hi-threefold {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-block: 30px;
+}
+
+.hi-threefold > div {
+    padding: 20px 18px;
+    border: 1px solid rgba(41, 77, 96, .14);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.hi-threefold strong,
+.hi-threefold span {
+    display: block;
+}
+
+.hi-threefold strong {
+    margin-bottom: 6px;
+    color: #76402f;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.2rem;
+}
+
+.hi-threefold span {
+    font-size: .9rem;
+    line-height: 1.65;
+}
+
+.hi-sacred blockquote,
+.hi-sadhna blockquote {
+    margin: 30px 0;
+    padding: 18px 24px;
+    color: #513730;
+    border-left: 3px solid var(--hi-gold);
+    font-size: 1.23rem;
+    line-height: 1.7;
+}
+
+/* Full-width transition from divine knowledge to its lived practice */
+.hi-wisdom-bridge {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(68px, 9vw, 118px);
+    background:
+        linear-gradient(110deg, rgba(73, 24, 26, .3), rgba(112, 50, 31, .06) 48%, rgba(63, 29, 28, .26)),
+        url("../images/bhaiyaji-divine-wisdom-background.png") center 46% / cover no-repeat;
+}
+
+.hi-wisdom-bridge::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(70, 29, 24, .1), rgba(70, 29, 24, .28)),
+        radial-gradient(circle at 50% 47%, rgba(255, 226, 159, .14), transparent 42%);
+    pointer-events: none;
+}
+
+.hi-wisdom-quote {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 1080px);
+    margin: 0 auto;
+    padding: clamp(48px, 6vw, 78px) clamp(28px, 8vw, 108px);
+    overflow: hidden;
+    color: var(--hi-ink);
+    text-align: center;
+    border: 1px solid rgba(255, 250, 237, .48);
+    border-radius: 32px;
+    background: rgba(255, 247, 229, .26);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .62),
+        0 30px 80px rgba(54, 23, 18, .24);
+    -webkit-backdrop-filter: blur(11px) saturate(112%);
+    backdrop-filter: blur(11px) saturate(112%);
+}
+
+.hi-wisdom-quote::before {
+    content: "“";
+    position: absolute;
+    top: -42px;
+    left: 28px;
+    color: rgba(255, 248, 226, .16);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(9rem, 16vw, 14rem);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.hi-wisdom-quote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: min(180px, 28%);
+    height: 3px;
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(90deg, transparent, var(--hi-gold), transparent);
+    transform: translateX(-50%);
+}
+
+.hi-wisdom-quote__eyebrow {
+    position: relative;
+    margin-bottom: 22px;
+    color: #ffe2a6;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.hi-wisdom-quote strong {
+    position: relative;
+    max-width: 900px;
+    color: #fffaf0;
+    text-shadow: 0 2px 18px rgba(63, 24, 20, .34);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-weight: 600;
+    line-height: 1.32;
+    text-wrap: balance;
+}
+
+.hi-wisdom-quote strong > span {
+    color: #ffd477;
+}
+
+.hi-wisdom-quote p {
+    position: relative;
+    max-width: 820px;
+    margin: 28px 0 0;
+    color: rgba(255, 250, 240, .93);
+    text-shadow: 0 1px 14px rgba(55, 21, 17, .34);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.1rem, 1.55vw, 1.35rem);
+    line-height: 1.9;
+    text-wrap: pretty;
+}
+
+/* Sadhna */
+.hi-sadhna {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(251, 220, 110, .48), transparent 25%),
+        linear-gradient(145deg, #e7f2ec 0%, #f7ebc9 48%, #d8edf3 100%);
+}
+
+.hi-sadhna__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+    gap: clamp(48px, 8vw, 108px);
+    align-items: center;
+}
+
+.hi-sadhna__media {
+    position: sticky;
+    top: 130px;
+    margin: 0;
+    align-self: start;
+}
+
+.hi-sadhna__media img {
+    display: block;
+    width: 100%;
+    min-height: 690px;
+    max-height: 820px;
+    object-fit: contain;
+}
+
+.hi-threefold--sadhna > div {
+    border-color: rgba(121, 43, 42, .13);
+}
+
+.hi-sadhna__copy h3 {
+    margin: 38px 0 15px;
+    font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+}
+
+.hi-sadhna-lived {
+    grid-template-columns: minmax(460px, 1.12fr) minmax(0, .88fr);
+}
+
+.hi-sadhna-lived__copy {
+    background:
+        radial-gradient(circle at 88% 14%, rgba(230, 188, 79, .2), transparent 36%),
+        rgba(247, 251, 242, .55);
+}
+
+.hi-sadhna-lived__figure {
+    background: #344c45;
+}
+
+.hi-sadhna-lived__media {
+    min-height: 410px;
+    overflow: hidden;
+}
+
+.hi-sadhna-lived__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+    object-fit: cover;
+    object-position: 48% center;
+    transition: transform .7s ease;
+}
+
+.hi-sadhna-lived:hover .hi-sadhna-lived__media img {
+    transform: scale(1.025);
+}
+
+.hi-sadhna-lived__figure figcaption {
+    background: #344c45;
+}
+
+/* Yug transition */
+.hi-yug {
+    color: #53656b;
+    background:
+        radial-gradient(circle at 18% 36%, rgba(255, 255, 255, .8), transparent 26%),
+        linear-gradient(145deg, #d8eff4 0%, #edf7f5 46%, #f2dfc4 100%);
+}
+
+.hi-yug__layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .82fr) minmax(0, 1.18fr);
+    gap: clamp(48px, 8vw, 108px);
+    align-items: center;
+}
+
+.hi-yug__media {
+    margin: 0;
+    padding: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(68, 114, 126, .18);
+    border-radius: 180px 180px 28px 28px;
+    background: rgba(255, 255, 255, .48);
+    box-shadow: 0 28px 70px rgba(68, 92, 98, .16);
+}
+
+.hi-yug__media img {
+    display: block;
+    width: 100%;
+    max-height: 720px;
+    object-fit: contain;
+    border-radius: 166px 166px 18px 18px;
+}
+
+.hi-yug__media figcaption {
+    padding: 14px 8px 2px;
+    color: #5e7075;
+    font-size: .86rem;
+    text-align: center;
+}
+
+.hi-yug .hi-kicker {
+    color: #8f422f;
+}
+
+.hi-yug .hi-section-heading {
+    margin-bottom: 22px;
+}
+
+.hi-yug .hi-section-heading h2 {
+    color: #2d3441;
+}
+
+.hi-yug__quote {
+    margin-bottom: 30px;
+    padding: 20px 24px;
+    color: var(--hi-maroon);
+    border-left: 3px solid var(--hi-gold);
+    border-radius: 0 18px 18px 0;
+    background: rgba(255, 251, 242, .58);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.85rem, 3.4vw, 3.5rem);
+    line-height: 1.35;
+}
+
+.hi-yug__text {
+    color: #59676b;
+}
+
+/* Sadhna to Seva progression */
+.hi-seva-path {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(76px, 9vw, 126px);
+    background:
+        radial-gradient(circle at 50% 45%, rgba(210, 166, 76, .14), transparent 34%),
+        linear-gradient(135deg, #fffaf0 0%, #f5eddb 54%, #f7f3e9 100%);
+}
+
+.hi-seva-path::before,
+.hi-seva-path::after {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(171, 126, 44, .12);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
+}
+
+.hi-seva-path::before {
+    top: -250px;
+    left: -150px;
+}
+
+.hi-seva-path::after {
+    right: -180px;
+    bottom: -270px;
+}
+
+.hi-seva-path__heading {
+    max-width: 980px;
+    margin: 0 auto clamp(52px, 6vw, 78px);
+    text-align: center;
+}
+
+.hi-seva-path__heading h2 {
+    margin: 10px 0 16px;
+    color: var(--hi-ink);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(2.25rem, 4.5vw, 4.6rem);
+    line-height: 1.16;
+    letter-spacing: -.035em;
+    text-wrap: balance;
+}
+
+.hi-seva-path__heading p {
+    max-width: 790px;
+    margin-inline: auto;
+    color: #705f52;
+    font-size: clamp(1.05rem, 1.45vw, 1.23rem);
+    line-height: 1.9;
+}
+
+.hi-seva-path__track {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(38px, 5vw, 76px);
+    isolation: isolate;
+}
+
+.hi-seva-path__track::before,
+.hi-seva-path__track::after {
+    position: absolute;
+    top: 47px;
+    right: 16.5%;
+    left: 16.5%;
+    height: 1px;
+    content: "";
+    z-index: -1;
+}
+
+.hi-seva-path__track::before {
+    background: linear-gradient(90deg, transparent, rgba(177, 126, 36, .55) 8%, rgba(177, 126, 36, .55) 92%, transparent);
+}
+
+.hi-seva-path__track::after {
+    width: 18%;
+    background: linear-gradient(90deg, transparent, rgba(255, 221, 145, .95), transparent);
+    filter: blur(.4px);
+    animation: hiSevaGlow 5s ease-in-out infinite;
+}
+
+.hi-seva-path__step {
+    position: relative;
+    text-align: center;
+}
+
+.hi-seva-path__step--focus::before {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(222, 179, 87, .2), transparent 68%);
+    content: "";
+    pointer-events: none;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.hi-seva-path__icon {
+    display: grid;
+    width: 94px;
+    height: 94px;
+    margin: 0 auto 28px;
+    place-items: center;
+    color: #8b433a;
+    border: 1px solid rgba(177, 126, 36, .45);
+    border-radius: 50%;
+    background: rgba(255, 251, 242, .9);
+    box-shadow: 0 13px 38px rgba(87, 59, 36, .1), inset 0 0 0 7px rgba(210, 166, 76, .07);
+    transition: transform .35s ease, box-shadow .35s ease, color .35s ease;
+}
+
+.hi-seva-path__icon svg {
+    width: 52px;
+    height: 52px;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.hi-seva-path__step:hover .hi-seva-path__icon {
+    color: #a76628;
+    box-shadow: 0 17px 46px rgba(87, 59, 36, .16), 0 0 0 8px rgba(210, 166, 76, .08);
+    transform: translateY(-5px);
+}
+
+.hi-seva-path__phase {
+    display: block;
+    margin-bottom: 10px;
+    color: #9b6e2d;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.hi-seva-path__step h3 {
+    margin: 0 0 12px;
+    color: var(--hi-maroon);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.45rem, 2.25vw, 2.05rem);
+    line-height: 1.35;
+    text-wrap: balance;
+}
+
+.hi-seva-path__step p {
+    max-width: 340px;
+    margin: 0 auto;
+    color: #75675c;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.hi-seva-path__summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    justify-content: center;
+    margin: clamp(56px, 7vw, 88px) auto 0;
+    color: #704038;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(.98rem, 1.5vw, 1.18rem);
+    font-weight: 700;
+}
+
+.hi-seva-path__summary i {
+    color: #b58232;
+    font-style: normal;
+}
+
+@keyframes hiSevaGlow {
+    0%, 100% { transform: translateX(-20%); opacity: .25; }
+    50% { transform: translateX(430%); opacity: 1; }
+}
+
+/* Manidweep */
+.hi-manidweep {
+    background:
+        radial-gradient(circle at 12% 13%, rgba(191, 141, 54, .16), transparent 29%),
+        linear-gradient(145deg, #fbf6e9, #e5ebdc);
+}
+
+.hi-manidweep__layout {
+    display: grid;
+    grid-template-columns: minmax(340px, .9fr) minmax(0, 1.1fr);
+    gap: clamp(48px, 8vw, 104px);
+    align-items: center;
+}
+
+.hi-manidweep__media {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 180px 180px 28px 28px;
+    background: #fffaf1;
+    box-shadow: var(--hi-shadow);
+}
+
+.hi-manidweep__media img {
+    display: block;
+    width: 100%;
+    min-height: 540px;
+    object-fit: cover;
+    object-position: 58% center;
+}
+
+.hi-manidweep__media figcaption {
+    padding: 16px 20px;
+    color: #6d6259;
+    font-size: .88rem;
+    text-align: center;
+}
+
+.hi-manidweep__essence {
+    margin: 30px 0;
+    padding: 26px 28px;
+    color: #fff8ec;
+    border-radius: 22px;
+    background: #73312e;
+}
+
+.hi-manidweep__essence strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffdda0;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.35rem;
+}
+
+.hi-manidweep__essence p {
+    margin: 0;
+}
+
+/* Karma Sadhna */
+.hi-karma {
+    background:
+        radial-gradient(circle at 92% 7%, rgba(198, 148, 53, .18), transparent 26%),
+        radial-gradient(circle at 8% 42%, rgba(119, 153, 141, .13), transparent 25%),
+        linear-gradient(180deg, #f8f3e8 0%, #eef2e8 48%, #f7efe3 100%);
+}
+
+.hi-karma::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+    background-image:
+        linear-gradient(rgba(121, 43, 42, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(121, 43, 42, .035) 1px, transparent 1px);
+    background-size: 74px 74px;
+    mask-image: linear-gradient(to bottom, transparent, #000 15%, #000 88%, transparent);
+}
+
+.hi-karma .hi-shell {
+    position: relative;
+    z-index: 1;
+}
+
+.hi-karma__intro {
+    max-width: 940px;
+    margin: 0 auto clamp(52px, 7vw, 88px);
+    text-align: center;
+}
+
+.hi-karma__intro h2 {
+    margin-bottom: 18px;
+    color: #473047;
+    font-size: clamp(3.2rem, 7vw, 6rem);
+    line-height: 1.05;
+}
+
+.hi-karma__intro p {
+    margin: 0 auto;
+    max-width: 900px;
+    color: #5d6259;
+    font-size: clamp(1.05rem, 1.65vw, 1.3rem);
+    line-height: 1.9;
+}
+
+.hi-karma__chapters {
+    display: grid;
+    gap: clamp(34px, 5vw, 66px);
+}
+
+.hi-karma-card {
+    display: grid;
+    grid-template-columns: minmax(330px, .86fr) minmax(0, 1.14fr);
+    overflow: hidden;
+    border: 1px solid rgba(121, 43, 42, .13);
+    border-radius: 32px;
+    background: rgba(255, 252, 246, .82);
+    box-shadow: 0 22px 58px rgba(63, 45, 37, .1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.hi-karma-card--reverse {
+    grid-template-columns: minmax(0, 1.14fr) minmax(330px, .86fr);
+}
+
+.hi-karma-card--reverse .hi-karma-card__media {
+    order: 2;
+}
+
+.hi-karma-card__media {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #d8ddd3;
+}
+
+.hi-karma-card__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+
+.hi-karma-card:hover .hi-karma-card__media > img {
+    transform: scale(1.025);
+}
+
+.hi-karma-card__media::after {
+    position: absolute;
+    inset: auto 0 0;
+    height: 38%;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(to top, rgba(28, 35, 34, .72), transparent);
+}
+
+.hi-karma-card__media figcaption {
+    position: absolute;
+    z-index: 1;
+    right: 26px;
+    bottom: 22px;
+    left: 26px;
+    color: #fffaf0;
+    font-size: .9rem;
+    line-height: 1.55;
+}
+
+.hi-karma-card__copy {
+    align-self: center;
+    padding: clamp(34px, 5vw, 66px);
+}
+
+.hi-karma-card__year,
+.hi-karma-service__number {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+    color: #8b483b;
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.hi-karma-card__year::before,
+.hi-karma-service__number::before {
+    width: 28px;
+    height: 1px;
+    content: "";
+    background: var(--hi-gold);
+}
+
+.hi-karma-card__copy h3 {
+    margin-bottom: 22px;
+    color: #38283a;
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    line-height: 1.3;
+}
+
+.hi-karma-card__copy p:last-child,
+.hi-karma-service__copy p:last-child {
+    margin-bottom: 0;
+}
+
+.hi-karma-impact {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.hi-karma-impact-panel {
+    grid-column: 1 / -1;
+    padding: clamp(24px, 3.5vw, 42px) clamp(24px, 5vw, 66px) clamp(26px, 4vw, 46px);
+    border-top: 1px solid rgba(121, 43, 42, .11);
+    background:
+        radial-gradient(circle at 8% 0%, rgba(218, 183, 107, .16), transparent 30%),
+        linear-gradient(110deg, rgba(255, 249, 234, .92), rgba(247, 244, 236, .82));
+}
+
+.hi-karma-impact__item {
+    display: flex;
+    min-width: 0;
+    min-height: 170px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 22px 18px;
+    border: 1px solid rgba(174, 126, 44, .2);
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at 85% 8%, rgba(220, 177, 73, .14), transparent 35%),
+        rgba(255, 252, 243, .88);
+    box-shadow: 0 12px 28px rgba(67, 49, 35, .07);
+}
+
+.hi-karma-impact__icon {
+    display: inline-grid;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(163, 112, 29, .2);
+    border-radius: 50%;
+    place-items: center;
+    color: #9a651a;
+    background: #fff9e9;
+    font-family: "Noto Sans Devanagari", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hi-karma-impact__item strong {
+    display: block;
+    color: #8b302e;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.65rem, 2.4vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.15;
+    white-space: nowrap;
+}
+
+.hi-karma-impact__item > span:last-child {
+    margin-top: 10px;
+    color: #655e58;
+    font-size: .88rem;
+    line-height: 1.55;
+}
+
+.hi-karma-impact__note {
+    max-width: 980px;
+    margin: 16px auto 0 !important;
+    color: #81766c;
+    font-size: .76rem !important;
+    line-height: 1.65 !important;
+    text-align: center;
+}
+
+.hi-karma-card__subtitle {
+    margin: -10px 0 22px;
+    color: #8a5e46;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.hi-karma-card--expanded {
+    grid-template-rows: auto auto;
+}
+
+.hi-karma-services {
+    display: grid;
+    grid-column: 1 / -1;
+    gap: 1px;
+    padding: 1px 0 0;
+    background: rgba(121, 43, 42, .11);
+}
+
+.hi-karma-service {
+    display: grid;
+    grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
+    background: rgba(252, 248, 239, .98);
+}
+
+.hi-karma-service--reverse {
+    grid-template-columns: minmax(0, 1.28fr) minmax(280px, .72fr);
+}
+
+.hi-karma-service--reverse .hi-karma-service__media {
+    order: 2;
+}
+
+.hi-karma-service__media {
+    margin: 0;
+    overflow: hidden;
+}
+
+.hi-karma-service__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    object-fit: cover;
+}
+
+.hi-karma-service__copy {
+    align-self: center;
+    padding: clamp(32px, 4.5vw, 58px);
+}
+
+.hi-karma-service__copy h4 {
+    margin: 0 0 18px;
+    color: #3b2b3c;
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.8rem, 3vw, 2.55rem);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hi-karma-card--livelihood {
+    background:
+        linear-gradient(120deg, rgba(255, 252, 246, .92), rgba(240, 232, 218, .88));
+}
+
+.hi-karma-card__media--placeholder {
+    display: grid;
+    min-height: 510px;
+    place-content: center;
+    padding: 42px;
+    color: #675069;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 38%, rgba(255, 247, 211, .96), transparent 26%),
+        radial-gradient(circle at 50% 50%, rgba(145, 116, 147, .2), transparent 48%),
+        linear-gradient(145deg, #d9e3dc, #eee3d6 58%, #e5d6dc);
+}
+
+.hi-karma-card__media--placeholder::before {
+    position: absolute;
+    width: min(72%, 300px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(121, 43, 42, .16);
+    border-radius: 50%;
+    content: "";
+    box-shadow:
+        0 0 0 38px rgba(255, 255, 255, .12),
+        0 0 0 76px rgba(255, 255, 255, .08);
+}
+
+.hi-karma-card__media--placeholder::after {
+    display: none;
+}
+
+.hi-karma-card__media--placeholder > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hi-karma-placeholder__symbol {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--hi-gold);
+    font-size: 3.6rem;
+    line-height: 1;
+}
+
+.hi-karma-card__media--placeholder > span:not(.hi-karma-placeholder__symbol) {
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    font-weight: 600;
+}
+
+.hi-karma-card__media--placeholder small {
+    display: block;
+    margin-top: 8px;
+    color: #776b72;
+    font-size: .82rem;
+}
+
+.hindi-home .footer {
+    line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+    .hindi-home .site-title {
+        display: none;
+    }
+
+    .hi-hero {
+        background-position: center, center, 67% center;
+    }
+
+    .hi-hero__copy {
+        width: min(680px, 68%);
+    }
+
+    .hi-profile,
+    .hi-sacred__layout,
+    .hi-sadhna__layout,
+    .hi-manidweep__layout {
+        gap: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        scroll-padding-top: 82px;
+    }
+
+    body.hindi-home {
+        font-size: 1rem;
+    }
+
+    .hindi-home .site-header {
+        background: rgba(255, 249, 239, .9);
+    }
+
+    .hi-shell {
+        width: min(100% - 32px, 720px);
+    }
+
+    .hi-hero {
+        min-height: auto;
+        padding-top: 130px;
+        background-image:
+            linear-gradient(180deg, rgba(247, 229, 201, .16) 0%, rgba(247, 229, 201, .56) 42%, rgba(247, 229, 201, .98) 68%, #f4dec0 100%),
+            url("../images/bhaiyaji-maa-home-hero.jpg");
+        background-position: center, 62% top;
+        background-size: cover, auto 66%;
+    }
+
+    .hi-hero__copy {
+        width: 100%;
+        padding-top: min(48vw, 420px);
+    }
+
+    .hi-hero h1 {
+        font-size: clamp(2.7rem, 10vw, 4.8rem);
+    }
+
+    .hi-narrative,
+    .hi-profile,
+    .hi-sacred__layout,
+    .hi-sadhna__layout,
+    .hi-yug__layout,
+    .hi-manidweep__layout,
+    .hi-karma-card,
+    .hi-karma-card--reverse,
+    .hi-karma-service,
+    .hi-karma-service--reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-karma-card--reverse .hi-karma-card__media,
+    .hi-karma-service--reverse .hi-karma-service__media {
+        order: 0;
+    }
+
+    .hi-karma-card__media img {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+    }
+
+    .hi-karma-service__media img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .hi-book-legacy,
+    .hi-sadhna-lived {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-book-legacy__figure {
+        order: -1;
+    }
+
+    .hi-book-legacy__media,
+    .hi-book-legacy__media img,
+    .hi-sadhna-lived__media,
+    .hi-sadhna-lived__media img {
+        min-height: 430px;
+    }
+
+    .hi-wisdom-quote {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-callout {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-profile__media,
+    .hi-mission__media,
+    .hi-sacred__media,
+    .hi-sadhna__media,
+    .hi-yug__media,
+    .hi-manidweep__media {
+        width: min(100%, 560px);
+        margin-inline: auto;
+    }
+
+    .hi-profile--reverse .hi-profile__media {
+        order: 0;
+    }
+
+    .hi-seva-path__track {
+        grid-template-columns: 1fr;
+        gap: 54px;
+    }
+
+    .hi-seva-path__track::before,
+    .hi-seva-path__track::after {
+        top: 47px;
+        right: auto;
+        bottom: 72px;
+        left: 50%;
+        width: 1px;
+        height: auto;
+    }
+
+    .hi-seva-path__track::before {
+        background: linear-gradient(180deg, transparent, rgba(177, 126, 36, .55) 8%, rgba(177, 126, 36, .55) 92%, transparent);
+    }
+
+    .hi-seva-path__track::after {
+        height: 18%;
+        background: linear-gradient(180deg, transparent, rgba(255, 221, 145, .95), transparent);
+        animation-name: hiSevaGlowVertical;
+    }
+
+    .hi-seva-path__step {
+        padding-bottom: 8px;
+    }
+
+    .hi-sadhna__media {
+        position: static;
+        order: -1;
+    }
+
+    .hi-sacred__media img,
+    .hi-sadhna__media img {
+        min-height: 0;
+        max-height: 720px;
+    }
+
+    .hi-profile__media img,
+    .hi-mission__media img,
+    .hi-manidweep__media img {
+        min-height: 0;
+        max-height: 650px;
+    }
+
+    .hi-profile__media--portrait img {
+        max-height: 620px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hi-shell {
+        width: min(100% - 24px, 560px);
+    }
+
+    .hi-section {
+        padding-block: 72px;
+    }
+
+    .hi-kicker {
+        font-size: .7rem;
+        letter-spacing: .13em;
+    }
+
+    .hi-section-heading h2,
+    .hi-profile__copy h2,
+    .hi-sacred__copy h2,
+    .hi-sadhna__copy h2,
+    .hi-manidweep__copy h2 {
+        font-size: clamp(2rem, 11vw, 3.1rem);
+    }
+
+    .hi-feature-heading h2 {
+        font-size: clamp(2rem, 10.5vw, 3rem);
+    }
+
+    .hi-hero {
+        padding-bottom: 64px;
+        background-position: center, 62% 68px;
+        background-size: cover, auto 48%;
+    }
+
+    .hi-hero__copy {
+        padding-top: min(72vw, 390px);
+    }
+
+    .hi-threefold {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-hero__purpose {
+        padding: 20px;
+        font-size: .98rem;
+    }
+
+    .hi-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hi-btn {
+        width: 100%;
+    }
+
+    .hi-callout,
+    .hi-lineage .hi-profile {
+        padding: 26px 22px;
+        border-radius: 22px;
+    }
+
+    .hi-profile__media {
+        padding: 10px;
+        border-radius: 24px 24px 72px 24px;
+    }
+
+    .hi-mission__media {
+        padding: 10px;
+        border-radius: 24px 24px 72px 24px;
+    }
+
+    .hi-profile__media img,
+    .hi-mission__media img {
+        border-radius: 17px 17px 62px 17px;
+    }
+
+    .hi-profile__copy h3 {
+        font-size: clamp(1.9rem, 9vw, 2.65rem);
+    }
+
+    .hi-sacred__media img,
+    .hi-sadhna__media img {
+        max-height: 620px;
+    }
+
+    .hi-book-legacy,
+    .hi-sadhna-lived {
+        border-radius: 20px;
+    }
+
+    .hi-book-legacy__copy,
+    .hi-sadhna-lived__copy {
+        gap: 24px;
+        padding: 28px 22px 32px;
+    }
+
+    .hi-book-legacy__copy blockquote,
+    .hi-sadhna-lived__copy blockquote {
+        padding-left: 20px;
+        font-size: 1.25rem;
+    }
+
+    .hi-book-legacy__media,
+    .hi-book-legacy__media img,
+    .hi-sadhna-lived__media,
+    .hi-sadhna-lived__media img {
+        min-height: 290px;
+    }
+
+    .hi-wisdom-quote {
+        padding: 42px 22px 38px;
+        border-radius: 24px;
+    }
+
+    .hi-wisdom-quote::before {
+        top: -28px;
+        left: 12px;
+        font-size: 8rem;
+    }
+
+    .hi-wisdom-quote__eyebrow {
+        margin-bottom: 16px;
+    }
+
+    .hi-wisdom-quote strong {
+        font-size: 1.78rem;
+    }
+
+    .hi-wisdom-quote p {
+        margin-top: 20px;
+        font-size: 1.04rem;
+        line-height: 1.8;
+    }
+
+    .hi-yug__quote {
+        font-size: clamp(1.75rem, 8.5vw, 2.75rem);
+    }
+
+    .hi-yug__media {
+        border-radius: 90px 90px 22px 22px;
+    }
+
+    .hi-yug__media img {
+        border-radius: 78px 78px 15px 15px;
+    }
+
+    .hi-manidweep__media {
+        border-radius: 90px 90px 22px 22px;
+    }
+
+    .hi-manidweep__media img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .hi-karma__intro {
+        margin-bottom: 44px;
+        text-align: left;
+    }
+
+    .hi-karma__intro h2 {
+        font-size: clamp(2.8rem, 16vw, 4.25rem);
+    }
+
+    .hi-karma-card,
+    .hi-karma-service {
+        border-radius: 22px;
+    }
+
+    .hi-karma-card__copy,
+    .hi-karma-service__copy {
+        padding: 30px 22px 34px;
+    }
+
+    .hi-karma-card__copy h3 {
+        font-size: clamp(1.75rem, 9vw, 2.45rem);
+    }
+
+    .hi-karma-card__media figcaption {
+        right: 18px;
+        bottom: 16px;
+        left: 18px;
+    }
+
+    .hi-karma-card__media--placeholder {
+        min-height: 340px;
+    }
+
+    .hi-karma-impact {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hi-karma-impact__item {
+        min-height: 0;
+        padding: 20px 18px;
+    }
+
+    .hi-karma-impact__item strong {
+        white-space: normal;
+    }
+
+    .hi-karma-impact__note {
+        margin-top: 16px;
+        text-align: left;
+    }
+
+    .hi-seva-path {
+        padding-block: 72px;
+    }
+
+    .hi-seva-path__heading {
+        margin-bottom: 46px;
+        text-align: left;
+    }
+
+    .hi-seva-path__heading h2 {
+        font-size: clamp(2.15rem, 11vw, 3.2rem);
+    }
+
+    .hi-seva-path__icon {
+        width: 82px;
+        height: 82px;
+        margin-bottom: 20px;
+    }
+
+    .hi-seva-path__icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hi-seva-path__track::before,
+    .hi-seva-path__track::after {
+        top: 41px;
+    }
+
+    .hi-seva-path__summary {
+        display: grid;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .hi-seva-path__summary i {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes hiSevaGlowVertical {
+    0%, 100% { transform: translateY(-20%); opacity: .25; }
+    50% { transform: translateY(430%); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hi-btn,
+    .hi-text-link span,
+    .hi-seva-path__icon {
+        transition: none;
+    }
+
+    .hi-seva-path__track::after {
+        animation: none;
+    }
+}
