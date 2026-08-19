@@ -486,3 +486,49 @@ function initializeImageHints() {
 function randomNumber(minimum, maximum) {
     return Math.random() * (maximum - minimum) + minimum;
 }
+
+
+// Testimonials Slider Logic
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".hi-testimonial-slide");
+    const dotsContainer = document.getElementById("sliderDots");
+    if (!slides.length) return;
+
+    let currentSlide = 0;
+    let autoSlideInterval;
+
+    // Generate Dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement("span");
+        dot.classList.add("hi-slider-dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".hi-slider-dot");
+
+    window.goToSlide = function (n) {
+        slides[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+        resetTimer();
+    };
+
+    window.moveSlide = function (step) {
+        goToSlide(currentSlide + step);
+    };
+
+    function startTimer() {
+        autoSlideInterval = setInterval(() => moveSlide(1), 6000);
+    }
+
+    function resetTimer() {
+        clearInterval(autoSlideInterval);
+        startTimer();
+    }
+
+    startTimer();
+});

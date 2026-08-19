@@ -1,0 +1,38 @@
+{
+  "album": "unassigned",
+  "generatedAt": "2026-08-19T18:36:10.729Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\unassigned",
+  "photographCount": 1,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "unassigned",
+      "original": {
+        "file": "img336.jpg",
+        "width": 6888,
+        "height": 4488,
+        "bytes": 4061730
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9812
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 586,
+        "bytes": 46392
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1173,
+        "bytes": 164722
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}

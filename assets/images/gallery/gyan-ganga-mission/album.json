@@ -1,0 +1,188 @@
+{
+  "album": "gyan-ganga-mission",
+  "generatedAt": "2026-08-19T15:23:15.767Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\gyan-ganga-mission",
+  "photographCount": 6,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "DSC_8364.JPG",
+        "width": 5520,
+        "height": 3680,
+        "bytes": 10538371
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17694
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 110030
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 416738
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "IMG-20140818-WA0000.jpg",
+        "width": 800,
+        "height": 597,
+        "bytes": 80471
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11512
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 800,
+        "height": 597,
+        "bytes": 47470
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 800,
+        "height": 597,
+        "bytes": 56474
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img561 (2).jpg",
+        "width": 6816,
+        "height": 4704,
+        "bytes": 4656881
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14040
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 621,
+        "bytes": 87492
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1800,
+        "height": 1242,
+        "bytes": 287440
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img568.jpg",
+        "width": 7392,
+        "height": 4535,
+        "bytes": 4352514
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10222
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 900,
+        "height": 552,
+        "bytes": 41170
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 1104,
+        "bytes": 118180
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img576.jpg",
+        "width": 6960,
+        "height": 4680,
+        "bytes": 4189474
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13822
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 605,
+        "bytes": 65814
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 1210,
+        "bytes": 189258
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img627.jpg",
+        "width": 5832,
+        "height": 8088,
+        "bytes": 7890289
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12362
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 649,
+        "bytes": 103174
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1298,
+        "bytes": 355410
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}
