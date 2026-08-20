@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeSmoothLinks();
     initializeRevealAnimations();
 	initializeImpactStories();
+    initializeImpactTabs();
     initializeMobileDisclosures();
     initializeImageHints();
 });
@@ -479,6 +480,60 @@ function initializeImageHints() {
     });
 }
 
+
+function initializeImpactTabs() {
+    const stage = document.querySelector("[data-impact-stage]");
+
+    if (!stage) {
+        return;
+    }
+
+    const tabs = Array.from(stage.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(stage.querySelectorAll('[role="tabpanel"]'));
+
+    function activateImpact(tab, moveFocus = false) {
+        const targetId = tab.dataset.impactTarget;
+
+        tabs.forEach((item) => {
+            const isActive = item === tab;
+            item.setAttribute("aria-selected", String(isActive));
+            item.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+            const isActive = panel.id === targetId;
+            panel.classList.toggle("is-active", isActive);
+            panel.setAttribute("aria-hidden", String(!isActive));
+        });
+
+        if (moveFocus) {
+            tab.focus({ preventScroll: true });
+        }
+
+        tab.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+        });
+    }
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateImpact(tab));
+        tab.addEventListener("keydown", (event) => {
+            let nextIndex = null;
+
+            if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+            if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+            if (event.key === "Home") nextIndex = 0;
+            if (event.key === "End") nextIndex = tabs.length - 1;
+            if (nextIndex === null) return;
+
+            event.preventDefault();
+            activateImpact(tabs[nextIndex], true);
+        });
+    });
+}
+
 /* ==========================================================
    UTILITIES
 ========================================================== */
@@ -490,12 +545,14 @@ function randomNumber(minimum, maximum) {
 
 // Testimonials Slider Logic
 document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById("testimonialSlider");
     const slides = document.querySelectorAll(".hi-testimonial-slide");
     const dotsContainer = document.getElementById("sliderDots");
-    if (!slides.length) return;
+    if (!slider || !slides.length || !dotsContainer) return;
 
     let currentSlide = 0;
     let autoSlideInterval;
+    let isPaused = false;
 
     // Generate Dots
     slides.forEach((_, index) => {
@@ -522,13 +579,40 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function startTimer() {
+        if (isPaused || autoSlideInterval) return;
         autoSlideInterval = setInterval(() => moveSlide(1), 6000);
     }
 
-    function resetTimer() {
+    function stopTimer() {
         clearInterval(autoSlideInterval);
+        autoSlideInterval = null;
+    }
+
+    function resetTimer() {
+        stopTimer();
         startTimer();
     }
 
+    function pauseTimer() {
+        isPaused = true;
+        stopTimer();
+    }
+
+    function resumeTimer() {
+        isPaused = false;
+        startTimer();
+    }
+
+    slider.addEventListener("mouseenter", pauseTimer);
+    slider.addEventListener("mouseleave", resumeTimer);
+    slider.addEventListener("focusin", pauseTimer);
+    slider.addEventListener("focusout", (event) => {
+        if (!slider.contains(event.relatedTarget)) {
+            resumeTimer();
+        }
+    });
+
     startTimer();
 });
+
+
