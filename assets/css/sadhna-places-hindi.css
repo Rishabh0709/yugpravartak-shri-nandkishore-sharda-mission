@@ -1,0 +1,283 @@
+.sadhna-places-page {
+    background:
+        radial-gradient(circle at 8% 8%, rgba(221, 236, 240, .42), transparent 28%),
+        linear-gradient(180deg, #fffaf1 0%, #f7ead8 46%, #fffaf1 100%);
+}
+
+.sadhna-places-hero {
+    min-height: auto;
+    padding-top: clamp(70px, 8vw, 112px);
+    padding-bottom: clamp(34px, 4vw, 56px);
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 82% 18%, rgba(198, 148, 53, .18), transparent 28%),
+        radial-gradient(circle at 14% 24%, rgba(221, 236, 240, .66), transparent 34%),
+        linear-gradient(135deg, #fffaf1 0%, #f7ead8 54%, #e7f0ed 100%);
+}
+
+.sadhna-places-hero::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 54px;
+    background: linear-gradient(180deg, rgba(255, 250, 241, 0), rgba(255, 250, 241, 1));
+    pointer-events: none;
+}
+
+.sadhna-places-hero__layout {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.sadhna-places-hero__copy {
+    max-width: 980px;
+}
+
+.sadhna-places-hero h1 {
+    margin-bottom: 24px;
+    color: var(--hi-ink);
+    font-size: clamp(3.2rem, 7.5vw, 7.2rem);
+    line-height: 1.05;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.sadhna-places-hero__copy p {
+    max-width: 800px;
+    color: #6b584f;
+    font-family: var(--hi-serif);
+    font-size: clamp(1.2rem, 2vw, 1.72rem);
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.sadhna-places-list {
+    padding-top: clamp(28px, 4vw, 52px);
+    background:
+        linear-gradient(180deg, #fffaf1, rgba(244, 230, 209, .72));
+}
+
+.sadhna-places-prelude {
+    max-width: 980px;
+    margin: 0 auto clamp(28px, 5vw, 54px);
+    padding: clamp(24px, 4vw, 38px);
+    border: 1px solid rgba(198, 148, 53, .26);
+    border-radius: var(--hi-radius);
+    background:
+        radial-gradient(circle at 12% 0%, rgba(221, 236, 240, .5), transparent 32%),
+        rgba(255, 252, 246, .82);
+    box-shadow: 0 22px 54px rgba(75, 43, 29, .08);
+    text-align: center;
+}
+
+.sadhna-places-prelude strong {
+    display: block;
+    color: var(--hi-ink);
+    font-family: var(--hi-serif);
+    font-size: clamp(1.35rem, 2.5vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.65;
+}
+.sadhna-place-stack {
+    display: grid;
+    gap: clamp(28px, 5vw, 58px);
+}
+
+.sadhna-place {
+    position: relative;
+    display: grid;
+    gap: clamp(20px, 3vw, 30px);
+    padding: clamp(22px, 4vw, 42px);
+    overflow: hidden;
+    border: 1px solid rgba(198, 148, 53, .24);
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(221, 236, 240, .42), transparent 26%),
+        rgba(255, 252, 246, .86);
+    box-shadow: 0 24px 68px rgba(75, 43, 29, .1);
+}
+
+.sadhna-place::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .42), transparent 34%, rgba(198, 148, 53, .08));
+    pointer-events: none;
+}
+
+.sadhna-place__header,
+.sadhna-place__row {
+    position: relative;
+    z-index: 1;
+}
+
+.sadhna-place__header {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    max-width: 950px;
+}
+
+.sadhna-place__header h3 {
+    margin: 6px 0 0;
+    color: var(--hi-ink);
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.sadhna-place__header .hi-kicker {
+    margin: 0;
+}
+
+.sadhna-place__row {
+    display: grid;
+    grid-template-columns: minmax(300px, .92fr) minmax(0, 1fr);
+    gap: clamp(24px, 4.2vw, 58px);
+    align-items: center;
+}
+
+.sadhna-place__row--reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .92fr);
+}
+
+.sadhna-place__row--reverse .sadhna-place__media {
+    order: 2;
+}
+
+.sadhna-place__row--reverse .sadhna-place__content {
+    order: 1;
+}
+
+.sadhna-place__media {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(198, 148, 53, .28);
+    border-radius: 24px;
+    background: #fffaf1;
+    box-shadow: 0 22px 48px rgba(75, 43, 29, .12);
+}
+
+.sadhna-place__media::after {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(255, 250, 242, .5);
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.sadhna-place__media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.34 / 1;
+    object-fit: cover;
+    filter: saturate(1.08) contrast(1.04) brightness(1.02);
+    transition: transform .5s ease, filter .5s ease;
+}
+
+.sadhna-place__media:hover img {
+    transform: scale(1.025);
+    filter: saturate(1.16) contrast(1.06) brightness(1.03);
+}
+
+.sadhna-place__content {
+    padding: clamp(8px, 2vw, 18px);
+}
+
+.sadhna-place__content h4 {
+    margin-bottom: 14px;
+    color: var(--hi-ink);
+    font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+    line-height: 1.25;
+    text-wrap: balance;
+}
+
+.sadhna-place__content p {
+    color: #62544c;
+}
+
+.sadhna-places-closing {
+    padding-top: clamp(50px, 6vw, 86px);
+    background: linear-gradient(180deg, rgba(244, 230, 209, .62), #fffaf1 100%);
+}
+
+.sadhna-places-closing__box {
+    max-width: 940px;
+    padding: clamp(34px, 5vw, 58px);
+    border: 1px solid rgba(198, 148, 53, .28);
+    border-radius: var(--hi-radius);
+    background:
+        radial-gradient(circle at 50% -18%, rgba(255, 255, 255, .9), transparent 42%),
+        rgba(255, 252, 246, .86);
+    box-shadow: var(--hi-shadow);
+    text-align: center;
+}
+
+.sadhna-places-closing__box h2 {
+    margin-bottom: 16px;
+    color: var(--hi-ink);
+    font-size: clamp(2rem, 4vw, 3.65rem);
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.sadhna-places-closing__box p {
+    max-width: 760px;
+    margin: 0 auto 18px;
+    color: #66564e;
+    font-size: clamp(1.04rem, 1.45vw, 1.2rem);
+    line-height: 1.85;
+}
+
+@media (max-width: 980px) {
+    .sadhna-places-hero__layout,
+    .sadhna-place__row,
+    .sadhna-place__row--reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .sadhna-place__row--reverse .sadhna-place__media,
+    .sadhna-place__row--reverse .sadhna-place__content {
+        order: initial;
+    }
+
+    .sadhna-place__header {
+        display: grid;
+    }
+}
+
+@media (max-width: 640px) {
+    .sadhna-places-hero {
+        padding-top: 126px;
+    }
+
+    .sadhna-places-hero h1 {
+        font-size: clamp(3rem, 18vw, 4.8rem);
+    }
+
+    .sadhna-place {
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .sadhna-place__media {
+        border-radius: 18px;
+    }
+
+    .sadhna-place__media img {
+        aspect-ratio: 1.08 / 1;
+    }
+
+    .sadhna-place__content {
+        padding: 0;
+    }
+}
+
+
+
+
+

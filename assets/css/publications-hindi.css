@@ -6,7 +6,7 @@
 .publications-hero {
     min-height: auto;
     padding-top: clamp(64px, 7vw, 96px);
-    padding-bottom: clamp(74px, 8vw, 118px);
+    padding-bottom: clamp(46px, 5vw, 74px);
     background:
         linear-gradient(135deg, rgba(121, 43, 42, .11), rgba(198, 148, 53, .12) 44%, rgba(221, 236, 240, .45)),
         var(--hi-cream);
@@ -16,7 +16,7 @@
     content: "";
     position: absolute;
     inset: auto 0 0;
-    height: 140px;
+    height: 70px;
     background: linear-gradient(180deg, rgba(255, 250, 241, 0), rgba(255, 250, 241, 1));
     pointer-events: none;
 }
@@ -24,22 +24,20 @@
 .publications-hero__layout {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
-    gap: clamp(36px, 6vw, 86px);
-    align-items: center;
+    display: block;
 }
 
 .publications-hero__copy {
-    max-width: 820px;
+    max-width: 1040px;
 }
 
 .publications-hero h1 {
     margin-bottom: 24px;
-    font-size: clamp(3rem, 7vw, 6.9rem);
+    font-size: clamp(3rem, 6.2vw, 5.8rem);
     line-height: 1.05;
     letter-spacing: 0;
-    text-wrap: balance;
+    white-space: nowrap;
+    text-wrap: normal;
 }
 
 .publications-hero__copy p {
@@ -51,65 +49,8 @@
     line-height: 1.65;
 }
 
-.publications-hero__panel {
-    padding: clamp(28px, 4vw, 42px);
-    border: 1px solid rgba(121, 43, 42, .16);
-    border-radius: var(--hi-radius);
-    background: rgba(255, 252, 246, .78);
-    box-shadow: var(--hi-shadow);
-    backdrop-filter: blur(14px);
-}
-
-.publications-hero__panel span,
-.publication-card__year {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    min-height: 30px;
-    padding: 4px 12px;
-    border-radius: 999px;
-    color: var(--hi-maroon);
-    background: rgba(121, 43, 42, .08);
-    font-size: .82rem;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.publications-hero__panel strong {
-    display: block;
-    margin: 18px 0 12px;
-    color: var(--hi-ink);
-    font-family: var(--hi-serif);
-    font-size: clamp(2.1rem, 4vw, 3.4rem);
-    font-weight: 700;
-    line-height: 1.08;
-}
-
-.publications-hero__panel p {
-    margin-bottom: 0;
-    color: #6f5d52;
-}
-
-.publications-intro {
-    padding-top: clamp(56px, 7vw, 104px);
-    background: #fffaf1;
-}
-
-.publications-intro__grid {
-    display: grid;
-    grid-template-columns: minmax(260px, .78fr) minmax(0, 1fr);
-    gap: clamp(34px, 6vw, 80px);
-    align-items: start;
-}
-
-.publications-intro__text {
-    padding: clamp(26px, 4vw, 44px);
-    border-left: 4px solid rgba(189, 116, 41, .72);
-    border-radius: 0 var(--hi-radius) var(--hi-radius) 0;
-    background: rgba(244, 230, 209, .38);
-}
-
 .publications-books {
+    padding-top: clamp(34px, 5vw, 62px);
     background:
         linear-gradient(180deg, #fffaf1, rgba(244, 230, 209, .72));
 }
@@ -252,7 +193,8 @@
     font-size: clamp(1.55rem, 2.4vw, 2.3rem);
     line-height: 1.32;
     letter-spacing: 0;
-    text-wrap: balance;
+    white-space: nowrap;
+    text-wrap: normal;
 }
 
 .publication-card__meta {
@@ -263,7 +205,7 @@
 }
 
 .publication-card__body > p:not(.publication-card__meta) {
-    max-width: 820px;
+    max-width: 1040px;
     margin-bottom: 18px;
     color: #655a54;
 }
@@ -333,7 +275,8 @@
     font-size: clamp(2rem, 4vw, 3.7rem);
     line-height: 1.18;
     letter-spacing: 0;
-    text-wrap: balance;
+    white-space: nowrap;
+    text-wrap: normal;
 }
 
 .publications-cta__box p {
@@ -350,38 +293,25 @@
         padding-bottom: 74px;
     }
 
-    .publications-hero__layout,
-    .publications-intro__grid,
     .publication-card {
         grid-template-columns: 1fr;
     }
-
-    .publications-hero__panel {
-        max-width: 560px;
-    }
-
-    .publication-card__cover {
+.publication-card__cover {
         min-height: 240px;
     }
 }
 
 @media (max-width: 640px) {
     .publications-hero h1 {
-        font-size: clamp(2.55rem, 13vw, 4.4rem);
+        font-size: clamp(2.45rem, 11vw, 4.1rem);
+        white-space: normal;
     }
 
-    .publications-intro__text,
     .publication-card,
     .publications-cta__box {
         border-radius: 18px;
     }
-
-    .publications-intro__text {
-        border-left-width: 0;
-        border-top: 4px solid rgba(189, 116, 41, .72);
-    }
-
-    .publication-card__cover {
+.publication-card__cover {
         min-height: 210px;
         padding: 20px;
     }
@@ -390,3 +320,6 @@
         font-size: 1.35rem;
     }
 }
+
+
+
