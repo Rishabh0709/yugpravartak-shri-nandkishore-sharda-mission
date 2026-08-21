@@ -1,0 +1,218 @@
+{
+  "album": "books",
+  "generatedAt": "2026-08-20T19:15:53.344Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\books",
+  "photographCount": 7,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "books",
+      "original": {
+        "file": "DSC_8455.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 4367075
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 5046
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 53826
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 279296
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "books",
+      "original": {
+        "file": "DSC_8456.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 3881994
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 5072
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 36690
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 170332
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "books",
+      "original": {
+        "file": "DSC_8457.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 4184856
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14496
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 84830
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 320078
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "books",
+      "original": {
+        "file": "DSC_8458.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 3832694
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 5070
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 37580
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 207958
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "books",
+      "original": {
+        "file": "DSC_8459.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 3828947
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 4512
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 32826
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 193852
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "books",
+      "original": {
+        "file": "DSC_8460.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 4105438
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 4212
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 51680
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 280654
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "books",
+      "original": {
+        "file": "DSC_8462.JPG",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 3661724
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 3706
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 733,
+        "height": 1100,
+        "bytes": 23806
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 2700,
+        "bytes": 140742
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}
