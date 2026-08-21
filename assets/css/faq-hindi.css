@@ -397,12 +397,71 @@
         grid-template-columns: 1fr;
     }
 
+    .faq-directory {
+        overflow: visible;
+    }
+
+    .faq-layout {
+        display: block;
+    }
+
+    .faq-results {
+        margin-top: 22px;
+    }
+
     .faq-categories {
-        position: static;
+        position: sticky;
+        top: 78px;
+        z-index: 20;
+        display: flex;
+        gap: 10px;
+        margin-inline: calc(50% - 50vw);
+        padding: 10px max(18px, calc((100vw - 1180px) / 2));
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-padding-inline: 18px;
+        border-block: 1px solid rgba(198, 148, 53, .2);
+        background: rgba(255, 250, 241, .88);
+        box-shadow: 0 14px 34px rgba(75, 43, 29, .08);
+        backdrop-filter: blur(14px);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .faq-categories::-webkit-scrollbar {
+        display: none;
     }
 
     #faq-category-buttons {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: contents;
+    }
+
+    .faq-category {
+        width: auto;
+        flex: 0 0 auto;
+        min-height: 48px;
+        max-width: min(76vw, 320px);
+        padding: 11px 18px;
+        border-radius: 999px;
+        white-space: nowrap;
+        box-shadow: 0 10px 24px rgba(75, 43, 29, .06);
+    }
+
+    .faq-category::before,
+    .faq-category::after {
+        display: none;
+    }
+
+    .faq-category span {
+        max-width: 100%;
+        padding-right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .faq-category:hover,
+    .faq-category:focus-visible,
+    .faq-category.is-active {
+        transform: none;
     }
 }
 
@@ -411,9 +470,20 @@
         padding-top: 128px;
     }
 
-    .faq-card-grid,
-    #faq-category-buttons {
+    .faq-card-grid {
         grid-template-columns: 1fr;
+    }
+
+    .faq-categories {
+        top: 70px;
+        padding-block: 9px;
+    }
+
+    .faq-category {
+        min-height: 44px;
+        max-width: 72vw;
+        padding: 9px 15px;
+        font-size: .92rem;
     }
 
     .faq-count {
@@ -469,3 +539,6 @@
     font-size: clamp(1.04rem, 1.45vw, 1.2rem);
     line-height: 1.85;
 }
+
+
+

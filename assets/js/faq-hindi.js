@@ -877,6 +877,9 @@ const FAQ_ITEMS = [
         if (categoryButton) {
             activeCategory = categoryButton.dataset.category;
             renderResults();
+            requestAnimationFrame(() => {
+                categoryButton.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+            });
             return;
         }
 
@@ -898,3 +901,4 @@ const FAQ_ITEMS = [
         }
     });
 })();
+
