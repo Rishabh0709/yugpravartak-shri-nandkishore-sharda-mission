@@ -1,16 +1,25 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", async () => {
+    const isHindiPage = document.documentElement.lang
+        .toLowerCase()
+        .startsWith("hi");
+
     await Promise.all([
         loadComponent(
             "#header-placeholder",
-            "components/header.html"
+            isHindiPage
+                ? "/components/hi/header.html"
+                : "/components/header.html"
         ),
         loadComponent(
             "#footer-placeholder",
-            "components/footer.html"
+            isHindiPage
+                ? "/components/hi/footer.html"
+                : "/components/footer.html"
         )
     ]);
+
 
     initializeNavigation();
     setCurrentYear();

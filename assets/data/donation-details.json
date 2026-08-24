@@ -15,7 +15,7 @@
         "payeeName": "Swami Vivekanand Students Welfare Charitable Trust",
         "currency": "INR",
         "qrCodeName": "Swami Vivekanand Trust UPI QR",
-        "qrImage": "assets/images/donation/svswct-upi-qr.png"
+        "qrImage": "/assets/images/donation/svswct-upi-qr.png"
       },
       "compliance": {
         "label": "80G approval",
@@ -38,7 +38,7 @@
     "payeeName": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
     "currency": "INR",
     "qrCodeName": "Adhyatm Kendra UPI QR",
-    "qrImage": "assets/images/donation/gsnksak-upi-qr.png"
+    "qrImage": "/assets/images/donation/gsnksak-upi-qr.png"
   },
   "compliance": {
     "label": "80G approval",
@@ -61,7 +61,7 @@
     "payeeName": "Maa Shardamani Trust",
     "currency": "INR",
     "qrCodeName": "Maa Shardamani Trust UPI QR",
-    "qrImage": "assets/images/donation/mst-upi-qr.png"
+    "qrImage": "/assets/images/donation/mst-upi-qr.png"
   },
   "compliance": {
     "label": "80G approval",
@@ -84,7 +84,7 @@
     "payeeName": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
     "currency": "INR",
     "qrCodeName": "Gyan Ganga Mission UPI QR",
-    "qrImage": "assets/images/donation/snksggm-upi-qr.png"
+    "qrImage": "/assets/images/donation/snksggm-upi-qr.png"
   },
   "compliance": {
     "label": "80G approval",

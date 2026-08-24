@@ -971,190 +971,7 @@ body.hindi-home::before {
 .hi-yug__text {
     color: #59676b;
 }
-
-/* Sadhna to Seva progression */
-.hi-seva-path {
-    position: relative;
-    overflow: hidden;
-    padding-block: clamp(76px, 9vw, 126px);
-    background:
-        radial-gradient(circle at 50% 45%, rgba(210, 166, 76, .14), transparent 34%),
-        linear-gradient(135deg, #fffaf0 0%, #f5eddb 54%, #f7f3e9 100%);
-}
-
-.hi-seva-path::before,
-.hi-seva-path::after {
-    position: absolute;
-    width: 380px;
-    height: 380px;
-    border: 1px solid rgba(171, 126, 44, .12);
-    border-radius: 50%;
-    content: "";
-    pointer-events: none;
-}
-
-.hi-seva-path::before {
-    top: -250px;
-    left: -150px;
-}
-
-.hi-seva-path::after {
-    right: -180px;
-    bottom: -270px;
-}
-
-.hi-seva-path__heading {
-    max-width: 980px;
-    margin: 0 auto clamp(52px, 6vw, 78px);
-    text-align: center;
-}
-
-.hi-seva-path__heading h2 {
-    margin: 10px 0 16px;
-    color: var(--hi-ink);
-    font-family: "Noto Serif Devanagari", serif;
-    font-size: clamp(2.25rem, 4.5vw, 4.6rem);
-    line-height: 1.16;
-    letter-spacing: -.035em;
-    text-wrap: balance;
-}
-
-.hi-seva-path__heading p {
-    max-width: 790px;
-    margin-inline: auto;
-    color: #705f52;
-    font-size: clamp(1.05rem, 1.45vw, 1.23rem);
-    line-height: 1.9;
-}
-
-.hi-seva-path__track {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(38px, 5vw, 76px);
-    isolation: isolate;
-}
-
-.hi-seva-path__track::before,
-.hi-seva-path__track::after {
-    position: absolute;
-    top: 47px;
-    right: 16.5%;
-    left: 16.5%;
-    height: 1px;
-    content: "";
-    z-index: -1;
-}
-
-.hi-seva-path__track::before {
-    background: linear-gradient(90deg, transparent, rgba(177, 126, 36, .55) 8%, rgba(177, 126, 36, .55) 92%, transparent);
-}
-
-.hi-seva-path__track::after {
-    width: 18%;
-    background: linear-gradient(90deg, transparent, rgba(255, 221, 145, .95), transparent);
-    filter: blur(.4px);
-    animation: hiSevaGlow 5s ease-in-out infinite;
-}
-
-.hi-seva-path__step {
-    position: relative;
-    text-align: center;
-}
-
-.hi-seva-path__step--focus::before {
-    position: absolute;
-    top: -42px;
-    left: 50%;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(222, 179, 87, .2), transparent 68%);
-    content: "";
-    pointer-events: none;
-    transform: translateX(-50%);
-    z-index: -1;
-}
-
-.hi-seva-path__icon {
-    display: grid;
-    width: 94px;
-    height: 94px;
-    margin: 0 auto 28px;
-    place-items: center;
-    color: #8b433a;
-    border: 1px solid rgba(177, 126, 36, .45);
-    border-radius: 50%;
-    background: rgba(255, 251, 242, .9);
-    box-shadow: 0 13px 38px rgba(87, 59, 36, .1), inset 0 0 0 7px rgba(210, 166, 76, .07);
-    transition: transform .35s ease, box-shadow .35s ease, color .35s ease;
-}
-
-.hi-seva-path__icon svg {
-    width: 52px;
-    height: 52px;
-    stroke: currentColor;
-    stroke-width: 1.6;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.hi-seva-path__step:hover .hi-seva-path__icon {
-    color: #a76628;
-    box-shadow: 0 17px 46px rgba(87, 59, 36, .16), 0 0 0 8px rgba(210, 166, 76, .08);
-    transform: translateY(-5px);
-}
-
-.hi-seva-path__phase {
-    display: block;
-    margin-bottom: 10px;
-    color: #9b6e2d;
-    font-size: .72rem;
-    font-weight: 800;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-}
-
-.hi-seva-path__step h3 {
-    margin: 0 0 12px;
-    color: var(--hi-maroon);
-    font-family: "Noto Serif Devanagari", serif;
-    font-size: clamp(1.45rem, 2.25vw, 2.05rem);
-    line-height: 1.35;
-    text-wrap: balance;
-}
-
-.hi-seva-path__step p {
-    max-width: 340px;
-    margin: 0 auto;
-    color: #75675c;
-    font-size: 1rem;
-    line-height: 1.75;
-}
-
-.hi-seva-path__summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 18px;
-    justify-content: center;
-    margin: clamp(56px, 7vw, 88px) auto 0;
-    color: #704038;
-    font-family: "Noto Serif Devanagari", serif;
-    font-size: clamp(.98rem, 1.5vw, 1.18rem);
-    font-weight: 700;
-}
-
-.hi-seva-path__summary i {
-    color: #b58232;
-    font-style: normal;
-}
-
-@keyframes hiSevaGlow {
-    0%, 100% { transform: translateX(-20%); opacity: .25; }
-    50% { transform: translateX(430%); opacity: 1; }
-}
-
-/* Manidweep */
+`r`n/* Manidweep */
 .hi-manidweep {
     background:
         radial-gradient(circle at 12% 13%, rgba(191, 141, 54, .16), transparent 29%),
@@ -1257,7 +1074,7 @@ body.hindi-home::before {
     line-height: 1.9;
 }
 
-/* Nine Sewa activities — unified elegant card grid */
+/* Sewa activities — unified elegant card grid */
 .hi-seva-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1276,6 +1093,35 @@ body.hindi-home::before {
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
 
+
+.hi-seva-card--scholarship {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr);
+}
+
+.hi-seva-card--scholarship .hi-seva-card__media {
+    aspect-ratio: auto;
+    min-height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .hi-seva-card--scholarship {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 760px) {
+    .hi-seva-card--scholarship {
+        grid-column: span 1;
+        display: flex;
+    }
+
+    .hi-seva-card--scholarship .hi-seva-card__media {
+        aspect-ratio: 4 / 3;
+        min-height: 0;
+    }
+}
 .hi-seva-card:hover,
 .hi-seva-card:focus-within {
     border-color: rgba(185, 135, 45, .42);
@@ -1470,6 +1316,10 @@ body.hindi-home::before {
 }
 
 @media (max-width: 640px) {
+    .hi-seva-grid {
+        grid-template-columns: 1fr;
+    }
+
     .hi-shell {
         width: min(100% - 24px, 560px);
     }
@@ -1582,23 +1432,14 @@ body.hindi-home::before {
         border-radius: 20px;
     }
 }
-
-@keyframes hiSevaGlowVertical {
-    0%, 100% { transform: translateY(-20%); opacity: .25; }
-    50% { transform: translateY(430%); opacity: 1; }
-}
-
+`r`n
 @media (prefers-reduced-motion: reduce) {
     .hi-btn,
-    .hi-text-link span,
-    .hi-seva-path__icon {
+    .hi-text-link span {
         transition: none;
     }
-
-    .hi-seva-path__track::after {
-        animation: none;
-    }
 }
+
 
 /* Testimonials, impact, gallery, and closing sections */
 .hi-testimonials {
@@ -2313,6 +2154,14 @@ body.hindi-home::before {
         transition: none;
     }
 }
+
+
+
+
+
+
+
+
 
 
 

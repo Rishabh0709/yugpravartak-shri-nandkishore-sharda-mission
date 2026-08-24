@@ -4,7 +4,7 @@
     <div class="container footer-inner">
         <div class="footer-introduction">
             <a href="index.html" class="footer-brand" aria-label="Yugpravartak Shri Nandkishore Sharda Mission homepage">
-                <img src="assets/images/logo.png" alt="" class="footer-logo" width="120" height="120">
+                <img src="/assets/images/logo.png" alt="" class="footer-logo" width="120" height="120">
             </a>
             <div class="footer-identity">
                 <span class="footer-kicker">Divine wisdom · Selfless service · Inner transformation</span>

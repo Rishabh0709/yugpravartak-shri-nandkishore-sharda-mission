@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="जगत्जननी माँ त्रिपुरसुन्दरी की लाडली करुणामयी माँ मधुबाला जी अडवानी की जीवन यात्रा, साधना, दिव्य ज्ञान और वर्तमान नेतृत्व का संक्षिप्त परिचय।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>करुणामयी माँ मधुबाला जी अडवानी | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .madhu-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+        }
+
+        .madhu-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(92px, 10vw, 138px);
+            padding-bottom: clamp(54px, 7vw, 96px);
+            background:
+                radial-gradient(circle at 78% 14%, rgba(198, 148, 53, .2), transparent 28%),
+                radial-gradient(circle at 8% 24%, rgba(221, 236, 240, .68), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #e7f0ed 100%);
+        }
+
+        .madhu-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 84px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .madhu-hero__grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
+            gap: clamp(32px, 6vw, 78px);
+            align-items: center;
+        }
+
+        .madhu-hero h1 {
+            max-width: 980px;
+            margin: 12px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.9rem, 6.1vw, 6.2rem);
+            line-height: 1.06;
+            letter-spacing: 0;
+        }
+
+        .madhu-hero__lead {
+            max-width: 780px;
+            color: #69574f;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.85vw, 1.55rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .madhu-quote-card {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .35);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
+        }
+
+        .madhu-quote-card img {
+            display: block;
+            width: 100%;
+            height: clamp(390px, 52vw, 640px);
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .madhu-quote-card figcaption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 86px 26px 26px;
+            color: #fffaf1;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.16rem, 1.75vw, 1.5rem);
+            font-weight: 700;
+            line-height: 1.58;
+            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
+        }
+
+        .madhu-facts {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .madhu-facts__grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 14px;
+            padding: 16px;
+            border: 1px solid rgba(121, 43, 42, .12);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .92);
+            box-shadow: 0 18px 54px rgba(63, 45, 37, .1);
+        }
+
+        .madhu-fact {
+            padding: 18px 18px 16px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .58), rgba(255, 250, 241, .92));
+        }
+
+        .madhu-fact span {
+            display: block;
+            margin-bottom: 7px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 800;
+        }
+
+        .madhu-fact strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.05rem;
+            line-height: 1.45;
+        }
+
+        .madhu-nav {
+            position: sticky;
+            z-index: 5;
+            top: 0;
+            padding: 12px 0;
+            border-block: 1px solid rgba(121, 43, 42, .1);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .madhu-nav__links {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .madhu-nav__links a {
+            flex: 0 0 auto;
+            padding: 10px 15px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 999px;
+            color: #5e4742;
+            background: rgba(255, 252, 246, .74);
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .madhu-journey {
+            overflow: hidden;
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .madhu-journey--arrival { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .madhu-journey--meeting { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
+        .madhu-journey--foundation { background: radial-gradient(circle at 76% 18%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
+        .madhu-journey--accepted { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 50%, #f4e1c5 100%); }
+        .madhu-journey--sadhna { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
+        .madhu-journey--granth { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
+        .madhu-journey--leadership { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+        .madhu-journey--karuna { background: linear-gradient(135deg, #fffaf1 0%, #e8f0ee 46%, #f4e6d2 100%); }
+        .madhu-journey--living { background: radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 36%), linear-gradient(180deg, #fffaf1 0%, #f5e8d4 100%); }
+
+        .madhu-journey__grid {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: center;
+        }
+
+        .madhu-journey:nth-of-type(even) .madhu-journey__media {
+            order: 2;
+        }
+
+        .madhu-journey__media {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
+        }
+
+        .madhu-journey__media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 38vw, 520px);
+            object-fit: cover;
+        }
+
+        .madhu-journey__media figcaption {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            left: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: #fffaf1;
+            background: rgba(41, 29, 37, .74);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .madhu-journey__copy {
+            max-width: 780px;
+        }
+
+        .madhu-journey__copy h2 {
+            margin: 10px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .madhu-journey__copy p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.34vw, 1.18rem);
+            line-height: 1.9;
+        }
+
+        .madhu-journey__copy strong {
+            color: #8a2f2d;
+        }
+
+        .madhu-note {
+            margin-top: 24px;
+            padding: 22px 24px;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            color: #4c3a36;
+            background: rgba(255, 252, 246, .78);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .madhu-diary {
+            margin: 22px 0 0;
+            padding: clamp(22px, 3vw, 34px);
+            border: 1px solid rgba(121, 43, 42, .13);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            color: #4d3b37;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.52vw, 1.28rem);
+            font-weight: 650;
+            line-height: 1.82;
+        }
+
+        .madhu-diary cite {
+            display: block;
+            margin-top: 14px;
+            color: #8a2f2d;
+            font-family: var(--hi-sans);
+            font-size: .95rem;
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        .madhu-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .madhu-closing .hi-section-heading {
+            max-width: 980px;
+        }
+
+        @media (max-width: 1080px) {
+            .madhu-facts__grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 980px) {
+            .madhu-hero__grid,
+            .madhu-journey__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .madhu-journey:nth-of-type(even) .madhu-journey__media {
+                order: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .madhu-hero {
+                padding-top: 126px;
+            }
+
+            .madhu-hero h1 {
+                font-size: clamp(2.45rem, 12vw, 4rem);
+            }
+
+            .madhu-facts {
+                margin-top: 0;
+            }
+
+            .madhu-facts__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .madhu-quote-card img,
+            .madhu-journey__media img {
+                height: 360px;
+            }
+
+            .madhu-journey__media figcaption {
+                position: static;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home madhu-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="hi-section madhu-hero" aria-labelledby="madhu-title">
+            <div class="hi-shell madhu-hero__grid">
+                <div>
+                    <span class="hi-kicker">जगत्जननी माँ त्रिपुरसुन्दरी की लाडली</span>
+                    <h1 id="madhu-title">करुणामयी माँ मधुबाला जी अडवानी</h1>
+                    <p class="madhu-hero__lead">मधु माँ का जोधपुर आगमन, माँ बसन्ती जी से दिव्य भेंट, भैया जी के सान्निध्य में ज्ञान की जागृति और आज मणिद्वीप के कार्यों का करुणामय संचालन, सब एक अखण्ड आध्यात्मिक यात्रा के अध्याय हैं।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="#divya-bhet">दिव्य भेंट पढ़ें</a>
+                        <a class="hi-btn hi-btn--soft" href="#vartaman-netritva">वर्तमान सेवा देखें</a>
+                    </div>
+                </div>
+                <figure class="madhu-quote-card">
+                    <img src="/assets/images/madhu-maa-portrait.webp" alt="करुणामयी माँ मधुबाला जी अडवानी का चित्र" loading="eager" fetchpriority="high">
+                    <figcaption>ज्ञान की ज्वाला जब हृदय में प्रज्वलित हुई, तब क्षणिक सुखों के स्थान पर शाश्वत ईश्वरीय प्रेम ही जीवन का मूल उद्देश्य बन गया।</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="madhu-facts" aria-label="मधु माँ के जीवन के प्रमुख संकेत">
+            <div class="hi-shell madhu-facts__grid">
+                <div class="madhu-fact"><span>जन्म</span><strong>1951<br>सिरसा, पंजाब</strong></div>
+                <div class="madhu-fact"><span>दिव्य भेंट</span><strong>9 दिसम्बर 1970<br>माँ बसन्ती जी से</strong></div>
+                <div class="madhu-fact"><span>अध्ययन</span><strong>एम.ए., बी.एड.<br>जोधपुर</strong></div>
+                <div class="madhu-fact"><span>दुर्लभ सौभाग्य</span><strong>“मृत्यु के बाद...”<br>लिपिबद्ध किया</strong></div>
+                <div class="madhu-fact"><span>वर्तमान दायित्व</span><strong>2021 से<br>मिशन संचालन</strong></div>
+            </div>
+        </section>
+
+        <nav class="madhu-nav" aria-label="मधु माँ की जीवन यात्रा">
+            <div class="hi-shell madhu-nav__links">
+                <a href="#jodhpur-aagman">जोधपुर आगमन</a>
+                <a href="#divya-bhet">दिव्य भेंट</a>
+                <a href="#gyan-jwala">ज्ञान की ज्वाला</a>
+                <a href="#diary-svikar">चैतन्य जगत का स्वीकार</a>
+                <a href="#sadhna-yatra">साधना यात्रा</a>
+                <a href="#granth-seva">ग्रंथ सेवा</a>
+                <a href="#vartaman-netritva">वर्तमान नेतृत्व</a>
+                <a href="#karuna">करुणामयी व्यक्तित्व</a>
+                <a href="#jeevant-dhara">जीवंत ज्ञानधारा</a>
+            </div>
+        </nav>
+
+        <section class="madhu-journey madhu-journey--arrival" id="jodhpur-aagman" aria-labelledby="jodhpur-aagman-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-maa-home-hero.jpg" alt="मधु माँ का शांत और करुणामय चित्र" loading="lazy">
+                    <figcaption>सिरसा से जोधपुर तक, एक जीवन को नियति ने आध्यात्मिक दिशा दी</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">चमत्कारिक आगमन</span>
+                    <h2 id="jodhpur-aagman-title">जोधपुर आना स्वयं में एक बड़ा चमत्कार</h2>
+                    <p>माँ मधुबाला जी अडवानी, एम.ए., बी.एड., का जोधपुर में आना स्वयं में एक बड़ा चमत्कार है। उनके पूर्वज विभाजन से पहले सिंध निवासी थे। रेलवे में इंजीनियर की नौकरी के कारण उनके पिताजी सिंध से स्थानांतरित होकर भारत आ गए।</p>
+                    <p>पिताजी श्री जीवनलाल जी अडवानी और माताजी श्रीमती लक्ष्मी देवी की वे सबसे छोटी संतान हैं। आठ भाई-बहनों ने दो-दो वर्षों के अंतराल से वहीं जन्म लिया, लेकिन मधु माँ का जन्म 1951 में हिन्दुस्तान के पंजाब शहर सिरसा में हुआ।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--meeting" id="divya-bhet" aria-labelledby="divya-bhet-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/trust2.jpg" alt="भैया जी, माँ बसन्ती जी और मधु माँ की स्मृति" loading="lazy">
+                    <figcaption>9 दिसम्बर 1970, जीवन की दिशा बदलने वाला स्वर्णिम दिवस</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">9 दिसम्बर 1970</span>
+                    <h2 id="divya-bhet-title">अस्पताल में माँ बसन्ती जी से अनायास दिव्य भेंट</h2>
+                    <p>19 वर्षीय मधु माँ के जीवन का वह स्वर्णिम दिवस था, जब दैवी कृपा से उनकी आध्यात्मिक माँ, प्रथम मार्गदर्शिका और सद्गुरु माँ बसन्ती जी मनिहार से अस्पताल में अनायास भेंट हुई। दोनों अपनी-अपनी माताजी की देखभाल के लिए वहाँ रुकी हुई थीं।</p>
+                    <p>अस्पताल में ही माँ बसन्ती जी ने मधु माँ का परिचय अपने आध्यात्मिक पथप्रदर्शक सद्गुरु श्री नन्दकिशोर जी शारदा, भैया जी, से करवाया। आगे चलकर माँ बसन्ती जी के संरक्षण में भैया जी उनके भी आध्यात्मिक पथप्रदर्शक बने।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--foundation" id="gyan-jwala" aria-labelledby="gyan-jwala-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-story-spiritual-foundation.webp" alt="मधु माँ की आध्यात्मिक नींव का भावपूर्ण चित्र" loading="lazy">
+                    <figcaption>मनिहार भवन में आध्यात्मिक चिंतन और तर्कपूर्ण समाधान</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">1971 · नींव</span>
+                    <h2 id="gyan-jwala-title">ज्ञान प्राप्ति की ज्वाला हृदय में प्रज्वलित हुई</h2>
+                    <p>1971 में मधु माँ ने जोधपुर में एम.ए. साइकोलॉजी में प्रवेश लिया। ये दो वर्ष उनके आध्यात्मिक मार्ग के मील के पत्थर बने। वे लगभग नित्य ही कॉलेज से लौटते समय मनिहार भवन, सिद्धपीठ, में रुकतीं और माँ बसन्ती जी तथा भैया जी से आध्यात्मिक चिंतन और चर्चाएँ करती थीं।</p>
+                    <p>उनके सभी संशयों के तर्कपूर्ण समाधान माँ बसन्ती जी और भैया जी से प्राप्त हो रहे थे। यही सत्य ज्ञान उनके आध्यात्मिक जीवन की नींव बना। संसार का कोई बड़ा प्रलोभन अब उन्हें आकर्षित नहीं कर सकता था; क्षणिक सुखों को त्याग कर शाश्वत ईश्वरीय प्रेम की प्राप्ति ही उनके जीवन का मूल उद्देश्य बन गया।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--accepted" id="diary-svikar" aria-labelledby="diary-svikar-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/bhaiyaji-maa-home-hero.jpg" alt="भैया जी, माँ बसन्ती जी और मधु माँ से जुड़ी आध्यात्मिक स्मृति" loading="lazy">
+                    <figcaption>भैया जी और चैतन्य जगत ने उन्हें माँ बसन्ती जी की बेटी के रूप में स्वीकार किया</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">भैया जी की डायरी से</span>
+                    <h2 id="diary-svikar-title">माँ बसन्ती जी की बेटी के रूप में हृदय से स्वीकार</h2>
+                    <p>युगप्रवर्तक श्री नन्दकिशोर जी शारदा ने अपनी हस्तलिखित डायरी में माँ मधुबाला जी अडवानी के लिए विशेष पंक्तियाँ लिखीं। उसका भाव यह है कि भैया जी और चैतन्य जगत ने उन्हें माँ बसन्ती जी की बेटी के रूप में हृदय से स्वीकार कर लिया।</p>
+                    <blockquote class="madhu-diary">भैया जी के सान्निध्य में मधु माँ का संबंध केवल शिष्यत्व तक सीमित नहीं रहा; वह माँ बसन्ती जी के वात्सल्य, संरक्षण और चैतन्य परंपरा से जुड़ा एक आत्मीय आध्यात्मिक संबंध बन गया।<cite>— डायरी-भाव का सार</cite></blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--sadhna" id="sadhna-yatra" aria-labelledby="sadhna-yatra-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu_maa_sadhna.jpg" alt="मधु माँ की साधना का भावपूर्ण चित्र" loading="lazy">
+                    <figcaption>कठोर साधनाएँ भी भैया जी की शक्ति से सरल अनुभूत हुईं</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">साधना और अनुभूतियाँ</span>
+                    <h2 id="sadhna-yatra-title">भैया जी और माँ बसन्ती जी के आशीर्वाद से फलित साधना</h2>
+                    <p>भैया जी ने मधु माँ से कठोर से कठोरतम साधनाएँ भी इतने सरल ढंग से करवाईं कि उन्हें अनुभव होता था मानो भैया जी स्वयं उन्हें पूर्ण करने की शक्तियाँ दे रहे हैं और आनन्द सहित अध्यात्म मार्ग पर आगे बढ़ा रहे हैं।</p>
+                    <p>भैया जी ने उनसे कई महान चैतन्य शक्तियों की साधनाएँ करवाईं, उनसे आशीर्वाद प्राप्त करवाए, अनेक दिव्य अनुभूतियाँ करवाईं और माँ सरस्वती से साक्षात्कार भी करवाया। माँ बसन्ती जी ने उनसे निराकार परब्रह्म की साधना भी करवाई। पूर्ण मनोयोग से मधु माँ द्वारा की गई प्रत्येक साधना माँ-भैया जी के आशीर्वाद से फलित हुई।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--granth" id="granth-seva" aria-labelledby="granth-seva-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-maa-transcribing-book.jpg" alt="मधु माँ मृत्यु के बाद का अलौकिक संसार ग्रंथ लिपिबद्ध करती हुईं" loading="lazy">
+                    <figcaption>“मृत्यु के बाद का अलौकिक संसार” को लिपिबद्ध करने का दुर्लभ सौभाग्य</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">दिव्य ग्रंथ सेवा</span>
+                    <h2 id="granth-seva-title">भैया जी के अमृततुल्य ज्ञान को शब्द रूप देना</h2>
+                    <p>भैया श्री नन्दकिशोर जी शारदा द्वारा रचित दिव्य ग्रंथ <strong>“मृत्यु के बाद का अलौकिक संसार”</strong> को लिपिबद्ध करने का दुर्लभ सौभाग्य मधु माँ को मिला। यह कार्य केवल लेखन नहीं था, बल्कि दिव्य ज्ञान को मानवता तक पहुँचाने की साधना थी।</p>
+                    <p>भैया जी और माँ बसन्ती जी से प्राप्त ज्ञान और अनुभूतियों ने मधु माँ को भीतर से इतना परिपक्व बनाया कि उनका जीवन ज्ञान, साधना और सेवा की एक अविरल धारा बन गया।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशित सद्साहित्य देखें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--leadership" id="vartaman-netritva" aria-labelledby="vartaman-netritva-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-story-living-leadership.webp" alt="मधु माँ वर्तमान नेतृत्व और सेवा कार्यों में" loading="lazy">
+                    <figcaption>2021 से मणिद्वीप के कार्यों का सुचारू और करुणामय संचालन</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">2021 से वर्तमान दायित्व</span>
+                    <h2 id="vartaman-netritva-title">जगत्जननी माँ, भैया जी और माँ बसन्ती जी के निर्देशानुसार सेवा</h2>
+                    <p>सन् 2021 में माँ बसन्ती जी के चैतन्य स्वरूप हो जाने पर मधु माँ जगत्जननी माँ, भैया जी और माँ बसन्ती जी के निर्देशानुसार अत्यंत सुचारू ढंग से सभी कार्यों का संचालन कर रही हैं।</p>
+                    <p>इन कार्यों में सभी ट्रस्टों का संचालन, सद्साहित्य का प्रकाशन और वितरण, रविवारीय प्रातःकालीन कक्षाओं के माध्यम से बालिकाओं में शिक्षा, संस्कार और अध्यात्म का विकास, सायंकालीन आध्यात्मिक ज्ञान चर्चाओं से साधकों का मार्गदर्शन, जरूरतमंदों को खाद्यान्न वितरण, निःशुल्क योग कक्षाएँ और सिलाई केन्द्र का संचालन सम्मिलित हैं।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="/activities.html">सेवा प्रकल्प देखें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--karuna" id="karuna" aria-labelledby="karuna-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-maa-guiding-students.webp" alt="मधु माँ छात्राओं का मार्गदर्शन करती हुईं" loading="lazy">
+                    <figcaption>सरलता, सौम्यता और करुणा से गंभीर ज्ञान भी सहज हो जाता है</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">करुणामयी व्यक्तित्व</span>
+                    <h2 id="karuna-title">आनन्दमयी मुस्कान और स्नेहपूर्ण शिक्षण की धारा</h2>
+                    <p>करुणामयी मधु माँ ने जो ज्ञान भैया जी और माँ बसन्ती जी से सीखा और स्वयं धारण किया, उसी अनुभूत, दिव्य और अमृततुल्य ज्ञान का वे आज पूरी निष्ठा के साथ प्रचार-प्रसार कर रही हैं।</p>
+                    <p>उनका सौम्य व्यक्तित्व, बाल-सुलभ सरलता, आनन्दमयी मुस्कान और करुणापूर्ण मधुर व्यवहार सहज ही सबको प्रेम से बाँध लेता है। वे गंभीर से गंभीर विषय को भी सरस बनाकर स्नेह से समझाती हैं, जिससे हृदय उनके ज्ञान की गहराई के प्रति श्रद्धा से नतमस्तक हो जाता है।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="madhu-journey madhu-journey--living" id="jeevant-dhara" aria-labelledby="jeevant-dhara-title">
+            <div class="hi-shell madhu-journey__grid">
+                <figure class="madhu-journey__media">
+                    <img src="/assets/images/madhu-story-expanding-care.webp" alt="मधु माँ के मार्गदर्शन में सेवा और करुणा की धारा" loading="lazy">
+                    <figcaption>अनुभूत ज्ञान से हजारों जीवन आनन्द, शांति और ईश्वर-प्रेम से भर रहे हैं</figcaption>
+                </figure>
+                <div class="madhu-journey__copy">
+                    <span class="hi-kicker">जीवंत ज्ञानधारा</span>
+                    <h2 id="jeevant-dhara-title">ज्ञान, करुणा और सेवा का वर्तमान प्रवाह</h2>
+                    <p>मधु माँ आज भी भैया जी और माँ बसन्ती जी से प्राप्त दिव्य ज्ञान को जीवन में उतारकर साधकों, विद्यार्थियों और जरूरतमंदों के जीवन में आनन्द, शांति, खुशी और ईश्वर के प्रति सच्चे प्रेम का संचार कर रही हैं।</p>
+                    <p>उनकी उपस्थिति मणिद्वीप की वर्तमान धड़कन है, जहाँ ज्ञान केवल बताया नहीं जाता, बल्कि करुणा, संस्कार, सत्कर्म और आत्मीय मार्गदर्शन के रूप में जीया जाता है।</p>
+                    <div class="madhu-note">मधु माँ की जीवन यात्रा यह दिखाती है कि सद्गुरु का ज्ञान जब हृदय में धारण होता है, तो वह व्यक्ति से आगे बढ़कर समाज के लिए शीतल, करुणामयी और जागृत धारा बन जाता है।</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section madhu-closing" aria-labelledby="madhu-closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">करुणा से प्रकाशित वर्तमान</span>
+                    <h2 id="madhu-closing-title">मधु माँ मणिद्वीप की जीवंत ज्ञानधारा को आगे बढ़ा रही हैं</h2>
+                    <p>भैया जी और माँ बसन्ती जी से प्राप्त दिव्य ज्ञान को वे सरलता, वात्सल्य और निष्ठा से जन-जन तक पहुँचा रही हैं।</p>
+                </header>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="/contact.html#visit">मणिद्वीप पधारें</a>
+                    <a class="hi-btn hi-btn--outline" href="/our-philosophy.html#buddhi-vivek-yog-sadhna">बुद्धि-विवेक योग साधना समझें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+

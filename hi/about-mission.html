@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="मणिद्वीप अध्यात्म परिवार के मिशन का उद्देश्य, दिव्य ज्ञान, बुद्धि-विवेक योग साधना, निष्काम कर्म, सेवा प्रकल्प और विश्व-बन्धुत्व की भावधारा।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>मिशन का उद्देश्य एवं परिचय | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .mission-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+        }
+
+        .mission-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(92px, 10vw, 138px);
+            padding-bottom: clamp(54px, 7vw, 96px);
+            background:
+                radial-gradient(circle at 78% 14%, rgba(198, 148, 53, .2), transparent 28%),
+                radial-gradient(circle at 8% 24%, rgba(221, 236, 240, .68), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #e7f0ed 100%);
+        }
+
+        .mission-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 84px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .mission-hero__grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
+            gap: clamp(32px, 6vw, 78px);
+            align-items: center;
+        }
+
+        .mission-hero h1 {
+            max-width: 980px;
+            margin: 12px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.4vw, 6.35rem);
+            line-height: 1.06;
+            letter-spacing: 0;
+        }
+
+        .mission-hero__lead {
+            max-width: 800px;
+            color: #69574f;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.85vw, 1.55rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .mission-hero-card {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .35);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
+        }
+
+        .mission-hero-card img {
+            display: block;
+            width: 100%;
+            height: clamp(390px, 52vw, 640px);
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .mission-hero-card figcaption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 86px 26px 26px;
+            color: #fffaf1;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.16rem, 1.75vw, 1.5rem);
+            font-weight: 700;
+            line-height: 1.58;
+            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
+        }
+
+        .mission-glance {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .mission-glance__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            padding: 16px;
+            border: 1px solid rgba(121, 43, 42, .12);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .92);
+            box-shadow: 0 18px 54px rgba(63, 45, 37, .1);
+        }
+
+        .mission-glance__item {
+            padding: 18px 18px 16px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .58), rgba(255, 250, 241, .92));
+        }
+
+        .mission-glance__item span {
+            display: block;
+            margin-bottom: 7px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 800;
+        }
+
+        .mission-glance__item strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.05rem;
+            line-height: 1.45;
+        }
+
+        .mission-nav {
+            position: sticky;
+            z-index: 5;
+            top: 0;
+            padding: 12px 0;
+            border-block: 1px solid rgba(121, 43, 42, .1);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .mission-nav__links {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .mission-nav__links a {
+            flex: 0 0 auto;
+            padding: 10px 15px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 999px;
+            color: #5e4742;
+            background: rgba(255, 252, 246, .74);
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .mission-chapter {
+            overflow: hidden;
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .mission-chapter--purpose { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .mission-chapter--method { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
+        .mission-chapter--origin { background: radial-gradient(circle at 76% 18%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
+        .mission-chapter--knowledge { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 50%, #f4e1c5 100%); }
+        .mission-chapter--education { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
+        .mission-chapter--care { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
+        .mission-chapter--publications { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+        .mission-chapter--continuity { background: linear-gradient(135deg, #fffaf1 0%, #e8f0ee 46%, #f4e6d2 100%); }
+
+        .mission-chapter__grid {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: center;
+        }
+
+        .mission-chapter:nth-of-type(even) .mission-chapter__media {
+            order: 2;
+        }
+
+        .mission-chapter__media {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
+        }
+
+        .mission-chapter__media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 38vw, 520px);
+            object-fit: cover;
+        }
+
+        .mission-chapter__media figcaption {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            left: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: #fffaf1;
+            background: rgba(41, 29, 37, .74);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .mission-chapter__copy {
+            max-width: 780px;
+        }
+
+        .mission-chapter__copy h2 {
+            margin: 10px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .mission-chapter__copy p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.34vw, 1.18rem);
+            line-height: 1.9;
+        }
+
+        .mission-chapter__copy strong {
+            color: #8a2f2d;
+        }
+
+        .mission-note,
+        .mission-mantra {
+            margin-top: 24px;
+            padding: 22px 24px;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            color: #4c3a36;
+            background: rgba(255, 252, 246, .78);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .mission-mantra {
+            text-align: center;
+            border-left: 0;
+            border-top: 4px solid var(--hi-gold);
+        }
+
+        .mission-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .mission-closing .hi-section-heading {
+            max-width: 980px;
+        }
+
+        @media (max-width: 980px) {
+            .mission-hero__grid,
+            .mission-chapter__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-chapter:nth-of-type(even) .mission-chapter__media {
+                order: 0;
+            }
+
+            .mission-glance__grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .mission-hero {
+                padding-top: 126px;
+            }
+
+            .mission-hero h1 {
+                font-size: clamp(2.55rem, 12.5vw, 4.1rem);
+            }
+
+            .mission-glance {
+                margin-top: 0;
+            }
+
+            .mission-glance__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-hero-card img,
+            .mission-chapter__media img {
+                height: 360px;
+            }
+
+            .mission-chapter__media figcaption {
+                position: static;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home mission-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="hi-section mission-hero" aria-labelledby="mission-title">
+            <div class="hi-shell mission-hero__grid">
+                <div>
+                    <span class="hi-kicker">मिशन का उद्देश्य एवं परिचय</span>
+                    <h1 id="mission-title">विश्व-बन्धुत्व, विश्व-शांति एवं मानव कल्याण</h1>
+                    <p class="mission-hero__lead">यह मिशन भैया श्री नन्दकिशोर जी शारदा द्वारा प्रदत्त दिव्य ज्ञान, बुद्धि-विवेक योग साधना और निष्काम कर्म के माध्यम से व्यक्ति को आनन्द, शांति और मानवीय गुणों से परिपूर्ण जीवन की ओर प्रेरित करता है।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="#mission-purpose">मिशन को समझें</a>
+                        <a class="hi-btn hi-btn--soft" href="#service-path">सेवा प्रकल्प देखें</a>
+                    </div>
+                </div>
+                <figure class="mission-hero-card">
+                    <img src="/assets/images/spiritual-hero-bhaiyaji-maa.jpg" alt="भैया जी, माँ बसन्ती जी और मधु माँ की आध्यात्मिक भावधारा" loading="eager" fetchpriority="high">
+                    <figcaption>ज्योत से ज्योत जलाते चलो, प्रेम की धारा बहाते चलो...</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="mission-glance" aria-label="मिशन एक दृष्टि में">
+            <div class="hi-shell mission-glance__grid">
+                <div class="mission-glance__item"><span>आध्यात्मिक आधार</span><strong>जगत्जननी माँ प्रदत्त<br>दिव्य ज्ञान</strong></div>
+                <div class="mission-glance__item"><span>साधना पद्धति</span><strong>बुद्धि-विवेक योग<br>साधना</strong></div>
+                <div class="mission-glance__item"><span>कर्म साधना</span><strong>शिक्षा, संस्कार<br>और सेवा</strong></div>
+                <div class="mission-glance__item"><span>भावधारा</span><strong>विश्व-बन्धुत्व<br>विश्व-शांति</strong></div>
+            </div>
+        </section>
+
+        <nav class="mission-nav" aria-label="मिशन परिचय अनुभाग">
+            <div class="hi-shell mission-nav__links">
+                <a href="#mission-purpose">उद्देश्य</a>
+                <a href="#sadhna-method">साधना पद्धति</a>
+                <a href="#divine-origin">दिव्य आधार</a>
+                <a href="#knowledge-stream">ज्ञान गंगा</a>
+                <a href="#education-service">शिक्षा सेवा</a>
+                <a href="#service-path">मानव सेवा</a>
+                <a href="#publications">सद्साहित्य</a>
+                <a href="#continuity">निरंतरता</a>
+            </div>
+        </nav>
+
+        <section class="mission-chapter mission-chapter--purpose" id="mission-purpose" aria-labelledby="mission-purpose-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/bhaiyaji-radiant-portrait.jpg" alt="युगप्रवर्तक श्री नन्दकिशोर शारदा" loading="lazy">
+                    <figcaption>आज के वैज्ञानिक युग के अनुरूप सरल आध्यात्मिक मार्ग</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">मूल उद्देश्य</span>
+                    <h2 id="mission-purpose-title">हर व्यक्ति के भीतर सद्गुणों का विकास</h2>
+                    <p>जगत्जननी माँ त्रिपुरसुन्दरी एवं भगवान शिव, बाबूजी, ने एक विशेष मिशन के अंतर्गत अपने लाडले पुत्र युगप्रवर्तक श्री नन्दकिशोर जी शारदा, भैया जी, को धरती पर अवतरित किया। उनके द्वारा आज के वैज्ञानिक युग की परिस्थितियों के अनुरूप एक ऐसा सरल आध्यात्मिक मार्ग संसार को दिया गया जिस पर हर व्यक्ति चल सके।</p>
+                    <p>यह मार्ग आयु, वर्ग, जाति और धर्म के भेद से परे है। इसका उद्देश्य है कि व्यक्ति अपने अंदर सद्गुणों का विकास करे, अनासक्त भाव से अपने भौतिक कर्तव्यों का निर्वहन करे, आनन्द, शांति और खुशी से जीवन जीए, और मनुष्यत्व से देवत्व की ओर अग्रसर होकर मानव जीवन का कल्याण करे।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--method" id="sadhna-method" aria-labelledby="sadhna-method-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/buddhi-vivek-yog-sadhna-original.jpg" alt="बुद्धि-विवेक योग साधना का प्रतीक" loading="lazy">
+                    <figcaption>ज्ञान, भक्ति, निष्काम कर्म और योग साधना का समन्वय</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">व्यावहारिक आध्यात्मिक पद्धति</span>
+                    <h2 id="sadhna-method-title">बुद्धि-विवेक पर आधारित नई साधना पद्धति</h2>
+                    <p>भैया जी ने ज्ञान, भक्ति, निष्काम कर्म और योग साधना का समन्वय करके सत्य, शाश्वत, सार्वभौमिक और विज्ञान-आधारित दिव्य ज्ञान दिया। इसी आधार पर उन्होंने <strong>बुद्धि-विवेक योग साधना</strong> पद्धति को प्रतिपादित किया।</p>
+                    <p>यह पद्धति आज के भौतिकवादी समय में सरलता से धारण की जा सकती है। इसका सार है कि व्यक्ति भौतिक जीवन से भागे नहीं, बल्कि जागृत विवेक, सकारात्मक विचार, सन्मार्ग और ईश्वर-प्रेम के साथ जीवन को रूपांतरित करे।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="/our-philosophy.html#buddhi-vivek-yog-sadhna">साधना को विस्तार से समझें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--origin" id="divine-origin" aria-labelledby="divine-origin-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/bhaiyaji-maa-first-darshan.jpg" alt="भैया जी माँ त्रिपुरसुन्दरी के समक्ष आराधना करते हुए" loading="lazy">
+                    <figcaption>माँ को गुरु बनाकर दिव्य ज्ञान की प्राप्ति</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">दिव्य आधार</span>
+                    <h2 id="divine-origin-title">पूर्ण समर्पण से जगत्जननी माँ के दर्शन</h2>
+                    <p>भैया जी ने अपनी सच्ची लगन, दृढ़ संकल्प, कठोर साधना, अथक परिश्रम और निश्छल प्रेम से जगत्जननी माँ त्रिपुरसुन्दरी को प्रसन्न कर उनके दर्शन प्राप्त किए। उन्होंने माँ को ही गुरु बनाकर उनसे दिव्य ज्ञान की प्राप्ति की।</p>
+                    <p>फिर माँ की कृपा, आज्ञा और आशीर्वाद से भैया जी ने जिज्ञासु साधकों, सुश्री बसन्ती जी मनिहार, सुश्री मधुबाला जी अडवानी और अन्य साधकों का आध्यात्मिक मार्ग प्रशस्त किया। इसी से <strong>मणिद्वीप अध्यात्म परिवार</strong>, माँ परिवार, का गठन हुआ।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--knowledge" id="knowledge-stream" aria-labelledby="knowledge-stream-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/book-01.png" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक" loading="lazy">
+                    <figcaption>सत्य, शाश्वत ज्ञान को जन-जन तक पहुँचाने वाली ज्ञान गंगा</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">ज्ञान गंगा</span>
+                    <h2 id="knowledge-stream-title">दिव्य ज्ञान से ईश्वर के प्रति श्रद्धा और विश्वास</h2>
+                    <p>जगत्जननी माँ प्रदत्त अमृततुल्य ज्ञान को भैया जी ने <strong>“मृत्यु के बाद का अलौकिक संसार”</strong> दिव्य पुस्तक में लिपिबद्ध करवाया। इस ग्रंथ के माध्यम से सैकड़ों लोगों ने ईश्वर के अस्तित्व का प्रमाण अनुभव किया और सत्य, शाश्वत ज्ञान को समझकर आनन्द, शांति और खुशी का अनुभव किया।</p>
+                    <p>इसी ज्ञान से जुड़कर अनेक साधक मणिद्वीप अध्यात्म परिवार के साथ चैतन्य उन्नति की ओर अग्रसर हो रहे हैं।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--education" id="education-service" aria-labelledby="education-service-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/maa-shardamani-scholarship-distribution.jpg" alt="छात्राओं के शिक्षा सहयोग का दृश्य" loading="lazy">
+                    <figcaption>धनाभाव से कोई जरूरतमंद बालिका शिक्षा से वंचित न रहे</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">निष्काम कर्म साधना</span>
+                    <h2 id="education-service-title">बालिका और महिला सशक्तिकरण के प्रकल्प</h2>
+                    <p>भैया जी ने निष्काम कर्म साधना के अंतर्गत बालिका और महिला सशक्तिकरण के लिए <strong>स्वामी विवेकानन्द स्टुडेन्ट्स वेलफेयर चेरिटेबल ट्रस्ट</strong> और <strong>माँ शारदामणि ट्रस्ट</strong> जैसे प्रकल्प आरम्भ किए। उद्देश्य यह है कि धनाभाव के कारण कोई भी जरूरतमंद बालिका जाति, धर्म या संप्रदाय के भेदभाव बिना शिक्षा के मूलभूत अधिकार से वंचित न रहे।</p>
+                    <p>इन ट्रस्टों द्वारा बालिकाओं में संस्कार-सृजन और अध्यात्म के बीज भी रोपित किए जाते हैं। यह पुनीत सेवा कार्य पिछले 29 वर्षों से अनवरत जारी है।</p>
+                    <p>जरूरतमंद छात्रों को छात्रवृत्ति प्रदान करने के लिए जगत्जननी माँ की आज्ञा से माँ बसन्ती जी ने सन् 2010 में <strong>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र</strong> की स्थापना की। इन ट्रस्टों के माध्यम से हर वर्ष सैकड़ों छात्र-छात्राएँ 9वीं से लेकर उच्च प्रोफेशनल शिक्षा तक अपना भविष्य सँवार रहे हैं।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="/swami-vivekanand-trust.html">शिक्षा सेवा देखें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--care" id="service-path" aria-labelledby="service-path-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/ration.jpg" alt="खाद्यान्न वितरण सेवा" loading="lazy">
+                    <figcaption>खाद्यान्न, रोजगार सहयोग, योग कक्षा और आत्मनिर्भरता</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">मानव सेवा</span>
+                    <h2 id="service-path-title">जरूरतमंद परिवारों के लिए सतत सहयोग</h2>
+                    <p>कोरोना काल में जोधपुर और बालोतरा जिले के कई परिवारों की कमजोर आर्थिक स्थिति को देखते हुए जगत्जननी माँ के निर्देशानुसार माँ बसन्ती जी ने सन् 2020 में प्रत्येक माह खाद्यान्न वितरण का कार्य आरम्भ किया। बढ़ती महँगाई और जरूरतमंद परिवारों की आवश्यकताओं को देखते हुए यह कार्य आज भी जारी है।</p>
+                    <p>मार्च 2025 तक इस योजना द्वारा 14000 से अधिक खाद्यान्न किट वितरित किए जा चुके हैं। रोजगार के लिए सिलाई मशीन और अन्य सहयोग जरूरतमंद महिलाओं को दिए जाते हैं। साथ ही प्रतिदिन निःशुल्क योग कक्षाएँ भी संचालित की जाती हैं।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="/activities.html">सभी सेवा प्रकल्प देखें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--publications" id="publications" aria-labelledby="publications-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/madhu-maa-transcribing-book.jpg" alt="सद्साहित्य को लिपिबद्ध और प्रकाशित करने की सेवा" loading="lazy">
+                    <figcaption>भैया प्रदत्त अमूल्य ज्ञान को वर्तमान और भावी पीढ़ियों तक पहुँचाना</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन</span>
+                    <h2 id="publications-title">सद्साहित्य प्रकाशन और निःशुल्क वितरण</h2>
+                    <p>भैया जी के 24 जनवरी 2003 में चैतन्य स्वरूप होने के पश्चात माँ बसन्ती जी और मधु माँ द्वारा 16 अप्रैल 2003 को <strong>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन</strong> की स्थापना सद्साहित्य प्रकाशन और निःशुल्क वितरण हेतु की गई।</p>
+                    <p>इसका मुख्य उद्देश्य है भैया प्रदत्त अमूल्य ज्ञान, चिंतन और दस्तावेज, जैसे व्यक्तिगत डायरी, को प्रकाशित कर उनका प्रचार-प्रसार करना, ताकि दिव्य ज्ञान की यह गंगा अनवरत प्रवाहित होती रहे और वर्तमान एवं भावी पीढ़ियों को उचित मार्गदर्शन प्रदान कर नवयुग के निर्माण में सहायक बन सके।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="/hi/publications.html">प्रकाशन देखें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-chapter mission-chapter--continuity" id="continuity" aria-labelledby="continuity-title">
+            <div class="hi-shell mission-chapter__grid">
+                <figure class="mission-chapter__media">
+                    <img src="/assets/images/madhu-story-living-leadership.webp" alt="मणिद्वीप के कार्यों का वर्तमान संचालन" loading="lazy">
+                    <figcaption>भैया जी से माँ बसन्ती जी और अब मधु माँ तक अखण्ड सेवा</figcaption>
+                </figure>
+                <div class="mission-chapter__copy">
+                    <span class="hi-kicker">निरंतरता</span>
+                    <h2 id="continuity-title">ज्योत से ज्योत जलाते हुए आगे बढ़ता परिवार</h2>
+                    <p>भैया जी द्वारा आरम्भ किए गए कार्यों को माँ बसन्ती जी ने सुचारु रूप से संभाला। माँ बसन्ती जी के 2021 में चैतन्य स्वरूप होने पर अब मधु माँ इन सभी कार्यों को कुशलतापूर्वक संचालित कर रही हैं।</p>
+                    <p>आज मणिद्वीप अध्यात्म परिवार के सदस्य जगत्जननी माँ त्रिपुरसुन्दरी एवं भगवान शिव, बाबूजी, के लाडले युगप्रवर्तक श्री नन्दकिशोर जी शारदा के प्रति पूर्ण समर्पित भाव से स्वयं अध्यात्म पथ पर उन्नत हो रहे हैं। साथ ही वे विश्व-बन्धुत्व, विश्व-शांति और मानव कल्याण हेतु निःस्वार्थ भाव से दिव्य ज्ञान के प्रचार-प्रसार का कार्य कर रहे हैं।</p>
+                    <div class="mission-mantra">जोत से जोत जलाते चलो, प्रेम की धारा बहाते चलो...<br>संसार में हर व्यक्ति है दुःखी, सभी को सन्मार्ग दिखाते चलो...<br>ईश्वर की ओर सभी को बढ़ाते चलो...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section mission-closing" aria-labelledby="mission-closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">प्रेरक मंत्र</span>
+                    <h2 id="mission-closing-title">यह मणिद्वीप अध्यात्म परिवार की जीवंत भावधारा है</h2>
+                    <p>साधना, ज्ञान, संस्कार और निष्काम सेवा के माध्यम से यह मिशन व्यक्ति और समाज दोनों को चैतन्य उन्नति की ओर प्रेरित करता है।</p>
+                </header>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="/hi/shri-nandkishore-sharda.html">भैया जी के बारे में पढ़ें</a>
+                    <a class="hi-btn hi-btn--outline" href="/contact.html#visit">मणिद्वीप पधारें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+

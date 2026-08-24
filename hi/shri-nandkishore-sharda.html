@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="युगप्रवर्तक श्री नन्दकिशोर शारदा, भैया जी, की जीवन यात्रा, साधना, दिव्य ज्ञान, निष्काम सेवा और बुद्धि-विवेक योग साधना का परिचय।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>युगप्रवर्तक श्री नन्दकिशोर शारदा | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .bhaiya-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 46%, #fffaf1 100%);
+        }
+
+        .bhaiya-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(92px, 10vw, 138px);
+            padding-bottom: clamp(54px, 7vw, 96px);
+            background:
+                radial-gradient(circle at 78% 14%, rgba(198, 148, 53, .22), transparent 28%),
+                radial-gradient(circle at 8% 26%, rgba(221, 236, 240, .68), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #e7f0ed 100%);
+        }
+
+        .bhaiya-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 84px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .bhaiya-hero__grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
+            gap: clamp(32px, 6vw, 78px);
+            align-items: center;
+        }
+
+        .bhaiya-hero h1 {
+            max-width: 980px;
+            margin: 12px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3.1rem, 6.6vw, 6.7rem);
+            line-height: 1.04;
+            letter-spacing: 0;
+        }
+
+        .bhaiya-hero__lead {
+            max-width: 780px;
+            color: #69574f;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.85vw, 1.55rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .bhaiya-quote-card {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .35);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
+        }
+
+        .bhaiya-quote-card img {
+            display: block;
+            width: 100%;
+            height: clamp(380px, 52vw, 640px);
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .bhaiya-quote-card figcaption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 84px 26px 26px;
+            color: #fffaf1;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.24rem, 2vw, 1.72rem);
+            font-weight: 700;
+            line-height: 1.55;
+            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
+        }
+
+        .bhaiya-facts {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .bhaiya-facts__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            padding: 16px;
+            border: 1px solid rgba(121, 43, 42, .12);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .92);
+            box-shadow: 0 18px 54px rgba(63, 45, 37, .1);
+        }
+
+        .bhaiya-fact {
+            padding: 18px 18px 16px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .58), rgba(255, 250, 241, .92));
+        }
+
+        .bhaiya-fact span {
+            display: block;
+            margin-bottom: 7px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 800;
+        }
+
+        .bhaiya-fact strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.1rem;
+            line-height: 1.45;
+        }
+
+        .bhaiya-nav {
+            position: sticky;
+            z-index: 5;
+            top: 0;
+            padding: 12px 0;
+            border-block: 1px solid rgba(121, 43, 42, .1);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .bhaiya-nav__links {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .bhaiya-nav__links a {
+            flex: 0 0 auto;
+            padding: 10px 15px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 999px;
+            color: #5e4742;
+            background: rgba(255, 252, 246, .74);
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .bhaiya-journey {
+            overflow: hidden;
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .bhaiya-journey--birth { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .bhaiya-journey--awakening { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
+        .bhaiya-journey--darshan { background: radial-gradient(circle at 70% 16%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
+        .bhaiya-journey--wisdom { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+        .bhaiya-journey--service { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
+        .bhaiya-journey--sadhna { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
+        .bhaiya-journey--legacy { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+
+        .bhaiya-journey__grid {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: center;
+        }
+
+        .bhaiya-journey:nth-of-type(even) .bhaiya-journey__media {
+            order: 2;
+        }
+
+        .bhaiya-journey__media {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
+        }
+
+        .bhaiya-journey__media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 38vw, 520px);
+            object-fit: cover;
+        }
+
+        .bhaiya-journey__media figcaption {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            left: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: #fffaf1;
+            background: rgba(41, 29, 37, .74);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .bhaiya-journey__copy {
+            max-width: 760px;
+        }
+
+        .bhaiya-journey__copy h2 {
+            margin: 10px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .bhaiya-journey__copy p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.34vw, 1.18rem);
+            line-height: 1.9;
+        }
+
+        .bhaiya-journey__copy strong {
+            color: #8a2f2d;
+        }
+
+        .bhaiya-note {
+            margin-top: 24px;
+            padding: 22px 24px;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            color: #4c3a36;
+            background: rgba(255, 252, 246, .78);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.1rem, 1.6vw, 1.34rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .bhaiya-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .bhaiya-closing .hi-section-heading {
+            max-width: 980px;
+        }
+
+        @media (max-width: 980px) {
+            .bhaiya-hero__grid,
+            .bhaiya-journey__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bhaiya-journey:nth-of-type(even) .bhaiya-journey__media {
+                order: 0;
+            }
+
+            .bhaiya-facts__grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .bhaiya-hero {
+                padding-top: 126px;
+            }
+
+            .bhaiya-hero h1 {
+                font-size: clamp(2.65rem, 13vw, 4.2rem);
+            }
+
+            .bhaiya-facts {
+                margin-top: 0;
+            }
+
+            .bhaiya-facts__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bhaiya-quote-card img,
+            .bhaiya-journey__media img {
+                height: 360px;
+            }
+
+            .bhaiya-journey__media figcaption {
+                position: static;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home bhaiya-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="hi-section bhaiya-hero" aria-labelledby="bhaiya-title">
+            <div class="hi-shell bhaiya-hero__grid">
+                <div>
+                    <span class="hi-kicker">युगप्रवर्तक अध्यात्मयोगी</span>
+                    <h1 id="bhaiya-title">श्री नन्दकिशोर शारदा</h1>
+                    <p class="bhaiya-hero__lead">भैया जी का जीवन सत्य की खोज, जगत्जननी माँ त्रिपुरसुन्दरी के प्रति निष्काम प्रेम-समर्पण, दिव्य ज्ञान, निष्काम कर्म और मानव कल्याण की एक अद्वितीय आध्यात्मिक यात्रा है।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="#divya-darshan">दिव्य साक्षात्कार पढ़ें</a>
+                        <a class="hi-btn hi-btn--soft" href="our-philosophy.html#buddhi-vivek-yog-sadhna">बुद्धि-विवेक योग साधना</a>
+                    </div>
+                </div>
+                <figure class="bhaiya-quote-card">
+                    <img src="/assets/images/bhaiyaji-maa-first-darshan.jpg" alt="भैया जी माँ त्रिपुरसुन्दरी के समक्ष folded hands में आराधना करते हुए" loading="eager" fetchpriority="high">
+                    <figcaption>“जगत्जननी माँ त्रिपुरसुन्दरी ने मुझे दर्शन दिए तो मैंने दौड़ कर उनके चरण ही पकड़ लिए।”</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="bhaiya-facts" aria-label="श्री नन्दकिशोर शारदा के जीवन के प्रमुख संकेत">
+            <div class="hi-shell bhaiya-facts__grid">
+                <div class="bhaiya-fact"><span>जन्म</span><strong>16 जुलाई 1944<br>जोधपुर</strong></div>
+                <div class="bhaiya-fact"><span>आध्यात्मिक संकल्प</span><strong>1959 में<br>15 वर्ष की आयु</strong></div>
+                <div class="bhaiya-fact"><span>कर्म साधना</span><strong>1996 से<br>शिक्षा एवं संस्कार</strong></div>
+                <div class="bhaiya-fact"><span>चैतन्य स्वरूप</span><strong>24 जनवरी 2003<br>विवेकानन्द जयंती</strong></div>
+            </div>
+        </section>
+
+        <nav class="bhaiya-nav" aria-label="भैया जी की जीवन यात्रा">
+            <div class="hi-shell bhaiya-nav__links">
+                <a href="#janm-sanskar">जन्म और संस्कार</a>
+                <a href="#vairagya">वैराग्य का संकल्प</a>
+                <a href="#divya-darshan">दिव्य साक्षात्कार</a>
+                <a href="#divya-gyan">दिव्य ज्ञान</a>
+                <a href="#karma-sadhna">निष्काम कर्म</a>
+                <a href="#bvys">सरल साधना पद्धति</a>
+                <a href="#legacy">अमर प्रेरणा</a>
+            </div>
+        </nav>
+
+        <section class="bhaiya-journey bhaiya-journey--birth" id="janm-sanskar" aria-labelledby="janm-sanskar-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/young_bhaiyaji1.jpg" alt="युवा अवस्था में भैया जी का चित्र" loading="lazy">
+                    <figcaption>जोधपुर में जन्मा एक मेधावी, तेजस्वी और जिज्ञासु जीवन</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">आरंभ</span>
+                    <h2 id="janm-sanskar-title">सम्पन्नता, भक्ति और विलक्षण बुद्धि से घिरा बाल्यकाल</h2>
+                    <p>श्री नन्दकिशोर शारदा, जिन्हें सभी प्रेम से <strong>भैया</strong> कहते हैं, का जन्म 16 जुलाई 1944 को जोधपुर में तुलसी देवी और विजयकिशन जी शारदा के सम्पन्न तथा भक्तिमय परिवार में हुआ। वे विज्ञान के मेधावी छात्र थे और विलक्षण बुद्धि तथा तेजस्वी व्यक्तित्व के स्वामी थे।</p>
+                    <p>बाल्यावस्था से ही उनमें प्रश्न करने की गहरी प्रवृत्ति थी। उनकी दृष्टि केवल भौतिक उपलब्धियों तक सीमित नहीं रही, बल्कि जीवन के मूल रहस्य को जानने की ओर निरंतर खिंचती गई।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--awakening" id="vairagya" aria-labelledby="vairagya-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/bhaiyaji-sadhna-spiritual-root.jpg" alt="साधना और आत्मचिंतन का प्रतीकात्मक दृश्य" loading="lazy">
+                    <figcaption>नश्वरता के बोध से चैतन्य शक्ति की खोज प्रारम्भ हुई</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">1959 · आत्मजागरण</span>
+                    <h2 id="vairagya-title">पिता के देहावसान ने जीवन को नई दिशा दी</h2>
+                    <p>सन् 1959 में, जब वे मात्र 15 वर्ष के थे, उनके पिताजी के आकस्मिक देहावसान ने उन्हें भीतर तक विचलित कर दिया। उसी क्षण उन्हें भौतिक शरीर की नश्वरता का गहरा बोध हुआ।</p>
+                    <p>उन्होंने दृढ़ संकल्प किया कि वे भौतिकवाद के आकर्षण और सुख-सुविधाओं में लिप्त नहीं होंगे। वे उस <strong>चैतन्य शक्ति</strong> की खोज करेंगे जो इस शरीर को चलायमान रखती है। मनुष्य जन्म का उद्देश्य क्या है, जीवन कैसे बिताना चाहिए, और यह शक्ति क्या है, ये प्रश्न उनकी साधना की धुरी बन गए।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--darshan" id="divya-darshan" aria-labelledby="divya-darshan-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/bhaiyaji_sadhna_1.webp" alt="भैया जी की साधना का भावपूर्ण चित्र" loading="lazy">
+                    <figcaption>टेकरी माँ के मंदिर में मिली अद्भुत शांति ने साधना को दिशा दी</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">टेकरी माँ · प्रेम-समर्पण</span>
+                    <h2 id="divya-darshan-title">जगत्जननी माँ त्रिपुरसुन्दरी का साक्षात् अनुभव</h2>
+                    <p>भैया जी अनेक साधु-संतों, तांत्रिकों, मांत्रिकों और महात्माओं के पास गए, आध्यात्मिक और धार्मिक पुस्तकें पढ़ीं, पर उन्हें संतोषजनक उत्तर नहीं मिले। एक दिन जोधपुर के मेहरानगढ़ किले की घाटी में उन्हें टेकरी पर एक मंदिर दिखाई दिया। वहाँ उन्हें अद्भुत शांति मिली।</p>
+                    <p>उन्होंने जगत्जननी माँ त्रिपुरसुन्दरी की एकनिष्ठ आराधना दिन-रात व्याकुलता और विरह से की। माँ त्रिपुरसुन्दरी ने अपने लाडले भक्त की पुकार सुनी, उन्हें साक्षात् दर्शन दिए, और अपनी असीम शक्तियाँ प्रदान कीं। भैया और माँ एकमय हो गए।</p>
+                    <div class="bhaiya-note">उन्होंने जगत्जननी माँ को ही गुरु और माँ मानकर सर्वोच्च स्तर की दिव्य साधना की।</div>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="sadhna-places.html">भैया जी का साधनाकाल जानें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--wisdom" id="divya-gyan" aria-labelledby="divya-gyan-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/book-01.png" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का प्रतीकात्मक चित्र" loading="lazy">
+                    <figcaption>विज्ञान से आरंभ होकर ब्रह्माण्ड और चैतन्य तक विस्तृत चिंतन</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">दिव्य ज्ञान</span>
+                    <h2 id="divya-gyan-title">विज्ञान, ब्रह्माण्ड और चैतन्य शक्ति का समग्र दर्शन</h2>
+                    <p>भैया जी ने जगत्जननी माँ को गुरु बनाकर जो अमृततुल्य दिव्य ज्ञान प्राप्त किया, उसे उन्होंने विज्ञान से प्रारम्भ करते हुए विज्ञान की सीमाओं के परे ब्रह्माण्ड की संरचना, सृष्टि की उत्पत्ति, प्रकृति, दिव्य लोक, ईश्वर की सत्ता, मानव जीवन के लक्ष्य और चैतन्य शक्ति के महत्व तक विस्तृत किया।</p>
+                    <p>यह दिव्य चिंतन <strong>“मृत्यु के बाद का अलौकिक संसार”</strong> में प्रस्तुत हुआ। इस ग्रंथ को पढ़कर मनुष्य का ईश्वर और चैतन्य शक्ति पर श्रद्धा और विश्वास दृढ़ होता है। उनके व्यक्तित्व, कृतित्व, हस्तलिखित डायरी, माँ के प्रति समर्पण और दार्शनिक विचारों का विस्तृत परिचय उनके जीवन-वृत्त और स्मृति ग्रंथों में मिलता है।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--service" id="karma-sadhna" aria-labelledby="karma-sadhna-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/maa-shardamani-scholarship-distribution.jpg" alt="शिक्षा सहयोग और संस्कार कार्य का दृश्य" loading="lazy">
+                    <figcaption>निष्काम कर्म के माध्यम से शिक्षा, संस्कार और आशा का प्रसार</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">कर्म साधना</span>
+                    <h2 id="karma-sadhna-title">बालिकाओं की शिक्षा और संस्कार के लिए समर्पित कार्य</h2>
+                    <p>भैया श्री नन्दकिशोर शारदा ने निष्काम कर्म के अंतर्गत बालिकाओं की शिक्षा के लिए 1996 में स्थापित <strong>स्वामी विवेकानन्द स्टुडेन्ट्स वेलफेयर चेरिटेबल ट्रस्ट</strong> के माध्यम से हजारों छात्राओं को शिक्षा और संस्कार प्रदान किए।</p>
+                    <p>इस कार्य ने अनेक जीवनों में आशा की किरण जगाई और उज्ज्वल भविष्य की राह प्रशस्त की। संसार में रहते हुए भी सांसारिक विकारों से अछूते रहकर उन्होंने अनवरत, अथक और निष्काम कार्य करते हुए स्थितप्रज्ञ जीवन का उदाहरण प्रस्तुत किया।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--sadhna" id="bvys" aria-labelledby="bvys-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/buddhi-vivek-yog-sadhna-original.jpg" alt="बुद्धि-विवेक योग साधना का प्रतीक" loading="lazy">
+                    <figcaption>कठिन साधनाओं को जीवनोपयोगी सरल मार्ग में रूपांतरित किया</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">साधना पद्धति</span>
+                    <h2 id="bvys-title">बुद्धि-विवेक योग साधना: आज के युग के लिए सरल मार्ग</h2>
+                    <p>भैया जी भक्ति योग, ज्ञान योग, निष्काम कर्मयोग और योग साधना, इन चारों कठिन साधनाओं में निष्णात हुए। उन्होंने देखा कि आज के युग में सामान्य व्यक्ति के लिए ये साधनाएँ अत्यंत कठिन प्रतीत होती हैं।</p>
+                    <p>जनकल्याण हेतु उन्होंने इन साधनाओं का सरलीकरण और आवश्यक समावेश कर एक नई, सरल, सामयिक साधना पद्धति प्रतिपादित की, जिसका नाम है <strong>बुद्धि-विवेक योग साधना</strong>। भैया ने स्वयं अति कठिन तपस्या की, पर मानवता को आनन्द, शांति और खुशी से भौतिक जीवन जीते हुए अध्यात्म की ओर बढ़ने का सरल मार्ग बताया।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="our-philosophy.html#buddhi-vivek-yog-sadhna">साधना को विस्तार से समझें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bhaiya-journey bhaiya-journey--legacy" id="legacy" aria-labelledby="legacy-title">
+            <div class="hi-shell bhaiya-journey__grid">
+                <figure class="bhaiya-journey__media">
+                    <img src="/assets/images/bhaiyaji-chakra-dharan.webp" alt="भैया जी के चक्र धारण की आध्यात्मिक स्मृति" loading="lazy">
+                    <figcaption>नई चेतना, विश्व-बन्धुत्व और मानव कल्याण का सूत्रपात</figcaption>
+                </figure>
+                <div class="bhaiya-journey__copy">
+                    <span class="hi-kicker">चैतन्य स्वरूप और अमर प्रेरणा</span>
+                    <h2 id="legacy-title">जन-जन के मार्ग को प्रशस्त करती हुई दिव्य प्रेरणा</h2>
+                    <p>24 जनवरी 2003, विवेकानन्द जयंती पर भैया जी चैतन्य स्वरूप हो गए। आज उनके उच्च विचार, आदर्श कर्म, दिव्य ज्ञान की अनुभूतियाँ और आध्यात्मिक अनुभव पल-पल जन-जन के मार्ग को प्रशस्त कर रहे हैं।</p>
+                    <p>सैकड़ों लोग उन्हें अपना आदर्श प्रेरक मानकर उनके सिद्धान्तों को जीवन में उतारते हुए गृहस्थ जीवन के साथ-साथ अध्यात्म जगत में भी उन्नति कर रहे हैं। प्रशासन द्वारा उनके सम्मान में जोधपुर, बालोतरा और जसोल में उनके नाम से मार्ग रखे गए, ताकि उनके सत्कर्मों की प्रेरणा चिरस्मरणीय रहे।</p>
+                    <p>भैया जी का योगदान इस युग में बेमिसाल है। उन्होंने भौतिक, सामाजिक और आध्यात्मिक सभी क्षेत्रों के अनुरूप नई विचारधारा, नई पद्धति और नया ज्ञान दिया, जिससे मानवीय गुणों को पुनः स्थापित करने के लिए समर्पित चेतना जागृत हो रही है।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section bhaiya-closing" aria-labelledby="bhaiya-closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">प्रकाश की ओर</span>
+                    <h2 id="bhaiya-closing-title">धरती माँ धन्य हुई ऐसे लाडले को पाकर</h2>
+                    <p>भैया जी मानव जाति को अंधकार से प्रकाश की ओर ले गए। उनका जीवन आज भी वसुधैव कुटुम्बकम्, विश्व-शांति और मानव कल्याण की भावना को जीवंत करता है।</p>
+                </header>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="publications.html">भैया जी पर प्रकाशित ग्रंथ देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="sadhna-places.html">साधना स्थलों को देखें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+
+
