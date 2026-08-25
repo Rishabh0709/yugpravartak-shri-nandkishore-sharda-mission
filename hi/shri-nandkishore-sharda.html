@@ -139,35 +139,78 @@
         .bhaiya-nav {
             position: sticky;
             z-index: 5;
-            top: 0;
-            padding: 12px 0;
-            border-block: 1px solid rgba(121, 43, 42, .1);
-            background: rgba(255, 250, 241, .9);
+            top: 82px;
+            padding: 10px 0;
+            border-block: 1px solid rgba(198, 148, 53, .18);
+            background: rgba(255, 250, 241, .86);
             backdrop-filter: blur(16px);
+        }
+
+        .bhaiya-nav__inner {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .bhaiya-nav__label {
+            flex: 0 0 auto;
+            color: #8a2f2d;
+            font-size: .78rem;
+            font-weight: 900;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .bhaiya-nav__links {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             overflow-x: auto;
             scrollbar-width: thin;
         }
 
         .bhaiya-nav__links a {
+            position: relative;
             flex: 0 0 auto;
-            padding: 10px 15px;
-            border: 1px solid rgba(121, 43, 42, .14);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 13px;
+            border: 1px solid rgba(198, 148, 53, .2);
             border-radius: 999px;
-            color: #5e4742;
-            background: rgba(255, 252, 246, .74);
+            color: #4f3c3d;
+            background: rgba(255, 252, 246, .58);
+            font-size: .94rem;
             font-weight: 800;
             text-decoration: none;
             white-space: nowrap;
+            transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+        }
+
+        .bhaiya-nav__links a span {
+            display: inline-grid;
+            place-items: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            color: #8a2f2d;
+            background: rgba(198, 148, 53, .14);
+            font-size: .72rem;
+            font-weight: 900;
+        }
+
+        .bhaiya-nav__links a:hover,
+        .bhaiya-nav__links a:focus-visible {
+            color: #2f2031;
+            border-color: rgba(138, 47, 45, .28);
+            background: rgba(255, 250, 241, .92);
+            transform: translateY(-1px);
         }
 
         .bhaiya-journey {
             overflow: hidden;
             padding-block: clamp(70px, 8vw, 116px);
+            scroll-margin-top: 150px;
         }
 
         .bhaiya-journey--birth { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
@@ -217,6 +260,33 @@
             background: rgba(41, 29, 37, .74);
             font-size: .9rem;
             font-weight: 700;
+        }
+
+        .bhaiya-journey__media--book {
+            display: grid;
+            place-items: center;
+            padding: clamp(12px, 2vw, 24px);
+            border-color: transparent;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .bhaiya-journey__media--book img {
+            width: min(100%, 380px);
+            height: clamp(430px, 46vw, 610px);
+            object-fit: contain;
+            filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .24));
+        }
+
+        .bhaiya-journey__media--book figcaption {
+            position: static;
+            justify-self: stretch;
+            margin-top: 16px;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            color: #3c243d;
+            background: rgba(255, 250, 241, .86);
+            text-align: center;
         }
 
         .bhaiya-journey__copy {
@@ -283,6 +353,36 @@
         }
 
         @media (max-width: 640px) {
+            .bhaiya-nav {
+                top: 72px;
+                padding: 8px 0;
+            }
+
+            .bhaiya-nav__inner {
+                display: block;
+            }
+
+            .bhaiya-nav__label {
+                display: block;
+                margin-bottom: 7px;
+                font-size: .72rem;
+            }
+
+            .bhaiya-nav__links a {
+                padding: 8px 11px;
+                font-size: .9rem;
+            }
+
+            .bhaiya-nav__links a span {
+                width: 20px;
+                height: 20px;
+                font-size: .68rem;
+            }
+
+            .bhaiya-journey {
+                scroll-margin-top: 142px;
+            }
+
             .bhaiya-hero {
                 padding-top: 126px;
             }
@@ -304,9 +404,22 @@
                 height: 360px;
             }
 
+            .bhaiya-journey__media--book {
+                padding: 22px;
+            }
+
+            .bhaiya-journey__media--book img {
+                width: min(100%, 300px);
+                height: min(70vh, 430px);
+            }
+
             .bhaiya-journey__media figcaption {
                 position: static;
                 border-radius: 0;
+            }
+
+            .bhaiya-journey__media--book figcaption {
+                border-radius: 8px;
             }
         }
     </style>
@@ -343,15 +456,18 @@
             </div>
         </section>
 
-        <nav class="bhaiya-nav" aria-label="भैया जी की जीवन यात्रा">
-            <div class="hi-shell bhaiya-nav__links">
-                <a href="#janm-sanskar">जन्म और संस्कार</a>
-                <a href="#vairagya">वैराग्य का संकल्प</a>
-                <a href="#divya-darshan">दिव्य साक्षात्कार</a>
-                <a href="#divya-gyan">दिव्य ज्ञान</a>
-                <a href="#karma-sadhna">निष्काम कर्म</a>
-                <a href="#bvys">सरल साधना पद्धति</a>
-                <a href="#legacy">अमर प्रेरणा</a>
+        <nav class="bhaiya-nav" aria-label="भैया जी की जीवन यात्रा के अध्याय">
+            <div class="hi-shell bhaiya-nav__inner">
+                <span class="bhaiya-nav__label">यात्रा-सूत्र</span>
+                <div class="bhaiya-nav__links">
+                    <a href="#janm-sanskar"><span aria-hidden="true">01</span>आरंभ</a>
+                    <a href="#vairagya"><span aria-hidden="true">02</span>आत्मजागरण</a>
+                    <a href="#divya-darshan"><span aria-hidden="true">03</span>दिव्य साक्षात्कार</a>
+                    <a href="#divya-gyan"><span aria-hidden="true">04</span>दिव्य ज्ञान</a>
+                    <a href="#karma-sadhna"><span aria-hidden="true">05</span>निष्काम कर्म</a>
+                    <a href="#bvys"><span aria-hidden="true">06</span>साधना पद्धति</a>
+                    <a href="#legacy"><span aria-hidden="true">07</span>अमर प्रेरणा</a>
+                </div>
             </div>
         </nav>
 
@@ -406,8 +522,8 @@
 
         <section class="bhaiya-journey bhaiya-journey--wisdom" id="divya-gyan" aria-labelledby="divya-gyan-title">
             <div class="hi-shell bhaiya-journey__grid">
-                <figure class="bhaiya-journey__media">
-                    <img src="/assets/images/book-01.png" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का प्रतीकात्मक चित्र" loading="lazy">
+                <figure class="bhaiya-journey__media bhaiya-journey__media--book">
+                    <img src="/assets/images/books/04-card.webp" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण" loading="lazy">
                     <figcaption>विज्ञान से आरंभ होकर ब्रह्माण्ड और चैतन्य तक विस्तृत चिंतन</figcaption>
                 </figure>
                 <div class="bhaiya-journey__copy">
@@ -488,5 +604,16 @@
     <script src="/assets/js/main.js?v=20260811-1"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 

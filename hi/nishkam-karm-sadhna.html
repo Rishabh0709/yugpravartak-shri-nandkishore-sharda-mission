@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="निष्काम कर्म साधना के अंतर्गत मणिद्वीप अध्यात्म परिवार की चार संस्थाओं की समन्वित यात्रा, शिक्षा, संस्कार, सेवा, आत्मनिर्भरता और दिव्य ज्ञान का प्रवाह।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>निष्काम कर्म साधना | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .karma-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 42%, #fffaf1 100%);
+        }
+
+        .karma-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(104px, 11vw, 150px);
+            padding-bottom: clamp(58px, 8vw, 106px);
+            background:
+                radial-gradient(circle at 82% 18%, rgba(198, 148, 53, .2), transparent 30%),
+                radial-gradient(circle at 10% 24%, rgba(222, 238, 236, .7), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f1ee 100%);
+        }
+
+        .karma-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 88px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .karma-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 1080px;
+        }
+
+        .karma-hero h1 {
+            margin: 12px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3.1rem, 7vw, 6.7rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .karma-hero__lead {
+            max-width: 860px;
+            color: #66534c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.9vw, 1.58rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .karma-mantra {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1px;
+            max-width: 920px;
+            margin-top: 34px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(198, 148, 53, .22);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .karma-mantra__pair {
+            display: grid;
+            gap: 6px;
+            padding: 20px clamp(16px, 2.2vw, 26px);
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .karma-mantra__pair span {
+            color: #8a2f2d;
+            font-size: .84rem;
+            font-weight: 900;
+        }
+
+        .karma-mantra__pair strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.8vw, 1.55rem);
+            line-height: 1.35;
+        }
+
+        .karma-section {
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .karma-section--why {
+            background: #fffaf1;
+        }
+
+        .karma-section--flow {
+            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
+        }
+
+        .karma-section--institutions {
+            background: #fffaf1;
+        }
+
+        .karma-section--closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .karma-prose {
+            max-width: 980px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.28vw, 1.16rem);
+            line-height: 1.95;
+        }
+
+        .karma-prose p {
+            margin: 0 0 18px;
+        }
+        .karma-thesis {
+            display: grid;
+            gap: clamp(28px, 4vw, 48px);
+        }
+
+        .karma-thesis__header {
+            max-width: 1160px;
+        }
+
+        .karma-thesis h2 {
+            margin: 10px 0 0;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.25rem, 4.7vw, 4.8rem);
+            line-height: 1.12;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .karma-thesis__body {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, .82fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: start;
+        }
+
+        .karma-thesis__note {
+            padding: clamp(24px, 3vw, 34px);
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .1);
+        }
+
+        .karma-thesis__note strong {
+            display: block;
+            margin-bottom: 12px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.4vw, 2rem);
+            line-height: 1.35;
+        }
+
+        .karma-flow {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 34px;
+        }
+
+        .karma-flow__step {
+            position: relative;
+            min-height: 150px;
+            padding: 20px 16px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .74);
+        }
+
+        .karma-flow__step span {
+            display: inline-grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 14px;
+            border-radius: 50%;
+            color: #8a2f2d;
+            background: rgba(198, 148, 53, .15);
+            font-weight: 900;
+        }
+
+        .karma-flow__step strong {
+            display: block;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.18rem;
+            line-height: 1.35;
+        }
+
+        .karma-trusts {
+            display: grid;
+            gap: clamp(28px, 4vw, 48px);
+            margin-top: 42px;
+        }
+
+        .karma-trust {
+            display: grid;
+            grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+            gap: clamp(24px, 4vw, 50px);
+            align-items: start;
+            padding: clamp(22px, 3.5vw, 42px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
+        }
+
+        .karma-trust__intro {
+            position: sticky;
+            top: 120px;
+        }
+
+        .karma-trust__number {
+            display: inline-grid;
+            place-items: center;
+            width: 46px;
+            height: 46px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            color: #fffaf1;
+            background: #8a2f2d;
+            font-weight: 900;
+        }
+
+        .karma-trust h3 {
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.7rem, 3.2vw, 3rem);
+            line-height: 1.18;
+        }
+
+        .karma-trust__subtitle {
+            margin: 0 0 18px;
+            color: #8a2f2d;
+            font-size: .98rem;
+            font-weight: 900;
+            line-height: 1.6;
+        }
+
+        .karma-trust__intro p,
+        .karma-activity p {
+            color: #62544c;
+            line-height: 1.84;
+        }
+
+        .karma-activities {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .karma-activity {
+            overflow: hidden;
+            border: 1px solid rgba(121, 43, 42, .1);
+            border-radius: 8px;
+            background: #fffaf1;
+        }
+
+        .karma-activity figure {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .karma-activity img {
+            display: block;
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .karma-activity__body {
+            padding: 18px;
+        }
+
+        .karma-activity h4 {
+            margin: 0 0 8px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .karma-activity p {
+            margin: 0;
+            font-size: .98rem;
+        }
+
+        .karma-summary {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .karma-summary__item {
+            padding: 20px 18px;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .karma-summary__item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: 1.2rem;
+        }
+
+        .karma-actions {
+            margin-top: 34px;
+        }
+
+        .karma-closing-verse {
+            max-width: 760px;
+            margin: 34px auto 0;
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            color: var(--hi-ink);
+            background: rgba(255, 252, 246, .75);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+            font-weight: 700;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 980px) {
+            .karma-thesis,
+            .karma-trust {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-trust__intro {
+                position: static;
+            }
+
+            .karma-flow,
+            .karma-summary {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .karma-hero {
+                padding-top: 126px;
+            }
+
+            .karma-mantra {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-thesis h2 {
+                white-space: normal;
+            }
+
+            .karma-thesis__body {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-flow,
+            .karma-summary,
+            .karma-activities {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-activity img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home karma-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="karma-hero" aria-labelledby="karma-title">
+            <div class="hi-shell karma-hero__content">
+                <span class="hi-kicker">निष्काम कर्म साधना</span>
+                <h1 id="karma-title">मानव कल्याण की निष्काम सेवा-धारा</h1>
+                <p class="karma-hero__lead">एक दूरदर्शी संकल्प से प्रवाहित शिक्षा, संस्कार, आत्मनिर्भरता, मानव सेवा और दिव्य ज्ञान की पावन धारा।</p>
+                <div class="karma-mantra" aria-label="निष्काम कर्म साधना का विचार सार">
+                    <div class="karma-mantra__pair"><span>शिक्षा से</span><strong>संस्कार</strong></div>
+                    <div class="karma-mantra__pair"><span>व्यक्तित्व से</span><strong>आत्मनिर्भरता</strong></div>
+                    <div class="karma-mantra__pair"><span>सेवा से</span><strong>समग्र विकास</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karma-section karma-section--why" aria-labelledby="why-title">
+            <div class="hi-shell karma-thesis">
+                <header class="karma-thesis__header">
+                    <span class="hi-kicker">दूरदर्शी संकल्प</span>
+                    <h2 id="why-title">सेवा के पीछे समग्र मानव विकास की दृष्टि</h2>
+                </header>
+                <div class="karma-thesis__body">
+                    <div class="karma-prose">
+                        <p>श्री नन्दकिशोर शारदा, वात्सल्यमयी माँ बसन्ती मनिहार एवं कुमारी मधुबाला अडवानी के सेवा-कार्य के पीछे किसी आकस्मिक योजना या अलग-अलग सामाजिक गतिविधियों की सोच नहीं थी। इसके मूल में मानव के समग्र विकास की एक सुविचारित, दीर्घकालीन और दूरदर्शी दृष्टि थी।</p>
+                        <p>उनका विश्वास था कि समाज का वास्तविक विकास केवल आर्थिक सहायता या औपचारिक शिक्षा से संभव नहीं है। व्यक्ति के जीवन में शिक्षा के साथ संस्कार, ज्ञान के साथ विवेक, समृद्धि के साथ संवेदना, आत्मनिर्भरता के साथ आत्मसम्मान और व्यक्तिगत उन्नति के साथ सामाजिक उत्तरदायित्व का विकास भी आवश्यक है।</p>
+                    </div>
+                    <div class="karma-thesis__note"><strong>अध्यात्म का सर्वोच्च स्वरूप सेवा में प्रकट होता है।</strong><p>भैया जी की दृष्टि में निष्काम भाव से मानवता की सेवा, साधना का ही जीवंत विस्तार है। इसी भाव से शिक्षा, संस्कार, आध्यात्मिक जागरण, महिला सशक्तिकरण, आत्मनिर्भरता, मानवीय सेवा और ज्ञान के प्रसार को एक-दूसरे से जोड़ा गया।</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karma-section karma-section--flow" aria-labelledby="flow-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">एक दृष्टि, चार संस्थागत आयाम</span>
+                    <h2 id="flow-title">पहले दर्शन, फिर संस्थाएँ</h2>
+                    <p>संस्थाएँ अलग-अलग बनीं, पर उनका लक्ष्य एक ही रहा: मानव जीवन को शिक्षित, संस्कारित, आत्मनिर्भर, स्वस्थ, संवेदनशील, आध्यात्मिक और सामाजिक रूप से उत्तरदायी बनाना।</p>
+                </header>
+                <div class="karma-flow" aria-label="निष्काम कर्म साधना की विचार-यात्रा">
+                    <div class="karma-flow__step"><span>१</span><strong>शिक्षा</strong></div>
+                    <div class="karma-flow__step"><span>२</span><strong>संस्कार और विवेक</strong></div>
+                    <div class="karma-flow__step"><span>३</span><strong>आत्मनिर्भरता</strong></div>
+                    <div class="karma-flow__step"><span>४</span><strong>मानवीय सेवा</strong></div>
+                    <div class="karma-flow__step"><span>५</span><strong>दिव्य ज्ञान का प्रसार</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karma-section karma-section--institutions" aria-labelledby="trusts-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">संस्थाओं की समन्वित यात्रा</span>
+                    <h2 id="trusts-title">चार संस्थाएँ, एक समग्र दृष्टि</h2>
+                    <p>प्रत्येक संस्था को एक विशिष्ट भूमिका मिली, और सभी भूमिकाएँ एक ही मूल दर्शन से जुड़ी रहीं।</p>
+                </header>
+
+                <div class="karma-trusts">
+                    <article class="karma-trust">
+                        <div class="karma-trust__intro">
+                            <span class="karma-trust__number">१</span>
+                            <h3>स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट</h3>
+                            <p class="karma-trust__subtitle">विद्यालयी बालिका शिक्षा और संस्कार का आधार</p>
+                            <p>10 जून 1996 को स्थापित इस ट्रस्ट ने दूरदर्शी योजना की पहली नींव रखी: बालिका को शिक्षित करो, संस्कारित करो और उसके आत्मविश्वास को जगाओ।</p>
+                        </div>
+                        <div class="karma-activities">
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/scholarship-distribution/16-card.webp" alt="विद्यालयी छात्रवृत्ति वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>विद्यालयी छात्रवृत्ति</h4><p>आर्थिक कठिनाइयों के कारण शिक्षा से वंचित बालिकाओं को पढ़ाई जारी रखने का आधार।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/sunday-sanskar-classes/01-card.webp" alt="संस्कार कक्षाओं में विद्यार्थी" loading="lazy"></figure><div class="karma-activity__body"><h4>संस्कार और आत्मविश्वास</h4><p>शिक्षा को चरित्र, नैतिक मूल्यों और सकारात्मक जीवन-दृष्टि से जोड़ना।</p></div></article>
+                        </div>
+                    </article>
+
+                    <article class="karma-trust">
+                        <div class="karma-trust__intro">
+                            <span class="karma-trust__number">२</span>
+                            <h3>माँ शारदामणि ट्रस्ट</h3>
+                            <p class="karma-trust__subtitle">कॉलेज शिक्षा से उच्च शिक्षा और भविष्य निर्माण तक</p>
+                            <p>2001 में स्थापित यह ट्रस्ट पहली संस्था की अगली कड़ी है। जहाँ विद्यालयी शिक्षा की नींव मजबूत हुई, वहीं इसने छात्राओं को उच्च शिक्षा और आगे के अवसरों तक पहुँचाया।</p>
+                        </div>
+                        <div class="karma-activities">
+                            <article class="karma-activity"><figure><img src="/assets/images/maa-shardamani-scholarship-distribution.jpg" alt="उच्च शिक्षा के लिए छात्रवृत्ति सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>उच्च शिक्षा सहयोग</h4><p>कॉलेज स्तर की जरूरतमंद छात्राओं को आर्थिक और शैक्षणिक सहयोग।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/scholarship-distribution/10-card.webp" alt="छात्राओं का शैक्षणिक मार्गदर्शन" loading="lazy"></figure><div class="karma-activity__body"><h4>भविष्य के अवसर</h4><p>शिक्षा को आत्मसम्मान, आत्मनिर्भरता और उज्ज्वल भविष्य से जोड़ना।</p></div></article>
+                        </div>
+                    </article>
+
+                    <article class="karma-trust">
+                        <div class="karma-trust__intro">
+                            <span class="karma-trust__number">३</span>
+                            <h3>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र</h3>
+                            <p class="karma-trust__subtitle">बालक शिक्षा, समग्र विकास और मानवीय सेवा का व्यापक आयाम</p>
+                            <p>इस केन्द्र की भूमिका शिक्षा से आगे बढ़कर स्वास्थ्य, परिवार-सहायता, महिला आत्मनिर्भरता और समग्र व्यक्तित्व विकास तक विस्तृत हुई।</p>
+                        </div>
+                        <div class="karma-activities">
+                            <article class="karma-activity"><figure><img src="/assets/images/gyanyogi-adhyatm-kendra-scholarship.webp" alt="बालक शिक्षा सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>बालक शिक्षा सहयोग</h4><p>जरूरतमंद विद्यार्थियों को उच्च एवं व्यावसायिक शिक्षा के लिए सहायता और मार्गदर्शन।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/ration-distribution/06-card.webp" alt="खाद्यान्न सहायता" loading="lazy"></figure><div class="karma-activity__body"><h4>खाद्य सहायता</h4><p>कोविड-19 के समय 50 परिवारों से शुरू हुआ प्रयास आगे चलकर लगभग 300 परिवारों तक पहुँचा।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/yoga_class.jpg" alt="योग और प्राणायाम कक्षा" loading="lazy"></figure><div class="karma-activity__body"><h4>योग, प्राणायाम और ध्यान</h4><p>शारीरिक, मानसिक, भावनात्मक और आध्यात्मिक संतुलन की दिशा में नियमित अभ्यास।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/sewing-center/04-card.webp" alt="महिला सिलाई प्रशिक्षण" loading="lazy"></figure><div class="karma-activity__body"><h4>महिला आत्मनिर्भरता</h4><p>2025 में स्थापित सिलाई केन्द्र द्वारा निःशुल्क प्रशिक्षण, स्वरोजगार और सम्मानजनक आजीविका की दिशा।</p></div></article>
+                        </div>
+                    </article>
+
+                    <article class="karma-trust">
+                        <div class="karma-trust__intro">
+                            <span class="karma-trust__number">४</span>
+                            <h3>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन</h3>
+                            <p class="karma-trust__subtitle">दिव्य ज्ञान और आध्यात्मिक साहित्य का प्रसार</p>
+                            <p>इस मिशन का दायित्व भैया जी के आध्यात्मिक ज्ञान, जीवन-दृष्टि और प्रेरणादायी साहित्य का प्रकाशन एवं निःशुल्क प्रसार है, ताकि चेतना का विस्तार विचार और ज्ञान के माध्यम से भी हो।</p>
+                        </div>
+                        <div class="karma-activities">
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/gyan-ganga-mission/01-card.webp" alt="ज्ञान गंगा मिशन का साहित्य" loading="lazy"></figure><div class="karma-activity__body"><h4>सद्साहित्य प्रकाशन</h4><p>आध्यात्मिक ज्ञान, चिंतन और दस्तावेजों को वर्तमान और भावी पीढ़ियों तक पहुँचाना।</p></div></article>
+                            <article class="karma-activity"><figure><img src="/assets/images/gallery/gyan-ganga-mission/02-card.webp" alt="सद्साहित्य का निःशुल्क वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>निःशुल्क प्रसार</h4><p>दिव्य ज्ञान को जन-जन तक सहज उपलब्ध कराना भी निष्काम सेवा का ही एक रूप है।</p></div></article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="karma-section karma-section--flow" aria-labelledby="summary-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">समन्वित दृष्टि</span>
+                    <h2 id="summary-title">अलग-अलग कार्य, एक ही साधना</h2>
+                    <p>इन संस्थाओं की परस्पर पूरकता स्पष्ट करती है कि यह यात्रा बिखरे हुए सेवा-प्रयासों की नहीं, बल्कि चरणबद्ध सामाजिक और आध्यात्मिक दृष्टि की परिणति है।</p>
+                </header>
+                <div class="karma-summary">
+                    <div class="karma-summary__item"><strong>स्वामी विवेकानन्द ट्रस्ट</strong><p>विद्यालयी बालिकाओं की शिक्षा एवं संस्कार।</p></div>
+                    <div class="karma-summary__item"><strong>माँ शारदामणि ट्रस्ट</strong><p>कॉलेज छात्राओं की उच्च शिक्षा।</p></div>
+                    <div class="karma-summary__item"><strong>अध्यात्म केन्द्र</strong><p>बालक शिक्षा, योग-ध्यान, खाद्य सहायता, महिला आत्मनिर्भरता और मानव सेवा।</p></div>
+                    <div class="karma-summary__item"><strong>ज्ञान गंगा मिशन</strong><p>आध्यात्मिक एवं दिव्य ज्ञान का प्रकाशन और निःशुल्क प्रसार।</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karma-section karma-section--closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">दूरदर्शिता का प्रमाण</span>
+                    <h2 id="closing-title">सेवा से समाज का समग्र विकास</h2>
+                    <p>विद्यालयी बालिका शिक्षा से प्रारम्भ होकर उच्च शिक्षा, बालक शिक्षा, व्यावसायिक शिक्षा, संस्कार, योग-ध्यान, परिवार सहायता, महिला कौशल-विकास और आध्यात्मिक साहित्य तक की यह यात्रा एक साझा उद्देश्य और दिशा से प्रेरित है।</p>
+                </header>
+                <div class="karma-closing-verse">शिक्षा से संस्कार,<br>संस्कार से व्यक्तित्व,<br>व्यक्तित्व से आत्मनिर्भरता,<br>आत्मनिर्भरता से सेवा,<br>और सेवा से समाज का समग्र विकास।</div>
+                <div class="hi-actions hi-actions--center karma-actions">
+                    <a class="hi-btn hi-btn--primary" href="../activities.html">सेवा प्रकल्पों का विस्तार देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="publications.html">ज्ञान गंगा का साहित्य देखें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

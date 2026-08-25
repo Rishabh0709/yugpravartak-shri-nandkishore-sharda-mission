@@ -60,6 +60,22 @@ body.hindi-home::before {
 .hindi-home img {
     max-width: 100%;
 }
+.hindi-home .skip-link {
+    position: fixed;
+    z-index: 3000;
+    top: 10px;
+    left: 10px;
+    padding: 10px 14px;
+    color: #fffaf0;
+    background: var(--hi-maroon);
+    border-radius: 999px;
+    transform: translateY(-160%);
+    transition: transform .2s ease;
+}
+
+.hindi-home .skip-link:focus {
+    transform: translateY(0);
+}
 
 .hindi-home .site-header {
     position: absolute;
@@ -78,8 +94,41 @@ body.hindi-home::before {
     background: rgba(255, 250, 243, .94);
     box-shadow: 0 10px 34px rgba(55, 31, 27, .1);
 }
+.hindi-home .header-row-bottom {
+    padding-top: 0;
+}
+
+.hindi-home .header-row-bottom::before {
+    display: none;
+}
+body.hindi-home.hi-home-page #header-placeholder {
+    position: absolute;
+    z-index: 1000;
+    inset: 0 0 auto;
+    height: 0;
+    background:
+        linear-gradient(90deg, rgba(247, 229, 201, .72) 0%, rgba(247, 229, 201, .34) 48%, rgba(247, 229, 201, 0) 78%),
+        url("../images/hi-home-hero-background.jpg") center top / cover no-repeat;
+}
+
+body.hindi-home.hi-home-page #header.site-header:not(.is-scrolled),
+body.hindi-home.hi-home-page .site-header:not(.is-scrolled) {
+    border-bottom-color: transparent;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+body.hindi-home.hi-home-page #header.site-header:not(.is-scrolled) .site-brand-logo,
+body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
+    background: transparent;
+    box-shadow: none;
+    filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+}
 
 .hindi-home .site-title,
+.hindi-home .hi-language-menu,
 .hindi-home .nav-list,
 .hindi-home .nav-submenu,
 .hindi-home .footer {
@@ -92,12 +141,112 @@ body.hindi-home::before {
 
 .hindi-home .nav-item > a,
 .hindi-home .nav-submenu-toggle {
+    color: var(--hi-maroon);
     font-size: .98rem;
 }
 
-.hindi-home .nav-language-link {
+.hindi-home .nav-item > a:hover,
+.hindi-home .nav-item > a:focus-visible,
+.hindi-home .nav-submenu-toggle:hover,
+.hindi-home .nav-submenu-toggle:focus-visible,
+.hindi-home .nav-item > a.active,
+.hindi-home .has-submenu.is-current > .nav-submenu-toggle {
     color: var(--hi-maroon);
-    font-weight: 700;
+}
+
+.hindi-home .nav-chevron {
+    border-color: currentColor;
+}
+
+.hindi-home .nav-item--language {
+    display: flex;
+    align-items: center;
+}
+
+.hindi-home .hi-language-menu {
+    position: relative;
+    z-index: 40;
+    flex: 0 0 auto;
+}
+
+
+.hindi-home .hi-language-menu summary {
+    display: inline-flex;
+    align-items: center;
+    gap: .42rem;
+    min-height: 36px;
+    padding: .34rem .68rem;
+    color: var(--hi-maroon);
+    border: 1px solid rgba(121, 43, 42, .18);
+    border-radius: 999px;
+    background: rgba(255, 250, 242, .68);
+    box-shadow: 0 10px 24px rgba(79, 44, 31, .08);
+    cursor: pointer;
+    user-select: none;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.hindi-home .hi-language-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.hindi-home .hi-language-menu summary:hover,
+.hindi-home .hi-language-menu summary:focus-visible,
+.hindi-home .hi-language-menu[open] summary {
+    color: var(--hi-ink);
+    border-color: rgba(121, 43, 42, .34);
+    background: rgba(255, 246, 232, .9);
+    transform: translateY(-1px);
+}
+
+.hindi-home .hi-language-menu__current {
+    display: inline-grid;
+    min-width: 30px;
+    height: 24px;
+    place-items: center;
+    color: #fffaf3;
+    border-radius: 999px;
+    background: var(--hi-maroon);
+    font-size: .82rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.hindi-home .hi-language-menu__list {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    display: grid;
+    min-width: 118px;
+    padding: 7px;
+    border: 1px solid rgba(121, 43, 42, .16);
+    border-radius: 14px;
+    background: rgba(255, 250, 243, .96);
+    box-shadow: 0 18px 42px rgba(55, 31, 27, .14);
+}
+
+.hindi-home .hi-language-menu__list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 6px 12px;
+    color: var(--hi-ink);
+    border-radius: 10px;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.hindi-home .hi-language-menu__list a::after {
+    display: none;
+}
+
+.hindi-home .hi-language-menu__list a:hover,
+.hindi-home .hi-language-menu__list a:focus-visible,
+.hindi-home .hi-language-menu__list a.is-active {
+    color: #fffaf3;
+    background: var(--hi-maroon);
 }
 
 .hi-shell {
@@ -286,12 +435,11 @@ body.hindi-home::before {
     padding: clamp(150px, 17vh, 205px) 0 clamp(80px, 9vh, 110px);
     background-color: #f4dec0;
     background-image:
-        linear-gradient(90deg, rgba(247, 229, 201, 1) 0%, rgba(247, 229, 201, .96) 37%, rgba(247, 229, 201, .54) 56%, rgba(247, 229, 201, .08) 77%),
-        linear-gradient(0deg, rgba(255, 247, 232, .34), rgba(255, 247, 232, .05)),
-        url("../images/bhaiyaji-maa-home-hero.jpg");
+        linear-gradient(90deg, rgba(247, 229, 201, .74) 0%, rgba(247, 229, 201, .42) 44%, rgba(247, 229, 201, .1) 72%, rgba(247, 229, 201, 0) 100%),
+        url("../images/hi-home-hero-background.jpg");
     background-repeat: no-repeat;
-    background-position: center, center, right center;
-    background-size: cover, cover, auto 100%;
+    background-position: center, center top;
+    background-size: cover, cover;
 }
 
 .hi-hero::before {
@@ -971,7 +1119,8 @@ body.hindi-home::before {
 .hi-yug__text {
     color: #59676b;
 }
-`r`n/* Manidweep */
+
+/* Manidweep */
 .hi-manidweep {
     background:
         radial-gradient(circle at 12% 13%, rgba(191, 141, 54, .16), transparent 29%),
@@ -1226,7 +1375,7 @@ body.hindi-home::before {
     }
 
     .hi-hero {
-        background-position: center, center, 67% center;
+        background-position: center, center top;
     }
 
     .hi-hero__copy {
@@ -1254,6 +1403,13 @@ body.hindi-home::before {
         background: rgba(255, 249, 239, .9);
     }
 
+    body.hindi-home.hi-home-page #header.site-header:not(.is-scrolled),
+    body.hindi-home.hi-home-page .site-header:not(.is-scrolled) {
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     .hi-shell {
         width: min(100% - 32px, 720px);
     }
@@ -1262,10 +1418,10 @@ body.hindi-home::before {
         min-height: auto;
         padding-top: 130px;
         background-image:
-            linear-gradient(180deg, rgba(247, 229, 201, .16) 0%, rgba(247, 229, 201, .56) 42%, rgba(247, 229, 201, .98) 68%, #f4dec0 100%),
-            url("../images/bhaiyaji-maa-home-hero.jpg");
-        background-position: center, 62% top;
-        background-size: cover, auto 66%;
+            linear-gradient(180deg, rgba(247, 229, 201, .08) 0%, rgba(247, 229, 201, .5) 46%, rgba(247, 229, 201, .98) 72%, #f4dec0 100%),
+            url("../images/hi-home-hero-background.jpg");
+        background-position: center, 58% top;
+        background-size: cover, cover;
     }
 
     .hi-hero__copy {
@@ -1347,8 +1503,8 @@ body.hindi-home::before {
 
     .hi-hero {
         padding-bottom: 64px;
-        background-position: center, 62% 68px;
-        background-size: cover, auto 48%;
+        background-position: center, 58% top;
+        background-size: cover, cover;
     }
 
     .hi-hero__copy {
@@ -1432,7 +1588,8 @@ body.hindi-home::before {
         border-radius: 20px;
     }
 }
-`r`n
+
+
 @media (prefers-reduced-motion: reduce) {
     .hi-btn,
     .hi-text-link span {
@@ -2154,6 +2311,18 @@ body.hindi-home::before {
         transition: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
