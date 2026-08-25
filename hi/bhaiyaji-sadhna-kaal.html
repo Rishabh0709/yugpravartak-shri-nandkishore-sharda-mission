@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="भैया जी श्री नन्दकिशोर शारदा के साधना काल, चैतन्य शक्ति की खोज, टेकरी माँ की साधना और जगत्जननी माँ त्रिपुरसुन्दरी के साक्षात् अनुभव की यात्रा।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>भैया जी की साधना काल की यात्रा | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .sadhna-kaal-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 45%, #fffaf1 100%);
+        }
+        body.sadhna-kaal-page #header-placeholder {
+            position: absolute;
+            z-index: 1000;
+            inset: 0 0 auto;
+            height: 0;
+            background: transparent;
+        }
+
+        body.sadhna-kaal-page #header.site-header:not(.is-scrolled),
+        body.sadhna-kaal-page .site-header:not(.is-scrolled) {
+            border-bottom-color: transparent;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        body.sadhna-kaal-page #header.site-header:not(.is-scrolled) .site-brand-logo,
+        body.sadhna-kaal-page .site-header:not(.is-scrolled) .site-brand-logo {
+            background: transparent;
+            box-shadow: none;
+            filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+        }
+
+        .sadhna-kaal-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(118px, 12vw, 164px);
+            padding-bottom: clamp(58px, 8vw, 104px);
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .62) 0%, rgba(255, 250, 241, .5) 34%, rgba(255, 250, 241, .16) 52%, rgba(255, 250, 241, .6) 82%, rgba(255, 250, 241, .8) 100%),
+                url('/assets/images/bhaiyaji-sadhna-kaal-hero.png') center right / cover no-repeat;
+        }
+
+        .sadhna-kaal-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 96px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .sadhna-kaal-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: min(720px, 50vw);
+        }
+
+        .sadhna-kaal-hero h1 {
+            max-width: 680px;
+            margin: 12px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.4vw, 6.4rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .sadhna-kaal-hero__lead {
+            max-width: 650px;
+            color: #625247;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.14rem, 1.7vw, 1.44rem);
+            font-weight: 600;
+            line-height: 1.82;
+        }
+
+        .sadhna-kaal-strip {
+            position: relative;
+            z-index: 2;
+            margin-top: -30px;
+        }
+
+        .sadhna-kaal-strip__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            padding: 14px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .94);
+            box-shadow: 0 24px 70px rgba(63, 45, 37, .12);
+        }
+
+        .sadhna-kaal-strip__item {
+            padding: 18px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .62), rgba(255, 250, 241, .95));
+        }
+
+        .sadhna-kaal-strip__item span {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--hi-maroon);
+            font-size: .82rem;
+            font-weight: 900;
+        }
+
+        .sadhna-kaal-strip__item strong {
+            display: block;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.08rem;
+            line-height: 1.45;
+        }
+
+        .sadhna-kaal-nav {
+            position: sticky;
+            z-index: 8;
+            top: 82px;
+            padding: 10px 0;
+            border-block: 1px solid rgba(198, 148, 53, .18);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .sadhna-kaal-nav__links {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .sadhna-kaal-nav__links a {
+            flex: 0 0 auto;
+            padding: 9px 14px;
+            color: #5f4537;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .72);
+            font-size: .92rem;
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .sadhna-kaal-nav__links a:hover,
+        .sadhna-kaal-nav__links a:focus-visible {
+            color: #fffaf3;
+            border-color: transparent;
+            background: var(--hi-maroon);
+        }
+
+        .sadhna-arc {
+            position: relative;
+            padding-block: clamp(68px, 8vw, 112px);
+            scroll-margin-top: 136px;
+        }
+
+        .sadhna-arc--intro { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .sadhna-arc--birth { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
+        .sadhna-arc--diary { background: radial-gradient(circle at 12% 18%, rgba(221, 236, 240, .62), transparent 28%), linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%); }
+        .sadhna-arc--search { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
+        .sadhna-arc--tekri { background: radial-gradient(circle at 76% 10%, rgba(198, 148, 53, .18), transparent 28%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
+        .sadhna-arc--darshan { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+        .sadhna-arc--wisdom { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+
+        .sadhna-arc__grid {
+            display: grid;
+            grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+            gap: clamp(30px, 6vw, 76px);
+            align-items: center;
+        }
+
+        .sadhna-arc--reverse .sadhna-arc__media {
+            order: 2;
+        }
+
+        .sadhna-arc__media {
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 8px;
+            background: rgba(255, 250, 241, .72);
+            box-shadow: 0 24px 64px rgba(63, 45, 37, .13);
+        }
+
+        .sadhna-arc__media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 40vw, 560px);
+            object-fit: cover;
+        }
+
+        .sadhna-arc__media figcaption {
+            padding: 12px 16px 14px;
+            color: #6d5d53;
+            background: rgba(255, 250, 241, .92);
+            font-size: .92rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .sadhna-arc__copy h2 {
+            margin: 10px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.1rem, 4.6vw, 4.5rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .sadhna-arc__copy p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.02rem, 1.28vw, 1.16rem);
+            line-height: 1.9;
+        }
+
+        .sadhna-arc__copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .sadhna-diary {
+            position: relative;
+            margin: 24px 0;
+            padding: clamp(24px, 4vw, 38px);
+            overflow: hidden;
+            color: var(--hi-quote-ink);
+            border: 1px solid var(--hi-quote-border);
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 16% 0%, rgba(221, 236, 240, .72), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f8ead2 56%, #eef3ee 100%);
+            box-shadow: 0 22px 56px rgba(121, 43, 42, .1);
+        }
+
+        .sadhna-diary::before {
+            content: "डायरी से";
+            display: inline-flex;
+            margin-bottom: 16px;
+            padding: 6px 12px;
+            color: #fffaf3;
+            border-radius: 999px;
+            background: var(--hi-maroon);
+            font-size: .78rem;
+            font-weight: 900;
+            letter-spacing: .04em;
+        }
+
+        .sadhna-diary blockquote {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.24rem, 2vw, 1.75rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .sadhna-diary cite {
+            display: block;
+            margin-top: 16px;
+            color: var(--hi-quote-muted);
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        .sadhna-note {
+            margin-top: 24px;
+            padding: 20px 24px;
+            color: #4f403b;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.45vw, 1.3rem);
+            font-weight: 700;
+            line-height: 1.76;
+        }
+
+        .sadhna-close {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 34%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .sadhna-close .hi-section-heading {
+            max-width: 980px;
+        }
+
+        @media (max-width: 980px) {
+            .sadhna-kaal-strip__grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .sadhna-arc__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sadhna-arc--reverse .sadhna-arc__media {
+                order: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .sadhna-kaal-hero {
+                padding-top: 128px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .74), rgba(255, 250, 241, .66)),
+                    url('/assets/images/bhaiyaji-sadhna-kaal-hero.png') center top / cover no-repeat;
+            }
+
+            .sadhna-kaal-hero__content {
+                max-width: 100%;
+            }
+            .sadhna-kaal-hero h1 {
+                font-size: clamp(2.7rem, 13vw, 4.25rem);
+            }
+
+            .sadhna-kaal-strip {
+                margin-top: 0;
+            }
+
+            .sadhna-kaal-strip__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sadhna-kaal-nav {
+                top: 72px;
+                padding: 8px 0;
+            }
+
+            .sadhna-arc {
+                scroll-margin-top: 126px;
+            }
+
+            .sadhna-arc__media img {
+                height: 360px;
+            }
+
+            .sadhna-diary {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home sadhna-kaal-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="sadhna-kaal-hero" aria-labelledby="sadhna-kaal-title">
+            <div class="hi-shell sadhna-kaal-hero__content">
+                <span class="hi-kicker">भैया जी का साधना काल</span>
+                <h1 id="sadhna-kaal-title">भैया जी की साधना काल की यात्रा</h1>
+                <p class="sadhna-kaal-hero__lead">तमोगुण, भौतिकवाद और अज्ञान के अंधकार से दिग्भ्रमित युग में, जगत्जननी माँ ने ज्ञान का प्रकाश जगाने और मानवता को सरल, सार्वभौमिक तथा युगानुकूल आध्यात्मिक मार्ग देने के लिए अपने लाडले श्री नन्दकिशोर शारदा को इस धरती पर भेजा।</p>
+                <div class="hi-actions">
+                    <a class="hi-btn hi-btn--primary" href="#tekri-sadhna">टेकरी माँ की साधना</a>
+                    <a class="hi-btn hi-btn--soft" href="#diary">डायरी के अंश</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-kaal-strip" aria-label="भैया जी की साधना यात्रा के प्रमुख संकेत">
+            <div class="hi-shell sadhna-kaal-strip__grid">
+                <div class="sadhna-kaal-strip__item"><span>अवतरण</span><strong>16 जुलाई 1944<br>तपोभूमि जोधपुर</strong></div>
+                <div class="sadhna-kaal-strip__item"><span>आत्मजागरण</span><strong>1959 में<br>15 वर्ष की आयु</strong></div>
+                <div class="sadhna-kaal-strip__item"><span>साधना-स्थल</span><strong>टेकरी माँ का<br>जागृत मंदिर</strong></div>
+                <div class="sadhna-kaal-strip__item"><span>साक्षात् अनुभव</span><strong>लगभग 18 वर्ष की आयु में<br>माँ का दर्शन</strong></div>
+            </div>
+        </section>
+
+        <nav class="sadhna-kaal-nav" aria-label="साधना काल के अध्याय">
+            <div class="hi-shell sadhna-kaal-nav__links">
+                <a href="#mission">युग की पुकार</a>
+                <a href="#avataran">अवतरण</a>
+                <a href="#diary">अलौकिक डायरी</a>
+                <a href="#search">चैतन्य शक्ति की खोज</a>
+                <a href="#tekri-sadhna">टेकरी माँ की साधना</a>
+                <a href="#darshan">माँ का साक्षात् दर्शन</a>
+                <a href="#gyan">दिव्य ज्ञान</a>
+            </div>
+        </nav>
+
+        <section class="sadhna-arc sadhna-arc--intro" id="mission" aria-labelledby="mission-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/bhaiyaji-divine-wisdom-background.jpg" alt="दिव्य प्रकाश और साधना का प्रतीकात्मक वातावरण" loading="lazy">
+                    <figcaption>ज्ञान के प्रकाश से अज्ञान का अंधकार मिटाने की दिव्य भूमिका</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">युग की पुकार</span>
+                    <h2 id="mission-title">अंधकार से प्रकाश की ओर ले जाने वाला संकल्प</h2>
+                    <p>इस युग में तमोगुण प्रबल हो रहा है और रजोगुण एवं सतोगुण क्षीण हो रहे हैं। भौतिकवाद की चकाचौंध, अवगुणों के विस्तार और अज्ञान के अंधकार से मानवता दिग्भ्रमित है।</p>
+                    <p>ऐसे समय में एक सरल, प्रभावी, सार्वभौमिक और इस युग के अनुरूप ज्ञान के प्रकाश द्वारा अंधकार को मिटाने तथा मिशन की पूर्ति हेतु जगत्जननी माँ ने अपने दो लाडले बच्चों, <strong>श्री नन्दकिशोर शारदा</strong> और <strong>सुश्री बसन्ती मनिहार</strong>, को इस जगत् में भेजा।</p>
+                    <div class="sadhna-note">इस मिशन द्वारा कलयुग में सतयुग स्थापित करने की दिशा में मानव जाति अग्रसर हो रही है।</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--birth sadhna-arc--reverse" id="avataran" aria-labelledby="avataran-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/young_bhaiyaji1.jpg" alt="युवा भैया जी का चित्र" loading="lazy">
+                    <figcaption>ज्ञान-पिपासा, मेधा और दार्शनिक चिंतन से सम्पन्न व्यक्तित्व</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">अवतरण</span>
+                    <h2 id="avataran-title">तपोभूमि जोधपुर में एक तेजस्वी जीवन का प्रारम्भ</h2>
+                    <p>श्री नन्दकिशोर शारदा का जन्म 16 जुलाई 1944 को तपोभूमि जोधपुर में श्रीमती तुलसी देवी एवं श्री विजयकिशन जी शारदा के सम्पन्न और भक्तिमय परिवार में हुआ। बाल्यकाल से ही उनमें ज्ञान की प्रबल पिपासा, मेधा और सद्साहित्य के प्रति रुचि थी।</p>
+                    <p>उनका चिंतन दार्शनिक, वैज्ञानिक और तार्किक था। अद्भुत वाक्शक्ति, भावाभिव्यक्ति और अलौकिक आकर्षण उनके व्यक्तित्व की विशिष्ट विशेषताएँ थीं। उनके सरल, पवित्र विचारों और आत्मीय स्वभाव के कारण सभी उन्हें स्नेहपूर्वक <strong>भैया</strong> अथवा <strong>भैया जी</strong> कहकर सम्बोधित करते हैं।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--diary" id="diary" aria-labelledby="diary-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/bhaiyaji-sadhna-spiritual-root.jpg" alt="भैया जी की हस्तलिखित डायरी और आत्मचिंतन का प्रतीक" loading="lazy">
+                    <figcaption>डायरी: भैया जी की चैतन्य यात्रा का प्रमाणिक दर्पण</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">अलौकिक डायरी</span>
+                    <h2 id="diary-title">बाल्यकाल से लिखी डायरी में दिखता मूल स्वरूप</h2>
+                    <p>भैया जी में बचपन से ही त्याग, प्रेम, सरलता, दृढ़ संकल्प, परोपकार, करुणा, निःस्वार्थता और लक्ष्य के प्रति जुनून जैसे गुण व्याप्त थे। उनकी हस्तलिखित डायरी इन गुणों और उनके अंतर्मन की पवित्रता की झलक देती है।</p>
+                    <div class="sadhna-diary">
+                        <blockquote>“आज का समाज किसी भी व्यक्ति का मूल्यांकन करता हैं सिर्फ उसके चन्द स्वार्थों पर। अगर मनुष्य स्वार्थ सिद्ध है तो वह होशियार है नहीं तो वो बेवकूफ। इस प्रकार मुझे समाज ने बेवकूफ की श्रेणी में डाला हे। मैं वास्तव में होशियार बनाना नहीं चाहता वहाँ आत्मिक शान्ति नही है।”</blockquote>
+                        <cite>नन्दकिशोर शारदा</cite>
+                    </div>
+                    <p>भैया जी की डायरी उनकी दिव्य चैतन्य यात्रा का महत्वपूर्ण दस्तावेज़ है। 12 वर्ष की अल्पायु से लिखी गई यह मूल प्रमाणित डायरी उनके चिंतन, मनन, साधना, समर्पण, स्व-अनुभव और जिज्ञासा का शुद्ध प्रतिबिंब है।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--search sadhna-arc--reverse" id="search" aria-labelledby="search-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/bhaiyaji_sadhna.jpg" alt="साधना और सत्य की खोज का भावपूर्ण दृश्य" loading="lazy">
+                    <figcaption>पिता के देहावसान से उठे प्रश्नों ने संकल्प को जन्म दिया</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">1959 · चैतन्य शक्ति की खोज</span>
+                    <h2 id="search-title">“मैं कौन हूँ?” से प्रारम्भ हुई सत्य की खोज</h2>
+                    <p>सन् 1959 में जब भैया जी मात्र 15 वर्ष के थे, उनके पिताजी का देहान्त हो गया। यह घटना उनके जीवन में आमूलचूल परिवर्तन लेकर आई। उसी रात उनकी डायरी में लिखे उद्गार उनके भीतर उठे मौलिक प्रश्नों को स्पष्ट करते हैं।</p>
+                    <div class="sadhna-diary">
+                        <blockquote>“आज मेरे सामने वही चिता से उठती लपटें हैं। हमारा भ्रम है। कोई अपना नही हैं। कोई मेरा नही। यह शरीर भी मेरा नही। मैं कौन हूँ व कहाँ से आया हूँ, कहाँ जाउँगा। मुझे खोज करनी हैं मैं कोन हूँ व मुझे कोन चला रहा है। मेरे पिताजी कहाँ गये। मेरे वास्तविक माता पिता कोन हैं।”</blockquote>
+                    </div>
+                    <p>उन परिस्थितियों में भी उनके मन में संसार की नश्वरता, असहायपन, मानव अस्तित्व और शरीर को चलायमान रखने वाली शक्ति के प्रश्न उठे। उन्होंने श्मशान में ही दृढ़ संकल्प लिया कि वे इस भौतिक शरीर को संचालित करने वाली <strong>चैतन्य शक्ति</strong> की वास्तविकता को खोजकर रहेंगे।</p>
+                    <p>उन्होंने विभिन्न धर्मों, सम्प्रदायों, साधु-महात्माओं, तांत्रिकों और आध्यात्मिक ग्रंथों का अध्ययन किया, परन्तु उन्हें संतोषजनक उत्तर नहीं मिला। अंततः उन्होंने निश्चय किया कि अब इस रहस्य का समाधान उन्हें स्वयं खोजना होगा।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--tekri" id="tekri-sadhna" aria-labelledby="tekri-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/bhaiyaji_sadhna_1.webp" alt="टेकरी माँ के मंदिर में भैया जी की साधना का भाव" loading="lazy">
+                    <figcaption>टेकरी माँ के जागृत मंदिर में माँ-बेटे का आत्मिक सम्बन्ध प्रगाढ़ हुआ</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">टेकरी माँ · साधना का प्रारम्भ</span>
+                    <h2 id="tekri-title">जागृत मंदिर में मिली असीम शांति और माँ की ओर आकर्षण</h2>
+                    <p>एक दिन चिंतन करते हुए वे जोधपुर किले के आसपास घूम रहे थे कि एक पहाड़ी पर स्थित टेकरी की ओर अनायास आकर्षित होकर पहुँचे। गुफानुमा मंदिर में प्रवेश करते ही उन्हें असीम शांति का अनुभव हुआ और माँ त्रिपुरसुन्दरी के विग्रह के दर्शन करते ही वे ध्यानमग्न हो गए।</p>
+                    <p>टेकरी मंदिर में जगत्जननी माँ की अपरिमित शक्ति, तेज और चैतन्यता थी। भैया जी में सत्य की खोज का दृढ़ निश्चय, पूर्ण समर्पण, त्याग और जुनून था। वे माँ त्रिपुरसुन्दरी के चरणों में पूर्ण समर्पित होकर उन्हें अपना पथप्रदर्शक मानकर दिन-रात कठोर साधना करने लगे।</p>
+                    <div class="sadhna-diary">
+                        <blockquote>“माँ भवानी आपको मेरा प्रणाम स्वीकार हो। आज से मेरी पथप्रदर्शक आप हैं। अब मैंने मेरा सारा भार आप पर छोड़ दिया है।”</blockquote>
+                        <cite>आपका पुत्र, किशोर</cite>
+                    </div>
+                    <p>भैया जी रात-रात भर टेकरी पर रहकर माँ की साधना और आराधना में डूब गए। कई-कई दिन तक भूखे-प्यासे, कभी दिन भर में केवल एक पाव पालक पर निर्वाह करते हुए वे माँ के दर्शन के लिए आँसू बहाते रहते।</p>
+                    <p>उनके हस्ताक्षर भी उनके भावों के अनुरूप बदलते गए: <strong>नन्दकिशोर शारदा</strong>, फिर <strong>किशोर</strong>, और अंत में <strong>किशोर माँ का लाडला</strong>। यह माँ के साथ उनके सम्बन्ध की निरंतर प्रगाढ़ता और साधना की परिपक्वता का संकेत था।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--darshan sadhna-arc--reverse" id="darshan" aria-labelledby="darshan-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/bhaiyaji-maa-first-darshan.jpg" alt="भैया जी और माँ त्रिपुरसुन्दरी का दिव्य भाव" loading="lazy">
+                    <figcaption>दर्शन की इच्छा भी समर्पित कर देने पर माँ ने अपने लाडले को दर्शन दिए</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">पूर्ण समर्पण</span>
+                    <h2 id="darshan-title">जब माँ ने दर्शन दिए, भैया जी ने चरण पकड़ लिए</h2>
+                    <p>भैया जी ने निःस्वार्थ भाव से माँ-बेटे का सम्बन्ध स्थापित कर स्वयं को जगत्जननी माँ को पूर्णतः समर्पित कर दिया। माँ के विरह में वे व्याकुल होकर पुकारते, “माँ, मुझे दर्शन दें।”</p>
+                    <p>दीर्घ साधना के बाद उन्हें बोध हुआ कि आध्यात्मिक इच्छाएँ भी साधना में बाधक हो सकती हैं। उन्होंने दर्शन की इच्छा सहित अपने जीवन के उद्देश्य और संकल्प भी माँ को समर्पित कर दिए। उनका भाव था कि वे केवल माँ से प्रेम करते हैं और करते रहेंगे।</p>
+                    <div class="sadhna-diary">
+                        <blockquote>“वात्सल्यमयी माँ जिसे मैं कभी परवरदिगार, कभी मम्मी व कभी माँ कहता हूँ, वह मेरी जन्मदात्री जननी हैं व गुरु हैं। वही मेरी सर्वस्व है। मैंने मेरा तन, मन, धन जीवन व जीवन का सम्पूर्ण प्रेम उसी के चरणों में चढ़ाया है। वास्तव में उसके चरणो की पूजा व उसके चरणो से प्रेम यही तो मेरा जीवन लक्ष्य है। उसने मुझे दर्शन दिए तब दौड़ कर मेने उसके चरण ही पकड़े थे। वही सर्वस्व है।”</blockquote>
+                    </div>
+                    <p>यह अंश स्पष्ट करता है कि भैया जी ने माँ को अपना गुरु माना और अपना सर्वस्व उनके चरणों में समर्पित कर दिया। माँ से अलग उनका अपना अस्तित्व रहा ही नहीं। वे माँ से दूध-शक्कर की तरह घुल-मिल गए।</p>
+                    <div class="sadhna-note">जब भैया जी को जगत्जननी माँ के दर्शन हुए, उस समय उनकी आयु लगभग 18 वर्ष थी। यह अपने आप में अद्भुत आध्यात्मिक घटना थी।</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sadhna-arc sadhna-arc--wisdom" id="gyan" aria-labelledby="gyan-title">
+            <div class="hi-shell sadhna-arc__grid">
+                <figure class="sadhna-arc__media">
+                    <img src="/assets/images/wonderful-world-after-death-cover.png" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण" loading="lazy">
+                    <figcaption>माँ प्रदत्त ज्ञान आगे चलकर दिव्य मौलिक ग्रंथ में लिपिबद्ध हुआ</figcaption>
+                </figure>
+                <div class="sadhna-arc__copy">
+                    <span class="hi-kicker">माँ प्रदत्त दिव्य ज्ञान</span>
+                    <h2 id="gyan-title">चैतन्यता, ब्रह्माण्ड और दिव्य लोकों का स्व-अनुभव</h2>
+                    <p>दर्शन के बाद माँ ने उन्हें पुत्र स्वीकार किया और स्वयं उनकी गुरु बनकर उनसे सर्वोच्च स्तर की दिव्य साधनाएँ करवाईं। माँ ने उन्हें चैतन्यता और ब्रह्माण्ड की संरचना, ब्रह्मकणों की संरचना, दो शरीर की अवधारणा, चैतन्य शरीर का उद्गम स्थान, दिव्य लोकों का निर्माण आदि का स्व-अनुभव कराया।</p>
+                    <p>कालांतर में इसी अमृततुल्य ज्ञान को भैया जी ने दिव्य मौलिक ग्रंथ <strong>“मृत्यु के बाद का अलौकिक संसार”</strong> में लिपिबद्ध करवाया। यह ज्ञान केवल विचार नहीं, बल्कि उनके तप, समर्पण, साधना और माँ की कृपा से प्राप्त अनुभूति का प्रकाश है।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशित ग्रंथ देखें</a>
+                        <a class="hi-btn hi-btn--outline" href="shri-nandkishore-sharda.html">भैया जी का जीवन परिचय</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section sadhna-close" aria-labelledby="sadhna-close-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">साधना से युगधर्म तक</span>
+                    <h2 id="sadhna-close-title">भैया जी की साधना यात्रा आज भी साधकों को दिशा देती है</h2>
+                    <p>उनकी साधना केवल व्यक्तिगत आत्मकल्याण तक सीमित नहीं रही। वह माँ प्रदत्त दिव्य ज्ञान, सरल साधना पद्धति और मानव कल्याण की निष्काम सेवा के रूप में जन-जन तक प्रवाहित हो रही है।</p>
+                </header>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="sadhna-places.html">दिव्य साधना-स्थल देखें</a>
+                    <a class="hi-btn hi-btn--soft" href="index.html#buddhi-vivek">बुद्धि-विवेक योग साधना</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+
+
+
+
+
