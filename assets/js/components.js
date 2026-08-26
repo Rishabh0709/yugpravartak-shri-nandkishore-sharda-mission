@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         loadComponent(
             "#header-placeholder",
             isHindiPage
-                ? "/components/hi/header.html"
-                : "/components/header.html"
+                ? "../components/hi/header.html"
+                : "../components/header.html"
         ),
         loadComponent(
             "#footer-placeholder",
             isHindiPage
-                ? "/components/hi/footer.html"
-                : "/components/footer.html"
+                ? "../components/hi/footer.html"
+                : "../components/footer.html"
         )
     ]);
 

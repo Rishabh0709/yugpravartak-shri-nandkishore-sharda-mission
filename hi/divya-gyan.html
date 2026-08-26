@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="मृत्यु के बाद का अलौकिक संसार: भैया श्री नन्दकिशोर शारदा द्वारा जगत्जननी माँ त्रिपुरसुन्दरी से प्राप्त दिव्य ज्ञान, विज्ञान और अध्यात्म का समग्र दर्शन।">
+    <meta name="theme-color" content="#f4dfc0">
+    <title>दिव्य ज्ञान | मृत्यु के बाद का अलौकिक संसार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .divya-gyan-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 45%, #fffaf1 100%);
+        }
+
+        .dg-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(118px, 12vw, 166px);
+            padding-bottom: clamp(70px, 9vw, 120px);
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .82) 44%, rgba(255, 250, 241, .44) 74%),
+                url('../assets/images/bhaiyaji-divine-wisdom-background.jpg') center right / cover no-repeat;
+        }
+
+        .dg-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 90px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .dg-hero__grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.08fr) minmax(280px, .62fr);
+            gap: clamp(34px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .dg-hero h1 {
+            margin: 12px 0 18px;
+            color: #4b2e49;
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.2vw, 6.35rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .dg-hero__lead {
+            max-width: 780px;
+            color: #66554c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.14rem, 1.7vw, 1.46rem);
+            font-weight: 600;
+            line-height: 1.84;
+        }
+
+        .dg-book-frame {
+            display: grid;
+            place-items: center;
+            padding: clamp(18px, 3vw, 34px);
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .66);
+            box-shadow: 0 24px 64px rgba(63, 45, 37, .14);
+        }
+
+        .dg-book-frame img {
+            width: min(100%, 360px);
+            max-height: 540px;
+            object-fit: contain;
+            filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .24));
+        }
+
+        .dg-essence {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .dg-essence__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            padding: 14px;
+            border: 1px solid rgba(121, 43, 42, .13);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .94);
+            box-shadow: 0 24px 70px rgba(63, 45, 37, .12);
+        }
+
+        .dg-essence-card {
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .62), rgba(255, 250, 241, .96));
+        }
+
+        .dg-essence-card span {
+            display: inline-flex;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            color: #fffaf3;
+            border-radius: 999px;
+            background: var(--hi-maroon);
+            font-size: .78rem;
+            font-weight: 900;
+        }
+
+        .dg-essence-card strong {
+            display: block;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.18rem;
+            line-height: 1.38;
+        }
+
+        .dg-nav {
+            position: sticky;
+            z-index: 8;
+            top: 82px;
+            padding: 10px 0;
+            border-block: 1px solid rgba(198, 148, 53, .18);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .dg-nav__links {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .dg-nav__links a {
+            flex: 0 0 auto;
+            padding: 9px 14px;
+            color: #5f4537;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .72);
+            font-size: .92rem;
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dg-nav__links a:hover,
+        .dg-nav__links a:focus-visible {
+            color: #fffaf3;
+            border-color: transparent;
+            background: var(--hi-maroon);
+        }
+
+        .dg-section {
+            padding-block: clamp(70px, 8vw, 116px);
+            scroll-margin-top: 136px;
+        }
+
+        .dg-section--origin { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .dg-section--vision { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
+        .dg-section--chapters { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
+        .dg-section--mission { background: radial-gradient(circle at 76% 10%, rgba(198, 148, 53, .18), transparent 28%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
+        .dg-section--impact { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+
+        .dg-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+            gap: clamp(30px, 6vw, 76px);
+            align-items: center;
+        }
+
+        .dg-grid--reverse .dg-media {
+            order: 2;
+        }
+
+        .dg-media {
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 8px;
+            background: rgba(255, 250, 241, .72);
+            box-shadow: 0 24px 64px rgba(63, 45, 37, .13);
+        }
+
+        .dg-media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 40vw, 560px);
+            object-fit: cover;
+        }
+
+        .dg-media--book {
+            display: grid;
+            place-items: center;
+            padding: clamp(20px, 4vw, 44px);
+        }
+
+        .dg-media--book img {
+            width: min(100%, 360px);
+            height: clamp(420px, 46vw, 590px);
+            object-fit: contain;
+            filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .22));
+        }
+
+        .dg-media figcaption {
+            padding: 12px 16px 14px;
+            color: #6d5d53;
+            background: rgba(255, 250, 241, .92);
+            font-size: .92rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .dg-copy h2,
+        .dg-section-heading h2 {
+            margin: 10px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.1rem, 4.5vw, 4.35rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .dg-copy p,
+        .dg-section-heading p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.02rem, 1.28vw, 1.16rem);
+            line-height: 1.9;
+        }
+
+        .dg-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .dg-note,
+        .dg-quote {
+            margin-top: 24px;
+            padding: 22px 24px;
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .8);
+            font-family: var(--hi-serif);
+            font-weight: 700;
+            line-height: 1.76;
+        }
+
+        .dg-note {
+            color: #4f403b;
+            border-left: 4px solid var(--hi-gold);
+            font-size: clamp(1.08rem, 1.45vw, 1.3rem);
+        }
+
+        .dg-quote {
+            border: 1px solid var(--hi-quote-border);
+            background:
+                radial-gradient(circle at 16% 0%, rgba(221, 236, 240, .72), transparent 34%),
+                var(--hi-quote-bg);
+            box-shadow: 0 22px 56px rgba(121, 43, 42, .1);
+        }
+
+        .dg-quote blockquote {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.24rem, 2vw, 1.82rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .dg-chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .dg-chapter {
+            position: relative;
+            min-height: 250px;
+            padding: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 18px 44px rgba(63, 45, 37, .08);
+        }
+
+        .dg-chapter::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto;
+            height: 5px;
+            background: linear-gradient(90deg, var(--hi-maroon), var(--hi-gold));
+        }
+
+        .dg-chapter span {
+            display: inline-flex;
+            margin-bottom: 14px;
+            padding: 5px 10px;
+            color: var(--hi-maroon);
+            border: 1px solid rgba(121, 43, 42, .16);
+            border-radius: 999px;
+            background: rgba(255, 250, 241, .86);
+            font-size: .78rem;
+            font-weight: 900;
+        }
+
+        .dg-chapter h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.38rem;
+            line-height: 1.35;
+        }
+
+        .dg-chapter p {
+            margin: 0;
+            color: #66574e;
+            line-height: 1.76;
+        }
+
+        .dg-flow {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .dg-flow__item {
+            padding: 22px;
+            border: 1px solid rgba(121, 43, 42, .13);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .76);
+        }
+
+        .dg-flow__item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--hi-maroon);
+            font-family: var(--hi-serif);
+            font-size: 1.24rem;
+        }
+
+        .dg-flow__item p {
+            margin: 0;
+            color: #66574e;
+            line-height: 1.75;
+        }
+
+        .dg-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .dg-closing .hi-section-heading {
+            max-width: 1040px;
+        }
+
+        @media (max-width: 980px) {
+            .dg-hero__grid,
+            .dg-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dg-grid--reverse .dg-media {
+                order: 0;
+            }
+
+            .dg-essence__grid,
+            .dg-chapter-grid,
+            .dg-flow {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .dg-hero {
+                padding-top: 128px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .88), rgba(255, 250, 241, .76)),
+                    url('../assets/images/bhaiyaji-divine-wisdom-background.jpg') center top / cover no-repeat;
+            }
+
+            .dg-hero h1 {
+                font-size: clamp(2.55rem, 12vw, 4.1rem);
+            }
+
+            .dg-essence {
+                margin-top: 0;
+            }
+
+            .dg-essence__grid,
+            .dg-chapter-grid,
+            .dg-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .dg-nav {
+                top: 72px;
+                padding: 8px 0;
+            }
+
+            .dg-section {
+                scroll-margin-top: 126px;
+            }
+
+            .dg-media img {
+                height: 360px;
+            }
+
+            .dg-media--book img,
+            .dg-book-frame img {
+                height: min(70vh, 430px);
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home divya-gyan-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="dg-hero" aria-labelledby="dg-title">
+            <div class="hi-shell dg-hero__grid">
+                <div>
+                    <span class="hi-kicker">जगत्जननी माँ प्रदत्त दिव्य ज्ञान</span>
+                    <h1 id="dg-title">मृत्यु के बाद का अलौकिक संसार</h1>
+                    <p class="dg-hero__lead">भैया श्री नन्दकिशोर शारदा ने जगत्जननी माँ को गुरु बनाकर जो दिव्य ज्ञान प्राप्त किया, उसे माँ की आज्ञा से मानवता के मार्गदर्शन हेतु इस अमृततुल्य ग्रंथ में लिपिबद्ध करवाया।</p>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="#origin">ज्ञान का उद्गम</a>
+                        <a class="hi-btn hi-btn--soft" href="#chapters">अध्यायवार परिचय</a>
+                    </div>
+                </div>
+                <figure class="dg-book-frame">
+                    <img src="../assets/images/books/02-card.webp" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण" loading="eager" fetchpriority="high">
+                </figure>
+            </div>
+        </section>
+
+        <section class="dg-essence" aria-label="दिव्य ज्ञान का सार">
+            <div class="hi-shell dg-essence__grid">
+                <div class="dg-essence-card"><span>उद्गम</span><strong>जगत्जननी माँ से प्राप्त दिव्य ज्ञान</strong></div>
+                <div class="dg-essence-card"><span>दृष्टि</span><strong>विज्ञान और अध्यात्म का समन्वय</strong></div>
+                <div class="dg-essence-card"><span>विषय</span><strong>चैतन्य शक्ति, दिव्य लोक और मानव-लक्ष्य</strong></div>
+                <div class="dg-essence-card"><span>प्रभाव</span><strong>संशय से श्रद्धा और आत्मबोध की ओर</strong></div>
+            </div>
+        </section>
+
+        <nav class="dg-nav" aria-label="दिव्य ज्ञान के अध्याय">
+            <div class="hi-shell dg-nav__links">
+                <a href="#origin">लिपिबद्ध होने की यात्रा</a>
+                <a href="#vision">ग्रंथ का दिव्य दर्शन</a>
+                <a href="#chapters">अध्यायवार परिचय</a>
+                <a href="#mission">ज्ञान-गंगा मिशन</a>
+                <a href="#impact">आस्था और आत्मबोध</a>
+            </div>
+        </nav>
+
+        <section class="dg-section dg-section--origin" id="origin" aria-labelledby="origin-title">
+            <div class="hi-shell dg-grid">
+                <figure class="dg-media">
+                    <img src="../assets/images/madhu-maa-transcribing-book.jpg" alt="दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य" loading="lazy">
+                    <figcaption>मई 2002 से माँ की आज्ञा पर दिव्य ज्ञान को लिपिबद्ध करवाने का कार्य प्रारम्भ हुआ।</figcaption>
+                </figure>
+                <div class="dg-copy">
+                    <span class="hi-kicker">लिपिबद्ध होने की यात्रा</span>
+                    <h2 id="origin-title">भूतनाथ मंदिर के पास वृक्ष के नीचे प्रवाहित ज्ञान</h2>
+                    <p>भैया श्री नन्दकिशोर शारदा ने जगत्जननी माँ को गुरु बनाकर उनसे जो दिव्य ज्ञान प्राप्त किया, उसे माँ की आज्ञा मिलने पर मई 2002 से दिव्य पुस्तक <strong>मृत्यु के बाद का अलौकिक संसार</strong> के रूप में लिपिबद्ध करवाने का कार्य प्रारम्भ हुआ।</p>
+                    <p>भैया जी इस पुस्तक को भूतनाथ मंदिर के पास एक वृक्ष के नीचे बैठकर लिपिबद्ध करवाते थे। भैया जी और मधु माँ वहाँ जाते, भैया जी ध्यानमग्न हो जाते और चैतन्य जगत् से उनका सम्पर्क जुड़ जाता। फिर वे धाराप्रवाह बोलते, जिसे मधु माँ लिख लेतीं। उस समय उनका मुख दिव्य आभा से युक्त हो जाता था।</p>
+                    <div class="dg-note">यह ग्रंथ आज की वैज्ञानिक और भौतिक चकाचौंध से भ्रमित पीढ़ी को सही मार्गदर्शन देने वाली एक दिव्य कृति है।</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dg-section dg-section--vision" id="vision" aria-labelledby="vision-title">
+            <div class="hi-shell dg-grid dg-grid--reverse">
+                <figure class="dg-media dg-media--book">
+                    <img src="../assets/images/wonderful-world-after-death-cover.png" alt="मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण" loading="lazy">
+                    <figcaption>विज्ञान की सीमाओं से परे चैतन्य जगत् के रहस्यों का समग्र प्रस्तुतीकरण।</figcaption>
+                </figure>
+                <div class="dg-copy">
+                    <span class="hi-kicker">ग्रंथ का दिव्य दर्शन</span>
+                    <h2 id="vision-title">विज्ञान के आधार पर अध्यात्म का गहन प्रतिपादन</h2>
+                    <p>इस पुस्तक में अध्यात्मयोगी श्री नन्दकिशोर शारदा ने माँ त्रिपुरसुन्दरी को गुरु मानकर प्राप्त दिव्य ज्ञान और अपने अनुभवों को वैज्ञानिक दृष्टिकोण से प्रस्तुत किया है। इसमें ब्रह्माण्ड की संरचना, सृष्टि की उत्पत्ति, प्रकृति, दिव्य लोकों की रचना, ईश्वर की सत्ता, मानव-जीवन का उद्देश्य और चैतन्य शक्ति जैसे विषयों को समग्र रूप से समझाया गया है।</p>
+                    <p>ब्रह्म-कणों, भौतिक और चैतन्य शरीर की अवधारणा, देवी-देवताओं के लोक, देवदूतों के अस्तित्व और चैतन्य जगत् के अनेक रहस्यों को भी उजागर किया गया है। यह ज्ञान व्यक्ति में ईश्वर और चैतन्य शक्ति के प्रति दृढ़ श्रद्धा और विश्वास उत्पन्न करता है।</p>
+                    <p>यह समझने में सहायता मिलती है कि भौतिक सुख-सुविधाएँ जीवन के लिए आवश्यक हैं, किंतु मानव-जीवन का वास्तविक लक्ष्य आध्यात्मिक उन्नति और ईश्वर की प्राप्ति है।</p>
+                    <div class="dg-quote"><blockquote>भैया जी की यह दिव्य कृति मानवता के लिए अमृततुल्य अलौकिक देन है। ब्रह्माण्ड के रहस्यों की जिज्ञासा रखने वालों के लिए यह एक मौलिक संदर्भ ग्रंथ है।</blockquote></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dg-section dg-section--chapters" id="chapters" aria-labelledby="chapters-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center dg-section-heading">
+                    <span class="hi-kicker">पुस्तक की विषय-वस्तु</span>
+                    <h2 id="chapters-title">एक अध्यायवार परिचय</h2>
+                    <p>मृत्यु के बाद क्या? इस अनादिकाल से चले आ रहे प्रश्न पर भारतीय ऋषि-परम्परा, विज्ञान और आध्यात्मिक चिंतन की धारा में भैया जी ने क्षितिज के उस पार खोजने का प्रयास किया।</p>
+                </header>
+                <div class="dg-chapter-grid">
+                    <article class="dg-chapter"><span>प्रथम अध्याय</span><h3>मृत्यु और मानव-जन्म का प्रश्न</h3><p>पूर्वजों, संतों और विज्ञान के मृत्यु सम्बन्धी चिंतन के आधार पर यह प्रश्न उठता है कि मानव शिशु जन्म के समय निर्भर होते हुए भी आगे चलकर विवेकानन्द, आइन्स्टाइन या विपरीत दिशा में जाने वाला व्यक्ति कैसे बनता है।</p></article>
+                    <article class="dg-chapter"><span>द्वितीय अध्याय</span><h3>विज्ञान की आधारशिला</h3><p>विज्ञान के मूलभूत सिद्धान्तों को सरल भाषा में समझाते हुए दिव्य लोकों के सम्भावित स्थानों और अध्यात्म की वैज्ञानिक भूमिका पर चर्चा की गई है।</p></article>
+                    <article class="dg-chapter"><span>तृतीय अध्याय</span><h3>भौतिक और चैतन्य कण</h3><p>भौतिक जगत् और चैतन्य जगत् के मूल कणों के गुण-धर्म तथा उनके स्वाभाविक अन्तर के आधार पर परब्रह्म परमात्मा को विज्ञान से प्रतिपादित करने का प्रयास है।</p></article>
+                    <article class="dg-chapter"><span>चतुर्थ अध्याय</span><h3>प्रकाश, प्रकृति और दर्शन</h3><p>प्रकाश के विशेष गुणों द्वारा प्रकृति की लीला समझाते हुए वस्तु और उसके आभासित प्रतिबिम्ब का रहस्य तथा स्वामी विवेकानन्द को माँ काली के दर्शन की सम्भावना पर चिंतन है।</p></article>
+                    <article class="dg-chapter"><span>पंचम अध्याय</span><h3>मृत्यु के बाद की स्थिति</h3><p>जब मनुष्य पृथ्वी के गुरुत्वाकर्षण बल से विलग होता है, तब उसकी स्थिति, वह पृथ्वी पर क्या छोड़ जाता है और उसका स्वरूप क्या होता है, इस पर विचार किया गया है।</p></article>
+                    <article class="dg-chapter"><span>षष्ठ अध्याय</span><h3>दिव्य लोकों की रचना</h3><p>विज्ञान की अंतिम सीमा प्लांक काल के पूर्व क्या था, इस रहस्य के साथ दिव्य लोकों और दैविक चैतन्य शरीरों के निर्माण की प्रक्रिया समझाने का प्रयास है।</p></article>
+                    <article class="dg-chapter"><span>सातवाँ अध्याय</span><h3>जिज्ञासाओं का समाधान</h3><p>पूर्व अध्यायों के ज्ञान के आधार पर पाठकों के मन में उठने वाले सम्भावित प्रश्नों का निराकरण किया गया है, ताकि अध्ययन चिंतन और मनन में परिवर्तित हो सके।</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="dg-section dg-section--mission" id="mission" aria-labelledby="mission-title">
+            <div class="hi-shell dg-grid">
+                <figure class="dg-media">
+                    <img src="../assets/images/bhaiyaji-radiant-portrait.jpg" alt="भैया जी का तेजस्वी चित्र" loading="lazy">
+                    <figcaption>“अगर यह दैवीयदत्त ज्ञान पृथ्वी पर आ गया तो चारों तरफ आनन्द ही आनन्द हो जायेगा।”</figcaption>
+                </figure>
+                <div class="dg-copy">
+                    <span class="hi-kicker">ज्ञान-गंगा</span>
+                    <h2 id="mission-title">संकल्प से साकार तक</h2>
+                    <p>सन् 2002 के अंत तक भैया श्री नन्दकिशोर शारदा द्वारा माँ से प्राप्त दिव्य ज्ञान पर आधारित ग्रंथ का लेखन-कार्य पूर्ण हो चुका था। उनकी हार्दिक अभिलाषा थी कि यह ज्ञान किसी एक ग्रंथ तक सीमित न रहकर जन-जन तक पहुँचे और मानवता को आध्यात्मिक सत्य की ओर उन्मुख करे।</p>
+                    <p>इसी उद्देश्य से उन्होंने ज्ञान-गंगा मिशन की परिकल्पना की थी। जनवरी 2003 में भैया जी के चैतन्य स्वरूप होने के पश्चात माँ बसन्ती जी ने इस संकल्प को आगे बढ़ाया और अप्रैल 2003 में <strong>श्री नन्दकिशोर शारदा ज्ञान-गंगा मिशन</strong> की स्थापना की। इसी मिशन के माध्यम से नवम्बर 2003 में इस दिव्य ग्रंथ का प्रकाशन हुआ।</p>
+                    <div class="dg-flow">
+                        <div class="dg-flow__item"><strong>मई 2002</strong><p>दिव्य ज्ञान को लिपिबद्ध करवाने का कार्य प्रारम्भ हुआ।</p></div>
+                        <div class="dg-flow__item"><strong>अप्रैल 2003</strong><p>माँ बसन्ती जी द्वारा ज्ञान-गंगा मिशन की स्थापना हुई।</p></div>
+                        <div class="dg-flow__item"><strong>नवम्बर 2003</strong><p>ग्रंथ का प्रकाशन हुआ और ज्ञान जन-जन तक पहुँचने लगा।</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dg-section dg-section--impact" id="impact" aria-labelledby="impact-title">
+            <div class="hi-shell dg-grid dg-grid--reverse">
+                <figure class="dg-media">
+                    <img src="../assets/images/sunday-guidance-gathering.webp" alt="ज्ञान चर्चा और आध्यात्मिक मार्गदर्शन का दृश्य" loading="lazy">
+                    <figcaption>दिव्य ज्ञान ने अनेक जिज्ञासुओं को आस्था, आत्मबोध और साधना की दिशा दी।</figcaption>
+                </figure>
+                <div class="dg-copy">
+                    <span class="hi-kicker">दिव्य ज्ञान का प्रभाव</span>
+                    <h2 id="impact-title">संशय से श्रद्धा और आत्मबोध की ओर</h2>
+                    <p>पुस्तक में निहित दिव्य ज्ञान ने अनेक व्यक्तियों के जीवन को नई दिशा, दृष्टि और सार्थकता प्रदान की है। इसके अध्ययन से हजारों लोगों ने मानव-जीवन के उद्देश्य, ईश्वर की सत्ता और चैतन्य शक्ति के स्वरूप को समझने का प्रयास किया।</p>
+                    <p>इस ज्ञान ने अनेक जिज्ञासुओं के संशयों और आध्यात्मिक प्रश्नों का समाधान किया। ईश्वर के अस्तित्व के प्रति संशय रखने वाले कई व्यक्ति भी इसके प्रभाव से आस्था की ओर प्रवृत्त हुए और अपने जीवन को आध्यात्मिक मूल्यों के अनुरूप ढालने लगे।</p>
+                    <div class="dg-note">यह पुस्तक केवल जानकारी नहीं देती; यह पाठक को प्रश्न करने, चिंतन करने और आत्मबोध की ओर चलने का आह्वान करती है।</div>
+                    <div class="hi-actions">
+                        <a class="hi-btn hi-btn--primary" href="buddhi-vivek-yog-sadhna.html">बुद्धि-विवेक योग साधना</a>
+                        <a class="hi-btn hi-btn--soft" href="faq.html">प्रश्नोत्तरी पढ़ें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section dg-closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">अमृततुल्य अलौकिक देन</span>
+                    <h2 id="closing-title">ज्ञान जो मानव जीवन के वास्तविक लक्ष्य की ओर ले जाता है</h2>
+                    <p>मृत्यु के बाद का अलौकिक संसार और बुद्धि-विवेक योग साधना को अलग-अलग नहीं, बल्कि एक समग्र आध्यात्मिक दृष्टि के रूप में समझना चाहिए। एक दिव्य ज्ञान का प्रकाश है, दूसरा उसे जीवन में उतारने की सरल पद्धति।</p>
+                </header>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="publications.html">दिव्य साहित्य देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="bhaiyaji-sadhna-kaal.html">भैया जी का साधना काल</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
