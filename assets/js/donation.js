@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         status.textContent = "Loading verified details";
 
         try {
-            const response = await fetch("/assets/data/donation-details.json", { cache: "no-store" });
+            const response = await fetch("../assets/data/donation-details.json", { cache: "no-store" });
 
             if (!response.ok) throw new Error(`Donation data request failed with status ${response.status}`);
 

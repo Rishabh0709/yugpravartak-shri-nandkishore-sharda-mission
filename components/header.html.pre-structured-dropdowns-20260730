@@ -8,7 +8,7 @@
         >
             <img
                 class="site-brand-logo"
-                src="/assets/images/logo.png"
+                src="../assets/images/logo.png"
                 alt=""
                 width="120"
                 height="120"
