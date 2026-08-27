@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="माँ शारदामणि ट्रस्ट द्वारा उच्च शिक्षा, संस्कार, छात्रवृत्ति और आत्मनिर्भर नारी निर्माण की सेवा-यात्रा।">
+    <title>माँ शारदामणि ट्रस्ट | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .shardamani-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+        }
+
+        .shardamani-hero {
+            position: relative;
+            min-height: 720px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(150px, 17vh, 205px) 0 90px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .84) 42%, rgba(255, 244, 225, .5) 72%, rgba(255, 244, 225, .16) 100%),
+                url("../assets/images/maa-shardamani-scholarship-distribution.jpg") center / cover no-repeat;
+        }
+
+        .shardamani-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 160px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .shardamani-hero__content {
+            position: relative;
+            z-index: 1;
+            width: min(760px, 58vw);
+        }
+
+        .shardamani-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(3.3rem, 6vw, 6.2rem);
+            line-height: 1.04;
+            letter-spacing: 0;
+        }
+
+        .shardamani-hero__lead {
+            max-width: 720px;
+            margin: 0 0 28px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.25rem, 2vw, 1.75rem);
+            line-height: 1.9;
+        }
+
+        .shardamani-hero__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .shardamani-hero__meta li {
+            padding: 10px 16px;
+            border: 1px solid rgba(121, 43, 42, .16);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .8);
+            color: var(--hi-maroon);
+            font-weight: 800;
+        }
+
+        .shardamani-section {
+            padding: clamp(76px, 9vw, 120px) 0;
+        }
+
+        .shardamani-section--intro {
+            padding-top: 40px;
+        }
+
+        .shardamani-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .shardamani-media {
+            position: relative;
+            overflow: hidden;
+            min-height: 420px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .shardamani-media img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .shardamani-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2.1rem, 3.5vw, 4rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .shardamani-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.1rem;
+            line-height: 1.95;
+        }
+
+        .shardamani-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .shardamani-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        .shardamani-stat {
+            padding: 24px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 18px 42px rgba(82, 50, 34, .08);
+        }
+
+        .shardamani-stat span {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.75rem, 3vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .shardamani-stat p {
+            margin: 0;
+            color: #62534a;
+            font-size: .98rem;
+            line-height: 1.6;
+        }
+
+        .shardamani-growth {
+            margin-top: clamp(44px, 6vw, 72px);
+        }
+
+        .shardamani-growth__heading {
+            max-width: 780px;
+            margin-bottom: 26px;
+        }
+
+        .shardamani-growth__heading h3 {
+            margin: 0 0 8px;
+            color: var(--hi-ink);
+            font-size: clamp(1.55rem, 2.4vw, 2.4rem);
+            line-height: 1.25;
+        }
+
+        .shardamani-growth__heading p {
+            margin: 0;
+            color: #6a5a50;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .shardamani-chart-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .shardamani-line-chart {
+            overflow: hidden;
+            min-height: 430px;
+            padding: clamp(24px, 3vw, 34px);
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background:
+                linear-gradient(180deg, rgba(255, 252, 246, .94), rgba(255, 248, 238, .86));
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .1);
+        }
+
+        .shardamani-line-chart__head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 16px;
+        }
+
+        .shardamani-line-chart h4 {
+            margin: 0 0 6px;
+            color: var(--hi-ink);
+            font-size: 1.22rem;
+            line-height: 1.35;
+        }
+
+        .shardamani-line-chart__unit {
+            display: block;
+            color: #7d6d61;
+            font-size: .9rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .shardamani-line-chart__total {
+            flex: 0 0 auto;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.45rem, 2.2vw, 2.05rem);
+            font-weight: 800;
+            line-height: 1.1;
+            text-align: right;
+        }
+
+        .shardamani-line-chart svg {
+            width: 100%;
+            min-height: 260px;
+            height: auto;
+            display: block;
+        }
+
+        .shardamani-line-chart .axis,
+        .shardamani-line-chart .grid-line {
+            stroke: rgba(121, 43, 42, .16);
+            stroke-width: 1;
+        }
+
+        .shardamani-line-chart .trend-area {
+            fill: rgba(198, 148, 53, .14);
+        }
+
+        .shardamani-line-chart .trend-line {
+            fill: none;
+            stroke: var(--hi-maroon);
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .shardamani-line-chart .trend-point {
+            fill: #fffaf1;
+            stroke: var(--hi-maroon);
+            stroke-width: 3;
+        }
+
+        .shardamani-line-chart .trend-point--last {
+            fill: var(--hi-gold);
+            stroke: var(--hi-maroon);
+            stroke-width: 4;
+        }
+
+        .shardamani-line-chart text {
+            fill: #6a5a50;
+            font-family: "Noto Sans Devanagari", sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .shardamani-line-chart .axis-label {
+            fill: #8a7667;
+            font-size: 10.5px;
+            font-weight: 800;
+        }
+
+        .shardamani-line-chart .value-label {
+            fill: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .shardamani-chart-note {
+            margin: 14px 0 0;
+            color: #6a5a50;
+            font-size: .92rem;
+            line-height: 1.65;
+        }
+
+        .shardamani-values {
+            background:
+                radial-gradient(circle at 16% 14%, rgba(222, 238, 236, .68), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
+        }
+
+        .shardamani-value-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 36px;
+        }
+
+        .shardamani-value-card {
+            min-height: 210px;
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .shardamani-value-card span {
+            display: inline-flex;
+            width: 42px;
+            height: 42px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            background: var(--hi-maroon);
+            color: #fffaf1;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+        .shardamani-value-card h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.35rem;
+            line-height: 1.45;
+        }
+
+        .shardamani-value-card p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .shardamani-journey {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+        }
+
+        .shardamani-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 36px;
+        }
+
+        .shardamani-step {
+            padding: 28px;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .shardamani-step small {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--hi-maroon);
+            font-weight: 900;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+
+        .shardamani-step h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.42rem;
+        }
+
+        .shardamani-step p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .shardamani-closing {
+            padding: clamp(80px, 10vw, 130px) 0;
+            text-align: center;
+            background:
+                linear-gradient(180deg, rgba(255, 250, 241, .58), rgba(255, 250, 241, .96)),
+                url("../assets/images/gallery/scholarship-distribution/08-card.webp") center / cover no-repeat;
+        }
+
+        .shardamani-closing .hi-section-heading {
+            max-width: 860px;
+            margin-inline: auto;
+        }
+
+        .shardamani-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 980px) {
+            .shardamani-hero__content {
+                width: min(100%, 720px);
+            }
+
+            .shardamani-grid,
+            .shardamani-stats,
+            .shardamani-value-grid,
+            .shardamani-timeline {
+                grid-template-columns: 1fr;
+            }
+
+            .shardamani-media,
+            .shardamani-media img {
+                min-height: 320px;
+            }
+
+        }
+
+        @media (max-width: 640px) {
+            .shardamani-hero {
+                min-height: auto;
+                padding-top: 128px;
+                background-position: 56% center;
+            }
+
+            .shardamani-hero h1 {
+                font-size: clamp(2.7rem, 14vw, 4.1rem);
+            }
+
+            .shardamani-hero__lead {
+                font-size: 1.12rem;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home shardamani-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="shardamani-hero" aria-labelledby="shardamani-title">
+            <div class="hi-shell shardamani-hero__content">
+                <span class="hi-eyebrow">उच्च शिक्षा, संस्कार और आत्मनिर्भरता</span>
+                <h1 id="shardamani-title">माँ शारदामणि ट्रस्ट</h1>
+                <p class="shardamani-hero__lead">बालिकाओं की उच्च शिक्षा को संस्कार, विवेक और आत्मविश्वास से जोड़ने वाली मणिद्वीप की निःस्वार्थ सेवा-धारा।</p>
+                <ul class="shardamani-hero__meta" aria-label="ट्रस्ट की प्रमुख जानकारी">
+                    <li>स्थापना: 28 मार्च 2001</li>
+                    <li>3,400+ छात्राएँ</li>
+                    <li>₹1.64 करोड़+ छात्रवृत्ति</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shardamani-section shardamani-section--intro" aria-labelledby="vision-title">
+            <div class="hi-shell shardamani-grid">
+                <figure class="shardamani-media">
+                    <img src="../assets/images/maa-shardamani-scholarship-distribution.jpg" alt="माँ शारदामणि ट्रस्ट द्वारा छात्रवृत्ति सहयोग" loading="lazy">
+                </figure>
+                <div class="shardamani-copy">
+                    <span class="hi-eyebrow">दूरदृष्टि से जन्मी सेवा</span>
+                    <h2 id="vision-title">विद्यालय से उच्च शिक्षा तक</h2>
+                    <p>स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट की स्थापना के बाद भैया श्री नन्दकिशोर जी शारदा एवं माँ बसन्ती जी ने अनुभव किया कि छात्राओं के सर्वांगीण विकास और उज्ज्वल भविष्य के लिए केवल विद्यालय स्तर की शिक्षा पर्याप्त नहीं है।</p>
+                    <p>बालिकाओं को उच्च शिक्षा के अवसरों के साथ ऐसे संस्कार और जीवन-मूल्य भी मिलना आवश्यक है, जो उन्हें <strong>आत्मविश्वासी, विवेकशील, आत्मनिर्भर और जिम्मेदार नागरिक</strong> बनाएँ। इसी दूरदृष्टि से 28 मार्च 2001 को माँ शारदामणि ट्रस्ट की स्थापना हुई।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shardamani-section" aria-labelledby="purpose-title">
+            <div class="hi-shell">
+                <div class="shardamani-grid">
+                    <div class="shardamani-copy">
+                    <span class="hi-eyebrow">शिक्षा का सच्चा उद्देश्य</span>
+                    <h2 id="purpose-title">छात्रवृत्ति से आगे, जीवन-निर्माण तक</h2>
+                    <p>ट्रस्ट का उद्देश्य सामान्यतया विद्यालय स्तर से चयनित छात्राओं को उच्च शिक्षा के लिए छात्रवृत्ति तथा विश्वविद्यालय स्तर की निःशुल्क पाठ्य-पुस्तकों की सुविधा उपलब्ध कराना था, ताकि आर्थिक अभाव उनकी शिक्षा की राह में बाधा न बने।</p>
+                    <p>यह पहल केवल डिग्री प्राप्त करवाने तक सीमित नहीं रही। भैया जी और माँ बसन्ती जी का मानना था कि शिक्षा तभी पूर्ण है, जब वह ज्ञान के साथ संस्कार और विवेक भी प्रदान करे। इसी भावना से छात्राओं के लिए संस्कार कक्षाओं की व्यवस्था की गई।</p>
+                    <div class="shardamani-stats" aria-label="ट्रस्ट का प्रभाव">
+                        <div class="shardamani-stat"><span>2001</span><p>से निरंतर उच्च शिक्षा सहयोग की सेवा।</p></div>
+                        <div class="shardamani-stat"><span>3,400+</span><p>छात्राओं को शिक्षा के अवसरों से जोड़ा गया।</p></div>
+                        <div class="shardamani-stat"><span>₹1.64 करोड़+</span><p>मार्च 2026 तक छात्रवृत्ति सहयोग।</p></div>
+                    </div>
+                </div>
+                    <figure class="shardamani-media">
+                        <img src="../assets/images/gallery/scholarship-distribution/10-card.webp" alt="छात्राओं को उच्च शिक्षा के लिए मार्गदर्शन" loading="lazy">
+                    </figure>
+                </div>
+                <div class="shardamani-growth" aria-labelledby="growth-title">
+                        <div class="shardamani-growth__heading">
+                            <h3 id="growth-title">वर्षों में बढ़ती सेवा-धारा</h3>
+                            <p>2001 से 2026 तक उच्च शिक्षा सहयोग की संचयी यात्रा, छात्राओं की संख्या और छात्रवृत्ति राशि दोनों रूपों में निरंतर विस्तार दिखाती है।</p>
+                        </div>
+                        <div class="shardamani-chart-grid">
+                            <article class="shardamani-line-chart" aria-labelledby="girls-chart-title">
+                                <div class="shardamani-line-chart__head">
+                                    <div>
+                                        <h4 id="girls-chart-title">लाभान्वित छात्राएँ</h4>
+                                        <span class="shardamani-line-chart__unit">संचयी संख्या</span>
+                                    </div>
+                                    <strong class="shardamani-line-chart__total">3,405</strong>
+                                </div>
+                                <svg viewBox="0 0 560 320" role="img" aria-labelledby="girls-chart-title girls-chart-desc">
+                                    <desc id="girls-chart-desc">2001-05 में 105 छात्राओं से बढ़कर 2025-26 में 3,405 छात्राओं तक पहुँची संचयी सेवा।</desc>
+                                    <line class="grid-line" x1="72" y1="50" x2="530" y2="50"></line>
+                                    <line class="grid-line" x1="72" y1="112" x2="530" y2="112"></line>
+                                    <line class="grid-line" x1="72" y1="174" x2="530" y2="174"></line>
+                                    <line class="axis" x1="72" y1="236" x2="530" y2="236"></line>
+                                    <line class="axis" x1="72" y1="36" x2="72" y2="236"></line>
+                                    <text class="axis-label" x="58" y="54" text-anchor="end">3,400</text>
+                                    <text class="axis-label" x="58" y="116" text-anchor="end">2,550</text>
+                                    <text class="axis-label" x="58" y="178" text-anchor="end">1,700</text>
+                                    <text class="axis-label" x="58" y="240" text-anchor="end">0</text>
+                                    <path class="trend-area" d="M72 230 L148 226 L225 198 L301 152 L377 104 L454 52 L530 36 L530 236 L72 236 Z"></path>
+                                    <polyline class="trend-line" points="72,230 148,226 225,198 301,152 377,104 454,52 530,36"></polyline>
+                                    <circle class="trend-point" cx="72" cy="230" r="6"></circle>
+                                    <circle class="trend-point" cx="148" cy="226" r="6"></circle>
+                                    <circle class="trend-point" cx="225" cy="198" r="6"></circle>
+                                    <circle class="trend-point" cx="301" cy="152" r="6"></circle>
+                                    <circle class="trend-point" cx="377" cy="104" r="6"></circle>
+                                    <circle class="trend-point" cx="454" cy="52" r="6"></circle>
+                                    <circle class="trend-point trend-point--last" cx="530" cy="36" r="7"></circle>
+                                    <text x="72" y="262" text-anchor="middle">2001-05</text>
+                                    <text x="225" y="262" text-anchor="middle">2009-13</text>
+                                    <text x="377" y="262" text-anchor="middle">2017-21</text>
+                                    <text x="530" y="262" text-anchor="middle">2025-26</text>
+                                    <text class="value-label" x="72" y="216" text-anchor="middle">105</text>
+                                    <text class="value-label" x="148" y="212" text-anchor="middle">171</text>
+                                    <text class="value-label" x="225" y="184" text-anchor="middle">640</text>
+                                    <text class="value-label" x="301" y="138" text-anchor="middle">1,417</text>
+                                    <text class="value-label" x="377" y="90" text-anchor="middle">2,240</text>
+                                    <text class="value-label" x="454" y="38" text-anchor="middle">3,109</text>
+                                    <text class="value-label" x="530" y="22" text-anchor="middle">3,405</text>
+                                </svg>
+                                <p class="shardamani-chart-note">हर चरण में छात्राओं की संख्या बढ़ते हुए उच्च शिक्षा की व्यापक पहुँच का प्रमाण देती है।</p>
+                            </article>
+                            <article class="shardamani-line-chart" aria-labelledby="amount-chart-title">
+                                <div class="shardamani-line-chart__head">
+                                    <div>
+                                        <h4 id="amount-chart-title">छात्रवृत्ति राशि</h4>
+                                        <span class="shardamani-line-chart__unit">संचयी राशि, लाखों में</span>
+                                    </div>
+                                    <strong class="shardamani-line-chart__total">₹164.56 लाख</strong>
+                                </div>
+                                <svg viewBox="0 0 560 320" role="img" aria-labelledby="amount-chart-title amount-chart-desc">
+                                    <desc id="amount-chart-desc">2001-05 में 1.33 लाख से बढ़कर 2025-26 में 164.56 लाख तक पहुँची संचयी छात्रवृत्ति राशि।</desc>
+                                    <line class="grid-line" x1="72" y1="50" x2="530" y2="50"></line>
+                                    <line class="grid-line" x1="72" y1="112" x2="530" y2="112"></line>
+                                    <line class="grid-line" x1="72" y1="174" x2="530" y2="174"></line>
+                                    <line class="axis" x1="72" y1="236" x2="530" y2="236"></line>
+                                    <line class="axis" x1="72" y1="36" x2="72" y2="236"></line>
+                                    <text class="axis-label" x="58" y="54" text-anchor="end">165</text>
+                                    <text class="axis-label" x="58" y="116" text-anchor="end">124</text>
+                                    <text class="axis-label" x="58" y="178" text-anchor="end">82</text>
+                                    <text class="axis-label" x="58" y="240" text-anchor="end">0</text>
+                                    <path class="trend-area" d="M72 234 L148 233 L225 222 L301 195 L377 151 L454 64 L530 36 L530 236 L72 236 Z"></path>
+                                    <polyline class="trend-line" points="72,234 148,233 225,222 301,195 377,151 454,64 530,36"></polyline>
+                                    <circle class="trend-point" cx="72" cy="234" r="6"></circle>
+                                    <circle class="trend-point" cx="148" cy="233" r="6"></circle>
+                                    <circle class="trend-point" cx="225" cy="222" r="6"></circle>
+                                    <circle class="trend-point" cx="301" cy="195" r="6"></circle>
+                                    <circle class="trend-point" cx="377" cy="151" r="6"></circle>
+                                    <circle class="trend-point" cx="454" cy="64" r="6"></circle>
+                                    <circle class="trend-point trend-point--last" cx="530" cy="36" r="7"></circle>
+                                    <text x="72" y="262" text-anchor="middle">2001-05</text>
+                                    <text x="225" y="262" text-anchor="middle">2009-13</text>
+                                    <text x="377" y="262" text-anchor="middle">2017-21</text>
+                                    <text x="530" y="262" text-anchor="middle">2025-26</text>
+                                    <text class="value-label" x="72" y="220" text-anchor="middle">1.33</text>
+                                    <text class="value-label" x="148" y="219" text-anchor="middle">2.77</text>
+                                    <text class="value-label" x="225" y="208" text-anchor="middle">11.46</text>
+                                    <text class="value-label" x="301" y="181" text-anchor="middle">33.57</text>
+                                    <text class="value-label" x="377" y="137" text-anchor="middle">70.29</text>
+                                    <text class="value-label" x="454" y="50" text-anchor="middle">141.41</text>
+                                    <text class="value-label" x="530" y="22" text-anchor="middle">164.56</text>
+                                </svg>
+                                <p class="shardamani-chart-note">छात्रवृत्ति राशि का विस्तार बताता है कि सेवा केवल निरंतर नहीं रही, बल्कि समय के साथ अधिक समर्थ भी हुई।</p>
+                            </article>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="shardamani-section shardamani-values" aria-labelledby="values-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">संस्कार कक्षाओं का प्रभाव</span>
+                    <h2 id="values-title">ज्ञान के साथ विवेक और उत्तरदायित्व</h2>
+                    <p>संस्कार कक्षाओं में भारतीय संस्कृति, नैतिक मूल्यों, अनुशासन, कर्तव्यबोध, सेवा, सदाचार, आध्यात्मिक चिंतन और सकारात्मक दृष्टिकोण पर मार्गदर्शन दिया जाता रहा।</p>
+                </header>
+                <div class="shardamani-value-grid">
+                    <article class="shardamani-value-card">
+                        <span>१</span>
+                        <h3>आत्मविश्वास</h3>
+                        <p>छात्राओं में आत्मसम्मान, निर्णय-क्षमता और जीवन की चुनौतियों का धैर्यपूर्वक सामना करने की शक्ति बढ़ी।</p>
+                    </article>
+                    <article class="shardamani-value-card">
+                        <span>२</span>
+                        <h3>संस्कार</h3>
+                        <p>बड़ों के प्रति सम्मान, परिवार के प्रति उत्तरदायित्व और समाज के प्रति संवेदनशीलता विकसित हुई।</p>
+                    </article>
+                    <article class="shardamani-value-card">
+                        <span>३</span>
+                        <h3>आत्मनिर्भरता</h3>
+                        <p>उच्च शिक्षा के बाद अनेक छात्राएँ अपने पैरों पर खड़ी हुईं और परिवारों को आर्थिक-भावनात्मक संबल देने लगीं।</p>
+                    </article>
+                    <article class="shardamani-value-card">
+                        <span>४</span>
+                        <h3>नारी सशक्तिकरण</h3>
+                        <p>ट्रस्ट ने शिक्षा को छात्रवृत्ति, छात्रवृत्ति को आत्मनिर्भरता और आत्मनिर्भरता को उत्तरदायित्व से जोड़ा।</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="shardamani-section shardamani-journey" aria-labelledby="journey-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">एक छात्रा से परिवार तक</span>
+                    <h2 id="journey-title">सहयोग का प्रभाव पीढ़ियों तक</h2>
+                    <p>एक छात्रा को मिला अवसर केवल उसके व्यक्तिगत जीवन को नहीं, बल्कि परिवार और आने वाली पीढ़ियों को भी दिशा देता है।</p>
+                </header>
+                <div class="shardamani-timeline">
+                    <article class="shardamani-step">
+                        <small>अवसर</small>
+                        <h3>उच्च शिक्षा की राह खुली</h3>
+                        <p>पी.एच.डी., सी.ए., इंजीनियरिंग, एम.बी.ए., एम.सी.ए., बी.एड. जैसी उच्च और व्यावसायिक शिक्षा के मार्ग प्रशस्त हुए।</p>
+                    </article>
+                    <article class="shardamani-step">
+                        <small>आत्मनिर्भरता</small>
+                        <h3>अपने पैरों पर खड़ी छात्राएँ</h3>
+                        <p>शिक्षा पूर्ण कर अनेक छात्राएँ आर्थिक रूप से आत्मनिर्भर बनीं और अपने परिवारों को स्थिरता प्रदान करने लगीं।</p>
+                    </article>
+                    <article class="shardamani-step">
+                        <small>संस्कार</small>
+                        <h3>परिवार और समाज में प्रकाश</h3>
+                        <p>कई छात्राएँ आज जागरूक माताएँ, जिम्मेदार परिवार-सदस्य और समाज-राष्ट्र निर्माण में योगदान देने वाली प्रेरक महिलाएँ हैं।</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="shardamani-section" aria-labelledby="achievement-title">
+            <div class="hi-shell shardamani-grid">
+                <figure class="shardamani-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/15-card.webp" alt="छात्रवृत्ति से लाभान्वित छात्राओं का समूह" loading="lazy">
+                </figure>
+                <div class="shardamani-copy">
+                    <span class="hi-eyebrow">सच्चा नारी सशक्तिकरण</span>
+                    <h2 id="achievement-title">ज्ञानवान, संस्कारवान और उत्तरदायी नारी</h2>
+                    <p>माँ शारदामणि ट्रस्ट की सबसे बड़ी उपलब्धि यही है कि उसने शिक्षा को छात्रवृत्ति, छात्रवृत्ति को आत्मनिर्भरता और आत्मनिर्भरता को संस्कार एवं उत्तरदायित्व से जोड़ा है।</p>
+                    <p>यहाँ उद्देश्य केवल एक छात्रा को पढ़ाना नहीं, बल्कि ऐसी महिला का निर्माण करना है जो ज्ञानवान होने के साथ संस्कारवान, आत्मविश्वासी होने के साथ विनम्र और आत्मनिर्भर होने के साथ परिवार एवं समाज के प्रति उत्तरदायी हो।</p>
+                    <p><strong>यही शिक्षा का वास्तविक उद्देश्य है और यही सच्चा नारी सशक्तिकरण है।</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shardamani-closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">निष्काम कर्म की सेवा-धारा</span>
+                    <h2 id="closing-title">जहाँ शिक्षा अवसर बनती है, और अवसर जीवन-दृष्टि।</h2>
+                    <p>माँ शारदामणि ट्रस्ट भैया जी और माँ बसन्ती जी की उस भावना को आगे बढ़ाता है जिसमें शिक्षा, संस्कार और आत्मनिर्भरता मिलकर समाज के समग्र विकास का आधार बनते हैं।</p>
+                </header>
+                <div class="shardamani-actions">
+                    <a class="hi-btn hi-btn--primary" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="sunday-sanskar-classes.html">संस्कार कक्षाओं के बारे में पढ़ें</a>
+                    <a class="hi-btn hi-btn--outline" href="margdarshan-siddhant.html">मार्गदर्शन सिद्धान्त पढ़ें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>

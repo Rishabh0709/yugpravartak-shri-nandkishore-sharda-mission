@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र की शिक्षा, खाद्य-सहायता, योग, महिला आत्मनिर्भरता और समग्र मानव सेवा की यात्रा।">
+    <title>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .gyanyogi-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
+        }
+
+        .gyanyogi-hero {
+            position: relative;
+            min-height: 720px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(150px, 17vh, 205px) 0 90px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .95) 0%, rgba(255, 250, 241, .86) 42%, rgba(255, 244, 225, .5) 74%, rgba(255, 244, 225, .12) 100%),
+                url("../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp") center / cover no-repeat;
+        }
+
+        .gyanyogi-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 160px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .gyanyogi-hero__content {
+            position: relative;
+            z-index: 1;
+            width: min(820px, 62vw);
+        }
+
+        .gyanyogi-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2.9rem, 5.1vw, 5.8rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .gyanyogi-hero__lead {
+            max-width: 760px;
+            margin: 0 0 28px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.62rem);
+            line-height: 1.9;
+        }
+
+        .gyanyogi-hero__meta,
+        .gyanyogi-impact {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .gyanyogi-hero__meta li,
+        .gyanyogi-impact__item {
+            padding: 18px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 16px 40px rgba(82, 50, 34, .08);
+        }
+
+        .gyanyogi-hero__meta strong,
+        .gyanyogi-impact__item strong {
+            display: block;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+            line-height: 1.12;
+        }
+
+        .gyanyogi-hero__meta span,
+        .gyanyogi-impact__item span {
+            display: block;
+            margin-top: 8px;
+            color: #67584e;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .gyanyogi-section {
+            padding: clamp(76px, 9vw, 120px) 0;
+        }
+
+        .gyanyogi-section--intro {
+            padding-top: 42px;
+        }
+
+        .gyanyogi-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .gyanyogi-grid--reverse .gyanyogi-media {
+            order: 2;
+        }
+
+        .gyanyogi-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.9rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .gyanyogi-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .gyanyogi-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .gyanyogi-media {
+            overflow: hidden;
+            min-height: 420px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .gyanyogi-media img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .gyanyogi-pillars {
+            background:
+                radial-gradient(circle at 16% 14%, rgba(222, 238, 236, .68), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
+        }
+
+        .gyanyogi-pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 38px;
+        }
+
+        .gyanyogi-pillar {
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .86);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .gyanyogi-pillar figure {
+            height: 190px;
+            margin: 0;
+            overflow: hidden;
+            background: #f4e6d2;
+        }
+
+        .gyanyogi-pillar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gyanyogi-pillar__body {
+            padding: 24px;
+        }
+
+        .gyanyogi-pillar h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.32rem;
+            line-height: 1.45;
+        }
+
+        .gyanyogi-pillar p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .gyanyogi-impact-band {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+        }
+
+        .gyanyogi-journey {
+            display: grid;
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        .gyanyogi-step {
+            display: grid;
+            grid-template-columns: 120px minmax(0, 1fr);
+            gap: 24px;
+            align-items: start;
+            padding: 26px;
+            border: 1px solid rgba(121, 43, 42, .13);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .gyanyogi-step strong {
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
+
+        .gyanyogi-step h3 {
+            margin: 0 0 8px;
+            color: var(--hi-ink);
+            font-size: 1.35rem;
+        }
+
+        .gyanyogi-step p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .gyanyogi-closing {
+            padding: clamp(80px, 10vw, 130px) 0;
+            text-align: center;
+            background:
+                linear-gradient(180deg, rgba(255, 250, 241, .68), rgba(255, 250, 241, .96)),
+                url("../assets/images/gallery/ration-distribution/06-card.webp") center / cover no-repeat;
+        }
+
+        .gyanyogi-closing .hi-section-heading {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        .gyanyogi-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 980px) {
+            .gyanyogi-hero__content {
+                width: min(100%, 720px);
+            }
+
+            .gyanyogi-hero__meta,
+            .gyanyogi-impact,
+            .gyanyogi-grid,
+            .gyanyogi-pillar-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gyanyogi-grid--reverse .gyanyogi-media {
+                order: 0;
+            }
+
+            .gyanyogi-media,
+            .gyanyogi-media img {
+                min-height: 320px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .gyanyogi-hero {
+                min-height: auto;
+                padding-top: 128px;
+            }
+
+            .gyanyogi-hero h1 {
+                font-size: clamp(2.35rem, 12vw, 3.8rem);
+            }
+
+            .gyanyogi-step {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home gyanyogi-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="gyanyogi-hero" aria-labelledby="gyanyogi-title">
+            <div class="hi-shell gyanyogi-hero__content">
+                <span class="hi-eyebrow">शिक्षा से सेवा और समग्र विकास तक</span>
+                <h1 id="gyanyogi-title">ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र</h1>
+                <p class="gyanyogi-hero__lead">आर्थिक रूप से कमजोर विद्यार्थियों की शिक्षा से प्रारम्भ होकर खाद्य-सहायता, योग, स्वास्थ्य और महिला आत्मनिर्भरता तक विस्तृत होती निष्काम सेवा-धारा।</p>
+                <ul class="gyanyogi-hero__meta" aria-label="ट्रस्ट की प्रमुख जानकारी">
+                    <li><strong>2010</strong><span>माँ बसन्ती जी द्वारा स्थापना</span></li>
+                    <li><strong>630+</strong><span>विद्यार्थी लाभान्वित</span></li>
+                    <li><strong>300</strong><span>परिवारों तक नियमित खाद्यान्न सहायता</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gyanyogi-section gyanyogi-section--intro" aria-labelledby="origin-title">
+            <div class="hi-shell gyanyogi-grid">
+                <figure class="gyanyogi-media">
+                    <img src="../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp" alt="ज्ञानयोगी अध्यात्म केन्द्र द्वारा शिक्षा सहयोग" loading="lazy">
+                </figure>
+                <div class="gyanyogi-copy">
+                    <span class="hi-eyebrow">एक नई आवश्यकता का उत्तर</span>
+                    <h2 id="origin-title">बालक शिक्षा और व्यावसायिक भविष्य की ओर</h2>
+                    <p>स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट एवं माँ शारदामणि ट्रस्ट के माध्यम से प्रत्येक वर्ष सैकड़ों छात्राएँ कक्षा 9वीं से उच्च शिक्षा तक की पढ़ाई कर अपना भविष्य सँवारने लगीं।</p>
+                    <p>सन् 2003 में भैया श्री नन्दकिशोर जी शारदा के चैतन्यस्वरूप होने के पश्चात् माँ बसन्ती जी ने शिक्षा एवं सेवा के कार्यों को आगे बढ़ाया। इसी दौरान उन्होंने अनुभव किया कि आर्थिक कठिनाइयों के कारण केवल बालिकाएँ ही नहीं, बल्कि कमजोर परिवारों के बालक भी उच्च एवं व्यावसायिक शिक्षा से वंचित हो रहे थे।</p>
+                    <p>इसी आवश्यकता को ध्यान में रखते हुए, जगत्जननी माँ के निर्देशानुसार वर्ष 2010 में <strong>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र</strong> की स्थापना हुई।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyanyogi-section" aria-labelledby="education-title">
+            <div class="hi-shell gyanyogi-grid gyanyogi-grid--reverse">
+                <figure class="gyanyogi-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/16-card.webp" alt="उच्च शिक्षा के लिए छात्रवृत्ति प्राप्त विद्यार्थी" loading="lazy">
+                </figure>
+                <div class="gyanyogi-copy">
+                    <span class="hi-eyebrow">प्रतिभा को दिशा</span>
+                    <h2 id="education-title">स्कूली, उच्च और व्यावसायिक शिक्षा में सहयोग</h2>
+                    <p>इस केन्द्र का उद्देश्य जरूरतमंद छात्रों को स्कूली, उच्च एवं व्यावसायिक शिक्षा के लिए छात्रवृत्ति, मार्गदर्शन और आवश्यक सहयोग प्रदान करना था।</p>
+                    <p>इसके माध्यम से अनेक विद्यार्थियों ने इंजीनियरिंग, चिकित्सा, नर्सिंग, सी.ए., सी.एस., एम.बी.ए., बी.बी.ए. आदि उच्च एवं व्यावसायिक पाठ्यक्रमों में शिक्षा प्राप्त कर अपने जीवन को नई दिशा दी।</p>
+                    <p>इन अवसरों ने विद्यार्थियों को अपनी प्रतिभा और रुचि के अनुरूप क्षेत्र चुनने, व्यावसायिक दक्षता विकसित करने और भविष्य में आत्मनिर्भर बनने का मार्ग दिया।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyanyogi-section gyanyogi-pillars" aria-labelledby="pillars-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">सेवा के विस्तृत आयाम</span>
+                    <h2 id="pillars-title">शिक्षा से आगे, जीवन के संतुलन तक</h2>
+                    <p>समय के साथ केन्द्र की भूमिका शिक्षा से आगे बढ़कर समग्र मानव विकास और सेवा की दिशा में विस्तृत हुई।</p>
+                </header>
+                <div class="gyanyogi-pillar-grid">
+                    <article class="gyanyogi-pillar">
+                        <figure><img src="../assets/images/gallery/ration-distribution/06-card.webp" alt="खाद्यान्न सहायता वितरण" loading="lazy"></figure>
+                        <div class="gyanyogi-pillar__body">
+                            <h3>खाद्यान्न सहायता</h3>
+                            <p>कोरोना काल में 50 परिवारों से आरम्भ सेवा आज लगभग 300 जरूरतमंद परिवारों तक नियमित रूप से पहुँच रही है।</p>
+                        </div>
+                    </article>
+                    <article class="gyanyogi-pillar">
+                        <figure><img src="../assets/images/yoga_class.jpg" alt="सिद्धपीठ में योग और प्राणायाम कक्षा" loading="lazy"></figure>
+                        <div class="gyanyogi-pillar__body">
+                            <h3>योग, प्राणायाम और ध्यान</h3>
+                            <p>10 जून 2022 से सिद्धपीठ में प्रतिदिन प्रातः 7:15 से 8:15 बजे तक निःशुल्क योग कक्षाएँ संचालित हैं।</p>
+                        </div>
+                    </article>
+                    <article class="gyanyogi-pillar">
+                        <figure><img src="../assets/images/gallery/sewing-center/04-card.webp" alt="महिला सिलाई प्रशिक्षण" loading="lazy"></figure>
+                        <div class="gyanyogi-pillar__body">
+                            <h3>महिला आत्मनिर्भरता</h3>
+                            <p>जरूरतमंद महिलाओं को सिलाई मशीन एवं सहयोग देने के साथ 2025 में निःशुल्क सिलाई केन्द्र प्रारम्भ हुआ।</p>
+                        </div>
+                    </article>
+                    <article class="gyanyogi-pillar">
+                        <figure><img src="../assets/images/sunday-guidance-gathering.webp" alt="आध्यात्मिक मार्गदर्शन और सामूहिक संवाद" loading="lazy"></figure>
+                        <div class="gyanyogi-pillar__body">
+                            <h3>समग्र व्यक्तित्व विकास</h3>
+                            <p>शिक्षा, स्वास्थ्य, आत्म-अनुशासन, सकारात्मक दृष्टि और सेवा-भाव को जीवन से जोड़ने का सतत प्रयास।</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyanyogi-section gyanyogi-impact-band" aria-labelledby="impact-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">मार्च 2026 तक</span>
+                    <h2 id="impact-title">संख्याओं में सेवा का विस्तार</h2>
+                    <p>ये आँकड़े केवल सहायता का विवरण नहीं, बल्कि शिक्षा, सम्मान और स्थिरता की दिशा में आगे बढ़ते जीवनों का संकेत हैं।</p>
+                </header>
+                <div class="gyanyogi-impact" aria-label="ज्ञानयोगी अध्यात्म केन्द्र का प्रभाव">
+                    <div class="gyanyogi-impact__item"><strong>₹1.64 करोड़</strong><span>छात्रवृत्ति, खाद्यान्न सहायता और अन्य सेवा-कार्यों में प्रदान।</span></div>
+                    <div class="gyanyogi-impact__item"><strong>630+</strong><span>विद्यार्थियों को शिक्षा और व्यावसायिक भविष्य के अवसर।</span></div>
+                    <div class="gyanyogi-impact__item"><strong>300</strong><span>जोधपुर और बालोतरा क्षेत्र के जरूरतमंद परिवारों को नियमित सहयोग।</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyanyogi-section" aria-labelledby="journey-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">सेवा-वटवृक्ष की यात्रा</span>
+                    <h2 id="journey-title">भैया जी के बीज से मधु माँ के नेतृत्व तक</h2>
+                    <p>भैया जी द्वारा रोपे गए शिक्षा और सेवा के बीज को माँ बसन्ती जी ने करुणा और कर्मठता से विस्तृत किया, और मधु माँ ने उसे नए आयाम दिए।</p>
+                </header>
+                <div class="gyanyogi-journey">
+                    <article class="gyanyogi-step">
+                        <strong>2010</strong>
+                        <div><h3>ट्रस्ट की स्थापना</h3><p>माँ बसन्ती जी ने जगत्जननी माँ के निर्देशानुसार जरूरतमंद छात्रों की शिक्षा और मार्गदर्शन के लिए केन्द्र की स्थापना की।</p></div>
+                    </article>
+                    <article class="gyanyogi-step">
+                        <strong>2020</strong>
+                        <div><h3>खाद्य-सहायता का आरम्भ</h3><p>कोरोना काल में आर्थिक संकट से जूझते परिवारों के लिए प्रतिमाह राशन सामग्री वितरण का सेवा-कार्य शुरू हुआ।</p></div>
+                    </article>
+                    <article class="gyanyogi-step">
+                        <strong>2022</strong>
+                        <div><h3>योग और ध्यान की नियमित कक्षाएँ</h3><p>मधु माँ द्वारा सिद्धपीठ में निःशुल्क योग, प्राणायाम, आसन और ध्यान की कक्षाएँ प्रारम्भ की गईं।</p></div>
+                    </article>
+                    <article class="gyanyogi-step">
+                        <strong>2025</strong>
+                        <div><h3>सिलाई केन्द्र द्वारा आत्मनिर्भरता</h3><p>वात्सल्यमयी माँ बसन्ती जी मनिहार सिलाई केन्द्र के माध्यम से महिलाओं और युवतियों को स्वरोजगार की दिशा मिली।</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyanyogi-closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-eyebrow">निष्काम कर्म की जीवंत साधना</span>
+                    <h2 id="closing-title">जहाँ शिक्षा, स्वास्थ्य, आत्मनिर्भरता और सेवा एक ही करुणा-धारा में मिलते हैं।</h2>
+                    <p>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र समाज के जरूरतमंद वर्गों के जीवन में सकारात्मक परिवर्तन लाने का सतत, संवेदनशील और समग्र प्रयास है।</p>
+                </header>
+                <div class="gyanyogi-actions">
+                    <a class="hi-btn hi-btn--primary" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="gallery.html">सेवा-चित्र देखें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>

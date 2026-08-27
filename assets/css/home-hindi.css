@@ -87,6 +87,7 @@ body.hindi-home::before {
     box-shadow: none;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    transition: background-color .24s ease, box-shadow .24s ease, backdrop-filter .24s ease, -webkit-backdrop-filter .24s ease;
 }
 
 .hindi-home .site-header.is-scrolled {

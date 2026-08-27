@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट की बालिका शिक्षा, छात्रवृत्ति, संस्कार और आत्मनिर्भरता की सेवा-यात्रा।">
+    <title>स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .vivekanand-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            color: var(--hi-ink);
+        }
+
+        .vivekanand-hero {
+            position: relative;
+            min-height: 720px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(150px, 17vh, 205px) 0 90px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .86) 44%, rgba(255, 244, 225, .5) 76%, rgba(255, 244, 225, .16) 100%),
+                url("../assets/images/svswct.png") center / cover no-repeat;
+        }
+
+        .vivekanand-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 160px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .vivekanand-hero__content {
+            position: relative;
+            z-index: 1;
+            width: min(820px, 62vw);
+        }
+
+        .vivekanand-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2.75rem, 5.05vw, 5.75rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .vivekanand-hero__lead {
+            max-width: 760px;
+            margin: 0 0 28px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.6rem);
+            line-height: 1.9;
+        }
+
+        .vivekanand-hero__meta,
+        .vivekanand-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .vivekanand-hero__meta li,
+        .vivekanand-stat {
+            padding: 18px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 16px 40px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-hero__meta strong,
+        .vivekanand-stat strong {
+            display: block;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+            line-height: 1.12;
+        }
+
+        .vivekanand-hero__meta span,
+        .vivekanand-stat span {
+            display: block;
+            margin-top: 8px;
+            color: #67584e;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .vivekanand-section {
+            padding: clamp(76px, 9vw, 120px) 0;
+        }
+
+        .vivekanand-section--intro {
+            padding-top: 42px;
+        }
+
+        .vivekanand-section--soft {
+            background:
+                radial-gradient(circle at 16% 14%, rgba(222, 238, 236, .68), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
+        }
+
+        .vivekanand-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .vivekanand-grid--reverse .vivekanand-media {
+            order: 2;
+        }
+
+        .vivekanand-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.9rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .vivekanand-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .vivekanand-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .vivekanand-media {
+            overflow: hidden;
+            min-height: 420px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .vivekanand-media img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .vivekanand-sankalp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 38px;
+        }
+
+        .vivekanand-sankalp {
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .88);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-sankalp span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            border-radius: 999px;
+            color: #fffaf1;
+            background: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 800;
+        }
+
+        .vivekanand-sankalp h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.32rem;
+            line-height: 1.45;
+        }
+
+        .vivekanand-sankalp p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .vivekanand-reach {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+        }
+
+        .vivekanand-reach .hi-section-heading {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        .vivekanand-stats {
+            margin-top: 34px;
+        }
+
+        .vivekanand-quote {
+            margin-top: 34px;
+            padding: clamp(24px, 3vw, 36px);
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-quote p {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.24rem, 1.9vw, 1.65rem);
+            font-weight: 700;
+            line-height: 1.75;
+        }
+
+        .vivekanand-closing {
+            padding: clamp(80px, 10vw, 130px) 0;
+            text-align: center;
+            background:
+                linear-gradient(180deg, rgba(255, 250, 241, .7), rgba(255, 250, 241, .96)),
+                url("../assets/images/gallery/scholarship-distribution/15-card.webp") center / cover no-repeat;
+        }
+
+        .vivekanand-closing .hi-section-heading {
+            max-width: 920px;
+            margin-inline: auto;
+        }
+
+        .vivekanand-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 980px) {
+            .vivekanand-hero {
+                min-height: auto;
+                padding-top: 132px;
+            }
+
+            .vivekanand-hero__content {
+                width: min(100%, 760px);
+            }
+
+            .vivekanand-grid,
+            .vivekanand-grid--reverse {
+                grid-template-columns: 1fr;
+            }
+
+            .vivekanand-grid--reverse .vivekanand-media {
+                order: 0;
+            }
+
+            .vivekanand-sankalp-grid,
+            .vivekanand-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .vivekanand-hero {
+                padding-top: 118px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
+                    url("../assets/images/svswct.png") center / cover no-repeat;
+            }
+
+            .vivekanand-media,
+            .vivekanand-media img {
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home vivekanand-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="vivekanand-hero" aria-labelledby="vivekanand-title">
+            <div class="hi-shell vivekanand-hero__content">
+                <span class="hi-kicker">बालिका शिक्षा और संस्कार</span>
+                <h1 id="vivekanand-title">स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट</h1>
+                <p class="vivekanand-hero__lead">धनाभाव से शिक्षा न रुके, शिक्षा संस्कार से जुड़े और बालिकाएँ आत्मविश्वास के साथ अपने भविष्य की ओर बढ़ें।</p>
+                <ul class="vivekanand-hero__meta" aria-label="ट्रस्ट का सार">
+                    <li><strong>1996</strong><span>स्थापना वर्ष</span></li>
+                    <li><strong>37,000+</strong><span>लाभान्वित छात्राएँ</span></li>
+                    <li><strong>45</strong><span>विद्यालयों तक पहुँच</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="vivekanand-section vivekanand-section--intro" aria-labelledby="origin-title">
+            <div class="hi-shell vivekanand-grid">
+                <div class="vivekanand-copy">
+                    <span class="hi-kicker">सेवा का आरम्भ</span>
+                    <h2 id="origin-title">धनाभाव किसी बालिका के भविष्य में बाधा न बने</h2>
+                    <p>लगभग तीन दशक पूर्व पश्चिमी राजस्थान में आर्थिक कठिनाइयों के कारण अनेक बालिकाएँ शिक्षा से वंचित हो रही थीं। भैया श्री नन्दकिशोर जी शारदा ने अनुभव किया कि धनाभाव किसी भी बालिका की शिक्षा और भविष्य में बाधक नहीं बनना चाहिए तथा शिक्षा ही आत्मनिर्भरता और सामाजिक उन्नति का आधार है।</p>
+                    <p>इसी विचार को साकार करने के लिए जगत्जननी माँ की आज्ञा से सुश्री बसन्ती जी मनिहार ने <strong>10 जून 1996</strong> को जोधपुर में इस ट्रस्ट की स्थापना की और भैया श्री नन्दकिशोर जी इसके अध्यक्ष बने।</p>
+                </div>
+                <figure class="vivekanand-media">
+                    <img src="../assets/images/svswct-founding-team.png" alt="स्वामी विवेकानन्द ट्रस्ट की सेवा-यात्रा से जुड़ा दृश्य" loading="eager">
+                </figure>
+            </div>
+        </section>
+
+        <section class="vivekanand-section vivekanand-section--soft" aria-labelledby="method-title">
+            <div class="hi-shell vivekanand-grid vivekanand-grid--reverse">
+                <figure class="vivekanand-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/16-card.webp" alt="छात्रवृत्ति वितरण का दृश्य" loading="lazy">
+                </figure>
+                <div class="vivekanand-copy">
+                    <span class="hi-kicker">कार्यपद्धति</span>
+                    <h2 id="method-title">छात्रवृत्ति आवश्यकता, परिस्थिति और वास्तविक खर्च के आधार पर</h2>
+                    <p>ट्रस्ट का मूल उद्देश्य आर्थिक रूप से कमजोर छात्राओं को शिक्षा जारी रखने के लिए सहायता प्रदान करना था। भैया जी, माँ बसन्ती जी एवं मधु माँ ने इसे केवल सामाजिक दायित्व नहीं, बल्कि माँ की साधना और मानव-सेवा का माध्यम माना।</p>
+                    <p>छात्रवृत्ति अंकों के आधार पर नहीं, बल्कि आर्थिक आवश्यकता, पारिवारिक परिस्थिति तथा विद्यालय की फीस को ध्यान में रखकर दी जाती है। चयन में जाति, धर्म या सम्प्रदाय का कोई भेदभाव नहीं किया जाता।</p>
+                    <div class="vivekanand-quote"><p>‘सर्वजन हिताय, सर्वजन सुखाय’ के मूल मंत्र पर आधारित यह सेवा शिक्षा को सामाजिक समानता और राष्ट्र-निर्माण का माध्यम मानती है।</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vivekanand-section" aria-labelledby="sankalp-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">तीन संकल्प</span>
+                    <h2 id="sankalp-title">शिक्षा के साथ दिशा, श्रद्धा और योगदान का भाव</h2>
+                    <p>छात्राओं को आगे बढ़ने के लिए तीन सरल पर गहरे संकल्प दिए जाते हैं, ताकि शिक्षा केवल व्यक्तिगत उपलब्धि न रहकर जीवन-दृष्टि बन सके।</p>
+                </header>
+                <div class="vivekanand-sankalp-grid">
+                    <article class="vivekanand-sankalp"><span>१</span><h3>इष्टदेव का स्मरण</h3><p>अपने इष्टदेव पर निःस्वार्थ भाव से विश्वास रखते हुए उनका नित्य स्मरण करना।</p></article>
+                    <article class="vivekanand-sankalp"><span>२</span><h3>लक्ष्य की ओर एकाग्रता</h3><p>अपने लक्ष्य की ओर एकनिष्ठ एकाग्रता से बढ़ना और संघर्ष में धैर्य बनाए रखना।</p></article>
+                    <article class="vivekanand-sankalp"><span>३</span><h3>ज्ञान-यज्ञ में योगदान</h3><p>समर्थ बनकर इस ज्ञान-यज्ञ में अपना योगदान देना और आगे किसी और के लिए प्रकाश बनना।</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="vivekanand-section vivekanand-section--soft" aria-labelledby="sanskar-title">
+            <div class="hi-shell vivekanand-grid">
+                <div class="vivekanand-copy">
+                    <span class="hi-kicker">संस्कार निर्माण</span>
+                    <h2 id="sanskar-title">आत्मविश्वासी और सुसंस्कारित व्यक्तित्व की दिशा</h2>
+                    <p>शिक्षा के साथ संस्कार-निर्माण को ट्रस्ट की कार्यपद्धति का अभिन्न अंग बनाया गया। उद्देश्य था कि छात्राओं में आत्मविश्वास, विनम्रता, संघर्षशीलता, कर्तव्यबोध, निःस्वार्थ सेवा-भाव और आध्यात्मिक चेतना का विकास हो।</p>
+                    <p>इससे वे केवल शिक्षित नहीं, बल्कि सुसंस्कारित, संतुलित और उत्तरदायी व्यक्तित्व के रूप में आगे बढ़ सकें।</p>
+                    <a class="hi-btn hi-btn--outline" href="sunday-sanskar-classes.html">संस्कार कक्षाओं के बारे में पढ़ें</a>
+                </div>
+                <figure class="vivekanand-media">
+                    <img src="../assets/images/sanskar_classes.jpg" alt="संस्कार एवं व्यक्तित्व विकास कक्षाएँ" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <section class="vivekanand-section vivekanand-reach" aria-labelledby="reach-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">सेवा का विस्तार</span>
+                    <h2 id="reach-title">विद्यालयों से हजारों छात्राओं तक</h2>
+                    <p>1996 में जरूरतमंद बालिकाओं से प्रारम्भ हुआ यह प्रयास आज शिक्षा, अवसर, आत्मविश्वास और आशा का व्यापक आधार बन चुका है।</p>
+                </header>
+                <div class="vivekanand-stats">
+                    <div class="vivekanand-stat"><strong>₹4.5 करोड़+</strong><span>स्थापना से अब तक छात्रवृत्ति राशि</span></div>
+                    <div class="vivekanand-stat"><strong>37,000+</strong><span>लाभान्वित छात्राएँ</span></div>
+                    <div class="vivekanand-stat"><strong>38 + 7</strong><span>जोधपुर और बालोतरा के विद्यालय</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vivekanand-closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">शिक्षा से राष्ट्र-निर्माण तक</span>
+                    <h2 id="closing-title">एक बालिका की शिक्षा, अनेक पीढ़ियों के भविष्य का उजाला</h2>
+                    <p>ट्रस्ट शिक्षा को आत्मनिर्भरता, संस्कार, सामाजिक समानता और राष्ट्र-निर्माण का माध्यम मानता है। यह सेवा-धारा आज हजारों छात्राओं के जीवन में विश्वास और संभावना का आधार बन चुकी है।</p>
+                </header>
+                <div class="vivekanand-actions">
+                    <a class="hi-btn hi-btn--primary" href="margdarshan-siddhant.html">मार्गदर्शन सिद्धान्त पढ़ें</a>
+                    <a class="hi-btn hi-btn--outline" href="shri-nandkishore-sharda-chintan.html">भैया जी का शिक्षा-दर्शन पढ़ें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>

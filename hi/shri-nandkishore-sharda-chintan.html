@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="श्री नन्दकिशोर शारदा के शिक्षा-दर्शन, बालिका शिक्षा, संस्कार, आत्मनिर्भरता और आध्यात्मिक चेतना पर आधारित चिंतन।">
+    <title>श्री नन्दकिशोर शारदा का चिंतन | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .chintan-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            color: var(--hi-ink);
+        }
+
+        .chintan-hero {
+            position: relative;
+            min-height: 680px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(148px, 17vh, 205px) 0 88px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .97) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .68) 100%),
+                url("../assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+        }
+
+        .chintan-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 150px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .chintan-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .chintan-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(3rem, 5.4vw, 6.1rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .chintan-hero__lead {
+            max-width: 780px;
+            margin: 0;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.58rem);
+            line-height: 1.9;
+        }
+
+        .chintan-section {
+            padding: clamp(74px, 9vw, 120px) 0;
+        }
+
+        .chintan-section--intro {
+            padding-top: 44px;
+            background: #fffaf1;
+        }
+
+        .chintan-section--principles {
+            background:
+                radial-gradient(circle at 12% 12%, rgba(222, 238, 236, .72), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #eaf1ee 100%);
+        }
+
+        .chintan-section--closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 34%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .chintan-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .chintan-grid--reverse .chintan-media {
+            order: 2;
+        }
+
+        .chintan-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.85rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .chintan-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .chintan-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .chintan-media {
+            min-height: 420px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .chintan-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .chintan-principles {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 38px;
+        }
+
+        .chintan-principle {
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .86);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .chintan-principle span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            margin-bottom: 20px;
+            border-radius: 999px;
+            color: #fffaf1;
+            background: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 800;
+        }
+
+        .chintan-principle h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.32rem;
+            line-height: 1.45;
+        }
+
+        .chintan-principle p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .chintan-quote {
+            margin: 30px 0 0;
+            padding: clamp(24px, 3vw, 36px);
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .chintan-quote p {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.28rem, 2vw, 1.72rem);
+            line-height: 1.7;
+            font-weight: 700;
+        }
+
+        .chintan-closing-text {
+            max-width: 940px;
+            margin: 0 auto 30px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.2rem, 2vw, 1.65rem);
+            line-height: 1.9;
+        }
+
+        .chintan-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        @media (max-width: 980px) {
+            .chintan-hero {
+                min-height: auto;
+                padding-top: 132px;
+            }
+
+            .chintan-grid,
+            .chintan-grid--reverse {
+                grid-template-columns: 1fr;
+            }
+
+            .chintan-grid--reverse .chintan-media {
+                order: 0;
+            }
+
+            .chintan-principles {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .chintan-hero {
+                padding-top: 118px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
+                    url("../assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+            }
+
+            .chintan-principles {
+                grid-template-columns: 1fr;
+            }
+
+            .chintan-media,
+            .chintan-media img {
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home chintan-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="chintan-hero" aria-labelledby="chintan-title">
+            <div class="hi-shell chintan-hero__content">
+                <span class="hi-kicker">शिक्षा-दर्शन</span>
+                <h1 id="chintan-title">श्री नन्दकिशोर शारदा का चिंतन</h1>
+                <p class="chintan-hero__lead">शिक्षा को अधिकार, संस्कार को आधार और आत्मनिर्भरता को जीवन की सार्थक दिशा मानने वाला करुणामय दृष्टिकोण।</p>
+            </div>
+        </section>
+
+        <section class="chintan-section chintan-section--intro" aria-labelledby="foundation-title">
+            <div class="hi-shell chintan-grid">
+                <div class="chintan-copy">
+                    <span class="hi-kicker">मूल आधार</span>
+                    <h2 id="foundation-title">शिक्षा हर प्रतिभा को दिशा देने का माध्यम</h2>
+                    <p>भैया श्री नन्दकिशोर शारदा के शिक्षा-दर्शन का मूल आधार यह विश्वास था कि शिक्षा प्रत्येक व्यक्ति का मौलिक अधिकार है और आर्थिक अभाव किसी भी बालिका के भविष्य में बाधक नहीं बनना चाहिए।</p>
+                    <p>वे मानते थे कि ईश्वर ने प्रत्येक व्यक्ति को कोई न कोई प्रतिभा प्रदान की है। शिक्षा उस प्रतिभा को पहचानने, विकसित करने और जीवन में सार्थक दिशा देने का माध्यम है। इसलिए शिक्षा सुविधा सम्पन्न वर्ग तक सीमित न रहकर समाज के प्रत्येक वर्ग तक पहुँचना आवश्यक है।</p>
+                    <div class="chintan-quote"><p>शिक्षा तभी पूर्ण है, जब वह ज्ञान के साथ संस्कार, विनम्रता और कर्तव्यबोध भी विकसित करे।</p></div>
+                </div>
+                <figure class="chintan-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/16-card.webp" alt="छात्राओं के शिक्षा-सहयोग का दृश्य" loading="eager">
+                </figure>
+            </div>
+        </section>
+
+        <section class="chintan-section chintan-section--principles" aria-labelledby="principles-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">चिंतन के सूत्र</span>
+                    <h2 id="principles-title">शिक्षा से चरित्र और आत्मनिर्भरता तक</h2>
+                    <p>भैया जी शिक्षा और संस्कार को एक-दूसरे का पूरक मानते थे। उनके लिए शिक्षित व्यक्ति वही है जो ज्ञानवान होने के साथ विनम्र, संवेदनशील और कर्तव्यनिष्ठ भी हो।</p>
+                </header>
+                <div class="chintan-principles">
+                    <article class="chintan-principle"><span>अ</span><h3>अधिकार</h3><p>आर्थिक अभाव किसी बालिका की शिक्षा और भविष्य में बाधा न बने।</p></article>
+                    <article class="chintan-principle"><span>स</span><h3>संस्कार</h3><p>किताबी ज्ञान के साथ विनम्रता, संवेदनशीलता और सदाचार का विकास हो।</p></article>
+                    <article class="chintan-principle"><span>व</span><h3>विवेक</h3><p>शिक्षा छात्रा को आत्मविश्वासी, विवेकशील और जिम्मेदार बनाए।</p></article>
+                    <article class="chintan-principle"><span>ध</span><h3>ध्येय</h3><p>व्यक्तिगत उन्नति परिवार, समाज और राष्ट्र के कल्याण से जुड़े।</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="chintan-section" aria-labelledby="development-title">
+            <div class="hi-shell chintan-grid chintan-grid--reverse">
+                <figure class="chintan-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/10-card.webp" alt="विद्यार्थियों का मार्गदर्शन" loading="lazy">
+                </figure>
+                <div class="chintan-copy">
+                    <span class="hi-kicker">समग्र व्यक्तित्व विकास</span>
+                    <h2 id="development-title">बालिका शिक्षा, आने वाली पीढ़ियों की आधारशिला</h2>
+                    <p>श्री नन्दकिशोर जी के विचार में वास्तविक शिक्षा वह है जो व्यक्ति के बौद्धिक, नैतिक, सामाजिक और आध्यात्मिक विकास को एक साथ आगे बढ़ाए। वे चाहते थे कि छात्राएँ परिस्थितियों से संघर्ष करने का साहस रखें, अपने पैरों पर खड़ी हों और परिवार, समाज तथा राष्ट्र के प्रति सकारात्मक भूमिका निभाएँ।</p>
+                    <p>वे बालिका शिक्षा को केवल एक व्यक्ति की शिक्षा नहीं मानते थे। एक शिक्षित और संस्कारित बालिका आगे चलकर परिवार को दिशा देने वाली गृहिणी, संतानों की पहली शिक्षिका और समाज की जिम्मेदार नागरिक बन सकती है। इसी दूरदृष्टि के कारण उन्होंने बालिका शिक्षा को महिला सशक्तिकरण की आधारशिला माना।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chintan-section chintan-section--principles" aria-labelledby="equal-title">
+            <div class="hi-shell chintan-grid">
+                <div class="chintan-copy">
+                    <span class="hi-kicker">समान अवसर</span>
+                    <h2 id="equal-title">छात्रवृत्ति केवल अंकों से नहीं, आवश्यकता से भी जुड़ी</h2>
+                    <p>उनका शिक्षा-दर्शन सामाजिक समानता पर आधारित था। आर्थिक स्थिति चाहे जैसी हो, प्रतिभाशाली और जरूरतमंद छात्राओं को आगे बढ़ने का अवसर मिलना चाहिए।</p>
+                    <p>इसी सोच के अनुरूप छात्रवृत्ति का निर्धारण केवल परीक्षा में प्राप्त अंकों के आधार पर नहीं, बल्कि आर्थिक आवश्यकता, पारिवारिक परिस्थिति और शिक्षा की वास्तविक लागत को ध्यान में रखकर किया गया। जाति, धर्म या सम्प्रदाय के आधार पर किसी प्रकार का भेदभाव न करना भी इसी व्यापक दृष्टि का हिस्सा था।</p>
+                </div>
+                <figure class="chintan-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/11-card.webp" alt="छात्रवृत्ति वितरण और शिक्षा सहयोग" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <section class="chintan-section" aria-labelledby="confidence-title">
+            <div class="hi-shell chintan-grid chintan-grid--reverse">
+                <figure class="chintan-media">
+                    <img src="../assets/images/sunday-guidance-gathering.webp" alt="संस्कार और आध्यात्मिक मार्गदर्शन" loading="lazy">
+                </figure>
+                <div class="chintan-copy">
+                    <span class="hi-kicker">आत्मविश्वास और चेतना</span>
+                    <h2 id="confidence-title">आर्थिक सहयोग से मानसिक शान्ति तक</h2>
+                    <p>श्री नन्दकिशोर जी समझते थे कि आर्थिक कठिनाई केवल पढ़ाई में बाधा नहीं बनती, बल्कि छात्रा के आत्मविश्वास और मानसिक शान्ति को भी प्रभावित करती है। जब फीस और शिक्षा के खर्च की चिंता दूर होती है, तो विद्यार्थी अधिक एकाग्रता और मनोयोग से अध्ययन कर सकता है।</p>
+                    <p>उनके शिक्षा-दर्शन में आध्यात्मिक चेतना का भी महत्वपूर्ण स्थान था। वे चाहते थे कि शिक्षा व्यक्ति को केवल बाहरी सफलता की ओर न ले जाए, बल्कि उसे अपने भीतर की शक्ति पहचानने और जीवन को व्यापक उद्देश्य से जोड़ने की प्रेरणा भी दे।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chintan-section chintan-section--closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <span class="hi-kicker">शिक्षा-सेवा की आधारशिला</span>
+                <h2 id="closing-title">शिक्षा से आत्मनिर्भरता, संस्कार से चरित्र और आध्यात्मिक चेतना से जीवन की सार्थकता</h2>
+                <p class="chintan-closing-text">यही समन्वित अवधारणा आगे चलकर स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट की कार्यपद्धति की आधारशिला बनी।</p>
+                <div class="chintan-actions">
+                    <a class="hi-btn hi-btn--primary" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="margdarshan-siddhant.html">मार्गदर्शन सिद्धान्त पढ़ें</a>
+                    <a class="hi-btn hi-btn--outline" href="swami-vivekanand-trust.html">स्वामी विवेकानन्द ट्रस्ट देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="maa-shardamani-trust.html">माँ शारदामणि ट्रस्ट देखें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+

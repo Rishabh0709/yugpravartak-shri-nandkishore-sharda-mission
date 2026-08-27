@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News, upcoming events, recent activities and archived newspaper clippings from Manidweep Adhyatm Parivar.">
+    <title>News &amp; Events | Manidweep Adhyatm Parivar</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="assets/css/news-events.css">
+</head>
+<body class="news-events-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" data-news-events>
+        <section class="news-events-hero">
+            <div class="container">
+                <span class="section-eyebrow">Media</span>
+                <h1>News &amp; Events</h1>
+                <p>Upcoming gatherings, recent service activities and archived newspaper coverage from Manidweep's journey of education, sanskar and human welfare.</p>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--upcoming" aria-labelledby="upcoming-title">
+            <div class="container">
+                <header class="section-heading">
+                    <span class="section-eyebrow">Upcoming</span>
+                    <h2 id="upcoming-title">Upcoming Events</h2>
+                    <p>Programs and service activities scheduled next.</p>
+                </header>
+                <div class="news-events-grid" data-upcoming-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--recent" aria-labelledby="recent-title">
+            <div class="container">
+                <header class="section-heading">
+                    <span class="section-eyebrow">Recent</span>
+                    <h2 id="recent-title">Recent Activities</h2>
+                    <p>A short view of recent classes, celebrations and service work.</p>
+                </header>
+                <div class="news-events-grid" data-recent-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section" aria-labelledby="clippings-title">
+            <div class="container">
+                <header class="section-heading">
+                    <span class="section-eyebrow">Archive</span>
+                    <h2 id="clippings-title">In The News</h2>
+                    <p>Newspaper clippings preserved as a visual archive of the mission's public journey.</p>
+                </header>
+                <div class="news-range-tabs" data-news-ranges aria-label="News clipping year ranges"></div>
+                <div class="news-clips-grid" data-news-clippings></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="news-modal" data-news-modal role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+        <div class="news-modal__dialog">
+            <div class="news-modal__head">
+                <h2 class="news-modal__title" id="news-modal-title" data-news-modal-title></h2>
+                <button class="news-modal__close" type="button" data-news-close aria-label="Close">×</button>
+            </div>
+            <div class="news-modal__body"><img data-news-modal-image alt=""></div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js?v=20260811-1"></script>
+    <script src="assets/js/news-events.js"></script>
+</body>
+</html>
+

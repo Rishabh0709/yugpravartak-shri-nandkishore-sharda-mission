@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="मणिद्वीप अध्यात्म परिवार के मार्गदर्शन सिद्धान्त: शिक्षा, संस्कार, समान अवसर, सर्वांगीण विकास और पारदर्शी छात्रवृत्ति व्यवस्था।">
+    <title>मार्गदर्शन सिद्धान्त | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .margdarshan-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            color: var(--hi-ink);
+        }
+
+        .margdarshan-hero {
+            position: relative;
+            min-height: 660px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(146px, 16vh, 198px) 0 86px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .98) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .64) 100%),
+                url("../assets/images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
+        }
+
+        .margdarshan-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 150px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .margdarshan-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .margdarshan-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(3rem, 5.4vw, 6rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .margdarshan-hero__lead {
+            max-width: 790px;
+            margin: 0;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.58rem);
+            line-height: 1.9;
+        }
+
+        .margdarshan-section {
+            padding: clamp(74px, 9vw, 118px) 0;
+        }
+
+        .margdarshan-section--intro {
+            padding-top: 44px;
+            background: #fffaf1;
+        }
+
+        .margdarshan-section--principles {
+            background:
+                radial-gradient(circle at 14% 14%, rgba(222, 238, 236, .72), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #eaf1ee 100%);
+        }
+
+        .margdarshan-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .margdarshan-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.85rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .margdarshan-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .margdarshan-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .margdarshan-media {
+            min-height: 420px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .margdarshan-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .margdarshan-mantra {
+            margin-top: 30px;
+            padding: clamp(24px, 3vw, 36px);
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .margdarshan-mantra p {
+            margin: 0;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.3rem, 2vw, 1.8rem);
+            line-height: 1.65;
+            font-weight: 800;
+        }
+
+        .margdarshan-principles {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 42px;
+        }
+
+        .margdarshan-card {
+            min-height: 100%;
+            padding: clamp(24px, 2.6vw, 32px);
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .88);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .margdarshan-card__icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 22px;
+            border-radius: 999px;
+            color: #fffaf1;
+            background: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 1.24rem;
+            font-weight: 800;
+        }
+
+        .margdarshan-card h3 {
+            margin: 0 0 14px;
+            color: var(--hi-ink);
+            font-size: clamp(1.28rem, 1.8vw, 1.58rem);
+            line-height: 1.45;
+        }
+
+        .margdarshan-card p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.78;
+        }
+
+        .margdarshan-card strong {
+            color: var(--hi-maroon);
+        }
+
+        .margdarshan-section--closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 34%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .margdarshan-closing-text {
+            max-width: 940px;
+            margin: 0 auto 30px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.2rem, 2vw, 1.62rem);
+            line-height: 1.9;
+        }
+
+        .margdarshan-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        @media (max-width: 980px) {
+            .margdarshan-hero {
+                min-height: auto;
+                padding-top: 132px;
+            }
+
+            .margdarshan-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .margdarshan-principles {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .margdarshan-hero {
+                padding-top: 118px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
+                    url("../assets/images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
+            }
+
+            .margdarshan-principles {
+                grid-template-columns: 1fr;
+            }
+
+            .margdarshan-media,
+            .margdarshan-media img {
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home margdarshan-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="margdarshan-hero" aria-labelledby="margdarshan-title">
+            <div class="hi-shell margdarshan-hero__content">
+                <span class="hi-kicker">सेवा का दर्शन</span>
+                <h1 id="margdarshan-title">मार्गदर्शन सिद्धान्त</h1>
+                <p class="margdarshan-hero__lead">शिक्षा, संस्कार, समान अवसर और पारदर्शी सेवा-व्यवस्था पर आधारित वे सूत्र, जिनसे छात्राओं का सर्वांगीण विकास और आत्मनिर्भर भविष्य निर्मित हो सके।</p>
+            </div>
+        </section>
+
+        <section class="margdarshan-section margdarshan-section--intro" aria-labelledby="vision-title">
+            <div class="hi-shell margdarshan-grid">
+                <div class="margdarshan-copy">
+                    <span class="hi-kicker">मूल मंत्र</span>
+                    <h2 id="vision-title">शिक्षा से आत्मनिर्भरता, संस्कार से उत्तम नागरिकता</h2>
+                    <p>इन सिद्धान्तों का उद्देश्य है कि कोई भी छात्रा अर्थाभाव के कारण शिक्षा से वंचित न रहे। उसके शैक्षिक, नैतिक, बौद्धिक, आर्थिक और सामाजिक उत्थान में सहायक बनते हुए उसे आत्मनिर्भर और अंततः उत्तम नागरिक बनने की दिशा मिले।</p>
+                    <p>जाति, धर्म और सम्प्रदाय के आधार पर कोई भेदभाव न हो। हर जरूरतमंद और योग्य छात्रा को अवसर मिले, यही सेवा-दृष्टि इन सिद्धान्तों की आत्मा है।</p>
+                    <div class="margdarshan-mantra"><p>‘सर्वजन हितायः सर्वजन सुखायः’</p></div>
+                </div>
+                <figure class="margdarshan-media">
+                    <img src="../assets/images/gallery/scholarship-distribution/10-card.webp" alt="छात्राओं के शिक्षा-सहयोग और मार्गदर्शन का दृश्य" loading="eager">
+                </figure>
+            </div>
+        </section>
+
+        <section class="margdarshan-section margdarshan-section--principles" aria-labelledby="principles-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">मार्गदर्शन के सूत्र</span>
+                    <h2 id="principles-title">छह सिद्धान्त, एक समग्र सेवा-दृष्टि</h2>
+                    <p>ये सिद्धान्त छात्रवृत्ति को केवल आर्थिक सहायता नहीं रहने देते, बल्कि उसे शिक्षा, संस्कार, व्यक्तित्व-विकास और पारदर्शी सेवा का माध्यम बनाते हैं।</p>
+                </header>
+
+                <div class="margdarshan-principles">
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">शि</span>
+                        <h3>शिक्षा से कोई वंचित न रहे</h3>
+                        <p>अर्थाभाव किसी छात्रा की पढ़ाई में बाधा न बने। शिक्षा-सहयोग उसके शैक्षिक, नैतिक, बौद्धिक, आर्थिक और सामाजिक उत्थान का माध्यम बने।</p>
+                    </article>
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">सं</span>
+                        <h3>संस्कार-विहीन शिक्षा अधूरी है</h3>
+                        <p>बालिकाओं में ज्ञान के प्रति समर्पण, गरिमा, आत्मविश्वास, आत्मसम्मान, मानवीय संवेदना और करुणा जैसे गुण विकसित हों। शिक्षित महिला दो परिवारों और भावी पीढ़ियों को प्रभावित करती है।</p>
+                    </article>
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">क</span>
+                        <h3>अधिकार और कर्तव्य दोनों की जागरूकता</h3>
+                        <p>विद्यार्थी अपने अधिकारों के साथ अपने कर्तव्यों को भी समझें। प्रकृति के संसाधनों पर समान अधिकार के साथ प्रकृति के प्रति प्रेम और आदर की भावना विकसित हो।</p>
+                    </article>
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">स</span>
+                        <h3>सर्वांगीण विकास का समन्वय</h3>
+                        <p>मानसिक, शारीरिक, बौद्धिक और आध्यात्मिक पहलुओं का सकारात्मक समन्वय हो, ताकि बालिकाओं का व्यक्तित्व संतुलित और सशक्त रूप से विकसित हो सके।</p>
+                    </article>
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">पा</span>
+                        <h3>प्रशासनिक खर्च स्वयं वहन</h3>
+                        <p>टेलीफोन, डाक टिकट, स्टेशनरी, आवागमन जैसे प्रशासनिक खर्च ट्रस्ट के सदस्य व्यक्तिगत रूप से वहन करते हैं, ताकि ट्रस्ट की सम्पूर्ण आय छात्रवृत्ति में उपयोग हो सके।</p>
+                    </article>
+                    <article class="margdarshan-card">
+                        <span class="margdarshan-card__icon">नि</span>
+                        <h3>सुरक्षित निधि, छात्रवृत्ति में ब्याज</h3>
+                        <p>आर्थिक सहयोग की राशि बैंकों में सावधि जमा के रूप में सुरक्षित रखी जाती है और उससे प्राप्त ब्याज की सम्पूर्ण आय छात्राओं में छात्रवृत्ति के रूप में वितरित की जाती है।</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="margdarshan-section margdarshan-section--closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <span class="hi-kicker">सिद्धान्त से सेवा तक</span>
+                <h2 id="closing-title">जहाँ सहायता, संस्कार और पारदर्शिता मिलकर शिक्षा को जीवन-निर्माण बनाते हैं</h2>
+                <p class="margdarshan-closing-text">इन मार्गदर्शन सिद्धान्तों से सेवा-कार्य में करुणा के साथ स्पष्टता, समानता के साथ उत्तरदायित्व और छात्रवृत्ति के साथ चरित्र-निर्माण का भाव जुड़ा रहता है।</p>
+                <div class="margdarshan-actions">
+                    <a class="hi-btn hi-btn--primary" href="shri-nandkishore-sharda-chintan.html">भैया जी का शिक्षा-दर्शन पढ़ें</a>
+                    <a class="hi-btn hi-btn--outline" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना देखें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>

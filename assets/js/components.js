@@ -64,8 +64,9 @@ function initHeaderScroll() {
         return;
     }
 
-    const collapseAt = 150;
-    const expandAt = 24;
+    const isHindiHome = document.body.classList.contains("hindi-home") && document.body.classList.contains("hi-home-page");
+    const collapseAt = isHindiHome ? 28 : 150;
+    const expandAt = isHindiHome ? 4 : 24;
     let isCompact = false;
     let ticking = false;
 

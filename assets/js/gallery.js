@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const previousButton = dialog.querySelector(".lightbox-prev");
     const nextButton = dialog.querySelector(".lightbox-next");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const isHindiGallery = document.documentElement.lang.toLowerCase().startsWith("hi");
     let activeFilter = "all";
     let activeAlbum = null;
     let activeIndex = 0;
@@ -38,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const albums = new Map(albumCards.map((card) => {
         const cardImage = card.querySelector("img");
         const albumSlug = card.dataset.album || slugify(card.dataset.title || "mission-album");
-        const albumTitle = card.dataset.title || "Mission Album";
-        const albumCaption = card.dataset.caption || "A moment from the Mission’s continuing work.";
+        const albumTitle = card.dataset.title || (isHindiGallery ? "मिशन संग्रह" : "Mission Album");
+        const albumCaption = card.dataset.caption || (isHindiGallery ? "मिशन की सतत सेवा-धारा का एक क्षण।" : "A moment from the Mission’s continuing work.");
         const category = card.dataset.category || "all";
         const coverFull = card.dataset.full || cardImage.currentSrc || cardImage.src;
         const coverThumb = card.dataset.thumb || cardImage.currentSrc || cardImage.src;
@@ -55,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
             photos.push({
                 full: `https://picsum.photos/seed/${seed}/1600/1100`,
                 thumb: `https://picsum.photos/seed/${seed}/240/165`,
-                alt: `Temporary stock photograph ${index} for ${albumTitle}`,
-                caption: `${albumTitle} — representative photograph ${index} of 10.`
+                alt: isHindiGallery ? `${albumTitle} के लिए प्रतिनिधि चित्र ${index}` : `Temporary stock photograph ${index} for ${albumTitle}`,
+                caption: isHindiGallery ? `${albumTitle} - प्रतिनिधि चित्र ${index} / 10` : `${albumTitle} - representative photograph ${index} of 10.`
             });
         }
 
         card.dataset.album = albumSlug;
-        card.setAttribute("aria-label", `Open ${albumTitle} album, 10 photographs`);
+        card.setAttribute("aria-label", isHindiGallery ? `${albumTitle} संग्रह खोलें, 10 चित्र` : `Open ${albumTitle} album, 10 photographs`);
 
         return [albumSlug, {
             slug: albumSlug,
@@ -79,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return {
             full: `https://picsum.photos/seed/${seed}/1600/1100`,
             thumb: `https://picsum.photos/seed/${seed}/240/165`,
-            alt: `Temporary stock photograph ${index} for ${album.title}`,
-            caption: `${album.title} — representative photograph ${index} of 10.`
+            alt: isHindiGallery ? `${album.title} के लिए प्रतिनिधि चित्र ${index}` : `Temporary stock photograph ${index} for ${album.title}`,
+            caption: isHindiGallery ? `${album.title} - प्रतिनिधि चित्र ${index} / 10` : `${album.title} - representative photograph ${index} of 10.`
         };
     };
 
@@ -92,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         album.manifestLoaded = true;
 
         try {
-            const albumPath = `assets/images/gallery/${album.slug}`;
+            const albumPath = `${isHindiGallery ? "../" : ""}assets/images/gallery/${album.slug}`;
             const response = await fetch(`${albumPath}/album.json`, { cache: "no-store" });
             if (!response.ok) {
                 return;
@@ -106,8 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const localPhotos = manifest.photographs.map((photo, index) => ({
                 full: `${albumPath}/${photo.full.file}`,
                 thumb: `${albumPath}/${photo.thumbnail.file}`,
-                alt: photo.alt || `Photograph ${index + 1} from ${album.title}`,
-                caption: photo.caption || album.description
+                alt: isHindiGallery ? `${album.title} से चित्र ${index + 1}` : (photo.alt || `Photograph ${index + 1} from ${album.title}`),
+                caption: isHindiGallery ? album.description : (photo.caption || album.description)
             }));
 
             for (let index = localPhotos.length + 1; index <= 10; index += 1) {
@@ -158,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.type = "button";
             button.className = "lightbox-thumbnail";
             button.setAttribute("role", "listitem");
-            button.setAttribute("aria-label", `View photograph ${index + 1} of ${activeAlbum.photos.length}`);
+            button.setAttribute("aria-label", isHindiGallery ? `चित्र ${index + 1} / ${activeAlbum.photos.length} देखें` : `View photograph ${index + 1} of ${activeAlbum.photos.length}`);
             thumbnail.src = photo.thumb;
             thumbnail.alt = "";
             thumbnail.loading = "lazy";
@@ -188,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
         image.alt = photo.alt;
         title.textContent = activeAlbum.title;
         caption.textContent = photo.caption;
-        counter.textContent = `Photograph ${activeIndex + 1} of ${photoCount}`;
+        counter.textContent = isHindiGallery ? `चित्र ${activeIndex + 1} / ${photoCount}` : `Photograph ${activeIndex + 1} of ${photoCount}`;
 
         Array.from(thumbnails.children).forEach((thumbnail, thumbnailIndex) => {
             const isCurrent = thumbnailIndex === activeIndex;

@@ -1,0 +1,285 @@
+{
+  "categories": [
+    {
+      "slug": "life-transformation",
+      "en": "Life Transformation",
+      "hi": "जीवन-परिवर्तन"
+    },
+    {
+      "slug": "success-stories",
+      "en": "Success Stories",
+      "hi": "सफलता की कहानियाँ"
+    },
+    {
+      "slug": "sanskar-classes",
+      "en": "Sanskar Classes",
+      "hi": "संस्कार कक्षाएँ"
+    },
+    {
+      "slug": "dignitaries-views",
+      "en": "Dignitaries' Views",
+      "hi": "गणमान्य व्यक्तियों के विचार"
+    }
+  ],
+  "videos": [
+    {
+      "id": "neetu-deora",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/neetu-deora.png",
+      "videoUrl": "https://drive.google.com/file/d/1TMwFEWTtJkQ-sNSc53cclivpyiLoV93w/preview",
+      "en": {
+        "title": "Neetu Deora",
+        "meta": "Senior Assistant, SBI, Jodhpur",
+        "excerpt": "A journey from family loss and uncertainty to a stable career, dignity and the desire to give back.",
+        "hook": "When support arrived at the right time, education became the steady ground on which a new future could stand.",
+        "paragraphs": [
+          "Neetu Deora received support from the Swami Vivekanand Students Welfare Charitable Trust from Class 9 through M.Com. The Trust stood by her during a difficult period after the loss of her father.",
+          "Since 2008, she has been working with the State Bank of India. The education, values and guidance she received helped shape both her career and her personal life.",
+          "As a gesture of gratitude, she contributes to the Trust so that other girls can receive the same timely support."
+        ]
+      },
+      "hi": {
+        "title": "नीतू देवड़ा",
+        "meta": "सीनियर असिस्टेंट, एस.बी.आई., जोधपुर",
+        "excerpt": "पारिवारिक कठिनाई और अनिश्चितता से स्थिर करियर, गरिमा और कृतज्ञता की ओर बढ़ती प्रेरक यात्रा।",
+        "hook": "समय पर मिला सहयोग शिक्षा को वह आधार बना देता है, जिस पर भविष्य फिर से खड़ा हो सकता है।",
+        "paragraphs": [
+          "नीतू देवड़ा को कक्षा 9 से एम.कॉम. तक स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट का सहयोग मिला। पिता के देहावसान के बाद यह सहयोग उनके परिवार के लिए बहुत महत्वपूर्ण आधार बना।",
+          "वर्ष 2008 से वे भारतीय स्टेट बैंक में कार्यरत हैं। शिक्षा, संस्कार और मार्गदर्शन ने उनके करियर और व्यक्तिगत जीवन दोनों को दिशा दी।",
+          "कृतज्ञता के भाव से वे नियमित रूप से ट्रस्ट में योगदान देती हैं, ताकि अन्य छात्राओं को भी समय पर सहायता मिल सके।"
+        ]
+      }
+    },
+    {
+      "id": "poonam-mishra",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/poonam-mishra.webp",
+      "videoUrl": "https://drive.google.com/file/d/1HChzBi3TY92-1DZgwaW4RAf2oxVdvx1b/preview",
+      "en": {
+        "title": "Poonam Mishra",
+        "meta": "Principal, Wisdom International School",
+        "excerpt": "From a financially struggling household to leading a school, her story reflects courage and sustained support.",
+        "hook": "A girl once held back by circumstances can one day become the guide for many students.",
+        "paragraphs": [
+          "Poonam Mishra became associated with the Trust in 1998 while studying in Class 6. The Trust supported her education until she completed M.Sc. in 2010.",
+          "As one of four siblings in a financially struggling family, continuing education was difficult. The Trust's support helped her keep moving forward.",
+          "Today she serves as Principal of Wisdom International School, Jodhpur, and remains grateful for the guidance of Maa Basanti Manihar, Shri Nandkishore Ji Sharda and Maa Madhubala Advani."
+        ]
+      },
+      "hi": {
+        "title": "पूनम मिश्रा",
+        "meta": "प्रिंसिपल, विजडम इंटरनेशनल स्कूल",
+        "excerpt": "आर्थिक संघर्ष से विद्यालय नेतृत्व तक की यात्रा, जिसमें साहस, शिक्षा और सतत सहयोग की झलक मिलती है।",
+        "hook": "परिस्थितियों से जूझती एक छात्रा, आगे चलकर अनेक विद्यार्थियों की मार्गदर्शक बन सकती है।",
+        "paragraphs": [
+          "पूनम मिश्रा वर्ष 1998 में कक्षा 6 से ट्रस्ट से जुड़ीं। एम.एससी. पूर्ण होने तक ट्रस्ट ने उनकी शिक्षा में सहयोग दिया।",
+          "परिवार की आर्थिक कठिनाइयों के बीच पढ़ाई जारी रखना सरल नहीं था, लेकिन ट्रस्ट के सहयोग ने उन्हें आगे बढ़ने का आत्मविश्वास दिया।",
+          "आज वे विजडम इंटरनेशनल स्कूल, जोधपुर की प्रिंसिपल हैं और माँ बसन्ती जी, भैया जी तथा मधु माँ के मार्गदर्शन के प्रति कृतज्ञ हैं।"
+        ]
+      }
+    },
+    {
+      "id": "jyoti-soni",
+      "category": "life-transformation",
+      "thumbnail": "assets/images/video_thumbnails/life-transformation/jyoti-soni.png",
+      "videoUrl": "https://drive.google.com/file/d/1wbj7UIM2IAeWLzgwtunA6bJ5DViH81bH/preview",
+      "en": {
+        "title": "Jyoti Soni",
+        "meta": "Chartered Accountant & Company Secretary",
+        "excerpt": "A story of inner strength after personal loss, supported by education, sanskar and spiritual guidance.",
+        "hook": "Guidance can transform a moment of darkness into a life of purpose.",
+        "paragraphs": [
+          "Jyoti Soni came to Manidweep after losing her father during Class 12. The emotional and financial pressure had made continuing education feel almost impossible.",
+          "Maa Basanti Manihar's guidance and the Trust's support gave her strength, confidence and a renewed sense of purpose.",
+          "She went on to qualify as a Chartered Accountant and Company Secretary, and her journey reflects the power of education joined with inner transformation."
+        ]
+      },
+      "hi": {
+        "title": "ज्योति सोनी",
+        "meta": "चार्टर्ड अकाउंटेंट एवं कंपनी सेक्रेटरी",
+        "excerpt": "व्यक्तिगत आघात के बाद शिक्षा, संस्कार और आध्यात्मिक मार्गदर्शन से आत्मबल पाने की यात्रा।",
+        "hook": "सही मार्गदर्शन अंधकार के क्षण को जीवन के उद्देश्य में बदल सकता है।",
+        "paragraphs": [
+          "ज्योति सोनी कक्षा 12 के दौरान पिता के देहावसान के बाद मणिद्वीप से जुड़ीं। भावनात्मक और आर्थिक कठिनाइयों के कारण पढ़ाई जारी रखना कठिन लग रहा था।",
+          "माँ बसन्ती जी के मार्गदर्शन और ट्रस्ट के सहयोग ने उन्हें आत्मबल, विश्वास और जीवन की नई दिशा दी।",
+          "आगे चलकर उन्होंने सी.ए. और सी.एस. की योग्यता प्राप्त की। उनकी यात्रा शिक्षा के साथ आंतरिक परिवर्तन की शक्ति को दर्शाती है।"
+        ]
+      }
+    },
+    {
+      "id": "kumudini-dadhich",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/kumudini-dadhich.png",
+      "videoUrl": "https://drive.google.com/file/d/1pvuJwGEqMuM8oUPOGqan4GYfYoM5B1c4/preview",
+      "en": {
+        "title": "Dr. Kumudini Dhadhich",
+        "meta": "Chemistry Lecturer, Rajasthan Education Department",
+        "excerpt": "From the possibility of leaving school to doctoral study and teaching, her journey shows the reach of sustained support.",
+        "hook": "The distance from almost leaving school to guiding students can be built one scholarship at a time.",
+        "paragraphs": [
+          "Dr. Kumudini Dhadhich received educational support from Class 6 through her PhD. During Class 10, financial difficulty nearly forced her to discontinue her studies.",
+          "The Trust supported her at that critical stage and helped her continue with confidence and purpose.",
+          "She now serves as a Chemistry Lecturer in Rajasthan's State Education Department and carries forward the values she received."
+        ]
+      },
+      "hi": {
+        "title": "डॉ. कुमुदिनी दाधीच",
+        "meta": "रसायन विज्ञान व्याख्याता, राजस्थान शिक्षा विभाग",
+        "excerpt": "स्कूल छोड़ने की संभावना से पीएच.डी. और शिक्षण तक की यात्रा, सतत सहयोग की शक्ति दिखाती है।",
+        "hook": "एक-एक छात्रवृत्ति से पढ़ाई छूटने की कगार से विद्यार्थियों का मार्गदर्शन करने तक की दूरी तय हो सकती है।",
+        "paragraphs": [
+          "डॉ. कुमुदिनी दाधीच को कक्षा 6 से पीएच.डी. तक शिक्षा-सहयोग मिला। कक्षा 10 में आर्थिक कठिनाइयों के कारण पढ़ाई छोड़ने जैसी स्थिति बन गई थी।",
+          "ट्रस्ट ने उस महत्वपूर्ण समय पर सहायता और प्रेरणा देकर उनकी पढ़ाई जारी रखने में सहयोग किया।",
+          "आज वे राजस्थान शिक्षा विभाग में रसायन विज्ञान व्याख्याता हैं और प्राप्त संस्कारों को आगे बढ़ा रही हैं।"
+        ]
+      }
+    },
+    {
+      "id": "kanika-gehlot",
+      "category": "sanskar-classes",
+      "thumbnail": "assets/images/video_thumbnails/sanskar-classes/kanika_gehlot.jpg",
+      "videoUrl": "https://drive.google.com/file/d/1SAEiQBBy-wlvoRZqCQwLZXo2PQZvOtsQ/preview",
+      "readMore": false,
+      "en": {
+        "title": "Kanika Gehlot",
+        "meta": "Student",
+        "excerpt": "A student reflection from the Sanskar Classes, sharing learning and inner growth through guidance.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "कनिका गहलोत",
+        "meta": "विद्यार्थी",
+        "excerpt": "संस्कार कक्षाओं से मिले मार्गदर्शन, सीख और आंतरिक विकास पर विद्यार्थी का अनुभव।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "deepika-dadhich",
+      "category": "sanskar-classes",
+      "thumbnail": "assets/images/video_thumbnails/sanskar-classes/deepika_dadhich.jpg",
+      "videoUrl": "https://drive.google.com/file/d/12UeAP-XezfCn-j3FcmpF7s8xJWNmGU5L/preview",
+      "readMore": false,
+      "en": {
+        "title": "Deepika Dadhich",
+        "meta": "Student",
+        "excerpt": "A student experience reflecting the role of Sanskar Classes in confidence, values and positive thinking.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "दीपिका दाधीच",
+        "meta": "विद्यार्थी",
+        "excerpt": "आत्मविश्वास, मूल्यों और सकारात्मक सोच में संस्कार कक्षाओं की भूमिका पर विद्यार्थी का अनुभव।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "muskaan-sultan",
+      "category": "sanskar-classes",
+      "thumbnail": "assets/images/video_thumbnails/sanskar-classes/muskaan_sultan.jpg",
+      "videoUrl": "https://drive.google.com/file/d/1dL50vSTF04yNzioHwBbeXDJaeOlPcFYA/preview",
+      "readMore": false,
+      "en": {
+        "title": "Muskaan Sultan",
+        "meta": "Student",
+        "excerpt": "A student testimonial on the values, discipline and encouragement received through regular guidance.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "मुस्कान सुल्तान",
+        "meta": "विद्यार्थी",
+        "excerpt": "नियमित मार्गदर्शन से मिले संस्कार, अनुशासन और प्रोत्साहन पर विद्यार्थी का अनुभव।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "vk-bhansali",
+      "category": "dignitaries-views",
+      "thumbnail": "assets/images/video_thumbnails/dignitaries-view/vk-bhansali.jpg",
+      "videoUrl": "https://drive.google.com/file/d/1qk7E-RCt39-R5tDfDzS4GiIUDALR89yj/preview",
+      "readMore": false,
+      "en": {
+        "title": "Prof. (Dr.) V. K. Bhansali",
+        "meta": "Former Head, MBM Engineering College",
+        "excerpt": "A dignitary reflection on the educational and value-based service work of the Trust.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "प्रो. (डा.) वी. के. भंसाली",
+        "meta": "पूर्व विभागाध्यक्ष, एम.बी.एम. इंजीनियरिंग कॉलेज",
+        "excerpt": "ट्रस्ट के शिक्षा और मूल्य-आधारित सेवा-कार्य पर एक गणमान्य व्यक्ति का विचार।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "navneet-agarwal",
+      "category": "dignitaries-views",
+      "thumbnail": "assets/images/video_thumbnails/dignitaries-view/navneet-agarwal.JPG",
+      "videoUrl": "https://drive.google.com/file/d/1yNmIhm3my1PNBd1awJI2iqVGQRJcSb97/preview",
+      "readMore": false,
+      "en": {
+        "title": "Navneet Agarwal",
+        "meta": "Director General (Ex), JIET Group of Institutions",
+        "excerpt": "A reflection on the mission contribution to education, values and student development.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "नवनीत अग्रवाल",
+        "meta": "पूर्व डायरेक्टर जनरल, जे.आई.ई.टी. ग्रुप ऑफ इंस्टिट्यूशन्स",
+        "excerpt": "शिक्षा, संस्कार और विद्यार्थी विकास में मिशन के योगदान पर विचार।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "former-director-technical-education",
+      "category": "dignitaries-views",
+      "thumbnail": "assets/images/video_thumbnails/dignitaries-view/former-director.JPG",
+      "videoUrl": "https://drive.google.com/file/d/157M4dB4c4oWf3tooChUY5XkJAXhYsttc/preview",
+      "readMore": false,
+      "en": {
+        "title": "Former Director",
+        "meta": "Technical Education, Rajasthan",
+        "excerpt": "A dignitary view on the role of educational support in opening pathways for deserving students.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "पूर्व निदेशक",
+        "meta": "तकनीकी शिक्षा, राजस्थान",
+        "excerpt": "योग्य विद्यार्थियों के लिए शिक्षा-सहयोग द्वारा अवसरों के निर्माण पर विचार।",
+        "hook": "",
+        "paragraphs": []
+      }
+    },
+    {
+      "id": "dig-bsf",
+      "category": "dignitaries-views",
+      "thumbnail": "assets/images/video_thumbnails/dignitaries-view/dig-bsf.JPG",
+      "videoUrl": "https://drive.google.com/file/d/1puLiPNiCjzsdIIba4CXlqKIHRePi5vy7/preview",
+      "readMore": false,
+      "en": {
+        "title": "DIG, BSF",
+        "meta": "Rajasthan Frontier",
+        "excerpt": "A dignitary message acknowledging the mission spirit of service and social upliftment.",
+        "hook": "",
+        "paragraphs": []
+      },
+      "hi": {
+        "title": "डी.आई.जी., बी.एस.एफ.",
+        "meta": "राजस्थान फ्रंटियर",
+        "excerpt": "मिशन की सेवा-भावना और सामाजिक उत्थान के कार्यों पर गणमान्य संदेश।",
+        "hook": "",
+        "paragraphs": []
+      }
+    }
+  ]
+}

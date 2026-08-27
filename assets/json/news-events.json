@@ -1,0 +1,494 @@
+{
+  "upcoming": [
+    {
+      "id": "sanskar-classes-2026-08-29",
+      "date": "2026-08-29",
+      "day": "29",
+      "monthEn": "Aug",
+      "monthHi": "अगस्त",
+      "timeEn": "10:30 AM",
+      "timeHi": "प्रातः 10:30",
+      "image": "assets/images/gallery/sunday-sanskar-classes/01-card.webp",
+      "en": {
+        "type": "Upcoming Event",
+        "title": "Sanskar Classes",
+        "meta": "29 August 2026 · 10:30 AM",
+        "description": "A student guidance session focused on values, confidence and positive life conduct."
+      },
+      "hi": {
+        "type": "आगामी कार्यक्रम",
+        "title": "संस्कार कक्षाएँ",
+        "meta": "29 अगस्त 2026 · प्रातः 10:30",
+        "description": "विद्यार्थियों के लिए संस्कार, आत्मविश्वास और सकारात्मक जीवन-दृष्टि पर आधारित मार्गदर्शन सत्र।"
+      }
+    },
+    {
+      "id": "sunday-sanskar-classes-2026-09-06",
+      "date": "2026-09-06",
+      "day": "6",
+      "monthEn": "Sep",
+      "monthHi": "सितम्बर",
+      "timeEn": "10:30 AM",
+      "timeHi": "प्रातः 10:30",
+      "image": "assets/images/gallery/sunday-sanskar-classes/02-card.webp",
+      "en": {
+        "type": "Upcoming Event",
+        "title": "Sunday Sanskar Classes",
+        "meta": "6 September 2026 · 10:30 AM",
+        "description": "Regular Sunday session for students, combining education, values and spiritual awareness."
+      },
+      "hi": {
+        "type": "आगामी कार्यक्रम",
+        "title": "रविवारीय संस्कार कक्षाएँ",
+        "meta": "6 सितम्बर 2026 · प्रातः 10:30",
+        "description": "शिक्षा, संस्कार और आध्यात्मिक चेतना के समन्वय पर आधारित विद्यार्थियों का नियमित रविवार सत्र।"
+      }
+    },
+    {
+      "id": "food-assistance-2026-09-12",
+      "date": "2026-09-12",
+      "day": "12",
+      "monthEn": "Sep",
+      "monthHi": "सितम्बर",
+      "timeEn": "",
+      "timeHi": "",
+      "image": "assets/images/gallery/ration-distribution/06-card.webp",
+      "en": {
+        "type": "Upcoming Event",
+        "title": "Monthly Food Assistance Distribution",
+        "meta": "12 September 2026",
+        "description": "Monthly food assistance for families connected with the service initiatives."
+      },
+      "hi": {
+        "type": "आगामी कार्यक्रम",
+        "title": "मासिक खाद्यान्न सहायता वितरण",
+        "meta": "12 सितम्बर 2026",
+        "description": "सेवा प्रकल्पों से जुड़े जरूरतमंद परिवारों के लिए मासिक खाद्यान्न सहायता वितरण।"
+      }
+    }
+  ],
+  "recent": [
+    {
+      "id": "food-assistance-independence-day-2026-08-15",
+      "date": "2026-08-15",
+      "day": "15",
+      "monthEn": "Aug",
+      "monthHi": "अगस्त",
+      "image": "assets/images/gallery/ration-distribution/10-card.webp",
+      "en": {
+        "type": "Recent Event",
+        "title": "Monthly Food Assistance and 80th Independence Day Celebration",
+        "meta": "15 August 2026",
+        "description": "Monthly food assistance was distributed to around 300 families, along with the 80th Independence Day celebration."
+      },
+      "hi": {
+        "type": "हालिया कार्यक्रम",
+        "title": "मासिक खाद्यान्न सहायता और 80वाँ स्वतंत्रता दिवस समारोह",
+        "meta": "15 अगस्त 2026",
+        "description": "लगभग 300 परिवारों को मासिक खाद्यान्न सहायता प्रदान की गई और 80वें स्वतंत्रता दिवस का उत्सव भी मनाया गया।"
+      }
+    },
+    {
+      "id": "sunday-sanskar-classes-2026-08-16",
+      "date": "2026-08-16",
+      "day": "16",
+      "monthEn": "Aug",
+      "monthHi": "अगस्त",
+      "image": "assets/images/gallery/sunday-sanskar-classes/03-card.webp",
+      "en": {
+        "type": "Recent Event",
+        "title": "Sunday Sanskar Classes",
+        "meta": "16 August 2026",
+        "description": "A Sunday guidance session for students with focus on education, values and character development."
+      },
+      "hi": {
+        "type": "हालिया कार्यक्रम",
+        "title": "रविवारीय संस्कार कक्षाएँ",
+        "meta": "16 अगस्त 2026",
+        "description": "विद्यार्थियों के लिए शिक्षा, संस्कार और चरित्र-निर्माण पर केंद्रित रविवार मार्गदर्शन सत्र।"
+      }
+    },
+    {
+      "id": "sunday-sanskar-classes-2026-08-23",
+      "date": "2026-08-23",
+      "day": "23",
+      "monthEn": "Aug",
+      "monthHi": "अगस्त",
+      "image": "assets/images/gallery/sunday-sanskar-classes/04-card.webp",
+      "en": {
+        "type": "Recent Event",
+        "title": "Sunday Sanskar Classes",
+        "meta": "23 August 2026",
+        "description": "Students participated in the regular Sanskar Classes, reflecting the continuing tradition of value-based guidance."
+      },
+      "hi": {
+        "type": "हालिया कार्यक्रम",
+        "title": "रविवारीय संस्कार कक्षाएँ",
+        "meta": "23 अगस्त 2026",
+        "description": "विद्यार्थियों ने नियमित संस्कार कक्षाओं में भाग लिया, जो मूल्य-आधारित मार्गदर्शन की निरंतर परम्परा को दर्शाता है।"
+      }
+    }
+  ],
+  "clippings": [
+    {
+      "id": "2025",
+      "image": "assets/images/news/2025.jpg",
+      "en": {
+        "title": "2025",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "2025",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2025
+    },
+    {
+      "id": "dec2011",
+      "image": "assets/images/news/Dec2011.png",
+      "en": {
+        "title": "Dec 2011",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Dec 2011",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2011
+    },
+    {
+      "id": "dec2018",
+      "image": "assets/images/news/Dec2018.jpg",
+      "en": {
+        "title": "Dec 2018",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Dec 2018",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2018
+    },
+    {
+      "id": "dec2022",
+      "image": "assets/images/news/Dec2022.jpg",
+      "en": {
+        "title": "Dec 2022",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Dec 2022",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2022
+    },
+    {
+      "id": "dec2023",
+      "image": "assets/images/news/Dec2023.jpg",
+      "en": {
+        "title": "Dec 2023",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Dec 2023",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2023
+    },
+    {
+      "id": "feb1998",
+      "image": "assets/images/news/Feb1998.jpg",
+      "en": {
+        "title": "Feb 1998",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Feb 1998",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 1998
+    },
+    {
+      "id": "feb2024",
+      "image": "assets/images/news/Feb2024.jpg",
+      "en": {
+        "title": "Feb 2024",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Feb 2024",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2024
+    },
+    {
+      "id": "jan2000",
+      "image": "assets/images/news/Jan2000.png",
+      "en": {
+        "title": "Jan 2000",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Jan 2000",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2000
+    },
+    {
+      "id": "jan2019",
+      "image": "assets/images/news/Jan2019.jpg",
+      "en": {
+        "title": "Jan 2019",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Jan 2019",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2019
+    },
+    {
+      "id": "jan2021",
+      "image": "assets/images/news/Jan2021.jpg",
+      "en": {
+        "title": "Jan 2021",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Jan 2021",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2021
+    },
+    {
+      "id": "jan2024",
+      "image": "assets/images/news/Jan2024.jpg",
+      "en": {
+        "title": "Jan 2024",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Jan 2024",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2024
+    },
+    {
+      "id": "july2005",
+      "image": "assets/images/news/July2005.png",
+      "en": {
+        "title": "July 2005",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "July 2005",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2005
+    },
+    {
+      "id": "june1999",
+      "image": "assets/images/news/june1999.jpg",
+      "en": {
+        "title": "june 1999",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "june 1999",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 1999
+    },
+    {
+      "id": "june2008",
+      "image": "assets/images/news/June2008.png",
+      "en": {
+        "title": "June 2008",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "June 2008",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2008
+    },
+    {
+      "id": "june2017",
+      "image": "assets/images/news/June2017.png",
+      "en": {
+        "title": "June 2017",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "June 2017",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2017
+    },
+    {
+      "id": "june2025",
+      "image": "assets/images/news/June2025.jpg",
+      "en": {
+        "title": "June 2025",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "June 2025",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2025
+    },
+    {
+      "id": "mar2023",
+      "image": "assets/images/news/Mar2023.jpg",
+      "en": {
+        "title": "Mar 2023",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Mar 2023",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2023
+    },
+    {
+      "id": "mar2025",
+      "image": "assets/images/news/Mar2025.jpg",
+      "en": {
+        "title": "Mar 2025",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Mar 2025",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2025
+    },
+    {
+      "id": "may1999",
+      "image": "assets/images/news/may1999.jpg",
+      "en": {
+        "title": "may 1999",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "may 1999",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 1999
+    },
+    {
+      "id": "nov2014",
+      "image": "assets/images/news/Nov2014.png",
+      "en": {
+        "title": "Nov 2014",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Nov 2014",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2014
+    },
+    {
+      "id": "nov2015",
+      "image": "assets/images/news/Nov2015.jpg",
+      "en": {
+        "title": "Nov 2015",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Nov 2015",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2015
+    },
+    {
+      "id": "nov2016",
+      "image": "assets/images/news/Nov2016.png",
+      "en": {
+        "title": "Nov 2016",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Nov 2016",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2016
+    },
+    {
+      "id": "oct2013",
+      "image": "assets/images/news/Oct2013.png",
+      "en": {
+        "title": "Oct 2013",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Oct 2013",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2013
+    },
+    {
+      "id": "sep2020",
+      "image": "assets/images/news/Sep2020.jpg",
+      "en": {
+        "title": "Sep 2020",
+        "source": "News clipping",
+        "caption": "Archived newspaper coverage from the mission and service journey."
+      },
+      "hi": {
+        "title": "Sep 2020",
+        "source": "समाचार कटिंग",
+        "caption": "मिशन और सेवा-यात्रा से जुड़ी संग्रहित समाचार कटिंग।"
+      },
+      "year": 2020
+    }
+  ]
+}
