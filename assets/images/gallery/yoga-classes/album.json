@@ -1,0 +1,368 @@
+{
+  "album": "yoga-classes",
+  "generatedAt": "2026-08-28T03:10:57.530Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\yoga-classes",
+  "photographCount": 12,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "yoga-classes",
+      "original": {
+        "file": "2 (2).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 10651586
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 18696
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 110652
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 387500
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "yoga-classes",
+      "original": {
+        "file": "3 (4).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 10888150
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 20004
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 129030
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 458748
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "yoga-classes",
+      "original": {
+        "file": "09A5615A-408D-47FB-8E11-1AEDD8045788.jpg",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 430858
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17480
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 137892
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 384682
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_7597.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9438723
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15176
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 94206
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 338564
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_7607.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9294547
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15246
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 90818
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 310000
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_7663.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 10031050
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15790
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 95600
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 344662
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_7670.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9999254
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16026
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 98170
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 347426
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_8351.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 8870820
+      },
+      "thumbnail": {
+        "file": "08-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15960
+      },
+      "card": {
+        "file": "08-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 92494
+      },
+      "full": {
+        "file": "08-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 312832
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "09",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG_8447.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 10255336
+      },
+      "thumbnail": {
+        "file": "09-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 18480
+      },
+      "card": {
+        "file": "09-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 106096
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 361104
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG-20220912-WA0056.jpg",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 201639
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13460
+      },
+      "card": {
+        "file": "10-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 91994
+      },
+      "full": {
+        "file": "10-full.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 237192
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "11",
+      "album": "yoga-classes",
+      "original": {
+        "file": "IMG-20220912-WA0063.jpg",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 295633
+      },
+      "thumbnail": {
+        "file": "11-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13450
+      },
+      "card": {
+        "file": "11-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 102280
+      },
+      "full": {
+        "file": "11-full.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 261222
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "12",
+      "album": "yoga-classes",
+      "original": {
+        "file": "page-23_image-09_Im284.png",
+        "width": 648,
+        "height": 303,
+        "bytes": 393133
+      },
+      "thumbnail": {
+        "file": "12-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15652
+      },
+      "card": {
+        "file": "12-card.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 44534
+      },
+      "full": {
+        "file": "12-full.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 51546
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "album": "ration-distribution",
-  "generatedAt": "2026-08-04T20:17:58.823Z",
-  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\ration-distribution",
-  "photographCount": 13,
+  "album": "food-assistance",
+  "generatedAt": "2026-08-28T03:13:22.840Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\food-assistance",
+  "photographCount": 19,
   "photographs": [
     {
       "id": "01",
-      "album": "ration-distribution",
+      "album": "food-assistance",
       "original": {
         "file": "01.jpg",
         "width": 4032,
@@ -36,7 +36,67 @@
     },
     {
       "id": "02",
-      "album": "ration-distribution",
+      "album": "food-assistance",
+      "original": {
+        "file": "1.png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2459583
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13624
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 73674
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 215890
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "food-assistance",
+      "original": {
+        "file": "1f914292-bb13-4b97-90a9-40f40ad4d13b (3).jpg",
+        "width": 1280,
+        "height": 960,
+        "bytes": 148452
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12346
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 62668
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 119152
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "food-assistance",
       "original": {
         "file": "02.jpg",
         "width": 4032,
@@ -44,19 +104,19 @@
         "bytes": 4234967
       },
       "thumbnail": {
-        "file": "02-thumb.webp",
+        "file": "04-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 16734
       },
       "card": {
-        "file": "02-card.webp",
+        "file": "04-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 140348
       },
       "full": {
-        "file": "02-full.webp",
+        "file": "04-full.webp",
         "width": 1800,
         "height": 1350,
         "bytes": 532922
@@ -65,8 +125,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "03",
-      "album": "ration-distribution",
+      "id": "05",
+      "album": "food-assistance",
       "original": {
         "file": "03.jpg",
         "width": 6000,
@@ -74,19 +134,19 @@
         "bytes": 6359309
       },
       "thumbnail": {
-        "file": "03-thumb.webp",
+        "file": "05-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 11546
       },
       "card": {
-        "file": "03-card.webp",
+        "file": "05-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 60128
       },
       "full": {
-        "file": "03-full.webp",
+        "file": "05-full.webp",
         "width": 1800,
         "height": 1200,
         "bytes": 179820
@@ -95,8 +155,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "04",
-      "album": "ration-distribution",
+      "id": "06",
+      "album": "food-assistance",
       "original": {
         "file": "04.jpg",
         "width": 4032,
@@ -104,19 +164,19 @@
         "bytes": 3327215
       },
       "thumbnail": {
-        "file": "04-thumb.webp",
+        "file": "06-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 16546
       },
       "card": {
-        "file": "04-card.webp",
+        "file": "06-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 125862
       },
       "full": {
-        "file": "04-full.webp",
+        "file": "06-full.webp",
         "width": 1800,
         "height": 1350,
         "bytes": 427430
@@ -125,8 +185,38 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "05",
-      "album": "ration-distribution",
+      "id": "07",
+      "album": "food-assistance",
+      "original": {
+        "file": "5 (2).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 8480140
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13220
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 78648
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 260788
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "food-assistance",
       "original": {
         "file": "05.jpg",
         "width": 1600,
@@ -134,19 +224,19 @@
         "bytes": 239996
       },
       "thumbnail": {
-        "file": "05-thumb.webp",
+        "file": "08-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 13236
       },
       "card": {
-        "file": "05-card.webp",
+        "file": "08-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 76848
       },
       "full": {
-        "file": "05-full.webp",
+        "file": "08-full.webp",
         "width": 1600,
         "height": 1200,
         "bytes": 183588
@@ -155,8 +245,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "06",
-      "album": "ration-distribution",
+      "id": "09",
+      "album": "food-assistance",
       "original": {
         "file": "06.jpg",
         "width": 3775,
@@ -164,19 +254,19 @@
         "bytes": 3918798
       },
       "thumbnail": {
-        "file": "06-thumb.webp",
+        "file": "09-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 17742
       },
       "card": {
-        "file": "06-card.webp",
+        "file": "09-card.webp",
         "width": 900,
         "height": 721,
         "bytes": 123084
       },
       "full": {
-        "file": "06-full.webp",
+        "file": "09-full.webp",
         "width": 1800,
         "height": 1442,
         "bytes": 411942
@@ -185,8 +275,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "07",
-      "album": "ration-distribution",
+      "id": "10",
+      "album": "food-assistance",
       "original": {
         "file": "07.jpg",
         "width": 1280,
@@ -194,19 +284,19 @@
         "bytes": 193337
       },
       "thumbnail": {
-        "file": "07-thumb.webp",
+        "file": "10-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 15246
       },
       "card": {
-        "file": "07-card.webp",
+        "file": "10-card.webp",
         "width": 900,
         "height": 674,
         "bytes": 94192
       },
       "full": {
-        "file": "07-full.webp",
+        "file": "10-full.webp",
         "width": 1280,
         "height": 958,
         "bytes": 168408
@@ -215,8 +305,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "08",
-      "album": "ration-distribution",
+      "id": "11",
+      "album": "food-assistance",
       "original": {
         "file": "08.jpg",
         "width": 1024,
@@ -224,19 +314,19 @@
         "bytes": 122184
       },
       "thumbnail": {
-        "file": "08-thumb.webp",
+        "file": "11-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 12296
       },
       "card": {
-        "file": "08-card.webp",
+        "file": "11-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 77990
       },
       "full": {
-        "file": "08-full.webp",
+        "file": "11-full.webp",
         "width": 1024,
         "height": 768,
         "bytes": 112114
@@ -245,8 +335,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "09",
-      "album": "ration-distribution",
+      "id": "12",
+      "album": "food-assistance",
       "original": {
         "file": "09.jpg",
         "width": 1024,
@@ -254,19 +344,19 @@
         "bytes": 182970
       },
       "thumbnail": {
-        "file": "09-thumb.webp",
+        "file": "12-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 16304
       },
       "card": {
-        "file": "09-card.webp",
+        "file": "12-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 117250
       },
       "full": {
-        "file": "09-full.webp",
+        "file": "12-full.webp",
         "width": 1024,
         "height": 768,
         "bytes": 170058
@@ -275,8 +365,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "10",
-      "album": "ration-distribution",
+      "id": "13",
+      "album": "food-assistance",
       "original": {
         "file": "10.jpg",
         "width": 1600,
@@ -284,19 +374,19 @@
         "bytes": 426303
       },
       "thumbnail": {
-        "file": "10-thumb.webp",
+        "file": "13-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 16166
       },
       "card": {
-        "file": "10-card.webp",
+        "file": "13-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 133692
       },
       "full": {
-        "file": "10-full.webp",
+        "file": "13-full.webp",
         "width": 1600,
         "height": 1200,
         "bytes": 387846
@@ -305,8 +395,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "11",
-      "album": "ration-distribution",
+      "id": "14",
+      "album": "food-assistance",
       "original": {
         "file": "11.jpg",
         "width": 1600,
@@ -314,19 +404,19 @@
         "bytes": 186389
       },
       "thumbnail": {
-        "file": "11-thumb.webp",
+        "file": "14-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 12346
       },
       "card": {
-        "file": "11-card.webp",
+        "file": "14-card.webp",
         "width": 900,
         "height": 493,
         "bytes": 60518
       },
       "full": {
-        "file": "11-full.webp",
+        "file": "14-full.webp",
         "width": 1600,
         "height": 877,
         "bytes": 150778
@@ -335,8 +425,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "12",
-      "album": "ration-distribution",
+      "id": "15",
+      "album": "food-assistance",
       "original": {
         "file": "12.jpg",
         "width": 4000,
@@ -344,19 +434,19 @@
         "bytes": 808422
       },
       "thumbnail": {
-        "file": "12-thumb.webp",
+        "file": "15-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 12176
       },
       "card": {
-        "file": "12-card.webp",
+        "file": "15-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 76462
       },
       "full": {
-        "file": "12-full.webp",
+        "file": "15-full.webp",
         "width": 1800,
         "height": 1350,
         "bytes": 237296
@@ -365,8 +455,8 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "13",
-      "album": "ration-distribution",
+      "id": "16",
+      "album": "food-assistance",
       "original": {
         "file": "13.jpg",
         "width": 4080,
@@ -374,22 +464,112 @@
         "bytes": 1091399
       },
       "thumbnail": {
-        "file": "13-thumb.webp",
+        "file": "16-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 13854
       },
       "card": {
-        "file": "13-card.webp",
+        "file": "16-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 87068
       },
       "full": {
-        "file": "13-full.webp",
+        "file": "16-full.webp",
         "width": 1800,
         "height": 1350,
         "bytes": 282886
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "17",
+      "album": "food-assistance",
+      "original": {
+        "file": "IMG_20201212_135410.jpg",
+        "width": 4608,
+        "height": 2112,
+        "bytes": 2738641
+      },
+      "thumbnail": {
+        "file": "17-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13512
+      },
+      "card": {
+        "file": "17-card.webp",
+        "width": 900,
+        "height": 413,
+        "bytes": 59986
+      },
+      "full": {
+        "file": "17-full.webp",
+        "width": 1800,
+        "height": 825,
+        "bytes": 217332
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "18",
+      "album": "food-assistance",
+      "original": {
+        "file": "page-23_image-06_Im281.png",
+        "width": 648,
+        "height": 302,
+        "bytes": 309399
+      },
+      "thumbnail": {
+        "file": "18-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9254
+      },
+      "card": {
+        "file": "18-card.webp",
+        "width": 648,
+        "height": 302,
+        "bytes": 25950
+      },
+      "full": {
+        "file": "18-full.webp",
+        "width": 648,
+        "height": 302,
+        "bytes": 30446
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "19",
+      "album": "food-assistance",
+      "original": {
+        "file": "page-23_image-07_Im282.png",
+        "width": 648,
+        "height": 303,
+        "bytes": 337834
+      },
+      "thumbnail": {
+        "file": "19-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12454
+      },
+      "card": {
+        "file": "19-card.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 34356
+      },
+      "full": {
+        "file": "19-full.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 39944
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."

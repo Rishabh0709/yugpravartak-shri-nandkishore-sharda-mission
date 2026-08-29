@@ -271,6 +271,19 @@
             gap: 16px;
         }
 
+        .karma-trust--wide {
+            grid-template-columns: 1fr;
+        }
+
+        .karma-trust--wide .karma-trust__intro {
+            position: static;
+            max-width: 980px;
+        }
+
+        .karma-trust--wide .karma-activities {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
         .karma-activity {
             overflow: hidden;
             border: 1px solid rgba(121, 43, 42, .1);
@@ -358,7 +371,16 @@
             }
 
             .karma-flow,
-            .karma-summary {
+            .karma-summary,
+            .karma-pillars {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .karma-bridge {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-trust--wide .karma-activities {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
@@ -390,6 +412,132 @@
                 height: 230px;
             }
         }
+        .karma-hero-flow {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            max-width: 980px;
+            margin-top: 32px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.7vw, 1.45rem);
+            font-weight: 800;
+            line-height: 1.5;
+        }
+
+        .karma-hero-flow span {
+            display: inline-flex;
+            align-items: center;
+            min-height: 42px;
+            padding: 8px 14px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .66);
+            box-shadow: 0 12px 30px rgba(63, 45, 37, .05);
+        }
+
+        .karma-hero-flow i {
+            color: rgba(121, 43, 42, .48);
+            font-style: normal;
+            font-family: var(--hi-sans);
+            font-weight: 800;
+        }
+
+        .karma-bridge {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(24px, 4vw, 56px);
+            align-items: center;
+        }
+
+        .karma-bridge__note {
+            padding: clamp(22px, 3vw, 34px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .72);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .karma-bridge__note strong {
+            display: block;
+            margin-bottom: 12px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.4vw, 2.2rem);
+            line-height: 1.35;
+        }
+
+        .karma-bridge__note p,
+        .karma-pillar p {
+            color: #62544c;
+            line-height: 1.84;
+        }
+
+        .karma-pillars {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .karma-pillar {
+            min-height: 230px;
+            padding: 24px 20px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 16px 42px rgba(63, 45, 37, .06);
+        }
+
+        .karma-pillar__icon {
+            display: inline-grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            color: #8a2f2d;
+            background: rgba(198, 148, 53, .15);
+            font-weight: 900;
+        }
+
+        .karma-pillar h3 {
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .karma-pillar p {
+            margin: 0;
+            font-size: .98rem;
+        }
+        /* Final responsive overrides for the service-flow additions. */
+        @media (max-width: 980px) {
+            .karma-bridge {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-pillars {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .karma-pillars {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-hero-flow {
+                gap: 8px;
+            }
+
+            .karma-hero-flow i {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body class="hindi-home karma-page">
@@ -401,11 +549,9 @@
             <div class="hi-shell karma-hero__content">
                 <span class="hi-kicker">निष्काम कर्म साधना</span>
                 <h1 id="karma-title">मानव कल्याण की निष्काम सेवा-धारा</h1>
-                <p class="karma-hero__lead">एक दूरदर्शी संकल्प से प्रवाहित शिक्षा, संस्कार, आत्मनिर्भरता, मानव सेवा और दिव्य ज्ञान की पावन धारा।</p>
-                <div class="karma-mantra" aria-label="निष्काम कर्म साधना का विचार सार">
-                    <div class="karma-mantra__pair"><span>शिक्षा से</span><strong>संस्कार</strong></div>
-                    <div class="karma-mantra__pair"><span>व्यक्तित्व से</span><strong>आत्मनिर्भरता</strong></div>
-                    <div class="karma-mantra__pair"><span>सेवा से</span><strong>समग्र विकास</strong></div>
+                <p class="karma-hero__lead">एक दूरदर्शी संकल्प से प्रवाहित शिक्षा, संस्कार, आत्मनिर्भरता, मानव सेवा और दिव्य ज्ञान की पावन धारा। यह पृष्ठ बताता है कि सेवा-कार्य अलग-अलग प्रयास नहीं, बल्कि एक ही निष्काम साधना की समन्वित यात्रा हैं।</p>
+                <div class="karma-hero-flow" aria-label="निष्काम सेवा की विचार-यात्रा">
+                    <span>शिक्षा</span><i aria-hidden="true">→</i><span>संस्कार</span><i aria-hidden="true">→</i><span>आत्मनिर्भरता</span><i aria-hidden="true">→</i><span>सेवा</span><i aria-hidden="true">→</i><span>समग्र विकास</span>
                 </div>
             </div>
         </section>
@@ -427,22 +573,18 @@
         </section>
 
         <section class="karma-section karma-section--flow" aria-labelledby="flow-title">
-            <div class="hi-shell">
-                <header class="hi-section-heading hi-section-heading--center">
-                    <span class="hi-kicker">एक दृष्टि, चार संस्थागत आयाम</span>
-                    <h2 id="flow-title">पहले दर्शन, फिर संस्थाएँ</h2>
-                    <p>संस्थाएँ अलग-अलग बनीं, पर उनका लक्ष्य एक ही रहा: मानव जीवन को शिक्षित, संस्कारित, आत्मनिर्भर, स्वस्थ, संवेदनशील, आध्यात्मिक और सामाजिक रूप से उत्तरदायी बनाना।</p>
+            <div class="hi-shell karma-bridge">
+                <header class="hi-section-heading">
+                    <span class="hi-kicker">संकल्प से सेवा-यात्रा तक</span>
+                    <h2 id="flow-title">दृष्टि पहले बनी, कार्य बाद में आकार लेते गए</h2>
+                    <p>समय और परिस्थितियों के अनुसार अलग-अलग ट्रस्ट बने, पर उनके मूल में एक ही भाव रहा: मानव जीवन को शिक्षित, संस्कारित, आत्मनिर्भर, स्वस्थ, संवेदनशील और आध्यात्मिक रूप से उत्तरदायी बनाना।</p>
                 </header>
-                <div class="karma-flow" aria-label="निष्काम कर्म साधना की विचार-यात्रा">
-                    <div class="karma-flow__step"><span>१</span><strong>शिक्षा</strong></div>
-                    <div class="karma-flow__step"><span>२</span><strong>संस्कार और विवेक</strong></div>
-                    <div class="karma-flow__step"><span>३</span><strong>आत्मनिर्भरता</strong></div>
-                    <div class="karma-flow__step"><span>४</span><strong>मानवीय सेवा</strong></div>
-                    <div class="karma-flow__step"><span>५</span><strong>दिव्य ज्ञान का प्रसार</strong></div>
+                <div class="karma-bridge__note">
+                    <strong>अध्यात्म जब जीवन में उतरता है, तो वह सेवा बन जाता है।</strong>
+                    <p>इसीलिए इस पृष्ठ में सेवा-कार्य को trust-wise रखा गया है, ताकि पाठक समझ सकें कि किस आवश्यकता से कौन-सा कार्य आरम्भ हुआ और कैसे वह व्यापक मानव कल्याण से जुड़ता गया।</p>
                 </div>
             </div>
         </section>
-
         <section class="karma-section karma-section--institutions" aria-labelledby="trusts-title">
             <div class="hi-shell">
                 <header class="hi-section-heading hi-section-heading--center">
@@ -460,8 +602,8 @@
                             <p>10 जून 1996 को स्थापित इस ट्रस्ट ने दूरदर्शी योजना की पहली नींव रखी: बालिका को शिक्षित करो, संस्कारित करो और उसके आत्मविश्वास को जगाओ।</p>
                         </div>
                         <div class="karma-activities">
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/scholarship-distribution/16-card.webp" alt="विद्यालयी छात्रवृत्ति वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>विद्यालयी छात्रवृत्ति</h4><p>आर्थिक कठिनाइयों के कारण शिक्षा से वंचित बालिकाओं को पढ़ाई जारी रखने का आधार।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/sunday-sanskar-classes/01-card.webp" alt="संस्कार कक्षाओं में विद्यार्थी" loading="lazy"></figure><div class="karma-activity__body"><h4>संस्कार और आत्मविश्वास</h4><p>शिक्षा को चरित्र, नैतिक मूल्यों और सकारात्मक जीवन-दृष्टि से जोड़ना।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.16-card" src="../assets/images/gallery/scholarship-distribution/16-card.webp" alt="विद्यालयी छात्रवृत्ति वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>विद्यालयी छात्रवृत्ति</h4><p>आर्थिक कठिनाइयों के कारण शिक्षा से वंचित बालिकाओं को पढ़ाई जारी रखने का आधार।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.01-card" src="../assets/images/gallery/sunday-sanskar-classes/01-card.webp" alt="संस्कार कक्षाओं में विद्यार्थी" loading="lazy"></figure><div class="karma-activity__body"><h4>संस्कार और आत्मविश्वास</h4><p>शिक्षा को चरित्र, नैतिक मूल्यों और सकारात्मक जीवन-दृष्टि से जोड़ना।</p></div></article>
                         </div>
                     </article>
 
@@ -473,12 +615,12 @@
                             <p>2001 में स्थापित यह ट्रस्ट पहली संस्था की अगली कड़ी है। जहाँ विद्यालयी शिक्षा की नींव मजबूत हुई, वहीं इसने छात्राओं को उच्च शिक्षा और आगे के अवसरों तक पहुँचाया।</p>
                         </div>
                         <div class="karma-activities">
-                            <article class="karma-activity"><figure><img src="../assets/images/maa-shardamani-scholarship-distribution.jpg" alt="उच्च शिक्षा के लिए छात्रवृत्ति सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>उच्च शिक्षा सहयोग</h4><p>कॉलेज स्तर की जरूरतमंद छात्राओं को आर्थिक और शैक्षणिक सहयोग।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/scholarship-distribution/10-card.webp" alt="छात्राओं का शैक्षणिक मार्गदर्शन" loading="lazy"></figure><div class="karma-activity__body"><h4>भविष्य के अवसर</h4><p>शिक्षा को आत्मसम्मान, आत्मनिर्भरता और उज्ज्वल भविष्य से जोड़ना।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.maa-shardamani-scholarship-distribution" src="../assets/images/maa-shardamani-scholarship-distribution.jpg" alt="उच्च शिक्षा के लिए छात्रवृत्ति सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>उच्च शिक्षा सहयोग</h4><p>कॉलेज स्तर की जरूरतमंद छात्राओं को आर्थिक और शैक्षणिक सहयोग।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.10-card" src="../assets/images/gallery/scholarship-distribution/10-card.webp" alt="छात्राओं का शैक्षणिक मार्गदर्शन" loading="lazy"></figure><div class="karma-activity__body"><h4>भविष्य के अवसर</h4><p>शिक्षा को आत्मसम्मान, आत्मनिर्भरता और उज्ज्वल भविष्य से जोड़ना।</p></div></article>
                         </div>
                     </article>
 
-                    <article class="karma-trust">
+                    <article class="karma-trust karma-trust--wide">
                         <div class="karma-trust__intro">
                             <span class="karma-trust__number">३</span>
                             <h3>ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र</h3>
@@ -486,45 +628,45 @@
                             <p>इस केन्द्र की भूमिका शिक्षा से आगे बढ़कर स्वास्थ्य, परिवार-सहायता, महिला आत्मनिर्भरता और समग्र व्यक्तित्व विकास तक विस्तृत हुई।</p>
                         </div>
                         <div class="karma-activities">
-                            <article class="karma-activity"><figure><img src="../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp" alt="बालक शिक्षा सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>बालक शिक्षा सहयोग</h4><p>जरूरतमंद विद्यार्थियों को उच्च एवं व्यावसायिक शिक्षा के लिए सहायता और मार्गदर्शन।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/ration-distribution/06-card.webp" alt="खाद्यान्न सहायता" loading="lazy"></figure><div class="karma-activity__body"><h4>खाद्य सहायता</h4><p>कोविड-19 के समय 50 परिवारों से शुरू हुआ प्रयास आगे चलकर लगभग 300 परिवारों तक पहुँचा।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/yoga_class.jpg" alt="योग और प्राणायाम कक्षा" loading="lazy"></figure><div class="karma-activity__body"><h4>योग, प्राणायाम और ध्यान</h4><p>शारीरिक, मानसिक, भावनात्मक और आध्यात्मिक संतुलन की दिशा में नियमित अभ्यास।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/sewing-center/04-card.webp" alt="महिला सिलाई प्रशिक्षण" loading="lazy"></figure><div class="karma-activity__body"><h4>महिला आत्मनिर्भरता</h4><p>2025 में स्थापित सिलाई केन्द्र द्वारा निःशुल्क प्रशिक्षण, स्वरोजगार और सम्मानजनक आजीविका की दिशा।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.gyanyogi-adhyatm-kendra-scholarship" src="../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp" alt="बालक शिक्षा सहयोग" loading="lazy"></figure><div class="karma-activity__body"><h4>बालक शिक्षा सहयोग</h4><p>जरूरतमंद विद्यार्थियों को उच्च एवं व्यावसायिक शिक्षा के लिए सहायता और मार्गदर्शन।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.06-card" src="../assets/images/gallery/food-assistance/06-card.webp" alt="खाद्यान्न सहायता" loading="lazy"></figure><div class="karma-activity__body"><h4>खाद्य सहायता</h4><p>कोविड-19 के समय 50 परिवारों से शुरू हुआ प्रयास आगे चलकर लगभग 300 परिवारों तक पहुँचा।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.yoga-class" src="../assets/images/yoga_class.jpg" alt="योग और प्राणायाम कक्षा" loading="lazy"></figure><div class="karma-activity__body"><h4>योग, प्राणायाम और ध्यान</h4><p>शारीरिक, मानसिक, भावनात्मक और आध्यात्मिक संतुलन की दिशा में नियमित अभ्यास।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.04-card" src="../assets/images/gallery/sewing-center/04-card.webp" alt="महिला सिलाई प्रशिक्षण" loading="lazy"></figure><div class="karma-activity__body"><h4>महिला आत्मनिर्भरता</h4><p>2025 में स्थापित सिलाई केन्द्र द्वारा निःशुल्क प्रशिक्षण, स्वरोजगार और सम्मानजनक आजीविका की दिशा।</p></div></article>
                         </div>
                     </article>
 
-                    <article class="karma-trust">
+                    <article class="karma-trust" id="gyan-ganga-mission">
                         <div class="karma-trust__intro">
                             <span class="karma-trust__number">४</span>
                             <h3>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन</h3>
                             <p class="karma-trust__subtitle">दिव्य ज्ञान और आध्यात्मिक साहित्य का प्रसार</p>
                             <p>इस मिशन का दायित्व भैया जी के आध्यात्मिक ज्ञान, जीवन-दृष्टि और प्रेरणादायी साहित्य का प्रकाशन एवं निःशुल्क प्रसार है, ताकि चेतना का विस्तार विचार और ज्ञान के माध्यम से भी हो।</p>
+                            <a class="karma-thesis__link" href="gyan-ganga-mission.html">ज्ञान गंगा मिशन विस्तार से पढ़ें</a>
                         </div>
                         <div class="karma-activities">
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/gyan-ganga-mission/01-card.webp" alt="ज्ञान गंगा मिशन का साहित्य" loading="lazy"></figure><div class="karma-activity__body"><h4>सद्साहित्य प्रकाशन</h4><p>आध्यात्मिक ज्ञान, चिंतन और दस्तावेजों को वर्तमान और भावी पीढ़ियों तक पहुँचाना।</p></div></article>
-                            <article class="karma-activity"><figure><img src="../assets/images/gallery/gyan-ganga-mission/02-card.webp" alt="सद्साहित्य का निःशुल्क वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>निःशुल्क प्रसार</h4><p>दिव्य ज्ञान को जन-जन तक सहज उपलब्ध कराना भी निष्काम सेवा का ही एक रूप है।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.01-card-2" src="../assets/images/gallery/gyan-ganga-mission/02-card.webp" alt="ज्ञान गंगा मिशन का साहित्य" loading="lazy"></figure><div class="karma-activity__body"><h4>सद्साहित्य प्रकाशन</h4><p>आध्यात्मिक ज्ञान, चिंतन और दस्तावेजों को वर्तमान और भावी पीढ़ियों तक पहुँचाना।</p></div></article>
+                            <article class="karma-activity"><figure><img data-image-key="nishkam-karm-sadhna.02-card" src="../assets/images/gallery/gyan-ganga-mission/02-card.webp" alt="सद्साहित्य का निःशुल्क वितरण" loading="lazy"></figure><div class="karma-activity__body"><h4>निःशुल्क प्रसार</h4><p>दिव्य ज्ञान को जन-जन तक सहज उपलब्ध कराना भी निष्काम सेवा का ही एक रूप है।</p></div></article>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="karma-section karma-section--flow" aria-labelledby="summary-title">
+        <section class="karma-section karma-section--flow" aria-labelledby="pillars-title">
             <div class="hi-shell">
                 <header class="hi-section-heading hi-section-heading--center">
-                    <span class="hi-kicker">समन्वित दृष्टि</span>
-                    <h2 id="summary-title">अलग-अलग कार्य, एक ही साधना</h2>
-                    <p>इन संस्थाओं की परस्पर पूरकता स्पष्ट करती है कि यह यात्रा बिखरे हुए सेवा-प्रयासों की नहीं, बल्कि चरणबद्ध सामाजिक और आध्यात्मिक दृष्टि की परिणति है।</p>
+                    <span class="hi-kicker">समग्र सेवा-दृष्टि</span>
+                    <h2 id="pillars-title">निष्काम सेवा के चार प्रमुख आयाम</h2>
+                    <p>चारों संस्थाओं के कार्य अलग-अलग दिखाई देते हैं, पर उनका सार चार मूल आयामों में समाहित है: शिक्षा, संस्कार, आन्तरिक संतुलन और आत्मनिर्भर मानवीय सेवा।</p>
                 </header>
-                <div class="karma-summary">
-                    <div class="karma-summary__item"><strong>स्वामी विवेकानन्द ट्रस्ट</strong><p>विद्यालयी बालिकाओं की शिक्षा एवं संस्कार।</p></div>
-                    <div class="karma-summary__item"><strong>माँ शारदामणि ट्रस्ट</strong><p>कॉलेज छात्राओं की उच्च शिक्षा।</p></div>
-                    <div class="karma-summary__item"><strong>अध्यात्म केन्द्र</strong><p>बालक शिक्षा, योग-ध्यान, खाद्य सहायता, महिला आत्मनिर्भरता और मानव सेवा।</p></div>
-                    <div class="karma-summary__item"><strong>ज्ञान गंगा मिशन</strong><p>आध्यात्मिक एवं दिव्य ज्ञान का प्रकाशन और निःशुल्क प्रसार।</p></div>
+                <div class="karma-pillars" aria-label="निष्काम सेवा के चार आयाम">
+                    <article class="karma-pillar"><span class="karma-pillar__icon" aria-hidden="true">१</span><h3>शिक्षा एवं छात्रवृत्ति</h3><p>विद्यालयी, उच्च और व्यावसायिक शिक्षा के लिए सहयोग, ताकि आर्थिक अभाव शिक्षा की राह में बाधा न बने।</p></article>
+                    <article class="karma-pillar"><span class="karma-pillar__icon" aria-hidden="true">२</span><h3>संस्कार एवं व्यक्तित्व विकास</h3><p>विवेक, कर्तव्यबोध, चरित्र-निर्माण और सकारात्मक जीवन-दृष्टि को शिक्षा के साथ जोड़ना।</p></article>
+                    <article class="karma-pillar"><span class="karma-pillar__icon" aria-hidden="true">३</span><h3>योग, स्वास्थ्य एवं आन्तरिक संतुलन</h3><p>योग, प्राणायाम, ध्यान और मानसिक-भावनात्मक संतुलन द्वारा जीवन को स्थिर और प्रसन्न बनाना।</p></article>
+                    <article class="karma-pillar"><span class="karma-pillar__icon" aria-hidden="true">४</span><h3>मानवीय सेवा एवं आत्मनिर्भरता</h3><p>खाद्यान्न सहायता, परिवार-सहयोग, कौशल-विकास और सम्मानजनक जीवन की दिशा में सहयोग।</p></article>
                 </div>
             </div>
         </section>
-
         <section class="karma-section karma-section--closing" aria-labelledby="closing-title">
             <div class="hi-shell">
                 <header class="hi-section-heading hi-section-heading--center">
@@ -534,8 +676,8 @@
                 </header>
                 <div class="karma-closing-verse">शिक्षा से संस्कार,<br>संस्कार से व्यक्तित्व,<br>व्यक्तित्व से आत्मनिर्भरता,<br>आत्मनिर्भरता से सेवा,<br>और सेवा से समाज का समग्र विकास।</div>
                 <div class="hi-actions hi-actions--center karma-actions">
-                    <a class="hi-btn hi-btn--primary" href="../activities.html">सेवा प्रकल्पों का विस्तार देखें</a>
-                    <a class="hi-btn hi-btn--outline" href="publications.html">ज्ञान गंगा का साहित्य देखें</a>
+                    <a class="hi-btn hi-btn--primary" href="impact.html">सेवा का प्रभाव देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="sampark.html">सम्पर्क करें</a>
                 </div>
             </div>
         </section>
@@ -543,9 +685,20 @@
 
     <div id="footer-placeholder"></div>
     <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/image-manifest.js?v=20260828-1"></script>
     <script src="../assets/js/main.js?v=20260811-1"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 

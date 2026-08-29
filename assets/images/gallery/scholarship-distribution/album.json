@@ -1,35 +1,35 @@
 {
   "album": "scholarship-distribution",
-  "generatedAt": "2026-08-04T20:01:11.955Z",
+  "generatedAt": "2026-08-28T03:04:59.600Z",
   "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\scholarship-distribution",
-  "photographCount": 14,
+  "photographCount": 35,
   "photographs": [
     {
       "id": "01",
       "album": "scholarship-distribution",
       "original": {
-        "file": "1 (3).jpg",
-        "width": 6000,
-        "height": 4000,
-        "bytes": 8466215
+        "file": "1 (2).png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2411095
       },
       "thumbnail": {
         "file": "01-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 13688
+        "bytes": 13624
       },
       "card": {
         "file": "01-card.webp",
         "width": 900,
-        "height": 600,
-        "bytes": 81482
+        "height": 507,
+        "bytes": 77152
       },
       "full": {
         "file": "01-full.webp",
-        "width": 1800,
-        "height": 1200,
-        "bytes": 258978
+        "width": 1672,
+        "height": 941,
+        "bytes": 231064
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -38,28 +38,28 @@
       "id": "02",
       "album": "scholarship-distribution",
       "original": {
-        "file": "1.jpg",
-        "width": 2434,
-        "height": 1350,
-        "bytes": 932422
+        "file": "1 (3).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 8466215
       },
       "thumbnail": {
         "file": "02-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 6450
+        "bytes": 13688
       },
       "card": {
         "file": "02-card.webp",
         "width": 900,
-        "height": 499,
-        "bytes": 24238
+        "height": 600,
+        "bytes": 81482
       },
       "full": {
         "file": "02-full.webp",
         "width": 1800,
-        "height": 998,
-        "bytes": 65534
+        "height": 1200,
+        "bytes": 258978
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -68,28 +68,28 @@
       "id": "03",
       "album": "scholarship-distribution",
       "original": {
-        "file": "2 (3).jpg",
-        "width": 6000,
-        "height": 4000,
-        "bytes": 9181667
+        "file": "1_1.jpg",
+        "width": 540,
+        "height": 299,
+        "bytes": 39992
       },
       "thumbnail": {
         "file": "03-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 13896
+        "bytes": 6996
       },
       "card": {
         "file": "03-card.webp",
-        "width": 900,
-        "height": 600,
-        "bytes": 87238
+        "width": 540,
+        "height": 299,
+        "bytes": 15286
       },
       "full": {
         "file": "03-full.webp",
-        "width": 1800,
-        "height": 1200,
-        "bytes": 298134
+        "width": 540,
+        "height": 299,
+        "bytes": 17794
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -98,28 +98,28 @@
       "id": "04",
       "album": "scholarship-distribution",
       "original": {
-        "file": "2.jpg",
-        "width": 2458,
-        "height": 1464,
-        "bytes": 1047283
+        "file": "1_5.jpg",
+        "width": 661,
+        "height": 413,
+        "bytes": 96076
       },
       "thumbnail": {
         "file": "04-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 6836
+        "bytes": 14558
       },
       "card": {
         "file": "04-card.webp",
-        "width": 900,
-        "height": 536,
-        "bytes": 26230
+        "width": 661,
+        "height": 413,
+        "bytes": 47468
       },
       "full": {
         "file": "04-full.webp",
-        "width": 1800,
-        "height": 1072,
-        "bytes": 70630
+        "width": 661,
+        "height": 413,
+        "bytes": 55518
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -128,28 +128,28 @@
       "id": "05",
       "album": "scholarship-distribution",
       "original": {
-        "file": "3.jpg",
-        "width": 2499,
-        "height": 1516,
-        "bytes": 1231825
+        "file": "1_9.jpg",
+        "width": 626,
+        "height": 413,
+        "bytes": 80739
       },
       "thumbnail": {
         "file": "05-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 8640
+        "bytes": 12392
       },
       "card": {
         "file": "05-card.webp",
-        "width": 900,
-        "height": 546,
-        "bytes": 30974
+        "width": 626,
+        "height": 413,
+        "bytes": 35440
       },
       "full": {
         "file": "05-full.webp",
-        "width": 1800,
-        "height": 1092,
-        "bytes": 80972
+        "width": 626,
+        "height": 413,
+        "bytes": 42030
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -158,28 +158,28 @@
       "id": "06",
       "album": "scholarship-distribution",
       "original": {
-        "file": "4.jpg",
-        "width": 2491,
-        "height": 1539,
-        "bytes": 1548608
+        "file": "1_12.jpg",
+        "width": 637,
+        "height": 413,
+        "bytes": 80717
       },
       "thumbnail": {
         "file": "06-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 10478
+        "bytes": 11356
       },
       "card": {
         "file": "06-card.webp",
-        "width": 900,
-        "height": 556,
-        "bytes": 45334
+        "width": 637,
+        "height": 413,
+        "bytes": 35448
       },
       "full": {
         "file": "06-full.webp",
-        "width": 1800,
-        "height": 1112,
-        "bytes": 115706
+        "width": 637,
+        "height": 413,
+        "bytes": 41766
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -188,28 +188,28 @@
       "id": "07",
       "album": "scholarship-distribution",
       "original": {
-        "file": "5.jpg",
-        "width": 5312,
-        "height": 2988,
-        "bytes": 5717796
+        "file": "1.jpg",
+        "width": 2434,
+        "height": 1350,
+        "bytes": 932422
       },
       "thumbnail": {
         "file": "07-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 10478
+        "bytes": 6450
       },
       "card": {
         "file": "07-card.webp",
         "width": 900,
-        "height": 506,
-        "bytes": 55652
+        "height": 499,
+        "bytes": 24238
       },
       "full": {
         "file": "07-full.webp",
         "width": 1800,
-        "height": 1013,
-        "bytes": 201390
+        "height": 998,
+        "bytes": 65534
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -218,28 +218,28 @@
       "id": "08",
       "album": "scholarship-distribution",
       "original": {
-        "file": "6 (2).png",
-        "width": 1448,
-        "height": 1086,
-        "bytes": 2670649
+        "file": "2 (3)_1.jpg",
+        "width": 2270,
+        "height": 3082,
+        "bytes": 1196641
       },
       "thumbnail": {
         "file": "08-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 17716
+        "bytes": 12520
       },
       "card": {
         "file": "08-card.webp",
-        "width": 900,
-        "height": 675,
-        "bytes": 119204
+        "width": 810,
+        "height": 1100,
+        "bytes": 110522
       },
       "full": {
         "file": "08-full.webp",
-        "width": 1448,
-        "height": 1086,
-        "bytes": 272020
+        "width": 1800,
+        "height": 2444,
+        "bytes": 357660
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -248,28 +248,28 @@
       "id": "09",
       "album": "scholarship-distribution",
       "original": {
-        "file": "6.jpg",
-        "width": 3840,
-        "height": 2160,
-        "bytes": 2178625
+        "file": "2 (3).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9181667
       },
       "thumbnail": {
         "file": "09-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 7126
+        "bytes": 13896
       },
       "card": {
         "file": "09-card.webp",
         "width": 900,
-        "height": 506,
-        "bytes": 36474
+        "height": 600,
+        "bytes": 87238
       },
       "full": {
         "file": "09-full.webp",
         "width": 1800,
-        "height": 1013,
-        "bytes": 128342
+        "height": 1200,
+        "bytes": 298134
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -278,28 +278,28 @@
       "id": "10",
       "album": "scholarship-distribution",
       "original": {
-        "file": "7.jpg",
-        "width": 1920,
-        "height": 1080,
-        "bytes": 709775
+        "file": "2_2.jpg",
+        "width": 611,
+        "height": 413,
+        "bytes": 71953
       },
       "thumbnail": {
         "file": "10-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 7584
+        "bytes": 11086
       },
       "card": {
         "file": "10-card.webp",
-        "width": 900,
-        "height": 506,
-        "bytes": 32016
+        "width": 611,
+        "height": 413,
+        "bytes": 31168
       },
       "full": {
         "file": "10-full.webp",
-        "width": 1800,
-        "height": 1013,
-        "bytes": 98232
+        "width": 611,
+        "height": 413,
+        "bytes": 36998
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -308,28 +308,28 @@
       "id": "11",
       "album": "scholarship-distribution",
       "original": {
-        "file": "8.jpg",
-        "width": 1920,
-        "height": 1080,
-        "bytes": 1041862
+        "file": "2_7.jpg",
+        "width": 626,
+        "height": 384,
+        "bytes": 59155
       },
       "thumbnail": {
         "file": "11-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 13116
+        "bytes": 9804
       },
       "card": {
         "file": "11-card.webp",
-        "width": 900,
-        "height": 506,
-        "bytes": 66886
+        "width": 626,
+        "height": 384,
+        "bytes": 23838
       },
       "full": {
         "file": "11-full.webp",
-        "width": 1800,
-        "height": 1013,
-        "bytes": 213398
+        "width": 626,
+        "height": 384,
+        "bytes": 28174
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -338,28 +338,28 @@
       "id": "12",
       "album": "scholarship-distribution",
       "original": {
-        "file": "9.jpg",
-        "width": 1328,
-        "height": 747,
-        "bytes": 131190
+        "file": "2_9.jpg",
+        "width": 573,
+        "height": 413,
+        "bytes": 57729
       },
       "thumbnail": {
         "file": "12-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 8974
+        "bytes": 9248
       },
       "card": {
         "file": "12-card.webp",
-        "width": 900,
-        "height": 506,
-        "bytes": 43800
+        "width": 573,
+        "height": 413,
+        "bytes": 23974
       },
       "full": {
         "file": "12-full.webp",
-        "width": 1328,
-        "height": 747,
-        "bytes": 88556
+        "width": 573,
+        "height": 413,
+        "bytes": 28056
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -368,28 +368,28 @@
       "id": "13",
       "album": "scholarship-distribution",
       "original": {
-        "file": "IMG_2999.JPG.jpg",
-        "width": 6000,
-        "height": 4000,
-        "bytes": 7918694
+        "file": "2.jpg",
+        "width": 2458,
+        "height": 1464,
+        "bytes": 1047283
       },
       "thumbnail": {
         "file": "13-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 8694
+        "bytes": 6836
       },
       "card": {
         "file": "13-card.webp",
         "width": 900,
-        "height": 600,
-        "bytes": 44498
+        "height": 536,
+        "bytes": 26230
       },
       "full": {
         "file": "13-full.webp",
         "width": 1800,
-        "height": 1200,
-        "bytes": 145460
+        "height": 1072,
+        "bytes": 70630
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -398,25 +398,655 @@
       "id": "14",
       "album": "scholarship-distribution",
       "original": {
+        "file": "2.png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2402986
+      },
+      "thumbnail": {
+        "file": "14-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10806
+      },
+      "card": {
+        "file": "14-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 67132
+      },
+      "full": {
+        "file": "14-full.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 162824
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "15",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3 (2).png",
+        "width": 1446,
+        "height": 1088,
+        "bytes": 2843937
+      },
+      "thumbnail": {
+        "file": "15-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17370
+      },
+      "card": {
+        "file": "15-card.webp",
+        "width": 900,
+        "height": 677,
+        "bytes": 130916
+      },
+      "full": {
+        "file": "15-full.webp",
+        "width": 1446,
+        "height": 1088,
+        "bytes": 321626
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "16",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3_3.jpg",
+        "width": 630,
+        "height": 354,
+        "bytes": 50513
+      },
+      "thumbnail": {
+        "file": "16-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8714
+      },
+      "card": {
+        "file": "16-card.webp",
+        "width": 630,
+        "height": 354,
+        "bytes": 21018
+      },
+      "full": {
+        "file": "16-full.webp",
+        "width": 630,
+        "height": 354,
+        "bytes": 24418
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "17",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3_4.jpg",
+        "width": 631,
+        "height": 354,
+        "bytes": 71821
+      },
+      "thumbnail": {
+        "file": "17-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11878
+      },
+      "card": {
+        "file": "17-card.webp",
+        "width": 631,
+        "height": 354,
+        "bytes": 32878
+      },
+      "full": {
+        "file": "17-full.webp",
+        "width": 631,
+        "height": 354,
+        "bytes": 39124
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "18",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3_9.jpg",
+        "width": 552,
+        "height": 413,
+        "bytes": 55482
+      },
+      "thumbnail": {
+        "file": "18-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9180
+      },
+      "card": {
+        "file": "18-card.webp",
+        "width": 552,
+        "height": 413,
+        "bytes": 23902
+      },
+      "full": {
+        "file": "18-full.webp",
+        "width": 552,
+        "height": 413,
+        "bytes": 28452
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "19",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3.jpg",
+        "width": 2499,
+        "height": 1516,
+        "bytes": 1231825
+      },
+      "thumbnail": {
+        "file": "19-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8640
+      },
+      "card": {
+        "file": "19-card.webp",
+        "width": 900,
+        "height": 546,
+        "bytes": 30974
+      },
+      "full": {
+        "file": "19-full.webp",
+        "width": 1800,
+        "height": 1092,
+        "bytes": 80972
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "20",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "3.png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2307630
+      },
+      "thumbnail": {
+        "file": "20-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12002
+      },
+      "card": {
+        "file": "20-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 55584
+      },
+      "full": {
+        "file": "20-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 160358
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "21",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "4 (2).png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2382813
+      },
+      "thumbnail": {
+        "file": "21-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14792
+      },
+      "card": {
+        "file": "21-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 76082
+      },
+      "full": {
+        "file": "21-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 213158
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "22",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "4 (4).png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2382813
+      },
+      "thumbnail": {
+        "file": "22-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14792
+      },
+      "card": {
+        "file": "22-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 76082
+      },
+      "full": {
+        "file": "22-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 213158
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "23",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "4.jpg",
+        "width": 2491,
+        "height": 1539,
+        "bytes": 1548608
+      },
+      "thumbnail": {
+        "file": "23-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10478
+      },
+      "card": {
+        "file": "23-card.webp",
+        "width": 900,
+        "height": 556,
+        "bytes": 45334
+      },
+      "full": {
+        "file": "23-full.webp",
+        "width": 1800,
+        "height": 1112,
+        "bytes": 115706
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "24",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "5_1.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9250359
+      },
+      "thumbnail": {
+        "file": "24-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9856
+      },
+      "card": {
+        "file": "24-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 56802
+      },
+      "full": {
+        "file": "24-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 250846
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "25",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "5.jpg",
+        "width": 5312,
+        "height": 2988,
+        "bytes": 5717796
+      },
+      "thumbnail": {
+        "file": "25-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10478
+      },
+      "card": {
+        "file": "25-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 55652
+      },
+      "full": {
+        "file": "25-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 201390
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "26",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "6 (2).png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2670649
+      },
+      "thumbnail": {
+        "file": "26-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17716
+      },
+      "card": {
+        "file": "26-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 119204
+      },
+      "full": {
+        "file": "26-full.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 272020
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "27",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "6.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 2178625
+      },
+      "thumbnail": {
+        "file": "27-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 7126
+      },
+      "card": {
+        "file": "27-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 36474
+      },
+      "full": {
+        "file": "27-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 128342
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "28",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "7.jpg",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 709775
+      },
+      "thumbnail": {
+        "file": "28-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 7584
+      },
+      "card": {
+        "file": "28-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 32016
+      },
+      "full": {
+        "file": "28-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 98232
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "29",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "8_1.jpg",
+        "width": 6240,
+        "height": 4160,
+        "bytes": 3336631
+      },
+      "thumbnail": {
+        "file": "29-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8866
+      },
+      "card": {
+        "file": "29-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 45938
+      },
+      "full": {
+        "file": "29-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 137158
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "30",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "8.jpg",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1041862
+      },
+      "thumbnail": {
+        "file": "30-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13116
+      },
+      "card": {
+        "file": "30-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 66886
+      },
+      "full": {
+        "file": "30-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 213398
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "31",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "9.jpg",
+        "width": 1328,
+        "height": 747,
+        "bytes": 131190
+      },
+      "thumbnail": {
+        "file": "31-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8974
+      },
+      "card": {
+        "file": "31-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 43800
+      },
+      "full": {
+        "file": "31-full.webp",
+        "width": 1328,
+        "height": 747,
+        "bytes": 88556
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "32",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "IMG_2999.JPG.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 7918694
+      },
+      "thumbnail": {
+        "file": "32-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8694
+      },
+      "card": {
+        "file": "32-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 44498
+      },
+      "full": {
+        "file": "32-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 145460
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "33",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "page-23_image-01_Im276.png",
+        "width": 648,
+        "height": 304,
+        "bytes": 311008
+      },
+      "thumbnail": {
+        "file": "33-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9896
+      },
+      "card": {
+        "file": "33-card.webp",
+        "width": 648,
+        "height": 304,
+        "bytes": 27680
+      },
+      "full": {
+        "file": "33-full.webp",
+        "width": 648,
+        "height": 304,
+        "bytes": 32458
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "34",
+      "album": "scholarship-distribution",
+      "original": {
+        "file": "page-23_image-02_Im277.png",
+        "width": 648,
+        "height": 303,
+        "bytes": 328024
+      },
+      "thumbnail": {
+        "file": "34-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10180
+      },
+      "card": {
+        "file": "34-card.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 29304
+      },
+      "full": {
+        "file": "34-full.webp",
+        "width": 648,
+        "height": 303,
+        "bytes": 33762
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "35",
+      "album": "scholarship-distribution",
+      "original": {
         "file": "WhatsApp Image 2025-07-02 at 14.21.09.jpg",
         "width": 1600,
         "height": 1066,
         "bytes": 299247
       },
       "thumbnail": {
-        "file": "14-thumb.webp",
+        "file": "35-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 8626
       },
       "card": {
-        "file": "14-card.webp",
+        "file": "35-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 41162
       },
       "full": {
-        "file": "14-full.webp",
+        "file": "35-full.webp",
         "width": 1600,
         "height": 1066,
         "bytes": 110242

@@ -1,0 +1,218 @@
+{
+  "album": "laptop-school-supplies",
+  "generatedAt": "2026-08-28T05:32:59.025Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\laptop-school-supplies",
+  "photographCount": 7,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "3 (3).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 7500382
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10492
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 49580
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 151496
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "4 (3).png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2489872
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17696
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 119818
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 268506
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "4.png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3462131
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 26182
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 675,
+        "bytes": 212752
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 516082
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "5.png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2745771
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13436
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 83184
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 253286
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "6.png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2629859
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17928
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 89566
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 243788
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "DSC_1438.JPG",
+        "width": 6016,
+        "height": 4016,
+        "bytes": 19269054
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13780
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 601,
+        "bytes": 77074
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1202,
+        "bytes": 255514
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "laptop-school-supplies",
+      "original": {
+        "file": "IMG_2355.JPG.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 9190153
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16876
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 99928
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 326454
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}

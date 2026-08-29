@@ -553,6 +553,10 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     font-size: 1.08rem;
 }
 
+.hi-mission__actions {
+    margin-top: 22px;
+}
+
 .hi-callout {
     position: relative;
     grid-column: 1 / -1;
@@ -2312,6 +2316,10 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
         transition: none;
     }
 }
+
+
+
+
 
 
 

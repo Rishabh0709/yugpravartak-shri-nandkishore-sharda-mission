@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "note": "Shared media manifest for Hindi and future English pages. Keep src values language-neutral; altHi/altEn can differ.",
+  "pages": {
+    "about-mission": {
+      "images": {
+        "about-mission-hero-divine": {
+          "src": "../assets/images/about-mission-hero-divine.png",
+          "altHi": "जगत्जननी माँ की कृपा और भैया जी की दिव्य मिशन भावधारा",
+          "altEn": ""
+        },
+        "bhaiyaji-radiant-portrait": {
+          "src": "../assets/images/bhaiyaji-radiant-portrait.jpg",
+          "altHi": "युगप्रवर्तक श्री नन्दकिशोर शारदा",
+          "altEn": ""
+        },
+        "buddhi-vivek-yog-sadhna-original": {
+          "src": "../assets/images/buddhi-vivek-yog-sadhna-original.jpg",
+          "altHi": "बुद्धि-विवेक योग साधना का प्रतीक",
+          "altEn": ""
+        },
+        "bhaiyaji-maa-first-darshan": {
+          "src": "../assets/images/bhaiyaji-maa-first-darshan.jpg",
+          "altHi": "भैया जी माँ त्रिपुरसुन्दरी के समक्ष आराधना करते हुए",
+          "altEn": ""
+        },
+        "book-01": {
+          "src": "../assets/images/book-01.png",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक",
+          "altEn": ""
+        },
+        "maa-shardamani-scholarship-distribution": {
+          "src": "../assets/images/maa-shardamani-scholarship-distribution.jpg",
+          "altHi": "छात्राओं के शिक्षा सहयोग का दृश्य",
+          "altEn": ""
+        },
+        "ration": {
+          "src": "../assets/images/ration.jpg",
+          "altHi": "खाद्यान्न वितरण सेवा",
+          "altEn": ""
+        },
+        "madhu-maa-transcribing-book": {
+          "src": "../assets/images/madhu-maa-transcribing-book.jpg",
+          "altHi": "सद्साहित्य को लिपिबद्ध और प्रकाशित करने की सेवा",
+          "altEn": ""
+        },
+        "madhu-story-living-leadership": {
+          "src": "../assets/images/madhu-story-living-leadership.webp",
+          "altHi": "मणिद्वीप के कार्यों का वर्तमान संचालन",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "basanti-manihar": {
+      "images": {
+        "basanti-manihar": {
+          "src": "../assets/images/basanti-manihar.jpg",
+          "altHi": "वात्सल्यमयी माँ बसन्ती मनिहार का चित्र",
+          "altEn": ""
+        },
+        "about-maa": {
+          "src": "../assets/images/about_maa.jpg",
+          "altHi": "माँ बसन्ती जी का आत्मीय चित्र",
+          "altEn": ""
+        },
+        "maa-bhaiya": {
+          "src": "../assets/images/maa_bhaiya.jpg",
+          "altHi": "भैया जी और माँ बसन्ती जी का आत्मीय स्मृति चित्र",
+          "altEn": ""
+        },
+        "maa-sadhna": {
+          "src": "../assets/images/maa_sadhna.jpg",
+          "altHi": "माँ बसन्ती जी की साधना का भावपूर्ण चित्र",
+          "altEn": ""
+        },
+        "bhaiya-maa": {
+          "src": "../assets/images/bhaiya_maa.jpg",
+          "altHi": "भैया जी और माँ बसन्ती जी का चित्र",
+          "altEn": ""
+        },
+        "manidweep-office": {
+          "src": "../assets/images/manidweep-office.jpg",
+          "altHi": "मणिद्वीप भवन",
+          "altEn": ""
+        },
+        "book-01": {
+          "src": "../assets/images/book-01.png",
+          "altHi": "भैया जी के दिव्य ज्ञान से जुड़ा प्रकाशित साहित्य",
+          "altEn": ""
+        },
+        "sanskar-classes": {
+          "src": "../assets/images/sanskar_classes.jpg",
+          "altHi": "रविवार संस्कार कक्षाओं का दृश्य",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna-1": {
+          "src": "../assets/images/bhaiyaji_sadhna_1.webp",
+          "altHi": "साधना-स्थली सिद्धपीठ का प्रतीकात्मक दृश्य",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "जिज्ञासुओं के मार्गदर्शन का दृश्य",
+          "altEn": ""
+        },
+        "spiritual-hero-bhaiyaji-maa": {
+          "src": "../assets/images/spiritual-hero-bhaiyaji-maa.jpg",
+          "altHi": "भैया जी और माँ बसन्ती जी की आध्यात्मिक स्मृति",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "bhaiyaji-sadhna-kaal": {
+      "images": {
+        "bhaiyaji-divine-wisdom-background": {
+          "src": "../assets/images/bhaiyaji-divine-wisdom-background.jpg",
+          "altHi": "दिव्य प्रकाश और साधना का प्रतीकात्मक वातावरण",
+          "altEn": ""
+        },
+        "young-bhaiyaji1": {
+          "src": "../assets/images/young_bhaiyaji1.jpg",
+          "altHi": "युवा भैया जी का चित्र",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna-spiritual-root": {
+          "src": "../assets/images/bhaiyaji-sadhna-spiritual-root.jpg",
+          "altHi": "भैया जी की हस्तलिखित डायरी और आत्मचिंतन का प्रतीक",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna": {
+          "src": "../assets/images/bhaiyaji_sadhna.jpg",
+          "altHi": "साधना और सत्य की खोज का भावपूर्ण दृश्य",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna-1": {
+          "src": "../assets/images/bhaiyaji_sadhna_1.webp",
+          "altHi": "टेकरी माँ के मंदिर में भैया जी की साधना का भाव",
+          "altEn": ""
+        },
+        "bhaiyaji-maa-first-darshan": {
+          "src": "../assets/images/bhaiyaji-maa-first-darshan.jpg",
+          "altHi": "भैया जी और माँ त्रिपुरसुन्दरी का दिव्य भाव",
+          "altEn": ""
+        },
+        "wonderful-world-after-death-cover": {
+          "src": "../assets/images/wonderful-world-after-death-cover.png",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "buddhi-vivek-yog-sadhna": {
+      "images": {
+        "bhaiyaji-divine-wisdom-background": {
+          "src": "../assets/images/bhaiyaji-divine-wisdom-background.jpg",
+          "altHi": "ज्ञान के प्रकाश और आध्यात्मिक चिंतन का वातावरण",
+          "altEn": ""
+        },
+        "buddhi-vivek-yog-sadhna-symbol": {
+          "src": "../assets/images/buddhi-vivek-yog-sadhna-symbol.png",
+          "altHi": "बुद्धि-विवेक योग साधना का प्रतीक",
+          "altEn": ""
+        },
+        "budhivivek": {
+          "src": "../assets/images/budhivivek.png",
+          "altHi": "बुद्धि-विवेक योग साधना का कमल प्रतीक",
+          "altEn": ""
+        },
+        "manidweep-office": {
+          "src": "../assets/images/manidweep-office.jpg",
+          "altHi": "मणिद्वीप का आध्यात्मिक वातावरण",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/buddhi-vivek-yog-sadhna-original.jpg"
+      ]
+    },
+    "divya-gyan": {
+      "images": {
+        "02-card": {
+          "src": "../assets/images/books/02-card.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": ""
+        },
+        "madhu-maa-transcribing-book": {
+          "src": "../assets/images/madhu-maa-transcribing-book.jpg",
+          "altHi": "दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य",
+          "altEn": ""
+        },
+        "wonderful-world-after-death-cover": {
+          "src": "../assets/images/wonderful-world-after-death-cover.png",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": ""
+        },
+        "bhaiyaji-radiant-portrait": {
+          "src": "../assets/images/bhaiyaji-radiant-portrait.jpg",
+          "altHi": "भैया जी का तेजस्वी चित्र",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "ज्ञान चर्चा और आध्यात्मिक मार्गदर्शन का दृश्य",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/bhaiyaji-divine-wisdom-background.jpg"
+      ]
+    },
+    "gallery": {
+      "images": {
+        "03-card": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/03-card.webp",
+          "altHi": "कक्षा में साथ पढ़ते विद्यार्थी",
+          "altEn": ""
+        },
+        "01-card": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/01-card.webp",
+          "altHi": "मिशन में रविवारीय संस्कार कक्षा के लिए एकत्र विद्यार्थी",
+          "altEn": ""
+        },
+        "01-card-2": {
+          "src": "../assets/images/gallery/school-visits/01-card.webp",
+          "altHi": "विद्यालय संपर्क के दौरान मार्गदर्शन सुनते विद्यार्थी",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "gyanyogi-adhyatm-kendra": {
+      "images": {
+        "gyanyogi-adhyatm-kendra-scholarship": {
+          "src": "../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp",
+          "altHi": "ज्ञानयोगी अध्यात्म केन्द्र द्वारा शिक्षा सहयोग",
+          "altEn": ""
+        },
+        "16-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/16-card.webp",
+          "altHi": "उच्च शिक्षा के लिए छात्रवृत्ति प्राप्त विद्यार्थी",
+          "altEn": ""
+        },
+        "06-card": {
+          "src": "../assets/images/gallery/food-assistance/06-card.webp",
+          "altHi": "खाद्यान्न सहायता वितरण",
+          "altEn": ""
+        },
+        "yoga-class": {
+          "src": "../assets/images/yoga_class.jpg",
+          "altHi": "सिद्धपीठ में योग और प्राणायाम कक्षा",
+          "altEn": ""
+        },
+        "04-card": {
+          "src": "../assets/images/gallery/sewing-center/04-card.webp",
+          "altHi": "महिला सिलाई प्रशिक्षण",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "आध्यात्मिक मार्गदर्शन और सामूहिक संवाद",
+          "altEn": ""
+        }
+      },
+      "media": {
+        "gyanyogi-adhyatm-kendra-hero": {
+          "src": "../assets/videos/gyanyogi-adhyatm-kendra-hero.webm",
+          "type": "source"
+        },
+        "gyanyogi-adhyatm-kendra-hero-2": {
+          "src": "../assets/videos/gyanyogi-adhyatm-kendra-hero.mp4",
+          "type": "source"
+        },
+        "gyanyogi-adhyatm-kendra-hero-poster": {
+          "src": "../assets/videos/gyanyogi-adhyatm-kendra-hero-poster.jpg",
+          "type": "poster"
+        }
+      },
+      "cssBackgrounds": [
+        "../assets/images/gallery/food-assistance/06-card.webp",
+        "../assets/videos/gyanyogi-adhyatm-kendra-hero-poster.jpg"
+      ]
+    },
+    "impact": {
+      "images": {
+        "impact-hero-education": {
+          "src": "../assets/images/impact-hero-education.webp",
+          "altHi": "विद्यार्थी-सहयोग कार्यक्रम में मधु माँ द्वारा छात्रा को शैक्षणिक सामग्री प्रदान करते हुए",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "index": {
+      "images": {
+        "bhaiyaji-sadhna-spiritual-root": {
+          "src": "../assets/images/bhaiyaji-sadhna-spiritual-root.jpg",
+          "altHi": "साधना में लीन युगप्रवर्तक श्री नन्दकिशोर शारदा भैया जी",
+          "altEn": ""
+        },
+        "bhaiyaji-radiant-portrait": {
+          "src": "../assets/images/bhaiyaji-radiant-portrait.jpg",
+          "altHi": "युगप्रवर्तक अध्यात्मयोगी श्री नन्दकिशोर शारदा भैया जी",
+          "altEn": ""
+        },
+        "basanti-manihar": {
+          "src": "../assets/images/basanti-manihar.jpg",
+          "altHi": "वात्सल्यमयी माँ बसन्ती मनिहार",
+          "altEn": ""
+        },
+        "madhu-maa-portrait": {
+          "src": "../assets/images/madhu-maa-portrait.webp",
+          "altHi": "कुमारी मधुबाला अडवानी, मधु माँ",
+          "altEn": ""
+        },
+        "04-card": {
+          "src": "../assets/images/books/04-card.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": ""
+        },
+        "buddhi-vivek-yog-sadhna-original": {
+          "src": "../assets/images/buddhi-vivek-yog-sadhna-original.jpg",
+          "altHi": "बुद्धि-विवेक योग साधना पद्धति का प्रतीकात्मक कमल",
+          "altEn": ""
+        },
+        "bhaiyaji-chakra-dharan": {
+          "src": "../assets/images/bhaiyaji-chakra-dharan.webp",
+          "altHi": "समुद्र के मध्य चट्टान पर चक्र धारण की मुद्रा में भैया जी",
+          "altEn": ""
+        },
+        "manidweep-office-footer": {
+          "src": "../assets/images/manidweep-office-footer.jpg",
+          "altHi": "ए-183, शास्त्री नगर, जोधपुर स्थित मणिद्वीप भवन",
+          "altEn": ""
+        },
+        "16-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/16-card.webp",
+          "altHi": "मणिद्वीप के शिक्षा सहयोग और छात्रवृत्ति कार्य से जुड़े विद्यार्थी",
+          "altEn": ""
+        },
+        "06-card": {
+          "src": "../assets/images/gallery/food-assistance/06-card.webp",
+          "altHi": "जरूरतमंद परिवारों के लिए खाद्यान्न सहायता",
+          "altEn": ""
+        },
+        "yoga-class": {
+          "src": "../assets/images/yoga_class.jpg",
+          "altHi": "निःशुल्क योग कक्षा में अभ्यास करते सहभागी",
+          "altEn": ""
+        },
+        "03-full": {
+          "src": "../assets/images/gallery/sewing-center/03-full.webp",
+          "altHi": "सिलाई एवं परिधान निर्माण प्रशिक्षण",
+          "altEn": ""
+        },
+        "01-card": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/01-card.webp",
+          "altHi": "रविवारीय संस्कार कक्षा में बैठे विद्यार्थी",
+          "altEn": ""
+        },
+        "06-card-2": {
+          "src": "../assets/images/gallery/gyan-ganga-mission/06-card.webp",
+          "altHi": "भैया जी द्वारा रचित सद्साहित्य",
+          "altEn": ""
+        },
+        "05-card": {
+          "src": "../assets/images/gallery/infrastructure-support/05-card.webp",
+          "altHi": "विद्यालय अवसंरचना निर्माण कार्य",
+          "altEn": ""
+        },
+        "user-1": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/03-card.webp",
+          "altHi": "लाभार्थी का चित्र",
+          "altEn": ""
+        },
+        "user-2": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "साधक का चित्र",
+          "altEn": ""
+        },
+        "girls2": {
+          "src": "../assets/images/girls2.png",
+          "altHi": "अपनी शिक्षा जारी रखने में समर्थ बनीं छात्राएं",
+          "altEn": ""
+        },
+        "14-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/14-card.webp",
+          "altHi": "शैक्षणिक मार्गदर्शन सत्र में उपस्थित छात्र",
+          "altEn": ""
+        },
+        "07-card": {
+          "src": "../assets/images/gallery/sewing-center/07-card.webp",
+          "altHi": "सिलाई मशीन पर व्यावहारिक कौशल सीखती महिला",
+          "altEn": ""
+        },
+        "yoga-class-2": {
+          "src": "../assets/images/yoga_class.jpg",
+          "altHi": "सामूहिक योग और ध्यान सत्र में भाग लेते साधक",
+          "altEn": ""
+        },
+        "02-card": {
+          "src": "../assets/images/gallery/food-assistance/02-card.webp",
+          "altHi": "परिवारों को मासिक खाद्य सामग्री वितरित करते स्वयंसेवक",
+          "altEn": ""
+        },
+        "early-days": {
+          "src": "../assets/images/early-days.jpg",
+          "altHi": "मिशन के शुरुआती शैक्षणिक कार्यों का ऐतिहासिक चित्र",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "मणिद्वीप में रविवार आध्यात्मिक मार्गदर्शन सभा",
+          "altEn": ""
+        },
+        "01-card-2": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/01-card.webp",
+          "altHi": "रविवार संस्कार कक्षाओं के लिए एकत्र हुए छात्र",
+          "altEn": ""
+        },
+        "scholarship3": {
+          "src": "../assets/images/gallery/scholarship-distribution/03-card.webp",
+          "altHi": "एक छात्र को शैक्षणिक सहायता प्रदान की जा रही है",
+          "altEn": ""
+        },
+        "02-card-2": {
+          "src": "../assets/images/gallery/food-assistance/02-card.webp",
+          "altHi": "मासिक राशन सहायता का वितरण",
+          "altEn": ""
+        },
+        "yoga-class-3": {
+          "src": "../assets/images/yoga_class.jpg",
+          "altHi": "एक साथ योग का अभ्यास करते छात्र",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "logo": {
+      "images": {
+        "logo": {
+          "src": "../assets/images/logo.png",
+          "altHi": "मणिद्वीप का प्रतीक चिन्ह",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "maa-shardamani-trust": {
+      "images": {
+        "maa-shardamani-scholarship-distribution": {
+          "src": "../assets/images/maa-shardamani-scholarship-distribution.jpg",
+          "altHi": "माँ शारदामणि ट्रस्ट द्वारा छात्रवृत्ति सहयोग",
+          "altEn": ""
+        },
+        "10-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/10-card.webp",
+          "altHi": "छात्राओं को उच्च शिक्षा के लिए मार्गदर्शन",
+          "altEn": ""
+        },
+        "15-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/15-card.webp",
+          "altHi": "छात्रवृत्ति से लाभान्वित छात्राओं का समूह",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/maa-shardamani-scholarship-distribution.jpg",
+        "../assets/images/gallery/scholarship-distribution/08-card.webp"
+      ]
+    },
+    "madhubala-advani": {
+      "images": {
+        "madhu-maa-portrait": {
+          "src": "../assets/images/madhu-maa-portrait.webp",
+          "altHi": "करुणामयी माँ मधुबाला जी अडवानी का चित्र",
+          "altEn": ""
+        },
+        "madhu-maa-home-hero": {
+          "src": "../assets/images/madhu-maa-home-hero.jpg",
+          "altHi": "मधु माँ का शांत और करुणामय चित्र",
+          "altEn": ""
+        },
+        "trust2": {
+          "src": "../assets/images/trust2.jpg",
+          "altHi": "भैया जी, माँ बसन्ती जी और मधु माँ की स्मृति",
+          "altEn": ""
+        },
+        "madhu-story-spiritual-foundation": {
+          "src": "../assets/images/madhu-story-spiritual-foundation.webp",
+          "altHi": "मधु माँ की आध्यात्मिक नींव का भावपूर्ण चित्र",
+          "altEn": ""
+        },
+        "bhaiyaji-maa-home-hero": {
+          "src": "../assets/images/bhaiyaji-maa-home-hero.jpg",
+          "altHi": "भैया जी, माँ बसन्ती जी और मधु माँ से जुड़ी आध्यात्मिक स्मृति",
+          "altEn": ""
+        },
+        "madhu-maa-sadhna": {
+          "src": "../assets/images/madhu_maa_sadhna.jpg",
+          "altHi": "मधु माँ की साधना का भावपूर्ण चित्र",
+          "altEn": ""
+        },
+        "madhu-maa-transcribing-book": {
+          "src": "../assets/images/madhu-maa-transcribing-book.jpg",
+          "altHi": "मधु माँ मृत्यु के बाद का अलौकिक संसार ग्रंथ लिपिबद्ध करती हुईं",
+          "altEn": ""
+        },
+        "madhu-story-living-leadership": {
+          "src": "../assets/images/madhu-story-living-leadership.webp",
+          "altHi": "मधु माँ वर्तमान नेतृत्व और सेवा कार्यों में",
+          "altEn": ""
+        },
+        "madhu-maa-guiding-students": {
+          "src": "../assets/images/madhu-maa-guiding-students.webp",
+          "altHi": "मधु माँ छात्राओं का मार्गदर्शन करती हुईं",
+          "altEn": ""
+        },
+        "madhu-story-expanding-care": {
+          "src": "../assets/images/madhu-story-expanding-care.webp",
+          "altHi": "मधु माँ के मार्गदर्शन में सेवा और करुणा की धारा",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "margdarshan-siddhant": {
+      "images": {
+        "10-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/10-card.webp",
+          "altHi": "छात्राओं के शिक्षा-सहयोग और मार्गदर्शन का दृश्य",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/gallery/scholarship-distribution/10-card.webp"
+      ]
+    },
+    "nishkam-karm-sadhna": {
+      "images": {
+        "16-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/16-card.webp",
+          "altHi": "विद्यालयी छात्रवृत्ति वितरण",
+          "altEn": ""
+        },
+        "01-card": {
+          "src": "../assets/images/gallery/sunday-sanskar-classes/01-card.webp",
+          "altHi": "संस्कार कक्षाओं में विद्यार्थी",
+          "altEn": ""
+        },
+        "maa-shardamani-scholarship-distribution": {
+          "src": "../assets/images/maa-shardamani-scholarship-distribution.jpg",
+          "altHi": "उच्च शिक्षा के लिए छात्रवृत्ति सहयोग",
+          "altEn": ""
+        },
+        "10-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/10-card.webp",
+          "altHi": "छात्राओं का शैक्षणिक मार्गदर्शन",
+          "altEn": ""
+        },
+        "gyanyogi-adhyatm-kendra-scholarship": {
+          "src": "../assets/images/gyanyogi-adhyatm-kendra-scholarship.webp",
+          "altHi": "बालक शिक्षा सहयोग",
+          "altEn": ""
+        },
+        "06-card": {
+          "src": "../assets/images/gallery/food-assistance/06-card.webp",
+          "altHi": "खाद्यान्न सहायता",
+          "altEn": ""
+        },
+        "yoga-class": {
+          "src": "../assets/images/yoga_class.jpg",
+          "altHi": "योग और प्राणायाम कक्षा",
+          "altEn": ""
+        },
+        "04-card": {
+          "src": "../assets/images/gallery/sewing-center/04-card.webp",
+          "altHi": "महिला सिलाई प्रशिक्षण",
+          "altEn": ""
+        },
+        "01-card-2": {
+          "src": "../assets/images/gallery/gyan-ganga-mission/02-card.webp",
+          "altHi": "ज्ञान गंगा मिशन का साहित्य",
+          "altEn": ""
+        },
+        "02-card": {
+          "src": "../assets/images/gallery/gyan-ganga-mission/02-card.webp",
+          "altHi": "सद्साहित्य का निःशुल्क वितरण",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "publications": {
+      "images": {
+        "01-card": {
+          "src": "../assets/images/books/01-card.webp",
+          "altHi": "मणिद्वीप का अध्यात्म पुरुष: श्री नन्दकिशोर शारदा पुस्तक का आवरण",
+          "altEn": ""
+        },
+        "04-card": {
+          "src": "../assets/images/books/04-card.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का स्थानापन्न आवरण",
+          "altEn": ""
+        },
+        "06-card": {
+          "src": "../assets/images/books/06-card.webp",
+          "altHi": "माँ त्रिपुरसुन्दरी के लाडले चक्रधारी पुस्तक का स्थानापन्न आवरण",
+          "altEn": ""
+        },
+        "01-card-2": {
+          "src": "../assets/images/books/01-card.webp",
+          "altHi": "मणिद्वीप की एक दीपशिखा पुस्तक का स्थानापन्न आवरण",
+          "altEn": ""
+        },
+        "03-card": {
+          "src": "../assets/images/books/03-card.webp",
+          "altHi": "सिद्धपीठ के ज्योतिपुरुष पुस्तक का स्थानापन्न आवरण",
+          "altEn": ""
+        },
+        "05-card": {
+          "src": "../assets/images/books/05-card.webp",
+          "altHi": "जगत्जननी माँ त्रिपुरसुन्दरी के लाडले पुस्तक का स्थानापन्न आवरण",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "sadhna-places": {
+      "images": {
+        "08-card": {
+          "src": "../assets/images/sadhna-places/08-card.webp",
+          "altHi": "टेकरी माँ मंदिर की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "03-card": {
+          "src": "../assets/images/sadhna-places/03-card.webp",
+          "altHi": "टेकरी तपोभूमि की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "07-card": {
+          "src": "../assets/images/sadhna-places/07-card.webp",
+          "altHi": "सिद्धपीठ की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "09-card": {
+          "src": "../assets/images/sadhna-places/09-card.webp",
+          "altHi": "सिद्धपीठ साधना कक्ष की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "07-card-2": {
+          "src": "../assets/images/sadhna-places/07-card.webp",
+          "altHi": "वात्सल्यपीठ की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "01-card": {
+          "src": "../assets/images/sadhna-places/01-card.webp",
+          "altHi": "वात्सल्यपीठ साधना कक्ष की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "06-card": {
+          "src": "../assets/images/sadhna-places/06-card.webp",
+          "altHi": "मणिद्वीप की स्थानापन्न छवि",
+          "altEn": ""
+        },
+        "05-card": {
+          "src": "../assets/images/sadhna-places/05-card.webp",
+          "altHi": "मणिद्वीप मिशन केन्द्र की स्थानापन्न छवि",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "sampark": {
+      "images": {
+        "manidweep-office": {
+          "src": "../assets/images/manidweep-office.jpg",
+          "altHi": "शास्त्री नगर, जोधपुर स्थित मणिद्वीप कार्यालय का बाहरी दृश्य",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "shri-nandkishore-sharda-chintan": {
+      "images": {
+        "16-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/16-card.webp",
+          "altHi": "छात्राओं के शिक्षा-सहयोग का दृश्य",
+          "altEn": ""
+        },
+        "10-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/10-card.webp",
+          "altHi": "विद्यार्थियों का मार्गदर्शन",
+          "altEn": ""
+        },
+        "11-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/11-card.webp",
+          "altHi": "छात्रवृत्ति वितरण और शिक्षा सहयोग",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "संस्कार और आध्यात्मिक मार्गदर्शन",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/gallery/scholarship-distribution/16-card.webp"
+      ]
+    },
+    "shri-nandkishore-sharda": {
+      "images": {
+        "bhaiyaji-maa-first-darshan": {
+          "src": "../assets/images/bhaiyaji-maa-first-darshan.jpg",
+          "altHi": "भैया जी माँ त्रिपुरसुन्दरी के समक्ष folded hands में आराधना करते हुए",
+          "altEn": ""
+        },
+        "young-bhaiyaji1": {
+          "src": "../assets/images/young_bhaiyaji1.jpg",
+          "altHi": "युवा अवस्था में भैया जी का चित्र",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna-spiritual-root": {
+          "src": "../assets/images/bhaiyaji-sadhna-spiritual-root.jpg",
+          "altHi": "साधना और आत्मचिंतन का प्रतीकात्मक दृश्य",
+          "altEn": ""
+        },
+        "bhaiyaji-sadhna-1": {
+          "src": "../assets/images/bhaiyaji_sadhna_1.webp",
+          "altHi": "भैया जी की साधना का भावपूर्ण चित्र",
+          "altEn": ""
+        },
+        "04-card": {
+          "src": "../assets/images/books/04-card.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": ""
+        },
+        "maa-shardamani-scholarship-distribution": {
+          "src": "../assets/images/maa-shardamani-scholarship-distribution.jpg",
+          "altHi": "शिक्षा सहयोग और संस्कार कार्य का दृश्य",
+          "altEn": ""
+        },
+        "buddhi-vivek-yog-sadhna-original": {
+          "src": "../assets/images/buddhi-vivek-yog-sadhna-original.jpg",
+          "altHi": "बुद्धि-विवेक योग साधना का प्रतीक",
+          "altEn": ""
+        },
+        "bhaiyaji-chakra-dharan": {
+          "src": "../assets/images/bhaiyaji-chakra-dharan.webp",
+          "altHi": "भैया जी के चक्र धारण की आध्यात्मिक स्मृति",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "sunday-sanskar-classes": {
+      "images": {
+        "sanskar-classes": {
+          "src": "../assets/images/sanskar_classes.jpg",
+          "altHi": "मणिद्वीप में संस्कार एवं व्यक्तित्व विकास कक्षा",
+          "altEn": ""
+        },
+        "madhu-maa-guiding-students": {
+          "src": "../assets/images/madhu-maa-guiding-students.webp",
+          "altHi": "मधु माँ के मार्गदर्शन में विद्यार्थी",
+          "altEn": ""
+        },
+        "girl-speech": {
+          "src": "../assets/images/girl_speech.jpg",
+          "altHi": "विद्यार्थी अपना अनुभव साझा करती हुई",
+          "altEn": ""
+        },
+        "girls2": {
+          "src": "../assets/images/girls2.png",
+          "altHi": "संस्कार कक्षा में छात्राएँ",
+          "altEn": ""
+        },
+        "sunday-guidance-gathering": {
+          "src": "../assets/images/sunday-guidance-gathering.webp",
+          "altHi": "रविवार मार्गदर्शन सभा",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
+    },
+    "swami-vivekanand-trust": {
+      "images": {
+        "svswct-founding-team": {
+          "src": "../assets/images/svswct-founding-team.png",
+          "altHi": "स्वामी विवेकानन्द ट्रस्ट की सेवा-यात्रा से जुड़ा दृश्य",
+          "altEn": ""
+        },
+        "16-card": {
+          "src": "../assets/images/gallery/scholarship-distribution/16-card.webp",
+          "altHi": "छात्रवृत्ति वितरण का दृश्य",
+          "altEn": ""
+        },
+        "sanskar-classes": {
+          "src": "../assets/images/sanskar_classes.jpg",
+          "altHi": "संस्कार एवं व्यक्तित्व विकास कक्षाएँ",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/svswct.png",
+        "../assets/images/gallery/scholarship-distribution/15-card.webp"
+      ]
+    },
+    "gyan-ganga-mission": {
+      "images": {
+        "02-card": {
+          "src": "../assets/images/gallery/gyan-ganga-mission/02-card.webp",
+          "altHi": "ज्ञान गंगा मिशन के सद्साहित्य का प्रकाशन और वितरण",
+          "altEn": "Publication and distribution of Gyan Ganga Mission literature"
+        },
+        "madhu-maa-transcribing-book": {
+          "src": "../assets/images/madhu-maa-transcribing-book.jpg",
+          "altHi": "मधु माँ द्वारा दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य",
+          "altEn": "Madhu Maa transcribing divine knowledge"
+        },
+        "infrastructure-space": {
+          "src": "../assets/images/gallery/infrastructure-support/01-card.webp",
+          "altHi": "शैक्षणिक संस्था में कक्ष-कक्ष और ब्लॉक निर्माण",
+          "altEn": "Classrooms and academic block infrastructure"
+        },
+        "infrastructure-facilities": {
+          "src": "../assets/images/gallery/infrastructure-support/06-card.webp",
+          "altHi": "विद्यालय में मुख्य द्वार, प्याऊ और आधारभूत सुविधाएँ",
+          "altEn": "School gate, water facility and basic infrastructure"
+        },
+        "infrastructure-readiness": {
+          "src": "../assets/images/gallery/infrastructure-support/14-card.webp",
+          "altHi": "विद्यार्थियों के लिए कम्प्यूटर लैब और अध्ययन-संसाधन",
+          "altEn": "Computer lab and learning resources for students"
+        },
+        "infrastructure-overview": {
+          "src": "../assets/images/gallery/infrastructure-support/02-card.webp",
+          "altHi": "शैक्षणिक संस्था में निर्मित स्वागत कक्ष और आधारभूत सुविधा",
+          "altEn": "Educational institution infrastructure support"
+        },
+        "commerce-block": {
+          "src": "../assets/images/gallery/infrastructure-support/01-card.webp",
+          "altHi": "कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक",
+          "altEn": "Kumari Basanti Manihar Commerce Block"
+        },
+        "reception-classrooms": {
+          "src": "../assets/images/gallery/infrastructure-support/03-card.webp",
+          "altHi": "स्वागत कक्ष और कक्षा-कक्ष निर्माण",
+          "altEn": "Reception hall and classroom construction"
+        },
+        "gate-water": {
+          "src": "../assets/images/gallery/infrastructure-support/06-card.webp",
+          "altHi": "विद्यालय का मुख्य द्वार और प्याऊ सुविधा",
+          "altEn": "School gate and drinking water facility"
+        },
+        "computer-lab": {
+          "src": "../assets/images/gallery/infrastructure-support/14-card.webp",
+          "altHi": "विद्यार्थियों के लिए कम्प्यूटर लैब",
+          "altEn": "Computer lab for students"
+        }
+      },
+      "media": {},
+      "cssBackgrounds": [
+        "../assets/images/gallery/gyan-ganga-mission/02-card.webp"
+      ]
+    }
+  }
+}

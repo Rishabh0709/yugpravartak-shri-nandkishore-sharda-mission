@@ -1,8 +1,8 @@
 {
   "album": "infrastructure-support",
-  "generatedAt": "2026-08-19T18:28:24.716Z",
+  "generatedAt": "2026-08-28T03:12:43.456Z",
   "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\infrastructure-support",
-  "photographCount": 16,
+  "photographCount": 14,
   "photographs": [
     {
       "id": "01",
@@ -158,55 +158,25 @@
       "id": "06",
       "album": "infrastructure-support",
       "original": {
-        "file": "20A INFRASTRUCTURE.jpg",
-        "width": 2507,
-        "height": 1568,
-        "bytes": 1063550
-      },
-      "thumbnail": {
-        "file": "06-thumb.webp",
-        "width": 320,
-        "height": 220,
-        "bytes": 4308
-      },
-      "card": {
-        "file": "06-card.webp",
-        "width": 900,
-        "height": 563,
-        "bytes": 18520
-      },
-      "full": {
-        "file": "06-full.webp",
-        "width": 1800,
-        "height": 1126,
-        "bytes": 51936
-      },
-      "alt": "Replace with a concise description of who or what is visible.",
-      "caption": "Replace with the activity, context, location and year where known."
-    },
-    {
-      "id": "07",
-      "album": "infrastructure-support",
-      "original": {
         "file": "20B INFRASTRUCTURE.jpg",
         "width": 2469,
         "height": 1524,
         "bytes": 1172390
       },
       "thumbnail": {
-        "file": "07-thumb.webp",
+        "file": "06-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 8058
       },
       "card": {
-        "file": "07-card.webp",
+        "file": "06-card.webp",
         "width": 900,
         "height": 556,
         "bytes": 31014
       },
       "full": {
-        "file": "07-full.webp",
+        "file": "06-full.webp",
         "width": 1800,
         "height": 1111,
         "bytes": 80310
@@ -215,7 +185,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "08",
+      "id": "07",
       "album": "infrastructure-support",
       "original": {
         "file": "20C INFRASTRUCTURE.jpg",
@@ -224,19 +194,19 @@
         "bytes": 1704422
       },
       "thumbnail": {
-        "file": "08-thumb.webp",
+        "file": "07-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 11496
       },
       "card": {
-        "file": "08-card.webp",
+        "file": "07-card.webp",
         "width": 900,
         "height": 575,
         "bytes": 47954
       },
       "full": {
-        "file": "08-full.webp",
+        "file": "07-full.webp",
         "width": 1800,
         "height": 1150,
         "bytes": 133884
@@ -245,7 +215,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "09",
+      "id": "08",
       "album": "infrastructure-support",
       "original": {
         "file": "20D INFRASTRUCTURE.jpg",
@@ -254,19 +224,19 @@
         "bytes": 2047992
       },
       "thumbnail": {
-        "file": "09-thumb.webp",
+        "file": "08-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 11400
       },
       "card": {
-        "file": "09-card.webp",
+        "file": "08-card.webp",
         "width": 900,
         "height": 551,
         "bytes": 63738
       },
       "full": {
-        "file": "09-full.webp",
+        "file": "08-full.webp",
         "width": 1800,
         "height": 1102,
         "bytes": 180302
@@ -275,7 +245,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "10",
+      "id": "09",
       "album": "infrastructure-support",
       "original": {
         "file": "IMG_3726.JPG.jpg",
@@ -284,19 +254,19 @@
         "bytes": 9001544
       },
       "thumbnail": {
-        "file": "10-thumb.webp",
+        "file": "09-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 16306
       },
       "card": {
-        "file": "10-card.webp",
+        "file": "09-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 95904
       },
       "full": {
-        "file": "10-full.webp",
+        "file": "09-full.webp",
         "width": 1800,
         "height": 1200,
         "bytes": 323578
@@ -305,7 +275,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "11",
+      "id": "10",
       "album": "infrastructure-support",
       "original": {
         "file": "IMG_7039.JPG.jpg",
@@ -314,19 +284,19 @@
         "bytes": 8068293
       },
       "thumbnail": {
-        "file": "11-thumb.webp",
+        "file": "10-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 8978
       },
       "card": {
-        "file": "11-card.webp",
+        "file": "10-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 47938
       },
       "full": {
-        "file": "11-full.webp",
+        "file": "10-full.webp",
         "width": 1800,
         "height": 1200,
         "bytes": 157514
@@ -335,7 +305,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "12",
+      "id": "11",
       "album": "infrastructure-support",
       "original": {
         "file": "IMG_7117.JPG.jpg",
@@ -344,19 +314,19 @@
         "bytes": 7982455
       },
       "thumbnail": {
-        "file": "12-thumb.webp",
+        "file": "11-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 13068
       },
       "card": {
-        "file": "12-card.webp",
+        "file": "11-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 68804
       },
       "full": {
-        "file": "12-full.webp",
+        "file": "11-full.webp",
         "width": 1800,
         "height": 1200,
         "bytes": 217146
@@ -365,7 +335,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "13",
+      "id": "12",
       "album": "infrastructure-support",
       "original": {
         "file": "IMG_7124.JPG.jpg",
@@ -374,19 +344,19 @@
         "bytes": 7431888
       },
       "thumbnail": {
-        "file": "13-thumb.webp",
+        "file": "12-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 10636
       },
       "card": {
-        "file": "13-card.webp",
+        "file": "12-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 57802
       },
       "full": {
-        "file": "13-full.webp",
+        "file": "12-full.webp",
         "width": 1800,
         "height": 1200,
         "bytes": 175852
@@ -395,7 +365,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "14",
+      "id": "13",
       "album": "infrastructure-support",
       "original": {
         "file": "WhatsApp Image 2025-06-16 at 14.17.49.jpg",
@@ -404,19 +374,19 @@
         "bytes": 435655
       },
       "thumbnail": {
-        "file": "14-thumb.webp",
+        "file": "13-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 13500
       },
       "card": {
-        "file": "14-card.webp",
+        "file": "13-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 71344
       },
       "full": {
-        "file": "14-full.webp",
+        "file": "13-full.webp",
         "width": 1600,
         "height": 1066,
         "bytes": 191834
@@ -425,37 +395,7 @@
       "caption": "Replace with the activity, context, location and year where known."
     },
     {
-      "id": "15",
-      "album": "infrastructure-support",
-      "original": {
-        "file": "WhatsApp Image 2025-06-16 at 14.17.55 (1).jpg",
-        "width": 1600,
-        "height": 1066,
-        "bytes": 397870
-      },
-      "thumbnail": {
-        "file": "15-thumb.webp",
-        "width": 320,
-        "height": 220,
-        "bytes": 13266
-      },
-      "card": {
-        "file": "15-card.webp",
-        "width": 900,
-        "height": 600,
-        "bytes": 64760
-      },
-      "full": {
-        "file": "15-full.webp",
-        "width": 1600,
-        "height": 1066,
-        "bytes": 165158
-      },
-      "alt": "Replace with a concise description of who or what is visible.",
-      "caption": "Replace with the activity, context, location and year where known."
-    },
-    {
-      "id": "16",
+      "id": "14",
       "album": "infrastructure-support",
       "original": {
         "file": "WhatsApp Image 2025-06-16 at 14.17.55.jpg",
@@ -464,19 +404,19 @@
         "bytes": 545144
       },
       "thumbnail": {
-        "file": "16-thumb.webp",
+        "file": "14-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 15964
       },
       "card": {
-        "file": "16-card.webp",
+        "file": "14-card.webp",
         "width": 900,
         "height": 600,
         "bytes": 97000
       },
       "full": {
-        "file": "16-full.webp",
+        "file": "14-full.webp",
         "width": 1600,
         "height": 1066,
         "bytes": 289714

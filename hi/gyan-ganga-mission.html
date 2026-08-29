@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन की सद्साहित्य प्रकाशन, निःशुल्क वितरण और शिक्षा-संस्थानों के सहयोग की सेवा-यात्रा।">
+    <title>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन | मणिद्वीप अध्यात्म परिवार</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=20260811-3">
+    <link rel="stylesheet" href="../assets/css/home-hindi.css?v=20260819-15">
+    <style>
+        .gyan-ganga-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
+        }
+
+        .gyan-ganga-hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(128px, 14vw, 188px) 0 clamp(70px, 8vw, 112px);
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .88) 45%, rgba(255, 244, 225, .62) 76%),
+                url("../assets/images/gallery/gyan-ganga-mission/02-card.webp") center / cover no-repeat;
+        }
+
+        .gyan-ganga-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 110px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .gyan-ganga-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 940px;
+        }
+
+        .gyan-ganga-hero h1 {
+            margin: 12px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.6vw, 6.35rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .gyan-ganga-hero__lead {
+            max-width: 840px;
+            color: #66534c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.16rem, 1.85vw, 1.56rem);
+            font-weight: 500;
+            line-height: 1.82;
+        }
+
+        .gyan-ganga-hero__facts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1px;
+            max-width: 860px;
+            margin: 34px 0 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(198, 148, 53, .22);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .gyan-ganga-hero__facts li {
+            list-style: none;
+            padding: 20px clamp(16px, 2.3vw, 26px);
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .gyan-ganga-hero__facts strong {
+            display: block;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.2vw, 2rem);
+            line-height: 1.25;
+        }
+
+        .gyan-ganga-hero__facts span {
+            display: block;
+            margin-top: 6px;
+            color: #66534c;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .gyan-ganga-section {
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .gyan-ganga-section--soft {
+            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
+        }
+
+        .gyan-ganga-split {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .gyan-ganga-media {
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
+        }
+
+        .gyan-ganga-media img {
+            display: block;
+            width: 100%;
+            min-height: 390px;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-media figcaption {
+            padding: 16px 18px;
+            color: #6a554e;
+            font-size: .94rem;
+            line-height: 1.6;
+        }
+
+        .gyan-ganga-copy h2,
+        .gyan-ganga-band h2,
+        .gyan-ganga-list h2,
+        .gyan-ganga-closing h2 {
+            margin: 0 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+        }
+
+        .gyan-ganga-copy p,
+        .gyan-ganga-band p,
+        .gyan-ganga-list p,
+        .gyan-ganga-closing p {
+            color: #62544c;
+            font-size: 1.04rem;
+            line-height: 1.88;
+        }
+
+        .gyan-ganga-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 26px;
+        }
+
+        .gyan-ganga-band {
+            text-align: center;
+        }
+
+        .gyan-ganga-card-grid,
+        .gyan-ganga-list-grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .gyan-ganga-card-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .gyan-ganga-list-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .gyan-ganga-card,
+        .gyan-ganga-list-card {
+            padding: 24px 22px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 16px 42px rgba(63, 45, 37, .06);
+        }
+
+        .gyan-ganga-card span {
+            display: inline-block;
+            margin-bottom: 14px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 900;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .gyan-ganga-card h3,
+        .gyan-ganga-list-card strong {
+            display: block;
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .gyan-ganga-card p,
+        .gyan-ganga-list-card p {
+            margin: 0;
+            color: #62544c;
+            line-height: 1.8;
+        }
+
+        .gyan-ganga-card,
+        .gyan-ganga-list-card {
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .gyan-ganga-card figure,
+        .gyan-ganga-list-card figure {
+            margin: 0;
+            overflow: hidden;
+            background: #f4e4cc;
+        }
+
+        .gyan-ganga-card img,
+        .gyan-ganga-list-card img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-list-card img {
+            height: 220px;
+        }
+
+        .gyan-ganga-card__body,
+        .gyan-ganga-list-card__body {
+            padding: 24px 22px;
+        }
+
+        .gyan-ganga-reflection {
+            max-width: 920px;
+            margin: 42px auto 0;
+            padding: clamp(24px, 3vw, 36px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            color: var(--hi-ink);
+            background: rgba(255, 252, 246, .76);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.28rem, 2.2vw, 1.92rem);
+            font-weight: 700;
+            line-height: 1.72;
+            text-align: center;
+        }
+
+        .gyan-ganga-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .gyan-ganga-closing p {
+            max-width: 860px;
+            margin-inline: auto;
+        }
+
+        @media (max-width: 980px) {
+            .gyan-ganga-split,
+            .gyan-ganga-card-grid,
+            .gyan-ganga-list-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gyan-ganga-hero__facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .gyan-ganga-hero {
+                padding-top: 126px;
+            }
+
+            .gyan-ganga-media img {
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="hindi-home gyan-ganga-page">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="gyan-ganga-hero" aria-labelledby="gyan-ganga-title">
+            <div class="hi-shell gyan-ganga-hero__content">
+                <span class="hi-kicker">सद्साहित्य, दिव्य ज्ञान और सेवा</span>
+                <h1 id="gyan-ganga-title">श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन</h1>
+                <p class="gyan-ganga-hero__lead">भैया श्री नन्दकिशोर जी शारदा द्वारा प्रदत्त अमूल्य ज्ञान, चिंतन और दस्तावेजों को प्रकाशित कर जन-जन तक पहुँचाने की पावन धारा। यह मिशन ज्ञान के प्रसार के साथ शिक्षा-संस्थानों के विकास में भी सक्रिय सहयोग करता है।</p>
+                <ul class="gyan-ganga-hero__facts" aria-label="ज्ञान गंगा मिशन की प्रमुख जानकारी">
+                    <li><strong>16 अप्रैल 2003</strong><span>माँ बसन्ती जी और मधु माँ द्वारा स्थापना</span></li>
+                    <li><strong>निःशुल्क</strong><span>सद्साहित्य पाठकों के लिए उपलब्ध</span></li>
+                    <li><strong>ज्ञान से सेवा</strong><span>प्रकाशन के साथ शैक्षणिक सहयोग</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section" aria-labelledby="origin-title">
+            <div class="hi-shell gyan-ganga-split">
+                <figure class="gyan-ganga-media">
+                    <img data-image-key="gyan-ganga-mission.02-card" src="../assets/images/gallery/gyan-ganga-mission/02-card.webp" alt="ज्ञान गंगा मिशन के सद्साहित्य का प्रकाशन और वितरण" loading="lazy">
+                    <figcaption>भैया जी प्रदत्त ज्ञान को वर्तमान और भावी पीढ़ियों तक पहुँचाने का सतत प्रयास।</figcaption>
+                </figure>
+                <div class="gyan-ganga-copy">
+                    <span class="hi-kicker">स्थापना का उद्देश्य</span>
+                    <h2 id="origin-title">ज्ञान की धारा को अनवरत प्रवाहित रखना</h2>
+                    <p>भैया जी के चैतन्यस्वरुप होने के पश्चात् माँ बसन्ती जी एवं मधु माँ द्वारा इस मिशन की स्थापना सद्साहित्य प्रकाशन एवं निःशुल्क वितरण हेतु की गई। इसका मुख्य उद्देश्य भैया प्रदत्त अमूल्य ज्ञान, चिंतन, व्यक्तिगत डायरी जैसे दस्तावेजों और आध्यात्मिक मार्गदर्शन को प्रकाशित कर उसका प्रचार-प्रसार करना है।</p>
+                    <p>यह कार्य केवल पुस्तकों के प्रकाशन तक सीमित नहीं है। इसके माध्यम से वर्तमान और भावी पीढ़ी को उचित दिशा मिले, देश-विदेश में दिव्य ज्ञान का प्रसार हो और नए युग की चेतना आगे बढ़े, यही इस मिशन की मूल भावना है।</p>
+                    <div class="gyan-ganga-actions">
+                        <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशन देखें</a>
+                        <a class="hi-btn hi-btn--outline" href="divya-gyan.html">दिव्य ज्ञान पढ़ें</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-section--soft" aria-labelledby="literature-title">
+            <div class="hi-shell gyan-ganga-split">
+                <div class="gyan-ganga-copy">
+                    <span class="hi-kicker">ज्ञान-सेवा</span>
+                    <h2 id="literature-title">सद्साहित्य का प्रकाशन और निःशुल्क प्रसार</h2>
+                    <p>मिशन द्वारा भैया जी के दिव्य ज्ञान, जीवन-वृत्त, हस्तलिखित डायरी, माँ बसन्ती जी के व्यक्तित्व और मणिद्वीप की आध्यात्मिक धारा से जुड़े ग्रंथों का प्रकाशन किया गया है। इन पुस्तकों का उद्देश्य पाठक में श्रद्धा, विवेक, आत्मचिंतन और जीवन की आध्यात्मिक दिशा को जागृत करना है।</p>
+                    <p>पुस्तकों की लंबी सूची को यहाँ दोहराने के बजाय सभी प्रकाशनों को एक अलग पृष्ठ पर व्यवस्थित रखा गया है, ताकि पाठक आवरण, विषय और उपलब्धता को एक ही स्थान पर देख सकें।</p>
+                    <div class="gyan-ganga-actions">
+                        <a class="hi-btn hi-btn--primary" href="publications.html">सभी पुस्तकें देखें</a>
+                    </div>
+                </div>
+                <figure class="gyan-ganga-media">
+                    <img data-image-key="gyan-ganga-mission.madhu-maa-transcribing-book" src="../assets/images/madhu-maa-transcribing-book.jpg" alt="मधु माँ द्वारा दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य" loading="lazy">
+                    <figcaption>दिव्य ज्ञान को लिपिबद्ध, प्रकाशित और जन-जन तक पहुँचाने की ज्ञान-साधना।</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-band" aria-labelledby="infrastructure-meaning-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">ज्ञान से शैक्षणिक वातावरण तक</span>
+                    <h2 id="infrastructure-meaning-title">शिक्षा के लिए गरिमापूर्ण वातावरण भी सेवा है</h2>
+                    <p>ज्ञान गंगा मिशन केवल ज्ञान के प्रसार तक सीमित नहीं रहा। ट्रस्ट से प्रेरित होकर ट्रस्टियों और जनसहयोग के माध्यम से विभिन्न शैक्षणिक संस्थानों में निर्माण और सहयोग कार्य सम्पन्न हुए, ताकि विद्यार्थियों को शिक्षा के लिए बेहतर, सुरक्षित और उपयोगी वातावरण मिल सके।</p>
+                </header>
+                <div class="gyan-ganga-card-grid">
+                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-space" src="../assets/images/gallery/infrastructure-support/01-card.webp" alt="शैक्षणिक संस्था में कक्ष-कक्ष और ब्लॉक निर्माण" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>01 · स्थान</span><h3>कक्ष-कक्ष और ब्लॉक</h3><p>अतिरिक्त कक्षाओं, स्वागत कक्ष और कॉमर्स ब्लॉक जैसे निर्माणों ने विद्यार्थियों को पढ़ने और संस्थानों को व्यवस्थित रूप से चलने के लिए स्थान दिया।</p></div></article>
+                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-facilities" src="../assets/images/gallery/infrastructure-support/06-card.webp" alt="विद्यालय में मुख्य द्वार, प्याऊ और आधारभूत सुविधाएँ" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>02 · सुविधा</span><h3>प्याऊ, मुख्य द्वार और आधारभूत व्यवस्था</h3><p>जल-सुविधा, प्रवेश व्यवस्था और अन्य मूलभूत निर्माण विद्यार्थियों की गरिमा, सुविधा और सुरक्षा से सीधे जुड़े हुए हैं।</p></div></article>
+                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-readiness" src="../assets/images/gallery/infrastructure-support/14-card.webp" alt="विद्यार्थियों के लिए कम्प्यूटर लैब और अध्ययन-संसाधन" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>03 · तैयारी</span><h3>कम्प्यूटर लैब और अध्ययन-सहयोग</h3><p>शिक्षा को समयानुकूल बनाने के लिए कम्प्यूटर लैब और उपयोगी संसाधनों का सहयोग विद्यार्थियों के भविष्य से जुड़ता है।</p></div></article>
+                </div>
+                <div class="gyan-ganga-reflection">केवल पुस्तक देना ही ज्ञान-सेवा नहीं; ऐसा वातावरण बनाना भी सेवा है जहाँ विद्यार्थी सम्मान और विश्वास के साथ सीख सके।</div>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-section--soft" aria-labelledby="selected-work-title">
+            <div class="hi-shell gyan-ganga-split">
+                <figure class="gyan-ganga-media">
+                    <img data-image-key="gyan-ganga-mission.infrastructure-overview" src="../assets/images/gallery/infrastructure-support/02-card.webp" alt="शैक्षणिक संस्था में निर्मित स्वागत कक्ष और आधारभूत सुविधा" loading="lazy">
+                    <figcaption>शैक्षणिक संस्थानों में सुविधाओं का निर्माण विद्यार्थियों के आत्मसम्मान और शिक्षा की निरंतरता से जुड़ा है।</figcaption>
+                </figure>
+                <div class="gyan-ganga-copy">
+                    <span class="hi-kicker">चयनित योगदान</span>
+                    <h2 id="selected-work-title">संस्थानों में निर्माण और सहयोग कार्य</h2>
+                    <p>मिशन से प्रेरित सहयोग कार्यों में महिला महाविद्यालय में ‘कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक’, महालक्ष्मी गर्ल्स सीनियर सेकेंडरी स्कूल, प्रतापनगर में कक्ष-कक्षों का निर्माण, ‘श्री नन्दकिशोर शारदा स्वागत कक्ष’, मुख्य द्वार, प्याऊ और कम्प्यूटर लैब जैसे कार्य प्रमुख हैं।</p>
+                    <p>इन कार्यों की भावना यही रही कि शिक्षा केवल फीस या पुस्तकों से पूर्ण नहीं होती; उसके लिए वातावरण, सुविधाएँ और संस्थागत संबल भी आवश्यक हैं।</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-list" aria-labelledby="work-list-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">सेवा के रूप</span>
+                    <h2 id="work-list-title">जहाँ आवश्यकता दिखी, वहाँ सहयोग का मार्ग बना</h2>
+                </header>
+                <div class="gyan-ganga-list-grid">
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.commerce-block" src="../assets/images/gallery/infrastructure-support/01-card.webp" alt="कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कॉमर्स ब्लॉक</strong><p>महिला महाविद्यालय, जोधपुर में ‘कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक’ के निर्माण में सहयोग।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.reception-classrooms" src="../assets/images/gallery/infrastructure-support/03-card.webp" alt="स्वागत कक्ष और कक्षा-कक्ष निर्माण" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>स्वागत कक्ष और कक्षाएँ</strong><p>महालक्ष्मी गर्ल्स सीनियर सेकेंडरी स्कूल, प्रतापनगर में ‘श्री नन्दकिशोर शारदा स्वागत कक्ष’ और कक्ष-कक्षों का निर्माण।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.gate-water" src="../assets/images/gallery/infrastructure-support/06-card.webp" alt="विद्यालय का मुख्य द्वार और प्याऊ सुविधा" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>मुख्य द्वार और प्याऊ</strong><p>विद्यालयों में गरिमापूर्ण प्रवेश, जल-सुविधा और आवश्यक आधारभूत सुविधाओं की स्थापना।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.computer-lab" src="../assets/images/gallery/infrastructure-support/14-card.webp" alt="विद्यार्थियों के लिए कम्प्यूटर लैब" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कम्प्यूटर लैब</strong><p>विद्यार्थियों को आधुनिक शिक्षा-संसाधनों से जोड़ने के लिए कम्प्यूटर लैब जैसी सुविधाओं का सहयोग।</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-closing" aria-labelledby="closing-title">
+            <div class="hi-shell">
+                <span class="hi-kicker">ज्ञान गंगा की अनवरत धारा</span>
+                <h2 id="closing-title">दिव्य ज्ञान जब जन-जन तक पहुँचता है, तो वह जीवन-दृष्टि बन जाता है।</h2>
+                <p>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन भैया जी के अमूल्य ज्ञान को सुरक्षित रखने, प्रकाशित करने और निःशुल्क उपलब्ध कराने के साथ-साथ शिक्षा-संस्थानों में ऐसे सहयोग को भी आगे बढ़ाता है जो विद्यार्थियों के भविष्य को गरिमा और विश्वास देता है।</p>
+                <div class="hi-actions hi-actions--center gyan-ganga-actions">
+                    <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशन देखें</a>
+                    <a class="hi-btn hi-btn--outline" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना पढ़ें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/image-manifest.js?v=20260828-1"></script>
+    <script src="../assets/js/main.js?v=20260811-1"></script>
+</body>
+</html>
+

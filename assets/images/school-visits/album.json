@@ -1,0 +1,548 @@
+{
+  "album": "school-visits",
+  "generatedAt": "2026-08-28T03:53:11.852Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\school-visits",
+  "photographCount": 18,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "school-visits",
+      "original": {
+        "file": "20260225_124504.jpg.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2108428
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10548
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 51876
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 166098
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "school-visits",
+      "original": {
+        "file": "20260415_114155.jpg.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2879349
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16494
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 86494
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 307142
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "school-visits",
+      "original": {
+        "file": "20260415_114222.jpg.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 1812757
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14996
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 80844
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 231052
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "school-visits",
+      "original": {
+        "file": "20260415_120837.jpg.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2106322
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8742
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 46930
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 179652
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "school-visits",
+      "original": {
+        "file": "20260415_121837.jpg.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2244001
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13392
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 70402
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 224822
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_094311.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2965490
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14284
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 80380
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 285362
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_094323.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2785435
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15068
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 84890
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 306700
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_094336.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 3373685
+      },
+      "thumbnail": {
+        "file": "08-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14774
+      },
+      "card": {
+        "file": "08-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 92176
+      },
+      "full": {
+        "file": "08-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 376092
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "09",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_094507.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 3172237
+      },
+      "thumbnail": {
+        "file": "09-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14414
+      },
+      "card": {
+        "file": "09-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 91802
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 355248
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_100152.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 3998128
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17034
+      },
+      "card": {
+        "file": "10-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 111438
+      },
+      "full": {
+        "file": "10-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 494014
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "11",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_100841.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2990176
+      },
+      "thumbnail": {
+        "file": "11-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15182
+      },
+      "card": {
+        "file": "11-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 98380
+      },
+      "full": {
+        "file": "11-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 371550
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "12",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_110105.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2951994
+      },
+      "thumbnail": {
+        "file": "12-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17490
+      },
+      "card": {
+        "file": "12-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 96664
+      },
+      "full": {
+        "file": "12-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 327532
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "13",
+      "album": "school-visits",
+      "original": {
+        "file": "20260512_110127.jpeg",
+        "width": 4000,
+        "height": 2252,
+        "bytes": 2158538
+      },
+      "thumbnail": {
+        "file": "13-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9794
+      },
+      "card": {
+        "file": "13-card.webp",
+        "width": 900,
+        "height": 507,
+        "bytes": 53054
+      },
+      "full": {
+        "file": "13-full.webp",
+        "width": 1800,
+        "height": 1013,
+        "bytes": 189888
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "14",
+      "album": "school-visits",
+      "original": {
+        "file": "bhaiya_w_girls2.png",
+        "width": 608,
+        "height": 410,
+        "bytes": 557679
+      },
+      "thumbnail": {
+        "file": "14-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16516
+      },
+      "card": {
+        "file": "14-card.webp",
+        "width": 608,
+        "height": 410,
+        "bytes": 43108
+      },
+      "full": {
+        "file": "14-full.webp",
+        "width": 608,
+        "height": 410,
+        "bytes": 50734
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "15",
+      "album": "school-visits",
+      "original": {
+        "file": "bhaiya_w_girls3.png",
+        "width": 613,
+        "height": 412,
+        "bytes": 606768
+      },
+      "thumbnail": {
+        "file": "15-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 18504
+      },
+      "card": {
+        "file": "15-card.webp",
+        "width": 613,
+        "height": 412,
+        "bytes": 43176
+      },
+      "full": {
+        "file": "15-full.webp",
+        "width": 613,
+        "height": 412,
+        "bytes": 48648
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "16",
+      "album": "school-visits",
+      "original": {
+        "file": "main_page3.jpg",
+        "width": 800,
+        "height": 400,
+        "bytes": 245870
+      },
+      "thumbnail": {
+        "file": "16-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12720
+      },
+      "card": {
+        "file": "16-card.webp",
+        "width": 800,
+        "height": 400,
+        "bytes": 40078
+      },
+      "full": {
+        "file": "16-full.webp",
+        "width": 800,
+        "height": 400,
+        "bytes": 46056
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "17",
+      "album": "school-visits",
+      "original": {
+        "file": "main_page5.jpg",
+        "width": 800,
+        "height": 400,
+        "bytes": 245827
+      },
+      "thumbnail": {
+        "file": "17-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10752
+      },
+      "card": {
+        "file": "17-card.webp",
+        "width": 800,
+        "height": 400,
+        "bytes": 37210
+      },
+      "full": {
+        "file": "17-full.webp",
+        "width": 800,
+        "height": 400,
+        "bytes": 43674
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "18",
+      "album": "school-visits",
+      "original": {
+        "file": "WhatsApp Image 2026-05-09 at 10.34.11.jpeg",
+        "width": 1600,
+        "height": 900,
+        "bytes": 164765
+      },
+      "thumbnail": {
+        "file": "18-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10370
+      },
+      "card": {
+        "file": "18-card.webp",
+        "width": 900,
+        "height": 506,
+        "bytes": 52030
+      },
+      "full": {
+        "file": "18-full.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 132374
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}

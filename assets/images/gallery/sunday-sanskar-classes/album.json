@@ -1,14 +1,14 @@
 {
   "album": "sunday-sanskar-classes",
-  "generatedAt": "2026-07-30T10:37:29.041Z",
+  "generatedAt": "2026-08-28T03:08:34.142Z",
   "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\sunday-sanskar-classes",
-  "photographCount": 9,
+  "photographCount": 14,
   "photographs": [
     {
       "id": "01",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "01.JPG",
+        "file": "01.jpg",
         "width": 5520,
         "height": 3680,
         "bytes": 12164838
@@ -38,28 +38,28 @@
       "id": "02",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "02.JPG",
-        "width": 3840,
-        "height": 2160,
-        "bytes": 2038827
+        "file": "2_1.jpg",
+        "width": 1280,
+        "height": 960,
+        "bytes": 170651
       },
       "thumbnail": {
         "file": "02-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 11768
+        "bytes": 15532
       },
       "card": {
         "file": "02-card.webp",
         "width": 900,
-        "height": 506,
-        "bytes": 50502
+        "height": 675,
+        "bytes": 94656
       },
       "full": {
         "file": "02-full.webp",
-        "width": 1800,
-        "height": 1013,
-        "bytes": 151534
+        "width": 1280,
+        "height": 960,
+        "bytes": 169188
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -68,28 +68,28 @@
       "id": "03",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "03.jpg",
-        "width": 1236,
-        "height": 829,
-        "bytes": 277214
+        "file": "02.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 2038827
       },
       "thumbnail": {
         "file": "03-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 14660
+        "bytes": 11768
       },
       "card": {
         "file": "03-card.webp",
         "width": 900,
-        "height": 604,
-        "bytes": 77330
+        "height": 506,
+        "bytes": 50502
       },
       "full": {
         "file": "03-full.webp",
-        "width": 1236,
-        "height": 829,
-        "bytes": 137942
+        "width": 1800,
+        "height": 1013,
+        "bytes": 151534
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -98,28 +98,28 @@
       "id": "04",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "04.JPG",
-        "width": 4928,
-        "height": 3264,
-        "bytes": 8108821
+        "file": "03.jpg",
+        "width": 1236,
+        "height": 829,
+        "bytes": 277214
       },
       "thumbnail": {
         "file": "04-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 15370
+        "bytes": 14660
       },
       "card": {
         "file": "04-card.webp",
         "width": 900,
-        "height": 596,
-        "bytes": 84930
+        "height": 604,
+        "bytes": 77330
       },
       "full": {
         "file": "04-full.webp",
-        "width": 1800,
-        "height": 1192,
-        "bytes": 292592
+        "width": 1236,
+        "height": 829,
+        "bytes": 137942
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -128,28 +128,28 @@
       "id": "05",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "05.jpg",
-        "width": 1279,
-        "height": 487,
-        "bytes": 157375
+        "file": "04.jpg",
+        "width": 4928,
+        "height": 3264,
+        "bytes": 8108821
       },
       "thumbnail": {
         "file": "05-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 11208
+        "bytes": 15370
       },
       "card": {
         "file": "05-card.webp",
         "width": 900,
-        "height": 343,
-        "bytes": 44210
+        "height": 596,
+        "bytes": 84930
       },
       "full": {
         "file": "05-full.webp",
-        "width": 1279,
-        "height": 487,
-        "bytes": 79458
+        "width": 1800,
+        "height": 1192,
+        "bytes": 292592
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -158,28 +158,28 @@
       "id": "06",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "06.jpg",
-        "width": 5312,
-        "height": 2988,
-        "bytes": 5803057
+        "file": "05.jpg",
+        "width": 1279,
+        "height": 487,
+        "bytes": 157375
       },
       "thumbnail": {
         "file": "06-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 14192
+        "bytes": 11208
       },
       "card": {
         "file": "06-card.webp",
         "width": 900,
-        "height": 506,
-        "bytes": 70970
+        "height": 343,
+        "bytes": 44210
       },
       "full": {
         "file": "06-full.webp",
-        "width": 1800,
-        "height": 1013,
-        "bytes": 233348
+        "width": 1279,
+        "height": 487,
+        "bytes": 79458
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -188,28 +188,28 @@
       "id": "07",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "07.JPG",
-        "width": 3840,
-        "height": 2160,
-        "bytes": 2420095
+        "file": "06.jpg",
+        "width": 5312,
+        "height": 2988,
+        "bytes": 5803057
       },
       "thumbnail": {
         "file": "07-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 12194
+        "bytes": 14192
       },
       "card": {
         "file": "07-card.webp",
         "width": 900,
         "height": 506,
-        "bytes": 57020
+        "bytes": 70970
       },
       "full": {
         "file": "07-full.webp",
         "width": 1800,
         "height": 1013,
-        "bytes": 193672
+        "bytes": 233348
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -218,28 +218,28 @@
       "id": "08",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "08.JPG",
-        "width": 4928,
-        "height": 3264,
-        "bytes": 1892460
+        "file": "07.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 2420095
       },
       "thumbnail": {
         "file": "08-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 16520
+        "bytes": 12194
       },
       "card": {
         "file": "08-card.webp",
         "width": 900,
-        "height": 596,
-        "bytes": 89158
+        "height": 506,
+        "bytes": 57020
       },
       "full": {
         "file": "08-full.webp",
         "width": 1800,
-        "height": 1192,
-        "bytes": 288316
+        "height": 1013,
+        "bytes": 193672
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -248,28 +248,178 @@
       "id": "09",
       "album": "sunday-sanskar-classes",
       "original": {
-        "file": "09.jpeg",
-        "width": 4032,
-        "height": 3024,
-        "bytes": 3810301
+        "file": "08.jpg",
+        "width": 4928,
+        "height": 3264,
+        "bytes": 1892460
       },
       "thumbnail": {
         "file": "09-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 14702
+        "bytes": 16520
       },
       "card": {
         "file": "09-card.webp",
+        "width": 900,
+        "height": 596,
+        "bytes": 89158
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 1800,
+        "height": 1192,
+        "bytes": 288316
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "sunday-sanskar-classes",
+      "original": {
+        "file": "09.jpg",
+        "width": 4032,
+        "height": 3024,
+        "bytes": 3810301
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14702
+      },
+      "card": {
+        "file": "10-card.webp",
         "width": 900,
         "height": 675,
         "bytes": 91566
       },
       "full": {
-        "file": "09-full.webp",
+        "file": "10-full.webp",
         "width": 1800,
         "height": 1350,
         "bytes": 340676
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "11",
+      "album": "sunday-sanskar-classes",
+      "original": {
+        "file": "madhu_maa_sanskar_class.png",
+        "width": 1264,
+        "height": 842,
+        "bytes": 2282701
+      },
+      "thumbnail": {
+        "file": "11-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16302
+      },
+      "card": {
+        "file": "11-card.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 91492
+      },
+      "full": {
+        "file": "11-full.webp",
+        "width": 1264,
+        "height": 842,
+        "bytes": 173270
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "12",
+      "album": "sunday-sanskar-classes",
+      "original": {
+        "file": "page-24_image-03_Im406.png",
+        "width": 1007,
+        "height": 628,
+        "bytes": 1073499
+      },
+      "thumbnail": {
+        "file": "12-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 17784
+      },
+      "card": {
+        "file": "12-card.webp",
+        "width": 900,
+        "height": 561,
+        "bytes": 87978
+      },
+      "full": {
+        "file": "12-full.webp",
+        "width": 1007,
+        "height": 628,
+        "bytes": 122372
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "13",
+      "album": "sunday-sanskar-classes",
+      "original": {
+        "file": "page-40_image-02_Im482.png",
+        "width": 582,
+        "height": 349,
+        "bytes": 343565
+      },
+      "thumbnail": {
+        "file": "13-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13224
+      },
+      "card": {
+        "file": "13-card.webp",
+        "width": 582,
+        "height": 349,
+        "bytes": 34646
+      },
+      "full": {
+        "file": "13-full.webp",
+        "width": 582,
+        "height": 349,
+        "bytes": 40038
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "14",
+      "album": "sunday-sanskar-classes",
+      "original": {
+        "file": "page-40_image-06_Im485.png",
+        "width": 1191,
+        "height": 350,
+        "bytes": 845120
+      },
+      "thumbnail": {
+        "file": "14-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14458
+      },
+      "card": {
+        "file": "14-card.webp",
+        "width": 900,
+        "height": 264,
+        "bytes": 45852
+      },
+      "full": {
+        "file": "14-full.webp",
+        "width": 1191,
+        "height": 350,
+        "bytes": 74948
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
