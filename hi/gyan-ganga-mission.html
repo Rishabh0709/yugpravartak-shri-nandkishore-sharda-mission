@@ -18,13 +18,37 @@
             background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
         }
 
+        body.hindi-home.gyan-ganga-page #header-placeholder {
+            position: absolute;
+            z-index: 1000;
+            inset: 0 0 auto;
+            height: 0;
+            background: transparent;
+        }
+
+        body.hindi-home.gyan-ganga-page #header.site-header:not(.is-scrolled),
+        body.hindi-home.gyan-ganga-page .site-header:not(.is-scrolled) {
+            border-bottom-color: transparent;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        body.hindi-home.gyan-ganga-page #header.site-header:not(.is-scrolled) .site-brand-logo,
+        body.hindi-home.gyan-ganga-page .site-header:not(.is-scrolled) .site-brand-logo {
+            background: transparent;
+            box-shadow: none;
+            filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+        }
+
         .gyan-ganga-hero {
             position: relative;
             overflow: hidden;
-            padding: clamp(128px, 14vw, 188px) 0 clamp(70px, 8vw, 112px);
+            padding: clamp(156px, 16vw, 220px) 0 clamp(70px, 8vw, 112px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .88) 45%, rgba(255, 244, 225, .62) 76%),
-                url("../assets/images/gallery/gyan-ganga-mission/02-card.webp") center / cover no-repeat;
+                url("../assets/images/gallery/gyan-ganga-mission/03-card.webp") center / cover no-repeat;
         }
 
         .gyan-ganga-hero::after {
@@ -159,6 +183,89 @@
             margin-top: 26px;
         }
 
+        .gyan-ganga-note {
+            display: grid;
+            grid-template-columns: minmax(220px, 360px) 1fr;
+            gap: clamp(22px, 4vw, 44px);
+            align-items: center;
+            max-width: 1120px;
+            margin: -28px auto 0;
+            padding: clamp(18px, 3vw, 28px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .gyan-ganga-note figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid rgba(123, 43, 39, .18);
+        }
+
+        .gyan-ganga-note img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-note p {
+            margin: 0;
+            color: var(--hi-muted);
+            font-size: clamp(1.03rem, 1.25vw, 1.2rem);
+            line-height: 1.9;
+        }
+
+        .gyan-ganga-support-note {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: clamp(20px, 3vw, 34px);
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(28px, 4vw, 48px);
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(255, 240, 204, .84), rgba(255, 252, 246, .92));
+            box-shadow: 0 18px 52px rgba(112, 73, 33, .08);
+        }
+
+        .gyan-ganga-support-note__icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #f4b64e;
+            color: #4a1818;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .gyan-ganga-support-note h2 {
+            margin: 0 0 8px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            line-height: 1.05;
+        }
+
+        .gyan-ganga-support-note p {
+            max-width: 1020px;
+            margin: 0;
+            color: var(--hi-muted);
+            font-size: clamp(1.08rem, 1.45vw, 1.34rem);
+            line-height: 1.75;
+        }
+
+        .gyan-ganga-support-note strong {
+            color: var(--hi-ink);
+            font-weight: 800;
+        }
+
         .gyan-ganga-band {
             text-align: center;
         }
@@ -175,7 +282,7 @@
         }
 
         .gyan-ganga-list-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
         .gyan-ganga-card,
@@ -236,12 +343,18 @@
         }
 
         .gyan-ganga-list-card img {
-            height: 220px;
+            height: 170px;
+            object-fit: contain;
+            padding: 8px;
         }
 
         .gyan-ganga-card__body,
         .gyan-ganga-list-card__body {
             padding: 24px 22px;
+        }
+
+        .gyan-ganga-list-card__body {
+            padding: 20px 20px 22px;
         }
 
         .gyan-ganga-reflection {
@@ -321,61 +434,38 @@
                 <div class="gyan-ganga-copy">
                     <span class="hi-kicker">स्थापना का उद्देश्य</span>
                     <h2 id="origin-title">ज्ञान की धारा को अनवरत प्रवाहित रखना</h2>
-                    <p>भैया जी के चैतन्यस्वरुप होने के पश्चात् माँ बसन्ती जी एवं मधु माँ द्वारा इस मिशन की स्थापना सद्साहित्य प्रकाशन एवं निःशुल्क वितरण हेतु की गई। इसका मुख्य उद्देश्य भैया प्रदत्त अमूल्य ज्ञान, चिंतन, व्यक्तिगत डायरी जैसे दस्तावेजों और आध्यात्मिक मार्गदर्शन को प्रकाशित कर उसका प्रचार-प्रसार करना है।</p>
-                    <p>यह कार्य केवल पुस्तकों के प्रकाशन तक सीमित नहीं है। इसके माध्यम से वर्तमान और भावी पीढ़ी को उचित दिशा मिले, देश-विदेश में दिव्य ज्ञान का प्रसार हो और नए युग की चेतना आगे बढ़े, यही इस मिशन की मूल भावना है।</p>
-                    <div class="gyan-ganga-actions">
-                        <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशन देखें</a>
-                        <a class="hi-btn hi-btn--outline" href="divya-gyan.html">दिव्य ज्ञान पढ़ें</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="gyan-ganga-section gyan-ganga-section--soft" aria-labelledby="literature-title">
-            <div class="hi-shell gyan-ganga-split">
-                <div class="gyan-ganga-copy">
-                    <span class="hi-kicker">ज्ञान-सेवा</span>
-                    <h2 id="literature-title">सद्साहित्य का प्रकाशन और निःशुल्क प्रसार</h2>
+                    <p>भैया जी के चैतन्यस्वरुप होने के पश्चात् माँ बसन्ती जी एवं मधु माँ द्वारा इस मिशन की स्थापना सद्साहित्य प्रकाशन एवं निःशुल्क वितरण हेतु की गई। इसका मुख्य उद्देश्य भैया प्रदत्त अमूल्य ज्ञान, चिंतन, व्यक्तिगत डायरी जैसे दस्तावेजों और आध्यात्मिक मार्गदर्शन को प्रकाशित कर उसका प्रचार-प्रसार करना ताकि वर्तमान एवं भावी पीढ़ी का उचित मार्गदर्शन हो सके। देश-विदेश में ज्ञान का प्रचार प्रसार कैसे हो, इस पर विचार-विमर्श हो जिससे एक नये युग का सूत्रपात हो सके।</p>
                     <p>मिशन द्वारा भैया जी के दिव्य ज्ञान, जीवन-वृत्त, हस्तलिखित डायरी, माँ बसन्ती जी के व्यक्तित्व और मणिद्वीप की आध्यात्मिक धारा से जुड़े ग्रंथों का प्रकाशन किया गया है। इन पुस्तकों का उद्देश्य पाठक में श्रद्धा, विवेक, आत्मचिंतन और जीवन की आध्यात्मिक दिशा को जागृत करना है।</p>
-                    <p>पुस्तकों की लंबी सूची को यहाँ दोहराने के बजाय सभी प्रकाशनों को एक अलग पृष्ठ पर व्यवस्थित रखा गया है, ताकि पाठक आवरण, विषय और उपलब्धता को एक ही स्थान पर देख सकें।</p>
                     <div class="gyan-ganga-actions">
                         <a class="hi-btn hi-btn--primary" href="publications.html">सभी पुस्तकें देखें</a>
+                        <a class="hi-btn hi-btn--outline" href="divya-gyan.html">दिव्य ज्ञान को जानें</a>
                     </div>
                 </div>
-                <figure class="gyan-ganga-media">
-                    <img data-image-key="gyan-ganga-mission.madhu-maa-transcribing-book" src="../assets/images/madhu-maa-transcribing-book.jpg" alt="मधु माँ द्वारा दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य" loading="lazy">
-                    <figcaption>दिव्य ज्ञान को लिपिबद्ध, प्रकाशित और जन-जन तक पहुँचाने की ज्ञान-साधना।</figcaption>
-                </figure>
             </div>
         </section>
 
-        <section class="gyan-ganga-section gyan-ganga-band" aria-labelledby="infrastructure-meaning-title">
+
+
+        <section class="gyan-ganga-section gyan-ganga-section--compact" aria-label="निःशुल्क सद्साहित्य वितरण">
             <div class="hi-shell">
-                <header class="hi-section-heading hi-section-heading--center">
-                    <span class="hi-kicker">ज्ञान से शैक्षणिक वातावरण तक</span>
-                    <h2 id="infrastructure-meaning-title">शिक्षा के लिए गरिमापूर्ण वातावरण भी सेवा है</h2>
-                    <p>ज्ञान गंगा मिशन केवल ज्ञान के प्रसार तक सीमित नहीं रहा। ट्रस्ट से प्रेरित होकर ट्रस्टियों और जनसहयोग के माध्यम से विभिन्न शैक्षणिक संस्थानों में निर्माण और सहयोग कार्य सम्पन्न हुए, ताकि विद्यार्थियों को शिक्षा के लिए बेहतर, सुरक्षित और उपयोगी वातावरण मिल सके।</p>
-                </header>
-                <div class="gyan-ganga-card-grid">
-                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-space" src="../assets/images/gallery/infrastructure-support/01-card.webp" alt="शैक्षणिक संस्था में कक्ष-कक्ष और ब्लॉक निर्माण" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>01 · स्थान</span><h3>कक्ष-कक्ष और ब्लॉक</h3><p>अतिरिक्त कक्षाओं, स्वागत कक्ष और कॉमर्स ब्लॉक जैसे निर्माणों ने विद्यार्थियों को पढ़ने और संस्थानों को व्यवस्थित रूप से चलने के लिए स्थान दिया।</p></div></article>
-                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-facilities" src="../assets/images/gallery/infrastructure-support/06-card.webp" alt="विद्यालय में मुख्य द्वार, प्याऊ और आधारभूत सुविधाएँ" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>02 · सुविधा</span><h3>प्याऊ, मुख्य द्वार और आधारभूत व्यवस्था</h3><p>जल-सुविधा, प्रवेश व्यवस्था और अन्य मूलभूत निर्माण विद्यार्थियों की गरिमा, सुविधा और सुरक्षा से सीधे जुड़े हुए हैं।</p></div></article>
-                    <article class="gyan-ganga-card"><figure><img data-image-key="gyan-ganga-mission.infrastructure-readiness" src="../assets/images/gallery/infrastructure-support/14-card.webp" alt="विद्यार्थियों के लिए कम्प्यूटर लैब और अध्ययन-संसाधन" loading="lazy"></figure><div class="gyan-ganga-card__body"><span>03 · तैयारी</span><h3>कम्प्यूटर लैब और अध्ययन-सहयोग</h3><p>शिक्षा को समयानुकूल बनाने के लिए कम्प्यूटर लैब और उपयोगी संसाधनों का सहयोग विद्यार्थियों के भविष्य से जुड़ता है।</p></div></article>
+                <div class="gyan-ganga-note">
+                    <figure>
+                        <img data-image-key="gyan-ganga-mission.literature-distribution" src="../assets/images/gallery/literature-distribution/04-card.webp" alt="पाठकों तक निःशुल्क सद्साहित्य पहुँचाने की सेवा" loading="lazy">
+                    </figure>
+                    <p>इस ट्रस्ट के माध्यम से अन्य व्यक्तियों द्वारा लिखित महापुरुषों की समाजोपयोगी धार्मिक पुस्तकों के प्रकाशन का भी प्रावधान है। इस मिशन का उद्देश्य है कि ज्ञान गंगा की धारा को अनगिनत लोगों में अनवरत् प्रवाहित कर सके इसलिये ये पुस्तकें पाठकों के लिये निःशुल्क उपलब्ध हैं।</p>
                 </div>
-                <div class="gyan-ganga-reflection">केवल पुस्तक देना ही ज्ञान-सेवा नहीं; ऐसा वातावरण बनाना भी सेवा है जहाँ विद्यार्थी सम्मान और विश्वास के साथ सीख सके।</div>
             </div>
         </section>
-
-        <section class="gyan-ganga-section gyan-ganga-section--soft" aria-labelledby="selected-work-title">
+        <section class="gyan-ganga-section gyan-ganga-band" aria-labelledby="infrastructure-meaning-title">
             <div class="hi-shell gyan-ganga-split">
                 <figure class="gyan-ganga-media">
                     <img data-image-key="gyan-ganga-mission.infrastructure-overview" src="../assets/images/gallery/infrastructure-support/02-card.webp" alt="शैक्षणिक संस्था में निर्मित स्वागत कक्ष और आधारभूत सुविधा" loading="lazy">
                     <figcaption>शैक्षणिक संस्थानों में सुविधाओं का निर्माण विद्यार्थियों के आत्मसम्मान और शिक्षा की निरंतरता से जुड़ा है।</figcaption>
                 </figure>
                 <div class="gyan-ganga-copy">
-                    <span class="hi-kicker">चयनित योगदान</span>
-                    <h2 id="selected-work-title">संस्थानों में निर्माण और सहयोग कार्य</h2>
-                    <p>मिशन से प्रेरित सहयोग कार्यों में महिला महाविद्यालय में ‘कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक’, महालक्ष्मी गर्ल्स सीनियर सेकेंडरी स्कूल, प्रतापनगर में कक्ष-कक्षों का निर्माण, ‘श्री नन्दकिशोर शारदा स्वागत कक्ष’, मुख्य द्वार, प्याऊ और कम्प्यूटर लैब जैसे कार्य प्रमुख हैं।</p>
-                    <p>इन कार्यों की भावना यही रही कि शिक्षा केवल फीस या पुस्तकों से पूर्ण नहीं होती; उसके लिए वातावरण, सुविधाएँ और संस्थागत संबल भी आवश्यक हैं।</p>
+                    <span class="hi-kicker">ज्ञान से शैक्षणिक वातावरण तक</span>
+                    <h2 id="infrastructure-meaning-title">शिक्षा में आने वाली मौन बाधाओं को दूर करने का प्रयास</h2>
+                    <p>ज्ञान गंगा मिशन केवल ज्ञान के प्रसार तक सीमित नहीं रहा। भैया जी का मानना था कि केवल छात्रवृत्ति देना शिक्षा-सेवा को पूर्ण नहीं करता। यदि विद्यालय में पर्याप्त कक्षाएँ, बैठने की व्यवस्था, जल-सुविधा, स्वच्छता या सुरक्षित वातावरण न हो, तो विद्यार्थी विशेषकर बालिकाएँ शिक्षा में अनेक मौन बाधाओं का सामना करती हैं। इसलिए मिशन से प्रेरित होकर शैक्षणिक संस्थानों में ऐसे निर्माण और सहयोग कार्य किए गए, जिनसे विद्यार्थियों को गरिमा, सुविधा और विश्वास के साथ सीखने का वातावरण मिल सके।</p>
                 </div>
             </div>
         </section>
@@ -383,25 +473,41 @@
         <section class="gyan-ganga-section gyan-ganga-list" aria-labelledby="work-list-title">
             <div class="hi-shell">
                 <header class="hi-section-heading hi-section-heading--center">
-                    <span class="hi-kicker">सेवा के रूप</span>
-                    <h2 id="work-list-title">जहाँ आवश्यकता दिखी, वहाँ सहयोग का मार्ग बना</h2>
+                    <span class="hi-kicker">चयनित योगदान</span>
+                    <h2 id="work-list-title">प्रमुख निर्माण एवं सहयोग कार्य</h2>
+                    <p>इन कार्यों की भावना यही रही कि शिक्षा केवल फीस या पुस्तकों से पूर्ण नहीं होती; उसके लिए वातावरण, सुविधाएँ और संस्थागत संबल भी आवश्यक हैं।</p>
                 </header>
                 <div class="gyan-ganga-list-grid">
-                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.commerce-block" src="../assets/images/gallery/infrastructure-support/01-card.webp" alt="कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कॉमर्स ब्लॉक</strong><p>महिला महाविद्यालय, जोधपुर में ‘कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक’ के निर्माण में सहयोग।</p></div></article>
-                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.reception-classrooms" src="../assets/images/gallery/infrastructure-support/03-card.webp" alt="स्वागत कक्ष और कक्षा-कक्ष निर्माण" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>स्वागत कक्ष और कक्षाएँ</strong><p>महालक्ष्मी गर्ल्स सीनियर सेकेंडरी स्कूल, प्रतापनगर में ‘श्री नन्दकिशोर शारदा स्वागत कक्ष’ और कक्ष-कक्षों का निर्माण।</p></div></article>
-                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.gate-water" src="../assets/images/gallery/infrastructure-support/06-card.webp" alt="विद्यालय का मुख्य द्वार और प्याऊ सुविधा" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>मुख्य द्वार और प्याऊ</strong><p>विद्यालयों में गरिमापूर्ण प्रवेश, जल-सुविधा और आवश्यक आधारभूत सुविधाओं की स्थापना।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.reception-classrooms" src="../assets/images/gallery/infrastructure-support/03-card.webp" alt="स्वागत कक्ष और कक्षा-कक्ष निर्माण" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>स्वागत कक्ष और कक्षाएँ</strong><p>महालक्ष्मी गर्ल्स सीनियर सेकेंडरी स्कूल, प्रतापनगर में ‘श्री नन्दकिशोर शारदा स्वागत कक्ष’ और तीन कक्षाओं का निर्माण।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.commerce-block" src="../assets/images/gallery/infrastructure-support/01-card.webp" alt="कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कॉमर्स शिक्षा</strong><p>महिला महाविद्यालय, जोधपुर में ‘कुमारी बसन्ती मनिहार कॉमर्स ब्लॉक’ के निर्माण हेतु आर्थिक सहयोग।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.gate-water" src="../assets/images/gallery/infrastructure-support/06-card.webp" alt="विद्यालय का मुख्य द्वार और तुलसी प्याऊ सुविधा" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>तुलसी प्याऊ</strong><p>श्रीमती तुलसी देवी की स्मृति में बालिका विद्यालयों में पेयजल सुविधा का निर्माण।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.classroom-furniture" src="../assets/images/gallery/infrastructure-support/08-card.webp" alt="विद्यालयी कक्षाओं के लिए फर्नीचर सहयोग" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कक्षा फर्नीचर</strong><p>7 बालिका विद्यालयों की 16 कक्षाओं के लिए फर्नीचर की व्यवस्था, ताकि रोज़मर्रा की पढ़ाई अधिक सहज हो सके।</p></div></article>
                     <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.computer-lab" src="../assets/images/gallery/infrastructure-support/14-card.webp" alt="विद्यार्थियों के लिए कम्प्यूटर लैब" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>कम्प्यूटर लैब</strong><p>विद्यार्थियों को आधुनिक शिक्षा-संसाधनों से जोड़ने के लिए कम्प्यूटर लैब जैसी सुविधाओं का सहयोग।</p></div></article>
+                    <article class="gyan-ganga-list-card"><figure><img data-image-key="gyan-ganga-mission.safety-basic-facilities" src="../assets/images/gallery/infrastructure-support/05-card.webp" alt="विद्यालयों में सुरक्षा और आधारभूत सुविधाओं का सहयोग" loading="lazy"></figure><div class="gyan-ganga-list-card__body"><strong>सुरक्षा और आधारभूत सुविधाएँ</strong><p>बाउंड्री वॉल, स्वच्छता, प्रवेश व्यवस्था और अन्य आवश्यक कार्यों ने विद्यालयों को सुरक्षित, स्वस्थ और पूर्ण शिक्षण-स्थल बनाने में सहयोग दिया।</p></div></article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="gyan-ganga-section gyan-ganga-section--compact" aria-labelledby="community-support-title">
+            <div class="hi-shell">
+                <div class="gyan-ganga-support-note">
+                    <span class="gyan-ganga-support-note__icon" aria-hidden="true">₹</span>
+                    <div>
+                        <h2 id="community-support-title">₹1.5 करोड़+</h2>
+                        <p>हॉल, कक्षाएँ, कम्प्यूटर लैब, प्याऊ, फर्नीचर और अन्य सुविधाएँ <strong>सिवांची गेट, अल्पभाषा राजमहल, जालोरी गेट, भगत की कोठी, राजमहल, महामंदिर और सरदारपुरा</strong> क्षेत्र के विद्यालयों में ट्रस्टियों, जनप्रतिनिधियों और समाज के सहयोग से विकसित हुईं।</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="gyan-ganga-section gyan-ganga-closing" aria-labelledby="closing-title">
             <div class="hi-shell">
-                <span class="hi-kicker">ज्ञान गंगा की अनवरत धारा</span>
-                <h2 id="closing-title">दिव्य ज्ञान जब जन-जन तक पहुँचता है, तो वह जीवन-दृष्टि बन जाता है।</h2>
-                <p>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन भैया जी के अमूल्य ज्ञान को सुरक्षित रखने, प्रकाशित करने और निःशुल्क उपलब्ध कराने के साथ-साथ शिक्षा-संस्थानों में ऐसे सहयोग को भी आगे बढ़ाता है जो विद्यार्थियों के भविष्य को गरिमा और विश्वास देता है।</p>
+                <span class="hi-kicker">सहयोग की अगली कड़ी</span>
+                <h2 id="closing-title">क्या आप अगले शैक्षणिक सहयोग से जुड़ना चाहेंगे?</h2>
+                <p>कक्षाओं, प्याऊ, फर्नीचर, कम्प्यूटर लैब और अन्य आधारभूत सुविधाओं जैसे कार्य ट्रस्ट सदस्यों, जनसहयोग और स्थानीय प्रतिनिधियों के माध्यम से अलग-अलग रूप में आगे बढ़ते हैं। किसी विशेष सहयोग या निर्माण-कार्य से जुड़ने के लिए हमसे संपर्क करें।</p>
                 <div class="hi-actions hi-actions--center gyan-ganga-actions">
-                    <a class="hi-btn hi-btn--primary" href="publications.html">प्रकाशन देखें</a>
+                    <a class="hi-btn hi-btn--primary" href="contact.html">सम्पर्क करें</a>
                     <a class="hi-btn hi-btn--outline" href="nishkam-karm-sadhna.html">निष्काम कर्म साधना पढ़ें</a>
                 </div>
             </div>
@@ -415,4 +521,16 @@
     <script src="../assets/js/main.js?v=20260811-1"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 

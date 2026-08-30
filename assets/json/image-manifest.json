@@ -831,7 +831,7 @@
     "gyan-ganga-mission": {
       "images": {
         "02-card": {
-          "src": "../assets/images/gallery/gyan-ganga-mission/02-card.webp",
+          "src": "../assets/images/gallery/gyan-ganga-mission/06-card.webp",
           "altHi": "ज्ञान गंगा मिशन के सद्साहित्य का प्रकाशन और वितरण",
           "altEn": "Publication and distribution of Gyan Ganga Mission literature"
         },
@@ -839,6 +839,11 @@
           "src": "../assets/images/madhu-maa-transcribing-book.jpg",
           "altHi": "मधु माँ द्वारा दिव्य ज्ञान को लिपिबद्ध करने का भावपूर्ण दृश्य",
           "altEn": "Madhu Maa transcribing divine knowledge"
+        },
+        "literature-distribution": {
+          "src": "../assets/images/gallery/literature-distribution/04-card.webp",
+          "altHi": "पाठकों तक निःशुल्क सद्साहित्य पहुँचाने की सेवा",
+          "altEn": "Free spiritual literature distribution to readers"
         },
         "infrastructure-space": {
           "src": "../assets/images/gallery/infrastructure-support/01-card.webp",
@@ -866,19 +871,34 @@
           "altEn": "Kumari Basanti Manihar Commerce Block"
         },
         "reception-classrooms": {
-          "src": "../assets/images/gallery/infrastructure-support/03-card.webp",
+          "src": "../assets/images/gallery/infrastructure-support/06-card.webp",
           "altHi": "स्वागत कक्ष और कक्षा-कक्ष निर्माण",
           "altEn": "Reception hall and classroom construction"
         },
         "gate-water": {
-          "src": "../assets/images/gallery/infrastructure-support/06-card.webp",
+          "src": "../assets/images/gallery/infrastructure-support/08-card.webp",
           "altHi": "विद्यालय का मुख्य द्वार और प्याऊ सुविधा",
           "altEn": "School gate and drinking water facility"
         },
         "computer-lab": {
-          "src": "../assets/images/gallery/infrastructure-support/14-card.webp",
+          "src": "../assets/images/gallery/infrastructure-support/12-card.webp",
           "altHi": "विद्यार्थियों के लिए कम्प्यूटर लैब",
           "altEn": "Computer lab for students"
+        },
+        "classroom-furniture": {
+          "src": "../assets/images/gallery/infrastructure-support/07-card.webp",
+          "altHi": "विद्यालयी कक्षाओं के लिए फर्नीचर सहयोग",
+          "altEn": "Classroom furniture support for schools"
+        },
+        "safety-basic-facilities": {
+          "src": "../assets/images/gallery/infrastructure-support/14-card.webp",
+          "altHi": "विद्यालयों में सुरक्षा और आधारभूत सुविधाओं का सहयोग",
+          "altEn": "Safety and basic facilities support in schools"
+        },
+        "community-infrastructure": {
+          "src": "../assets/images/gallery/infrastructure-support/10-card.webp",
+          "altHi": "जनसहयोग से शैक्षणिक आधारभूत निर्माण",
+          "altEn": "Educational infrastructure built through community support"
         }
       },
       "media": {},

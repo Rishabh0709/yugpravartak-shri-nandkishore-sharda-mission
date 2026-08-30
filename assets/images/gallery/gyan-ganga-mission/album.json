@@ -1,35 +1,35 @@
 {
   "album": "gyan-ganga-mission",
-  "generatedAt": "2026-08-19T15:23:15.767Z",
+  "generatedAt": "2026-08-29T04:02:41.776Z",
   "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\gyan-ganga-mission",
-  "photographCount": 6,
+  "photographCount": 14,
   "photographs": [
     {
       "id": "01",
       "album": "gyan-ganga-mission",
       "original": {
-        "file": "DSC_8364.JPG",
-        "width": 5520,
-        "height": 3680,
-        "bytes": 10538371
+        "file": "1 (2).jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 8443275
       },
       "thumbnail": {
         "file": "01-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 17694
+        "bytes": 11690
       },
       "card": {
         "file": "01-card.webp",
         "width": 900,
         "height": 600,
-        "bytes": 110030
+        "bytes": 63146
       },
       "full": {
         "file": "01-full.webp",
         "width": 1800,
         "height": 1200,
-        "bytes": 416738
+        "bytes": 207364
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -38,28 +38,28 @@
       "id": "02",
       "album": "gyan-ganga-mission",
       "original": {
-        "file": "IMG-20140818-WA0000.jpg",
-        "width": 800,
-        "height": 597,
-        "bytes": 80471
+        "file": "bhaiya_book_inaugration.PNG",
+        "width": 1029,
+        "height": 835,
+        "bytes": 1436715
       },
       "thumbnail": {
         "file": "02-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 11512
+        "bytes": 12202
       },
       "card": {
         "file": "02-card.webp",
-        "width": 800,
-        "height": 597,
-        "bytes": 47470
+        "width": 900,
+        "height": 730,
+        "bytes": 63790
       },
       "full": {
         "file": "02-full.webp",
-        "width": 800,
-        "height": 597,
-        "bytes": 56474
+        "width": 1029,
+        "height": 835,
+        "bytes": 88322
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -68,28 +68,28 @@
       "id": "03",
       "album": "gyan-ganga-mission",
       "original": {
-        "file": "img561 (2).jpg",
-        "width": 6816,
-        "height": 4704,
-        "bytes": 4656881
+        "file": "bhaiya_book_inaugration1.PNG",
+        "width": 1001,
+        "height": 633,
+        "bytes": 1112242
       },
       "thumbnail": {
         "file": "03-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 14040
+        "bytes": 12634
       },
       "card": {
         "file": "03-card.webp",
         "width": 900,
-        "height": 621,
-        "bytes": 87492
+        "height": 569,
+        "bytes": 52252
       },
       "full": {
         "file": "03-full.webp",
-        "width": 1800,
-        "height": 1242,
-        "bytes": 287440
+        "width": 1001,
+        "height": 633,
+        "bytes": 70146
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -98,28 +98,28 @@
       "id": "04",
       "album": "gyan-ganga-mission",
       "original": {
-        "file": "img568.jpg",
-        "width": 7392,
-        "height": 4535,
-        "bytes": 4352514
+        "file": "bhaiya_book_inaugration2_1.png",
+        "width": 737,
+        "height": 447,
+        "bytes": 583694
       },
       "thumbnail": {
         "file": "04-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 10222
+        "bytes": 11110
       },
       "card": {
         "file": "04-card.webp",
-        "width": 900,
-        "height": 552,
-        "bytes": 41170
+        "width": 737,
+        "height": 447,
+        "bytes": 33314
       },
       "full": {
         "file": "04-full.webp",
-        "width": 1800,
-        "height": 1104,
-        "bytes": 118180
+        "width": 737,
+        "height": 447,
+        "bytes": 38816
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -128,28 +128,28 @@
       "id": "05",
       "album": "gyan-ganga-mission",
       "original": {
-        "file": "img576.jpg",
-        "width": 6960,
-        "height": 4680,
-        "bytes": 4189474
+        "file": "bhaiya_book_inaugration2.PNG",
+        "width": 782,
+        "height": 634,
+        "bytes": 762647
       },
       "thumbnail": {
         "file": "05-thumb.webp",
         "width": 320,
         "height": 220,
-        "bytes": 13822
+        "bytes": 11886
       },
       "card": {
         "file": "05-card.webp",
-        "width": 900,
-        "height": 605,
-        "bytes": 65814
+        "width": 782,
+        "height": 634,
+        "bytes": 49466
       },
       "full": {
         "file": "05-full.webp",
-        "width": 1800,
-        "height": 1210,
-        "bytes": 189258
+        "width": 782,
+        "height": 634,
+        "bytes": 56448
       },
       "alt": "Replace with a concise description of who or what is visible.",
       "caption": "Replace with the activity, context, location and year where known."
@@ -158,25 +158,265 @@
       "id": "06",
       "album": "gyan-ganga-mission",
       "original": {
+        "file": "bhaiya_book_inaugration3_1.png",
+        "width": 741,
+        "height": 450,
+        "bytes": 585817
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10590
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 741,
+        "height": 450,
+        "bytes": 34728
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 741,
+        "height": 450,
+        "bytes": 40916
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "bhaiya_book_inaugration3.PNG",
+        "width": 752,
+        "height": 639,
+        "bytes": 782194
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13612
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 752,
+        "height": 639,
+        "bytes": 52994
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 752,
+        "height": 639,
+        "bytes": 60488
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "bhaiya_book_inaugration4_1.png",
+        "width": 615,
+        "height": 451,
+        "bytes": 480324
+      },
+      "thumbnail": {
+        "file": "08-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8330
+      },
+      "card": {
+        "file": "08-card.webp",
+        "width": 615,
+        "height": 451,
+        "bytes": 23192
+      },
+      "full": {
+        "file": "08-full.webp",
+        "width": 615,
+        "height": 451,
+        "bytes": 27816
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "09",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "bhaiya_book_inaugration4.PNG",
+        "width": 636,
+        "height": 547,
+        "bytes": 611226
+      },
+      "thumbnail": {
+        "file": "09-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10922
+      },
+      "card": {
+        "file": "09-card.webp",
+        "width": 636,
+        "height": 547,
+        "bytes": 33046
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 636,
+        "height": 547,
+        "bytes": 39250
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "IMG-20140818-WA0000.jpg",
+        "width": 800,
+        "height": 597,
+        "bytes": 80471
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 11512
+      },
+      "card": {
+        "file": "10-card.webp",
+        "width": 800,
+        "height": 597,
+        "bytes": 47470
+      },
+      "full": {
+        "file": "10-full.webp",
+        "width": 800,
+        "height": 597,
+        "bytes": 56474
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "11",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img561 (2).jpg",
+        "width": 6816,
+        "height": 4704,
+        "bytes": 4656881
+      },
+      "thumbnail": {
+        "file": "11-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14040
+      },
+      "card": {
+        "file": "11-card.webp",
+        "width": 900,
+        "height": 621,
+        "bytes": 87492
+      },
+      "full": {
+        "file": "11-full.webp",
+        "width": 1800,
+        "height": 1242,
+        "bytes": 287440
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "12",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img568.jpg",
+        "width": 7392,
+        "height": 4535,
+        "bytes": 4352514
+      },
+      "thumbnail": {
+        "file": "12-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10222
+      },
+      "card": {
+        "file": "12-card.webp",
+        "width": 900,
+        "height": 552,
+        "bytes": 41170
+      },
+      "full": {
+        "file": "12-full.webp",
+        "width": 1800,
+        "height": 1104,
+        "bytes": 118180
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "13",
+      "album": "gyan-ganga-mission",
+      "original": {
+        "file": "img576.jpg",
+        "width": 6960,
+        "height": 4680,
+        "bytes": 4189474
+      },
+      "thumbnail": {
+        "file": "13-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13822
+      },
+      "card": {
+        "file": "13-card.webp",
+        "width": 900,
+        "height": 605,
+        "bytes": 65814
+      },
+      "full": {
+        "file": "13-full.webp",
+        "width": 1800,
+        "height": 1210,
+        "bytes": 189258
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "14",
+      "album": "gyan-ganga-mission",
+      "original": {
         "file": "img627.jpg",
         "width": 5832,
         "height": 8088,
         "bytes": 7890289
       },
       "thumbnail": {
-        "file": "06-thumb.webp",
+        "file": "14-thumb.webp",
         "width": 320,
         "height": 220,
         "bytes": 12362
       },
       "card": {
-        "file": "06-card.webp",
+        "file": "14-card.webp",
         "width": 900,
         "height": 649,
         "bytes": 103174
       },
       "full": {
-        "file": "06-full.webp",
+        "file": "14-full.webp",
         "width": 1800,
         "height": 1298,
         "bytes": 355410
