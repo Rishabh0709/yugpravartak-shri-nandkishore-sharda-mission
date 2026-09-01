@@ -444,7 +444,12 @@
         }
       },
       "media": {},
-      "cssBackgrounds": []
+      "cssBackgrounds": [],
+      "bhaiyaji-buddhi-vivek-guidance": {
+        "src": "../assets/images/bhaiyaji-buddhi-vivek-guidance.jpg",
+        "altHi": "भैया जी श्री नन्दकिशोर शारदा",
+        "altEn": "Bhaiyaji Shri Nandkishore Sharda"
+      }
     },
     "logo": {
       "images": {

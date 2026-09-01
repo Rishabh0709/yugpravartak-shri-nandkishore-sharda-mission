@@ -2,13 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const filters = Array.from(document.querySelectorAll(".gallery-filter"));
-    const groups = Array.from(document.querySelectorAll("[data-gallery-group]"));
-    const albumCards = Array.from(document.querySelectorAll(".gallery-card"));
-    const featuredLinks = Array.from(document.querySelectorAll(".gallery-feature-link"));
-    const collection = document.querySelector(".gallery-collection");
+    const cards = Array.from(document.querySelectorAll("[data-gallery-item]"));
+    const countTarget = document.querySelector("[data-visible-count]");
     const dialog = document.querySelector(".gallery-lightbox");
 
-    if (!filters.length || !groups.length || !albumCards.length || !dialog) {
+    if (!filters.length || !cards.length || !dialog) {
         return;
     }
 
@@ -16,117 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = dialog.querySelector("#lightbox-title");
     const caption = dialog.querySelector(".lightbox-caption");
     const counter = dialog.querySelector(".lightbox-counter");
-    const thumbnails = dialog.querySelector(".lightbox-thumbnails");
     const closeButton = dialog.querySelector(".lightbox-close");
     const previousButton = dialog.querySelector(".lightbox-prev");
     const nextButton = dialog.querySelector(".lightbox-next");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const isHindiGallery = document.documentElement.lang.toLowerCase().startsWith("hi");
+
     let activeFilter = "all";
-    let activeAlbum = null;
+    let visibleCards = cards;
     let activeIndex = 0;
     let opener = null;
-    let albumOpenedWithHistory = false;
     let touchStartX = 0;
 
-    const slugify = (value) => value
-        .toLowerCase()
-        .normalize("NFKD")
-        .replace(/[’']/g, "")
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "");
-
-    const albums = new Map(albumCards.map((card) => {
-        const cardImage = card.querySelector("img");
-        const albumSlug = card.dataset.album || slugify(card.dataset.title || "mission-album");
-        const albumTitle = card.dataset.title || (isHindiGallery ? "मिशन संग्रह" : "Mission Album");
-        const albumCaption = card.dataset.caption || (isHindiGallery ? "मिशन की सतत सेवा-धारा का एक क्षण।" : "A moment from the Mission’s continuing work.");
-        const category = card.dataset.category || "all";
-        const coverFull = card.dataset.full || cardImage.currentSrc || cardImage.src;
-        const coverThumb = card.dataset.thumb || cardImage.currentSrc || cardImage.src;
-        const photos = [{
-            full: coverFull,
-            thumb: coverThumb,
-            alt: cardImage.alt,
-            caption: albumCaption
-        }];
-
-        for (let index = 2; index <= 10; index += 1) {
-            const seed = `${albumSlug}-${index}`;
-            photos.push({
-                full: `https://picsum.photos/seed/${seed}/1600/1100`,
-                thumb: `https://picsum.photos/seed/${seed}/240/165`,
-                alt: isHindiGallery ? `${albumTitle} के लिए प्रतिनिधि चित्र ${index}` : `Temporary stock photograph ${index} for ${albumTitle}`,
-                caption: isHindiGallery ? `${albumTitle} - प्रतिनिधि चित्र ${index} / 10` : `${albumTitle} - representative photograph ${index} of 10.`
-            });
-        }
-
-        card.dataset.album = albumSlug;
-        card.setAttribute("aria-label", isHindiGallery ? `${albumTitle} संग्रह खोलें, 10 चित्र` : `Open ${albumTitle} album, 10 photographs`);
-
-        return [albumSlug, {
-            slug: albumSlug,
-            title: albumTitle,
-            description: albumCaption,
-            category,
-            photos,
-            card,
-            manifestLoaded: false
-        }];
-    }));
-
-    const createPlaceholderPhoto = (album, index) => {
-        const seed = `${album.slug}-${index}`;
-        return {
-            full: `https://picsum.photos/seed/${seed}/1600/1100`,
-            thumb: `https://picsum.photos/seed/${seed}/240/165`,
-            alt: isHindiGallery ? `${album.title} के लिए प्रतिनिधि चित्र ${index}` : `Temporary stock photograph ${index} for ${album.title}`,
-            caption: isHindiGallery ? `${album.title} - प्रतिनिधि चित्र ${index} / 10` : `${album.title} - representative photograph ${index} of 10.`
-        };
-    };
-
-    const hydrateAlbumFromManifest = async (album) => {
-        if (album.manifestLoaded) {
-            return;
-        }
-
-        album.manifestLoaded = true;
-
-        try {
-            const albumPath = `${isHindiGallery ? "../" : ""}assets/images/gallery/${album.slug}`;
-            const response = await fetch(`${albumPath}/album.json`, { cache: "no-store" });
-            if (!response.ok) {
-                return;
-            }
-
-            const manifest = await response.json();
-            if (!Array.isArray(manifest.photographs) || !manifest.photographs.length) {
-                return;
-            }
-
-            const localPhotos = manifest.photographs.map((photo, index) => ({
-                full: `${albumPath}/${photo.full.file}`,
-                thumb: `${albumPath}/${photo.thumbnail.file}`,
-                alt: isHindiGallery ? `${album.title} से चित्र ${index + 1}` : (photo.alt || `Photograph ${index + 1} from ${album.title}`),
-                caption: isHindiGallery ? album.description : (photo.caption || album.description)
-            }));
-
-            for (let index = localPhotos.length + 1; index <= 10; index += 1) {
-                localPhotos.push(createPlaceholderPhoto(album, index));
-            }
-
-            album.photos = localPhotos;
-        } catch (error) {
-            console.info(`Using temporary photographs for ${album.title}.`, error);
-        }
-    };
-
-    const applyFilter = (filterValue, shouldFocusCollection = false, updateAddress = true) => {
-        const validFilter = filters.some((filter) => filter.dataset.filter === filterValue)
-            ? filterValue
-            : "all";
-
-        activeFilter = validFilter;
+    function applyFilter(filterValue, updateAddress = true) {
+        activeFilter = filters.some((filter) => filter.dataset.filter === filterValue) ? filterValue : "all";
 
         filters.forEach((filter) => {
             const isActive = filter.dataset.filter === activeFilter;
@@ -134,198 +34,93 @@ document.addEventListener("DOMContentLoaded", () => {
             filter.setAttribute("aria-pressed", String(isActive));
         });
 
-        groups.forEach((group) => {
-            group.hidden = activeFilter !== "all" && group.dataset.galleryGroup !== activeFilter;
+        visibleCards = cards.filter((card) => activeFilter === "all" || card.dataset.category === activeFilter);
+        cards.forEach((card) => {
+            card.hidden = !visibleCards.includes(card);
         });
+
+        if (countTarget) {
+            countTarget.textContent = visibleCards.length;
+        }
 
         if (updateAddress) {
-            const hash = activeFilter === "all" ? "gallery" : activeFilter;
-            history.replaceState(null, "", `#${hash}`);
+            history.replaceState(null, "", activeFilter === "all" ? "#gallery" : `#${activeFilter}`);
         }
+    }
 
-        if (shouldFocusCollection && collection) {
-            collection.setAttribute("tabindex", "-1");
-            collection.focus({ preventScroll: true });
-        }
-    };
+    function showImage(index) {
+        if (!visibleCards.length) return;
 
-    const createThumbnails = () => {
-        thumbnails.replaceChildren();
+        activeIndex = (index + visibleCards.length) % visibleCards.length;
+        const card = visibleCards[activeIndex];
+        const cardImage = card.querySelector("img");
 
-        activeAlbum.photos.forEach((photo, index) => {
-            const button = document.createElement("button");
-            const thumbnail = document.createElement("img");
+        image.src = card.dataset.full || cardImage.currentSrc || cardImage.src;
+        image.alt = cardImage.alt || card.dataset.title || "";
+        title.textContent = card.dataset.title || "गैलरी चित्र";
+        caption.textContent = card.dataset.caption || "";
+        counter.textContent = `चित्र ${activeIndex + 1} / ${visibleCards.length}`;
+    }
 
-            button.type = "button";
-            button.className = "lightbox-thumbnail";
-            button.setAttribute("role", "listitem");
-            button.setAttribute("aria-label", isHindiGallery ? `चित्र ${index + 1} / ${activeAlbum.photos.length} देखें` : `View photograph ${index + 1} of ${activeAlbum.photos.length}`);
-            thumbnail.src = photo.thumb;
-            thumbnail.alt = "";
-            thumbnail.loading = "lazy";
-            button.append(thumbnail);
-            button.addEventListener("click", () => showPhoto(index));
-            thumbnails.append(button);
-        });
-    };
-
-    const updateAlbumAddress = () => {
-        if (!activeAlbum) {
-            return;
-        }
-        history.replaceState(history.state, "", `#album=${activeAlbum.slug}&photo=${activeIndex + 1}`);
-    };
-
-    const showPhoto = (index, updateAddress = true) => {
-        if (!activeAlbum) {
-            return;
-        }
-
-        const photoCount = activeAlbum.photos.length;
-        activeIndex = (index + photoCount) % photoCount;
-        const photo = activeAlbum.photos[activeIndex];
-
-        image.src = photo.full;
-        image.alt = photo.alt;
-        title.textContent = activeAlbum.title;
-        caption.textContent = photo.caption;
-        counter.textContent = isHindiGallery ? `चित्र ${activeIndex + 1} / ${photoCount}` : `Photograph ${activeIndex + 1} of ${photoCount}`;
-
-        Array.from(thumbnails.children).forEach((thumbnail, thumbnailIndex) => {
-            const isCurrent = thumbnailIndex === activeIndex;
-            thumbnail.classList.toggle("is-active", isCurrent);
-            if (isCurrent) {
-                thumbnail.setAttribute("aria-current", "true");
-                thumbnail.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", inline: "center", block: "nearest" });
-            } else {
-                thumbnail.removeAttribute("aria-current");
-            }
-        });
-
-        if (updateAddress) {
-            updateAlbumAddress();
-        }
-    };
-
-    const openAlbum = async (album, requestedPhoto = 0, pushHistory = true) => {
-        if (!album) {
-            return;
-        }
-
-        await hydrateAlbumFromManifest(album);
-        activeAlbum = album;
-        opener = album.card;
-        applyFilter(album.category, false, false);
-        createThumbnails();
-
-        if (pushHistory) {
-            history.pushState({ galleryAlbum: album.slug }, "", `#album=${album.slug}&photo=${requestedPhoto + 1}`);
-            albumOpenedWithHistory = true;
-        } else {
-            albumOpenedWithHistory = false;
-        }
-
-        showPhoto(requestedPhoto, false);
+    function openLightbox(card) {
+        opener = card;
+        activeIndex = Math.max(0, visibleCards.indexOf(card));
+        showImage(activeIndex);
+        document.body.classList.add("gallery-modal-open");
 
         if (!dialog.open) {
             dialog.showModal();
         }
-        closeButton.focus();
-    };
 
-    const closeAlbum = (useHistory = true) => {
-        if (!activeAlbum) {
-            return;
-        }
+        closeButton.focus({ preventScroll: true });
+    }
 
-        const category = activeAlbum.category;
-
+    function closeLightbox() {
         if (dialog.open) {
             dialog.close();
         }
-
-        if (useHistory && albumOpenedWithHistory) {
-            history.back();
-        } else {
-            history.replaceState(null, "", `#${category}`);
-        }
-
-        activeAlbum = null;
-        albumOpenedWithHistory = false;
-    };
-
-    const parseAlbumHash = () => {
-        const hash = window.location.hash.slice(1);
-
-        if (!hash.startsWith("album=")) {
-            return null;
-        }
-
-        const parameters = new URLSearchParams(hash);
-        const album = albums.get(parameters.get("album"));
-        const requestedPhoto = Math.max(0, Number.parseInt(parameters.get("photo") || "1", 10) - 1);
-
-        return album ? { album, requestedPhoto } : null;
-    };
+    }
 
     filters.forEach((filter) => {
-        filter.addEventListener("click", () => applyFilter(filter.dataset.filter, true));
-    });
-
-    featuredLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            const targetCategory = link.dataset.galleryNav;
-            const targetGroup = groups.find((group) => group.dataset.galleryGroup === targetCategory);
-
-            applyFilter(targetCategory);
-
-            if (targetGroup) {
-                const targetHeading = targetGroup.querySelector("h2");
-                targetGroup.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" });
-
-                if (targetHeading) {
-                    targetHeading.setAttribute("tabindex", "-1");
-                    targetHeading.focus({ preventScroll: true });
-                }
+        filter.addEventListener("click", () => {
+            applyFilter(filter.dataset.filter);
+            const grid = document.querySelector("[data-gallery-grid]");
+            if (grid) {
+                grid.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" });
             }
         });
     });
 
-    albumCards.forEach((card) => {
-        card.addEventListener("click", () => void openAlbum(albums.get(card.dataset.album)));
+    cards.forEach((card) => {
+        card.addEventListener("click", () => openLightbox(card));
     });
 
-    closeButton.addEventListener("click", () => closeAlbum());
-    previousButton.addEventListener("click", () => showPhoto(activeIndex - 1));
-    nextButton.addEventListener("click", () => showPhoto(activeIndex + 1));
+    closeButton.addEventListener("click", closeLightbox);
+    previousButton.addEventListener("click", () => showImage(activeIndex - 1));
+    nextButton.addEventListener("click", () => showImage(activeIndex + 1));
 
     dialog.addEventListener("click", (event) => {
         if (event.target === dialog) {
-            closeAlbum();
+            closeLightbox();
         }
-    });
-
-    dialog.addEventListener("cancel", (event) => {
-        event.preventDefault();
-        closeAlbum();
     });
 
     dialog.addEventListener("close", () => {
         image.removeAttribute("src");
-        thumbnails.replaceChildren();
+        document.body.classList.remove("gallery-modal-open");
         if (opener) {
-            opener.focus();
+            opener.focus({ preventScroll: true });
         }
     });
 
     dialog.addEventListener("keydown", (event) => {
         if (event.key === "ArrowLeft") {
             event.preventDefault();
-            showPhoto(activeIndex - 1);
+            showImage(activeIndex - 1);
         }
         if (event.key === "ArrowRight") {
             event.preventDefault();
-            showPhoto(activeIndex + 1);
+            showImage(activeIndex + 1);
         }
     });
 
@@ -336,31 +131,15 @@ document.addEventListener("DOMContentLoaded", () => {
     dialog.addEventListener("touchend", (event) => {
         const distance = event.changedTouches[0].clientX - touchStartX;
         if (Math.abs(distance) > 55) {
-            showPhoto(distance > 0 ? activeIndex - 1 : activeIndex + 1);
+            showImage(distance > 0 ? activeIndex - 1 : activeIndex + 1);
         }
     }, { passive: true });
 
-    window.addEventListener("popstate", () => {
-        const albumHash = parseAlbumHash();
-
-        if (albumHash) {
-            void openAlbum(albumHash.album, albumHash.requestedPhoto, false);
-            return;
-        }
-
-        if (dialog.open) {
-            closeAlbum(false);
-        }
-
-        const categoryHash = window.location.hash.slice(1);
-        applyFilter(categoryHash && categoryHash !== "gallery" ? categoryHash : "all", false, false);
+    window.addEventListener("hashchange", () => {
+        const hash = window.location.hash.slice(1);
+        applyFilter(hash && hash !== "gallery" ? hash : "all", false);
     });
 
-    const initialAlbum = parseAlbumHash();
-    if (initialAlbum) {
-        void openAlbum(initialAlbum.album, initialAlbum.requestedPhoto, false);
-    } else {
-        const initialHash = window.location.hash.slice(1);
-        applyFilter(initialHash && initialHash !== "gallery" ? initialHash : "all", false, false);
-    }
+    const initialHash = window.location.hash.slice(1);
+    applyFilter(initialHash && initialHash !== "gallery" ? initialHash : "all", false);
 });

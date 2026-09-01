@@ -32,25 +32,25 @@
     document.addEventListener("DOMContentLoaded", initVideos);
 
     async function initVideos() {
-        const archive = document.querySelector("[data-video-archive]");
+        const archives = Array.from(document.querySelectorAll("[data-video-archive]"));
         const detail = document.querySelector("[data-video-detail]");
-        if (!archive && !detail) return;
+        if (!archives.length && !detail) return;
 
         try {
             const response = await fetch(`${state.root}assets/json/videos.json`);
             if (!response.ok) throw new Error(`Unable to load videos: ${response.status}`);
             state.data = await response.json();
-            if (archive) renderArchive(archive);
+            archives.forEach(renderArchive);
             if (detail) renderDetail(detail);
         } catch (error) {
-            const target = archive || detail;
+            const target = archives[0] || detail;
             target.innerHTML = `<div class="video-empty"><h2>${copy[state.language].missing}</h2><p>${error.message}</p></div>`;
         }
     }
 
     function renderArchive(container) {
-        const filters = document.querySelector("[data-video-filters]");
-        const grid = document.querySelector("[data-video-grid]");
+        const filters = container.querySelector("[data-video-filters]");
+        const grid = container.querySelector("[data-video-grid]");
         if (!grid) return;
 
         const fixedCategories = parseList(container.dataset.videoCategory || container.dataset.videoCategories);
@@ -161,9 +161,10 @@
 
     function getVideoBackHref(video) {
         if (state.language === "hi") {
-            if (video.category === "sanskar-classes") return "student-testimonials.html#student-video-title";
-            if (video.category === "dignitaries-views") return "dignitaries-views.html";
-            return "success-stories.html";
+            if (video.category === "sanskar-classes") return "testimonials.html#student-testimonials";
+            if (video.category === "dignitaries-views") return "testimonials.html#dignitaries-views";
+            if (video.category === "life-transformation") return "testimonials.html#seekers-beneficiaries";
+            return "testimonials.html#success-stories";
         }
 
         if (video.category === "success-stories" || video.category === "life-transformation") return "success-stories.html";
@@ -221,6 +222,7 @@
             .replace(/>/g, "&gt;");
     }
 }());
+
 
 
 
