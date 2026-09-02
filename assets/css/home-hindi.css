@@ -109,7 +109,7 @@ body.hindi-home.hi-home-page #header-placeholder {
     height: 0;
     background:
         linear-gradient(90deg, rgba(247, 229, 201, .72) 0%, rgba(247, 229, 201, .34) 48%, rgba(247, 229, 201, 0) 78%),
-        url("../images/hi-home-hero-background.jpg") center top / cover no-repeat;
+        url("../images/hi-home-hero-background.png") center top / cover no-repeat;
 }
 
 body.hindi-home.hi-home-page #header.site-header:not(.is-scrolled),
@@ -205,9 +205,9 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     min-width: 30px;
     height: 24px;
     place-items: center;
-    color: #fffaf3;
+    color: var(--hi-maroon);
     border-radius: 999px;
-    background: var(--hi-maroon);
+    /*background: var(--hi-maroon);*/
     font-size: .82rem;
     font-weight: 800;
     line-height: 1;
@@ -439,7 +439,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     background-color: #f4dec0;
     background-image:
         linear-gradient(90deg, rgba(247, 229, 201, .74) 0%, rgba(247, 229, 201, .42) 44%, rgba(247, 229, 201, .1) 72%, rgba(247, 229, 201, 0) 100%),
-        url("../images/hi-home-hero-background.jpg");
+        url("../images/hi-home-hero-background.png");
     background-repeat: no-repeat;
     background-position: center, center top;
     background-size: cover, cover;
@@ -503,6 +503,103 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     line-height: 1.85;
 }
 
+/* Our Purpose */
+.hi-purpose {
+    position: relative;
+    padding: clamp(76px, 9vw, 120px) 0;
+    background: var(--color-parchment, #fbf7ef);
+}
+
+.hi-purpose__inner {
+    max-width: 1180px;
+}
+
+.hi-purpose__heading {
+    max-width: 850px;
+    margin: 0 auto clamp(48px, 6vw, 72px);
+    text-align: center;
+}
+
+.hi-purpose__heading h2 {
+    margin: 14px 0 0;
+    color: var(--color-ink, #2b1b2d);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.18;
+}
+
+.hi-purpose__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    border-top: 1px solid rgba(152, 112, 32, .22);
+    border-bottom: 1px solid rgba(152, 112, 32, .22);
+}
+
+.hi-purpose__item {
+    padding: clamp(34px, 5vw, 58px) clamp(24px, 5vw, 64px);
+}
+
+.hi-purpose__item + .hi-purpose__item {
+    border-left: 1px solid rgba(152, 112, 32, .22);
+}
+
+.hi-purpose__label {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--color-flame, #9c3b2e);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.hi-purpose__item h3 {
+    max-width: 460px;
+    margin: 0 0 18px;
+    color: var(--color-ink, #2b1b2d);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: clamp(1.45rem, 2.3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.hi-purpose__item p {
+    max-width: 520px;
+    margin: 0;
+    color: var(--color-muted-strong, #66574d);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.hi-purpose__closing {
+    padding-top: 34px;
+    text-align: center;
+}
+
+.hi-purpose__closing span {
+    color: var(--color-gold-dark, #9f7721);
+    font-family: "Noto Serif Devanagari", serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    .hi-purpose__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hi-purpose__item + .hi-purpose__item {
+        border-top: 1px solid rgba(152, 112, 32, .22);
+        border-left: 0;
+    }
+
+    .hi-purpose__item {
+        padding: 34px 0;
+    }
+}
+
 /* Mission */
 .hi-mission {
     background:
@@ -555,6 +652,21 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 
 .hi-narrative__body {
     font-size: 1.08rem;
+}
+
+.hi-inline-link {
+    color: var(--color-flame, #9c3b2e);
+    text-decoration: underline;
+    text-decoration-color: rgba(156, 59, 46, .35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.hi-inline-link:hover,
+.hi-inline-link:focus-visible {
+    color: var(--color-gold-dark, #9f7721);
+    text-decoration-color: currentColor;
 }
 
 .hi-mission__actions {
@@ -700,6 +812,75 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     font-size: clamp(2rem, 3.5vw, 3.55rem);
     line-height: 1.2;
     letter-spacing: -.03em;
+}
+
+.hi-profile__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.hi-profile__actions-primary {
+    width: 100%;
+}
+
+
+
+.hi-profile__actions-secondary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+	  width: 100%;
+}
+
+.hi-profile__actions-label {
+    margin: 0 0 12px;
+    color: var(--color-muted-strong, #66574d);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.hi-profile__actions .hi-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 46px;
+    padding: 10px 4px;
+    white-space: nowrap;
+}
+
+.hi-profile__actions .hi-btn {
+    white-space: nowrap;
+}
+
+
+@media (max-width: 700px) {
+    .hi-profile__actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hi-profile__actions .hi-text-link,
+    .hi-profile__actions .hi-btn {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .hi-profile__actions-secondary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .hi-profile__actions .hi-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .hi-lineage {

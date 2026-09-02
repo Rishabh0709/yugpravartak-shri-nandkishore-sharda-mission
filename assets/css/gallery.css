@@ -48,11 +48,14 @@ body.gallery-page.gallery-modal-open {
 
 .gallery-eyebrow {
     display: block;
+	margin-bottom: 24px;
     color: var(--gallery-flame);
     font-family: "Noto Serif Devanagari", serif;
     font-size: .9rem;
     font-weight: 700;
     letter-spacing: 0;
+	line-height: 1.55;
+	
 }
 
 .gallery-page h1,
