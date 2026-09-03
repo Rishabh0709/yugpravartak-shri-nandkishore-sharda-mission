@@ -2489,9 +2489,7 @@ ol {
     padding: 82px 0 30px;
     overflow: hidden;
     color: #f7f0e4;
-    background:
-        radial-gradient(circle at 82% 10%, rgba(211, 173, 92, 0.10), transparent 28%),
-        linear-gradient(145deg, #432424 0%, #2d1b1a 62%, #33231f 100%);
+    background: linear-gradient(145deg, #432424 0%, #2d1b1a 62%, #33231f 100%);
     text-align: left;
 }
 
@@ -2507,17 +2505,9 @@ ol {
     transform: translateX(-50%);
 }
 
+/* the large decorative ring was retired in the Phase 2 visual pass */
 .footer-glow {
-    position: absolute;
-    top: -230px;
-    left: 50%;
-    width: 520px;
-    height: 520px;
-    pointer-events: none;
-    border: 1px solid rgba(211, 173, 92, 0.08);
-    border-radius: 50%;
-    box-shadow: 0 0 0 56px rgba(211, 173, 92, 0.025), 0 0 0 112px rgba(211, 173, 92, 0.018);
-    transform: translateX(-50%);
+    display: none;
 }
 
 .footer-inner {
@@ -2628,8 +2618,8 @@ ol {
 .footer-navigation {
     display: grid;
     margin-top: 50px;
-    grid-template-columns: 0.86fr 0.96fr 1.04fr 1.22fr;
-    gap: clamp(28px, 4vw, 58px);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: clamp(24px, 3vw, 44px);
 }
 
 .footer-link-group,

@@ -47,3 +47,20 @@ body.hindi-home {
 .hindi-home .hi-prose > ol {
     max-width: 68ch;
 }
+
+/* The footer sits on a dark maroon ground. The Devanagari heading rule
+   (color: var(--hi-ink)) otherwise makes the mission name and the
+   column headings near-invisible there. */
+.hindi-home .footer .footer-title {
+    color: #fffaf1;
+}
+.hindi-home .footer h2,
+.hindi-home .footer h3 {
+    color: #f3ecdd;
+}
+.hindi-home .footer .footer-link-group h3,
+.hindi-home .footer .footer-contact h3 {
+    color: #d9b466;
+    font-family: var(--font-body);
+    letter-spacing: 0.08em;
+}

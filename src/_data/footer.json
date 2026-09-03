@@ -39,6 +39,15 @@
         { "label": { "hi": "अनुभव एवं विचार", "en": "Experiences & reflections" }, "href": "/testimonials.html" },
         { "label": { "hi": "चित्र दीर्घा", "en": "Gallery" }, "href": "/gallery.html" }
       ]
+    },
+    {
+      "heading": { "hi": "सेवा संस्थाएँ", "en": "The trusts" },
+      "links": [
+        { "label": { "hi": "स्वामी विवेकानन्द ट्रस्ट", "en": "Swami Vivekanand Trust" }, "href": "/swami-vivekanand-trust.html" },
+        { "label": { "hi": "माँ शारदामणि ट्रस्ट", "en": "Maa Shardamani Trust" }, "href": "/maa-shardamani-trust.html" },
+        { "label": { "hi": "ज्ञानयोगी अध्यात्म केन्द्र", "en": "Gyanyogi Adhyatm Kendra" }, "href": "/gyanyogi-adhyatm-kendra.html" },
+        { "label": { "hi": "ज्ञान गंगा मिशन", "en": "Gyan Ganga Mission" }, "href": "/gyan-ganga-mission.html" }
+      ]
     }
   ],
 
