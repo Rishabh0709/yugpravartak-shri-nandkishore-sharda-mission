@@ -190,6 +190,12 @@
     color: var(--ink-muted);
 }
 .v2-bvy__lead { margin-top: clamp(22px, 3vw, 32px); }
+/* lead + close copy fills the section width, aligning edge-to-edge with
+   the distinctions panel below (space utilisation, per request) */
+.v2-bvy .hi-prose > p {
+    max-width: none;
+    line-height: 1.9;
+}
 .v2-bvy__distinct {
     margin: clamp(26px, 3.4vw, 38px) 0;
     padding: clamp(20px, 2.6vw, 28px) clamp(20px, 3vw, 32px);
