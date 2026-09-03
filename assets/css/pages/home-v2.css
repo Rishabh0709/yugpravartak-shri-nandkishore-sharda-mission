@@ -17,24 +17,52 @@
         var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") center top / cover no-repeat;
 }
 .v2-hero__inner { position: relative; z-index: 1; }
-.v2-hero__copy { width: min(680px, 64%); }
-.v2-hero .hi-kicker { color: var(--primary); }
+.v2-hero__copy { width: min(700px, 66%); }
+.v2-hero .hi-kicker { color: var(--primary); margin-bottom: 12px; }
 .v2-hero h1 {
-    margin: 6px 0 18px;
-    font-size: clamp(2.4rem, 5vw, 4.1rem);
+    margin: 0 0 14px;
+    font-size: clamp(2.2rem, 4.6vw, 3.7rem);
     line-height: 1.12;
     color: var(--ink);
     text-wrap: balance;
 }
+.v2-hero__motto {
+    margin: 0 0 22px;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--primary);
+}
 .v2-hero__lead {
-    max-width: 40ch;
+    max-width: 46ch;
     margin: 0 0 28px;
     font-family: var(--font-head);
-    font-size: clamp(1.06rem, 1.5vw, 1.28rem);
-    line-height: 1.7;
+    font-size: clamp(1.02rem, 1.4vw, 1.2rem);
+    line-height: 1.75;
     color: var(--ink-body);
 }
 .v2-hero .hi-actions { margin-top: 0; }
+
+/* intro / "what the Mission is" — vision + dhyeya inline block */
+.v2-intro__aims {
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: 1fr;
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+}
+@media (min-width: 720px) { .v2-intro__aims { grid-template-columns: 1fr 1fr; } }
+.v2-intro__aims div span {
+    display: block;
+    font-family: var(--font-head);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--gold-deep);
+    margin-bottom: 6px;
+}
+.v2-intro__aims div p { margin: 0; font-size: .96rem; line-height: 1.7; color: var(--ink-body); }
 
 @media (max-width: 900px) {
     .v2-hero {
@@ -44,7 +72,7 @@
             linear-gradient(180deg, rgba(247, 236, 218, .12) 0%, rgba(247, 236, 218, .55) 42%, var(--bg-wash) 74%, var(--bg-wash) 100%),
             var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") 58% top / cover no-repeat;
     }
-    .v2-hero__copy { width: 100%; padding-top: min(56vw, 300px); }
+    .v2-hero__copy { width: 100%; padding-top: clamp(48px, 26vw, 170px); }
     .v2-hero__lead { max-width: none; }
 }
 
@@ -231,43 +259,58 @@
 }
 .v2-chakra figcaption { margin-top: 16px; font-size: .84rem; color: rgba(253, 247, 236, .7); }
 
-/* ---------- lineage timeline ---------- */
-.v2-timeline {
-    display: flex;
-    gap: 0;
-    margin: clamp(30px, 4vw, 48px) 0 0;
-    overflow-x: auto;
-    padding-bottom: 8px;
-    scrollbar-width: thin;
-}
-.v2-timeline__event {
-    flex: 1 0 clamp(150px, 20vw, 200px);
+/* ---------- lineage journey (compact vertical timeline, single-sided) ---------- */
+.v2-journey {
     position: relative;
-    padding: 24px 16px 0;
-    border-top: 2px solid var(--rule-strong);
+    max-width: 640px;
+    margin: clamp(32px, 5vw, 52px) auto 0;
+    padding-left: 4px;
 }
-.v2-timeline__event::before {
+.v2-journey::before {
     content: "";
     position: absolute;
-    top: -6px; left: 16px;
-    width: 10px; height: 10px;
+    top: 12px;
+    bottom: 12px;
+    left: 6px;
+    border-left: 2px dashed var(--gold);
+    opacity: .6;
+}
+.v2-journey__event {
+    position: relative;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    column-gap: 22px;
+    align-items: baseline;
+    padding: clamp(11px, 1.6vw, 16px) 0 clamp(11px, 1.6vw, 16px) 30px;
+}
+.v2-journey__event::before {                 /* node on the line */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: clamp(15px, 2vw, 21px);
+    width: 13px; height: 13px;
     border-radius: 999px;
     background: var(--gold);
+    box-shadow: 0 0 0 5px var(--bg);
 }
-.v2-timeline__event.is-seva::before { background: var(--primary); }
-.v2-timeline__year {
+.v2-journey__event.is-seva::before { background: var(--primary); }
+.v2-journey__year {
     font-family: var(--font-latin);
     font-weight: 600;
+    font-size: 1.2rem;
     color: var(--primary);
-    font-size: 1.05rem;
 }
-.v2-timeline__title {
-    display: block;
-    margin-top: 4px;
-    font-size: .9rem;
-    line-height: 1.5;
+.v2-journey__title {
+    font-size: .96rem;
+    line-height: 1.55;
     color: var(--ink-body);
-    max-width: 22ch;
+}
+@media (max-width: 520px) {
+    .v2-journey__event {
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+        padding-left: 28px;
+    }
 }
 
 /* ---------- seva stories ---------- */
