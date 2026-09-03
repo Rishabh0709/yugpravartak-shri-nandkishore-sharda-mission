@@ -1,6 +1,6 @@
 .karma-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 42%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .karma-hero {
@@ -89,8 +89,7 @@
         }
 
         .karma-section--flow {
-            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
-        }
+            background: var(--bg);}
 
         .karma-section--institutions {
             background: #fffaf1;

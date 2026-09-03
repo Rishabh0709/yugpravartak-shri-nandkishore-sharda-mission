@@ -1,0 +1,49 @@
+/* ==========================================================
+   HINDI LANGUAGE LAYER
+   Loaded after the shared sheets. The English site will get a
+   parallel lang-en.css (different font stack, Latin headings,
+   these Devanagari-specific rules turned off).
+   ========================================================== */
+
+/* Devanagari body + headings pull from the shared tokens. */
+body.hindi-home {
+    font-family: var(--font-body);
+}
+.hindi-home h1,
+.hindi-home h2,
+.hindi-home h3,
+.hindi-home h4,
+.hindi-home blockquote,
+.hindi-home .site-title,
+.hindi-home .footer-title {
+    font-family: var(--font-head);
+}
+
+/* Devanagari headings must not use negative tracking — it collapses
+   the shirorekha and the matras. Keep it at least neutral even if a
+   page stylesheet tries to tighten it. */
+.hindi-home h1,
+.hindi-home h2,
+.hindi-home h3 {
+    letter-spacing: normal;
+    text-wrap: balance;
+}
+
+/* Latin numerals / abbreviations sitting inside Devanagari text
+   (years, "M.A.", "₹6.72 Cr", phone numbers) — opt-in via .num or a
+   lang="en" span, so they don't fall back to a mismatched face. */
+.hindi-home .num,
+.hindi-home [lang="en"] {
+    font-family: var(--font-latin);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+}
+
+/* Cap the reading measure on long-form prose so paragraphs don't run
+   as wide grey slabs. In the two-column layouts the column is already
+   narrower than this, so the cap only bites on full-width prose. */
+.hindi-home .hi-prose > p,
+.hindi-home .hi-prose > ul,
+.hindi-home .hi-prose > ol {
+    max-width: 68ch;
+}

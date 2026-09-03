@@ -1,6 +1,6 @@
 .divya-gyan-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 45%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .dg-hero {
@@ -150,11 +150,11 @@
             scroll-margin-top: 136px;
         }
 
-        .dg-section--origin { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .dg-section--vision { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
-        .dg-section--chapters { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
-        .dg-section--mission { background: radial-gradient(circle at 76% 10%, rgba(198, 148, 53, .18), transparent 28%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
-        .dg-section--impact { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+        .dg-section--origin { background: var(--bg);}
+        .dg-section--vision { background: var(--bg);}
+        .dg-section--chapters { background: var(--bg);}
+        .dg-section--mission { background: var(--bg);}
+        .dg-section--impact { background: var(--bg);}
 
         .dg-grid {
             display: grid;

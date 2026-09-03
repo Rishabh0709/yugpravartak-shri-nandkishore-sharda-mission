@@ -1,6 +1,6 @@
 .maa-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .maa-hero {
@@ -154,16 +154,16 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
-        .maa-journey--calling { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .maa-journey--birth { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
-        .maa-journey--surrender { background: radial-gradient(circle at 76% 18%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
-        .maa-journey--diary { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 50%, #f4e1c5 100%); }
-        .maa-journey--manidweep { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
-        .maa-journey--knowledge { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
-        .maa-journey--sanskar { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
-        .maa-journey--siddhpeeth { background: linear-gradient(135deg, #fffaf1 0%, #e8f0ee 46%, #f4e6d2 100%); }
-        .maa-journey--guidance { background: linear-gradient(180deg, #fffaf1 0%, #f5e8d4 100%); }
-        .maa-journey--chaitanya { background: radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 36%), linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+        .maa-journey--calling { background: var(--bg);}
+        .maa-journey--birth { background: var(--bg);}
+        .maa-journey--surrender { background: var(--bg);}
+        .maa-journey--diary { background: var(--bg);}
+        .maa-journey--manidweep { background: var(--bg);}
+        .maa-journey--knowledge { background: var(--bg);}
+        .maa-journey--sanskar { background: var(--bg);}
+        .maa-journey--siddhpeeth { background: var(--bg);}
+        .maa-journey--guidance { background: var(--bg);}
+        .maa-journey--chaitanya { background: var(--bg);}
 
         .maa-journey__grid {
             display: grid;

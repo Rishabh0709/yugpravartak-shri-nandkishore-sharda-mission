@@ -1,6 +1,6 @@
 .mission-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .mission-hero {
@@ -154,14 +154,14 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
-        .mission-chapter--purpose { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .mission-chapter--method { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
-        .mission-chapter--origin { background: radial-gradient(circle at 76% 18%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
-        .mission-chapter--knowledge { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 50%, #f4e1c5 100%); }
-        .mission-chapter--education { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
-        .mission-chapter--care { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
-        .mission-chapter--publications { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
-        .mission-chapter--continuity { background: linear-gradient(135deg, #fffaf1 0%, #e8f0ee 46%, #f4e6d2 100%); }
+        .mission-chapter--purpose { background: var(--bg);}
+        .mission-chapter--method { background: var(--bg);}
+        .mission-chapter--origin { background: var(--bg);}
+        .mission-chapter--knowledge { background: var(--bg);}
+        .mission-chapter--education { background: var(--bg);}
+        .mission-chapter--care { background: var(--bg);}
+        .mission-chapter--publications { background: var(--bg);}
+        .mission-chapter--continuity { background: var(--bg);}
 
         .mission-chapter__grid {
             display: grid;

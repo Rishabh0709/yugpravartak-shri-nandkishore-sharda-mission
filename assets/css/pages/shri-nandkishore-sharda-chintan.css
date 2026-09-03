@@ -1,5 +1,5 @@
 .chintan-page {
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
             color: var(--hi-ink);
         }
 
@@ -58,9 +58,7 @@
 
         .chintan-section--principles {
             background:
-                radial-gradient(circle at 12% 12%, rgba(222, 238, 236, .72), transparent 32%),
-                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #eaf1ee 100%);
-        }
+                var(--bg);}
 
         .chintan-section--closing {
             text-align: center;

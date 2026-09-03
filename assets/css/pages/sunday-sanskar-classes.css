@@ -1,6 +1,6 @@
 .sanskar-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 46%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .sanskar-hero {
@@ -132,8 +132,7 @@
         }
 
         .sanskar-section--learning {
-            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 52%, #eaf1ee 100%);
-        }
+            background: var(--bg);}
 
         .sanskar-section--media {
             background: #fffaf1;

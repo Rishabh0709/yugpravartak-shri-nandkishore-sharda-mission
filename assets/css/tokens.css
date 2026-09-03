@@ -1,0 +1,130 @@
+/* ==========================================================
+   DESIGN TOKENS  —  single source for colour, type, spacing,
+   radius and shadow. Loaded first, before every other sheet.
+
+   The site commits to one warm, light, paper-and-ink look
+   (no dark theme). If a dark theme is ever wanted, add a
+   @media (prefers-color-scheme: dark) block that redefines
+   only the tokens in the first group.
+   ========================================================== */
+
+:root {
+    /* ---- surfaces ---- */
+    --bg:            #f8f4ec;   /* the one warm paper ground */
+    --bg-wash:       #f1e9d9;   /* the one alternate "chapter" wash */
+    --surface:       #fffdf8;   /* cards, panels */
+    --surface-sunk:  #efe7d5;   /* insets, image placeholders */
+    --ink:           #2c2130;   /* headings */
+    --ink-body:      #574d44;   /* body copy */
+    --ink-muted:     #786e64;   /* captions, meta */
+    --rule:          rgba(120, 80, 40, .16);   /* hairline borders */
+    --rule-strong:   rgba(120, 80, 40, .30);
+
+    /* ---- brand ---- */
+    --primary:       #7b2a28;   /* maroon — the single action colour */
+    --primary-deep:  #5f2020;   /* primary hover/active */
+    --accent:        #2f4a63;   /* Jodhpur blue — quiet support: links, spines, rules */
+    --gold:          #b98a34;   /* lines, marks, the logo — never body text */
+    --gold-deep:     #8a6620;   /* the one gold that is safe as small text */
+
+    /* ---- type ---- */
+    --font-head:   "Noto Serif Devanagari", Georgia, "Times New Roman", serif;
+    --font-body:   "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+    --font-latin:  "Inter Tight", system-ui, -apple-system, sans-serif;
+
+    --step-hero: clamp(2.8rem, 6vw, 5rem);
+    --step-h1:   clamp(2.15rem, 4.6vw, 3.4rem);
+    --step-h2:   clamp(1.9rem, 3.6vw, 2.85rem);
+    --step-h3:   clamp(1.35rem, 2.2vw, 1.85rem);
+    --step-body: 1.05rem;
+    --step-sm:   0.92rem;
+    --step-cap:  0.8rem;
+
+    /* ---- spacing (4 / 8) ---- */
+    --sp-1: 4px;  --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;  --sp-6: 24px;
+    --sp-8: 32px; --sp-12: 48px; --sp-16: 64px; --sp-24: 96px; --sp-32: 128px;
+    --section-y: clamp(64px, 8vw, 112px);
+
+    /* ---- radius: one value (+ pill, + one signature "leaf") ---- */
+    --radius:       14px;
+    --radius-pill:  999px;
+    --radius-leaf:  22px 22px 96px 22px;   /* used once: the founder's portrait */
+
+    /* ---- shadow: two ---- */
+    --shadow-sm: 0 1px 2px rgba(45, 30, 15, .05), 0 6px 16px rgba(45, 30, 15, .06);
+    --shadow-md: 0 2px 6px rgba(45, 30, 15, .06), 0 18px 44px rgba(45, 30, 15, .09);
+
+    /* ---- layout ---- */
+    --container:         1200px;
+    --container-content: 1180px;
+    --header-height:     140px;
+    --transition:        260ms ease;
+
+    /* ======================================================
+       LEGACY ALIASES
+       Every colour/type name the codebase already uses maps
+       onto the tokens above, so no existing rule breaks.
+       As rules are migrated to the tokens above this block
+       shrinks. Do not add new usages of these names.
+       ====================================================== */
+
+    /* from the former style.css :root */
+    --color-bg:            var(--bg);
+    --color-surface:       var(--surface);
+    --color-white:         #ffffff;
+    --color-ink:           var(--ink);
+    --color-paper:         var(--bg);
+    --color-parchment:     var(--bg);
+    --color-paper-soft:    var(--bg);
+    --color-paper-deep:    var(--surface-sunk);
+    --color-cream-text:    #efe7d8;
+    --color-gold:          var(--gold);
+    --color-gold-dark:     var(--gold-deep);
+    --color-maroon:        var(--primary);
+    --color-maroon-deep:   var(--primary-deep);
+    --color-maroon-warm:   #71362b;
+    --color-flame:         #a94e2e;
+    --color-flame-bright:  #cf6c3f;
+    --color-blue:          var(--accent);
+    --color-blue-deep:     #24384c;
+    --color-navy:          #202a36;
+    --color-navy-soft:     #2b3745;
+    --color-aubergine:     #20182a;
+    --color-rose:          #9c4749;
+    --color-text:          var(--ink-body);
+    --color-muted:         var(--ink-muted);
+    --color-muted-strong:  #5b5149;
+    --color-border:        var(--rule);
+    --color-line:          var(--rule);
+    --font-heading:        var(--font-head);
+    --font-devotional:     var(--font-head);
+    --font-label:          var(--font-body);
+    --font-devanagari:     var(--font-head);
+    --shadow-soft:         var(--shadow-md);
+    --shadow-hover:        var(--shadow-md);
+    --radius-sm:           var(--radius);
+    --radius-md:           var(--radius);
+    --radius-lg:           var(--radius);
+
+    /* from the former home-hindi.css :root */
+    --hi-ink:          var(--ink);
+    --hi-body:         var(--ink-body);
+    --hi-maroon:       var(--primary);
+    --hi-saffron:      #b06a26;
+    --hi-gold:         var(--gold);
+    --hi-cream:        var(--surface);
+    --hi-sand:         var(--bg-wash);
+    --hi-blue:         #dfe9ec;
+    --hi-sage:         #dee6d9;
+    --hi-radius:       var(--radius);
+    --hi-shadow:       var(--shadow-md);
+    --hi-serif:        var(--font-head);
+    --hi-sans:         var(--font-body);
+    --hi-muted:        var(--ink-muted);
+    --hi-ink-soft:     var(--ink-muted);
+    --hi-quote-ink:    var(--ink);
+    --hi-quote-muted:  #6f5333;
+    --hi-quote-border: var(--rule-strong);
+    --hi-quote-glow:   rgba(185, 138, 52, .14);
+    --hi-quote-bg:     linear-gradient(125deg, #fffdf8 0%, #f5ecda 60%, #eef1ea 100%);
+}

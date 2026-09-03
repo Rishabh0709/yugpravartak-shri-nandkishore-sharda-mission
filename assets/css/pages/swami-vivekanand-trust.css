@@ -1,5 +1,5 @@
 .vivekanand-page {
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
             color: var(--hi-ink);
         }
 
@@ -94,9 +94,7 @@
 
         .vivekanand-section--soft {
             background:
-                radial-gradient(circle at 16% 14%, rgba(222, 238, 236, .68), transparent 32%),
-                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
-        }
+                var(--bg);}
 
         .vivekanand-grid {
             display: grid;

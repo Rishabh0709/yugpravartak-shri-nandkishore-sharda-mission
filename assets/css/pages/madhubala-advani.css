@@ -1,6 +1,6 @@
 .madhu-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .madhu-hero {
@@ -154,15 +154,15 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
-        .madhu-journey--arrival { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .madhu-journey--meeting { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
-        .madhu-journey--foundation { background: radial-gradient(circle at 76% 18%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
-        .madhu-journey--accepted { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 50%, #f4e1c5 100%); }
-        .madhu-journey--sadhna { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
-        .madhu-journey--granth { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
-        .madhu-journey--leadership { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
-        .madhu-journey--karuna { background: linear-gradient(135deg, #fffaf1 0%, #e8f0ee 46%, #f4e6d2 100%); }
-        .madhu-journey--living { background: radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 36%), linear-gradient(180deg, #fffaf1 0%, #f5e8d4 100%); }
+        .madhu-journey--arrival { background: var(--bg);}
+        .madhu-journey--meeting { background: var(--bg);}
+        .madhu-journey--foundation { background: var(--bg);}
+        .madhu-journey--accepted { background: var(--bg);}
+        .madhu-journey--sadhna { background: var(--bg);}
+        .madhu-journey--granth { background: var(--bg);}
+        .madhu-journey--leadership { background: var(--bg);}
+        .madhu-journey--karuna { background: var(--bg);}
+        .madhu-journey--living { background: var(--bg);}
 
         .madhu-journey__grid {
             display: grid;

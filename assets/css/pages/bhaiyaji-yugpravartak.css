@@ -1,6 +1,6 @@
 .yugpravartak-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .yug-hero {
@@ -138,13 +138,13 @@
             scroll-margin-top: 136px;
         }
 
-        .yug-section--surrender { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .yug-section--knowledge { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
-        .yug-section--diary { background: radial-gradient(circle at 12% 18%, rgba(221, 236, 240, .62), transparent 28%), linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%); }
-        .yug-section--service { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
-        .yug-section--education { background: radial-gradient(circle at 76% 10%, rgba(198, 148, 53, .18), transparent 28%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
-        .yug-section--sadhna { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
-        .yug-section--legacy { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .yug-section--surrender { background: var(--bg);}
+        .yug-section--knowledge { background: var(--bg);}
+        .yug-section--diary { background: var(--bg);}
+        .yug-section--service { background: var(--bg);}
+        .yug-section--education { background: var(--bg);}
+        .yug-section--sadhna { background: var(--bg);}
+        .yug-section--legacy { background: var(--bg);}
 
         .yug-grid {
             display: grid;

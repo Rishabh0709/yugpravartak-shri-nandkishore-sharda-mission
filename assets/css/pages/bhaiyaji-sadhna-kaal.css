@@ -1,6 +1,6 @@
 .sadhna-kaal-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 45%, #fffaf1 100%);
+            background: var(--bg);
         }
         body.sadhna-kaal-page #header-placeholder {
             position: absolute;
@@ -152,13 +152,13 @@
             scroll-margin-top: 136px;
         }
 
-        .sadhna-arc--intro { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .sadhna-arc--birth { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
-        .sadhna-arc--diary { background: radial-gradient(circle at 12% 18%, rgba(221, 236, 240, .62), transparent 28%), linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%); }
-        .sadhna-arc--search { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
-        .sadhna-arc--tekri { background: radial-gradient(circle at 76% 10%, rgba(198, 148, 53, .18), transparent 28%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
-        .sadhna-arc--darshan { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
-        .sadhna-arc--wisdom { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .sadhna-arc--intro { background: var(--bg);}
+        .sadhna-arc--birth { background: var(--bg);}
+        .sadhna-arc--diary { background: var(--bg);}
+        .sadhna-arc--search { background: var(--bg);}
+        .sadhna-arc--tekri { background: var(--bg);}
+        .sadhna-arc--darshan { background: var(--bg);}
+        .sadhna-arc--wisdom { background: var(--bg);}
 
         .sadhna-arc__grid {
             display: grid;

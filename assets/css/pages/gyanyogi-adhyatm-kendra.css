@@ -1,5 +1,5 @@
 .gyanyogi-page {
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         body.hindi-home.gyanyogi-page #header-placeholder {

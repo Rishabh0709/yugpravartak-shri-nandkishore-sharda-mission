@@ -3,49 +3,7 @@
    Global styles
 ========================================================== */
 
-:root {
-    --color-bg: #f8f5ef;
-    --color-surface: #fffdf9;
-    --color-white: #ffffff;
-    --color-ink: #241b2e;
-    --color-paper: #f8f3e9;
-    --color-parchment: #f7f1e6;
-    --color-paper-soft: #faf6ee;
-    --color-paper-deep: #efe5d4;
-    --color-cream-text: #efe7d8;
-    --color-gold: #c8a13b;
-    --color-gold-dark: #9a7622;
-    --color-maroon: #7b2426;
-    --color-maroon-deep: #5a2528;
-    --color-maroon-warm: #71362b;
-    --color-flame: #b95732;
-    --color-flame-bright: #e07a45;
-    --color-blue: #355c87;
-    --color-blue-deep: #263f62;
-    --color-navy: #202a36;
-    --color-navy-soft: #2b3745;
-    --color-aubergine: #20182a;
-    --color-rose: #a84f51;
-    --color-text: #302d29;
-    --color-muted: #6e6962;
-    --color-muted-strong: #5f574f;
-    --color-border: rgba(91, 70, 37, 0.13);
-    --color-line: rgba(45, 34, 29, 0.12);
-    --font-body: "Karla", sans-serif;
-    --font-heading: "Fraunces", serif;
-    --font-devotional: "Cormorant Garamond", serif;
-    --font-label: "Cinzel", serif;
-    --font-devanagari: "Noto Serif Devanagari", serif;
-    --shadow-soft: 0 18px 55px rgba(53, 41, 24, 0.08);
-    --shadow-hover: 0 24px 65px rgba(53, 41, 24, 0.13);
-    --radius-sm: 14px;
-    --radius-md: 22px;
-    --radius-lg: 30px;
-    --container: 1200px;
-    --container-content: 1180px;
-    --header-height: 140px;
-    --transition: 280ms ease;
-}
+/* Design tokens now live in tokens.css (loaded first). */
 
 *,
 *::before,
@@ -1186,9 +1144,9 @@ ol {
    Mission
 ========================================================== */
 
-#mission {
-    background: var(--color-surface);
-}
+/* (removed: a bare `#mission { background }` rule that bled onto the
+   Hindi homepage's <section id="mission">. Re-add scoped if the English
+   rebuild needs it.) */
 
 .mission-grid {
     display: grid;

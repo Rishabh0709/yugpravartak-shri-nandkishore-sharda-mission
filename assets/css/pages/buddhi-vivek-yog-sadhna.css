@@ -1,6 +1,6 @@
 .bvys-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .bvys-hero {
@@ -130,12 +130,12 @@
             scroll-margin-top: 136px;
         }
 
-        .bvys-section--age { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .bvys-section--method { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
-        .bvys-section--lotus { background: radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 30%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
-        .bvys-section--steps { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
-        .bvys-section--experience { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
-        .bvys-section--places { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .bvys-section--age { background: var(--bg);}
+        .bvys-section--method { background: var(--bg);}
+        .bvys-section--lotus { background: var(--bg);}
+        .bvys-section--steps { background: var(--bg);}
+        .bvys-section--experience { background: var(--bg);}
+        .bvys-section--places { background: var(--bg);}
 
         .bvys-grid {
             display: grid;

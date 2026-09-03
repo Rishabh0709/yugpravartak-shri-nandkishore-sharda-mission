@@ -1,6 +1,6 @@
 .bhaiya-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 46%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .bhaiya-hero {
@@ -154,13 +154,13 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
-        .bhaiya-journey--birth { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
-        .bhaiya-journey--awakening { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
-        .bhaiya-journey--darshan { background: radial-gradient(circle at 70% 16%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
-        .bhaiya-journey--wisdom { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
-        .bhaiya-journey--service { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
-        .bhaiya-journey--sadhna { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
-        .bhaiya-journey--legacy { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+        .bhaiya-journey--birth { background: var(--bg);}
+        .bhaiya-journey--awakening { background: var(--bg);}
+        .bhaiya-journey--darshan { background: var(--bg);}
+        .bhaiya-journey--wisdom { background: var(--bg);}
+        .bhaiya-journey--service { background: var(--bg);}
+        .bhaiya-journey--sadhna { background: var(--bg);}
+        .bhaiya-journey--legacy { background: var(--bg);}
 
         .bhaiya-journey__grid {
             display: grid;

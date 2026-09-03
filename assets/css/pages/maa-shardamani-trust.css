@@ -1,5 +1,5 @@
 .shardamani-page {
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         .shardamani-hero {

@@ -1,6 +1,6 @@
 .gyan-ganga-page {
             color: var(--hi-ink);
-            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
+            background: var(--bg);
         }
 
         body.hindi-home.gyan-ganga-page #header-placeholder {
@@ -109,8 +109,7 @@
         }
 
         .gyan-ganga-section--soft {
-            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
-        }
+            background: var(--bg);}
 
         .gyan-ganga-split {
             display: grid;
