@@ -4,10 +4,11 @@
   "description": "Yugpravartak Shri Nandkishore Sharda Mission — Manidweep Adhyatm Parivar, Jodhpur",
   "private": true,
   "scripts": {
-    "start": "eleventy --serve --quiet",
+    "start": "eleventy --serve --port 8080",
+    "preview": "cross-env ELEVENTY_PATH_PREFIX=/ eleventy",
     "build": "eleventy",
     "build:ghpages": "cross-env ELEVENTY_PATH_PREFIX=/yugpravartak-shri-nandkishore-sharda-mission/ eleventy",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "cross-env DEBUG=Eleventy* eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
