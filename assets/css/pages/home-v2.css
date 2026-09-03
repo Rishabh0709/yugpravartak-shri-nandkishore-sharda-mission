@@ -183,11 +183,19 @@
 }
 
 /* ---------- 6-step diagram (BVY) ---------- */
+.v2-steps__lead {
+    max-width: 62ch;
+    margin: clamp(22px, 3vw, 32px) auto 0;
+    text-align: center;
+    font-size: .92rem;
+    line-height: 1.6;
+    color: var(--ink-muted);
+}
 .v2-steps {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
-    margin: clamp(28px, 4vw, 44px) 0 0;
+    margin: clamp(16px, 2.4vw, 24px) 0 0;
     counter-reset: step;
 }
 .v2-step {
