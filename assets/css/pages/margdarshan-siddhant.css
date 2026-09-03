@@ -12,7 +12,7 @@
             padding: clamp(146px, 16vh, 198px) 0 86px;
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .98) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .64) 100%),
-                url("/assets/images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
+                url("../../images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
         }
 
         .margdarshan-hero::after {
@@ -213,7 +213,7 @@
                 padding-top: 118px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
-                    url("/assets/images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
+                    url("../../images/gallery/scholarship-distribution/10-card.webp") center / cover no-repeat;
             }
 
             .margdarshan-principles {

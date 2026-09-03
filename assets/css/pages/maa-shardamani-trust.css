@@ -11,7 +11,7 @@
             padding: clamp(150px, 17vh, 205px) 0 90px;
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .84) 42%, rgba(255, 244, 225, .5) 72%, rgba(255, 244, 225, .16) 100%),
-                url("/assets/images/maa-shardamani-scholarship-distribution.jpg") center / cover no-repeat;
+                url("../../images/maa-shardamani-scholarship-distribution.jpg") center / cover no-repeat;
         }
 
         .shardamani-hero::after {
@@ -381,7 +381,7 @@
             text-align: center;
             background:
                 linear-gradient(180deg, rgba(255, 250, 241, .58), rgba(255, 250, 241, .96)),
-                url("/assets/images/gallery/scholarship-distribution/08-card.webp") center / cover no-repeat;
+                url("../../images/gallery/scholarship-distribution/08-card.webp") center / cover no-repeat;
         }
 
         .shardamani-closing .hi-section-heading {

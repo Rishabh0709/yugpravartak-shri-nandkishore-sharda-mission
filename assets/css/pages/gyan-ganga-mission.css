@@ -33,7 +33,7 @@
             padding: clamp(156px, 16vw, 220px) 0 clamp(70px, 8vw, 112px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .88) 45%, rgba(255, 244, 225, .62) 76%),
-                url("/assets/images/gallery/gyan-ganga-mission/03-card.webp") center / cover no-repeat;
+                url("../../images/gallery/gyan-ganga-mission/03-card.webp") center / cover no-repeat;
         }
 
         .gyan-ganga-hero::after {

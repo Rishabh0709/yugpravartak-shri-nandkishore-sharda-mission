@@ -10,7 +10,7 @@
             padding-bottom: clamp(72px, 9vw, 128px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .9) 0%, rgba(255, 250, 241, .72) 42%, rgba(255, 250, 241, .28) 70%),
-                url('/assets/images/spiritual-hero-bhaiyaji-maa.jpg') center right / cover no-repeat;
+                url('../../images/spiritual-hero-bhaiyaji-maa.jpg') center right / cover no-repeat;
         }
 
         .yug-hero::after {
@@ -311,7 +311,7 @@
                 padding-top: 128px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .84), rgba(255, 250, 241, .72)),
-                    url('/assets/images/spiritual-hero-bhaiyaji-maa.jpg') center top / cover no-repeat;
+                    url('../../images/spiritual-hero-bhaiyaji-maa.jpg') center top / cover no-repeat;
             }
 
             .yug-hero__content {

@@ -10,7 +10,7 @@
             padding-bottom: clamp(70px, 9vw, 120px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .82) 44%, rgba(255, 250, 241, .44) 74%),
-                url('/assets/images/bhaiyaji-divine-wisdom-background.jpg') center right / cover no-repeat;
+                url('../../images/bhaiyaji-divine-wisdom-background.jpg') center right / cover no-repeat;
         }
 
         .dg-hero::after {
@@ -373,7 +373,7 @@
                 padding-top: 128px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .88), rgba(255, 250, 241, .76)),
-                    url('/assets/images/bhaiyaji-divine-wisdom-background.jpg') center top / cover no-repeat;
+                    url('../../images/bhaiyaji-divine-wisdom-background.jpg') center top / cover no-repeat;
             }
 
             .dg-hero h1 {

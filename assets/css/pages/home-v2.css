@@ -11,10 +11,14 @@
     display: grid;
     align-items: center;
     overflow: hidden;
-    padding: clamp(140px, 18vh, 200px) 0 clamp(64px, 9vh, 104px);
-    background:
-        linear-gradient(90deg, rgba(247, 236, 218, .92) 0%, rgba(247, 236, 218, .55) 46%, rgba(247, 236, 218, .05) 78%, rgba(247, 236, 218, 0) 100%),
-        var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") center top / cover no-repeat;
+    padding: clamp(150px, 17vh, 205px) 0 clamp(64px, 9vh, 104px);
+    background-color: var(--bg-wash);
+    background-image:
+        linear-gradient(90deg, rgba(247, 236, 218, .82) 0%, rgba(247, 236, 218, .5) 42%, rgba(247, 236, 218, .12) 70%, rgba(247, 236, 218, 0) 100%),
+        url("../../images/hi-home-hero-background.webp");
+    background-repeat: no-repeat;
+    background-position: center, center top;
+    background-size: cover, cover;
 }
 .v2-hero__inner { position: relative; z-index: 1; }
 .v2-hero__copy { width: min(700px, 66%); }
@@ -67,12 +71,14 @@
 @media (max-width: 900px) {
     .v2-hero {
         min-height: 0;
-        padding-top: 108px;
-        background:
-            linear-gradient(180deg, rgba(247, 236, 218, .12) 0%, rgba(247, 236, 218, .55) 42%, var(--bg-wash) 74%, var(--bg-wash) 100%),
-            var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") 58% top / cover no-repeat;
+        padding: 104px 0 clamp(44px, 9vw, 68px);
+        background-image:
+            linear-gradient(180deg, rgba(247, 236, 218, .28) 0%, rgba(247, 236, 218, .68) 28%, var(--bg-wash) 52%, var(--bg-wash) 100%),
+            url("../../images/hi-home-hero-background.webp");
+        background-position: center, 60% top;
+        background-size: cover, 165% auto;
     }
-    .v2-hero__copy { width: 100%; padding-top: clamp(48px, 26vw, 170px); }
+    .v2-hero__copy { width: 100%; padding-top: clamp(70px, 34vw, 190px); }
     .v2-hero__lead { max-width: none; }
 }
 

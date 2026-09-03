@@ -10,7 +10,7 @@
             padding-bottom: clamp(70px, 9vw, 120px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .93) 0%, rgba(255, 250, 241, .78) 44%, rgba(255, 250, 241, .34) 74%),
-                url('/assets/images/buddhi-vivek-yog-sadhna-original.jpg') center right / cover no-repeat;
+                url('../../images/buddhi-vivek-yog-sadhna-original.jpg') center right / cover no-repeat;
         }
 
         .bvys-hero::after {
@@ -408,7 +408,7 @@
                 padding-top: 128px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .86), rgba(255, 250, 241, .74)),
-                    url('/assets/images/buddhi-vivek-yog-sadhna-original.jpg') center top / cover no-repeat;
+                    url('../../images/buddhi-vivek-yog-sadhna-original.jpg') center top / cover no-repeat;
             }
 
             .bvys-hero__content {

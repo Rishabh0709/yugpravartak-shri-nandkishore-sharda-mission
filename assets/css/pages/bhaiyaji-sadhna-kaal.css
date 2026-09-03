@@ -33,7 +33,7 @@
             padding-bottom: clamp(58px, 8vw, 104px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .62) 0%, rgba(255, 250, 241, .5) 34%, rgba(255, 250, 241, .16) 52%, rgba(255, 250, 241, .6) 82%, rgba(255, 250, 241, .8) 100%),
-                url('/assets/images/bhaiyaji-sadhna-kaal-hero.png') center right / cover no-repeat;
+                url('../../images/bhaiyaji-sadhna-kaal-hero.png') center right / cover no-repeat;
         }
 
         .sadhna-kaal-hero::after {
@@ -303,7 +303,7 @@
                 padding-top: 128px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .74), rgba(255, 250, 241, .66)),
-                    url('/assets/images/bhaiyaji-sadhna-kaal-hero.png') center top / cover no-repeat;
+                    url('../../images/bhaiyaji-sadhna-kaal-hero.png') center top / cover no-repeat;
             }
 
             .sadhna-kaal-hero__content {

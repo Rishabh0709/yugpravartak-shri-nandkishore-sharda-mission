@@ -12,7 +12,7 @@
             padding: clamp(148px, 17vh, 205px) 0 88px;
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .97) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .68) 100%),
-                url("/assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+                url("../../images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
         }
 
         .chintan-hero::after {
@@ -216,7 +216,7 @@
                 padding-top: 118px;
                 background:
                     linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
-                    url("/assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+                    url("../../images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
             }
 
             .chintan-principles {
