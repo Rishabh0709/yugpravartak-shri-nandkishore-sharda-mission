@@ -1,0 +1,17 @@
+{
+  "_note": "Books published / distributed free by Shri Nandkishore Sharda Gyan Ganga Mission. `books.<key>` is referenced by a page's `book:` front matter to emit Book JSON-LD.",
+
+  "books": {
+    "divyaGyan": {
+      "title": { "hi": "मृत्यु के बाद का अलौकिक संसार", "en": "The Wonderful World After Death" },
+      "author": { "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा", "en": "Yugpravartak Shri Nandkishore Sharda" },
+      "description": {
+        "hi": "जगत्जननी माँ त्रिपुरसुन्दरी से प्राप्त शाश्वत दिव्य ज्ञान — जीवन, मृत्यु, आत्मा, चैतन्य एवं ब्रह्माण्ड के रहस्यों का विज्ञानसम्मत विवेचन।",
+        "en": ""
+      },
+      "publisher": { "hi": "श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन", "en": "Shri Nandkishore Sharda Gyan Ganga Mission" },
+      "cover": "/assets/images/books/04-card.webp",
+      "page": "/divya-gyan.html"
+    }
+  }
+}

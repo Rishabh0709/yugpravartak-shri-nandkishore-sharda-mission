@@ -340,7 +340,7 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
                             <span class="hi-seva-card__mark" aria-hidden="true">✦</span>
                             <h3 id="seva-education-title">शिक्षा</h3>
                             <p>जरूरतमंद छात्र-छात्राओं को विद्यालय, उच्च और व्यावसायिक शिक्षा तक छात्रवृत्ति, पुस्तकों और सतत मार्गदर्शन का सहयोग दिया जाता है, ताकि आर्थिक अभाव प्रतिभा और आत्मविश्वास के मार्ग में बाधा न बने।</p>
-                            <span class="hi-seva-card__meta">8,630+ विद्यार्थी · ₹6.72 करोड़+ छात्रवृत्ति सहयोग</span>
+                            <span class="hi-seva-card__meta">{{ impact.metrics.studentsCombined.display.hi }} विद्यार्थी · {{ impact.metrics.scholarshipCombined.display.hi }} छात्रवृत्ति सहयोग</span>
                         </div>
                     </article>
 
@@ -404,7 +404,7 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
         <button class="impact-tab" id="impact-tab-self-reliance" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-self-reliance" tabindex="-1" data-impact-target="impact-panel-self-reliance">महिला स्वावलंबन</button>
         <button class="impact-tab" id="impact-tab-wellness" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-wellness" tabindex="-1" data-impact-target="impact-panel-wellness">4-D कल्याण</button>
         <button class="impact-tab" id="impact-tab-families" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-families" tabindex="-1" data-impact-target="impact-panel-families">परिवार सहायता</button>
-        <button class="impact-tab" id="impact-tab-years" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-years" tabindex="-1" data-impact-target="impact-panel-years">30 वर्ष</button>
+        <button class="impact-tab" id="impact-tab-years" type="button" role="tab" aria-selected="false" aria-controls="impact-panel-years" tabindex="-1" data-impact-target="impact-panel-years">{{ impact.metrics.yearsOfService.display.hi }}</button>
       </div>
 
       <article class="impact-slide impact-slide--girls is-active" id="impact-panel-girls" role="tabpanel" aria-labelledby="impact-tab-girls" aria-hidden="false">
@@ -412,11 +412,11 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
         <div class="impact-slide-content">
           <div class="impact-metrics" aria-label="बालिका शिक्षा के प्रभाव के आंकड़े">
             <div class="impact-metric">
-              <span class="impact-number">8,000+</span>
+              <span class="impact-number">{{ impact.metrics.studentsGirls.display.hi }}</span>
               <span class="impact-metric-label">लाभान्वित बालिकाएं</span>
             </div>
             <div class="impact-metric">
-              <span class="impact-number">&#8377;6.14 करोड़+</span>
+              <span class="impact-number">{{ impact.metrics.scholarshipGirls.display.hi }}</span>
               <span class="impact-metric-label">छात्रवृत्ति सहायता</span>
             </div>
           </div>
@@ -431,11 +431,11 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
         <div class="impact-slide-content">
           <div class="impact-metrics" aria-label="बालक शिक्षा के प्रभाव के आंकड़े">
             <div class="impact-metric">
-              <span class="impact-number">630+</span>
+              <span class="impact-number">{{ impact.metrics.studentsBoys.display.hi }}</span>
               <span class="impact-metric-label">लाभान्वित बालक</span>
             </div>
             <div class="impact-metric">
-              <span class="impact-number">&#8377;57 लाख+</span>
+              <span class="impact-number">{{ impact.metrics.scholarshipBoys.display.hi }}</span>
               <span class="impact-metric-label">छात्रवृत्ति सहायता</span>
             </div>
           </div>
@@ -468,17 +468,17 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
       <article class="impact-slide impact-slide--family" id="impact-panel-families" role="tabpanel" aria-labelledby="impact-tab-families" aria-hidden="true">
         <img data-image-key="index.02-card" src="/assets/images/gallery/food-assistance/02-card.webp" alt="परिवारों को मासिक खाद्य सामग्री वितरित करते स्वयंसेवक" loading="lazy">
         <div class="impact-slide-content">
-          <span class="impact-number">&#8377;1.07 करोड़+</span>
+          <span class="impact-number">{{ impact.metrics.familyAid.display.hi }}</span>
           <h3>खाद्यान्न एवं पारिवारिक सहायता</h3>
           <p>आर्थिक रूप से कमजोर परिवारों को निरंतरता, सम्मान और अनुकंपा के साथ मासिक राशन सामग्री की सहायता प्रदान की जाती है।</p>
-          <span class="impact-micro-note">लगभग 300 परिवारों को निरंतर सहयोग</span>
+          <span class="impact-micro-note">{{ impact.metrics.familiesMonthly.display.hi }} परिवारों को निरंतर सहयोग</span>
         </div>
       </article>
 
       <article class="impact-slide impact-slide--archive" id="impact-panel-years" role="tabpanel" aria-labelledby="impact-tab-years" aria-hidden="true">
         <img data-image-key="index.early-days" src="/assets/images/early-days.jpg" alt="मिशन के शुरुआती शैक्षणिक कार्यों का ऐतिहासिक चित्र" loading="lazy">
         <div class="impact-slide-content">
-          <span class="impact-number">30 वर्ष</span>
+          <span class="impact-number">{{ impact.metrics.yearsOfService.display.hi }}</span>
           <h3>जमीनी सेवा की निरंतरता</h3>
           <p>शिक्षा, मानवीय मूल्यों, अध्यात्म, स्वावलंबन और समाज कल्याण को एकीकृत करती हुई एक समर्पित यात्रा।</p>
           <span class="impact-micro-note">1996 से निरंतर सेवारत</span>
@@ -486,7 +486,7 @@ extraCss: ["/assets/css/home-hindi-concept.css"]
       </article>
     </div>
 
-    <p class="impact-note">ये आंकड़े संचयी हैं और 31 मार्च 2026 तक अद्यतन हैं। बालिकाओं के आंकड़े स्वामी विवेकानंद स्टूडेंट्स वेलफेयर चैरिटेबल ट्रस्ट तथा माँ शारदामणि ट्रस्ट के संयुक्त रूप से हैं; बालकों के आंकड़े ज्ञानयोगी श्री नंदकिशोर शारदा अध्यात्म केंद्र से संबंधित हैं।</p>
+    <p class="impact-note">ये आंकड़े संचयी हैं और {{ impact.asOfLabel.hi }} तक अद्यतन हैं। बालिकाओं के आंकड़े स्वामी विवेकानंद स्टूडेंट्स वेलफेयर चैरिटेबल ट्रस्ट तथा माँ शारदामणि ट्रस्ट के संयुक्त रूप से हैं; बालकों के आंकड़े ज्ञानयोगी श्री नंदकिशोर शारदा अध्यात्म केंद्र से संबंधित हैं।</p>
     <div class="hi-actions hi-actions--center">
       <a class="hi-btn hi-btn--primary" href="/testimonials.html#success-stories">बदले हुए जीवन की कहानियाँ पढ़ें</a>
     </div>

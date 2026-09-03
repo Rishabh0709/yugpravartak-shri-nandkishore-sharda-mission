@@ -3,8 +3,8 @@
 
   "asOf": "2026-03-31",
   "asOfLabel": {
-    "hi": "31 मार्च 2026 तक (संचयी)",
-    "en": "cumulative, as of 31 March 2026"
+    "hi": "31 मार्च 2026",
+    "en": "31 March 2026"
   },
 
   "metrics": {
@@ -44,10 +44,42 @@
       "display": { "hi": "लगभग 300", "en": "~300" },
       "label": { "hi": "परिवारों को मासिक सहयोग", "en": "families supported monthly" }
     },
+    "foodKits": {
+      "display": { "hi": "14,000+", "en": "14,000+" },
+      "label": { "hi": "खाद्यान्न किट वितरित", "en": "food kits distributed" },
+      "asOf": "2025-03-31",
+      "scope": "since 2020"
+    },
+    "schoolsColleges": {
+      "display": { "hi": "45 विद्यालय · 32 महाविद्यालय", "en": "45 schools · 32 colleges" },
+      "label": { "hi": "जिनके माध्यम से बालिका शिक्षा सहयोग", "en": "through which girls are supported" }
+    },
     "yearsOfService": {
       "display": { "hi": "30 वर्ष", "en": "30 years" },
       "label": { "hi": "निरन्तर जमीनी सेवा", "en": "of continuous grassroots service" },
-      "scope": "since 1996"
+      "scope": "since 1996 (1996–2026)"
+    }
+  },
+
+  "perTrust": {
+    "_note": "Per-trust breakdown. SVT + MST amounts sum to scholarshipGirls; add scholarshipBoys for scholarshipCombined. The 'instances' figure counts scholarship disbursements, not distinct students. CONFIRM scholarship totals for gyanyogi-adhyatm-kendra with the trust owner — the trust page currently shows ₹1.64 Cr, which contradicts scholarshipBoys (₹57 L).",
+    "swami-vivekanand-trust": {
+      "amount": { "hi": "₹4.51 करोड़+", "en": "₹4.51 Cr+" },
+      "instances": { "hi": "37,000+", "en": "37,000+" },
+      "instancesLabel": { "hi": "संचयी छात्रवृत्ति अवसर", "en": "cumulative scholarship instances" }
+    },
+    "maa-shardamani-trust": {
+      "students": { "hi": "3,400+", "en": "3,400+" },
+      "amount": { "hi": "₹1.64 करोड़+", "en": "₹1.64 Cr+" }
+    },
+    "gyanyogi-adhyatm-kendra": {
+      "students": { "hi": "630+", "en": "630+" },
+      "amount": { "hi": "₹57 लाख+", "en": "₹57 L+" },
+      "amountNeedsConfirmation": true
+    },
+    "gyan-ganga-mission": {
+      "amount": { "hi": "₹1.5 करोड़+", "en": "₹1.5 Cr+" },
+      "amountLabel": { "hi": "सद्साहित्य प्रकाशन एवं निःशुल्क वितरण में", "en": "in publishing and free distribution of literature" }
     }
   }
 }

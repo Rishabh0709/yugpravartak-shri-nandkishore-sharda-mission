@@ -60,3 +60,53 @@
       }
     }
     </script>
+
+    {#- Breadcrumb on every page except the homepage -#}
+    {%- if page.url != "/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {{ site.shortName[locale] | dump | safe }}, "item": "{{ site.origin }}/" },
+        { "@type": "ListItem", "position": 2, "name": {{ (breadcrumbName if breadcrumbName else title) | dump | safe }}, "item": "{{ site.origin }}{{ page.url }}" }
+      ]
+    }
+    </script>
+    {%- endif %}
+
+    {#- Person schema: set `person: <key>` in front matter (key into people.json) -#}
+    {%- if person and people[person] %}
+    {%- set P = people[person] %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ P.name[locale] | dump | safe }},
+      "alternateName": {{ P.familyName[locale] | dump | safe }},
+      "description": {{ P.role[locale] | dump | safe }},
+      {% if P.born %}"birthDate": "{{ P.born }}",{% endif %}
+      {% if P.leftBody %}"deathDate": "{{ P.leftBody }}",{% endif %}
+      "image": "{{ site.origin }}{{ P.portrait }}",
+      "url": "{{ site.origin }}{{ P.page }}",
+      "affiliation": { "@type": "NGO", "name": {{ site.name[locale] | dump | safe }} }
+    }
+    </script>
+    {%- endif %}
+
+    {#- Book schema: set `book: <key>` in front matter (key into publications.json) -#}
+    {%- if book and publications and publications.books[book] %}
+    {%- set B = publications.books[book] %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": {{ B.title[locale] | dump | safe }},
+      "author": { "@type": "Person", "name": {{ B.author[locale] | dump | safe }} },
+      "inLanguage": "hi",
+      "description": {{ B.description[locale] | dump | safe }},
+      "publisher": {{ B.publisher[locale] | dump | safe }},
+      "url": "{{ site.origin }}{{ page.url }}"
+    }
+    </script>
+    {%- endif %}

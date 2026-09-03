@@ -1,4 +1,6 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const fs = require("node:fs");
+const path = require("node:path");
 
 /**
  * Deploy target switch
@@ -41,6 +43,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("prefix", (p) => {
     if (!p) return p;
     return (PATH_PREFIX.replace(/\/$/, "") + "/" + String(p).replace(/^\//, "")).replace(/\/{2,}/g, "/");
+  });
+
+  // Keep the photo-tooling album.json manifests out of the published output
+  // (they carry absolute local paths and nothing on the site fetches them).
+  eleventyConfig.on("eleventy.after", ({ dir }) => {
+    const walk = (d) => {
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const full = path.join(d, e.name);
+        if (e.isDirectory()) walk(full);
+        else if (e.name === "album.json") fs.rmSync(full);
+      }
+    };
+    const imgDir = path.join(dir.output, "assets", "images");
+    if (fs.existsSync(imgDir)) walk(imgDir);
   });
 
   // Sitemap collection: every built .html page except redirects / 404.
