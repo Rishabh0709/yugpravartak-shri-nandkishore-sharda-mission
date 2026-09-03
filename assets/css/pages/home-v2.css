@@ -14,7 +14,7 @@
     padding: clamp(140px, 18vh, 200px) 0 clamp(64px, 9vh, 104px);
     background:
         linear-gradient(90deg, rgba(247, 236, 218, .92) 0%, rgba(247, 236, 218, .55) 46%, rgba(247, 236, 218, .05) 78%, rgba(247, 236, 218, 0) 100%),
-        var(--bg-wash) url("/assets/images/hi-home-hero-background.png") center top / cover no-repeat;
+        var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") center top / cover no-repeat;
 }
 .v2-hero__inner { position: relative; z-index: 1; }
 .v2-hero__copy { width: min(680px, 64%); }
@@ -42,7 +42,7 @@
         padding-top: 108px;
         background:
             linear-gradient(180deg, rgba(247, 236, 218, .12) 0%, rgba(247, 236, 218, .55) 42%, var(--bg-wash) 74%, var(--bg-wash) 100%),
-            var(--bg-wash) url("/assets/images/hi-home-hero-background.png") 58% top / cover no-repeat;
+            var(--bg-wash) url("/assets/images/hi-home-hero-background.webp") 58% top / cover no-repeat;
     }
     .v2-hero__copy { width: 100%; padding-top: min(56vw, 300px); }
     .v2-hero__lead { max-width: none; }

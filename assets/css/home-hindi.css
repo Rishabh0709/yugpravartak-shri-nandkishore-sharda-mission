@@ -91,7 +91,7 @@ body.hindi-home.hi-home-page #header-placeholder {
     height: 0;
     background:
         linear-gradient(90deg, rgba(247, 229, 201, .72) 0%, rgba(247, 229, 201, .34) 48%, rgba(247, 229, 201, 0) 78%),
-        url("../images/hi-home-hero-background.png") center top / cover no-repeat;
+        url("../images/hi-home-hero-background.webp") center top / cover no-repeat;
 }
 
 body.hindi-home.hi-home-page #header.site-header:not(.is-scrolled),
@@ -421,7 +421,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     background-color: #f4dec0;
     background-image:
         linear-gradient(90deg, rgba(247, 229, 201, .74) 0%, rgba(247, 229, 201, .42) 44%, rgba(247, 229, 201, .1) 72%, rgba(247, 229, 201, 0) 100%),
-        url("../images/hi-home-hero-background.png");
+        url("../images/hi-home-hero-background.webp");
     background-repeat: no-repeat;
     background-position: center, center top;
     background-size: cover, cover;
@@ -1684,7 +1684,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
         padding-top: 130px;
         background-image:
             linear-gradient(180deg, rgba(247, 229, 201, .08) 0%, rgba(247, 229, 201, .5) 46%, rgba(247, 229, 201, .98) 72%, #f4dec0 100%),
-            url("../images/hi-home-hero-background.png");
+            url("../images/hi-home-hero-background.webp");
         background-position: center, 58% top;
         background-size: cover, cover;
     }
