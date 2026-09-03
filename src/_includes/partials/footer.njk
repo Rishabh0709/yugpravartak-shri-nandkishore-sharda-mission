@@ -1,0 +1,53 @@
+{%- set pfx = "/en" if locale == "en" else "" -%}
+<footer class="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container footer-inner">
+        <div class="footer-introduction">
+            <div class="footer-identity">
+                <h2 class="footer-title">{{ site.name[locale] }}</h2>
+                <p class="footer-tagline">{{ site.tagline[locale] }}</p>
+                <div class="footer-intro-actions">
+                    {%- for action in footer.intro.actions %}
+                    <a class="footer-action{{ ' footer-action--primary' if action.primary }}" href="{{ pfx }}{{ action.href }}">{{ action.label[locale] }}</a>
+                    {%- endfor %}
+                </div>
+            </div>
+            <a class="footer-visit-feature" href="{{ pfx }}{{ footer.intro.visit.href }}" aria-label="{{ footer.intro.visit.imageAlt[locale] }}">
+                <img src="{{ footer.intro.visit.image }}" alt="{{ footer.intro.visit.imageAlt[locale] }}" loading="lazy">
+                <span>{{ footer.intro.visit.label[locale] }} <b aria-hidden="true">&rarr;</b></span>
+            </a>
+        </div>
+
+        <div class="footer-navigation" aria-label="{{ 'पादलेख नेविगेशन' if locale == 'hi' else 'Footer navigation' }}">
+            {%- for group in footer.groups %}
+            <nav class="footer-link-group" aria-labelledby="footer-group-{{ loop.index }}">
+                <h3 id="footer-group-{{ loop.index }}">{{ group.heading[locale] }}</h3>
+                {%- for link in group.links %}
+                <a href="{{ pfx }}{{ link.href }}">{{ link.label[locale] }}</a>
+                {%- endfor %}
+                {%- if loop.last and site.locales.en.enabled %}
+                <a href="{{ '/en' if locale != 'en' else '' }}{{ page.url }}" lang="{{ 'en' if locale != 'en' else 'hi' }}">{{ 'English Website' if locale != 'en' else 'हिन्दी वेबसाइट' }}</a>
+                {%- endif %}
+            </nav>
+            {%- endfor %}
+
+            <section class="footer-contact" aria-labelledby="footer-contact-heading">
+                <h3 id="footer-contact-heading">{{ footer.contactHeading[locale] }}</h3>
+                <address>
+                    <span>{{ site.address.full[locale] | safe }}</span>
+                    <a href="tel:{{ site.contact.phoneRaw }}">{{ site.contact.phoneDisplay }}</a>
+                    <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+                </address>
+                <a class="footer-map-link" href="{{ pfx }}{{ footer.mapLink.href }}">{{ footer.mapLink.label[locale] }} <span aria-hidden="true">&rarr;</span></a>
+            </section>
+        </div>
+
+        <div class="footer-closing">
+            <p class="copyright">&copy; <span data-current-year></span> {{ footer.copyright[locale] }}</p>
+            <a class="footer-top-link" href="#main-content">{{ 'ऊपर जाएँ' if locale == 'hi' else 'Back to top' }} <span aria-hidden="true">&uarr;</span></a>
+        </div>
+    </div>
+    <button class="mobile-back-to-top" id="back-to-top" type="button" aria-label="{{ 'पृष्ठ के आरम्भ पर जाएँ' if locale == 'hi' else 'Back to top' }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path></svg>
+    </button>
+</footer>

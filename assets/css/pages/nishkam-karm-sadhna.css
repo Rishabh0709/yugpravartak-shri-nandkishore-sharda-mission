@@ -1,0 +1,524 @@
+.karma-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 42%, #fffaf1 100%);
+        }
+
+        .karma-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(104px, 11vw, 150px);
+            padding-bottom: clamp(58px, 8vw, 106px);
+            background:
+                radial-gradient(circle at 82% 18%, rgba(198, 148, 53, .2), transparent 30%),
+                radial-gradient(circle at 10% 24%, rgba(222, 238, 236, .7), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f1ee 100%);
+        }
+
+        .karma-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 88px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .karma-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 1080px;
+        }
+
+        .karma-hero h1 {
+            margin: 12px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3.1rem, 7vw, 6.7rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .karma-hero__lead {
+            max-width: 860px;
+            color: #66534c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.9vw, 1.58rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .karma-mantra {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1px;
+            max-width: 920px;
+            margin-top: 34px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(198, 148, 53, .22);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .karma-mantra__pair {
+            display: grid;
+            gap: 6px;
+            padding: 20px clamp(16px, 2.2vw, 26px);
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .karma-mantra__pair span {
+            color: #8a2f2d;
+            font-size: .84rem;
+            font-weight: 900;
+        }
+
+        .karma-mantra__pair strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.8vw, 1.55rem);
+            line-height: 1.35;
+        }
+
+        .karma-section {
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .karma-section--why {
+            background: #fffaf1;
+        }
+
+        .karma-section--flow {
+            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
+        }
+
+        .karma-section--institutions {
+            background: #fffaf1;
+        }
+
+        .karma-section--closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .karma-prose {
+            max-width: 980px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.28vw, 1.16rem);
+            line-height: 1.95;
+        }
+
+        .karma-prose p {
+            margin: 0 0 18px;
+        }
+        .karma-thesis {
+            display: grid;
+            gap: clamp(28px, 4vw, 48px);
+        }
+
+        .karma-thesis__header {
+            max-width: 1160px;
+        }
+
+        .karma-thesis h2 {
+            margin: 10px 0 0;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.25rem, 4.7vw, 4.8rem);
+            line-height: 1.12;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .karma-thesis__body {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, .82fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: start;
+        }
+
+        .karma-thesis__note {
+            padding: clamp(24px, 3vw, 34px);
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .1);
+        }
+
+        .karma-thesis__note strong {
+            display: block;
+            margin-bottom: 12px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.4vw, 2rem);
+            line-height: 1.35;
+        }
+
+        .karma-flow {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 34px;
+        }
+
+        .karma-flow__step {
+            position: relative;
+            min-height: 150px;
+            padding: 20px 16px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .74);
+        }
+
+        .karma-flow__step span {
+            display: inline-grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 14px;
+            border-radius: 50%;
+            color: #8a2f2d;
+            background: rgba(198, 148, 53, .15);
+            font-weight: 900;
+        }
+
+        .karma-flow__step strong {
+            display: block;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.18rem;
+            line-height: 1.35;
+        }
+
+        .karma-trusts {
+            display: grid;
+            gap: clamp(28px, 4vw, 48px);
+            margin-top: 42px;
+        }
+
+        .karma-trust {
+            display: grid;
+            grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+            gap: clamp(24px, 4vw, 50px);
+            align-items: start;
+            padding: clamp(22px, 3.5vw, 42px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
+        }
+
+        .karma-trust__intro {
+            position: sticky;
+            top: 120px;
+        }
+
+        .karma-trust__number {
+            display: inline-grid;
+            place-items: center;
+            width: 46px;
+            height: 46px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            color: #fffaf1;
+            background: #8a2f2d;
+            font-weight: 900;
+        }
+
+        .karma-trust h3 {
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.7rem, 3.2vw, 3rem);
+            line-height: 1.18;
+        }
+
+        .karma-trust__subtitle {
+            margin: 0 0 18px;
+            color: #8a2f2d;
+            font-size: .98rem;
+            font-weight: 900;
+            line-height: 1.6;
+        }
+
+        .karma-trust__intro p,
+        .karma-activity p {
+            color: #62544c;
+            line-height: 1.84;
+        }
+
+        .karma-activities {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .karma-trust--wide {
+            grid-template-columns: 1fr;
+        }
+
+        .karma-trust--wide .karma-trust__intro {
+            position: static;
+            max-width: 980px;
+        }
+
+        .karma-trust--wide .karma-activities {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .karma-activity {
+            overflow: hidden;
+            border: 1px solid rgba(121, 43, 42, .1);
+            border-radius: 8px;
+            background: #fffaf1;
+        }
+
+        .karma-activity figure {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .karma-activity img {
+            display: block;
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .karma-activity__body {
+            padding: 18px;
+        }
+
+        .karma-activity h4 {
+            margin: 0 0 8px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .karma-activity p {
+            margin: 0;
+            font-size: .98rem;
+        }
+
+        .karma-summary {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .karma-summary__item {
+            padding: 20px 18px;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .karma-summary__item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: 1.2rem;
+        }
+
+        .karma-actions {
+            margin-top: 34px;
+        }
+
+        .karma-closing-verse {
+            max-width: 760px;
+            margin: 34px auto 0;
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            color: var(--hi-ink);
+            background: rgba(255, 252, 246, .75);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+            font-weight: 700;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 980px) {
+            .karma-thesis,
+            .karma-trust {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-trust__intro {
+                position: static;
+            }
+
+            .karma-flow,
+            .karma-summary,
+            .karma-pillars {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .karma-bridge {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-trust--wide .karma-activities {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .karma-hero {
+                padding-top: 126px;
+            }
+
+            .karma-mantra {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-thesis h2 {
+                white-space: normal;
+            }
+
+            .karma-thesis__body {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-flow,
+            .karma-summary,
+            .karma-activities {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-activity img {
+                height: 230px;
+            }
+        }
+        .karma-hero-flow {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            max-width: 980px;
+            margin-top: 32px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.7vw, 1.45rem);
+            font-weight: 800;
+            line-height: 1.5;
+        }
+
+        .karma-hero-flow span {
+            display: inline-flex;
+            align-items: center;
+            min-height: 42px;
+            padding: 8px 14px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .66);
+            box-shadow: 0 12px 30px rgba(63, 45, 37, .05);
+        }
+
+        .karma-hero-flow i {
+            color: rgba(121, 43, 42, .48);
+            font-style: normal;
+            font-family: var(--hi-sans);
+            font-weight: 800;
+        }
+
+        .karma-bridge {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(24px, 4vw, 56px);
+            align-items: center;
+        }
+
+        .karma-bridge__note {
+            padding: clamp(22px, 3vw, 34px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .72);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .karma-bridge__note strong {
+            display: block;
+            margin-bottom: 12px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.4vw, 2.2rem);
+            line-height: 1.35;
+        }
+
+        .karma-bridge__note p,
+        .karma-pillar p {
+            color: #62544c;
+            line-height: 1.84;
+        }
+
+        .karma-pillars {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .karma-pillar {
+            min-height: 230px;
+            padding: 24px 20px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 16px 42px rgba(63, 45, 37, .06);
+        }
+
+        .karma-pillar__icon {
+            display: inline-grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+            color: #8a2f2d;
+            background: rgba(198, 148, 53, .15);
+            font-weight: 900;
+        }
+
+        .karma-pillar h3 {
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .karma-pillar p {
+            margin: 0;
+            font-size: .98rem;
+        }
+        /* Final responsive overrides for the service-flow additions. */
+        @media (max-width: 980px) {
+            .karma-bridge {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-pillars {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .karma-pillars {
+                grid-template-columns: 1fr;
+            }
+
+            .karma-hero-flow {
+                gap: 8px;
+            }
+
+            .karma-hero-flow i {
+                display: none;
+            }
+        }

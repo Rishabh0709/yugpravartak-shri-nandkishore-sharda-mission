@@ -2,7 +2,7 @@
     const state = {
         data: null,
         language: document.documentElement.lang === "hi" ? "hi" : "en",
-        root: document.documentElement.lang === "hi" ? "../" : "",
+        root: "",
         activeCategory: "all"
     };
 
@@ -37,7 +37,7 @@
         if (!archives.length && !detail) return;
 
         try {
-            const response = await fetch(`${state.root}assets/json/videos.json`);
+            const response = await fetch(`data/videos.json`);
             if (!response.ok) throw new Error(`Unable to load videos: ${response.status}`);
             state.data = await response.json();
             archives.forEach(renderArchive);

@@ -1,0 +1,49 @@
+{
+  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds a future /itihaas.html page and homepage timeline. Bodies to be written/verified with the Parivar in Phase 3.",
+
+  "events": [
+    { "year": "1944", "date": "1944-07-16", "phase": "spiritual-journey",
+      "title": { "hi": "भैया जी का जन्म", "en": "Bhaiyaji is born" },
+      "body": { "hi": "जोधपुर में श्री नन्दकिशोर शारदा का जन्म।", "en": "" } },
+
+    { "year": "1959", "phase": "spiritual-journey",
+      "title": { "hi": "वैराग्य का संकल्प", "en": "The vow" },
+      "body": { "hi": "पिता के देहावसान के पश्चात्, 15 वर्ष की आयु में सत्य की खोज का संकल्प।", "en": "" } },
+
+    { "year": "1964", "phase": "spiritual-journey",
+      "title": { "hi": "माँ बसन्ती मनिहार का अध्यात्म-पथ पर आगमन", "en": "Maa Basanti Manihar joins the path" },
+      "body": { "hi": "", "en": "" } },
+
+    { "year": "1970", "phase": "spiritual-journey",
+      "title": { "hi": "कुमारी मधुबाला अडवानी का आगमन", "en": "Kumari Madhubala Advani joins the path" },
+      "body": { "hi": "", "en": "" } },
+
+    { "year": "1990", "phase": "spiritual-journey",
+      "title": { "hi": "चक्र धारण — गोवा", "en": "Chakra Dharan, Goa" },
+      "body": { "hi": "दक्षिण भारत की यात्रा में समुद्र के मध्य एक चट्टान पर “अब मैं चक्र धारण करता हूँ।”", "en": "" } },
+
+    { "year": "1995", "phase": "seva",
+      "title": { "hi": "मणिद्वीप भवन", "en": "Manidweep is established" },
+      "body": { "hi": "ए-183, शास्त्री नगर में साधना-स्थली ‘मणिद्वीप’ बनकर तैयार; 10 जून 1995 को गृह-प्रवेश।", "en": "" } },
+
+    { "year": "1996", "phase": "seva",
+      "title": { "hi": "निष्काम कर्म साधना का आरम्भ", "en": "Nishkam Karma Sadhana begins" },
+      "body": { "hi": "‘माँ’ की आज्ञा से शिक्षा, संस्कार, छात्रवृत्ति एवं मानव सेवा के प्रकल्पों का शुभारम्भ। यहीं से मिशन का लोककल्याणकारी कार्य आरम्भ होता है।", "en": "" } },
+
+    { "year": "2003", "date": "2003-01-24", "phase": "seva",
+      "title": { "hi": "भैया जी चैतन्यस्वरूप; माँ बसन्ती का नेतृत्व", "en": "Bhaiyaji becomes chaitanya-swaroop; Maa Basanti leads" },
+      "body": { "hi": "16 अप्रैल 2003 को सद्साहित्य प्रकाशन हेतु ‘श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन’ की स्थापना।", "en": "" } },
+
+    { "year": "2010", "phase": "seva",
+      "title": { "hi": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र की स्थापना", "en": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra founded" },
+      "body": { "hi": "जरूरतमंद छात्रों (बालक) को छात्रवृत्ति हेतु।", "en": "" } },
+
+    { "year": "2020", "phase": "seva",
+      "title": { "hi": "मासिक खाद्यान्न वितरण का आरम्भ", "en": "Monthly food distribution begins" },
+      "body": { "hi": "कोरोना काल में जोधपुर एवं बालोतरा जिले के जरूरतमंद परिवारों हेतु।", "en": "" } },
+
+    { "year": "2021", "phase": "seva",
+      "title": { "hi": "मधु माँ का नेतृत्व", "en": "Madhu Maa takes up the leadership" },
+      "body": { "hi": "माँ बसन्ती के चैतन्यस्वरूप होने के उपरान्त मधु माँ समस्त आध्यात्मिक एवं सेवा प्रकल्पों का संचालन कर रही हैं।", "en": "" } }
+  ]
+}

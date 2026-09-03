@@ -1,0 +1,18 @@
+{
+  "_note": "Seed structure only. Answers to be written with the Parivar in Phase 5, then this file renders both /faq.html (rebuilt) and FAQPage JSON-LD. The existing hi/faq.html keeps its own content for now.",
+
+  "faqs": [
+    { "q": { "hi": "क्या इस मार्ग के लिए हिन्दू होना आवश्यक है?", "en": "" },
+      "a": { "hi": "", "en": "" } },
+    { "q": { "hi": "क्या घर-परिवार, नौकरी या भौतिक जीवन छोड़ना पड़ता है?", "en": "" },
+      "a": { "hi": "", "en": "" } },
+    { "q": { "hi": "क्या कोई शुल्क या सदस्यता है?", "en": "" },
+      "a": { "hi": "", "en": "" } },
+    { "q": { "hi": "बुद्धि-विवेक योग साधना कैसे आरम्भ करें?", "en": "" },
+      "a": { "hi": "", "en": "" } },
+    { "q": { "hi": "आज मिशन का संचालन कौन करता है?", "en": "" },
+      "a": { "hi": "", "en": "" } },
+    { "q": { "hi": "मणिद्वीप कहाँ है और वहाँ कैसे आया जा सकता है?", "en": "" },
+      "a": { "hi": "", "en": "" } }
+  ]
+}

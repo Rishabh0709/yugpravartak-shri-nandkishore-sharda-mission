@@ -1,0 +1,54 @@
+body.hindi-contact-page {
+            font-family: "Noto Sans Devanagari", sans-serif;
+            background: #fffaf1;
+            color: var(--hi-ink);
+        }
+
+        .hindi-contact-page .contact-hero h1,
+        .hindi-contact-page .contact-enquiry-intro h2,
+        .hindi-contact-page .contact-section-heading h2,
+        .hindi-contact-page .contact-essentials h2,
+        .hindi-contact-page .contact-privacy-note strong {
+            font-family: "Noto Serif Devanagari", serif;
+            letter-spacing: 0;
+        }
+
+        .hindi-contact-page .activity-eyebrow,
+        .hindi-contact-page .contact-breadcrumb,
+        .hindi-contact-page .contact-essentials span,
+        .hindi-contact-page .contact-map-details span,
+        .hindi-contact-page .contact-form-actions button {
+            font-family: "Noto Sans Devanagari", sans-serif;
+            letter-spacing: .08em;
+        }
+
+        .hindi-contact-page .contact-hero-grid > p,
+        .hindi-contact-page .contact-essentials p,
+        .hindi-contact-page .contact-enquiry-intro > p,
+        .hindi-contact-page .contact-privacy-note p,
+        .hindi-contact-page .contact-section-heading > p,
+        .hindi-contact-page .contact-map-details p,
+        .hindi-contact-page .contact-visit-guidance,
+        .hindi-contact-page .contact-consent,
+        .hindi-contact-page .contact-field small {
+            font-family: "Noto Serif Devanagari", serif;
+            line-height: 1.8;
+        }
+
+        .hindi-contact-page .contact-hero h1 {
+            max-width: 920px;
+            font-size: clamp(3rem, 6vw, 5.8rem);
+            line-height: 1.12;
+        }
+
+        .hindi-contact-page .contact-form-actions button {
+            letter-spacing: 0;
+            font-weight: 800;
+        }
+    
+        .hindi-contact-page .activity-eyebrow {
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 600;
+            letter-spacing: 0;
+            text-transform: none;
+        }

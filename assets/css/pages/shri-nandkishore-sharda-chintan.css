@@ -1,0 +1,232 @@
+.chintan-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            color: var(--hi-ink);
+        }
+
+        .chintan-hero {
+            position: relative;
+            min-height: 680px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(148px, 17vh, 205px) 0 88px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .97) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .68) 100%),
+                url("/assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+        }
+
+        .chintan-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 150px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .chintan-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .chintan-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(3rem, 5.4vw, 6.1rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .chintan-hero__lead {
+            max-width: 780px;
+            margin: 0;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.58rem);
+            line-height: 1.9;
+        }
+
+        .chintan-section {
+            padding: clamp(74px, 9vw, 120px) 0;
+        }
+
+        .chintan-section--intro {
+            padding-top: 44px;
+            background: #fffaf1;
+        }
+
+        .chintan-section--principles {
+            background:
+                radial-gradient(circle at 12% 12%, rgba(222, 238, 236, .72), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #eaf1ee 100%);
+        }
+
+        .chintan-section--closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 34%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .chintan-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .chintan-grid--reverse .chintan-media {
+            order: 2;
+        }
+
+        .chintan-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.85rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .chintan-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .chintan-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .chintan-media {
+            min-height: 420px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .chintan-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .chintan-principles {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 38px;
+        }
+
+        .chintan-principle {
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .86);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .chintan-principle span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            margin-bottom: 20px;
+            border-radius: 999px;
+            color: #fffaf1;
+            background: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 800;
+        }
+
+        .chintan-principle h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.32rem;
+            line-height: 1.45;
+        }
+
+        .chintan-principle p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .chintan-quote {
+            margin: 30px 0 0;
+            padding: clamp(24px, 3vw, 36px);
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .chintan-quote p {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.28rem, 2vw, 1.72rem);
+            line-height: 1.7;
+            font-weight: 700;
+        }
+
+        .chintan-closing-text {
+            max-width: 940px;
+            margin: 0 auto 30px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.2rem, 2vw, 1.65rem);
+            line-height: 1.9;
+        }
+
+        .chintan-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        @media (max-width: 980px) {
+            .chintan-hero {
+                min-height: auto;
+                padding-top: 132px;
+            }
+
+            .chintan-grid,
+            .chintan-grid--reverse {
+                grid-template-columns: 1fr;
+            }
+
+            .chintan-grid--reverse .chintan-media {
+                order: 0;
+            }
+
+            .chintan-principles {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .chintan-hero {
+                padding-top: 118px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
+                    url("/assets/images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
+            }
+
+            .chintan-principles {
+                grid-template-columns: 1fr;
+            }
+
+            .chintan-media,
+            .chintan-media img {
+                min-height: 300px;
+            }
+        }

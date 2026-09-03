@@ -1,0 +1,52 @@
+{
+  "_note": "Footer content for both languages. Broken targets from the old footer are corrected here (activities.html -> /nishkam-karm-sadhna.html, contact.html -> /sampark.html). The 'English Website' link is emitted only when locales.en.enabled is true in site.json.",
+
+  "intro": {
+    "actions": [
+      { "label": { "hi": "साधना को जानें", "en": "Explore the practice" }, "href": "/buddhi-vivek-yog-sadhna.html", "primary": true },
+      { "label": { "hi": "सेवा कार्य देखें", "en": "See the seva work" }, "href": "/nishkam-karm-sadhna.html" }
+    ],
+    "visit": {
+      "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" },
+      "href": "/sampark.html#visit",
+      "image": "/assets/images/manidweep-office-footer.jpg",
+      "imageAlt": { "hi": "शास्त्री नगर, जोधपुर स्थित मणिद्वीप", "en": "Manidweep, Shastri Nagar, Jodhpur" }
+    }
+  },
+
+  "groups": [
+    {
+      "heading": { "hi": "जानिए", "en": "Discover" },
+      "links": [
+        { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/index.html#mission" },
+        { "label": { "hi": "भैया जी", "en": "Bhaiyaji" }, "href": "/index.html#bhaiyaji" },
+        { "label": { "hi": "आध्यात्मिक परम्परा", "en": "The lineage" }, "href": "/index.html#lineage" },
+        { "label": { "hi": "मणिद्वीप", "en": "Manidweep" }, "href": "/index.html#manidweep" }
+      ]
+    },
+    {
+      "heading": { "hi": "दिव्य ज्ञान", "en": "Divine Knowledge" },
+      "links": [
+        { "label": { "hi": "मृत्यु के बाद का अलौकिक संसार", "en": "The book" }, "href": "/index.html#divya-gyan" },
+        { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/index.html#buddhi-vivek" },
+        { "label": { "hi": "युग परिवर्तन का सूत्रपात", "en": "Chakra Dharan" }, "href": "/index.html#yug-parivartan" }
+      ]
+    },
+    {
+      "heading": { "hi": "और देखें", "en": "More" },
+      "links": [
+        { "label": { "hi": "मानव सेवा कार्य", "en": "Seva work" }, "href": "/nishkam-karm-sadhna.html" },
+        { "label": { "hi": "अनुभव एवं विचार", "en": "Experiences & reflections" }, "href": "/testimonials.html" },
+        { "label": { "hi": "चित्र दीर्घा", "en": "Gallery" }, "href": "/gallery.html" }
+      ]
+    }
+  ],
+
+  "contactHeading": { "hi": "सम्पर्क एवं आगमन", "en": "Contact & visiting" },
+  "mapLink": { "label": { "hi": "आने का मार्ग देखें", "en": "Get directions" }, "href": "/sampark.html#visit" },
+
+  "copyright": {
+    "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन। सर्वाधिकार सुरक्षित।",
+    "en": "Yugpravartak Shri Nandkishore Sharda Mission. All rights reserved."
+  }
+}

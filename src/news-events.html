@@ -1,0 +1,61 @@
+---
+layout: base.njk
+title: "समाचार एवं कार्यक्रम | मणिद्वीप अध्यात्म परिवार"
+description: "मणिद्वीप अध्यात्म परिवार के समाचार, आगामी कार्यक्रम, हालिया गतिविधियाँ और समाचार कटिंग संग्रह।"
+bodyClass: "hindi-home news-events-page"
+extraCss: ["/assets/css/news-events.css"]
+extraJs: ["/assets/js/news-events.js"]
+---
+<main id="main-content" data-news-events>
+        <section class="news-events-hero">
+            <div class="hi-shell">
+                <span class="hi-kicker">मीडिया</span>
+                <h1>समाचार एवं कार्यक्रम</h1>
+                <p>आगामी कार्यक्रम, हालिया सेवा-गतिविधियाँ और शिक्षा, संस्कार एवं मानव कल्याण की यात्रा से जुड़ी संग्रहित समाचार कटिंग।</p>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--upcoming" aria-labelledby="upcoming-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">आगामी</span>
+                    <h2 id="upcoming-title">आगामी कार्यक्रम</h2>
+                    <p>निकट भविष्य में होने वाले कार्यक्रम और सेवा-गतिविधियाँ।</p>
+                </header>
+                <div class="news-events-grid" data-upcoming-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--recent" aria-labelledby="recent-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">हालिया</span>
+                    <h2 id="recent-title">हालिया गतिविधियाँ</h2>
+                    <p>हाल में सम्पन्न कक्षाओं, उत्सवों और सेवा-कार्यों की संक्षिप्त झलक।</p>
+                </header>
+                <div class="news-events-grid" data-recent-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section" aria-labelledby="clippings-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">समाचार संग्रह</span>
+                    <h2 id="clippings-title">समाचार कटिंग</h2>
+                    <p>मिशन की सार्वजनिक यात्रा से जुड़ी समाचार कटिंग, दृश्य अभिलेख के रूप में संकलित।</p>
+                </header>
+                <div class="news-range-tabs" data-news-ranges aria-label="समाचार कटिंग वर्षानुसार"></div>
+                <div class="news-clips-grid" data-news-clippings></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="news-modal" data-news-modal role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+        <div class="news-modal__dialog">
+            <div class="news-modal__head">
+                <h2 class="news-modal__title" id="news-modal-title" data-news-modal-title></h2>
+                <button class="news-modal__close" type="button" data-news-close aria-label="बन्द करें">×</button>
+            </div>
+            <div class="news-modal__body"><img data-news-modal-image alt=""></div>
+        </div>
+    </div>

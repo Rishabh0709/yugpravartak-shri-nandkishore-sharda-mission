@@ -1,0 +1,53 @@
+{
+  "_note": "Single source of truth for headline impact figures. Confirmed with the trust owner on 2026-09: the combined figure is girls + boys through FY2025-26. Do NOT hard-code these numbers in any page; reference this file. The richer per-stream data still lives in src/data/impact-data.json (detailed impact page); keep its top-line values in sync with these.",
+
+  "asOf": "2026-03-31",
+  "asOfLabel": {
+    "hi": "31 मार्च 2026 तक (संचयी)",
+    "en": "cumulative, as of 31 March 2026"
+  },
+
+  "metrics": {
+    "studentsCombined": {
+      "display": { "hi": "8,630+", "en": "8,630+" },
+      "label": { "hi": "विद्यार्थियों को शिक्षा सहयोग", "en": "students supported through education" },
+      "scope": "girls + boys, since 1996"
+    },
+    "scholarshipCombined": {
+      "display": { "hi": "₹6.72 करोड़+", "en": "₹6.72 Cr+" },
+      "label": { "hi": "छात्रवृत्ति सहायता", "en": "scholarship assistance" },
+      "scope": "girls + boys, since 1996"
+    },
+    "studentsGirls": {
+      "display": { "hi": "8,000+", "en": "8,000+" },
+      "label": { "hi": "लाभान्वित बालिकाएँ", "en": "girls supported" },
+      "scope": "Swami Vivekanand Students' Welfare Charitable Trust + Maa Shardamani Trust"
+    },
+    "scholarshipGirls": {
+      "display": { "hi": "₹6.14 करोड़+", "en": "₹6.14 Cr+" },
+      "label": { "hi": "बालिका छात्रवृत्ति सहायता", "en": "scholarship assistance for girls" }
+    },
+    "studentsBoys": {
+      "display": { "hi": "630+", "en": "630+" },
+      "label": { "hi": "लाभान्वित बालक", "en": "boys supported" },
+      "scope": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra"
+    },
+    "scholarshipBoys": {
+      "display": { "hi": "₹57 लाख+", "en": "₹57 L+" },
+      "label": { "hi": "बालक छात्रवृत्ति सहायता", "en": "scholarship assistance for boys" }
+    },
+    "familyAid": {
+      "display": { "hi": "₹1.07 करोड़+", "en": "₹1.07 Cr+" },
+      "label": { "hi": "खाद्यान्न एवं पारिवारिक सहायता", "en": "food & family assistance" }
+    },
+    "familiesMonthly": {
+      "display": { "hi": "लगभग 300", "en": "~300" },
+      "label": { "hi": "परिवारों को मासिक सहयोग", "en": "families supported monthly" }
+    },
+    "yearsOfService": {
+      "display": { "hi": "30 वर्ष", "en": "30 years" },
+      "label": { "hi": "निरन्तर जमीनी सेवा", "en": "of continuous grassroots service" },
+      "scope": "since 1996"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4dfc0">
+
+    <title>{{ title if title else site.name[locale] }}</title>
+    <meta name="description" content="{{ description if description else site.descriptionDefault[locale] }}">
+    <link rel="canonical" href="{{ site.origin }}{{ page.url }}">
+
+    {#- hreflang: activate the 'en' line when site.locales.en.enabled becomes true -#}
+    <link rel="alternate" hreflang="hi" href="{{ site.origin }}{{ page.url }}">
+    {%- if site.locales.en.enabled %}
+    <link rel="alternate" hreflang="en" href="{{ site.origin }}/en{{ page.url }}">
+    {%- endif %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.origin }}{{ page.url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{{ L.ogLocale }}">
+    <meta property="og:site_name" content="{{ site.shortName[locale] }}">
+    <meta property="og:title" content="{{ title if title else site.name[locale] }}">
+    <meta property="og:description" content="{{ description if description else site.descriptionDefault[locale] }}">
+    <meta property="og:url" content="{{ site.origin }}{{ page.url }}">
+    {#- TODO: replace with a purpose-made 1200x630 share image at /assets/images/og/default.jpg -#}
+    <meta property="og:image" content="{{ site.origin }}{{ ogImage if ogImage else '/assets/images/logo.png' }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/home-hindi.css">
+    {%- for href in extraCss %}
+    <link rel="stylesheet" href="{{ href }}">
+    {%- endfor %}
+
+    <script>window.__BASEURL__ = "{{ '/' | url }}";</script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": {{ site.name[locale] | dump | safe }},
+      "alternateName": {{ site.shortName[locale] | dump | safe }},
+      "url": {{ site.origin | dump | safe }},
+      "foundingDate": "{{ site.serviceSince }}",
+      "telephone": {{ site.contact.phoneRaw | dump | safe }},
+      "email": {{ site.contact.email | dump | safe }},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.address.street | dump | safe }},
+        "addressLocality": {{ site.address.locality | dump | safe }},
+        "addressRegion": {{ site.address.region | dump | safe }},
+        "postalCode": {{ site.address.postalCode | dump | safe }},
+        "addressCountry": {{ site.address.country | dump | safe }}
+      }
+    }
+    </script>

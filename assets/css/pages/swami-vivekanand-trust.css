@@ -1,0 +1,280 @@
+.vivekanand-page {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 44%, #fffaf1 100%);
+            color: var(--hi-ink);
+        }
+
+        .vivekanand-hero {
+            position: relative;
+            min-height: 720px;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(150px, 17vh, 205px) 0 90px;
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .86) 44%, rgba(255, 244, 225, .5) 76%, rgba(255, 244, 225, .16) 100%),
+                url("/assets/images/svswct.png") center / cover no-repeat;
+        }
+
+        .vivekanand-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 160px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .vivekanand-hero__content {
+            position: relative;
+            z-index: 1;
+            width: min(820px, 62vw);
+        }
+
+        .vivekanand-hero h1 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2.75rem, 5.05vw, 5.75rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .vivekanand-hero__lead {
+            max-width: 760px;
+            margin: 0 0 28px;
+            color: #5b4a41;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.18rem, 1.8vw, 1.6rem);
+            line-height: 1.9;
+        }
+
+        .vivekanand-hero__meta,
+        .vivekanand-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .vivekanand-hero__meta li,
+        .vivekanand-stat {
+            padding: 18px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 16px 40px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-hero__meta strong,
+        .vivekanand-stat strong {
+            display: block;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+            line-height: 1.12;
+        }
+
+        .vivekanand-hero__meta span,
+        .vivekanand-stat span {
+            display: block;
+            margin-top: 8px;
+            color: #67584e;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .vivekanand-section {
+            padding: clamp(76px, 9vw, 120px) 0;
+        }
+
+        .vivekanand-section--intro {
+            padding-top: 42px;
+        }
+
+        .vivekanand-section--soft {
+            background:
+                radial-gradient(circle at 16% 14%, rgba(222, 238, 236, .68), transparent 32%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
+        }
+
+        .vivekanand-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+            gap: clamp(38px, 6vw, 82px);
+            align-items: center;
+        }
+
+        .vivekanand-grid--reverse .vivekanand-media {
+            order: 2;
+        }
+
+        .vivekanand-copy h2 {
+            margin: 0 0 20px;
+            color: var(--hi-ink);
+            font-size: clamp(2rem, 3.45vw, 3.9rem);
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .vivekanand-copy p {
+            margin: 0 0 18px;
+            color: #5b4a41;
+            font-size: 1.08rem;
+            line-height: 1.95;
+        }
+
+        .vivekanand-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .vivekanand-media {
+            overflow: hidden;
+            min-height: 420px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #f7ead8;
+            box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
+        }
+
+        .vivekanand-media img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+        .vivekanand-sankalp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 38px;
+        }
+
+        .vivekanand-sankalp {
+            padding: 28px;
+            border: 1px solid rgba(198, 148, 53, .2);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .88);
+            box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-sankalp span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            border-radius: 999px;
+            color: #fffaf1;
+            background: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 800;
+        }
+
+        .vivekanand-sankalp h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-size: 1.32rem;
+            line-height: 1.45;
+        }
+
+        .vivekanand-sankalp p {
+            margin: 0;
+            color: #62534a;
+            line-height: 1.75;
+        }
+
+        .vivekanand-reach {
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+        }
+
+        .vivekanand-reach .hi-section-heading {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        .vivekanand-stats {
+            margin-top: 34px;
+        }
+
+        .vivekanand-quote {
+            margin-top: 34px;
+            padding: clamp(24px, 3vw, 36px);
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .84);
+            box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
+        }
+
+        .vivekanand-quote p {
+            margin: 0;
+            color: var(--hi-ink);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.24rem, 1.9vw, 1.65rem);
+            font-weight: 700;
+            line-height: 1.75;
+        }
+
+        .vivekanand-closing {
+            padding: clamp(80px, 10vw, 130px) 0;
+            text-align: center;
+            background:
+                linear-gradient(180deg, rgba(255, 250, 241, .7), rgba(255, 250, 241, .96)),
+                url("/assets/images/gallery/scholarship-distribution/15-card.webp") center / cover no-repeat;
+        }
+
+        .vivekanand-closing .hi-section-heading {
+            max-width: 920px;
+            margin-inline: auto;
+        }
+
+        .vivekanand-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 980px) {
+            .vivekanand-hero {
+                min-height: auto;
+                padding-top: 132px;
+            }
+
+            .vivekanand-hero__content {
+                width: min(100%, 760px);
+            }
+
+            .vivekanand-grid,
+            .vivekanand-grid--reverse {
+                grid-template-columns: 1fr;
+            }
+
+            .vivekanand-grid--reverse .vivekanand-media {
+                order: 0;
+            }
+
+            .vivekanand-sankalp-grid,
+            .vivekanand-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .vivekanand-hero {
+                padding-top: 118px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
+                    url("/assets/images/svswct.png") center / cover no-repeat;
+            }
+
+            .vivekanand-media,
+            .vivekanand-media img {
+                min-height: 300px;
+            }
+        }
