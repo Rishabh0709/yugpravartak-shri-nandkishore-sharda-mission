@@ -1,7 +1,7 @@
 (function () {
     const state = {
         language: document.documentElement.lang === "hi" ? "hi" : "en",
-        root: document.documentElement.lang === "hi" ? "../" : ""
+        root: ""
     };
 
     const copy = {
@@ -16,7 +16,7 @@
         if (!page) return;
 
         try {
-            const response = await fetch(`${state.root}assets/json/news-events.json`);
+            const response = await fetch(`data/news-events.json`);
             if (!response.ok) throw new Error(`Unable to load news/events: ${response.status}`);
             const data = await response.json();
             renderEvents("[data-upcoming-events]", data.upcoming || []);

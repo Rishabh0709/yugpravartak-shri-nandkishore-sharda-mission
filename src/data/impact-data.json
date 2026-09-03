@@ -1,0 +1,388 @@
+{
+  "verifiedThrough": "2026-03-31",
+  "streams": [
+    {
+      "id": "school-girls",
+      "since": "1996",
+      "theme": "education",
+      "summaryValue": {
+        "en": "₹4.51 Cr+",
+        "hi": "₹4.51 करोड़+"
+      },
+      "kpis": [
+        {
+          "value": "37,381",
+          "en": "Cumulative scholarship instances",
+          "hi": "संचयी छात्रवृत्ति उदाहरण"
+        },
+        {
+          "value": {
+            "en": "₹4.51 Cr+",
+            "hi": "₹4.51 करोड़+"
+          },
+          "en": "Scholarship assistance",
+          "hi": "छात्रवृत्ति सहायता"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "School education for girls",
+          "summary": "37,381 cumulative scholarship instances recorded since 1996, joined with Sanskar and sustained mentorship.",
+          "eyebrow": "Education · Since 1996",
+          "description": "Administered through the Swami Vivekanand Students’ Welfare Charitable Trust.",
+          "footer": "The first milestone consolidates the Trust’s first eight years; the final milestone covers two years; the intervening milestones cover four years.",
+          "linkText": "Explore the Trust",
+          "linkHref": "swami-vivekanand-trust.html"
+        },
+        "hi": {
+          "title": "बालिकाओं की विद्यालयी शिक्षा",
+          "summary": "1996 से 37,381 संचयी छात्रवृत्ति उदाहरण, संस्कार और सतत मार्गदर्शन के साथ।",
+          "eyebrow": "शिक्षा · 1996 से",
+          "description": "स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट के माध्यम से संचालित।",
+          "footer": "पहला माइलस्टोन ट्रस्ट के शुरुआती आठ वर्षों को जोड़ता है; अंतिम माइलस्टोन दो वर्षों का है; बीच के माइलस्टोन चार-चार वर्षों के हैं।",
+          "linkText": "ट्रस्ट के बारे में पढ़ें",
+          "linkHref": "swami-vivekanand-trust.html"
+        }
+      },
+      "charts": [
+        {
+          "type": "count",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship instances",
+              "subtitle": "Cumulative records by reporting milestone",
+              "aria": "Cumulative school scholarship instances rose from 11,557 in 2004 to 37,381 in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति उदाहरण",
+              "subtitle": "रिपोर्टिंग माइलस्टोन के अनुसार संचयी रिकॉर्ड",
+              "aria": "बालिकाओं की विद्यालयी छात्रवृत्ति के संचयी उदाहरण 2004 में 11,557 से 2026 में 37,381 हुए"
+            }
+          },
+          "points": [
+            { "period": "1996–04", "value": "11,557", "bar": 31 },
+            { "period": "2004–08", "value": "15,453", "bar": 41 },
+            { "period": "2008–12", "value": "18,993", "bar": 51 },
+            { "period": "2012–16", "value": "22,453", "bar": 60 },
+            { "period": "2016–20", "value": "27,032", "bar": 72 },
+            { "period": "2020–24", "value": "33,233", "bar": 89 },
+            { "period": "2024–26", "value": "37,381", "bar": 100, "final": true }
+          ]
+        },
+        {
+          "type": "amount",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship assistance",
+              "subtitle": "Cumulative amount, shown in ₹ lakh",
+              "aria": "Cumulative school scholarship assistance rose from 58.58 lakh rupees in 2004 to 450.84 lakh rupees in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति सहायता राशि",
+              "subtitle": "संचयी राशि, ₹ लाख में",
+              "aria": "बालिकाओं की विद्यालयी छात्रवृत्ति सहायता राशि 2004 में 58.58 लाख से 2026 में 450.84 लाख हुई"
+            }
+          },
+          "points": [
+            { "period": "1996–04", "value": "58.58", "bar": 13 },
+            { "period": "2004–08", "value": "80.12", "bar": 18 },
+            { "period": "2008–12", "value": "105.42", "bar": 23 },
+            { "period": "2012–16", "value": "152.80", "bar": 34 },
+            { "period": "2016–20", "value": "229.68", "bar": 51 },
+            { "period": "2020–24", "value": "347.75", "bar": 77 },
+            { "period": "2024–26", "value": "450.84", "bar": 100, "final": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "higher-women",
+      "since": "2001",
+      "theme": "higher-education",
+      "summaryValue": {
+        "en": "₹1.64 Cr+",
+        "hi": "₹1.64 करोड़+"
+      },
+      "kpis": [
+        {
+          "value": "3,405",
+          "en": "Cumulative scholarship instances",
+          "hi": "संचयी छात्रवृत्ति उदाहरण"
+        },
+        {
+          "value": {
+            "en": "₹1.64 Cr+",
+            "hi": "₹1.64 करोड़+"
+          },
+          "en": "Scholarship assistance",
+          "hi": "छात्रवृत्ति सहायता"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Higher education for young women",
+          "summary": "3,405 cumulative scholarship instances supporting progress into college, professional and technical education.",
+          "eyebrow": "Higher Education · Since 2001",
+          "description": "Administered through Maa Shardamani Trust.",
+          "footer": "The final milestone covers one year; the earlier milestones cover four years.",
+          "linkText": "Explore the Trust",
+          "linkHref": "maa-shardamani-trust.html"
+        },
+        "hi": {
+          "title": "छात्राओं की उच्च शिक्षा",
+          "summary": "कॉलेज, व्यावसायिक और तकनीकी शिक्षा के लिए 3,405 संचयी छात्रवृत्ति उदाहरण।",
+          "eyebrow": "उच्च शिक्षा · 2001 से",
+          "description": "माँ शारदामणि ट्रस्ट के माध्यम से संचालित।",
+          "footer": "अंतिम माइलस्टोन एक वर्ष का है; इससे पहले के माइलस्टोन चार-चार वर्षों के हैं।",
+          "linkText": "ट्रस्ट के बारे में पढ़ें",
+          "linkHref": "maa-shardamani-trust.html"
+        }
+      },
+      "charts": [
+        {
+          "type": "count",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship instances",
+              "subtitle": "Cumulative records by reporting milestone",
+              "aria": "Cumulative higher education scholarship instances rose from 105 in 2005 to 3,405 in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति उदाहरण",
+              "subtitle": "रिपोर्टिंग माइलस्टोन के अनुसार संचयी रिकॉर्ड",
+              "aria": "छात्राओं की उच्च शिक्षा छात्रवृत्ति के संचयी उदाहरण 2005 में 105 से 2026 में 3,405 हुए"
+            }
+          },
+          "points": [
+            { "period": "2001–05", "value": "105", "bar": 3 },
+            { "period": "2005–09", "value": "171", "bar": 5 },
+            { "period": "2009–13", "value": "640", "bar": 19 },
+            { "period": "2013–17", "value": "1,417", "bar": 42 },
+            { "period": "2017–21", "value": "2,240", "bar": 66 },
+            { "period": "2021–25", "value": "3,109", "bar": 91 },
+            { "period": "2025–26", "value": "3,405", "bar": 100, "final": true }
+          ]
+        },
+        {
+          "type": "amount",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship assistance",
+              "subtitle": "Cumulative amount, shown in ₹ lakh",
+              "aria": "Cumulative higher education scholarship assistance rose from 1.33 lakh rupees in 2005 to 164.56 lakh rupees in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति सहायता राशि",
+              "subtitle": "संचयी राशि, ₹ लाख में",
+              "aria": "छात्राओं की उच्च शिक्षा छात्रवृत्ति सहायता राशि 2005 में 1.33 लाख से 2026 में 164.56 लाख हुई"
+            }
+          },
+          "points": [
+            { "period": "2001–05", "value": "1.33", "bar": 1 },
+            { "period": "2005–09", "value": "2.77", "bar": 2 },
+            { "period": "2009–13", "value": "11.46", "bar": 7 },
+            { "period": "2013–17", "value": "33.57", "bar": 20 },
+            { "period": "2017–21", "value": "70.29", "bar": 43 },
+            { "period": "2021–25", "value": "141.41", "bar": 86 },
+            { "period": "2025–26", "value": "164.56", "bar": 100, "final": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boys-education",
+      "since": "2012",
+      "theme": "education",
+      "summaryValue": {
+        "en": "₹57 Lakh+",
+        "hi": "₹57 लाख+"
+      },
+      "kpis": [
+        {
+          "value": "631",
+          "en": "Cumulative scholarship instances",
+          "hi": "संचयी छात्रवृत्ति उदाहरण"
+        },
+        {
+          "value": {
+            "en": "₹57.17 Lakh",
+            "hi": "₹57.17 लाख"
+          },
+          "en": "Scholarship assistance",
+          "hi": "छात्रवृत्ति सहायता"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Education support for boys",
+          "summary": "631 cumulative scholarship instances for boys from economically disadvantaged families.",
+          "eyebrow": "Education · Since 2012",
+          "description": "Administered through Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra.",
+          "footer": "All milestones in this record cover two years.",
+          "linkText": "Explore the Trust",
+          "linkHref": "gyanyogi-adhyatm-kendra.html"
+        },
+        "hi": {
+          "title": "बालकों की शिक्षा-सहायता",
+          "summary": "आर्थिक रूप से कमजोर परिवारों के बालकों के लिए 631 संचयी छात्रवृत्ति उदाहरण।",
+          "eyebrow": "शिक्षा · 2012 से",
+          "description": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र के माध्यम से संचालित।",
+          "footer": "इस रिकॉर्ड में सभी माइलस्टोन दो-दो वर्षों के हैं।",
+          "linkText": "ट्रस्ट के बारे में पढ़ें",
+          "linkHref": "gyanyogi-adhyatm-kendra.html"
+        }
+      },
+      "charts": [
+        {
+          "type": "count",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship instances",
+              "subtitle": "Cumulative records by two-year milestone",
+              "aria": "Cumulative boys education scholarship instances rose from 68 in 2014 to 631 in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति उदाहरण",
+              "subtitle": "दो-वर्षीय माइलस्टोन के अनुसार संचयी रिकॉर्ड",
+              "aria": "बालकों की छात्रवृत्ति के संचयी उदाहरण 2014 में 68 से 2026 में 631 हुए"
+            }
+          },
+          "points": [
+            { "period": "2012–14", "value": "68", "bar": 11 },
+            { "period": "2014–16", "value": "144", "bar": 23 },
+            { "period": "2016–18", "value": "263", "bar": 42 },
+            { "period": "2018–20", "value": "362", "bar": 57 },
+            { "period": "2020–22", "value": "456", "bar": 72 },
+            { "period": "2022–24", "value": "532", "bar": 84 },
+            { "period": "2024–26", "value": "631", "bar": 100, "final": true }
+          ]
+        },
+        {
+          "type": "amount",
+          "barsClass": "impact-bars--seven",
+          "content": {
+            "en": {
+              "title": "Scholarship assistance",
+              "subtitle": "Cumulative amount, shown in ₹ lakh",
+              "aria": "Cumulative boys education scholarship assistance rose from 3.50 lakh rupees in 2014 to 57.17 lakh rupees in 2026"
+            },
+            "hi": {
+              "title": "छात्रवृत्ति सहायता राशि",
+              "subtitle": "संचयी राशि, ₹ लाख में",
+              "aria": "बालकों की छात्रवृत्ति सहायता राशि 2014 में 3.50 लाख से 2026 में 57.17 लाख हुई"
+            }
+          },
+          "points": [
+            { "period": "2012–14", "value": "3.50", "bar": 6 },
+            { "period": "2014–16", "value": "8.03", "bar": 14 },
+            { "period": "2016–18", "value": "15.37", "bar": 27 },
+            { "period": "2018–20", "value": "23.31", "bar": 41 },
+            { "period": "2020–22", "value": "30.78", "bar": 54 },
+            { "period": "2022–24", "value": "38.98", "bar": 68 },
+            { "period": "2024–26", "value": "57.17", "bar": 100, "final": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-assistance",
+      "since": "2020",
+      "theme": "family-care",
+      "singleChart": true,
+      "summaryValue": {
+        "en": "₹1.07 Cr+",
+        "hi": "₹1.07 करोड़+"
+      },
+      "kpis": [
+        {
+          "value": "300",
+          "en": "Same families supported monthly",
+          "hi": "उन्हीं परिवारों को मासिक सहायता"
+        },
+        {
+          "value": {
+            "en": "₹1.07 Cr+",
+            "hi": "₹1.07 करोड़+"
+          },
+          "en": "Cumulative food assistance",
+          "hi": "संचयी खाद्यान्न सहायता"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Ration and family assistance",
+          "summary": "Monthly food assistance sustained for the same 300 families with dignity and continuity.",
+          "eyebrow": "Family Care · Since 2020",
+          "description": "Administered through Gyanyogi Shri Nandkishore Sharda Adhyatma Kendra.",
+          "footer": "Figures represent assistance distributed cumulatively since the programme began.",
+          "linkText": "Explore family support",
+          "linkHref": "nishkam-karm-sadhna.html",
+          "continuityTitle": "Continuity matters",
+          "continuityText": "The programme began in 2020 with monthly assistance for 50 families and gradually expanded to 300 families. As families regain stability, they voluntarily make room for others facing greater need."
+        },
+        "hi": {
+          "title": "खाद्यान्न एवं परिवार-सहायता",
+          "summary": "लगातार उन्हीं 300 परिवारों को गरिमा और निरंतरता के साथ मासिक खाद्यान्न सहायता।",
+          "eyebrow": "परिवार-सहायता · 2020 से",
+          "description": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र के माध्यम से संचालित।",
+          "footer": "ये आँकड़े कार्यक्रम प्रारम्भ होने के बाद से वितरित कुल सहायता को दर्शाते हैं।",
+          "linkText": "परिवार-सहायता के बारे में पढ़ें",
+          "linkHref": "gyanyogi-adhyatm-kendra.html",
+          "continuityTitle": "निरंतरता ही सेवा का आधार है",
+          "continuityText": "यह कार्यक्रम 2020 में 50 परिवारों की मासिक सहायता से प्रारम्भ हुआ और धीरे-धीरे 300 परिवारों तक पहुँचा। जिन परिवारों की स्थिति सुधरती है, वे स्वेच्छा से स्थान छोड़ते हैं ताकि अधिक जरूरतमंद परिवारों को सहायता मिल सके।"
+        }
+      },
+      "charts": [
+        {
+          "type": "amount",
+          "barsClass": "impact-bars--six",
+          "content": {
+            "en": {
+              "title": "Food assistance provided",
+              "subtitle": "Cumulative amount, shown in ₹ lakh",
+              "aria": "Cumulative ration assistance rose from 5.02 lakh rupees in 2021 to 107.02 lakh rupees in 2026"
+            },
+            "hi": {
+              "title": "प्रदान की गई खाद्यान्न सहायता",
+              "subtitle": "संचयी राशि, ₹ लाख में",
+              "aria": "खाद्यान्न सहायता राशि 2021 में 5.02 लाख से 2026 में 107.02 लाख हुई"
+            }
+          },
+          "points": [
+            { "period": "2020–21", "value": "5.02", "bar": 5 },
+            { "period": "2021–22", "value": "17.68", "bar": 17 },
+            { "period": "2022–23", "value": "39.40", "bar": 37 },
+            { "period": "2023–24", "value": "56.47", "bar": 53 },
+            { "period": "2024–25", "value": "81.12", "bar": 76 },
+            { "period": "2025–26", "value": "107.02", "bar": 100, "final": true }
+          ]
+        }
+      ]
+    }
+  ],
+  "definition": {
+    "en": {
+      "title": "How to read the student figures",
+      "body": "As of 31 March 2026, student counts represent cumulative instances of scholarship support across reporting periods. A student supported in more than one period may therefore appear more than once; these figures should not be read as unique individuals."
+    },
+    "hi": {
+      "title": "विद्यार्थी-संबंधी आँकड़ों को कैसे पढ़ें",
+      "body": "31 मार्च 2026 तक, विद्यार्थी संख्या रिपोर्टिंग अवधियों में दी गई छात्रवृत्ति-सहायता के संचयी उदाहरणों को दर्शाती है। यदि किसी विद्यार्थी को एक से अधिक अवधि में सहायता मिली है, तो वह एक से अधिक बार गिना जा सकता है; इसलिए इन्हें अद्वितीय व्यक्तियों की संख्या न माना जाए।"
+    }
+  },
+  "labels": {
+    "en": {
+      "summaryLink": "View the detailed record",
+      "loadError": "Impact figures could not be loaded right now."
+    },
+    "hi": {
+      "summaryLink": "विस्तृत विवरण देखें",
+      "loadError": "सेवा-प्रभाव के आँकड़े अभी लोड नहीं हो सके।"
+    }
+  }
+}

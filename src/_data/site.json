@@ -1,0 +1,59 @@
+{
+  "_note": "Single source of truth for identity + contact. On domain switch, change 'origin' to https://www.manidweepjodhpur.org and update ELEVENTY_PATH_PREFIX to / in .eleventy.js and the deploy workflow.",
+
+  "name": {
+    "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन",
+    "en": "Yugpravartak Shri Nandkishore Sharda Mission"
+  },
+  "shortName": {
+    "hi": "मणिद्वीप अध्यात्म परिवार",
+    "en": "Manidweep Adhyatm Parivar"
+  },
+  "tagline": {
+    "hi": "विश्व-बन्धुत्व, विश्व-शान्ति एवं मानव-कल्याण हेतु समर्पित",
+    "en": ""
+  },
+  "descriptionDefault": {
+    "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन — दिव्य ज्ञान, बुद्धि-विवेक योग साधना और निष्काम सेवा के माध्यम से विश्व-बन्धुत्व, विश्व-शान्ति एवं मानव कल्याण की ओर एक आध्यात्मिक यात्रा।",
+    "en": ""
+  },
+
+  "origin": "https://rishabh0709.github.io/yugpravartak-shri-nandkishore-sharda-mission",
+
+  "locales": {
+    "hi": { "path": "", "label": "हिन्दी", "htmlLang": "hi", "ogLocale": "hi_IN", "enabled": true },
+    "en": { "path": "/en", "label": "English", "htmlLang": "en", "ogLocale": "en_IN", "enabled": false }
+  },
+
+  "serviceSince": "1996",
+  "serviceYearsLabel": { "hi": "30 वर्ष निष्काम सेवा", "en": "30 years of service" },
+
+  "contact": {
+    "phoneRaw": "+919414917901",
+    "phoneDisplay": "+91 94149 17901",
+    "email": "kishoreggm@gmail.com",
+    "emailNote": "Replace with info@manidweepjodhpur.org once the domain mailbox is live.",
+    "hours": { "hi": "प्रतिदिन प्रातः 10:00 – रात्रि 8:00", "en": "Daily 10:00 am – 8:00 pm" }
+  },
+
+  "address": {
+    "full": {
+      "hi": "‘मणिद्वीप’, ए-183 शास्त्री नगर, लाचू मेमोरियल कॉलेज के पास, जोधपुर, राजस्थान – 342001",
+      "en": "'Manidweep', A-183 Shastri Nagar, near Lachoo Memorial College, Jodhpur, Rajasthan – 342001"
+    },
+    "street": "A-183 Shastri Nagar, near Lachoo Memorial College",
+    "locality": "Jodhpur",
+    "region": "Rajasthan",
+    "postalCode": "342001",
+    "country": "IN",
+    "geo": { "lat": null, "lng": null },
+    "mapsUrl": ""
+  },
+
+  "social": {
+    "youtube": "",
+    "instagram": "",
+    "facebook": "",
+    "whatsappChannel": ""
+  }
+}

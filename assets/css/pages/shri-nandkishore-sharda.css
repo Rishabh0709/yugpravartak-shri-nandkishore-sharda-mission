@@ -1,0 +1,335 @@
+.bhaiya-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 46%, #fffaf1 100%);
+        }
+
+        .bhaiya-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(92px, 10vw, 138px);
+            padding-bottom: clamp(54px, 7vw, 96px);
+            background:
+                radial-gradient(circle at 78% 14%, rgba(198, 148, 53, .22), transparent 28%),
+                radial-gradient(circle at 8% 26%, rgba(221, 236, 240, .68), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f4e6d2 54%, #e7f0ed 100%);
+        }
+
+        .bhaiya-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 84px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .bhaiya-hero__grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
+            gap: clamp(32px, 6vw, 78px);
+            align-items: center;
+        }
+
+        .bhaiya-hero h1 {
+            max-width: 980px;
+            margin: 12px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3.1rem, 6.6vw, 6.7rem);
+            line-height: 1.04;
+            letter-spacing: 0;
+        }
+
+        .bhaiya-hero__lead {
+            max-width: 780px;
+            color: #69574f;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.18rem, 1.85vw, 1.55rem);
+            font-weight: 500;
+            line-height: 1.78;
+        }
+
+        .bhaiya-quote-card {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .35);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
+        }
+
+        .bhaiya-quote-card img {
+            display: block;
+            width: 100%;
+            height: clamp(380px, 52vw, 640px);
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .bhaiya-quote-card figcaption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 84px 26px 26px;
+            color: #fffaf1;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.24rem, 2vw, 1.72rem);
+            font-weight: 700;
+            line-height: 1.55;
+            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
+        }
+
+        .bhaiya-facts {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .bhaiya-facts__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            padding: 16px;
+            border: 1px solid rgba(121, 43, 42, .12);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .92);
+            box-shadow: 0 18px 54px rgba(63, 45, 37, .1);
+        }
+
+        .bhaiya-fact {
+            padding: 18px 18px 16px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .58), rgba(255, 250, 241, .92));
+        }
+
+        .bhaiya-fact span {
+            display: block;
+            margin-bottom: 7px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 800;
+        }
+
+        .bhaiya-fact strong {
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.1rem;
+            line-height: 1.45;
+        }
+
+        .bhaiya-nav {
+            position: sticky;
+            z-index: 5;
+            top: 0;
+            padding: 12px 0;
+            border-block: 1px solid rgba(121, 43, 42, .1);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .bhaiya-nav__links {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .bhaiya-nav__links a {
+            flex: 0 0 auto;
+            padding: 10px 15px;
+            border: 1px solid rgba(121, 43, 42, .14);
+            border-radius: 999px;
+            color: #5e4742;
+            background: rgba(255, 252, 246, .74);
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .bhaiya-journey {
+            overflow: hidden;
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .bhaiya-journey--birth { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .bhaiya-journey--awakening { background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 58%, #eaf1ee 100%); }
+        .bhaiya-journey--darshan { background: radial-gradient(circle at 70% 16%, rgba(198, 148, 53, .2), transparent 30%), linear-gradient(180deg, #fff9ec 0%, #f3e5cf 100%); }
+        .bhaiya-journey--wisdom { background: linear-gradient(135deg, #e7f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+        .bhaiya-journey--service { background: linear-gradient(180deg, #fffaf1 0%, #f4eadb 100%); }
+        .bhaiya-journey--sadhna { background: radial-gradient(circle at 18% 18%, rgba(222, 238, 236, .7), transparent 32%), linear-gradient(135deg, #fffaf1 0%, #f6e6cd 100%); }
+        .bhaiya-journey--legacy { background: linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%); }
+
+        .bhaiya-journey__grid {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 70px);
+            align-items: center;
+        }
+
+        .bhaiya-journey:nth-of-type(even) .bhaiya-journey__media {
+            order: 2;
+        }
+
+        .bhaiya-journey__media {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .26);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
+        }
+
+        .bhaiya-journey__media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 38vw, 520px);
+            object-fit: cover;
+        }
+
+        .bhaiya-journey__media figcaption {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            left: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: #fffaf1;
+            background: rgba(41, 29, 37, .74);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .bhaiya-journey__media--book {
+            display: grid;
+            place-items: center;
+            padding: clamp(12px, 2vw, 24px);
+            border-color: transparent;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .bhaiya-journey__media--book img {
+            width: min(100%, 380px);
+            height: clamp(430px, 46vw, 610px);
+            object-fit: contain;
+            filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .24));
+        }
+
+        .bhaiya-journey__media--book figcaption {
+            position: static;
+            justify-self: stretch;
+            margin-top: 16px;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            color: #3c243d;
+            background: rgba(255, 250, 241, .86);
+            text-align: center;
+        }
+
+        .bhaiya-journey__copy {
+            max-width: 760px;
+        }
+
+        .bhaiya-journey__copy h2 {
+            margin: 10px 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .bhaiya-journey__copy p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.03rem, 1.34vw, 1.18rem);
+            line-height: 1.9;
+        }
+
+        .bhaiya-journey__copy strong {
+            color: #8a2f2d;
+        }
+
+        .bhaiya-note {
+            margin-top: 24px;
+            padding: 22px 24px;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            color: #4c3a36;
+            background: rgba(255, 252, 246, .78);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.1rem, 1.6vw, 1.34rem);
+            font-weight: 700;
+            line-height: 1.72;
+        }
+
+        .bhaiya-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .bhaiya-closing .hi-section-heading {
+            max-width: 980px;
+        }
+
+        @media (max-width: 980px) {
+            .bhaiya-hero__grid,
+            .bhaiya-journey__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bhaiya-journey:nth-of-type(even) .bhaiya-journey__media {
+                order: 0;
+            }
+
+            .bhaiya-facts__grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .bhaiya-hero {
+                padding-top: 126px;
+            }
+
+            .bhaiya-hero h1 {
+                font-size: clamp(2.65rem, 13vw, 4.2rem);
+            }
+
+            .bhaiya-facts {
+                margin-top: 0;
+            }
+
+            .bhaiya-facts__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bhaiya-quote-card img,
+            .bhaiya-journey__media img {
+                height: 360px;
+            }
+
+            .bhaiya-journey__media--book {
+                padding: 22px;
+            }
+
+            .bhaiya-journey__media--book img {
+                width: min(100%, 300px);
+                height: min(70vh, 430px);
+            }
+
+            .bhaiya-journey__media figcaption {
+                position: static;
+                border-radius: 0;
+            }
+
+            .bhaiya-journey__media--book figcaption {
+                border-radius: 8px;
+            }
+        }

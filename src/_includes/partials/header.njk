@@ -1,0 +1,60 @@
+{%- set pfx = "/en" if locale == "en" else "" -%}
+<header id="header" class="site-header">
+    <div class="container header-grid">
+        <a href="{{ pfx }}/index.html" class="site-brand" aria-label="{{ 'मुख्य पृष्ठ' if locale == 'hi' else 'Home' }}">
+            <img class="site-brand-logo" src="/assets/images/logo.png" alt="" width="120" height="120">
+        </a>
+
+        <div class="header-right">
+            <div class="header-row header-row-bottom">
+                <button class="nav-toggle" type="button" aria-label="{{ 'मुख्य मेनू खोलें' if locale == 'hi' else 'Open menu' }}" aria-expanded="false" aria-controls="site-navigation">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav id="site-navigation" class="site-nav" aria-label="{{ 'मुख्य नेविगेशन' if locale == 'hi' else 'Main navigation' }}">
+                    <ul class="nav-list">
+                        {%- for item in navigation.items %}
+                        {%- if item.href %}
+                        <li class="nav-item"><a href="{{ pfx }}{{ item.href }}">{{ item.label[locale] }}</a></li>
+                        {%- else %}
+                        <li class="nav-item has-submenu">
+                            <button class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="nav-submenu-{{ loop.index }}">
+                                <span>{{ item.label[locale] }}</span><span class="nav-chevron" aria-hidden="true"></span>
+                            </button>
+                            <div class="nav-submenu nav-submenu--about" id="nav-submenu-{{ loop.index }}">
+                                <div class="nav-submenu-panel">
+                                    {%- for group in item.groups %}
+                                    <div class="nav-submenu-group">
+                                        {%- if group.label %}<span class="nav-submenu-label">{{ group.label[locale] }}</span>{% endif %}
+                                        {%- for link in group.links %}
+                                        <a href="{{ pfx }}{{ link.href }}">{{ link.label[locale] }}</a>
+                                        {%- endfor %}
+                                    </div>
+                                    {%- endfor %}
+                                </div>
+                            </div>
+                        </li>
+                        {%- endif %}
+                        {%- endfor %}
+
+                        {%- if site.locales.en.enabled %}
+                        <li class="nav-item nav-item--language">
+                            <details class="hi-language-menu">
+                                <summary aria-label="{{ 'भाषा चुनें' if locale == 'hi' else 'Choose language' }}">
+                                    <span class="hi-language-menu__current">{{ site.locales[locale].label }}</span>
+                                    <span class="nav-chevron" aria-hidden="true"></span>
+                                </summary>
+                                <div class="hi-language-menu__list" role="list">
+                                    <a href="{{ page.url }}" lang="hi" hreflang="hi"{{ ' class="is-active" aria-current="page"' | safe if locale == "hi" }}>हिन्दी</a>
+                                    <a href="/en{{ page.url }}" lang="en" hreflang="en"{{ ' class="is-active" aria-current="page"' | safe if locale == "en" }}>English</a>
+                                </div>
+                            </details>
+                        </li>
+                        {%- endif %}
+                    </ul>
+                </nav>
+                <button class="nav-overlay" type="button" aria-label="{{ 'मुख्य मेनू बन्द करें' if locale == 'hi' else 'Close menu' }}"></button>
+            </div>
+        </div>
+    </div>
+</header>

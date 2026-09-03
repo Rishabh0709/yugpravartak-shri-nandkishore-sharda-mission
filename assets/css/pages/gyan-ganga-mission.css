@@ -1,0 +1,392 @@
+.gyan-ganga-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 42%, #fffaf1 100%);
+        }
+
+        body.hindi-home.gyan-ganga-page #header-placeholder {
+            position: absolute;
+            z-index: 1000;
+            inset: 0 0 auto;
+            height: 0;
+            background: transparent;
+        }
+
+        body.hindi-home.gyan-ganga-page #header.site-header:not(.is-scrolled),
+        body.hindi-home.gyan-ganga-page .site-header:not(.is-scrolled) {
+            border-bottom-color: transparent;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        body.hindi-home.gyan-ganga-page #header.site-header:not(.is-scrolled) .site-brand-logo,
+        body.hindi-home.gyan-ganga-page .site-header:not(.is-scrolled) .site-brand-logo {
+            background: transparent;
+            box-shadow: none;
+            filter: drop-shadow(0 4px 10px rgba(104, 53, 25, .18));
+        }
+
+        .gyan-ganga-hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(156px, 16vw, 220px) 0 clamp(70px, 8vw, 112px);
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .96) 0%, rgba(255, 250, 241, .88) 45%, rgba(255, 244, 225, .62) 76%),
+                url("/assets/images/gallery/gyan-ganga-mission/03-card.webp") center / cover no-repeat;
+        }
+
+        .gyan-ganga-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 110px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .gyan-ganga-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 940px;
+        }
+
+        .gyan-ganga-hero h1 {
+            margin: 12px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.6vw, 6.35rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .gyan-ganga-hero__lead {
+            max-width: 840px;
+            color: #66534c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.16rem, 1.85vw, 1.56rem);
+            font-weight: 500;
+            line-height: 1.82;
+        }
+
+        .gyan-ganga-hero__facts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1px;
+            max-width: 860px;
+            margin: 34px 0 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(198, 148, 53, .22);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .07);
+        }
+
+        .gyan-ganga-hero__facts li {
+            list-style: none;
+            padding: 20px clamp(16px, 2.3vw, 26px);
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .gyan-ganga-hero__facts strong {
+            display: block;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.35rem, 2.2vw, 2rem);
+            line-height: 1.25;
+        }
+
+        .gyan-ganga-hero__facts span {
+            display: block;
+            margin-top: 6px;
+            color: #66534c;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .gyan-ganga-section {
+            padding-block: clamp(70px, 8vw, 116px);
+        }
+
+        .gyan-ganga-section--soft {
+            background: linear-gradient(135deg, #f6ecdc 0%, #fffaf1 54%, #eaf1ee 100%);
+        }
+
+        .gyan-ganga-split {
+            display: grid;
+            grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+            gap: clamp(28px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .gyan-ganga-media {
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: #fffaf1;
+            box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
+        }
+
+        .gyan-ganga-media img {
+            display: block;
+            width: 100%;
+            min-height: 390px;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-media figcaption {
+            padding: 16px 18px;
+            color: #6a554e;
+            font-size: .94rem;
+            line-height: 1.6;
+        }
+
+        .gyan-ganga-copy h2,
+        .gyan-ganga-band h2,
+        .gyan-ganga-list h2,
+        .gyan-ganga-closing h2 {
+            margin: 0 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+        }
+
+        .gyan-ganga-copy p,
+        .gyan-ganga-band p,
+        .gyan-ganga-list p,
+        .gyan-ganga-closing p {
+            color: #62544c;
+            font-size: 1.04rem;
+            line-height: 1.88;
+        }
+
+        .gyan-ganga-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 26px;
+        }
+
+        .gyan-ganga-note {
+            display: grid;
+            grid-template-columns: minmax(220px, 360px) 1fr;
+            gap: clamp(22px, 4vw, 44px);
+            align-items: center;
+            max-width: 1120px;
+            margin: -28px auto 0;
+            padding: clamp(18px, 3vw, 28px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+        }
+
+        .gyan-ganga-note figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid rgba(123, 43, 39, .18);
+        }
+
+        .gyan-ganga-note img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-note p {
+            margin: 0;
+            color: var(--hi-muted);
+            font-size: clamp(1.03rem, 1.25vw, 1.2rem);
+            line-height: 1.9;
+        }
+
+        .gyan-ganga-support-note {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: clamp(20px, 3vw, 34px);
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(28px, 4vw, 48px);
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(255, 240, 204, .84), rgba(255, 252, 246, .92));
+            box-shadow: 0 18px 52px rgba(112, 73, 33, .08);
+        }
+
+        .gyan-ganga-support-note__icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #f4b64e;
+            color: #4a1818;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .gyan-ganga-support-note h2 {
+            margin: 0 0 8px;
+            color: #8a2f2d;
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            line-height: 1.05;
+        }
+
+        .gyan-ganga-support-note p {
+            max-width: 1020px;
+            margin: 0;
+            color: var(--hi-muted);
+            font-size: clamp(1.08rem, 1.45vw, 1.34rem);
+            line-height: 1.75;
+        }
+
+        .gyan-ganga-support-note strong {
+            color: var(--hi-ink);
+            font-weight: 800;
+        }
+
+        .gyan-ganga-band {
+            text-align: center;
+        }
+
+        .gyan-ganga-card-grid,
+        .gyan-ganga-list-grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .gyan-ganga-card-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .gyan-ganga-list-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .gyan-ganga-card,
+        .gyan-ganga-list-card {
+            padding: 24px 22px;
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .82);
+            box-shadow: 0 16px 42px rgba(63, 45, 37, .06);
+        }
+
+        .gyan-ganga-card span {
+            display: inline-block;
+            margin-bottom: 14px;
+            color: #8a2f2d;
+            font-size: .82rem;
+            font-weight: 900;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .gyan-ganga-card h3,
+        .gyan-ganga-list-card strong {
+            display: block;
+            margin: 0 0 10px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        .gyan-ganga-card p,
+        .gyan-ganga-list-card p {
+            margin: 0;
+            color: #62544c;
+            line-height: 1.8;
+        }
+
+        .gyan-ganga-card,
+        .gyan-ganga-list-card {
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .gyan-ganga-card figure,
+        .gyan-ganga-list-card figure {
+            margin: 0;
+            overflow: hidden;
+            background: #f4e4cc;
+        }
+
+        .gyan-ganga-card img,
+        .gyan-ganga-list-card img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .gyan-ganga-list-card img {
+            height: 170px;
+            object-fit: contain;
+            padding: 8px;
+        }
+
+        .gyan-ganga-card__body,
+        .gyan-ganga-list-card__body {
+            padding: 24px 22px;
+        }
+
+        .gyan-ganga-list-card__body {
+            padding: 20px 20px 22px;
+        }
+
+        .gyan-ganga-reflection {
+            max-width: 920px;
+            margin: 42px auto 0;
+            padding: clamp(24px, 3vw, 36px);
+            border: 1px solid rgba(198, 148, 53, .24);
+            border-radius: 8px;
+            color: var(--hi-ink);
+            background: rgba(255, 252, 246, .76);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.28rem, 2.2vw, 1.92rem);
+            font-weight: 700;
+            line-height: 1.72;
+            text-align: center;
+        }
+
+        .gyan-ganga-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
+                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+        }
+
+        .gyan-ganga-closing p {
+            max-width: 860px;
+            margin-inline: auto;
+        }
+
+        @media (max-width: 980px) {
+            .gyan-ganga-split,
+            .gyan-ganga-card-grid,
+            .gyan-ganga-list-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gyan-ganga-hero__facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .gyan-ganga-hero {
+                padding-top: 126px;
+            }
+
+            .gyan-ganga-media img {
+                min-height: 300px;
+            }
+        }

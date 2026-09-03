@@ -1,0 +1,46 @@
+body.hindi-impact-page {
+            font-family: "Noto Sans Devanagari", sans-serif;
+            background: #fffaf1;
+            color: var(--hi-ink);
+        }
+
+        .hindi-impact-page h1,
+        .hindi-impact-page h2,
+        .hindi-impact-page h3 {
+            font-family: "Noto Serif Devanagari", serif;
+            letter-spacing: 0;
+        }
+
+        .hindi-impact-page .activity-eyebrow,
+        .hindi-impact-page .evidence-breadcrumb,
+        .hindi-impact-page .impact-summary-card a,
+        .hindi-impact-page .impact-record-footer a,
+        .hindi-impact-page .evidence-button {
+            font-family: "Noto Sans Devanagari", sans-serif;
+            letter-spacing: .08em;
+        }
+
+        .hindi-impact-page .impact-hero-copy p,
+        .hindi-impact-page .evidence-heading p,
+        .hindi-impact-page .impact-summary-card p,
+        .hindi-impact-page .impact-record-header p,
+        .hindi-impact-page .impact-record-footer p,
+        .hindi-impact-page .impact-continuity-note p,
+        .hindi-impact-page .impact-definition p,
+        .hindi-impact-page .impact-human-story p,
+        .hindi-impact-page .evidence-closing p {
+            font-family: "Noto Serif Devanagari", serif;
+            line-height: 1.85;
+        }
+
+        .hindi-impact-page .impact-value,
+        .hindi-impact-page .impact-record-kpis strong {
+            font-family: "Noto Serif Devanagari", serif;
+        }
+    
+        .hindi-impact-page .activity-eyebrow {
+            font-family: "Noto Serif Devanagari", serif;
+            font-weight: 600;
+            letter-spacing: 0;
+            text-transform: none;
+        }

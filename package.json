@@ -1,0 +1,16 @@
+{
+  "name": "manidweep-website",
+  "version": "1.0.0",
+  "description": "Yugpravartak Shri Nandkishore Sharda Mission — Manidweep Adhyatm Parivar, Jodhpur",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "build": "eleventy",
+    "build:ghpages": "cross-env ELEVENTY_PATH_PREFIX=/yugpravartak-shri-nandkishore-sharda-mission/ eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "cross-env": "^7.0.3"
+  }
+}

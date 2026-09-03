@@ -1702,7 +1702,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
         padding-top: 130px;
         background-image:
             linear-gradient(180deg, rgba(247, 229, 201, .08) 0%, rgba(247, 229, 201, .5) 46%, rgba(247, 229, 201, .98) 72%, #f4dec0 100%),
-            url("../images/hi-home-hero-background.jpg");
+            url("../images/hi-home-hero-background.png");
         background-position: center, 58% top;
         background-size: cover, cover;
     }

@@ -1,0 +1,448 @@
+.bvys-page {
+            color: var(--hi-ink);
+            background: linear-gradient(180deg, #fffaf1 0%, #f6ead8 44%, #fffaf1 100%);
+        }
+
+        .bvys-hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(118px, 12vw, 166px);
+            padding-bottom: clamp(70px, 9vw, 120px);
+            background:
+                linear-gradient(90deg, rgba(255, 250, 241, .93) 0%, rgba(255, 250, 241, .78) 44%, rgba(255, 250, 241, .34) 74%),
+                url('/assets/images/buddhi-vivek-yog-sadhna-original.jpg') center right / cover no-repeat;
+        }
+
+        .bvys-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 90px;
+            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
+            pointer-events: none;
+        }
+
+        .bvys-hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: min(800px, 58vw);
+        }
+
+        .bvys-hero h1 {
+            margin: 12px 0 18px;
+            color: #4b2e49;
+            font-family: var(--hi-serif);
+            font-size: clamp(3rem, 6.4vw, 6.75rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .bvys-hero__lead {
+            max-width: 740px;
+            color: #66554c;
+            font-family: var(--hi-serif);
+            font-size: clamp(1.14rem, 1.7vw, 1.46rem);
+            font-weight: 600;
+            line-height: 1.84;
+        }
+
+        .bvys-essence {
+            position: relative;
+            z-index: 2;
+            margin-top: -34px;
+        }
+
+        .bvys-essence__grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            padding: 14px;
+            border: 1px solid rgba(121, 43, 42, .13);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .94);
+            box-shadow: 0 24px 70px rgba(63, 45, 37, .12);
+        }
+
+        .bvys-essence-card {
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, rgba(244, 230, 209, .62), rgba(255, 250, 241, .96));
+        }
+
+        .bvys-essence-card span {
+            display: inline-flex;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            color: #fffaf3;
+            border-radius: 999px;
+            background: var(--hi-maroon);
+            font-size: .78rem;
+            font-weight: 900;
+        }
+
+        .bvys-essence-card strong {
+            display: block;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.18rem;
+            line-height: 1.38;
+        }
+
+        .bvys-nav {
+            position: sticky;
+            z-index: 8;
+            top: 82px;
+            padding: 10px 0;
+            border-block: 1px solid rgba(198, 148, 53, .18);
+            background: rgba(255, 250, 241, .9);
+            backdrop-filter: blur(16px);
+        }
+
+        .bvys-nav__links {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .bvys-nav__links a {
+            flex: 0 0 auto;
+            padding: 9px 14px;
+            color: #5f4537;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 999px;
+            background: rgba(255, 252, 246, .72);
+            font-size: .92rem;
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .bvys-nav__links a:hover,
+        .bvys-nav__links a:focus-visible {
+            color: #fffaf3;
+            border-color: transparent;
+            background: var(--hi-maroon);
+        }
+
+        .bvys-section {
+            padding-block: clamp(70px, 8vw, 116px);
+            scroll-margin-top: 136px;
+        }
+
+        .bvys-section--age { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+        .bvys-section--method { background: linear-gradient(135deg, #f7ead8 0%, #fffaf1 52%, #e8f0ed 100%); }
+        .bvys-section--lotus { background: radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 30%), linear-gradient(180deg, #fff8ec 0%, #f5e4ca 100%); }
+        .bvys-section--steps { background: linear-gradient(135deg, #fffaf1 0%, #f3e5cf 54%, #e8f0ed 100%); }
+        .bvys-section--experience { background: linear-gradient(135deg, #e8f0ed 0%, #fffaf1 48%, #f4e1c5 100%); }
+        .bvys-section--places { background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%); }
+
+        .bvys-grid {
+            display: grid;
+            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+            gap: clamp(30px, 6vw, 76px);
+            align-items: center;
+        }
+
+        .bvys-grid--reverse .bvys-media {
+            order: 2;
+        }
+
+        .bvys-media {
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 8px;
+            background: rgba(255, 250, 241, .72);
+            box-shadow: 0 24px 64px rgba(63, 45, 37, .13);
+        }
+
+        .bvys-media img {
+            display: block;
+            width: 100%;
+            height: clamp(330px, 40vw, 560px);
+            object-fit: cover;
+        }
+
+        .bvys-media--symbol {
+            display: grid;
+            place-items: center;
+            padding: clamp(22px, 4vw, 46px);
+            background: radial-gradient(circle at 50% 45%, rgba(198, 148, 53, .16), transparent 36%), rgba(255, 252, 246, .78);
+        }
+
+        .bvys-media--symbol img {
+            width: min(100%, 420px);
+            height: auto;
+            max-height: 520px;
+            object-fit: contain;
+            filter: drop-shadow(0 18px 32px rgba(63, 45, 37, .2));
+        }
+
+        .bvys-media figcaption {
+            padding: 12px 16px 14px;
+            color: #6d5d53;
+            background: rgba(255, 250, 241, .92);
+            font-size: .92rem;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .bvys-copy h2,
+        .bvys-section-heading h2 {
+            margin: 10px 0 20px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(2.1rem, 4.5vw, 4.35rem);
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .bvys-copy p,
+        .bvys-section-heading p {
+            margin: 0 0 16px;
+            color: #62544c;
+            font-size: clamp(1.02rem, 1.28vw, 1.16rem);
+            line-height: 1.9;
+        }
+
+        .bvys-copy strong {
+            color: var(--hi-maroon);
+        }
+
+        .bvys-note {
+            margin-top: 24px;
+            padding: 22px 24px;
+            color: #4f403b;
+            border-left: 4px solid var(--hi-gold);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .8);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.08rem, 1.45vw, 1.3rem);
+            font-weight: 700;
+            line-height: 1.76;
+        }
+
+        .bvys-lotus {
+            display: grid;
+            grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+            gap: clamp(28px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .bvys-lotus__core {
+            padding: clamp(28px, 5vw, 48px);
+            border: 1px solid rgba(198, 148, 53, .28);
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 50% 18%, rgba(221, 236, 240, .74), transparent 34%),
+                linear-gradient(135deg, #fffaf1 0%, #f8ead2 58%, #eef3ee 100%);
+            box-shadow: 0 24px 64px rgba(63, 45, 37, .12);
+            text-align: center;
+        }
+
+        .bvys-lotus__core img {
+            width: min(100%, 300px);
+            margin-bottom: 22px;
+        }
+
+        .bvys-lotus__core h2 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.85rem, 3.2vw, 3rem);
+            line-height: 1.2;
+        }
+
+        .bvys-lotus__core p {
+            margin: 0;
+            color: #67564d;
+            line-height: 1.78;
+        }
+
+        .bvys-flow {
+            display: grid;
+            gap: 12px;
+        }
+
+        .bvys-flow__item {
+            padding: 18px 20px;
+            border: 1px solid rgba(121, 43, 42, .12);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .72);
+        }
+
+        .bvys-flow__item strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--hi-maroon);
+            font-family: var(--hi-serif);
+            font-size: 1.2rem;
+        }
+
+        .bvys-flow__item p {
+            margin: 0;
+            color: #66574e;
+            line-height: 1.72;
+        }
+
+        .bvys-step-grid,
+        .bvys-anubhuti-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .bvys-step-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .bvys-anubhuti-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .bvys-step,
+        .bvys-anubhuti {
+            position: relative;
+            min-height: 260px;
+            padding: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 18px 44px rgba(63, 45, 37, .08);
+        }
+
+        .bvys-step::before,
+        .bvys-anubhuti::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto;
+            height: 5px;
+            background: linear-gradient(90deg, var(--hi-maroon), var(--hi-gold));
+        }
+
+        .bvys-step span,
+        .bvys-anubhuti span {
+            display: inline-flex;
+            margin-bottom: 14px;
+            padding: 5px 10px;
+            color: var(--hi-maroon);
+            border: 1px solid rgba(121, 43, 42, .16);
+            border-radius: 999px;
+            background: rgba(255, 250, 241, .86);
+            font-size: .78rem;
+            font-weight: 900;
+        }
+
+        .bvys-step h3,
+        .bvys-anubhuti h3 {
+            margin: 0 0 12px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.45rem;
+            line-height: 1.35;
+        }
+
+        .bvys-step p,
+        .bvys-anubhuti p {
+            margin: 0;
+            color: #66574e;
+            line-height: 1.76;
+        }
+
+        .bvys-conclusion {
+            padding: clamp(30px, 5vw, 54px);
+            border: 1px solid var(--hi-quote-border);
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 16% 0%, rgba(221, 236, 240, .72), transparent 34%),
+                var(--hi-quote-bg);
+            box-shadow: 0 22px 56px rgba(121, 43, 42, .1);
+            text-align: center;
+        }
+
+        .bvys-conclusion blockquote {
+            max-width: 920px;
+            margin: 0 auto;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.55rem, 3vw, 2.75rem);
+            font-weight: 700;
+            line-height: 1.58;
+        }
+
+        .bvys-closing {
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .18), transparent 36%),
+                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+        }
+
+        .bvys-closing .hi-section-heading {
+            max-width: 1040px;
+        }
+
+        @media (max-width: 980px) {
+            .bvys-hero__content {
+                max-width: 680px;
+            }
+
+            .bvys-essence__grid,
+            .bvys-step-grid,
+            .bvys-anubhuti-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .bvys-grid,
+            .bvys-lotus {
+                grid-template-columns: 1fr;
+            }
+
+            .bvys-grid--reverse .bvys-media {
+                order: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .bvys-hero {
+                padding-top: 128px;
+                background:
+                    linear-gradient(180deg, rgba(255, 250, 241, .86), rgba(255, 250, 241, .74)),
+                    url('/assets/images/buddhi-vivek-yog-sadhna-original.jpg') center top / cover no-repeat;
+            }
+
+            .bvys-hero__content {
+                max-width: 100%;
+            }
+
+            .bvys-hero h1 {
+                font-size: clamp(2.55rem, 12vw, 4.1rem);
+            }
+
+            .bvys-essence {
+                margin-top: 0;
+            }
+
+            .bvys-essence__grid,
+            .bvys-step-grid,
+            .bvys-anubhuti-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bvys-nav {
+                top: 72px;
+                padding: 8px 0;
+            }
+
+            .bvys-section {
+                scroll-margin-top: 126px;
+            }
+
+            .bvys-media img {
+                height: 360px;
+            }
+
+            .bvys-media--symbol img {
+                height: auto;
+            }
+        }

@@ -1,0 +1,70 @@
+{
+  "_note": "The four registered bodies. 'documents' paths point at real PDFs in assets/documents/<id>/legal/. Registration numbers to be filled from the certificates in Phase 5 (Transparency page). 80G for Maa Shardamani Trust not yet supplied.",
+
+  "trusts": [
+    {
+      "id": "swami-vivekanand-trust",
+      "name": {
+        "hi": "स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट",
+        "en": "Swami Vivekanand Students' Welfare Charitable Trust"
+      },
+      "founded": "1996",
+      "purpose": { "hi": "बालिका शिक्षा एवं छात्रवृत्ति, संस्कार", "en": "Girls' education, scholarships and sanskar" },
+      "page": "/swami-vivekanand-trust.html",
+      "donationKey": "swami-vivekanand-trust",
+      "documents": {
+        "12A": "/assets/documents/swami-vivekanand-trust/legal/12A.pdf",
+        "80G": "/assets/documents/swami-vivekanand-trust/legal/80G.pdf",
+        "PAN": "/assets/documents/swami-vivekanand-trust/legal/PAN.pdf",
+        "FCRA": "/assets/documents/swami-vivekanand-trust/legal/FCRA.pdf",
+        "NGO-DARPAN": "/assets/documents/swami-vivekanand-trust/legal/NGO-DARPAN.pdf"
+      },
+      "financialReportsDir": "/assets/documents/swami-vivekanand-trust/financial-reports/",
+      "scholarshipCertificatesDir": "/assets/documents/swami-vivekanand-trust/scholarship-certificates/"
+    },
+    {
+      "id": "maa-shardamani-trust",
+      "name": { "hi": "माँ शारदामणि ट्रस्ट", "en": "Maa Shardamani Trust" },
+      "founded": "",
+      "purpose": { "hi": "उच्च शिक्षा, संस्कार एवं छात्रवृत्ति (बालिका)", "en": "Higher education, sanskar and scholarships for girls" },
+      "page": "/maa-shardamani-trust.html",
+      "donationKey": "maa-shardamani-trust",
+      "documents": {
+        "12A": "/assets/documents/maa-shardamani-trust/legal/12A.pdf",
+        "PAN": "/assets/documents/maa-shardamani-trust/legal/PAN.pdf"
+      }
+    },
+    {
+      "id": "gyanyogi-adhyatm-kendra",
+      "name": {
+        "hi": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र",
+        "en": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra"
+      },
+      "founded": "2010",
+      "purpose": { "hi": "जरूरतमंद बालकों को छात्रवृत्ति एवं मार्गदर्शन", "en": "Scholarships and guidance for boys in need" },
+      "page": "/gyanyogi-adhyatm-kendra.html",
+      "donationKey": "gyanyogi-adhyatm-kendra",
+      "documents": {
+        "12A": "/assets/documents/gyanyogi-adhyatm-kendra/legal/12A.pdf",
+        "80G": "/assets/documents/gyanyogi-adhyatm-kendra/legal/80G.pdf",
+        "PAN": "/assets/documents/gyanyogi-adhyatm-kendra/legal/PAN.pdf"
+      }
+    },
+    {
+      "id": "gyan-ganga-mission",
+      "name": {
+        "hi": "श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन",
+        "en": "Shri Nandkishore Sharda Gyan Ganga Mission"
+      },
+      "founded": "2003",
+      "purpose": { "hi": "सद्साहित्य का प्रकाशन एवं निःशुल्क वितरण", "en": "Publishing and free distribution of spiritual literature" },
+      "page": "/gyan-ganga-mission.html",
+      "donationKey": "gyan-ganga-mission",
+      "documents": {
+        "12A": "/assets/documents/gyan-ganga-mission/legal/12A.pdf",
+        "80G": "/assets/documents/gyan-ganga-mission/legal/80G.pdf",
+        "PAN": "/assets/documents/gyan-ganga-mission/legal/PAN.pdf"
+      }
+    }
+  ]
+}

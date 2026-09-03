@@ -1,0 +1,119 @@
+{
+  "paymentProfiles": {
+    "swami-vivekanand-trust": {
+      "available": true,
+      "trust": "Swami Vivekanand Students’ Welfare Charitable Trust",
+      "bank": {
+        "accountName": "Swami Vivekanand Students’ Welfare Charitable Trust",
+        "bankName": "ICICI Bank",
+        "branch": "Shastri Nagar Branch, Jodhpur",
+        "accountNumber": "683301420518",
+        "ifsc": "ICIC0006833"
+      },
+      "upi": {
+        "id": "merchantaumb100011452@aubank",
+        "payeeName": "Swami Vivekanand Students Welfare Charitable Trust",
+        "currency": "INR",
+        "qrCodeName": "Swami Vivekanand Trust UPI QR",
+        "qrImage": "/assets/images/donation/svswct-upi-qr.png"
+      },
+      "compliance": {
+        "label": "80G approval",
+        "approvalNumber": "AAATS3452LF20218",
+        "documentsUrl": "/transparency.html#swami-vivekanand-trust-records"
+      }
+    },
+  "gyanyogi-adhyatm-kendra": {
+  "available": true,
+  "trust": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
+  "bank": {
+    "accountName": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
+    "bankName": "State Bank of India",
+    "branch": "ENTER BRANCH",
+    "accountNumber": "31666055420",
+    "ifsc": "SBIN0004081"
+  },
+  "upi": {
+    "id": "gsnksak@idfcbank",
+    "payeeName": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
+    "currency": "INR",
+    "qrCodeName": "Adhyatm Kendra UPI QR",
+    "qrImage": "/assets/images/donation/gsnksak-upi-qr.png"
+  },
+  "compliance": {
+    "label": "80G approval",
+    "approvalNumber": "ENTER APPROVAL NUMBER",
+    "documentsUrl": "/transparency.html"
+  }
+},
+"maa-shardamani-trust": {
+  "available": true,
+  "trust": "Maa Shardamani Trust",
+  "bank": {
+    "accountName": "Maa Shardamani Trust",
+    "bankName": "ICICI Bank",
+    "branch": "Shastri Nagar Branch, Jodhpur",
+    "accountNumber": "683301420495",
+    "ifsc": "ICIC0006833"
+  },
+  "upi": {
+    "id": "ENTER_UPI_ID",
+    "payeeName": "Maa Shardamani Trust",
+    "currency": "INR",
+    "qrCodeName": "Maa Shardamani Trust UPI QR",
+    "qrImage": "/assets/images/donation/mst-upi-qr.png"
+  },
+  "compliance": {
+    "label": "80G approval",
+    "approvalNumber": "ENTER APPROVAL NUMBER",
+    "documentsUrl": "/transparency.html"
+  }
+},
+"gyan-ganga-mission": {
+  "available": true,
+  "trust": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
+  "bank": {
+    "accountName": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
+    "bankName": "ICICI Bank",
+    "branch": "Shastri Nagar Branch, Jodhpur",
+    "accountNumber": "683301426725",
+    "ifsc": "ICIC0006833"
+  },
+  "upi": {
+    "id": "ENTER_UPI_ID",
+    "payeeName": "3. Shri Nandkishore Sharada Gyan Ganga Mission",
+    "currency": "INR",
+    "qrCodeName": "Gyan Ganga Mission UPI QR",
+    "qrImage": "/assets/images/donation/snksggm-upi-qr.png"
+  },
+  "compliance": {
+    "label": "80G approval",
+    "approvalNumber": "ENTER APPROVAL NUMBER",
+    "documentsUrl": "/transparency.html"
+  }
+}
+
+  },
+  "activities": {
+    "school-education": {
+      "label": "School education scholarships for girls",
+      "paymentProfile": "swami-vivekanand-trust"
+    },
+    "higher-education": {
+      "label": "Higher education for young women",
+      "paymentProfile": "maa-shardamani-trust"
+    },
+    "boys-education": {
+      "label": "Education support for boys",
+      "paymentProfile": "gyanyogi-adhyatm-kendra"
+    },
+    "ration-family": {
+      "label": "Ration and family assistance",
+      "paymentProfile": "gyanyogi-adhyatm-kendra"
+    },
+    "women-self-reliance": {
+      "label": "Women’s self-reliance and vocational training",
+      "paymentProfile": "gyanyogi-adhyatm-kendra"
+    }
+  }
+}

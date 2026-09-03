@@ -1,6 +1,6 @@
 (function () {
     const language = document.documentElement.lang === "hi" ? "hi" : "en";
-    const assetRoot = document.documentElement.lang === "hi" ? "../" : "../";
+    const assetRoot = "";
 
     document.addEventListener("DOMContentLoaded", initImpactData);
 
@@ -10,7 +10,7 @@
         if (!summaryTarget && !recordsTarget) return;
 
         try {
-            const response = await fetch(`${assetRoot}assets/json/impact-data.json`);
+            const response = await fetch(`data/impact-data.json`);
             if (!response.ok) throw new Error(`Unable to load impact data: ${response.status}`);
             const data = await response.json();
             if (summaryTarget) renderSummary(summaryTarget, data);

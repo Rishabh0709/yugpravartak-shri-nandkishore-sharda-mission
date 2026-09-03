@@ -2,7 +2,7 @@
     "use strict";
 
     var manifestCache = null;
-    var manifestUrl = "../assets/json/image-manifest.json";
+    var manifestUrl = "data/image-manifest.json";
     var language = (document.documentElement.getAttribute("lang") || "hi").slice(0, 2).toLowerCase();
 
     function getByKey(manifest, key) {
