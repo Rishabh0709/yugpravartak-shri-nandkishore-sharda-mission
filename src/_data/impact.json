@@ -62,20 +62,15 @@
   },
 
   "perTrust": {
-    "_note": "Per-trust breakdown. SVT + MST amounts sum to scholarshipGirls; add scholarshipBoys for scholarshipCombined. The 'instances' figure counts scholarship disbursements, not distinct students. CONFIRM scholarship totals for gyanyogi-adhyatm-kendra with the trust owner — the trust page currently shows ₹1.64 Cr, which contradicts scholarshipBoys (₹57 L).",
-    "swami-vivekanand-trust": {
-      "amount": { "hi": "₹4.51 करोड़+", "en": "₹4.51 Cr+" },
-      "instances": { "hi": "37,000+", "en": "37,000+" },
-      "instancesLabel": { "hi": "संचयी छात्रवृत्ति अवसर", "en": "cumulative scholarship instances" }
-    },
+    "_note": "Girls' education runs through Swami Vivekanand Trust + Maa Shardamani Trust jointly; the headline girls figures (studentsGirls / scholarshipGirls) cover both. Maa Shardamani Trust's own 3,400+ / ₹1.64 Cr is a subset focused on higher education — confirm whether to show it as a subset or a distinct programme. Boys run through Gyanyogi Adhyatm Kendra (₹57 L confirmed by owner 2026-09; the ₹1.64 Cr previously on that page was an error).",
     "maa-shardamani-trust": {
       "students": { "hi": "3,400+", "en": "3,400+" },
-      "amount": { "hi": "₹1.64 करोड़+", "en": "₹1.64 Cr+" }
+      "amount": { "hi": "₹1.64 करोड़+", "en": "₹1.64 Cr+" },
+      "note": { "hi": "उच्च शिक्षा पर केन्द्रित; बालिका शिक्षा के कुल आँकड़ों में सम्मिलित", "en": "higher-education focus; included in the combined girls figures" }
     },
     "gyanyogi-adhyatm-kendra": {
       "students": { "hi": "630+", "en": "630+" },
-      "amount": { "hi": "₹57 लाख+", "en": "₹57 L+" },
-      "amountNeedsConfirmation": true
+      "amount": { "hi": "₹57 लाख+", "en": "₹57 L+" }
     },
     "gyan-ganga-mission": {
       "amount": { "hi": "₹1.5 करोड़+", "en": "₹1.5 Cr+" },
