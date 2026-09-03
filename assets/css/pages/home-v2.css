@@ -193,8 +193,10 @@
 .v2-bvy__distinct {
     margin: clamp(26px, 3.4vw, 38px) 0;
     padding: clamp(20px, 2.6vw, 28px) clamp(20px, 3vw, 32px);
-    background: var(--bg-wash);
+    background: var(--surface);
+    border: 1px solid var(--rule);
     border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
 }
 .v2-bvy__distinct-head {
     margin: 0 0 10px;
@@ -228,48 +230,14 @@
 }
 .v2-bvy__close { margin-top: clamp(20px, 2.6vw, 28px); }
 
-/* ---------- chakra dharan (full-bleed moment) ---------- */
-.v2-chakra {
-    position: relative;
-    display: grid;
-    place-items: center;
-    min-height: min(80vh, 640px);
-    padding: clamp(72px, 12vw, 140px) 0;
-    text-align: center;
-    color: #fdf7ec;
-    overflow: hidden;
+/* dawn-lotus wash, drawn from the BVYS lotus image palette
+   (warm sunrise glow above, pale water-blue below, over paper) */
+.hi-sadhna.v2-sadhna-band {
+    background:
+        radial-gradient(72% 55% at 50% 0%,   rgba(233, 199, 122, .20), transparent 62%),
+        radial-gradient(82% 48% at 50% 100%, rgba(188, 213, 224, .26), transparent 66%),
+        var(--bg);
 }
-.v2-chakra::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(28, 22, 24, .34), rgba(28, 22, 24, .68));
-    z-index: 1;
-}
-.v2-chakra img {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-.v2-chakra__inner { position: relative; z-index: 2; max-width: 760px; padding: 0 24px; }
-.v2-chakra .hi-kicker { color: #f0d9a8; }
-.v2-chakra blockquote {
-    margin: 12px 0 18px;
-    font-family: var(--font-head);
-    font-size: clamp(1.9rem, 5vw, 3.4rem);
-    line-height: 1.3;
-    font-weight: 600;
-    text-wrap: balance;
-}
-.v2-chakra p {
-    margin: 0 auto;
-    max-width: 54ch;
-    color: rgba(253, 247, 236, .88);
-    line-height: 1.8;
-}
-.v2-chakra figcaption { margin-top: 16px; font-size: .84rem; color: rgba(253, 247, 236, .7); }
 
 /* ---------- lineage journey (compact vertical timeline, single-sided) ---------- */
 .v2-journey {
