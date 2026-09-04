@@ -9,7 +9,7 @@
 
   "metrics": {
     "studentsCombined": {
-      "display": { "hi": "लगभग 9,031", "en": "~9,031" },
+      "display": { "hi": "8,631+", "en": "8,631+" },
       "label": { "hi": "विद्यार्थियों को शिक्षा सहयोग", "en": "students supported through education" },
       "scope": "girls + boys, since 1996"
     },
@@ -19,9 +19,9 @@
       "scope": "girls + boys, since 1996"
     },
     "studentsGirls": {
-      "display": { "hi": "लगभग 8,400", "en": "~8,400" },
+      "display": { "hi": "8,000+", "en": "8,000+" },
       "label": { "hi": "लाभान्वित बालिकाएँ", "en": "girls supported" },
-      "scope": "Swami Vivekanand Students' Welfare Charitable Trust (7,200) + Maa Shardamani Trust (7,000), minus ~5,800 common to both"
+      "scope": "Swami Vivekanand Trust 7,200 (1,000 own + 6,200 continued to Maa Shardamani) + Maa Shardamani Trust 7,000 (6,200 continued from SVT + 800 own) = 8,000 unique"
     },
     "scholarshipGirls": {
       "display": { "hi": "₹6.14 करोड़+", "en": "₹6.14 Cr+" },
@@ -62,7 +62,7 @@
   },
 
   "perTrust": {
-    "_note": "Girls' education runs through Swami Vivekanand Trust + Maa Shardamani Trust jointly; the headline girls figure (studentsGirls) is the unique count across both. Exact figures confirmed by the trust owner 2026-09-04: Swami Vivekanand Trust 7,200 students, Maa Shardamani Trust 7,000 students, ~5,800 common to both (attended school under SVT, then college under Maa Shardamani) => unique girls ~= 7,200 + 7,000 - 5,800 = 8,400. Boys run through Gyanyogi Adhyatm Kendra: 631 students confirmed the same day (₹57 L; the ₹1.64 Cr previously shown on that page was an error, unrelated to Maa Shardamani's own ₹1.64 Cr).",
+    "_note": "Girls' education runs through Swami Vivekanand Trust + Maa Shardamani Trust jointly; the headline girls figure (studentsGirls) is the unique count across both. Exact figures confirmed by the trust owner 2026-09-04: Swami Vivekanand Trust 7,200 students (1,000 who stayed at SVT only + 6,200 who continued on to Maa Shardamani), Maa Shardamani Trust 7,000 students (the same 6,200 who continued from SVT + 800 who came to Maa Shardamani directly) => unique girls = 1,000 + 6,200 + 800 = 8,000 exactly. Boys run through Gyanyogi Adhyatm Kendra: 631 students confirmed the same day (₹57 L; the ₹1.64 Cr previously shown on that page was an error, unrelated to Maa Shardamani's own ₹1.64 Cr).",
     "swami-vivekanand-trust": {
       "students": { "hi": "7,200+", "en": "7,200+" },
       "note": { "hi": "बालिका शिक्षा के कुल आँकड़ों में सम्मिलित", "en": "included in the combined girls figures" }
