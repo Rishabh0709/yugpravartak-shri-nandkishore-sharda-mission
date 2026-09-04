@@ -42,7 +42,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - (No donation UI is built yet — this data is staged for a future donation section on `sampark.html`.)
 
 ### Decisions
-- ~~Orphan pages~~ — **done** (`<h>`). `dignitaries-views`, `success-stories`, `student-testimonials` were redirect stubs; deleted. Content lives in `/testimonials.html` (4 sections). Fixed a dead `success-stories.html` ref in `videos.js` and a duplicate kicker on that page.
+- ~~Orphan pages~~ — **done** (`97d8600`). `dignitaries-views`, `success-stories`, `student-testimonials` were redirect stubs; deleted. Content lives in `/testimonials.html` (4 sections). Fixed a dead `success-stories.html` ref in `videos.js` and a duplicate kicker on that page.
 - **SVT scholarship figure** — the SVT page shows the *combined* girls figure (8,000+ / ₹6.14 Cr, labelled "माँ शारदामणि ट्रस्ट सहित"). Source gives SVT-only = ₹4.5 Cr. Decide: show SVT-only, combined, or both.
 
 ---
