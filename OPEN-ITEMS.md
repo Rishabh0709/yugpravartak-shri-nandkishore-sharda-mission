@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs on 24 pages, English title resolved)
+**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs complete, 28 pages)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -62,7 +62,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 Say the word and I'll do these — no input needed:
 
 - ~~`<img>` dimensions~~ — **done** (`7a1b650`). 304 tags now carry intrinsic `width`/`height`; `img { height: auto }` added.
-- **Breadcrumbs — last few pages.** 24 pages now have a visible breadcrumb. Still without: `gallery`, `news-events`, `testimonials`, `sadhna-places`, and the orphan pages (`impact.html` has its own inline breadcrumb). Low priority — index-type pages.
+- **Breadcrumbs** — 28 pages have the unified visible breadcrumb. Only `impact.html` keeps its own inline one (it is on the old activity-* system, pending its own redesign).
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
 - ~~Two mislabeled image files~~ — **done** (`10b56ca`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.

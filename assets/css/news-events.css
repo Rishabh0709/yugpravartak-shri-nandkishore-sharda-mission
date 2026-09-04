@@ -6,7 +6,7 @@
 .news-events-hero {
     position: relative;
     overflow: hidden;
-    padding: clamp(145px, 17vh, 205px) 0 clamp(78px, 9vw, 118px);
+    padding: clamp(100px, 12vh, 165px) 0 clamp(78px, 9vw, 118px);
     background:
         radial-gradient(circle at 16% 18%, rgba(222, 238, 236, .74), transparent 34%),
         radial-gradient(circle at 84% 12%, rgba(198, 148, 53, .18), transparent 32%),

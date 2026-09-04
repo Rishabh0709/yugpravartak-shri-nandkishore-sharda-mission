@@ -69,7 +69,7 @@ body.gallery-page.gallery-modal-open {
 .gallery-hero {
     position: relative;
     overflow: hidden;
-    padding: clamp(118px, 15vh, 168px) 0 clamp(64px, 8vw, 92px);
+    padding: clamp(78px, 10vw, 128px) 0 clamp(64px, 8vw, 92px);
     background:
         radial-gradient(circle at 84% 18%, rgba(193, 85, 44, .14), transparent 30%),
         radial-gradient(circle at 8% 92%, rgba(152, 112, 32, .12), transparent 28%),
