@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs complete, 28 pages)
+**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs complete, people.json checked)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -67,7 +67,7 @@ Say the word and I'll do these — no input needed:
 - ~~Two mislabeled image files~~ — **done** (`10b56ca`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.
 - ~~`publications.json` / `publications.html`~~ — **done** (`e50b7f1`). `publications.json` now holds all 9 books; `publications.html` loops over it. Fixed a latent bug where the 3 CSS-cover cards rendered blank. Book JSON-LD (`book: divyaGyan`) still valid.
-- **Bio-page headers from `people.json`** — `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html` still hardcode name/role/portrait + a facts grid with formatted Hindi dates. Wiring needs an ISO→Hindi date filter and resolving the role/kicker wording; modest payoff (facts rarely change).
+- **Bio-page facts from `people.json`** — added a `hindiDate` filter (ISO -> "16 जुलाई 1944"); verified the 3 bio pages'' fact grids are consistent with `people.json` and fixed one error (madhu maa''s credentials showed Basanti''s). Not templating the grids themselves — labels + context lines are bespoke per person, and the dates are frozen. `hindiDate` is available for the English build.
 - ~~`trusts.json` vs `documents.js`~~ — **done** (`4511322`). `trusts.json` is now the single trust registry (identity + `approvals`); `documents.js` reads it and derives the file lists.
 - ~~`sampark.html` design~~ — **done** (`b2ac98f`). Rebuilt on the shared Hindi component layer (hi-section / hi-shell / hi-btn / tokens); dropped the old activity-*/contact-* CSS; contact.js form logic preserved. contact.css deleted (orphaned). `activities-hub.css` still used by impact.html.
 - **Wrap in-page numbers in `.num`** — for tabular-figure / Latin-numeral treatment (Phase 2 deferred).

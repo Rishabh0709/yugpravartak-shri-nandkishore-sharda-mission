@@ -1,43 +1,94 @@
 {
   "_note": "The three central figures. Feeds future homepage lineage section, biography page headers, timeline, and Person JSON-LD. 'leftBody' = the date each is said to have become chaitanya-swaroop.",
-
   "bhaiyaji": {
-    "name": { "hi": "श्री नन्दकिशोर शारदा", "en": "Shri Nandkishore Sharda" },
-    "familyName": { "hi": "भैया जी", "en": "Bhaiyaji" },
-    "role": { "hi": "युगप्रवर्तक · मिशन के प्रणेता", "en": "Yugpravartak · originator of the Mission" },
+    "name": {
+      "hi": "श्री नन्दकिशोर शारदा",
+      "en": "Shri Nandkishore Sharda"
+    },
+    "familyName": {
+      "hi": "भैया जी",
+      "en": "Bhaiyaji"
+    },
+    "role": {
+      "hi": "युगप्रवर्तक · मिशन के प्रणेता",
+      "en": "Yugpravartak · originator of the Mission"
+    },
     "born": "1944-07-16",
-    "birthPlace": { "hi": "जोधपुर", "en": "Jodhpur" },
+    "birthPlace": {
+      "hi": "जोधपुर",
+      "en": "Jodhpur"
+    },
     "leftBody": "2003-01-24",
     "portrait": "/assets/images/bhaiyaji-radiant-portrait.jpg",
     "page": "/shri-nandkishore-sharda.html",
-    "bioShort": { "hi": "", "en": "" }
+    "bioShort": {
+      "hi": "",
+      "en": ""
+    }
   },
-
   "maaBasanti": {
-    "name": { "hi": "माँ बसन्ती मनिहार", "en": "Maa Basanti Manihar" },
-    "familyName": { "hi": "माँ बसन्ती", "en": "Maa Basanti" },
-    "role": { "hi": "वात्सल्यमयी · 2003–2021 तक नेतृत्व", "en": "Led the Parivar 2003–2021" },
-    "credentials": "M.A., B.Ed.",
-    "relationship": { "hi": "भैया जी की फुफेरी बहन", "en": "Bhaiyaji's first cousin" },
+    "name": {
+      "hi": "माँ बसन्ती मनिहार",
+      "en": "Maa Basanti Manihar"
+    },
+    "familyName": {
+      "hi": "माँ बसन्ती",
+      "en": "Maa Basanti"
+    },
+    "role": {
+      "hi": "वात्सल्यमयी · 2003–2021 तक नेतृत्व",
+      "en": "Led the Parivar 2003–2021"
+    },
+    "credentials": {
+      "hi": "एम.ए., बी.एड.",
+      "en": "M.A., B.Ed."
+    },
+    "relationship": {
+      "hi": "भैया जी की फुफेरी बहन",
+      "en": "Bhaiyaji's first cousin"
+    },
     "born": "1942-09-28",
-    "birthPlace": { "hi": "जोधपुर", "en": "Jodhpur" },
+    "birthPlace": {
+      "hi": "जोधपुर",
+      "en": "Jodhpur"
+    },
     "joined": "1964",
     "leftBody": "2021-05-07",
     "portrait": "/assets/images/basanti-manihar.jpg",
     "page": "/basanti-manihar.html",
-    "bioShort": { "hi": "", "en": "" }
+    "bioShort": {
+      "hi": "",
+      "en": ""
+    }
   },
-
   "madhuMaa": {
-    "name": { "hi": "माँ मधुबाला अडवानी", "en": "Maa Madhubala Advani" },
-    "familyName": { "hi": "मधु माँ", "en": "Madhu Maa" },
-    "role": { "hi": "करुणामयी · 2021 से वर्तमान नेतृत्व", "en": "Leads the Parivar since 2021" },
-    "credentials": { "hi": "मनोविज्ञान में एम.ए.", "en": "M.A. (Psychology)" },
+    "name": {
+      "hi": "माँ मधुबाला अडवानी",
+      "en": "Maa Madhubala Advani"
+    },
+    "familyName": {
+      "hi": "मधु माँ",
+      "en": "Madhu Maa"
+    },
+    "role": {
+      "hi": "करुणामयी · 2021 से वर्तमान नेतृत्व",
+      "en": "Leads the Parivar since 2021"
+    },
+    "credentials": {
+      "hi": "मनोविज्ञान में एम.ए.",
+      "en": "M.A. (Psychology)"
+    },
     "born": "1951",
-    "birthPlace": { "hi": "सिरसा, पंजाब", "en": "Sirsa, Punjab" },
+    "birthPlace": {
+      "hi": "सिरसा, पंजाब",
+      "en": "Sirsa, Punjab"
+    },
     "joined": "1970",
     "portrait": "/assets/images/madhu-maa-portrait.webp",
     "page": "/madhubala-advani.html",
-    "bioShort": { "hi": "", "en": "" }
+    "bioShort": {
+      "hi": "",
+      "en": ""
+    }
   }
 }

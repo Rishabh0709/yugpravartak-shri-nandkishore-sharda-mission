@@ -45,6 +45,16 @@ module.exports = function (eleventyConfig) {
     return (PATH_PREFIX.replace(/\/$/, "") + "/" + String(p).replace(/^\//, "")).replace(/\/{2,}/g, "/");
   });
 
+  // ISO date ("1944-07-16" or just "1944") -> Hindi ("16 जुलाई 1944" / "1944")
+  const HI_MONTHS = ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितम्बर", "अक्टूबर", "नवम्बर", "दिसम्बर"];
+  eleventyConfig.addFilter("hindiDate", (iso) => {
+    if (!iso) return iso;
+    const m = String(iso).match(/^(\d{4})(?:-(\d{2})-(\d{2}))?$/);
+    if (!m) return iso;
+    if (!m[2]) return m[1];
+    return `${Number(m[3])} ${HI_MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+  });
+
   // Keep the photo-tooling album.json manifests out of the published output
   // (they carry absolute local paths and nothing on the site fetches them).
   eleventyConfig.on("eleventy.after", ({ dir }) => {
