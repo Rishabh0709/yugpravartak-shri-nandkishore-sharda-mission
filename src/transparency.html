@@ -1,0 +1,106 @@
+---
+layout: base.njk
+title: "पारदर्शिता एवं दस्तावेज़ | मणिद्वीप अध्यात्म परिवार"
+description: "मणिद्वीप अध्यात्म परिवार के चारों पंजीकृत लोक-न्यासों के पंजीकरण दस्तावेज़ (12A, 80G, पैन), वित्तीय प्रतिवेदन और छात्रवृत्ति प्रमाण-पत्र।"
+bodyClass: "hindi-home transparency-page"
+extraCss: ["/assets/css/pages/transparency.css"]
+---
+<main id="main-content">
+    <section class="tr-hero" aria-labelledby="tr-title">
+        <div class="hi-shell tr-hero__content">
+            <span class="hi-kicker">विश्वास की नींव</span>
+            <h1 id="tr-title">पारदर्शिता एवं दस्तावेज़</h1>
+            <p class="tr-hero__lead">मणिद्वीप अध्यात्म परिवार के सेवा-कार्य चार पंजीकृत लोक-न्यासों के माध्यम से संचालित होते हैं। इनके पंजीकरण दस्तावेज़, वित्तीय प्रतिवेदन और छात्रवृत्ति प्रमाण-पत्र यहाँ सार्वजनिक रूप से उपलब्ध हैं।</p>
+        </div>
+    </section>
+
+    <section class="tr-section tr-principle" aria-labelledby="tr-principle-title">
+        <div class="hi-shell">
+            <h2 id="tr-principle-title">आर्थिक सहयोग का प्रबंधन</h2>
+            <p>प्रत्येक ट्रस्ट को मिलने वाला आर्थिक सहयोग बैंकों में सावधि जमा (एफ.डी.) के रूप में सुरक्षित रखा जाता है, और उस पर प्राप्त ब्याज की सम्पूर्ण राशि छात्रवृत्ति एवं सेवा-कार्यों में वितरित की जाती है। टेलीफोन, डाक, स्टेशनरी और आवागमन जैसे प्रशासनिक व्यय ट्रस्ट के सदस्य व्यक्तिगत रूप से वहन करते हैं, ताकि उपलब्ध संसाधनों का अधिकतम लाभ लाभार्थियों तक पहुँचे। सभी ट्रस्ट आयकर अधिनियम की धारा 12A एवं (लागू होने पर) 80G के अंतर्गत पंजीकृत हैं; दान 80G के अंतर्गत कर-छूट योग्य है।</p>
+        </div>
+    </section>
+
+    {%- for trust in documents %}
+    <section class="tr-section tr-trust" id="{{ trust.id }}-records" aria-labelledby="{{ trust.id }}-heading">
+        <div class="hi-shell">
+            <header class="tr-trust__head">
+                <h2 id="{{ trust.id }}-heading">{{ trust.name.hi }}</h2>
+                <p class="tr-trust__meta">
+                    स्थापना {{ trust.founded }}
+                    <span aria-hidden="true">·</span>
+                    <a href="{{ trust.page }}">ट्रस्ट का परिचय पढ़ें <span aria-hidden="true">&rarr;</span></a>
+                </p>
+            </header>
+
+            <div class="tr-block">
+                <h3>पंजीकरण दस्तावेज़</h3>
+                {%- if trust.legal.length %}
+                <ul class="tr-doclist">
+                    {%- for doc in trust.legal %}
+                    <li>
+                        <span class="tr-doclist__name">
+                            {{ doc.label.hi }}
+                            {%- if doc.number %} <span class="tr-doclist__num">{{ doc.number }}</span>{% endif %}
+                        </span>
+                        <a class="tr-doclist__link" href="{{ doc.url }}" target="_blank" rel="noopener">
+                            PDF देखें <span aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+                {%- else %}
+                <p class="tr-note">दस्तावेज़ शीघ्र यहाँ जोड़े जाएँगे।</p>
+                {%- endif %}
+            </div>
+
+            <div class="tr-block">
+                <h3>वित्तीय प्रतिवेदन</h3>
+                {%- if trust.financialReports.length %}
+                <p class="tr-block__intro">वर्ष-वार अंकेक्षित लेखा-जोखा।</p>
+                <ul class="tr-yeargrid">
+                    {%- for report in trust.financialReports %}
+                    <li><a href="{{ report.url }}" target="_blank" rel="noopener">{{ report.year }}</a></li>
+                    {%- endfor %}
+                </ul>
+                {%- else %}
+                <p class="tr-note">वर्ष-वार वित्तीय प्रतिवेदन शीघ्र यहाँ उपलब्ध कराए जाएँगे।</p>
+                {%- endif %}
+            </div>
+
+            {%- if trust.scholarshipCertificates.length %}
+            <div class="tr-block">
+                <h3>छात्रवृत्ति प्रमाण-पत्र</h3>
+                <p class="tr-block__intro">विद्यालयों एवं संस्थाओं द्वारा प्रमाणित वर्ष-वार छात्रवृत्ति वितरण।</p>
+                <ul class="tr-doclist tr-doclist--certs">
+                    {%- for cert in trust.scholarshipCertificates %}
+                    <li>
+                        <span class="tr-doclist__name{% if cert.summary %} tr-doclist__name--summary{% endif %}">{{ cert.label.hi }}</span>
+                        <a class="tr-doclist__link" href="{{ cert.url }}" target="_blank" rel="noopener">
+                            PDF देखें <span aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+            {%- elif trust.id == "maa-shardamani-trust" or trust.id == "gyanyogi-adhyatm-kendra" %}
+            <div class="tr-block">
+                <h3>छात्रवृत्ति प्रमाण-पत्र</h3>
+                <p class="tr-note">वर्ष-वार प्रमाण-पत्र शीघ्र यहाँ जोड़े जाएँगे।</p>
+            </div>
+            {%- endif %}
+        </div>
+    </section>
+    {%- endfor %}
+
+    <section class="tr-section tr-closing" aria-labelledby="tr-closing-title">
+        <div class="hi-shell">
+            <h2 id="tr-closing-title">कोई प्रश्न या और जानकारी?</h2>
+            <p>किसी दस्तावेज़, अनुदान की उपयोगिता या सेवा-कार्य के विषय में जानकारी के लिए मणिद्वीप से सम्पर्क करें। ये दस्तावेज़ समय-समय पर अद्यतन किए जाते हैं।</p>
+            <div class="hi-actions">
+                <a class="hi-btn hi-btn--primary" href="/sampark.html">सम्पर्क करें <span aria-hidden="true">&rarr;</span></a>
+                <a class="hi-btn hi-btn--outline" href="/nishkam-karm-sadhna.html">सेवा-कार्य देखें</a>
+            </div>
+        </div>
+    </section>
+</main>

@@ -2675,3 +2675,24 @@ body.hindi-home {
     border-color: var(--rule-strong);
     transform: none;
 }
+
+/* ---- trust-page: registration & transparency strip ---- */
+.trust-docs {
+    padding: clamp(34px, 5vw, 52px) 0;
+    background: var(--bg-wash);
+    border-top: 1px solid var(--rule);
+}
+.trust-docs .hi-shell { max-width: 780px; }
+.trust-docs h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+    color: var(--primary);
+}
+.trust-docs p {
+    margin: 0 0 18px;
+    max-width: 64ch;
+    font-size: .96rem;
+    line-height: 1.75;
+    color: var(--ink-body);
+}
