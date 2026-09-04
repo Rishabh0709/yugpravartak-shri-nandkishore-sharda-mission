@@ -1,0 +1,156 @@
+/* ============================================================
+   "How to begin the sadhna" page (/sadhna-aarambh.html)
+   ============================================================ */
+
+.sa-page {
+    color: var(--ink);
+    background: var(--bg);
+}
+
+/* ---- hero ---- */
+.sa-hero {
+    padding: clamp(120px, 16vh, 168px) 0 clamp(34px, 5vw, 54px);
+    background: var(--bg-wash);
+    border-bottom: 1px solid var(--rule);
+}
+.sa-hero__content { max-width: 720px; }
+.sa-hero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: var(--step-h1);
+    color: var(--primary);
+}
+.sa-hero__lead {
+    margin: 18px 0 0;
+    font-size: 1.04rem;
+    line-height: 1.85;
+    color: var(--ink-body);
+}
+
+/* ---- sections ---- */
+.sa-section { padding: clamp(38px, 6vw, 60px) 0; }
+.sa-section + .sa-section { border-top: 1px solid var(--rule); }
+.sa-section > .hi-shell { max-width: 780px; }
+.sa-section .hi-section-heading { margin-bottom: clamp(22px, 3.5vw, 32px); }
+.sa-section .hi-section-heading h2 {
+    font-family: var(--font-head);
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    color: var(--ink);
+}
+.sa-where { background: var(--bg-wash); }
+
+/* ---- numbered steps ---- */
+.sa-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: sastep;
+}
+.sa-steps > li {
+    counter-increment: sastep;
+    position: relative;
+    padding: 0 0 clamp(20px, 3vw, 26px) 52px;
+    margin-bottom: clamp(20px, 3vw, 26px);
+    border-bottom: 1px solid var(--rule);
+}
+.sa-steps > li:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+.sa-steps > li::before {
+    content: counter(sastep);
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--primary);
+    color: #fff;
+    font-family: var(--font-latin);
+    font-size: .95rem;
+    font-weight: 600;
+}
+.sa-steps h3 {
+    margin: 4px 0 6px;
+    font-family: var(--font-head);
+    font-size: 1.14rem;
+    color: var(--primary);
+}
+.sa-steps p {
+    margin: 0;
+    font-size: .96rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+.sa-steps a { color: var(--accent); }
+
+/* ---- places ---- */
+.sa-places {
+    display: grid;
+    gap: clamp(16px, 2.4vw, 22px);
+}
+@media (min-width: 780px) { .sa-places { grid-template-columns: 1fr 1fr; } }
+.sa-place {
+    padding: clamp(20px, 2.6vw, 28px);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+.sa-place h3 {
+    margin: 0 0 4px;
+    font-family: var(--font-head);
+    font-size: 1.08rem;
+    line-height: 1.4;
+    color: var(--primary);
+}
+.sa-place__addr {
+    margin: 0 0 12px;
+    font-size: .86rem;
+    color: var(--ink-muted);
+}
+.sa-place p {
+    margin: 0 0 10px;
+    font-size: .92rem;
+    line-height: 1.7;
+    color: var(--ink-body);
+}
+.sa-place__time {
+    margin: 12px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem;
+    color: var(--primary);
+}
+
+/* ---- facts ---- */
+.sa-facts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+.sa-facts li {
+    padding: 14px 18px;
+    border-left: 3px solid var(--gold);
+    background: var(--surface);
+    font-size: .94rem;
+    line-height: 1.75;
+    color: var(--ink-body);
+}
+.sa-facts b { color: var(--primary); }
+
+/* ---- closing ---- */
+.sa-closing { background: var(--bg-wash); border-top: 1px solid var(--rule); }
+.sa-closing h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    color: var(--primary);
+}
+.sa-closing p {
+    margin: 0 0 20px;
+    font-size: .98rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}

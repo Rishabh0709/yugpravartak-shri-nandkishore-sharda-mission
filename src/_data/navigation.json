@@ -28,11 +28,13 @@
         { "label": { "hi": "ज्ञान", "en": "The knowledge" }, "links": [
           { "label": { "hi": "दिव्य ज्ञान", "en": "Divya Gyan" }, "href": "/divya-gyan.html" },
           { "label": { "hi": "प्रतीक चिन्ह", "en": "The symbol" }, "href": "/logo.html" },
-          { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications.html" }
+          { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications.html" },
+          { "label": { "hi": "जिज्ञासा समाधान", "en": "Spiritual Q&A" }, "href": "/jigyasa-samadhan.html" }
         ]},
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
           { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna.html" },
-          { "label": { "hi": "प्रश्नोत्तरी", "en": "FAQ" }, "href": "/faq.html" }
+          { "label": { "hi": "साधना कैसे आरम्भ करें", "en": "How to begin" }, "href": "/sadhna-aarambh.html" },
+          { "label": { "hi": "सामान्य प्रश्न", "en": "FAQ" }, "href": "/faq.html" }
         ]}
       ]
     },

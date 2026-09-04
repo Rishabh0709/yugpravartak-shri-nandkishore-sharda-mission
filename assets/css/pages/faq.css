@@ -1,0 +1,97 @@
+/* ============================================================
+   Practical FAQ page (/faq.html)
+   ============================================================ */
+
+.faqp-page {
+    color: var(--ink);
+    background: var(--bg);
+}
+
+/* ---- hero ---- */
+.faqp-hero {
+    padding: clamp(120px, 16vh, 168px) 0 clamp(34px, 5vw, 54px);
+    background: var(--bg-wash);
+    border-bottom: 1px solid var(--rule);
+}
+.faqp-hero__content { max-width: 720px; }
+.faqp-hero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: var(--step-h1);
+    color: var(--primary);
+}
+.faqp-hero__lead {
+    margin: 18px 0 0;
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+.faqp-hero__lead a { color: var(--accent); }
+
+/* ---- list ---- */
+.faqp-section { padding: clamp(38px, 6vw, 60px) 0; }
+.faqp-section > .hi-shell { max-width: 760px; }
+
+.faqp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+}
+.faqp-item { border-bottom: 1px solid var(--rule); }
+
+.faqp-item summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: clamp(16px, 2.4vw, 22px) 40px clamp(16px, 2.4vw, 22px) 0;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-head);
+    font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--ink);
+}
+.faqp-item summary::-webkit-details-marker { display: none; }
+.faqp-item summary::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: clamp(22px, 3vw, 30px);
+    width: 11px;
+    height: 11px;
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    transform: rotate(45deg);
+    transition: transform var(--transition);
+}
+.faqp-item details[open] summary::after { transform: rotate(-135deg); }
+.faqp-item summary:hover { color: var(--primary); }
+
+.faqp-answer {
+    padding: 0 0 clamp(20px, 3vw, 26px);
+}
+.faqp-answer p {
+    margin: 0;
+    max-width: 66ch;
+    font-size: .98rem;
+    line-height: 1.85;
+    color: var(--ink-body);
+}
+
+/* ---- closing ---- */
+.faqp-closing { border-top: 1px solid var(--rule); background: var(--bg-wash); }
+.faqp-closing h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    color: var(--primary);
+}
+.faqp-closing p {
+    margin: 0 0 20px;
+    font-size: .98rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
