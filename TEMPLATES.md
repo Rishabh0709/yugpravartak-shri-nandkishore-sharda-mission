@@ -12,6 +12,7 @@ It shows a live render **and** the markup for every shared building block:
 3. **Buttons & CTA rows** — `.hi-btn--primary / --outline / --soft`, `.hi-actions` (`--center`)
 4. **Section frame** — `.hi-section` › `.hi-shell` › `.hi-section-heading` (`--center`)
 5. **Breadcrumb** — the `breadcrumb: true` front-matter component
+5b. **In-page section nav** — `.page-nav` (shared, in `home-hindi.css`). Overview/topic pages only, not sequential bios.
 6. **Recurring section shapes** — two-column media+copy, numbered steps, feature-card grid,
    stat strip, vertical timeline, document list, pull-quote, closing CTA band
 7. **A new page, start to finish** — the checklist
@@ -27,6 +28,7 @@ It shows a live render **and** the markup for every shared building block:
   `assets/css/pages/<slug>.css` for genuinely new layout.
 - The §6 shapes currently live under page-specific prefixes (`gyanyogi-step`,
   `shardamani-step`, `bvys-step` …). Extracting a shared class set for them is the next
-  CSS refactor (see `OPEN-ITEMS.md` §3).
+  CSS refactor (see `OPEN-ITEMS.md` §3). The in-page nav has already been extracted
+  (`.page-nav`); the per-page `*-nav` copies are gone.
 - Data that repeats or the English build needs → `src/_data/*.json`, not inline HTML.
 - Every `<img>` carries real `width`/`height`.

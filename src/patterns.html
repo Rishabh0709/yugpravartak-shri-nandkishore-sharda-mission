@@ -150,6 +150,28 @@ extraCss: ["/assets/css/pages/patterns.css"]
             <details class="pt-code"><summary>front matter</summary><pre><code>breadcrumb: true
 breadcrumbName: "छोटा नाम"          # optional, else title before the "|"
 breadcrumbParent: { "label": "अभिभावक", "href": "/parent.html" }   # optional middle crumb</code></pre></details>
+
+            <h2 class="pt-block__title" style="margin-top:40px">5b · In-page section nav</h2>
+            <p class="pt-note">Shared component in <code>home-hindi.css</code>. Use on <em>overview / topic</em> pages (about-mission, the chapter pages) where jumping between sections is useful — <strong>not</strong> on sequential biographies, which should be read in order. Static (not sticky), wraps instead of scrolling, label makes it read as an index. Keep <code>scroll-margin-top</code> on the target sections so the fixed header doesn't cover the heading.</p>
+            <div class="pt-demo pt-demo--wash">
+                <nav class="page-nav" aria-label="अनुभाग">
+                    <div class="hi-shell page-nav__links">
+                        <p class="page-nav__label">इस पृष्ठ पर</p>
+                        <a href="#">उद्देश्य</a>
+                        <a href="#">साधना पद्धति</a>
+                        <a href="#">दिव्य आधार</a>
+                        <a href="#">मानव सेवा</a>
+                        <a href="#">निरंतरता</a>
+                    </div>
+                </nav>
+            </div>
+            <details class="pt-code"><summary>markup</summary><pre><code>&lt;nav class="page-nav" aria-label="अनुभाग"&gt;
+  &lt;div class="hi-shell page-nav__links"&gt;
+    &lt;p class="page-nav__label"&gt;इस पृष्ठ पर&lt;/p&gt;
+    &lt;a href="#section-id"&gt;अनुभाग&lt;/a&gt;
+    …
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></details>
         </div>
     </section>
 

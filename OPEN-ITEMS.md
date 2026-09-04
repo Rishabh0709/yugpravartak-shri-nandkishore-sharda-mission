@@ -104,6 +104,7 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
+- In-page section nav consolidated into one shared `.page-nav` (`home-hindi.css`) — was copy-pasted 5× as `mission-nav` / `sadhna-kaal-nav` / `yug-nav` / `bvys-nav` / `dg-nav`. Now static + wrapping (no h-scroll), "इस पृष्ठ पर ↓" label, Jodhpur-blue link pills with hover fill. Applied to about-mission + the 4 chapter pages; ~5.8 KB of duplicated CSS removed. `testimonials.html` nav left as-is (lives inside its hero, already wraps). Catalogued at `/patterns.html` §5b.
 - Bio pages: dropped the sticky horizontal in-page pill nav from all three (a biography is a sequential story; the jump nav hid its own last items behind an overflow scrollbar). Section `id`s kept for deep links.
 - Bio pages: fixed clear review bugs (`828c4bc`) — stray credential on मधु माँ, study location, h1 pattern, English "folded hands" alt, trust-name transliteration.
 - Phase 5: `/transparency.html`, `/itihaas.html`, split FAQ (`/faq.html` practical + `/jigyasa-samadhan.html` deep), `/sadhna-aarambh.html`, `timeline.json` + `faq.json` wired, nav → 5 items, breadcrumbs (utility pages), sampark #visit, kicker-class cleanup.
