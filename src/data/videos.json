@@ -177,48 +177,6 @@
       }
     },
     {
-      "id": "sanskar-volunteer-guidance",
-      "category": "sanskar-classes",
-      "thumbnail": "assets/images/sunday-guidance-gathering.webp",
-      "videoUrl": "https://drive.google.com/file/d/1PiwA_-UnVCnBUOuUbL5hdAJ5I2OKV-hh/preview",
-      "readMore": false,
-      "en": {
-        "title": "A Volunteer's Guidance",
-        "meta": "Volunteer",
-        "excerpt": "A volunteer shares good values and everyday practices with students during the Sanskar classes.",
-        "hook": "",
-        "paragraphs": []
-      },
-      "hi": {
-        "title": "एक स्वयंसेवी का मार्गदर्शन",
-        "meta": "स्वयंसेवी",
-        "excerpt": "संस्कार कक्षा में एक स्वयंसेवी द्वारा विद्यार्थियों को अच्छे संस्कार और व्यवहार सिखाने की झलक।",
-        "hook": "",
-        "paragraphs": []
-      }
-    },
-    {
-      "id": "sanskar-teacher-reflection",
-      "category": "sanskar-classes",
-      "thumbnail": "assets/images/sanskar_classes.jpg",
-      "videoUrl": "https://drive.google.com/file/d/1aaGquQ3PLvzvq-dWVd7b3amWuciH4QLL/preview",
-      "readMore": false,
-      "en": {
-        "title": "A School Teacher's Reflection",
-        "meta": "School Teacher",
-        "excerpt": "A school teacher, after attending a Sanskar class, shares appreciation for this work.",
-        "hook": "",
-        "paragraphs": []
-      },
-      "hi": {
-        "title": "एक विद्यालय शिक्षक का अनुभव",
-        "meta": "विद्यालय शिक्षक",
-        "excerpt": "संस्कार कक्षा में सम्मिलित होकर एक विद्यालय शिक्षक द्वारा इस कार्य की सराहना।",
-        "hook": "",
-        "paragraphs": []
-      }
-    },
-    {
       "id": "muskaan-sultan",
       "category": "sanskar-classes",
       "thumbnail": "assets/images/video_thumbnails/sanskar-classes/muskaan_sultan.jpg",
