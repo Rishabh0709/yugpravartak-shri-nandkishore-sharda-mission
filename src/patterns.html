@@ -1,0 +1,255 @@
+---
+layout: base.njk
+title: "टेम्पलेट कैटलॉग | मणिद्वीप (आंतरिक)"
+description: "Internal reference — the shared component + section patterns used across the Hindi site. Not for public navigation."
+bodyClass: "hindi-home patterns-page"
+noindex: true
+eleventyExcludeFromCollections: true
+extraCss: ["/assets/css/pages/patterns.css"]
+---
+<main id="main-content">
+    <section class="pt-hero">
+        <div class="hi-shell">
+            <span class="hi-kicker">आंतरिक संदर्भ · not public</span>
+            <h1>टेम्पलेट कैटलॉग</h1>
+            <p class="pt-hero__lead">The shared building blocks every page composes from — tokens, text primitives, buttons, the section frame, and the recurring section shapes. Each block shows a live render and its markup. Build new pages (and the English site) from these; only add a scoped <code>pages/*.css</code> for genuinely new layout.</p>
+        </div>
+    </section>
+
+    {# ============ TOKENS ============ #}
+    <section class="pt-block">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">1 · Design tokens</h2>
+            <p class="pt-note">Defined in <code>assets/css/tokens.css</code>. Never hard-code a colour, radius or shadow — use the token.</p>
+
+            <h3 class="pt-sub">Surfaces &amp; ink</h3>
+            <div class="pt-swatches">
+                <div class="pt-swatch" style="background:var(--bg)"><code>--bg</code></div>
+                <div class="pt-swatch" style="background:var(--bg-wash)"><code>--bg-wash</code></div>
+                <div class="pt-swatch" style="background:var(--surface)"><code>--surface</code></div>
+                <div class="pt-swatch" style="background:var(--surface-sunk)"><code>--surface-sunk</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--ink)"><code>--ink</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--ink-body)"><code>--ink-body</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--ink-muted)"><code>--ink-muted</code></div>
+            </div>
+
+            <h3 class="pt-sub">Brand</h3>
+            <div class="pt-swatches">
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--primary)"><code>--primary</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--primary-deep)"><code>--primary-deep</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--accent)"><code>--accent</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--gold)"><code>--gold</code></div>
+                <div class="pt-swatch pt-swatch--dark" style="background:var(--gold-deep)"><code>--gold-deep</code></div>
+            </div>
+
+            <h3 class="pt-sub">Type scale &amp; families</h3>
+            <div class="pt-typescale">
+                <p style="font-size:var(--step-hero)">Hero — <code>--step-hero</code></p>
+                <p style="font-size:var(--step-h1)">H1 — <code>--step-h1</code></p>
+                <p style="font-size:var(--step-h2)">H2 — <code>--step-h2</code></p>
+                <p style="font-size:var(--step-h3)">H3 — <code>--step-h3</code></p>
+                <p style="font-size:var(--step-body)">Body — <code>--step-body</code></p>
+                <p style="font-size:var(--step-sm)">Small — <code>--step-sm</code></p>
+                <p style="font-size:var(--step-cap)">Caption — <code>--step-cap</code></p>
+            </div>
+            <ul class="pt-list">
+                <li><code>--font-head</code> — Noto Serif Devanagari — headings, motto, quotes</li>
+                <li><code>--font-body</code> — Noto Sans Devanagari — body, labels</li>
+                <li><code>--font-latin</code> — Inter Tight — numbers, years, English words (<code>.num</code>, <code>[lang="en"]</code>)</li>
+            </ul>
+
+            <h3 class="pt-sub">Radius, shadow, spacing</h3>
+            <ul class="pt-list">
+                <li><code>--radius</code> 14px · <code>--radius-pill</code> · <code>--radius-leaf</code> (used once — the founder portrait)</li>
+                <li><code>--shadow-sm</code> · <code>--shadow-md</code></li>
+                <li><code>--section-y</code> clamp(64px, 8vw, 112px) — the standard section rhythm</li>
+                <li>spacing scale: <code>--sp-1</code>…<code>--sp-32</code> (4 / 8 based)</li>
+            </ul>
+        </div>
+    </section>
+
+    {# ============ TEXT PRIMITIVES ============ #}
+    <section class="pt-block pt-block--alt">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">2 · Text primitives</h2>
+
+            <div class="pt-demo">
+                <span class="hi-kicker">यह एक किकर है</span>
+                <h2>यह एक शीर्षक है</h2>
+                <p class="hi-lead">यह <code>.hi-lead</code> है — एक बड़ा standfirst पैराग्राफ़ जो अनुभाग की भूमिका बाँधता है।</p>
+                <div class="hi-prose">
+                    <p>यह <code>.hi-prose</code> के भीतर सामान्य गद्य है। इसमें <a class="hi-inline-link" href="#">इनलाइन लिंक</a> इस तरह दिखते हैं। मापांक (measure) ~68ch पर सीमित रहता है।</p>
+                </div>
+                <a class="hi-text-link" href="#">यह एक टेक्स्ट-लिंक है <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <details class="pt-code"><summary>markup</summary><pre><code>&lt;span class="hi-kicker"&gt;…&lt;/span&gt;
+&lt;h2&gt;…&lt;/h2&gt;
+&lt;p class="hi-lead"&gt;…&lt;/p&gt;
+&lt;div class="hi-prose"&gt;&lt;p&gt;… &lt;a class="hi-inline-link" href&gt;…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;a class="hi-text-link" href&gt;… &lt;span aria-hidden="true"&gt;&amp;rarr;&lt;/span&gt;&lt;/a&gt;</code></pre></details>
+        </div>
+    </section>
+
+    {# ============ BUTTONS ============ #}
+    <section class="pt-block">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">3 · Buttons &amp; CTA rows</h2>
+            <div class="pt-demo">
+                <div class="hi-actions">
+                    <a class="hi-btn hi-btn--primary" href="#">Primary <span aria-hidden="true">&rarr;</span></a>
+                    <a class="hi-btn hi-btn--outline" href="#">Outline</a>
+                    <a class="hi-btn hi-btn--soft" href="#">Soft</a>
+                </div>
+                <div class="hi-actions hi-actions--center" style="margin-top:20px">
+                    <a class="hi-btn hi-btn--primary" href="#">Centred row</a>
+                    <a class="hi-btn hi-btn--outline" href="#">Second action</a>
+                </div>
+            </div>
+            <details class="pt-code"><summary>markup</summary><pre><code>&lt;div class="hi-actions"&gt;                &lt;!-- or hi-actions--center --&gt;
+  &lt;a class="hi-btn hi-btn--primary" href&gt;… &lt;span aria-hidden="true"&gt;&amp;rarr;&lt;/span&gt;&lt;/a&gt;
+  &lt;a class="hi-btn hi-btn--outline" href&gt;…&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            <p class="pt-note">Max 3 in a row. <code>--primary</code> once per row. The <code>.nav-cta</code> pill (मणिद्वीप पधारें) is nav-only.</p></details>
+        </div>
+    </section>
+
+    {# ============ SECTION FRAME ============ #}
+    <section class="pt-block pt-block--alt">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">4 · Section frame</h2>
+            <p class="pt-note">Every content section: <code>&lt;section class="hi-section …"&gt;</code> → <code>&lt;div class="hi-shell"&gt;</code> (max 1180px, auto-centred) → a <code>hi-section-heading</code> then content.</p>
+            <div class="pt-demo pt-demo--framed">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">अनुभाग किकर</span>
+                    <h2>केंद्रित अनुभाग शीर्षक</h2>
+                    <p>वैकल्पिक standfirst पंक्ति जो शीर्षक के नीचे आती है।</p>
+                </header>
+            </div>
+            <details class="pt-code"><summary>markup</summary><pre><code>&lt;section class="hi-section" aria-labelledby="x-title"&gt;
+  &lt;div class="hi-shell"&gt;
+    &lt;header class="hi-section-heading hi-section-heading--center"&gt;
+      &lt;span class="hi-kicker"&gt;…&lt;/span&gt;
+      &lt;h2 id="x-title"&gt;…&lt;/h2&gt;
+      &lt;p&gt;…&lt;/p&gt;
+    &lt;/header&gt;
+    …
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+            <p class="pt-note">Drop <code>--center</code> for a left-aligned heading. Alternate section backgrounds with <code>background: var(--bg-wash)</code>.</p></details>
+        </div>
+    </section>
+
+    {# ============ BREADCRUMB ============ #}
+    <section class="pt-block">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">5 · Breadcrumb</h2>
+            <p class="pt-note">Opt-in via front matter — <code>partials/breadcrumb.njk</code> renders it between header and hero. Trim ~40px off the hero's top padding.</p>
+            <div class="pt-demo">
+                <nav class="breadcrumb"><div class="breadcrumb__inner"><a href="#">मुख्य पृष्ठ</a><span class="breadcrumb__sep">/</span><a href="#">अभिभावक पृष्ठ</a><span class="breadcrumb__sep">/</span><span class="breadcrumb__current">यह पृष्ठ</span></div></nav>
+            </div>
+            <details class="pt-code"><summary>front matter</summary><pre><code>breadcrumb: true
+breadcrumbName: "छोटा नाम"          # optional, else title before the "|"
+breadcrumbParent: { "label": "अभिभावक", "href": "/parent.html" }   # optional middle crumb</code></pre></details>
+        </div>
+    </section>
+
+    {# ============ RECURRING SECTION SHAPES ============ #}
+    <section class="pt-block pt-block--alt">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">6 · Recurring section shapes</h2>
+            <p class="pt-note">These appear on many pages with page-specific prefixes today (<code>gyanyogi-step</code>, <code>shardamani-step</code>, <code>bvys-step</code> …). Reuse the shape and idiom; a shared class set is the next refactor.</p>
+
+            <h3 class="pt-sub">6a · Two-column media + copy</h3>
+            <div class="pt-demo pt-demo--framed">
+                <div class="pt-mediacopy">
+                    <figure class="pt-mediacopy__media"><div class="pt-ph pt-ph--4x3">image</div></figure>
+                    <div class="hi-prose">
+                        <span class="hi-kicker">किकर</span>
+                        <h3>दो-स्तम्भ खंड</h3>
+                        <p>बाईं ओर चित्र (bordered, radius, shadow-md), दाईं ओर गद्य। मोबाइल पर एक स्तम्भ। वैकल्पिक <code>--reverse</code>।</p>
+                        <div class="hi-actions"><a class="hi-btn hi-btn--primary" href="#">क्रिया</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="pt-sub">6b · Numbered steps</h3>
+            <div class="pt-demo pt-demo--framed">
+                <ol class="pt-steps">
+                    <li><h4>पहला चरण</h4><p>चरण का संक्षिप्त विवरण एक-दो पंक्ति में।</p></li>
+                    <li><h4>दूसरा चरण</h4><p>क्रमांक gold या maroon disc में; एक से दूसरे में प्रवाह।</p></li>
+                    <li><h4>तीसरा चरण</h4><p>मोबाइल पर स्तम्भ ढह जाते हैं।</p></li>
+                </ol>
+            </div>
+
+            <h3 class="pt-sub">6c · Feature-card grid</h3>
+            <div class="pt-demo pt-demo--framed">
+                <div class="pt-cards">
+                    <article class="pt-card"><b>शीर्षक एक</b><span>छोटा विवरण। सर्फ़ेस कार्ड, hairline, radius।</span></article>
+                    <article class="pt-card"><b>शीर्षक दो</b><span>2-up @620px, 3–4 up on wide.</span></article>
+                    <article class="pt-card"><b>शीर्षक तीन</b><span>gold underline वैकल्पिक (glass-card variant देखें essence band)।</span></article>
+                </div>
+            </div>
+
+            <h3 class="pt-sub">6d · Stat / fact strip</h3>
+            <div class="pt-demo pt-demo--framed">
+                <div class="pt-stats">
+                    <div><strong>8,630+</strong><span>विद्यार्थी</span></div>
+                    <div><strong>₹6.72 Cr</strong><span>छात्रवृत्ति</span></div>
+                    <div><strong>30 वर्ष</strong><span>निष्काम सेवा</span></div>
+                </div>
+                <p class="pt-note">Figures in <code>--font-latin</code> + <code>tabular-nums</code>. Never lead a spirituality-first page with these.</p>
+            </div>
+
+            <h3 class="pt-sub">6e · Vertical timeline</h3>
+            <div class="pt-demo pt-demo--framed">
+                <ol class="pt-timeline">
+                    <li><span class="pt-timeline__y">1944</span><span>घटना का शीर्षक</span></li>
+                    <li class="is-seva"><span class="pt-timeline__y">1996</span><span>seva-phase नोड maroon</span></li>
+                    <li class="is-seva"><span class="pt-timeline__y">2021</span><span>dashed gold rail, single-sided</span></li>
+                </ol>
+                <p class="pt-note">Homepage: <code>.v2-journey</code> (compact). Full history: <code>.it-timeline</code> (with bodies). Both from <code>timeline.json</code>.</p>
+            </div>
+
+            <h3 class="pt-sub">6f · Document / link list</h3>
+            <div class="pt-demo pt-demo--framed">
+                <ul class="pt-doclist">
+                    <li><span>दस्तावेज़ का नाम <em class="pt-doclist__num">AAATS…</em></span><a href="#">PDF देखें <span aria-hidden="true">&#8599;</span></a></li>
+                    <li><span>दूसरा दस्तावेज़</span><a href="#">PDF देखें <span aria-hidden="true">&#8599;</span></a></li>
+                </ul>
+                <p class="pt-note">See <code>.tr-doclist</code> on <code>/transparency.html</code>.</p>
+            </div>
+
+            <h3 class="pt-sub">6g · Pull-quote</h3>
+            <div class="pt-demo pt-demo--framed">
+                <blockquote class="pt-quote">“उद्धरण गद्य, <code>--font-head</code>, बाईं ओर gold rule।”</blockquote>
+            </div>
+
+            <h3 class="pt-sub">6h · Closing CTA band</h3>
+            <div class="pt-demo pt-demo--framed pt-demo--wash">
+                <div style="text-align:center">
+                    <span class="hi-kicker">समापन किकर</span>
+                    <h3>अगला कदम आमंत्रण</h3>
+                    <p class="pt-note" style="margin:8px auto 16px;max-width:52ch">पृष्ठ के अंत में एक शान्त band — <code>--bg-wash</code>, top hairline, 1–3 CTAs।</p>
+                    <div class="hi-actions hi-actions--center"><a class="hi-btn hi-btn--primary" href="#">सम्पर्क करें</a><a class="hi-btn hi-btn--outline" href="#">और देखें</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# ============ PAGE RECIPE ============ #}
+    <section class="pt-block">
+        <div class="hi-shell">
+            <h2 class="pt-block__title">7 · A new page, start to finish</h2>
+            <ol class="pt-list pt-list--num">
+                <li>Front matter: <code>layout: base.njk</code>, <code>title</code> (<code>"नाम | मणिद्वीप अध्यात्म परिवार"</code>), <code>description</code>, <code>bodyClass: "hindi-home &lt;slug&gt;-page"</code>, <code>breadcrumb: true</code> (+ parent), <code>extraCss: ["/assets/css/pages/&lt;slug&gt;.css"]</code>.</li>
+                <li>Hero: <code>&lt;section class="&lt;slug&gt;-hero"&gt;</code> on <code>--bg-wash</code> — kicker, h1 (<code>--step-h1</code>, <code>--primary</code>), lead. Padding <code>clamp(30px,4.5vw,52px) 0 …</code> (the header placeholder already reserves 140px).</li>
+                <li>Body: compose from §6 shapes inside <code>hi-section</code> + <code>hi-shell</code>; alternate <code>--bg</code> / <code>--bg-wash</code>.</li>
+                <li>Close with a §6h band.</li>
+                <li>Data that repeats or the English site needs → a <code>src/_data/*.json</code> file, not inline.</li>
+                <li>Add JSON-LD only via head.njk front matter (<code>person:</code>, <code>book:</code>) or a page-scoped <code>&lt;script type="application/ld+json"&gt;</code>.</li>
+                <li>Every <code>&lt;img&gt;</code> carries real <code>width</code>/<code>height</code>.</li>
+                <li><code>npx @11ty/eleventy</code> → check the build, links, JSON-LD.</li>
+            </ol>
+        </div>
+    </section>
+</main>

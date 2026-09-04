@@ -4,6 +4,9 @@
 
     <title>{{ title if title else site.name[locale] }}</title>
     <meta name="description" content="{{ description if description else site.descriptionDefault[locale] }}">
+    {%- if noindex %}
+    <meta name="robots" content="noindex, nofollow">
+    {%- endif %}
     <link rel="canonical" href="{{ site.origin }}{{ page.url }}">
 
     {#- hreflang: activate the 'en' line when site.locales.en.enabled becomes true -#}
