@@ -118,6 +118,7 @@
         .dg-section--chapters { background: var(--bg);}
         .dg-section--mission { background: var(--bg);}
         .dg-section--impact { background: var(--bg);}
+        .dg-section--reviews { background: var(--bg);}
 
         .dg-grid {
             display: grid;
@@ -303,6 +304,86 @@
             line-height: 1.75;
         }
 
+        .dg-reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .dg-review {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 26px 24px 22px;
+            overflow: hidden;
+            border: 1px solid rgba(198, 148, 53, .22);
+            border-radius: 8px;
+            background: rgba(255, 252, 246, .78);
+            box-shadow: 0 18px 44px rgba(63, 45, 37, .08);
+        }
+
+        .dg-review::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto;
+            height: 5px;
+            background: linear-gradient(90deg, var(--hi-maroon), var(--hi-gold));
+        }
+
+        .dg-review blockquote {
+            margin: 0 0 18px;
+            color: var(--hi-ink);
+            font-family: var(--hi-serif);
+            font-size: 1.14rem;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .dg-review footer {
+            margin-top: auto;
+            padding-top: 14px;
+            border-top: 1px solid rgba(121, 43, 42, .13);
+        }
+
+        .dg-review footer strong {
+            display: block;
+            color: var(--hi-maroon);
+            font-family: var(--hi-serif);
+            font-size: 1.02rem;
+        }
+
+        .dg-review footer span {
+            display: block;
+            margin-top: 3px;
+            color: #7a6c62;
+            font-size: .84rem;
+            line-height: 1.5;
+        }
+
+        .dg-review__full {
+            margin-top: 14px;
+        }
+
+        .dg-review__full summary {
+            cursor: pointer;
+            color: var(--hi-maroon);
+            font-size: .86rem;
+            font-weight: 700;
+        }
+
+        .dg-review__full p {
+            margin: 12px 0 0;
+            color: #62544c;
+            font-size: .94rem;
+            line-height: 1.8;
+        }
+
+        .dg-review__note {
+            font-style: italic;
+            color: #8a7d72 !important;
+            font-size: .82rem !important;
+        }
+
         .dg-closing {
             text-align: center;
             background:
@@ -326,7 +407,8 @@
 
             .dg-essence__grid,
             .dg-chapter-grid,
-            .dg-flow {
+            .dg-flow,
+            .dg-reviews-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
@@ -349,7 +431,8 @@
 
             .dg-essence__grid,
             .dg-chapter-grid,
-            .dg-flow {
+            .dg-flow,
+            .dg-reviews-grid {
                 grid-template-columns: 1fr;
             }
 

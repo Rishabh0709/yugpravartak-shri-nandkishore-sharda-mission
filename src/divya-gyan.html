@@ -43,6 +43,7 @@ book: divyaGyan
                 <a href="#chapters">अध्यायवार परिचय</a>
                 <a href="#mission">ज्ञान-गंगा मिशन</a>
                 <a href="#impact">आस्था और आत्मबोध</a>
+                <a href="#reviews">विद्वानों की दृष्टि में</a>
             </div>
         </nav>
 
@@ -134,6 +135,36 @@ book: divyaGyan
                         <a class="hi-btn hi-btn--primary" href="/buddhi-vivek-yog-sadhna.html">बुद्धि-विवेक योग साधना</a>
                         <a class="hi-btn hi-btn--soft" href="/jigyasa-samadhan.html">जिज्ञासा समाधान पढ़ें</a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dg-section dg-section--reviews" id="reviews" aria-labelledby="reviews-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center dg-section-heading">
+                    <span class="hi-kicker">पाठकों की प्रतिक्रियाएँ</span>
+                    <h2 id="reviews-title">विद्वानों की दृष्टि में</h2>
+                    <p>पुस्तक के प्रकाशन के बाद न्यायपालिका, विश्वविद्यालयों और शिक्षा-जगत से जुड़े विद्वानों ने इसका अध्ययन कर अपने विचार साझा किये।</p>
+                </header>
+                <div class="dg-reviews-grid">
+                    {%- for r in bookReviews.reviews %}
+                    <article class="dg-review">
+                        <blockquote>“{{ r.excerpt.hi }}”</blockquote>
+                        <footer>
+                            <strong>{{ r.name.hi }}</strong>
+                            <span>{{ r.designation.hi }}</span>
+                        </footer>
+                        <details class="dg-review__full">
+                            <summary>पूरी प्रतिक्रिया पढ़ें</summary>
+                            {%- for para in r.body.hi %}
+                            <p>{{ para }}</p>
+                            {%- endfor %}
+                            {%- if r.originalLanguage == "en" %}
+                            <p class="dg-review__note">मूल प्रतिक्रिया अंग्रेज़ी में; ऊपर भावानुवाद प्रस्तुत है।</p>
+                            {%- endif %}
+                        </details>
+                    </article>
+                    {%- endfor %}
                 </div>
             </div>
         </section>
