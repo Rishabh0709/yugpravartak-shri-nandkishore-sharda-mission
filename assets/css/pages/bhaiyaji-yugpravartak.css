@@ -6,7 +6,7 @@
         .yug-hero {
             position: relative;
             overflow: hidden;
-            padding-top: clamp(124px, 12vw, 170px);
+            padding-top: clamp(86px, 9vw, 130px);
             padding-bottom: clamp(72px, 9vw, 128px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .9) 0%, rgba(255, 250, 241, .72) 42%, rgba(255, 250, 241, .28) 70%),

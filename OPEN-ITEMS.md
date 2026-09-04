@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 — sampark redesign, publications data-driven)
+**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs on 24 pages, English title resolved)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -53,7 +53,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - **SVT "37,000+ छात्राएँ" / "₹4.5 करोड़"** — still in `ABOUT SWAMI VIVEKANAND TRUST.doc`. Site uses 8,000+ distinct students per your earlier ruling ("37,381 = scholarship instances"). Get the master doc's language fixed.
 - **Maa Shardamani charts** (`maa-shardamani-trust.html`) — the 7-point cumulative series for girls (105 → … → 3,405) and amount (₹1.33 L → … → ₹164.56 L) is **not in any source doc**. Confirm it (from `figures_till_2025-26.xlsx`?) or remove the charts.
 - **Gyan Ganga infra figures** (`gyan-ganga-mission.html`) — **₹1.5 करोड़+**, "7 बालिका विद्यालयों की 16 कक्षाओं" furniture, "श्रीमती तुलसी देवी की स्मृति में", the area list (सिवांची गेट, जालोरी गेट, …) — none in the source doc, which names only 4 works and gives no rupee figure. Trace or remove.
-- **English book title** — site uses *"The Wonderful World After Death"* (in `publications.json`, `publications.html`, `gyan-ganga-mission.html`, archived English pages). Sandip Sir's doc has it Krutidev-mangled. Confirm the exact published English title.
+- ~~English book title~~ — resolved: the actual book cover in the divya-gyan hero reads *"Wonderful World After Death"*, matching the site. Leave as is.
 
 ---
 
@@ -62,7 +62,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 Say the word and I'll do these — no input needed:
 
 - ~~`<img>` dimensions~~ — **done** (`7a1b650`). 304 tags now carry intrinsic `width`/`height`; `img { height: auto }` added.
-- **Breadcrumbs — remaining legacy pages.** Done on 11 pages (5 utility + about-mission, 3 bio pages, nishkam-karm-sadhna, logo). Still missing on the full-bleed *image*-hero pages (4 trust pages, divya-gyan, buddhi-vivek-yog-sadhna, bhaiyaji-*, chintan, margdarshan, gyan-ganga, sadhna-places, gallery, publications, news-events, testimonials) — those need the crumb placed over/inside the hero, per-page.
+- **Breadcrumbs — last few pages.** 24 pages now have a visible breadcrumb. Still without: `gallery`, `news-events`, `testimonials`, `sadhna-places`, and the orphan pages (`impact.html` has its own inline breadcrumb). Low priority — index-type pages.
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
 - ~~Two mislabeled image files~~ — **done** (`10b56ca`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.

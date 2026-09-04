@@ -6,7 +6,7 @@
         .sanskar-hero {
             position: relative;
             overflow: hidden;
-            padding: clamp(96px, 10vw, 142px) 0 clamp(58px, 8vw, 104px);
+            padding: clamp(58px, 7vw, 102px) 0 clamp(58px, 8vw, 104px);
             background:
                 radial-gradient(circle at 82% 16%, rgba(198, 148, 53, .22), transparent 30%),
                 radial-gradient(circle at 10% 22%, rgba(221, 236, 240, .72), transparent 34%),

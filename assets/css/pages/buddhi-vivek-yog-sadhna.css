@@ -6,7 +6,7 @@
         .bvys-hero {
             position: relative;
             overflow: hidden;
-            padding-top: clamp(118px, 12vw, 166px);
+            padding-top: clamp(80px, 9vw, 126px);
             padding-bottom: clamp(70px, 9vw, 120px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .93) 0%, rgba(255, 250, 241, .78) 44%, rgba(255, 250, 241, .34) 74%),

@@ -6,7 +6,7 @@
         .dg-hero {
             position: relative;
             overflow: hidden;
-            padding-top: clamp(118px, 12vw, 166px);
+            padding-top: clamp(80px, 9vw, 126px);
             padding-bottom: clamp(70px, 9vw, 120px);
             background:
                 linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .82) 44%, rgba(255, 250, 241, .44) 74%),
