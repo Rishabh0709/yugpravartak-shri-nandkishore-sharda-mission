@@ -167,9 +167,9 @@
             return "testimonials.html#success-stories";
         }
 
-        if (video.category === "success-stories" || video.category === "life-transformation") return "success-stories.html";
-        if (video.category === "dignitaries-views") return "testimonials.html";
-        return "index.html";
+        if (video.category === "sanskar-classes") return "testimonials.html#student-testimonials";
+        if (video.category === "dignitaries-views") return "testimonials.html#dignitaries-views";
+        return "testimonials.html#success-stories";
     }
     function setupModal(scope) {
         const modal = document.querySelector("[data-video-modal]");

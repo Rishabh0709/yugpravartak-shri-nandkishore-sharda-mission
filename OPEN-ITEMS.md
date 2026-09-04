@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 + homepage gallery strip)
+**Last updated:** 2026-09-04 (deleted 3 orphan redirect stubs)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -42,7 +42,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - (No donation UI is built yet — this data is staged for a future donation section on `sampark.html`.)
 
 ### Decisions
-- **Orphan pages** — `dignitaries-views.html`, `success-stories.html`, `student-testimonials.html` exist but aren't linked anywhere. Link them, merge into `testimonials.html`, or delete.
+- ~~Orphan pages~~ — **done** (`<h>`). `dignitaries-views`, `success-stories`, `student-testimonials` were redirect stubs; deleted. Content lives in `/testimonials.html` (4 sections). Fixed a dead `success-stories.html` ref in `videos.js` and a duplicate kicker on that page.
 - **SVT scholarship figure** — the SVT page shows the *combined* girls figure (8,000+ / ₹6.14 Cr, labelled "माँ शारदामणि ट्रस्ट सहित"). Source gives SVT-only = ₹4.5 Cr. Decide: show SVT-only, combined, or both.
 
 ---
