@@ -159,14 +159,15 @@
 }
 
 
-.publication-card__cover {
+/* covers that carry a real image: drop the gradient + text overlay */
+.publication-card__cover:has(img) {
     padding: 0;
     background: none;
 }
 
-.publication-card__cover::after,
-.publication-card__cover span,
-.publication-card__cover strong {
+.publication-card__cover:has(img)::after,
+.publication-card__cover:has(img) span,
+.publication-card__cover:has(img) strong {
     display: none;
 }
 

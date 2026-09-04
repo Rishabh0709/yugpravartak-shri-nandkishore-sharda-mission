@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 — sampark.html redesign)
+**Last updated:** 2026-09-04 (Phase 5 — sampark redesign, publications data-driven)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -66,11 +66,10 @@ Say the word and I'll do these — no input needed:
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
 - ~~Two mislabeled image files~~ — **done** (`10b56ca`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.
-- **`publications.json` / `publications.html`** — `publications.json` holds only the 1 book needed for Book JSON-LD; `publications.html`'s 9 cards are hand-written. Expand `publications.json` and drive the page from it (also gives the 2004 English edition a home).
+- ~~`publications.json` / `publications.html`~~ — **done** (`<h>`). `publications.json` now holds all 9 books; `publications.html` loops over it. Fixed a latent bug where the 3 CSS-cover cards rendered blank. Book JSON-LD (`book: divyaGyan`) still valid.
 - **Bio-page headers from `people.json`** — `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html` still hardcode name/role/portrait + a facts grid with formatted Hindi dates. Wiring needs an ISO→Hindi date filter and resolving the role/kicker wording; modest payoff (facts rarely change).
 - ~~`trusts.json` vs `documents.js`~~ — **done** (`4511322`). `trusts.json` is now the single trust registry (identity + `approvals`); `documents.js` reads it and derives the file lists.
 - ~~`sampark.html` design~~ — **done** (`b2ac98f`). Rebuilt on the shared Hindi component layer (hi-section / hi-shell / hi-btn / tokens); dropped the old activity-*/contact-* CSS; contact.js form logic preserved. contact.css deleted (orphaned). `activities-hub.css` still used by impact.html.
-- **`publications.html`** — 9 book cards hand-written; could be driven by a data file (`publications.json` expanded).
 - **Wrap in-page numbers in `.num`** — for tabular-figure / Latin-numeral treatment (Phase 2 deferred).
 - **Split `style.css`** into base + components and drop it from the Hindi pages that don't need the old English-site rules (Phase 2 deferred).
 
