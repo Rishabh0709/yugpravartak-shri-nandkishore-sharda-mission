@@ -361,6 +361,11 @@
     grid-template-columns: minmax(0, 1.36fr) minmax(260px, 0.64fr);
 }
 
+.impact-chart-grid--solo {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 640px;
+}
+
 .impact-chart-card {
     min-width: 0;
     margin: 0;
@@ -928,6 +933,7 @@
     .impact-record-header,
     .impact-chart-grid,
     .impact-chart-grid--single,
+    .impact-chart-grid--solo,
     .impact-human-story-inner {
         grid-template-columns: 1fr;
     }

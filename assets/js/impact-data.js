@@ -50,7 +50,9 @@
 
     function renderRecord(stream) {
         const content = stream.content[language];
-        const chartClass = stream.singleChart ? "impact-chart-grid impact-chart-grid--single" : "impact-chart-grid";
+        const chartClass = stream.singleChart
+            ? "impact-chart-grid impact-chart-grid--single"
+            : (stream.charts.length === 1 ? "impact-chart-grid impact-chart-grid--solo" : "impact-chart-grid");
         const extraClass = stream.singleChart ? " impact-record--ration" : "";
         return `
             <article class="impact-record${extraClass}" id="${stream.id}">
