@@ -52,3 +52,38 @@ body.hindi-contact-page {
             letter-spacing: 0;
             text-transform: none;
         }
+
+        .hindi-contact-page .contact-visit-places {
+            display: grid;
+            gap: 16px;
+            margin: 26px 0 20px;
+        }
+        @media (min-width: 720px) {
+            .hindi-contact-page .contact-visit-places { grid-template-columns: 1fr 1fr; }
+        }
+        .hindi-contact-page .contact-visit-places article {
+            padding: 18px 20px;
+            border: 1px solid rgba(120, 80, 40, .16);
+            border-radius: 14px;
+            background: #fffdf8;
+        }
+        .hindi-contact-page .contact-visit-places h3 {
+            margin: 0 0 4px;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 1.02rem;
+            line-height: 1.4;
+            color: #7b2a28;
+        }
+        .hindi-contact-page .contact-visit-places article > p {
+            margin: 0 0 8px;
+            font-size: .9rem;
+            color: #786e64;
+        }
+        .hindi-contact-page .contact-visit-places__time {
+            margin: 10px 0 0 !important;
+            padding-top: 9px;
+            border-top: 1px solid rgba(120, 80, 40, .16);
+            font-size: .88rem !important;
+            color: #574d44 !important;
+            line-height: 1.6;
+        }
