@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 continued — img dimensions done)
+**Last updated:** 2026-09-04 (Phase 5 continued — img dims, impact note, trust registry)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -68,7 +68,7 @@ Say the word and I'll do these — no input needed:
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.
 - **`publications.json` / `publications.html`** — `publications.json` holds only the 1 book needed for Book JSON-LD; `publications.html`'s 9 cards are hand-written. Expand `publications.json` and drive the page from it (also gives the 2004 English edition a home).
 - **Bio-page headers from `people.json`** — `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html` still hardcode name/role/portrait + a facts grid with formatted Hindi dates. Wiring needs an ISO→Hindi date filter and resolving the role/kicker wording; modest payoff (facts rarely change).
-- ~~`trusts.json` vs `documents.js`~~ — **done** (`<next>`). `trusts.json` is now the single trust registry (identity + `approvals`); `documents.js` reads it and derives the file lists.
+- ~~`trusts.json` vs `documents.js`~~ — **done** (`4511322`). `trusts.json` is now the single trust registry (identity + `approvals`); `documents.js` reads it and derives the file lists.
 - **`sampark.html` design** — still on the old English-v1 `activity-*` / `contact-*` CSS system, visually inconsistent with the rest of the Hindi site. Rebuild on the shared component layer.
 - **`publications.html`** — 9 book cards hand-written; could be driven by a data file (`publications.json` expanded).
 - **Wrap in-page numbers in `.num`** — for tabular-figure / Latin-numeral treatment (Phase 2 deferred).
