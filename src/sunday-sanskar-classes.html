@@ -6,8 +6,7 @@ bodyClass: "hindi-home sanskar-page"
 breadcrumb: true
 breadcrumbName: "विद्यार्थी संस्कार"
 breadcrumbParent: { "label": "निष्काम कर्म साधना", "href": "/nishkam-karm-sadhna.html" }
-extraCss: ["/assets/css/pages/sunday-sanskar-classes.css", "/assets/css/media-videos.css"]
-extraJs: ["/assets/js/videos.js"]
+extraCss: ["/assets/css/pages/sunday-sanskar-classes.css"]
 ---
 <main id="main-content">
         <section class="sanskar-hero" aria-labelledby="sanskar-title">
@@ -124,14 +123,27 @@ extraJs: ["/assets/js/videos.js"]
             </div>
         </section>
 
-        <section class="sanskar-section sanskar-section--media" id="experiences" aria-labelledby="experience-title" data-video-archive data-video-category="sanskar-classes">
+        <section class="sanskar-section sanskar-section--media" id="experiences" aria-labelledby="experience-title">
             <div class="hi-shell">
                 <header class="hi-section-heading hi-section-heading--center">
                     <span class="hi-kicker">अनुभव और अभिव्यक्ति</span>
-                    <h2 id="experience-title">अनुभव, उन्हीं की आवाज़ में</h2>
-                    <p>विद्यार्थियों, स्वयंसेवियों और कक्षा से जुड़े अतिथियों के अपने अनुभव, उन्हीं के शब्दों में।</p>
+                    <h2 id="experience-title">विद्यार्थियों की सीख, उन्हीं की आवाज़ में</h2>
+                    <p>यहाँ आप बाद में विद्यार्थियों के अनुभव, छोटे वीडियो, कक्षा की झलकियाँ और सीख साझा कर सकते हैं। अभी के लिए इन्हें सुंदर मीडिया प्लेसहोल्डर के रूप में रखा गया है।</p>
                 </header>
-                <div class="video-grid" data-video-grid></div>
+                <div class="sanskar-media-grid">
+                    <article class="sanskar-media-card">
+                        <figure><img data-image-key="sunday-sanskar-classes.girl-speech" src="/assets/images/girl_speech.jpg" width="1236" height="829" alt="विद्यार्थी अपना अनुभव साझा करती हुई" loading="lazy"><span class="sanskar-play" aria-hidden="true">▶</span></figure>
+                        <div class="sanskar-media-card__body"><h3>आत्मविश्वास की अभिव्यक्ति</h3><p>विद्यार्थियों द्वारा मंच पर बोलने, विचार रखने और सीख साझा करने की झलक।</p></div>
+                    </article>
+                    <article class="sanskar-media-card">
+                        <figure><img data-image-key="sunday-sanskar-classes.girls2" src="/assets/images/girls2.png" width="797" height="450" alt="संस्कार कक्षा में छात्राएँ" loading="lazy"><span class="sanskar-play" aria-hidden="true">▶</span></figure>
+                        <div class="sanskar-media-card__body"><h3>कक्षा की सीख</h3><p>जीवन-मूल्यों, अनुशासन, कृतज्ञता और सकारात्मक सोच पर आधारित अनुभव।</p></div>
+                    </article>
+                    <article class="sanskar-media-card">
+                        <figure><img data-image-key="sunday-sanskar-classes.sunday-guidance-gathering" src="/assets/images/sunday-guidance-gathering.webp" width="1800" height="1200" alt="रविवार मार्गदर्शन सभा" loading="lazy"><span class="sanskar-play" aria-hidden="true">▶</span></figure>
+                        <div class="sanskar-media-card__body"><h3>मणिद्वीप का वातावरण</h3><p>स्नेह, संवाद और आध्यात्मिक मार्गदर्शन से भरा सामूहिक सीखने का अनुभव।</p></div>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -150,13 +162,3 @@ extraJs: ["/assets/js/videos.js"]
             </div>
         </section>
     </main>
-
-    <div class="video-modal" data-video-modal role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
-        <div class="video-modal__dialog">
-            <div class="video-modal__head">
-                <h2 class="video-modal__title" id="video-modal-title" data-video-modal-title></h2>
-                <button class="video-modal__close" type="button" data-video-close aria-label="वीडियो बन्द करें">×</button>
-            </div>
-            <div class="video-modal__frame" data-video-frame></div>
-        </div>
-    </div>
