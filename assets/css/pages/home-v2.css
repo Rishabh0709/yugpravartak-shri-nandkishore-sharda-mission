@@ -358,6 +358,20 @@
 }
 @media (min-width: 640px) { .v2-ways { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .v2-ways { grid-template-columns: repeat(3, 1fr); } }
+.v2-purpose__note {
+    margin: clamp(18px, 2.4vw, 26px) 0 0;
+    text-align: center;
+    font-size: .88rem;
+    line-height: 1.7;
+    color: var(--ink-muted);
+}
+.v2-purpose__note a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.v2-purpose__note a:hover { text-decoration: underline; }
 .v2-way {
     display: flex;
     flex-direction: column;
