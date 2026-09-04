@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (after Phase 5 + content-review item added)
+**Last updated:** 2026-09-04 (Phase 5 continued — img dimensions done)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -61,9 +61,10 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 Say the word and I'll do these — no input needed:
 
-- **`<img>` dimensions** — 307 `<img>` tags, none carry `width`/`height` or `aspect-ratio` → layout-shift on load. Dedicated pass needed (read real sizes, add attrs or CSS `aspect-ratio` on containers).
+- ~~`<img>` dimensions~~ — **done** (`7a1b650`). 304 tags now carry intrinsic `width`/`height`; `img { height: auto }` added.
 - **Breadcrumbs on legacy pages** — the ~27 converted pages. Their hero top-padding needs retuning first (the header placeholder already reserves space).
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
+- **Two mislabeled image files** — `assets/images/budhivivek.png` and `buddhi-vivek-yog-sadhna-symbol.png` are actually JPEG data with a `.png` extension. Rename to `.jpg` (and update the 2 refs), or re-export as real PNG.
 - **`impact.html` cross-reference** — surface the distinct-student figure (8,630+) alongside the "scholarship instances" numbers so a reader sees both.
 - **`publications.json`** — add the 2004 English edition entry (currently 9 of 10 works; used for Book JSON-LD).
 - **Bio-page headers from `people.json`** — `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html` still hardcode name/role/portrait; wire them to `people.json`.
