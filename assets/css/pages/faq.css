@@ -9,7 +9,7 @@
 
 /* ---- hero ---- */
 .faqp-hero {
-    padding: clamp(120px, 16vh, 168px) 0 clamp(34px, 5vw, 54px);
+    padding: clamp(30px, 4.5vw, 52px) 0 clamp(30px, 4.5vw, 50px);
     background: var(--bg-wash);
     border-bottom: 1px solid var(--rule);
 }

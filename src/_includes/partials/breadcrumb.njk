@@ -1,0 +1,15 @@
+{%- set pfx = "/en" if locale == "en" else "" -%}
+{%- if breadcrumb -%}
+{%- set crumbLabel = breadcrumbName if breadcrumbName else (title.split("|")[0] | trim) -%}
+<nav class="breadcrumb" aria-label="{{ 'ब्रेडक्रम्ब' if locale == 'hi' else 'Breadcrumb' }}">
+    <div class="breadcrumb__inner">
+        <a href="{{ pfx }}/index.html">{{ 'मुख्य पृष्ठ' if locale == 'hi' else 'Home' }}</a>
+        {%- if breadcrumbParent %}
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="{{ pfx }}{{ breadcrumbParent.href }}">{{ breadcrumbParent.label }}</a>
+        {%- endif %}
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span class="breadcrumb__current" aria-current="page">{{ crumbLabel }}</span>
+    </div>
+</nav>
+{%- endif -%}

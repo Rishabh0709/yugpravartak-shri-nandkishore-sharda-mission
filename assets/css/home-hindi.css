@@ -243,8 +243,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     padding-block: clamp(84px, 9vw, 138px);
 }
 
-.hi-kicker,
-.hi-eyebrow {
+.hi-kicker {
     display: inline-block;
     margin-bottom: 18px;
     color: var(--hi-maroon);
@@ -1757,8 +1756,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
         padding-block: 72px;
     }
 
-    .hi-kicker,
-    .hi-eyebrow {
+    .hi-kicker {
         font-size: .78rem;
     }
 
