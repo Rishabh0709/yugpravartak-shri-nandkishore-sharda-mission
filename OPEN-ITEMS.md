@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (after Phase 5)
+**Last updated:** 2026-09-04 (after Phase 5 + content-review item added)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -19,8 +19,13 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 ## 1 · Needs your content or decision  [You]
 
-### Content to supply
-- **FAQ answers** — `src/_data/faq.json` has 6 questions with **draft** answers I assembled from existing content. Review/correct with the Parivar.
+### Content to supply / review
+- **Review the content of the three new Phase-5 pages** — all drafted by Claude from existing site copy + Sandip Sir's source docs, not yet vetted by the Parivar:
+  - `/sadhna-aarambh.html` — "साधना कैसे आरम्भ करें" (steps, where taught, what to expect)
+  - `/itihaas.html` — history/timeline (renders `timeline.json`; check the event titles/bodies and the two phase notes)
+  - `/faq.html` — the 6 practical answers (also listed below)
+  Confirm facts, tone, and register; flag anything to change.
+- **FAQ answers** — `src/_data/faq.json` has 6 questions with **draft** answers Claude assembled from existing content. Review/correct with the Parivar.
 - **"साधना कैसे आरम्भ करें"** (`/sadhna-aarambh.html`) — confirm: is there a contact person, a form, or a specific process beyond "come to मणिद्वीप / सिद्धपीठ"? Anything to add.
 - **Contact email** — replace `kishoreggm@gmail.com` with `info@manidweepjodhpur.org` in `src/_data/site.json` once the mailbox exists.
 - **WhatsApp channel / mailing list** — if/when one exists, the closing CTAs and "जुड़ें" links should point to it instead of the contact page.
