@@ -44,6 +44,7 @@ body::before {
 img {
     display: block;
     max-width: 100%;
+    height: auto;   /* let width/height attrs set the aspect ratio; CSS controls size */
 }
 
 a {
