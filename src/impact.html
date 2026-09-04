@@ -16,7 +16,7 @@ extraJs: ["/assets/js/impact-data.js"]
                     <div class="impact-hero-copy">
                         <span class="activity-eyebrow">आँकड़ों में सेवा का प्रभाव</span>
                         <h1>करुणा की सेवा-धारा, स्पष्ट आँकड़ों के साथ।</h1>
-                        <p>शिक्षा, संस्कार, छात्रवृत्ति और परिवार-सहायता से जुड़े कार्यों का संचयी विवरण, जो गरिमा, मार्गदर्शन और दीर्घकालीन संबंधों पर आधारित है।</p>
+                        <p>मणिद्वीप अध्यात्म परिवार की सेवा 1996 से निरन्तर चली आ रही है — शिक्षा, संस्कार और परिवार-सहायता के माध्यम से, गरिमा और दीर्घकालीन संबंधों की नींव पर।</p>
                     </div>
                     <figure class="impact-hero-media">
                         <img data-image-key="impact.impact-hero-education" src="/assets/images/impact-hero-education.webp" width="1600" height="1067" alt="विद्यार्थी-सहयोग कार्यक्रम में मधु माँ द्वारा छात्रा को शैक्षणिक सामग्री प्रदान करते हुए" loading="eager" fetchpriority="high" decoding="async">
@@ -26,14 +26,36 @@ extraJs: ["/assets/js/impact-data.js"]
             </div>
         </header>
 
+        <section class="impact-topline" aria-label="मुख्य आँकड़े एक दृष्टि में">
+            <div class="activity-wrap">
+                <ul class="impact-topline__grid">
+                    <li>
+                        <span class="impact-topline__value">{{ impact.metrics.studentsCombined.display.hi }}</span>
+                        <span class="impact-topline__label">अद्वितीय विद्यार्थियों को शिक्षा सहयोग<small>बालिकाएँ {{ impact.metrics.studentsGirls.display.hi }} · बालक {{ impact.metrics.studentsBoys.display.hi }} · 1996 से</small></span>
+                    </li>
+                    <li>
+                        <span class="impact-topline__value">{{ impact.metrics.scholarshipCombined.display.hi }}</span>
+                        <span class="impact-topline__label">छात्रवृत्ति सहायता<small>{{ impact.metrics.schoolsColleges.display.hi }} के माध्यम से</small></span>
+                    </li>
+                    <li>
+                        <span class="impact-topline__value">{{ impact.metrics.familiesMonthly.display.hi }}</span>
+                        <span class="impact-topline__label">परिवारों को हर माह खाद्यान्न सहायता<small>2020 से · {{ impact.metrics.familyAid.display.hi }}</small></span>
+                    </li>
+                    <li>
+                        <span class="impact-topline__value">{{ impact.metrics.yearsOfService.display.hi }}</span>
+                        <span class="impact-topline__label">निरन्तर जमीनी सेवा<small>1996 से</small></span>
+                    </li>
+                </ul>
+                <p class="impact-topline__asof">सभी आँकड़े {{ impact.asOfLabel.hi }} तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित।</p>
+            </div>
+        </section>
+
         <section class="evidence-section" aria-labelledby="shared-impact-title">
             <div class="activity-wrap">
                 <header class="evidence-heading">
                     <div><span class="activity-eyebrow">सेवा की समन्वित धारा</span><h2 id="shared-impact-title">चार प्रमुख आयाम, एक ही निष्काम सेवा-भाव से जुड़े हुए</h2></div>
-                    <p>प्रत्येक आँकड़ा अपने सेवा-कार्य से जुड़ा हुआ है। इससे शिक्षा-सहयोग, उच्च शिक्षा, बालक शिक्षा और परिवार-सहायता की अलग-अलग भूमिका स्पष्ट रहती है, और मिशन का सामूहिक प्रभाव एक स्थान पर समझ आता है।</p>
+                    <p>यहाँ हर आँकड़ा अपने सेवा-कार्य से जुड़ा है — बालिका शिक्षा, उच्च शिक्षा, बालक शिक्षा और परिवार-सहायता की अलग-अलग भूमिका, और मिशन का सामूहिक प्रभाव, एक साथ।</p>
                 </header>
-
-                <p class="impact-headline-note">1996 से मार्च 2026 तक कुल <strong>{{ impact.metrics.studentsCombined.display.hi }} अद्वितीय विद्यार्थियों</strong> को <strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong> की छात्रवृत्ति सहायता दी गई है (बालिकाएँ {{ impact.metrics.studentsGirls.display.hi }} · बालक {{ impact.metrics.studentsBoys.display.hi }})। नीचे दिए गए विस्तृत चार्ट प्रत्येक रिपोर्टिंग अवधि के अंत तक वितरित <strong>संचयी छात्रवृत्ति राशि</strong> दर्शाते हैं।</p>
 
                 <div class="impact-summary-grid" data-impact-summary></div>
             </div>
@@ -43,7 +65,7 @@ extraJs: ["/assets/js/impact-data.js"]
             <div class="activity-wrap">
                 <header class="evidence-heading">
                     <div><span class="activity-eyebrow">विस्तृत आँकड़े</span><h2 id="detailed-impact-title">देखें, सेवा के प्रत्येक आयाम का विस्तार समय के साथ कैसे बढ़ा</h2></div>
-                    <p>नीचे दिए गए चार्ट प्रत्येक रिपोर्टिंग अवधि के अंत तक के संचयी आँकड़े दिखाते हैं। ये केवल उस अवधि की गतिविधि नहीं, बल्कि अब तक के कुल रिकॉर्ड हैं।</p>
+                    <p>प्रत्येक चार्ट में हर स्तम्भ उस रिपोर्टिंग अवधि के अंत तक वितरित कुल राशि दर्शाता है।</p>
                 </header>
 
                 <div data-impact-records></div>

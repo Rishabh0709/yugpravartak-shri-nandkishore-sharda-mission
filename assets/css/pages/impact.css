@@ -34,8 +34,14 @@ body.hindi-impact-page {
         }
 
         .hindi-impact-page .impact-value,
-        .hindi-impact-page .impact-record-kpis strong {
+        .hindi-impact-page .impact-record-kpis strong,
+        .hindi-impact-page .impact-topline__value {
             font-family: "Noto Serif Devanagari", serif;
+        }
+
+        .hindi-impact-page .impact-topline__label,
+        .hindi-impact-page .impact-topline__asof {
+            font-family: "Noto Sans Devanagari", sans-serif;
         }
     
         .hindi-impact-page .activity-eyebrow {
@@ -44,15 +50,3 @@ body.hindi-impact-page {
             letter-spacing: 0;
             text-transform: none;
         }
-
-        .hindi-impact-page .impact-headline-note {
-            max-width: 70ch;
-            margin: 0 0 clamp(24px, 3vw, 34px);
-            padding: 16px 20px;
-            border-left: 3px solid #b98a34;
-            background: #fffdf8;
-            font-size: .95rem;
-            line-height: 1.8;
-            color: #574d44;
-        }
-        .hindi-impact-page .impact-headline-note strong { color: #7b2a28; }
