@@ -64,7 +64,7 @@ Say the word and I'll do these — no input needed:
 - ~~`<img>` dimensions~~ — **done** (`7a1b650`). 304 tags now carry intrinsic `width`/`height`; `img { height: auto }` added.
 - **Breadcrumbs — remaining legacy pages.** Done on 11 pages (5 utility + about-mission, 3 bio pages, nishkam-karm-sadhna, logo). Still missing on the full-bleed *image*-hero pages (4 trust pages, divya-gyan, buddhi-vivek-yog-sadhna, bhaiyaji-*, chintan, margdarshan, gyan-ganga, sadhna-places, gallery, publications, news-events, testimonials) — those need the crumb placed over/inside the hero, per-page.
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
-- ~~Two mislabeled image files~~ — **done** (`<h>`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
+- ~~Two mislabeled image files~~ — **done** (`10b56ca`). The lotus symbol was stored 3× as `.png` (all byte-identical JPEG). Consolidated to one `buddhi-vivek-yog-sadhna-symbol.jpg`.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.
 - **`publications.json` / `publications.html`** — `publications.json` holds only the 1 book needed for Book JSON-LD; `publications.html`'s 9 cards are hand-written. Expand `publications.json` and drive the page from it (also gives the 2004 English edition a home).
 - **Bio-page headers from `people.json`** — `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html` still hardcode name/role/portrait + a facts grid with formatted Hindi dates. Wiring needs an ISO→Hindi date filter and resolving the role/kicker wording; modest payoff (facts rarely change).
