@@ -43,10 +43,10 @@
     {
       "heading": { "hi": "सेवा संस्थाएँ", "en": "The trusts" },
       "links": [
-        { "label": { "hi": "स्वामी विवेकानन्द स्टूडेंट्स वेलफेयर ट्रस्ट", "en": "Swami Vivekanand Students' Welfare Trust" }, "href": "/swami-vivekanand-trust.html" },
+        { "label": { "hi": "स्वामी विवेकानन्द ट्रस्ट", "en": "Swami Vivekanand Trust" }, "href": "/swami-vivekanand-trust.html" },
         { "label": { "hi": "माँ शारदामणि ट्रस्ट", "en": "Maa Shardamani Trust" }, "href": "/maa-shardamani-trust.html" },
-        { "label": { "hi": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र", "en": "Gyanyogi Adhyatm Kendra" }, "href": "/gyanyogi-adhyatm-kendra.html" },
-        { "label": { "hi": "श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन", "en": "Gyan Ganga Mission" }, "href": "/gyan-ganga-mission.html" },
+        { "label": { "hi": "ज्ञानयोगी अध्यात्म केन्द्र", "en": "Gyanyogi Adhyatm Kendra" }, "href": "/gyanyogi-adhyatm-kendra.html" },
+        { "label": { "hi": "ज्ञान गंगा मिशन", "en": "Gyan Ganga Mission" }, "href": "/gyan-ganga-mission.html" },
         { "label": { "hi": "पारदर्शिता एवं दस्तावेज़", "en": "Transparency & documents" }, "href": "/transparency.html" }
       ]
     }
