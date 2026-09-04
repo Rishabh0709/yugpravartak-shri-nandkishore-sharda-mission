@@ -124,6 +124,7 @@
 
         .sanskar-section {
             padding-block: clamp(70px, 8vw, 116px);
+            scroll-margin-top: 136px;
         }
 
         .sanskar-section--intro,
@@ -219,8 +220,27 @@
         }
 
         .sanskar-category__head {
+            display: grid;
             max-width: 940px;
+            grid-template-columns: auto 1fr;
+            gap: 18px;
+            align-items: start;
             margin-bottom: 22px;
+        }
+
+        .sanskar-category__icon {
+            display: inline-grid;
+            width: 52px;
+            height: 52px;
+            place-items: center;
+            border: 1px solid rgba(198, 148, 53, .34);
+            border-radius: 50%;
+            color: var(--hi-maroon);
+            background: linear-gradient(135deg, #fffaf1, #f2e4cf);
+            font-family: var(--hi-serif);
+            font-size: 1.35rem;
+            font-weight: 800;
+            line-height: 1;
         }
 
         .sanskar-category__head h3 {
@@ -231,7 +251,6 @@
             line-height: 1.32;
         }
 
-        .sanskar-category__icon,
         .sanskar-topic summary span {
             display: none;
         }
@@ -410,65 +429,15 @@
         }
 
         @media (max-width: 720px) {
-            .sanskar-glance__grid,
-    
-        .sanskar-learning-categories {
-            display: grid;
-            gap: 28px;
-            margin-top: 42px;
-        }
+            .sanskar-section {
+                scroll-margin-top: 126px;
+            }
 
-        .sanskar-category {
-            padding: clamp(18px, 2.6vw, 28px);
-            border: 1px solid rgba(121, 43, 42, .12);
-            border-radius: 8px;
-            background: rgba(255, 252, 246, .52);
-            box-shadow: 0 18px 52px rgba(63, 45, 37, .06);
-        }
+            .sanskar-glance__grid {
+                grid-template-columns: 1fr;
+            }
 
-        .sanskar-category__head {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 18px;
-            align-items: start;
-            margin-bottom: 18px;
-        }
-
-        .sanskar-category__icon {
-            display: inline-grid;
-            width: 52px;
-            height: 52px;
-            place-items: center;
-            border: 1px solid rgba(198, 148, 53, .34);
-            border-radius: 50%;
-            color: var(--hi-maroon);
-            background: linear-gradient(135deg, #fffaf1, #f2e4cf);
-            font-family: var(--hi-serif);
-            font-size: 1.35rem;
-            font-weight: 800;
-            line-height: 1;
-        }
-
-        .sanskar-category__head h3 {
-            margin: 0 0 6px;
-            color: var(--hi-ink);
-            font-family: var(--hi-serif);
-            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
-            line-height: 1.32;
-        }
-
-        .sanskar-category__icon,
-        .sanskar-topic summary span {
-            display: none;
-        }
-
-        .sanskar-category__head p {
-            max-width: 860px;
-            margin: 0;
-            color: #6d5a51;
-            line-height: 1.7;
-        }
-        .sanskar-learning-grid {
+            .sanskar-learning-grid {
                 grid-template-columns: 1fr;
             }
 
