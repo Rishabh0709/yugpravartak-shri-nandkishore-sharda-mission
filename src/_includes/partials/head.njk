@@ -19,8 +19,9 @@
     <meta property="og:title" content="{{ title if title else site.name[locale] }}">
     <meta property="og:description" content="{{ description if description else site.descriptionDefault[locale] }}">
     <meta property="og:url" content="{{ site.origin }}{{ page.url }}">
-    {#- TODO: replace with a purpose-made 1200x630 share image at /assets/images/og/default.jpg -#}
-    <meta property="og:image" content="{{ site.origin }}{{ ogImage if ogImage else '/assets/images/logo.png' }}">
+    {#- TODO: replace the default with a purpose-made 1200x630 share card at /assets/images/og/default.jpg -#}
+    <meta property="og:image" content="{{ site.origin }}{{ ogImage if ogImage else '/assets/images/hi-home-hero-background.webp' }}">
+    <meta property="og:image:alt" content="{{ title if title else site.name[locale] }}">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
