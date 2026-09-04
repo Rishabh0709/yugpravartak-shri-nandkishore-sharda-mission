@@ -50,7 +50,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 ### Decisions
 - ~~Orphan pages~~ — **done** (`97d8600`). `dignitaries-views`, `success-stories`, `student-testimonials` were redirect stubs; deleted. Content lives in `/testimonials.html` (4 sections). Fixed a dead `success-stories.html` ref in `videos.js` and a duplicate kicker on that page.
 - **SVT scholarship figure** — the SVT page shows the *combined* girls figure (8,000+ / ₹6.14 Cr, labelled "माँ शारदामणि ट्रस्ट सहित"). Source gives SVT-only = ₹4.5 Cr. Decide: show SVT-only, combined, or both.
-- **`impact.html` — "संचयी छात्रवृत्ति उदाहरण" KPI stat** — the cumulative count charts were removed (`84d8790`) as misleading (multi-year students double-counted), but each education record still shows that same count (37,381 / 3,405 / 631) as its first headline KPI. Decide: drop it (leaving only the ₹ KPI), or replace with a per-trust *unique* student number (we only have combined 8,630 / girls 8,000 / boys 630 today — no clean per-trust unique split). The `content.summary` lines and the "विद्यार्थी-संबंधी आँकड़ों को कैसे पढ़ें" definition aside also still reference the count.
+- ~~`impact.html` — "संचयी छात्रवृत्ति उदाहरण" KPI stat~~ — **done.** Count KPI dropped from all three education records (₹ KPI kept); summary lines reworded off the counts; "विद्यार्थी-संबंधी आँकड़ों को कैसे पढ़ें" aside removed. Boys record now says 630+ (Adhyatm Kendra's own figure); a highlight line after the Maa Shardamani chart states the 8,000+ combined girls figure (SVT + Maa Shardamani).
 
 ---
 

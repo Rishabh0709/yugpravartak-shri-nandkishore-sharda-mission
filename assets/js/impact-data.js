@@ -36,16 +36,7 @@
     }
 
     function renderRecords(target, data) {
-        const records = data.streams.map(renderRecord).join("");
-        target.innerHTML = `${recordsBeforeDefinition(data)}${renderDefinition(data)}${recordsAfterDefinition(data)}`;
-    }
-
-    function recordsBeforeDefinition(data) {
-        return data.streams.slice(0, 3).map(renderRecord).join("");
-    }
-
-    function recordsAfterDefinition(data) {
-        return data.streams.slice(3).map(renderRecord).join("");
+        target.innerHTML = data.streams.map(renderRecord).join("");
     }
 
     function renderRecord(stream) {
@@ -70,6 +61,7 @@
                     ${stream.charts.map(renderChart).join("")}
                     ${stream.singleChart ? renderContinuity(content) : ""}
                 </div>
+                ${content.highlight ? `<p class="impact-record-highlight">${content.highlight}</p>` : ""}
                 <footer class="impact-record-footer"><p>${content.footer}</p><a href="${content.linkHref}">${content.linkText} <span aria-hidden="true">→</span></a></footer>
             </article>`;
     }
@@ -104,17 +96,6 @@
             </div>`;
     }
 
-    function renderDefinition(data) {
-        const definition = data.definition[language];
-        return `
-            <aside class="impact-definition" aria-label="${escapeAttr(definition.title)}">
-                <div class="impact-definition-mark" aria-hidden="true">i</div>
-                <div>
-                    <strong>${definition.title}</strong>
-                    <p>${definition.body}</p>
-                </div>
-            </aside>`;
-    }
 
     function formatValue(value) {
         return typeof value === "string" ? value : value[language];

@@ -323,6 +323,10 @@
     border-top: 1px solid rgba(166, 123, 43, 0.28);
 }
 
+.impact-record-kpis:has(> div:only-child) {
+    grid-template-columns: minmax(0, 1fr);
+}
+
 .impact-record-kpis > div {
     padding: 18px 18px 0 0;
 }
@@ -508,6 +512,17 @@
     font-size: clamp(21px, 2.2vw, 28px);
     font-weight: 300;
     line-height: 1.42;
+}
+
+.impact-record-highlight {
+    margin: 20px 0 0;
+    padding: 15px 18px;
+    border-left: 3px solid var(--evidence-gold);
+    border-radius: 0 10px 10px 0;
+    background: rgba(166, 123, 43, 0.09);
+    color: var(--activity-ink);
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .impact-record-footer {
