@@ -389,3 +389,65 @@
                 min-height: 300px;
             }
         }
+
+/* ---- published-books list ---- */
+.gyan-ganga-books .hi-section-heading { margin-bottom: clamp(28px, 4vw, 44px); }
+.gyan-ganga-book-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    margin-inline: auto;
+    counter-reset: ggbook;
+}
+.gyan-ganga-book-list > li {
+    counter-increment: ggbook;
+    position: relative;
+    padding: 20px 0 20px 46px;
+    border-top: 1px solid var(--rule);
+}
+.gyan-ganga-book-list > li:last-child { border-bottom: 1px solid var(--rule); }
+.gyan-ganga-book-list > li::before {
+    content: counter(ggbook, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 22px;
+    font-family: var(--font-latin);
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--gold-deep);
+}
+.gyan-ganga-book-list__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 16px;
+    margin-bottom: 6px;
+}
+.gyan-ganga-book-list__head h3 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 1.12rem;
+    line-height: 1.45;
+    color: var(--primary);
+}
+.gyan-ganga-book-list__head span {
+    flex: none;
+    font-family: var(--font-latin);
+    font-size: .82rem;
+    color: var(--ink-muted);
+    white-space: nowrap;
+}
+.gyan-ganga-book-list > li > p {
+    margin: 0;
+    font-size: .92rem;
+    line-height: 1.7;
+    color: var(--ink-body);
+}
+.gyan-ganga-book-list em { font-style: italic; }
+
+@media (max-width: 640px) {
+    .gyan-ganga-book-list > li { padding-left: 0; padding-top: 34px; }
+    .gyan-ganga-book-list > li::before { top: 12px; }
+}

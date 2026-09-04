@@ -210,6 +210,34 @@
     color: #655a54;
 }
 
+.publication-card__edition {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    max-width: 1040px;
+    margin: -4px 0 18px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--gold, #b98a34);
+    background: rgba(185, 138, 52, .08);
+    font-size: .92rem;
+    line-height: 1.6;
+    color: #655a54;
+}
+
+.publication-card__edition span {
+    flex: none;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--gold-deep, #8a6620);
+    color: #fff;
+    font-family: var(--font-latin, sans-serif);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.publication-card__edition em { font-style: italic; }
+
 .publication-card details {
     max-width: 880px;
 }
