@@ -1,9 +1,7 @@
 {
-  "_note": "Single source for the primary nav in BOTH languages. header.njk renders label.<locale> and, for the en locale, prefixes href with /en. Phase 3 will cut this to ~5 top items; for Phase 1 it mirrors the existing menu 1:1.",
+  "_note": "Single source for the primary nav in BOTH languages. header.njk renders label.<locale> and, for the en locale, prefixes href with /en. An item with \"cta\": true renders as a highlighted button (मणिद्वीप पधारें). 5 top items + the visit CTA.",
 
   "items": [
-    { "label": { "hi": "मुख्य पृष्ठ", "en": "Home" }, "href": "/index.html" },
-
     {
       "label": { "hi": "हमारे बारे में", "en": "About" },
       "groups": [
@@ -24,11 +22,12 @@
     },
 
     {
-      "label": { "hi": "दिव्य ज्ञान", "en": "Divine Knowledge" },
+      "label": { "hi": "दिव्य ज्ञान एवं साधना", "en": "Knowledge & Practice" },
       "groups": [
         { "label": { "hi": "ज्ञान", "en": "The knowledge" }, "links": [
           { "label": { "hi": "दिव्य ज्ञान", "en": "Divya Gyan" }, "href": "/divya-gyan.html" },
-          { "label": { "hi": "प्रतीक चिन्ह", "en": "The symbol" }, "href": "/logo.html" }
+          { "label": { "hi": "प्रतीक चिन्ह", "en": "The symbol" }, "href": "/logo.html" },
+          { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications.html" }
         ]},
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
           { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna.html" },
@@ -58,23 +57,15 @@
     {
       "label": { "hi": "दिव्य प्रभाव", "en": "Impact" },
       "groups": [
-        { "label": { "hi": "अनुभव एवं परिवर्तन", "en": "Experience & change" }, "links": [
+        { "links": [
           { "label": { "hi": "अनुभव एवं विचार", "en": "Experiences & reflections" }, "href": "/testimonials.html" },
-          { "label": { "hi": "आँकड़ों में सेवा का प्रभाव", "en": "Impact in numbers" }, "href": "/impact.html" }
-        ]}
-      ]
-    },
-
-    {
-      "label": { "hi": "मीडिया", "en": "Media" },
-      "groups": [
-        { "label": { "hi": "मीडिया", "en": "Media" }, "links": [
-          { "label": { "hi": "चित्र", "en": "Gallery" }, "href": "/gallery.html" },
+          { "label": { "hi": "आँकड़ों में सेवा का प्रभाव", "en": "Impact in numbers" }, "href": "/impact.html" },
+          { "label": { "hi": "चित्र दीर्घा", "en": "Gallery" }, "href": "/gallery.html" },
           { "label": { "hi": "समाचार एवं कार्यक्रम", "en": "News & events" }, "href": "/news-events.html" }
         ]}
       ]
     },
 
-    { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications.html" }
+    { "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" }, "href": "/sampark.html", "cta": true }
   ]
 }

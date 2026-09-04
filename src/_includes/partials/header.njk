@@ -15,7 +15,7 @@
                     <ul class="nav-list">
                         {%- for item in navigation.items %}
                         {%- if item.href %}
-                        <li class="nav-item"><a href="{{ pfx }}{{ item.href }}">{{ item.label[locale] }}</a></li>
+                        <li class="nav-item{{ ' nav-item--cta' if item.cta }}"><a href="{{ pfx }}{{ item.href }}"{% if item.cta %} class="nav-cta"{% endif %}>{{ item.label[locale] }}</a></li>
                         {%- else %}
                         <li class="nav-item has-submenu">
                             <button class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="nav-submenu-{{ loop.index }}">
