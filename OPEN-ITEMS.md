@@ -32,8 +32,8 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 ### Trust documents still missing (`/transparency.html` shows "शीघ्र उपलब्ध")
 - **Financial reports** — Maa Shardamani Trust, Gyanyogi Adhyatm Kendra, Gyan Ganga Mission (only SVT has them, 1996–2024). Drop PDFs in `assets/documents/<id>/financial-reports/<YYYY-YY>.pdf`.
-- **Scholarship certificates** — Maa Shardamani Trust, Gyanyogi Adhyatm Kendra. Path: `assets/documents/<id>/scholarship-certificates/`.
-- **80G approval numbers** — Gyanyogi, Gyan Ganga (SVT has `AAATS3452LF20218`). Maa Shardamani has no 80G PDF at all — confirm whether it has 80G. Add numbers to `src/_data/documents.js` → `approvals`.
+- **Scholarship certificates** — only SVT publishes these (per your note, 2026-09-04); the other three trusts no longer reference them.
+- **80G approval numbers** — Gyanyogi, Gyan Ganga (SVT has `AAATS3452LF20218`). Maa Shardamani has no 80G PDF at all — confirm whether it has 80G. Add numbers to `src/_data/trusts.json` → `approvals`.
 
 ### Donation details — placeholders in `src/data/donation-details.json`
 - Gyanyogi SBI branch: `"ENTER BRANCH"`
