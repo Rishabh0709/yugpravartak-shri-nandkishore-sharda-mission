@@ -84,33 +84,44 @@
 
 /* ---------- "why this mission is distinct" — a thin band, not a section ---------- */
 .v2-essence {
-    padding: clamp(22px, 3vw, 34px) 0;
+    padding: clamp(30px, 4vw, 46px) 0;
     background: var(--bg-wash);
     border-block: 1px solid var(--rule);
 }
 .v2-essence__eyebrow {
-    margin: 0 0 clamp(14px, 1.8vw, 20px);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 2vw, 18px);
+    margin: 0 0 clamp(24px, 3.4vw, 38px);
     font-family: var(--font-head);
-    font-size: .78rem;
+    font-size: .82rem;
     font-weight: 600;
-    letter-spacing: .12em;
+    letter-spacing: .18em;
     color: var(--gold-deep);
+}
+.v2-essence__eyebrow::before,
+.v2-essence__eyebrow::after {
+    content: "";
+    width: clamp(26px, 7vw, 54px);
+    height: 1px;
+    background: var(--gold);
+    opacity: .5;
 }
 .v2-essence__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px clamp(18px, 2.4vw, 28px);
+    gap: clamp(18px, 2.6vw, 28px) clamp(20px, 2.6vw, 30px);
 }
 @media (min-width: 620px)  { .v2-essence__grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .v2-essence__grid { grid-template-columns: repeat(4, 1fr); } }
 .v2-essence__item {
     border-top: 2px solid var(--rule-strong);
-    padding-top: 9px;
+    padding-top: 12px;
 }
 .v2-essence__item b {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     font-family: var(--font-head);
     font-size: .98rem;
     font-weight: 600;
@@ -118,13 +129,14 @@
 }
 .v2-essence__item span {
     font-size: .82rem;
-    line-height: 1.5;
+    line-height: 1.62;
     color: var(--ink-muted);
 }
-.v2-essence__foot {
-    margin: clamp(14px, 1.8vw, 20px) 0 0;
+.v2-essence .v2-essence__foot {
+    margin: clamp(28px, 3.8vw, 42px) 0 0;
     text-align: center;
-    font-size: .8rem;
+    font-size: .82rem;
+    line-height: 1.7;
     color: var(--ink-muted);
 }
 
@@ -358,11 +370,13 @@
 }
 @media (min-width: 640px) { .v2-ways { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .v2-ways { grid-template-columns: repeat(3, 1fr); } }
-.v2-purpose__note {
-    margin: clamp(18px, 2.4vw, 26px) 0 0;
+.v2-purpose .v2-purpose__note {
+    margin: clamp(30px, 4vw, 44px) 0 0;
+    padding-top: clamp(18px, 2.4vw, 24px);
+    border-top: 1px solid var(--rule);
     text-align: center;
     font-size: .88rem;
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--ink-muted);
 }
 .v2-purpose__note a {
