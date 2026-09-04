@@ -1,7 +1,7 @@
 /**
  * Transparency documents, assembled at build time.
  *
- * The human metadata (trust names, order, 80G approval numbers) lives here;
+ * Trust identity (names, dates, 80G numbers) comes from trusts.json;
  * the actual file lists are read from assets/documents/<id>/<kind>/ so the
  * page updates itself whenever a PDF is added or removed.
  *
@@ -12,46 +12,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const ROOT = path.join(__dirname, "..", "..", "assets", "documents");
-
-const TRUSTS = [
-  {
-    id: "swami-vivekanand-trust",
-    name: {
-      hi: "स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट",
-      en: "Swami Vivekanand Students' Welfare Charitable Trust",
-    },
-    founded: "1996",
-    page: "/swami-vivekanand-trust.html",
-    approvals: { "80G": "AAATS3452LF20218" },
-  },
-  {
-    id: "maa-shardamani-trust",
-    name: { hi: "माँ शारदामणि ट्रस्ट", en: "Maa Shardamani Trust" },
-    founded: "2001",
-    page: "/maa-shardamani-trust.html",
-    approvals: {},
-  },
-  {
-    id: "gyanyogi-adhyatm-kendra",
-    name: {
-      hi: "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र",
-      en: "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra",
-    },
-    founded: "2010",
-    page: "/gyanyogi-adhyatm-kendra.html",
-    approvals: {},
-  },
-  {
-    id: "gyan-ganga-mission",
-    name: {
-      hi: "श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन",
-      en: "Shri Nandkishore Sharda Gyan Ganga Mission",
-    },
-    founded: "2003",
-    page: "/gyan-ganga-mission.html",
-    approvals: {},
-  },
-];
+const TRUSTS = require("./trusts.json").trusts;
 
 // Order + labels for the legal PDFs; anything not listed here is ignored
 // (e.g. PANCARD.pdf, a stray duplicate of PAN.pdf).
