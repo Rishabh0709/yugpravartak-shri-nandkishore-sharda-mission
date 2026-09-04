@@ -26,6 +26,12 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
   - `/faq.html` — the 6 practical answers (also listed below)
   Confirm facts, tone, and register; flag anything to change.
 - **FAQ answers** — `src/_data/faq.json` has 6 questions with **draft** answers Claude assembled from existing content. Review/correct with the Parivar.
+- **Bio pages — content gaps & facts to verify** (from the 2026-09-04 review of `shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html`; clear bugs already fixed in `828c4bc`):
+  - भैया जी page has **no चक्र धारण (1990) section** — it has its own homepage section but is only a passing image caption in the definitive bio.
+  - भैया जी §कर्म-साधना reads as if he founded SVT; trust page + source docs say माँ बसन्ती founded it (10 जून 1996) on Maa's order, भैया जी was अध्यक्ष. Reword.
+  - माँ बसन्ती's 2003–2021 leadership underrepresented — founding Gyan Ganga Mission (2003), Gyanyogi Adhyatm Kendra (2010), food aid (2020) don't appear on her bio.
+  - मधु माँ — ~50-year gap between 1971 (enrolled MA) and 2021 (leadership); "पाँच दशकों की साधना" arc is absent.
+  - **Verify:** बुआ/फुफेरी family link (page says भैया जी = "बुआ के लड़के"; `people.json` says बसन्ती = "भैया जी की फुफेरी बहन" — different relationships); "आजीवन ब्रह्मचारिणी / निर्मल ब्रह्मचर्य" framing (confirm Parivar wants it public); specific family names + "बसन्त पंचमी 1995"; "जोधपुर, बालोतरा, जसोल में उनके नाम से मार्ग"; मधु माँ "सिरसा, पंजाब".
 - **"साधना कैसे आरम्भ करें"** (`/sadhna-aarambh.html`) — confirm: is there a contact person, a form, or a specific process beyond "come to मणिद्वीप / सिद्धपीठ"? Anything to add.
 - **Contact email** — replace `kishoreggm@gmail.com` with `info@manidweepjodhpur.org` in `src/_data/site.json` once the mailbox exists.
 - **WhatsApp channel / mailing list** — if/when one exists, the closing CTAs and "जुड़ें" links should point to it instead of the contact page.
@@ -98,6 +104,8 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
+- Bio pages: dropped the sticky horizontal in-page pill nav from all three (a biography is a sequential story; the jump nav hid its own last items behind an overflow scrollbar). Section `id`s kept for deep links.
+- Bio pages: fixed clear review bugs (`828c4bc`) — stray credential on मधु माँ, study location, h1 pattern, English "folded hands" alt, trust-name transliteration.
 - Phase 5: `/transparency.html`, `/itihaas.html`, split FAQ (`/faq.html` practical + `/jigyasa-samadhan.html` deep), `/sadhna-aarambh.html`, `timeline.json` + `faq.json` wired, nav → 5 items, breadcrumbs (utility pages), sampark #visit, kicker-class cleanup.
 - Phase 4: homepage rebuild at `/index-v2.html`.
 - Trust pages filled against Sandip Sir's source docs (book list, transparency model, scoping nuances).
