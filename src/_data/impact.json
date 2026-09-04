@@ -1,5 +1,5 @@
 {
-  "_note": "Single source of truth for headline impact figures. Confirmed with the trust owner on 2026-09: the combined figure is girls + boys through FY2025-26. Do NOT hard-code these numbers in any page; reference this file. The richer per-stream data still lives in src/data/impact-data.json (detailed impact page); keep its top-line values in sync with these.",
+  "_note": "Single source of truth for headline impact figures. Confirmed with the trust owner on 2026-09: the combined figure is girls + boys through FY2025-26. Student counts refined 2026-09-04 with exact unique-student figures from the trusts (see perTrust._note for the derivation). Do NOT hard-code these numbers in any page; reference this file. The richer per-stream data still lives in src/data/impact-data.json (detailed impact page); keep its top-line values in sync with these.",
 
   "asOf": "2026-03-31",
   "asOfLabel": {
@@ -9,7 +9,7 @@
 
   "metrics": {
     "studentsCombined": {
-      "display": { "hi": "8,630+", "en": "8,630+" },
+      "display": { "hi": "लगभग 9,031", "en": "~9,031" },
       "label": { "hi": "विद्यार्थियों को शिक्षा सहयोग", "en": "students supported through education" },
       "scope": "girls + boys, since 1996"
     },
@@ -19,16 +19,16 @@
       "scope": "girls + boys, since 1996"
     },
     "studentsGirls": {
-      "display": { "hi": "8,000+", "en": "8,000+" },
+      "display": { "hi": "लगभग 8,400", "en": "~8,400" },
       "label": { "hi": "लाभान्वित बालिकाएँ", "en": "girls supported" },
-      "scope": "Swami Vivekanand Students' Welfare Charitable Trust + Maa Shardamani Trust"
+      "scope": "Swami Vivekanand Students' Welfare Charitable Trust (7,200) + Maa Shardamani Trust (7,000), minus ~5,800 common to both"
     },
     "scholarshipGirls": {
       "display": { "hi": "₹6.14 करोड़+", "en": "₹6.14 Cr+" },
       "label": { "hi": "बालिका छात्रवृत्ति सहायता", "en": "scholarship assistance for girls" }
     },
     "studentsBoys": {
-      "display": { "hi": "630+", "en": "630+" },
+      "display": { "hi": "631", "en": "631" },
       "label": { "hi": "लाभान्वित बालक", "en": "boys supported" },
       "scope": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra"
     },
@@ -62,14 +62,18 @@
   },
 
   "perTrust": {
-    "_note": "Girls' education runs through Swami Vivekanand Trust + Maa Shardamani Trust jointly; the headline girls figures (studentsGirls / scholarshipGirls) cover both. Maa Shardamani Trust's own 3,400+ / ₹1.64 Cr is a subset focused on higher education — confirm whether to show it as a subset or a distinct programme. Boys run through Gyanyogi Adhyatm Kendra (₹57 L confirmed by owner 2026-09; the ₹1.64 Cr previously on that page was an error).",
+    "_note": "Girls' education runs through Swami Vivekanand Trust + Maa Shardamani Trust jointly; the headline girls figure (studentsGirls) is the unique count across both. Exact figures confirmed by the trust owner 2026-09-04: Swami Vivekanand Trust 7,200 students, Maa Shardamani Trust 7,000 students, ~5,800 common to both (attended school under SVT, then college under Maa Shardamani) => unique girls ~= 7,200 + 7,000 - 5,800 = 8,400. Boys run through Gyanyogi Adhyatm Kendra: 631 students confirmed the same day (₹57 L; the ₹1.64 Cr previously shown on that page was an error, unrelated to Maa Shardamani's own ₹1.64 Cr).",
+    "swami-vivekanand-trust": {
+      "students": { "hi": "7,200+", "en": "7,200+" },
+      "note": { "hi": "बालिका शिक्षा के कुल आँकड़ों में सम्मिलित", "en": "included in the combined girls figures" }
+    },
     "maa-shardamani-trust": {
-      "students": { "hi": "3,400+", "en": "3,400+" },
+      "students": { "hi": "7,000+", "en": "7,000+" },
       "amount": { "hi": "₹1.64 करोड़+", "en": "₹1.64 Cr+" },
       "note": { "hi": "उच्च शिक्षा पर केन्द्रित; बालिका शिक्षा के कुल आँकड़ों में सम्मिलित", "en": "higher-education focus; included in the combined girls figures" }
     },
     "gyanyogi-adhyatm-kendra": {
-      "students": { "hi": "630+", "en": "630+" },
+      "students": { "hi": "631", "en": "631" },
       "amount": { "hi": "₹57 लाख+", "en": "₹57 L+" }
     },
     "gyan-ganga-mission": {
