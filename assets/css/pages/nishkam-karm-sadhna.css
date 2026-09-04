@@ -6,7 +6,7 @@
         .karma-hero {
             position: relative;
             overflow: hidden;
-            padding-top: clamp(104px, 11vw, 150px);
+            padding-top: clamp(66px, 8vw, 110px);
             padding-bottom: clamp(58px, 8vw, 106px);
             background:
                 radial-gradient(circle at 82% 18%, rgba(198, 148, 53, .2), transparent 30%),

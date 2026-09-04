@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-04 (Phase 5 continued — img dims, impact note, trust registry)
+**Last updated:** 2026-09-04 (Phase 5 — breadcrumbs on text-hero pages)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -62,7 +62,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 Say the word and I'll do these — no input needed:
 
 - ~~`<img>` dimensions~~ — **done** (`7a1b650`). 304 tags now carry intrinsic `width`/`height`; `img { height: auto }` added.
-- **Breadcrumbs on legacy pages** — the ~27 converted pages. Their hero top-padding needs retuning first (the header placeholder already reserves space).
+- **Breadcrumbs — remaining legacy pages.** Done on 11 pages (5 utility + about-mission, 3 bio pages, nishkam-karm-sadhna, logo). Still missing on the full-bleed *image*-hero pages (4 trust pages, divya-gyan, buddhi-vivek-yog-sadhna, bhaiyaji-*, chintan, margdarshan, gyan-ganga, sadhna-places, gallery, publications, news-events, testimonials) — those need the crumb placed over/inside the hero, per-page.
 - **Purpose-built OG card** — 1200×630 branded share image (currently reusing the hero photo).
 - **Two mislabeled image files** — `assets/images/budhivivek.png` and `buddhi-vivek-yog-sadhna-symbol.png` are actually JPEG data with a `.png` extension. Rename to `.jpg` (and update the 2 refs), or re-export as real PNG.
 - ~~`impact.html` cross-reference~~ — **done** (`0490f87`). Note above the charts gives the unique-student totals from `impact.json`.

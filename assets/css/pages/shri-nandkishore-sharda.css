@@ -6,7 +6,7 @@
         .bhaiya-hero {
             position: relative;
             overflow: hidden;
-            padding-top: clamp(92px, 10vw, 138px);
+            padding-top: clamp(58px, 7vw, 100px);
             padding-bottom: clamp(54px, 7vw, 96px);
             background:
                 radial-gradient(circle at 78% 14%, rgba(198, 148, 53, .22), transparent 28%),
