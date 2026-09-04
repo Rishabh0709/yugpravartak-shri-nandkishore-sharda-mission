@@ -226,14 +226,14 @@ extraCss: ["/assets/css/home-hindi-concept.css", "/assets/css/pages/home-v2.css"
       </header>
 
       <ol class="v2-journey" aria-label="मिशन की समय-रेखा">
-        <li class="v2-journey__event"><span class="v2-journey__year">1944</span><span class="v2-journey__title">भैया जी का जन्म — जोधपुर</span></li>
-        <li class="v2-journey__event"><span class="v2-journey__year">1959</span><span class="v2-journey__title">पिता की चिता के समक्ष वैराग्य का संकल्प</span></li>
-        <li class="v2-journey__event"><span class="v2-journey__year">1964</span><span class="v2-journey__title">माँ बसन्ती मनिहार का अध्यात्म-पथ पर आगमन</span></li>
-        <li class="v2-journey__event"><span class="v2-journey__year">1990</span><span class="v2-journey__title">चक्र धारण — गोवा</span></li>
-        <li class="v2-journey__event is-seva"><span class="v2-journey__year">1996</span><span class="v2-journey__title">निष्काम कर्म साधना का आरम्भ</span></li>
-        <li class="v2-journey__event is-seva"><span class="v2-journey__year">2003</span><span class="v2-journey__title">भैया जी चैतन्यस्वरूप; माँ बसन्ती का नेतृत्व</span></li>
-        <li class="v2-journey__event is-seva"><span class="v2-journey__year">2021</span><span class="v2-journey__title">माँ बसन्ती चैतन्यस्वरूप; मधु माँ का नेतृत्व</span></li>
+        {%- for event in timeline.events %}
+        <li class="v2-journey__event{% if event.phase == 'seva' %} is-seva{% endif %}">
+          <span class="v2-journey__year">{{ event.year }}</span>
+          <span class="v2-journey__title">{{ event.title.hi }}</span>
+        </li>
+        {%- endfor %}
       </ol>
+      <p class="v2-journey__more"><a href="/itihaas.html">सम्पूर्ण इतिहास विस्तार से <span aria-hidden="true">&rarr;</span></a></p>
 
       <article class="hi-profile hi-profile--lineage" style="margin-top:clamp(40px,5vw,60px)">
         <figure class="hi-profile__media">

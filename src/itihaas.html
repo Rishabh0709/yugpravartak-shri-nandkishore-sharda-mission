@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: "मिशन का इतिहास | मणिद्वीप अध्यात्म परिवार"
+description: "युगप्रवर्तक श्री नन्दकिशोर शारदा की आध्यात्मिक यात्रा (1944–1995) से लेकर 1996 में निष्काम कर्म साधना के आरम्भ और आज तक की समय-रेखा।"
+bodyClass: "hindi-home itihaas-page"
+extraCss: ["/assets/css/pages/itihaas.css"]
+---
+<main id="main-content">
+    <section class="it-hero" aria-labelledby="it-title">
+        <div class="hi-shell it-hero__content">
+            <span class="hi-kicker">समय-रेखा</span>
+            <h1 id="it-title">मिशन का इतिहास</h1>
+            <p class="it-hero__lead">एक पंद्रह वर्ष के लड़के के सत्य-संकल्प से आरम्भ हुई यह यात्रा दशकों की साधना से होते हुए 1996 में निष्काम कर्म साधना तक पहुँची — और आज भी अटूट है।</p>
+        </div>
+    </section>
+
+    {%- set phases = [
+        { key: "spiritual-journey", label: "आध्यात्मिक यात्रा", note: "1996 से पूर्व का यह काल पूर्णतः आत्म-कल्याण और सत्य की खोज का है — यह मिशन का संगठनात्मक ‘स्थापना-वर्ष’ नहीं है।" },
+        { key: "seva", label: "निष्काम कर्म साधना", note: "‘माँ’ की आज्ञा से 1996 में शिक्षा, संस्कार और मानव सेवा के प्रकल्प आरम्भ हुए। मिशन का लोक-कल्याणकारी कार्य यहीं से आरम्भ होता है।" }
+    ] %}
+
+    {%- for phase in phases %}
+    <section class="it-section" aria-labelledby="it-phase-{{ phase.key }}">
+        <div class="hi-shell">
+            <header class="it-phase">
+                <h2 id="it-phase-{{ phase.key }}">{{ phase.label }}</h2>
+                <p>{{ phase.note }}</p>
+            </header>
+            <ol class="it-timeline it-timeline--{{ phase.key }}">
+                {%- for event in timeline.events %}
+                {%- if event.phase == phase.key %}
+                <li class="it-event">
+                    <div class="it-event__year">{{ event.year }}</div>
+                    <div class="it-event__body">
+                        <h3>{{ event.title.hi }}</h3>
+                        {%- if event.body.hi %}<p>{{ event.body.hi }}</p>{% endif %}
+                    </div>
+                </li>
+                {%- endif %}
+                {%- endfor %}
+            </ol>
+        </div>
+    </section>
+    {%- endfor %}
+
+    <section class="it-section it-closing" aria-labelledby="it-closing-title">
+        <div class="hi-shell">
+            <h2 id="it-closing-title">यात्रा आगे बढ़ती रहती है</h2>
+            <p>भैया जी से प्राप्त दृष्टि आज मधु माँ के नेतृत्व में — दिव्य ज्ञान के प्रचार-प्रसार और निष्काम सेवा, दोनों रूपों में — निरन्तर प्रवाहित है।</p>
+            <div class="hi-actions">
+                <a class="hi-btn hi-btn--primary" href="/about-mission.html">मिशन का परिचय</a>
+                <a class="hi-btn hi-btn--outline" href="/nishkam-karm-sadhna.html">सेवा-कार्य देखें</a>
+                <a class="hi-btn hi-btn--outline" href="/transparency.html">पंजीकरण एवं दस्तावेज़</a>
+            </div>
+        </div>
+    </section>
+</main>

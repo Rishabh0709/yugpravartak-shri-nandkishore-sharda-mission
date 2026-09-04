@@ -1,0 +1,130 @@
+/* ============================================================
+   Mission history / timeline page
+   ============================================================ */
+
+.itihaas-page {
+    color: var(--ink);
+    background: var(--bg);
+}
+
+/* ---- hero ---- */
+.it-hero {
+    padding: clamp(120px, 16vh, 168px) 0 clamp(38px, 6vw, 60px);
+    background: var(--bg-wash);
+    border-bottom: 1px solid var(--rule);
+}
+.it-hero__content { max-width: 720px; }
+.it-hero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: var(--step-h1);
+    color: var(--primary);
+}
+.it-hero__lead {
+    margin: 18px 0 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+
+/* ---- phase section ---- */
+.it-section { padding: clamp(40px, 6vw, 64px) 0; }
+.it-section + .it-section { border-top: 1px solid var(--rule); }
+.it-section > .hi-shell { max-width: 760px; }
+
+.it-phase { margin-bottom: clamp(24px, 4vw, 36px); }
+.it-phase h2 {
+    margin: 0 0 8px;
+    font-family: var(--font-head);
+    font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+    color: var(--primary);
+}
+.it-phase p {
+    margin: 0;
+    max-width: 64ch;
+    font-size: .92rem;
+    line-height: 1.75;
+    color: var(--ink-muted);
+}
+
+/* ---- timeline ---- */
+.it-timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.it-timeline::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    bottom: 14px;
+    left: 6px;
+    border-left: 2px dashed var(--gold);
+    opacity: .55;
+}
+.it-timeline--seva::before { border-left-color: var(--primary); opacity: .4; }
+
+.it-event {
+    position: relative;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    column-gap: 24px;
+    padding: clamp(14px, 2vw, 20px) 0 clamp(14px, 2vw, 20px) 30px;
+}
+.it-event::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: clamp(18px, 2.4vw, 26px);
+    width: 13px;
+    height: 13px;
+    border-radius: 999px;
+    background: var(--gold);
+    box-shadow: 0 0 0 5px var(--bg);
+}
+.it-timeline--seva .it-event::before { background: var(--primary); }
+
+.it-event__year {
+    font-family: var(--font-latin);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+.it-event__body h3 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 1.08rem;
+    line-height: 1.4;
+    color: var(--ink);
+}
+.it-event__body p {
+    margin: 6px 0 0;
+    font-size: .92rem;
+    line-height: 1.7;
+    color: var(--ink-body);
+}
+
+/* ---- closing ---- */
+.it-closing { background: var(--bg-wash); }
+.it-closing h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    color: var(--primary);
+}
+.it-closing p {
+    margin: 0 0 20px;
+    max-width: 62ch;
+    font-size: .98rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+
+@media (max-width: 520px) {
+    .it-event {
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+        padding-left: 28px;
+    }
+}

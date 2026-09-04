@@ -6,7 +6,8 @@
       "label": { "hi": "हमारे बारे में", "en": "About" },
       "groups": [
         { "links": [
-          { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission.html" }
+          { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission.html" },
+          { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/itihaas.html" }
         ]},
         { "label": { "hi": "प्रेरक व्यक्तित्व", "en": "The lineage" }, "links": [
           { "label": { "hi": "श्री नन्दकिशोर शारदा", "en": "Shri Nandkishore Sharda" }, "href": "/shri-nandkishore-sharda.html" },

@@ -325,12 +325,25 @@
     line-height: 1.55;
     color: var(--ink-body);
 }
+.v2-journey__more {
+    max-width: 640px;
+    margin: clamp(16px, 2vw, 22px) auto 0;
+    padding-left: 30px;
+    font-size: .9rem;
+}
+.v2-journey__more a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+.v2-journey__more a:hover { text-decoration: underline; }
 @media (max-width: 520px) {
     .v2-journey__event {
         grid-template-columns: 1fr;
         row-gap: 2px;
         padding-left: 28px;
     }
+    .v2-journey__more { padding-left: 28px; }
 }
 
 /* ---------- seva stories ---------- */
