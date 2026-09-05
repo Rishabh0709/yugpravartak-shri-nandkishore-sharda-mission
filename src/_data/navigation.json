@@ -34,6 +34,7 @@
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
           { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna.html" },
           { "label": { "hi": "साधना कैसे आरम्भ करें", "en": "How to begin" }, "href": "/sadhna-aarambh.html" },
+          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/adhyatmik-gyan-charcha.html" },
           { "label": { "hi": "सामान्य प्रश्न", "en": "FAQ" }, "href": "/faq.html" }
         ]}
       ]
