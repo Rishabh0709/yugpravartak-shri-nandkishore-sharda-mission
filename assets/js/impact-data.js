@@ -41,12 +41,8 @@
 
     function renderRecord(stream) {
         const content = stream.content[language];
-        const chartClass = stream.singleChart
-            ? "impact-chart-grid impact-chart-grid--single"
-            : (stream.charts.length === 1 ? "impact-chart-grid impact-chart-grid--solo" : "impact-chart-grid");
-        const extraClass = stream.singleChart ? " impact-record--ration" : "";
         return `
-            <article class="impact-record${extraClass}" id="${stream.id}">
+            <article class="impact-record" id="${stream.id}">
                 <header class="impact-record-header">
                     <div>
                         <span class="activity-eyebrow">${content.eyebrow}</span>
@@ -57,10 +53,10 @@
                         ${stream.kpis.map(renderKpi).join("")}
                     </div>
                 </header>
-                <div class="${chartClass}">
+                <div class="impact-chart-grid">
                     ${stream.charts.map(renderChart).join("")}
-                    ${stream.singleChart ? renderContinuity(content) : ""}
                 </div>
+                ${stream.singleChart ? renderContinuity(content) : ""}
                 ${content.highlight ? `<p class="impact-record-highlight">${content.highlight}</p>` : ""}
                 <footer class="impact-record-footer"><p>${content.footer}</p><a href="${content.linkHref}">${content.linkText} <span aria-hidden="true">→</span></a></footer>
             </article>`;
