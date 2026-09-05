@@ -19,6 +19,8 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 ## 1 · Needs your content or decision  [You]
 
+- **`impact.html` — slim it or delete it?** After the count charts came out, the 4 detail records are each just one ₹ chart + a KPI that restates the chart's last bar + a footnote. Options discussed: (a) **slim** — keep the topline strip + the 4 summary cards + transparency link, move each ₹ time-series chart onto its own trust page (impact-data.json is already per-stream); or (b) **delete** — move the topline to the homepage / nishkam-karm-sadhna, charts to trust pages, re-point the 4 inbound links (nav, index-v2, nishkam-karm-sadhna, testimonials). impact.html is also the only page still on the old `activity-*`/`evidence-*` CSS. Leaning (a). Awaiting your call.
+
 ### Content to supply / review
 - **Review the content of the three new Phase-5 pages** — all drafted by Claude from existing site copy + Sandip Sir's source docs, not yet vetted by the Parivar:
   - `/sadhna-aarambh.html` — "साधना कैसे आरम्भ करें" (steps, where taught, what to expect)
@@ -58,7 +60,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 - **Gyanyogi Adhyatm Kendra total = ₹57 लाख** (site) vs **₹1.64 करोड़** (Sandip Sir's `ABOUT ADHYATMA KENDRA.doc`, all drafts). You confirmed ₹57 लाख earlier and that ₹1.64 Cr was a copy-paste error from Maa Shardamani. **Get the master doc corrected** or the error keeps propagating.
 - ~~SVT "37,000+ छात्राएँ" / "₹4.5 करोड़"~~ — **superseded** (2026-09-04). Reconciled exact figures: SVT 7,200 (1,000 SVT-only + 6,200 continued to Maa Shardamani), Maa Shardamani 7,000 (the same 6,200 + 800 its own) → combined unique girls = 1,000 + 6,200 + 800 = **8,000 exactly** (site shows "8,000+"). The `ABOUT SWAMI VIVEKANAND TRUST.doc`'s "37,000+" language is now doubly stale (was scholarship instances; site never used it) — still worth fixing at the source if the doc gets reprinted, but no longer blocking anything on the site.
-- **Maa Shardamani charts** (`maa-shardamani-trust.html`) — the 7-point cumulative series for girls (105 → … → 3,405) and amount (₹1.33 L → … → ₹164.56 L) is **not in any source doc**. Confirm it (from `figures_till_2025-26.xlsx`?) or remove the charts.
+- ~~Maa Shardamani charts~~ — **removed** (`maa-shardamani-trust.html`). The girls chart showed the cumulative-instance count (3,405) that contradicts the 7,000+ unique figure used everywhere else; the amount chart duplicated the one on impact.html. Both inline-SVG charts + their CSS deleted; the section keeps its heading, prose, 3-stat band (2001 / 7,000+ / ₹1.64 करोड़+) and image.
 - **Gyan Ganga infra figures** (`gyan-ganga-mission.html`) — **₹1.5 करोड़+**, "7 बालिका विद्यालयों की 16 कक्षाओं" furniture, "श्रीमती तुलसी देवी की स्मृति में", the area list (सिवांची गेट, जालोरी गेट, …) — none in the source doc, which names only 4 works and gives no rupee figure. Trace or remove.
 - ~~English book title~~ — resolved: the actual book cover in the divya-gyan hero reads *"Wonderful World After Death"*, matching the site. Leave as is.
 
