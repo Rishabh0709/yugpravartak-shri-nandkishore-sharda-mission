@@ -1,5 +1,5 @@
 {
-  "_note": "Single source of truth for headline impact figures. Confirmed with the trust owner on 2026-09: the combined figure is girls + boys through FY2025-26. Student counts refined 2026-09-04 with exact unique-student figures from the trusts (see perTrust._note for the derivation). Do NOT hard-code these numbers in any page; reference this file. The richer per-stream data still lives in src/data/impact-data.json (detailed impact page); keep its top-line values in sync with these.",
+  "_note": "Single source of truth for headline impact figures. 2026-09-06: student HEADCOUNTS (studentsGirls, studentsCombined) were removed from the site — the girls figures went through too many revisions to stand behind publicly; pages now lean on the ₹ scholarship amounts (from the trusts' financial reports) and the 45-schools / 32-colleges reach. studentsGirls/studentsCombined are kept here only as internal reference — do NOT put them back on a page without a verified figure from the trusts. studentsBoys (631) is still shown on the Gyanyogi page. Do NOT hard-code any of these numbers in a page; reference this file. Per-stream data lives in src/data/impact-data.json.",
 
   "asOf": "2026-03-31",
   "asOfLabel": {

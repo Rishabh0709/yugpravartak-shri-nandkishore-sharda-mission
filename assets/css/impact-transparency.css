@@ -161,6 +161,10 @@
     overflow: hidden;
 }
 
+.impact-topline__grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .impact-topline__grid > li {
     display: flex;
     flex-direction: column;
