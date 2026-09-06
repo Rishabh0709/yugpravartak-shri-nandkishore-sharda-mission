@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-05 (template catalogue + robots meta)
+**Last updated:** 2026-09-06 (shared .page-hero; gyanyogi video hero → static)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -110,6 +110,7 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
+- Shared `.page-hero` image-hero component (`home-hindi.css`, `05c0e70`) — full-bleed photo + kicker/h1/lead + optional `.page-hero__meta` stat row. `gyanyogi-adhyatm-kendra.html` moved off its bespoke autoplay-`<video>` hero (deleted ~5 MB webm+mp4, poster promoted to `assets/images/`) and off the transparent-header overlay. Catalogued at `/patterns.html` §5c. Available for future interior-page migrations.
 - In-page section nav consolidated into one shared `.page-nav` (`home-hindi.css`) — was copy-pasted 5× as `mission-nav` / `sadhna-kaal-nav` / `yug-nav` / `bvys-nav` / `dg-nav`. Now static + wrapping (no h-scroll), "इस पृष्ठ पर ↓" label, Jodhpur-blue link pills with hover fill. Applied to about-mission + the 4 chapter pages + `testimonials.html` (its nav moved out of the hero into the band); ~6.3 KB of duplicated CSS removed across 6 pages. Catalogued at `/patterns.html` §5b.
 - Bio pages: dropped the sticky horizontal in-page pill nav from all three (a biography is a sequential story; the jump nav hid its own last items behind an overflow scrollbar). Section `id`s kept for deep links.
 - Bio pages: fixed clear review bugs (`828c4bc`) — stray credential on मधु माँ, study location, h1 pattern, English "folded hands" alt, trust-name transliteration.
