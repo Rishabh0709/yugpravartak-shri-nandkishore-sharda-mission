@@ -261,23 +261,15 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
      <h2 id="…">…</h2>
      <p>…</p>                                  optional standfirst
    </header>
-   Used the same way on every section: standalone above a grid, or as
-   the first child of a two-column copy column — in which case the grid
-   must be align-items:start (never center), so the heading top-aligns
-   with the image. Never white-space:nowrap on the h2; text-wrap:balance
-   handles clean 1–2 line wraps.
+   Always a full-width block directly in .hi-shell, ABOVE the content —
+   never inside a two-column copy column (that cramps the h2). The
+   two-column grid below carries only image + prose, align-items:start.
+   Never white-space:nowrap on the h2; text-wrap:balance handles clean
+   1–2 line wraps.
    ---------------------------------------------------------------- */
 .hi-section-heading {
     max-width: 780px;
     margin-bottom: clamp(28px, 4vw, 48px);
-}
-
-/* in a copy column the h2's own bottom margin is the gap to the body */
-.hi-prose > .hi-section-heading,
-.hi-manidweep__copy > .hi-section-heading,
-.hi-yug__copy > .hi-section-heading,
-.hi-knowledge-panel__content > .hi-section-heading {
-    margin-bottom: 0;
 }
 
 .hi-section-heading--center {
@@ -1501,10 +1493,6 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 
 .hi-yug .hi-kicker {
     color: #8f422f;
-}
-
-.hi-yug .hi-section-heading {
-    margin-bottom: 22px;
 }
 
 .hi-yug .hi-section-heading h2 {
