@@ -57,6 +57,15 @@
     border-top: 1px solid var(--rule);
 }
 @media (min-width: 720px) { .v2-intro__aims { grid-template-columns: 1fr 1fr; } }
+.v2-intro__aims-title {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--ink);
+}
 .v2-intro__aims div span {
     display: block;
     font-family: var(--font-head);
