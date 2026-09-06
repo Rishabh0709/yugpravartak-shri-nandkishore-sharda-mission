@@ -3,53 +3,9 @@
             background: var(--bg);
         }
 
-        .bvys-hero {
-            position: relative;
-            overflow: hidden;
-            padding-top: clamp(80px, 9vw, 126px);
-            padding-bottom: clamp(70px, 9vw, 120px);
-            background:
-                linear-gradient(90deg, rgba(255, 250, 241, .93) 0%, rgba(255, 250, 241, .78) 44%, rgba(255, 250, 241, .34) 74%),
-                url('../../images/buddhi-vivek-yog-sadhna-original.jpg') center right / cover no-repeat;
-        }
-
-        .bvys-hero::after {
-            content: "";
-            position: absolute;
-            inset: auto 0 0;
-            height: 90px;
-            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
-            pointer-events: none;
-        }
-
-        .bvys-hero__content {
-            position: relative;
-            z-index: 1;
-            max-width: min(800px, 58vw);
-        }
-
-        .bvys-hero h1 {
-            margin: 12px 0 18px;
-            color: #4b2e49;
-            font-family: var(--hi-serif);
-            font-size: clamp(3rem, 6.4vw, 6.75rem);
-            line-height: 1.08;
-            letter-spacing: 0;
-        }
-
-        .bvys-hero__lead {
-            max-width: 740px;
-            color: #66554c;
-            font-family: var(--hi-serif);
-            font-size: clamp(1.14rem, 1.7vw, 1.46rem);
-            font-weight: 600;
-            line-height: 1.84;
-        }
-
         .bvys-essence {
             position: relative;
             z-index: 2;
-            margin-top: -34px;
         }
 
         .bvys-essence__grid {
@@ -346,9 +302,6 @@
         }
 
         @media (max-width: 980px) {
-            .bvys-hero__content {
-                max-width: 680px;
-            }
 
             .bvys-essence__grid,
             .bvys-step-grid,
@@ -367,20 +320,6 @@
         }
 
         @media (max-width: 640px) {
-            .bvys-hero {
-                padding-top: 128px;
-                background:
-                    linear-gradient(180deg, rgba(255, 250, 241, .86), rgba(255, 250, 241, .74)),
-                    url('../../images/buddhi-vivek-yog-sadhna-original.jpg') center top / cover no-repeat;
-            }
-
-            .bvys-hero__content {
-                max-width: 100%;
-            }
-
-            .bvys-hero h1 {
-                font-size: clamp(2.55rem, 12vw, 4.1rem);
-            }
 
             .bvys-essence {
                 margin-top: 0;

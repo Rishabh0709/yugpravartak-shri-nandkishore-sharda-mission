@@ -2,68 +2,6 @@
             background: var(--bg);
         }
 
-        .shardamani-hero {
-            position: relative;
-            min-height: 720px;
-            display: grid;
-            align-items: center;
-            overflow: hidden;
-            padding: clamp(150px, 17vh, 205px) 0 90px;
-            background:
-                linear-gradient(90deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .84) 42%, rgba(255, 244, 225, .5) 72%, rgba(255, 244, 225, .16) 100%),
-                url("../../images/maa-shardamani-scholarship-distribution.jpg") center / cover no-repeat;
-        }
-
-        .shardamani-hero::after {
-            content: "";
-            position: absolute;
-            inset: auto 0 0;
-            height: 160px;
-            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
-            pointer-events: none;
-        }
-
-        .shardamani-hero__content {
-            position: relative;
-            z-index: 1;
-            width: min(760px, 58vw);
-        }
-
-        .shardamani-hero h1 {
-            margin: 0 0 20px;
-            color: var(--hi-ink);
-            font-size: clamp(3.3rem, 6vw, 6.2rem);
-            line-height: 1.04;
-            letter-spacing: 0;
-        }
-
-        .shardamani-hero__lead {
-            max-width: 720px;
-            margin: 0 0 28px;
-            color: #5b4a41;
-            font-family: "Noto Serif Devanagari", serif;
-            font-size: clamp(1.25rem, 2vw, 1.75rem);
-            line-height: 1.9;
-        }
-
-        .shardamani-hero__meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .shardamani-hero__meta li {
-            padding: 10px 16px;
-            border: 1px solid rgba(121, 43, 42, .16);
-            border-radius: 999px;
-            background: rgba(255, 252, 246, .8);
-            color: var(--hi-maroon);
-            font-weight: 800;
-        }
-
         .shardamani-section {
             padding: clamp(76px, 9vw, 120px) 0;
         }
@@ -261,9 +199,6 @@
         }
 
         @media (max-width: 980px) {
-            .shardamani-hero__content {
-                width: min(100%, 720px);
-            }
 
             .shardamani-grid,
             .shardamani-stats,
@@ -277,20 +212,4 @@
                 min-height: 320px;
             }
 
-        }
-
-        @media (max-width: 640px) {
-            .shardamani-hero {
-                min-height: auto;
-                padding-top: 128px;
-                background-position: 56% center;
-            }
-
-            .shardamani-hero h1 {
-                font-size: clamp(2.7rem, 14vw, 4.1rem);
-            }
-
-            .shardamani-hero__lead {
-                font-size: 1.12rem;
-            }
         }

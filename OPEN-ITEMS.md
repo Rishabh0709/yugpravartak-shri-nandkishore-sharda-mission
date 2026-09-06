@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-06 (shared .page-hero; gyanyogi video hero → static)
+**Last updated:** 2026-09-06 (shared .page-hero rolled out to all interior pages)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -110,7 +110,8 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
-- Shared `.page-hero` image-hero component (`home-hindi.css`, `05c0e70`) — full-bleed photo + kicker/h1/lead + optional `.page-hero__meta` stat row. `gyanyogi-adhyatm-kendra.html` moved off its bespoke autoplay-`<video>` hero (deleted ~5 MB webm+mp4, poster promoted to `assets/images/`) and off the transparent-header overlay. Catalogued at `/patterns.html` §5c. Available for future interior-page migrations.
+- Shared `.page-hero` component (`home-hindi.css`, `05c0e70`) — kicker/h1/lead + optional `.hi-actions` CTA row + optional `.page-hero__meta` stat row. Two forms: photo (`.page-hero__bg` `<img>`, static — replaces the old CSS-`url()` backgrounds and the gyanyogi autoplay `<video>`, ~5 MB webm+mp4 deleted) and plain (`.page-hero--plain`, no image). Catalogued at `/patterns.html` §5c.
+- **`.page-hero` rolled out to all 20 interior heroes** (2026-09-06). Photo: swami-vivekanand-trust, maa-shardamani-trust, gyan-ganga-mission, sunday-sanskar-classes, divya-gyan, bhaiyaji-yugpravartak, buddhi-vivek-yog-sadhna. Plain: bhaiyaji-sadhna-kaal, margdarshan-siddhant, shri-nandkishore-sharda-chintan, nishkam-karm-sadhna, faq, itihaas, sadhna-aarambh, sampark, transparency, adhyatmik-gyan-charcha, publications, sadhna-places, news-events. ~20 bespoke `*-hero` CSS blocks removed; two transparent-header overlays (gyan-ganga, sadhna-kaal) dropped; sadhna-kaal's 8 MB PNG background dropped. **Deliberately left on bespoke heroes:** homepage (`hi-hero`), the 3 bio pages + about-mission (portrait + pull-quote), testimonials (`video-hero`, shared with video pages), gallery (separate `gallery-*` design system), jigyasa-samadhan (`faq-hero__note` aside), impact.html (old `activity-*` system, pending its own redesign).
 - In-page section nav consolidated into one shared `.page-nav` (`home-hindi.css`) — was copy-pasted 5× as `mission-nav` / `sadhna-kaal-nav` / `yug-nav` / `bvys-nav` / `dg-nav`. Now static + wrapping (no h-scroll), "इस पृष्ठ पर ↓" label, Jodhpur-blue link pills with hover fill. Applied to about-mission + the 4 chapter pages + `testimonials.html` (its nav moved out of the hero into the band); ~6.3 KB of duplicated CSS removed across 6 pages. Catalogued at `/patterns.html` §5b.
 - Bio pages: dropped the sticky horizontal in-page pill nav from all three (a biography is a sequential story; the jump nav hid its own last items behind an overflow scrollbar). Section `id`s kept for deep links.
 - Bio pages: fixed clear review bugs (`828c4bc`) — stray credential on मधु माँ, study location, h1 pattern, English "folded hands" alt, trust-name transliteration.

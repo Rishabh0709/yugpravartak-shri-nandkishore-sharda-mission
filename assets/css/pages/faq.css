@@ -7,27 +7,6 @@
     background: var(--bg);
 }
 
-/* ---- hero ---- */
-.faqp-hero {
-    padding: clamp(30px, 4.5vw, 52px) 0 clamp(30px, 4.5vw, 50px);
-    background: var(--bg-wash);
-    border-bottom: 1px solid var(--rule);
-}
-.faqp-hero__content { max-width: 720px; }
-.faqp-hero h1 {
-    margin: 10px 0 0;
-    font-family: var(--font-head);
-    font-size: var(--step-h1);
-    color: var(--primary);
-}
-.faqp-hero__lead {
-    margin: 18px 0 0;
-    font-size: 1.02rem;
-    line-height: 1.8;
-    color: var(--ink-body);
-}
-.faqp-hero__lead a { color: var(--accent); }
-
 /* ---- list ---- */
 .faqp-section { padding: clamp(38px, 6vw, 60px) 0; }
 .faqp-section > .hi-shell { max-width: 760px; }

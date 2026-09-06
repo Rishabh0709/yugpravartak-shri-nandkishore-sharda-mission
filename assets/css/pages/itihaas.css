@@ -7,26 +7,6 @@
     background: var(--bg);
 }
 
-/* ---- hero ---- */
-.it-hero {
-    padding: clamp(30px, 4.5vw, 52px) 0 clamp(30px, 4.5vw, 50px);
-    background: var(--bg-wash);
-    border-bottom: 1px solid var(--rule);
-}
-.it-hero__content { max-width: 720px; }
-.it-hero h1 {
-    margin: 10px 0 0;
-    font-family: var(--font-head);
-    font-size: var(--step-h1);
-    color: var(--primary);
-}
-.it-hero__lead {
-    margin: 18px 0 0;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--ink-body);
-}
-
 /* ---- phase section ---- */
 .it-section { padding: clamp(40px, 6vw, 64px) 0; }
 .it-section + .it-section { border-top: 1px solid var(--rule); }

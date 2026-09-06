@@ -3,50 +3,6 @@
             color: var(--hi-ink);
         }
 
-        .chintan-hero {
-            position: relative;
-            min-height: 680px;
-            display: grid;
-            align-items: center;
-            overflow: hidden;
-            padding: clamp(148px, 17vh, 205px) 0 88px;
-            background:
-                linear-gradient(90deg, rgba(255, 250, 241, .97) 0%, rgba(255, 250, 241, .9) 48%, rgba(255, 244, 225, .68) 100%),
-                url("../../images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
-        }
-
-        .chintan-hero::after {
-            content: "";
-            position: absolute;
-            inset: auto 0 0;
-            height: 150px;
-            background: linear-gradient(180deg, rgba(255, 250, 241, 0), #fffaf1);
-            pointer-events: none;
-        }
-
-        .chintan-hero__content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-        }
-
-        .chintan-hero h1 {
-            margin: 0 0 20px;
-            color: var(--hi-ink);
-            font-size: clamp(3rem, 5.4vw, 6.1rem);
-            line-height: 1.08;
-            letter-spacing: 0;
-        }
-
-        .chintan-hero__lead {
-            max-width: 780px;
-            margin: 0;
-            color: #5b4a41;
-            font-family: "Noto Serif Devanagari", serif;
-            font-size: clamp(1.18rem, 1.8vw, 1.58rem);
-            line-height: 1.9;
-        }
-
         .chintan-section {
             padding: clamp(74px, 9vw, 120px) 0;
         }
@@ -192,10 +148,6 @@
         }
 
         @media (max-width: 980px) {
-            .chintan-hero {
-                min-height: auto;
-                padding-top: 132px;
-            }
 
             .chintan-grid,
             .chintan-grid--reverse {
@@ -212,12 +164,6 @@
         }
 
         @media (max-width: 640px) {
-            .chintan-hero {
-                padding-top: 118px;
-                background:
-                    linear-gradient(180deg, rgba(255, 250, 241, .98), rgba(255, 250, 241, .88)),
-                    url("../../images/gallery/scholarship-distribution/16-card.webp") center / cover no-repeat;
-            }
 
             .chintan-principles {
                 grid-template-columns: 1fr;

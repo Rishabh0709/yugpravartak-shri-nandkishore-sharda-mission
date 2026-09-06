@@ -13,7 +13,7 @@ It shows a live render **and** the markup for every shared building block:
 4. **Section frame** — `.hi-section` › `.hi-shell` › `.hi-section-heading` (`--center`)
 5. **Breadcrumb** — the `breadcrumb: true` front-matter component
 5b. **In-page section nav** — `.page-nav` (shared, in `home-hindi.css`). Overview/topic pages only, not sequential bios.
-5c. **Image hero** — `.page-hero` (shared, in `home-hindi.css`). Standard interior-page hero: full-bleed photo + kicker/`h1`/lead + optional `.page-hero__meta` stat row. Static image, the lightweight alternative to a video hero. Homepage keeps its own `hi-hero`.
+5c. **Page hero** — `.page-hero` (shared, in `home-hindi.css`). Every interior page's hero: kicker / `h1` / lead + optional `.hi-actions` CTA row + optional `.page-hero__meta` stat row. With a photo (`.page-hero__bg` `<img>`, static — the lightweight alternative to a video hero) or plain (`.page-hero--plain`, no image, for text-forward pages). Homepage keeps `hi-hero`; the 3 bio pages + about-mission keep their portrait + pull-quote hero.
 6. **Recurring section shapes** — two-column media+copy, numbered steps, feature-card grid,
    stat strip, vertical timeline, document list, pull-quote, closing CTA band
 7. **A new page, start to finish** — the checklist
@@ -29,7 +29,8 @@ It shows a live render **and** the markup for every shared building block:
   `assets/css/pages/<slug>.css` for genuinely new layout.
 - The §6 shapes currently live under page-specific prefixes (`gyanyogi-step`,
   `shardamani-step`, `bvys-step` …). Extracting a shared class set for them is the next
-  CSS refactor (see `OPEN-ITEMS.md` §3). The in-page nav has already been extracted
-  (`.page-nav`); the per-page `*-nav` copies are gone.
+  CSS refactor (see `OPEN-ITEMS.md` §3). The in-page nav (`.page-nav`) and the page
+  hero (`.page-hero`) have already been extracted; the per-page `*-nav` / `*-hero`
+  copies are gone (except the homepage `hi-hero` and the 4 portrait bio heroes).
 - Data that repeats or the English build needs → `src/_data/*.json`, not inline HTML.
 - Every `<img>` carries real `width`/`height`.

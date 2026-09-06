@@ -176,12 +176,15 @@
           "src": "assets/images/manidweep-office.jpg",
           "altHi": "मणिद्वीप का आध्यात्मिक वातावरण",
           "altEn": ""
+        },
+        "page-hero": {
+          "src": "assets/images/buddhi-vivek-yog-sadhna-original.jpg",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
-      "cssBackgrounds": [
-        "/assets/images/buddhi-vivek-yog-sadhna-original.jpg"
-      ]
+      "cssBackgrounds": []
     },
     "divya-gyan": {
       "images": {
@@ -209,12 +212,15 @@
           "src": "assets/images/sunday-guidance-gathering.webp",
           "altHi": "ज्ञान चर्चा और आध्यात्मिक मार्गदर्शन का दृश्य",
           "altEn": ""
+        },
+        "page-hero": {
+          "src": "assets/images/books/02-full.webp",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
-      "cssBackgrounds": [
-        "/assets/images/bhaiyaji-divine-wisdom-background.jpg"
-      ]
+      "cssBackgrounds": []
     },
     "gallery": {
       "images": {
@@ -468,11 +474,15 @@
           "src": "assets/images/gallery/scholarship-distribution/15-card.webp",
           "altHi": "छात्रवृत्ति से लाभान्वित छात्राओं का समूह",
           "altEn": ""
+        },
+        "page-hero": {
+          "src": "assets/images/maa-shardamani-scholarship-distribution.jpg",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
       "cssBackgrounds": [
-        "/assets/images/maa-shardamani-scholarship-distribution.jpg",
         "/assets/images/gallery/scholarship-distribution/08-card.webp"
       ]
     },
@@ -541,9 +551,7 @@
         }
       },
       "media": {},
-      "cssBackgrounds": [
-        "/assets/images/gallery/scholarship-distribution/10-card.webp"
-      ]
+      "cssBackgrounds": []
     },
     "nishkam-karm-sadhna": {
       "images": {
@@ -718,9 +726,7 @@
         }
       },
       "media": {},
-      "cssBackgrounds": [
-        "/assets/images/gallery/scholarship-distribution/16-card.webp"
-      ]
+      "cssBackgrounds": []
     },
     "shri-nandkishore-sharda": {
       "images": {
@@ -794,6 +800,11 @@
           "src": "assets/images/sunday-guidance-gathering.webp",
           "altHi": "रविवार मार्गदर्शन सभा",
           "altEn": ""
+        },
+        "page-hero": {
+          "src": "assets/images/gallery/sunday-sanskar-classes/05-full.webp",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
@@ -815,11 +826,15 @@
           "src": "assets/images/sanskar_classes.jpg",
           "altHi": "संस्कार एवं व्यक्तित्व विकास कक्षाएँ",
           "altEn": ""
+        },
+        "page-hero": {
+          "src": "assets/images/gallery/scholarship-distribution/09-full.webp",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
       "cssBackgrounds": [
-        "/assets/images/svswct.png",
         "/assets/images/gallery/scholarship-distribution/15-card.webp"
       ]
     },
@@ -894,12 +909,26 @@
           "src": "assets/images/gallery/infrastructure-support/10-card.webp",
           "altHi": "जनसहयोग से शैक्षणिक आधारभूत निर्माण",
           "altEn": "Educational infrastructure built through community support"
+        },
+        "page-hero": {
+          "src": "assets/images/gallery/literature-distribution/01-full.webp",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "media": {},
-      "cssBackgrounds": [
-        "/assets/images/gallery/gyan-ganga-mission/02-card.webp"
-      ]
+      "cssBackgrounds": []
+    },
+    "bhaiyaji-yugpravartak": {
+      "images": {
+        "page-hero": {
+          "src": "assets/images/spiritual-hero-bhaiyaji-maa.jpg",
+          "altHi": "",
+          "altEn": ""
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
     }
   }
 }

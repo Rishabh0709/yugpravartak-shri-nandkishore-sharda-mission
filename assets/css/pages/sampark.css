@@ -7,27 +7,6 @@
     background: var(--bg);
 }
 
-/* ---- hero ---- */
-.sk-hero {
-    padding: clamp(34px, 5vw, 56px) 0 clamp(30px, 4.5vw, 50px);
-    background: var(--bg-wash);
-    border-bottom: 1px solid var(--rule);
-}
-.sk-hero__content { max-width: 720px; }
-.sk-hero h1 {
-    margin: 10px 0 0;
-    font-family: var(--font-head);
-    font-size: var(--step-h1);
-    line-height: 1.2;
-    color: var(--primary);
-}
-.sk-hero__lead {
-    margin: 18px 0 0;
-    font-size: 1.04rem;
-    line-height: 1.85;
-    color: var(--ink-body);
-}
-
 /* ---- section frame ---- */
 .sk-section { padding: clamp(38px, 6vw, 60px) 0; }
 .sk-section + .sk-section { border-top: 1px solid var(--rule); }
@@ -51,7 +30,7 @@
     grid-template-columns: 1fr;
     gap: clamp(14px, 2vw, 20px);
 }
-@media (min-width: 640px)  { .sk-essentials { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 640px) { .sk-essentials { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .sk-essentials { grid-template-columns: repeat(4, 1fr); } }
 .sk-essentials article {
     padding: clamp(16px, 2vw, 22px);

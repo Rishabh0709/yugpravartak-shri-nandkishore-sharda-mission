@@ -485,12 +485,13 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 }
 
 /* ---- shared image hero (interior pages) ----------------------------
-   <section class="page-hero">
+   <section class="page-hero">                    (add page-hero--plain when there is no photo)
      <img class="page-hero__bg" src="/assets/images/…" alt="" width height loading="eager">
      <div class="hi-shell page-hero__content">
        <span class="hi-kicker">…</span>
        <h1 id="…">…</h1>
        <p class="page-hero__lead">…</p>
+       <div class="hi-actions">…</div>                              optional
        <ul class="page-hero__meta"> optional — <li><strong>…</strong><span>…</span></li> </ul>
      </div>
    </section>
@@ -539,7 +540,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 .page-hero__content {
     position: relative;
     z-index: 2;
-    width: min(720px, 66%);
+    width: min(760px, 68%);
 }
 
 .page-hero h1 {
@@ -559,6 +560,11 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     font-family: var(--font-head);
     font-size: clamp(1.06rem, 1.55vw, 1.36rem);
     line-height: 1.85;
+}
+
+.page-hero__lead a {
+    color: var(--accent);
+    text-underline-offset: 3px;
 }
 
 .page-hero__meta {
@@ -582,6 +588,39 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     font-size: 1.3rem;
     line-height: 1.15;
     color: var(--primary);
+}
+
+.page-hero__meta span {
+    display: block;
+    margin-top: 2px;
+    color: var(--ink-body);
+}
+
+/* optional CTA row inside the hero */
+.page-hero .hi-actions {
+    margin-top: clamp(22px, 3vw, 30px);
+}
+
+/* text-only variant — no photo behind (page-hero--plain) */
+.page-hero--plain {
+    min-height: 0;
+    padding: clamp(34px, 5vw, 60px) 0;
+    background: var(--bg-wash);
+    border-bottom: 1px solid var(--rule);
+}
+
+.page-hero--plain::before,
+.page-hero--plain::after {
+    display: none;
+}
+
+.page-hero--plain .page-hero__content {
+    width: min(780px, 100%);
+}
+
+.page-hero--plain h1 {
+    color: var(--primary);
+    font-size: var(--step-h1);
 }
 
 @media (max-width: 700px) {
