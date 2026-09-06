@@ -29,6 +29,15 @@ body.hindi-home {
     text-wrap: balance;
 }
 
+/* Headings never inherit the 1.85 body/prose line-height. Kept at zero
+   specificity (:where) so every real component rule still wins — this
+   only catches an un-styled heading (e.g. a bare <h2> not wrapped in
+   .hi-section-heading) that would otherwise get a blank line between
+   its wrapped lines. */
+:where(.hindi-home h2, .hindi-home h3, .hindi-home h4) {
+    line-height: 1.3;
+}
+
 /* Latin numerals / abbreviations sitting inside Devanagari text
    (years, "M.A.", "₹6.72 Cr", phone numbers) — opt-in via .num or a
    lang="en" span, so they don't fall back to a mismatched face. */

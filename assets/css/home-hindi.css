@@ -1910,7 +1910,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     .hi-sacred__copy h2,
     .hi-sadhna__copy h2,
     .hi-manidweep__copy h2 {
-        font-size: clamp(2rem, 11vw, 3.1rem);
+        font-size: clamp(1.9rem, 6.4vw, 2.3rem);
     }
 
     .hi-feature-heading h2 {

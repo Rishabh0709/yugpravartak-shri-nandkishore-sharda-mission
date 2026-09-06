@@ -107,16 +107,6 @@
             line-height: 1.55;
         }
 
-        .bvys-copy h2,
-        .bvys-section-heading h2 {
-            margin: 10px 0 20px;
-            color: var(--hi-ink);
-            font-family: var(--hi-serif);
-            font-size: clamp(2.1rem, 4.5vw, 4.35rem);
-            line-height: 1.16;
-            letter-spacing: 0;
-        }
-
         .bvys-copy p,
         .bvys-section-heading p {
             margin: 0 0 16px;
