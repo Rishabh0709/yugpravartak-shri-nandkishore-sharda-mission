@@ -187,8 +187,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .sadhna-arc--reverse .sadhna-arc__media {
-                order: 0;
+            .sadhna-arc__grid .sadhna-arc__media {
+                order: -1;
             }
         }
 

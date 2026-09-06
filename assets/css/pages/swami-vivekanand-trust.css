@@ -55,7 +55,7 @@
             align-items: start;
         }
 
-        .vivekanand-grid--reverse .vivekanand-copy {
+        .vivekanand-grid--reverse .vivekanand-media {
             order: 2;
         }
 
@@ -197,7 +197,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .vivekanand-grid--reverse .vivekanand-copy {
+            .vivekanand-grid--reverse .vivekanand-media {
                 order: 0;
             }
 

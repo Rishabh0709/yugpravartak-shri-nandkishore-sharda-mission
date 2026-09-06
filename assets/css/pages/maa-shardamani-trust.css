@@ -207,6 +207,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .shardamani-grid .shardamani-media {
+                order: -1;
+            }
+
             .shardamani-media,
             .shardamani-media img {
                 min-height: 320px;
