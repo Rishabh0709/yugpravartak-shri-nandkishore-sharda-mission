@@ -13,6 +13,7 @@ It shows a live render **and** the markup for every shared building block:
 4. **Section frame** — `.hi-section` › `.hi-shell` › `.hi-section-heading` (`--center`)
 5. **Breadcrumb** — the `breadcrumb: true` front-matter component
 5b. **In-page section nav** — `.page-nav` (shared, in `home-hindi.css`). Overview/topic pages only, not sequential bios.
+5c. **Image hero** — `.page-hero` (shared, in `home-hindi.css`). Standard interior-page hero: full-bleed photo + kicker/`h1`/lead + optional `.page-hero__meta` stat row. Static image, the lightweight alternative to a video hero. Homepage keeps its own `hi-hero`.
 6. **Recurring section shapes** — two-column media+copy, numbered steps, feature-card grid,
    stat strip, vertical timeline, document list, pull-quote, closing CTA band
 7. **A new page, start to finish** — the checklist

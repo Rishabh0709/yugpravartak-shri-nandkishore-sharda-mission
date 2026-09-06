@@ -268,25 +268,15 @@
           "src": "assets/images/sunday-guidance-gathering.webp",
           "altHi": "आध्यात्मिक मार्गदर्शन और सामूहिक संवाद",
           "altEn": ""
-        }
-      },
-      "media": {
+        },
         "gyanyogi-adhyatm-kendra-hero": {
-          "src": "assets/videos/gyanyogi-adhyatm-kendra-hero.webm",
-          "type": "source"
-        },
-        "gyanyogi-adhyatm-kendra-hero-2": {
-          "src": "assets/videos/gyanyogi-adhyatm-kendra-hero.mp4",
-          "type": "source"
-        },
-        "gyanyogi-adhyatm-kendra-hero-poster": {
-          "src": "assets/videos/gyanyogi-adhyatm-kendra-hero-poster.jpg",
-          "type": "poster"
+          "src": "assets/images/gyanyogi-adhyatm-kendra-hero.jpg",
+          "altHi": "",
+          "altEn": ""
         }
       },
       "cssBackgrounds": [
-        "/assets/images/gallery/food-assistance/06-card.webp",
-        "/assets/videos/gyanyogi-adhyatm-kendra-hero-poster.jpg"
+        "/assets/images/gallery/food-assistance/06-card.webp"
       ]
     },
     "impact": {

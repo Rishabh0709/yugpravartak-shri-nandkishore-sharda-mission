@@ -484,6 +484,111 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     line-height: 1.85;
 }
 
+/* ---- shared image hero (interior pages) ----------------------------
+   <section class="page-hero">
+     <img class="page-hero__bg" src="/assets/images/…" alt="" width height loading="eager">
+     <div class="hi-shell page-hero__content">
+       <span class="hi-kicker">…</span>
+       <h1 id="…">…</h1>
+       <p class="page-hero__lead">…</p>
+       <ul class="page-hero__meta"> optional — <li><strong>…</strong><span>…</span></li> </ul>
+     </div>
+   </section>
+   ------------------------------------------------------------------ */
+.page-hero {
+    position: relative;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    min-height: clamp(320px, 42vh, 460px);
+    padding: clamp(40px, 7vh, 72px) 0;
+    background: var(--bg-wash);
+}
+
+.page-hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(248, 244, 236, .96) 0%, rgba(248, 244, 236, .88) 42%, rgba(248, 244, 236, .52) 74%, rgba(248, 244, 236, .16) 100%),
+        linear-gradient(180deg, rgba(248, 244, 236, .28) 0%, transparent 44%);
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    z-index: 1;
+    height: 120px;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(248, 244, 236, 0), var(--bg));
+}
+
+.page-hero__content {
+    position: relative;
+    z-index: 2;
+    width: min(720px, 66%);
+}
+
+.page-hero h1 {
+    margin: 10px 0 0;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: clamp(2.3rem, 4.6vw, 4.2rem);
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.page-hero__lead {
+    max-width: 620px;
+    margin: 18px 0 0;
+    color: var(--ink-body);
+    font-family: var(--font-head);
+    font-size: clamp(1.06rem, 1.55vw, 1.36rem);
+    line-height: 1.85;
+}
+
+.page-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    margin: 26px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-hero__meta li {
+    font-size: .9rem;
+    line-height: 1.45;
+    color: var(--ink-body);
+}
+
+.page-hero__meta strong {
+    display: block;
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    line-height: 1.15;
+    color: var(--primary);
+}
+
+@media (max-width: 700px) {
+    .page-hero { min-height: auto; }
+    .page-hero__content { width: 100%; }
+}
+
 /* Our Purpose */
 .hi-purpose {
     position: relative;
