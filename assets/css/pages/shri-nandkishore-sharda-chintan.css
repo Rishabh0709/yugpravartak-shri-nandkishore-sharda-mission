@@ -30,7 +30,7 @@
             align-items: start;
         }
 
-        .chintan-grid--reverse .chintan-media {
+        .chintan-grid--reverse .chintan-copy {
             order: 2;
         }
 
@@ -154,7 +154,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .chintan-grid--reverse .chintan-media {
+            .chintan-grid--reverse .chintan-copy {
                 order: 0;
             }
 

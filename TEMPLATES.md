@@ -29,8 +29,12 @@ It shows a live render **and** the markup for every shared building block:
   `assets/css/pages/<slug>.css` for genuinely new layout.
 - The §6 shapes currently live under page-specific prefixes (`gyanyogi-step`,
   `shardamani-step`, `bvys-step` …). Extracting a shared class set for them is the next
-  CSS refactor (see `OPEN-ITEMS.md` §3). The in-page nav (`.page-nav`) and the page
-  hero (`.page-hero`) have already been extracted; the per-page `*-nav` / `*-hero`
-  copies are gone (except the homepage `hi-hero` and the 3 portrait bio heroes).
+  CSS refactor (see `OPEN-ITEMS.md` §3). The in-page nav (`.page-nav`), the page
+  hero (`.page-hero`), and the **section heading** (`.hi-section-heading`, always
+  full-width above the two-column grid) have already been extracted; the per-page
+  `*-nav` / `*-hero` copies are gone (except the homepage `hi-hero` and the 3
+  portrait bio heroes), and every two-column content section now hoists its heading
+  out of the copy column. The `*-grid` / `*-copy` / `*-media` layout classes are
+  still page-scoped.
 - Data that repeats or the English build needs → `src/_data/*.json`, not inline HTML.
 - Every `<img>` carries real `width`/`height`.
