@@ -47,7 +47,7 @@
             display: grid;
             grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
             gap: clamp(38px, 6vw, 82px);
-            align-items: center;
+            align-items: start;
         }
 
         .gyanyogi-grid--reverse .gyanyogi-media {

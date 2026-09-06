@@ -74,7 +74,7 @@
             display: grid;
             grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
             gap: clamp(30px, 6vw, 76px);
-            align-items: center;
+            align-items: start;
         }
 
         .yug-grid--reverse .yug-media {

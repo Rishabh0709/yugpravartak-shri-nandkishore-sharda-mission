@@ -58,7 +58,7 @@
             display: grid;
             grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
             gap: clamp(28px, 5vw, 70px);
-            align-items: center;
+            align-items: start;
         }
 
         .mission-chapter:nth-of-type(even) .mission-chapter__media {

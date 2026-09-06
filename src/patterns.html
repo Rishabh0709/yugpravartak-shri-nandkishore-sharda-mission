@@ -117,7 +117,7 @@ extraCss: ["/assets/css/pages/patterns.css"]
     <section class="pt-block pt-block--alt">
         <div class="hi-shell">
             <h2 class="pt-block__title">4 · Section frame</h2>
-            <p class="pt-note">Every content section: <code>&lt;section class="hi-section …"&gt;</code> → <code>&lt;div class="hi-shell"&gt;</code> (max 1180px, auto-centred) → a <code>hi-section-heading</code> then content.</p>
+            <p class="pt-note">Every content section: <code>&lt;section class="hi-section …"&gt;</code> → <code>&lt;div class="hi-shell"&gt;</code> (max 1180px, auto-centred) → a <code>hi-section-heading</code> then content. <strong>The heading is always this block</strong> — never a bare <code>&lt;span&gt;+&lt;h2&gt;</code> floating in a copy column. In a two-column (image + copy) section it's the first child of the copy column, and the grid must be <code>align-items: start</code> (not <code>center</code>) so the heading top-aligns with the image. One h2 scale everywhere (<code>clamp(2rem, 3.6vw, 3.6rem)</code>, <code>line-height 1.15</code>, <code>text-wrap: balance</code>); never <code>white-space: nowrap</code>.</p>
             <div class="pt-demo pt-demo--framed">
                 <header class="hi-section-heading hi-section-heading--center">
                     <span class="hi-kicker">अनुभाग किकर</span>
@@ -135,7 +135,7 @@ extraCss: ["/assets/css/pages/patterns.css"]
     …
   &lt;/div&gt;
 &lt;/section&gt;</code></pre>
-            <p class="pt-note">Drop <code>--center</code> for a left-aligned heading. Alternate section backgrounds with <code>background: var(--bg-wash)</code>.</p></details>
+            <p class="pt-note">Drop <code>--center</code> for a left-aligned heading (the default for copy-column headings; <code>--center</code> only for full-width bands with no adjacent image). Alternate section backgrounds with <code>background: var(--bg-wash)</code>.</p></details>
         </div>
     </section>
 
