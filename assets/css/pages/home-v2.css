@@ -291,6 +291,15 @@
 }
 
 /* ---------- lineage journey (compact vertical timeline, single-sided) ---------- */
+.v2-lineage__intro {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--font-head);
+    font-size: clamp(1.15rem, 1.7vw, 1.42rem);
+    line-height: 1.75;
+    color: #765f52;
+}
 .v2-journey {
     position: relative;
     max-width: 640px;
