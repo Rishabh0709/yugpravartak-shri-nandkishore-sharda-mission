@@ -12,7 +12,7 @@
       "purpose": { "hi": "बालिका शिक्षा एवं छात्रवृत्ति, संस्कार", "en": "Girls' education, scholarships and sanskar" },
       "page": "/swami-vivekanand-trust.html",
       "donationKey": "swami-vivekanand-trust",
-      "approvals": { "80G": "AAATS3452LF20218" }
+      "approvals": { "12A": "AAATS3452LE19964", "80G": "AAATS3452LF20218" }
     },
     {
       "id": "maa-shardamani-trust",
@@ -21,7 +21,7 @@
       "purpose": { "hi": "उच्च शिक्षा, संस्कार एवं छात्रवृत्ति (बालिका)", "en": "Higher education, sanskar and scholarships for girls" },
       "page": "/maa-shardamani-trust.html",
       "donationKey": "maa-shardamani-trust",
-      "approvals": {}
+      "approvals": { "12A": "AAATM7565JE20211" }
     },
     {
       "id": "gyanyogi-adhyatm-kendra",
@@ -33,7 +33,7 @@
       "purpose": { "hi": "जरूरतमंद बालकों को छात्रवृत्ति एवं मार्गदर्शन", "en": "Scholarships and guidance for boys in need" },
       "page": "/gyanyogi-adhyatm-kendra.html",
       "donationKey": "gyanyogi-adhyatm-kendra",
-      "approvals": {}
+      "approvals": { "12A": "AABTG5760CE20219", "80G": "AABTG5760CF20118" }
     },
     {
       "id": "gyan-ganga-mission",
@@ -45,7 +45,7 @@
       "purpose": { "hi": "सद्साहित्य का प्रकाशन एवं निःशुल्क वितरण", "en": "Publishing and free distribution of spiritual literature" },
       "page": "/gyan-ganga-mission.html",
       "donationKey": "gyan-ganga-mission",
-      "approvals": {}
+      "approvals": { "12A": "AAFTS8734CE20215", "80G": "AAFTS8734CF20213" }
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-06 (section-heading standardisation)
+**Last updated:** 2026-09-07 (financial reports + 80G/12A numbers for all four trusts)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -39,15 +39,16 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - **Contact email** — replace `kishoreggm@gmail.com` with `info@manidweepjodhpur.org` in `src/_data/site.json` once the mailbox exists.
 - **WhatsApp channel / mailing list** — if/when one exists, the closing CTAs and "जुड़ें" links should point to it instead of the contact page.
 
-### Trust documents still missing (`/transparency.html` shows "शीघ्र उपलब्ध")
-- **Financial reports** — Maa Shardamani Trust, Gyanyogi Adhyatm Kendra, Gyan Ganga Mission (only SVT has them, 1996–2024). Drop PDFs in `assets/documents/<id>/financial-reports/<YYYY-YY>.pdf`.
+### Trust documents
+- ~~Financial reports for Maa Shardamani / Gyanyogi / Gyan Ganga~~ — **done** (2026-09-07). 5 years each (2019-20 → 2023-24) added under `assets/documents/<id>/financial-reports/`; the transparency page and each trust page's docs strip now list them. SVT still spans 1996-97 → 2023-24.
+- ~~80G / 12A registration numbers~~ — **done** (2026-09-07). URNs extracted from the certificate PDFs into `trusts.json` → `approvals` (12A + 80G for SVT/Gyanyogi/Gyan Ganga; 12A only for Maa Shardamani, which has **no 80G** — confirmed by the absence of an 80G order in its legal folder).
+- **Latest year** — all four trusts' financial reports stop at 2023-24; add 2024-25 for each when those audits are ready. (SVT's *scholarship certificates* already go to 2024-25.)
 - **Scholarship certificates** — only SVT publishes these (per your note, 2026-09-04); the other three trusts no longer reference them.
-- **80G approval numbers** — Gyanyogi, Gyan Ganga (SVT has `AAATS3452LF20218`). Maa Shardamani has no 80G PDF at all — confirm whether it has 80G. Add numbers to `src/_data/trusts.json` → `approvals`.
 
 ### Donation details — placeholders in `src/data/donation-details.json`
 - Gyanyogi SBI branch: `"ENTER BRANCH"`
-- 80G approval numbers: `"ENTER APPROVAL NUMBER"` ×3 (Gyanyogi, Maa Shardamani, Gyan Ganga)
 - UPI IDs: `"ENTER_UPI_ID"` (Maa Shardamani, Gyan Ganga)
+- ~~80G approval numbers~~ — filled 2026-09-07 from the certificate PDFs (Maa Shardamani has no 80G — set to its 12A number with a "(no 80G)" label).
 - (No donation UI is built yet — this data is staged for a future donation section on `sampark.html`.)
 
 ### Decisions
