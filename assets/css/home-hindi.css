@@ -1025,6 +1025,7 @@ body.hindi-home.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     border-radius: 32px;
     background: rgba(255, 255, 255, .68);
     box-shadow: 0 20px 60px rgba(80, 48, 35, .08);
+    scroll-margin-top: 110px;
 }
 
 .hi-lineage .hi-profile + .hi-profile {
