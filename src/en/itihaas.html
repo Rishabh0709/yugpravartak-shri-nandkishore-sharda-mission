@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: "History of the Mission | Manidweep Adhyatm Parivar"
+description: "From the spiritual journey of Yugpravartak Shri Nandkishore Sharda (1944–1995) to the start of Nishkam Karma Sadhana in 1996, and the timeline up to today."
+bodyClass: "english-home itihaas-page"
+breadcrumb: true
+breadcrumbParent: { "label": "About", "href": "/en/about-mission.html" }
+extraCss: ["/assets/css/pages/itihaas.css"]
+---
+<main id="main-content">
+    <section class="page-hero page-hero--plain" aria-labelledby="it-title">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">Timeline</span>
+            <h1 id="it-title">History of the Mission</h1>
+            <p class="page-hero__lead">A journey that began with the truthful resolve of a fifteen-year-old boy, passed through decades of sadhana, reached Nishkam Karma Sadhana in 1996 — and is unbroken today.</p>
+        </div>
+    </section>
+
+    {%- set phases = [
+        { key: "spiritual-journey", label: "The spiritual journey", note: "This period, before 1996, is wholly one of self-welfare and the search for truth — it is not the Mission's organisational 'founding year'." },
+        { key: "seva", label: "Nishkam Karma Sadhana", note: "At 'Maa's' command, the projects of education, sanskar and human service began in 1996. The Mission's work for public welfare starts here." }
+    ] %}
+
+    {%- for phase in phases %}
+    <section class="it-section" aria-labelledby="it-phase-{{ phase.key }}">
+        <div class="hi-shell">
+            <header class="it-phase">
+                <h2 id="it-phase-{{ phase.key }}">{{ phase.label }}</h2>
+                <p>{{ phase.note }}</p>
+            </header>
+            <ol class="it-timeline it-timeline--{{ phase.key }}">
+                {%- for event in timeline.events %}
+                {%- if event.phase == phase.key %}
+                <li class="it-event">
+                    <div class="it-event__year">{{ event.year }}</div>
+                    <div class="it-event__body">
+                        <h3>{{ event.title.en }}</h3>
+                        {%- if event.body.en %}<p>{{ event.body.en }}</p>{% endif %}
+                    </div>
+                </li>
+                {%- endif %}
+                {%- endfor %}
+            </ol>
+        </div>
+    </section>
+    {%- endfor %}
+
+    <section class="it-section it-closing" aria-labelledby="it-closing-title">
+        <div class="hi-shell">
+            <h2 id="it-closing-title">The journey moves on</h2>
+            <p>The vision received from Bhaiyaji flows on today under Madhu Maa's leadership — in both forms, the spreading of Divya Gyan and selfless service.</p>
+            <div class="hi-actions">
+                <a class="hi-btn hi-btn--primary" href="/en/about-mission.html">About the Mission</a>
+                <a class="hi-btn hi-btn--outline" href="/en/nishkam-karm-sadhna.html">See the service work</a>
+                <a class="hi-btn hi-btn--outline" href="/en/transparency.html">Registration &amp; documents</a>
+            </div>
+        </div>
+    </section>
+</main>

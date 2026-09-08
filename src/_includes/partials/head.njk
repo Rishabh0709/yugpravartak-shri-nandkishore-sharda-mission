@@ -116,7 +116,7 @@
       "@type": "Book",
       "name": {{ B.title[locale] | dump | safe }},
       "author": { "@type": "Person", "name": {{ B.author[locale] | dump | safe }} },
-      "inLanguage": "hi",
+      "inLanguage": "{{ locale }}",
       "description": {{ B.description[locale] | dump | safe }},
       "publisher": {{ B.publisher[locale] | dump | safe }},
       "url": "{{ site.origin }}{{ page.url }}"
