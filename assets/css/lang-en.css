@@ -56,6 +56,25 @@ body.english-home {
     max-width: 70ch;
 }
 
+/* The page stylesheets set prose leading for Devanagari (1.85–1.95).
+   A Latin face at that leading reads unfocused — pull it back across
+   the shared prose-column families. Page CSS loads after this sheet,
+   so the .english-home prefix carries the specificity to win. Genuinely
+   page-specific tuning goes in a small `.english-home` block at the
+   foot of that page's own stylesheet. */
+.english-home :is(
+    .hi-prose,
+    [class$="-copy"],
+    [class$="__copy"],
+    [class$="__intro"],
+    [class$="__body"],
+    [class$="__text"],
+    [class$="-closing"],
+    [class$="__note"]
+) p {
+    line-height: 1.72;
+}
+
 /* Tabular numerals for figure-heavy runs (stats, tables, years). */
 .english-home .num {
     font-variant-numeric: tabular-nums;
