@@ -227,20 +227,10 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
     </div>
   </section>
 
-  {# ============ 8 · THE LINEAGE + serpentine journey ============ #}
-  <section class="hi-section hi-lineage" id="lineage" aria-label="मिशन की परम्परा और समय-रेखा">
+  {# ============ 8 · THE LINEAGE ============ #}
+  <section class="hi-section hi-lineage" id="lineage" aria-label="मिशन की परम्परा">
     <div class="hi-shell">
       <p class="v2-lineage__intro">भैया जी से प्राप्त दृष्टि माँ बसन्ती के वात्सल्य और मधु माँ के समर्पित नेतृत्व के माध्यम से आज भी जीवित है — कार्य कभी रुका नहीं।</p>
-
-      <ol class="v2-journey" aria-label="मिशन की समय-रेखा">
-        {%- for event in timeline.events %}
-        <li class="v2-journey__event{% if event.phase == 'seva' %} is-seva{% endif %}">
-          <span class="v2-journey__year">{{ event.year }}</span>
-          <span class="v2-journey__title">{{ event.title.hi }}</span>
-        </li>
-        {%- endfor %}
-      </ol>
-      <p class="v2-journey__more"><a href="/itihaas.html">सम्पूर्ण इतिहास विस्तार से <span aria-hidden="true">&rarr;</span></a></p>
 
       <article class="hi-profile hi-profile--lineage" id="v2-maa-basanti" style="margin-top:clamp(40px,5vw,60px)">
         <figure class="hi-profile__media">

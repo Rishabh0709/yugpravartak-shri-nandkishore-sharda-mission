@@ -290,7 +290,7 @@
         var(--bg);
 }
 
-/* ---------- lineage journey (compact vertical timeline, single-sided) ---------- */
+/* ---------- lineage intro ---------- */
 .v2-lineage__intro {
     max-width: 640px;
     margin: 0 auto;
@@ -299,71 +299,6 @@
     font-size: clamp(1.15rem, 1.7vw, 1.42rem);
     line-height: 1.75;
     color: #765f52;
-}
-.v2-journey {
-    position: relative;
-    max-width: 640px;
-    margin: clamp(32px, 5vw, 52px) auto 0;
-    padding-left: 4px;
-}
-.v2-journey::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    bottom: 12px;
-    left: 6px;
-    border-left: 2px dashed var(--gold);
-    opacity: .6;
-}
-.v2-journey__event {
-    position: relative;
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    column-gap: 22px;
-    align-items: baseline;
-    padding: clamp(11px, 1.6vw, 16px) 0 clamp(11px, 1.6vw, 16px) 30px;
-}
-.v2-journey__event::before {                 /* node on the line */
-    content: "";
-    position: absolute;
-    left: 0;
-    top: clamp(15px, 2vw, 21px);
-    width: 13px; height: 13px;
-    border-radius: 999px;
-    background: var(--gold);
-    box-shadow: 0 0 0 5px var(--bg);
-}
-.v2-journey__event.is-seva::before { background: var(--primary); }
-.v2-journey__year {
-    font-family: var(--font-latin);
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: var(--primary);
-}
-.v2-journey__title {
-    font-size: .96rem;
-    line-height: 1.55;
-    color: var(--ink-body);
-}
-.v2-journey__more {
-    max-width: 640px;
-    margin: clamp(16px, 2vw, 22px) auto 0;
-    padding-left: 30px;
-    font-size: .9rem;
-}
-.v2-journey__more a {
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-}
-.v2-journey__more a:hover { text-decoration: underline; }
-@media (max-width: 520px) {
-    .v2-journey__event {
-        grid-template-columns: 1fr;
-        row-gap: 2px;
-        padding-left: 28px;
-    }
-    .v2-journey__more { padding-left: 28px; }
 }
 
 /* ---------- seva stories ---------- */
