@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-07 (financial reports + 80G/12A numbers for all four trusts)
+**Last updated:** 2026-09-08 (2024-25 financial reports added for all four trusts)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -40,9 +40,9 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - **WhatsApp channel / mailing list** — if/when one exists, the closing CTAs and "जुड़ें" links should point to it instead of the contact page.
 
 ### Trust documents
-- ~~Financial reports for Maa Shardamani / Gyanyogi / Gyan Ganga~~ — **done** (2026-09-07). 5 years each (2019-20 → 2023-24) added under `assets/documents/<id>/financial-reports/`; the transparency page and each trust page's docs strip now list them. SVT still spans 1996-97 → 2023-24.
+- ~~Financial reports for Maa Shardamani / Gyanyogi / Gyan Ganga~~ — **done** (2026-09-07). 6 years each (2019-20 → 2024-25) under `assets/documents/<id>/financial-reports/`; the transparency page and each trust page's docs strip list them (build auto-derives). SVT spans 1996-97 → 2024-25.
 - ~~80G / 12A registration numbers~~ — **done** (2026-09-07). URNs extracted from the certificate PDFs into `trusts.json` → `approvals` (12A + 80G for SVT/Gyanyogi/Gyan Ganga; 12A only for Maa Shardamani, which has **no 80G** — confirmed by the absence of an 80G order in its legal folder).
-- **Latest year** — all four trusts' financial reports stop at 2023-24; add 2024-25 for each when those audits are ready. (SVT's *scholarship certificates* already go to 2024-25.)
+- ~~**Latest year** — add 2024-25 for each trust~~ — **done** (2026-09-08). `2024-25.pdf` added for all four trusts.
 - **Scholarship certificates** — only SVT publishes these (per your note, 2026-09-04); the other three trusts no longer reference them.
 
 ### Donation details — placeholders in `src/data/donation-details.json`
