@@ -1,0 +1,26 @@
+---
+pagination:
+  data: enRedirects
+  size: 1
+  alias: slug
+permalink: "/en/{{ slug }}.html"
+eleventyExcludeFromCollections: true
+---
+{%- set target = '/' + slug + '.html' -%}
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting&hellip;</title>
+<link rel="canonical" href="{{ target }}">
+<meta http-equiv="refresh" content="0; url={{ target }}">
+<meta name="robots" content="noindex, nofollow">
+<style>body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;margin:15vh auto;max-width:32rem;padding:0 1.25rem;color:#574d44}a{color:#7b2a28}</style>
+</head>
+<body>
+<p>This page has not been translated to English yet. Taking you to the Hindi page&hellip;</p>
+<p>If you are not redirected, <a href="{{ target }}">continue to the Hindi page</a>.</p>
+<script>location.replace({{ (target | url) | dump | safe }});</script>
+</body>
+</html>
