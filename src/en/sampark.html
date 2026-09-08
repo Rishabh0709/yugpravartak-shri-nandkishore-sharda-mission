@@ -1,0 +1,108 @@
+---
+layout: base.njk
+title: "Contact | Manidweep Adhyatm Parivar"
+description: "Contact Manidweep, Jodhpur — address, phone, email, visiting hours and map. For spiritual guidance, classes, service work or planning a visit."
+bodyClass: "english-home sampark-page"
+breadcrumb: true
+breadcrumbName: "Contact"
+extraCss: ["/assets/css/pages/sampark.css"]
+extraJs: ["/assets/js/contact.js"]
+---
+<main id="main-content">
+    <section class="page-hero page-hero--plain" aria-labelledby="sk-title">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">Come, and connect</span>
+            <h1 id="sk-title">Come with a question, leave with a bond of the heart</h1>
+            <p class="page-hero__lead">For any information — spiritual guidance, the Sunday classes, the service work, volunteering, or planning a visit to Manidweep — please contact us.</p>
+        </div>
+    </section>
+
+    <section class="sk-section" aria-label="Main ways to reach us">
+        <div class="hi-shell sk-essentials">
+            <article>
+                <span class="sk-essentials__label">Address</span>
+                <p>{{ site.address.full.en }}</p>
+            </article>
+            <article>
+                <span class="sk-essentials__label">Phone</span>
+                <p><a href="tel:{{ site.contact.phoneRaw }}">{{ site.contact.phoneDisplay }}</a></p>
+                <span class="sk-essentials__note">For visits, classes and general guidance.</span>
+            </article>
+            <article>
+                <span class="sk-essentials__label">Email</span>
+                <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+                <span class="sk-essentials__note">Write directly, or use the form below.</span>
+            </article>
+            <article>
+                <span class="sk-essentials__label">Visiting hours</span>
+                <p>{{ site.contact.hours.en }}</p>
+                <span class="sk-essentials__note">Monday to Sunday. For a special meeting, please call ahead.</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="sk-section sk-visit" id="visit" aria-labelledby="sk-visit-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">Visiting information</span>
+                <h2 id="sk-visit-title">Manidweep, Jodhpur</h2>
+                <p>A quiet, warm and welcoming place for spiritual enquiry, the Sunday gatherings, and the coordination of the service work.</p>
+            </header>
+
+            <div class="sk-visit__grid">
+                <div class="sk-places">
+                    <article class="sk-place">
+                        <h3>Manidweep</h3>
+                        <p class="sk-place__addr">A-183, Shastri Nagar, near Lachoo Memorial College, Jodhpur</p>
+                        <p>A sadhana-sthali full of faith, practice and awareness — to sit here with a calm mind is itself the beginning of sadhana.</p>
+                        <p class="sk-place__time">Daily, 10:00 am to 8:00 pm.</p>
+                    </article>
+                    <article class="sk-place">
+                        <h3>Adhyatmyogi Shri Nandkishore Sharda Sadhana-Sthali (Siddhapeeth)</h3>
+                        <p class="sk-place__addr">Kabootaron ka Chowk, Jodhpur</p>
+                        <p>The sacred place where Shardaji did sadhana and received knowledge from Jagatjanani Maa Tripurasundari.</p>
+                        <p class="sk-place__time">Free yoga, pranayama and meditation — daily, 7:15 am to 8:15 am.</p>
+                    </article>
+                </div>
+
+                <div class="sk-map">
+                    <iframe title="Map of Manidweep in Shastri Nagar, Jodhpur" src="https://www.google.com/maps?q=Manidweep+A-183+Shastri+Nagar+Jodhpur+Rajasthan&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a class="sk-map__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Manidweep+A-183+Shastri+Nagar+Jodhpur+Rajasthan" target="_blank" rel="noopener">Get directions on Google Maps <span aria-hidden="true">&#8599;</span></a>
+                </div>
+            </div>
+
+            <p class="sk-visit__note"><strong>Coming for the first time?</strong> There is no condition of caste, religion or background; no fee or prior permission is needed. Programme timings can occasionally change — a short phone call before you come helps us welcome you at the right time.</p>
+        </div>
+    </section>
+
+    <section class="sk-section sk-form-section" id="enquiry" aria-labelledby="sk-form-title">
+        <div class="hi-shell sk-form-layout">
+            <div class="sk-form-intro">
+                <span class="hi-kicker">Write to the Mission</span>
+                <h2 id="sk-form-title">Tell us how we can help you</h2>
+                <p>A few clear details help your message reach the right person.</p>
+                <div class="sk-form-privacy">
+                    <strong>In your control</strong>
+                    <p>This form does not store your information on the website — it prepares an organised message in your email application, which you can review and edit before sending. Please do not share sensitive information here, such as PAN, bank details or passwords.</p>
+                </div>
+            </div>
+
+            <form class="sk-form" id="contact-form">
+                <div class="sk-form-grid">
+                    <div class="sk-field"><label for="contact-name">Full name <span aria-hidden="true">*</span></label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="sk-field"><label for="contact-email">Email address <span aria-hidden="true">*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="sk-field"><label for="contact-phone">Contact number</label><input id="contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,18}"><small>Optional; with country code if needed.</small></div>
+                    <div class="sk-field"><label for="contact-reason">Reason for contact <span aria-hidden="true">*</span></label><select id="contact-reason" name="reason" required><option value="">Please choose</option><option>Visiting Manidweep</option><option>Beginning the practice</option><option>Sunday Sanskar classes</option><option>Sunday evening knowledge discussion</option><option>Yoga classes</option><option>Education support</option><option>Volunteering or contributing to the service</option><option>Donation or 80G certificate</option><option>Spiritual guidance</option><option>Media or institutional information</option><option>Other</option></select></div>
+                    <div class="sk-field sk-field--wide"><label for="contact-message">Your message <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" rows="6" required></textarea></div>
+                    <div class="sk-field sk-field--wide"><label for="contact-preference">Preferred way to reply</label><select id="contact-preference" name="preference"><option>Email</option><option>Phone call</option><option>Either email or phone</option></select></div>
+                </div>
+                <label class="sk-consent"><input name="consent" type="checkbox" required><span>I agree that the Mission may use the details I have given to reply to my message.</span></label>
+                <div class="sk-form-actions">
+                    <button class="hi-btn hi-btn--primary" type="submit">Prepare email</button>
+                    <button class="hi-btn hi-btn--outline" id="copy-enquiry" type="button">Copy enquiry details</button>
+                </div>
+                <p class="sk-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
