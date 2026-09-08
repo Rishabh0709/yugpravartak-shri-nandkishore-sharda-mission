@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-08 (2024-25 financial reports added for all four trusts)
+**Last updated:** 2026-09-08 (2024-25 financial reports for all four trusts; SVT school acknowledgement letters)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -44,6 +44,7 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - ~~80G / 12A registration numbers~~ — **done** (2026-09-07). URNs extracted from the certificate PDFs into `trusts.json` → `approvals` (12A + 80G for SVT/Gyanyogi/Gyan Ganga; 12A only for Maa Shardamani, which has **no 80G** — confirmed by the absence of an 80G order in its legal folder).
 - ~~**Latest year** — add 2024-25 for each trust~~ — **done** (2026-09-08). `2024-25.pdf` added for all four trusts.
 - **Scholarship certificates** — only SVT publishes these (per your note, 2026-09-04); the other three trusts no longer reference them.
+- **School acknowledgement letters** — SVT only (teachers send these; other trusts don't get them). Added 2026-09-08: `assets/documents/swami-vivekanand-trust/school-acknowledgements/2025-26.pdf`, wired via `documents.js` → `schoolAcknowledgements` and a folder-derived block on `transparency.html`. Earlier years to be supplied later — just drop `YYYY-YY.pdf` into the folder.
 
 ### Donation details — placeholders in `src/data/donation-details.json`
 - Gyanyogi SBI branch: `"ENTER BRANCH"`

@@ -50,6 +50,11 @@ module.exports = () =>
       url: `/assets/documents/${t.id}/financial-reports/${f}`,
     }));
 
+    const schoolAcknowledgements = pdfs(t.id, "school-acknowledgements").map((f) => ({
+      year: dashYears(f.replace(/\.pdf$/i, "")),
+      url: `/assets/documents/${t.id}/school-acknowledgements/${f}`,
+    }));
+
     const scholarshipCertificates = pdfs(t.id, "scholarship-certificates").map((f) => {
       const base = f.replace(/\.pdf$/i, "");
       const isSummary = /summary/i.test(base);
@@ -63,5 +68,5 @@ module.exports = () =>
       };
     });
 
-    return { ...t, legal, financialReports, scholarshipCertificates };
+    return { ...t, legal, financialReports, scholarshipCertificates, schoolAcknowledgements };
   });

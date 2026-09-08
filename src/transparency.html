@@ -86,6 +86,18 @@ extraCss: ["/assets/css/pages/transparency.css"]
                 </ul>
             </div>
             {%- endif %}
+
+            {%- if trust.schoolAcknowledgements.length %}
+            <div class="tr-block">
+                <h3>विद्यालयों से प्राप्त आभार-पत्र</h3>
+                <p class="tr-block__intro">जिन विद्यालयों में छात्राएँ पढ़ती हैं, उनके शिक्षकों द्वारा छात्रवृत्ति प्राप्ति की पुष्टि में भेजे गए पत्र।</p>
+                <ul class="tr-yeargrid">
+                    {%- for letter in trust.schoolAcknowledgements %}
+                    <li><a href="{{ letter.url }}" target="_blank" rel="noopener">{{ letter.year }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </div>
+            {%- endif %}
         </div>
     </section>
     {%- endfor %}
