@@ -7,14 +7,19 @@
     {%- if noindex %}
     <meta name="robots" content="noindex, nofollow">
     {%- endif %}
+    {#- basePath = this page's URL as if it were the Hindi (root) copy;
+        hiHref / enHref are the two language variants of the same page. -#}
+    {%- set basePath = (page.url | replace("/en/", "/")) if locale == "en" else page.url -%}
+    {%- set hiHref = site.origin + basePath -%}
+    {%- set enHref = site.origin + "/en" + basePath -%}
     <link rel="canonical" href="{{ site.origin }}{{ page.url }}">
 
-    {#- hreflang: activate the 'en' line when site.locales.en.enabled becomes true -#}
-    <link rel="alternate" hreflang="hi" href="{{ site.origin }}{{ page.url }}">
+    {#- hreflang: the 'en' line only emits once site.locales.en.enabled is true -#}
+    <link rel="alternate" hreflang="hi" href="{{ hiHref }}">
     {%- if site.locales.en.enabled %}
-    <link rel="alternate" hreflang="en" href="{{ site.origin }}/en{{ page.url }}">
+    <link rel="alternate" hreflang="en" href="{{ enHref }}">
     {%- endif %}
-    <link rel="alternate" hreflang="x-default" href="{{ site.origin }}{{ page.url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ hiHref }}">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ L.ogLocale }}">
@@ -31,13 +36,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {%- if locale == "en" %}
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {%- else %}
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {%- endif %}
 
     <link rel="stylesheet" href="/assets/css/tokens.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
-    <link rel="stylesheet" href="/assets/css/home-hindi.css">
-    <link rel="stylesheet" href="/assets/css/lang-hi.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/lang-{{ locale }}.css">
     {%- for href in extraCss %}
     <link rel="stylesheet" href="{{ href }}">
     {%- endfor %}

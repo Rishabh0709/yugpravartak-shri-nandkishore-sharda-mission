@@ -5,7 +5,7 @@
 <head>
 {% include "partials/head.njk" %}
 </head>
-<body class="{{ bodyClass or 'hindi-home' }}">
+<body class="site {{ bodyClass or (locale == 'en' and 'english-home' or 'hindi-home') }}">
     <a class="skip-link" href="#main-content">{{ "मुख्य सामग्री पर जाएँ" if locale == "hi" else "Skip to main content" }}</a>
     <div id="header-placeholder">{% include "partials/header.njk" %}</div>
 {% include "partials/breadcrumb.njk" %}

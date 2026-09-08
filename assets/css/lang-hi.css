@@ -8,6 +8,13 @@
 /* Devanagari body + headings pull from the shared tokens. */
 body.hindi-home {
     font-family: var(--font-body);
+    /* Devanagari sets loosely — Noto Sans Devanagari needs more leading
+       and a slightly larger body size than a Latin face at the same rem. */
+    font-size: 1.06rem;
+    line-height: 1.85;
+}
+@media (max-width: 900px) {
+    body.hindi-home { font-size: 1rem; }
 }
 .hindi-home h1,
 .hindi-home h2,

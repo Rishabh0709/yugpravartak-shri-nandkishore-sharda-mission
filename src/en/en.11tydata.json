@@ -1,0 +1,5 @@
+{
+  "_note": "Directory data for the English site. Every src/en/*.html inherits locale:'en' (base.njk + head.njk + the partials switch on it) and, for now, noindex:true — the English pages build and are reachable by URL, but stay out of search and carry no hreflang until site.locales.en.enabled is flipped to true in _data/site.json. Remove 'noindex' here at launch.",
+  "locale": "en",
+  "noindex": true
+}

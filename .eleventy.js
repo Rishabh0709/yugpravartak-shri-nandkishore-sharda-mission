@@ -55,6 +55,17 @@ module.exports = function (eleventyConfig) {
     return `${Number(m[3])} ${HI_MONTHS[Number(m[2]) - 1]} ${m[1]}`;
   });
 
+  // ISO date -> English ("16 July 1944" / "July 1944" / "1944")
+  const EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  eleventyConfig.addFilter("enDate", (iso) => {
+    if (!iso) return iso;
+    const m = String(iso).match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
+    if (!m) return iso;
+    if (!m[2]) return m[1];
+    if (!m[3]) return `${EN_MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+    return `${Number(m[3])} ${EN_MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+  });
+
   // Keep the photo-tooling album.json manifests out of the published output
   // (they carry absolute local paths and nothing on the site fetches them).
   eleventyConfig.on("eleventy.after", ({ dir }) => {
