@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-08 (2024-25 financial reports for all four trusts; SVT school acknowledgement letters)
+**Last updated:** 2026-09-09 (English site — core 16 pages translated; three-tier CSS split)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -91,7 +91,7 @@ Say the word and I'll do these — no input needed:
 
 ## 4 · Before launch
 
-- **Real-device mobile QA** — the in-app preview pane has been unreliable all through the build; nothing has been eyeballed on an actual phone.
+- **Real-device mobile QA** — the in-app preview pane has been unreliable all through the build; nothing has been eyeballed on an actual phone. Include the `/en/` pages (Spectral at display sizes, English heading wrap, the redirect stubs).
 - Remove `noindex` from the homepage once v2 is swapped in.
 - `404.html` — check it renders and links back sensibly.
 - Lighthouse / performance pass (fonts, image formats, CLS).
@@ -106,7 +106,28 @@ Say the word and I'll do these — no input needed:
 
 - **Maa Basanti is named in homepage §3 and §6 before her §8 introduction** — you said "leave it for now". If revisited: drop the names from §3's founding sentence; light 3-word tag on the §6 mention.
 - The कर्म साधना "1990 vs 1996" phrasing in the chakra section — you said skip.
-- English site (`/en/`) — the whole reason for the `{hi,en}`-keyed data layer. Separate phase.
+
+---
+
+## 6 · English site (`/en/`)
+
+**In progress (started 2026-09-09).** Lives at `src/en/*.html` → URL `/en/…`, one file per Hindi page, sharing every stylesheet. `site.locales.en.enabled` is still **`false`** (no language switcher shown) and `src/en/en.11tydata.json` sets `noindex: true` — flip both at launch.
+
+**Done — CSS/plumbing:**
+- Three-tier CSS: `tokens → style → responsive → components.css` (shared, was `home-hindi.css`) `→ lang-<locale>.css → page CSS`. `home-hindi-concept.css` → `home-concept.css`. Body is `class="site <locale>-home <slug>-page"`.
+- `lang-en.css` — Spectral (headings) + Inter Tight (body), Latin heading metrics, prose measure, prose line-height pulled to 1.72 across the `-copy`/`__copy` families (page sheets set 1.85–1.95 for Devanagari), footer colour fixes.
+- `head.njk` locale-aware (CSS, webfont, hreflang/x-default). `.eleventy.js` `enDate` filter ("16 July 1944"). `site.json` `tagline.en` / `descriptionDefault.en`.
+- `enRedirects.js` + `src/en/fallback-redirects.njk` — every non-translated Hindi page gets a `/en/<slug>.html` stub that redirects to `/<slug>.html`, so shared nav/footer `/en/` links never 404. A real `src/en/<slug>.html` overrides the stub.
+
+**Done — 16 core pages translated** (drafts, from the Hindi + `_archive/english-v1/`, warm register; **not yet Parivar-reviewed**): `index`, `index-v2`, `about-mission`, `itihaas`, `divya-gyan`, `buddhi-vivek-yog-sadhna`, `nishkam-karm-sadhna`, the 4 trusts, `transparency`, `sampark`, and the 3 lineage bios.
+
+**Data files touched for EN:** `timeline.json` (event `body.en` filled), `publications.json` (`divyaGyan.description.en`), `site.json`. Still Hindi-only / partial `.en`: `faq.json` (all empty), `bookReviews.json` (2/24), `publications.json` (~27/64), `image-manifest.json` `altEn` (142/157 empty — EN pages use inline `alt` instead).
+
+**Still to do:**
+- **[You]** Review the 16 English drafts for tone/accuracy with the Parivar. Confirm the term glossary (currently follows `navigation.json`: Bhaiyaji, Manidweep, Divya Gyan, Buddhi-Vivek Yoga, Nishkam Karma, Yugpravartak kept as proper nouns; "left the physical body" for चैतन्यस्वरूप).
+- **[Claude]** Second batch of EN pages: `publications`, `book-review`, `jigyasa-samadhan` (247 KB `faq-hindi.js` — needs an EN Q&A dataset or a reduced page), `faq`, `testimonials`, `impact`, `gallery`, `news-events`, `sunday-sanskar-classes`, `margdarshan-siddhant`, `shri-nandkishore-sharda-chintan`, `bhaiyaji-sadhna-kaal`, `bhaiyaji-yugpravartak`, `sadhna-places`, `sadhna-aarambh`, `adhyatmik-gyan-charcha`, `logo`. Each replaces its redirect stub. Update `enRedirects.js` `TRANSLATED` set as they land.
+- **[Claude]** `gallery.js` has two hardcoded Hindi strings (`गैलरी चित्र`, `चित्र X / Y`) — make bilingual when `gallery` is translated.
+- **At launch:** flip `site.locales.en.enabled` → `true`, remove `noindex` from `src/en/en.11tydata.json`, re-verify hreflang + the language switcher in header/footer.
 
 ---
 
