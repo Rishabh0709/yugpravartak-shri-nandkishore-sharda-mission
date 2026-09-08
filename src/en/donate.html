@@ -1,0 +1,176 @@
+---
+layout: base.njk
+title: "Support the Work | Manidweep Adhyatm Parivar"
+description: "Choose the service you wish to support and see that trust's verified bank-transfer and UPI details. No payment gateway — your whole contribution reaches the work."
+bodyClass: "english-home donate-page"
+breadcrumb: true
+breadcrumbParent: { "label": "The trusts", "href": "/en/nishkam-karm-sadhna.html" }
+extraCss: ["/assets/css/pages/donate.css"]
+extraJs: ["/assets/js/donation.js"]
+---
+<main id="main-content" data-donation data-email="{{ site.contact.email }}">
+
+    <section class="page-hero page-hero--plain" aria-labelledby="donate-title">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">A gift with a clear purpose</span>
+            <h1 id="donate-title">Support the service your contribution will strengthen</h1>
+            <p class="page-hero__lead">Choose the work closest to your heart. The page will show the registered public trust that runs it and its verified transfer details. There is no payment gateway — so your whole contribution reaches the work.</p>
+        </div>
+    </section>
+
+    <section class="hi-section">
+        <div class="hi-shell">
+            <div class="donate-principles" aria-label="How giving works here">
+                <div><span>Direct transfer</span><strong>No payment gateway, no fee deducted</strong></div>
+                <div><span>Your choice</span><strong>Pick the cause; see the right trust</strong></div>
+                <div><span>On record</span><strong>Receipts and documents available</strong></div>
+            </div>
+
+            <header class="hi-section-heading" style="margin-top:clamp(28px,4vw,44px)">
+                <span class="hi-kicker">Direct your contribution</span>
+                <h2>What would you like to support?</h2>
+                <p>Each cause is administered by a different trust. Choosing first means you see only the correct account and UPI details.</p>
+            </header>
+
+            <div class="donate-selector">
+                <label for="donate-cause">Choose a cause</label>
+                <select id="donate-cause" name="cause"><option>Loading&hellip;</option></select>
+                <p class="donate-selector__help">The trust and payment details below update with your choice.</p>
+            </div>
+
+            <div class="donate-route">
+                <div class="donate-route__head">
+                    <span class="donate-route__cause" id="selected-cause"></span>
+                    <h3 class="donate-route__trust" id="selected-trust">Loading payment details&hellip;</h3>
+                    <strong id="route-status" role="status" aria-live="polite">Loading details&hellip;</strong>
+                    <p id="route-incomplete" role="status" aria-live="polite" hidden></p>
+                </div>
+
+                <div class="donate-route__grid">
+                    <div class="donate-card">
+                        <h3>Bank transfer</h3>
+                        <p class="donate-card__intro">Use NEFT, RTGS, IMPS or your bank's transfer facility. Please check the account name in your banking app before you confirm.</p>
+
+                        <div class="donate-field">
+                            <span>Account name</span><strong id="account-name">&mdash;</strong>
+                            <button class="donate-copy" type="button" data-copy-field="accountName" data-copy-label="Account name">Copy</button>
+                        </div>
+                        <div class="donate-field">
+                            <span>Bank</span><strong id="bank-name">&mdash;</strong>
+                        </div>
+                        <div class="donate-field">
+                            <span>Branch</span><strong id="bank-branch">&mdash;</strong>
+                        </div>
+                        <div class="donate-field">
+                            <span>Account number</span><strong id="account-number">&mdash;</strong>
+                            <button class="donate-copy" type="button" data-copy-field="accountNumber" data-copy-label="Account number">Copy</button>
+                        </div>
+                        <div class="donate-field">
+                            <span>IFSC</span><strong id="ifsc-code">&mdash;</strong>
+                            <button class="donate-copy" type="button" data-copy-field="ifsc" data-copy-label="IFSC code">Copy</button>
+                        </div>
+
+                        <p class="donate-compliance">
+                            <span id="compliance-label">Tax approval</span> <strong id="compliance-number">&mdash;</strong><br>
+                            <a id="compliance-link" href="/en/transparency.html">See the trust's statutory documents <span aria-hidden="true">&rarr;</span></a>
+                        </p>
+                        <p id="copy-status" role="status" aria-live="polite"></p>
+                    </div>
+
+                    <aside class="donate-card donate-upi">
+                        <h3>Donate by UPI</h3>
+                        <img class="donate-upi__qr" id="upi-qr" alt="" hidden>
+                        <p class="donate-upi__id" id="upi-id">&mdash;</p>
+                        <p class="donate-upi__caption">Scan the QR with any UPI app, or open the payment address on a mobile device.</p>
+                        <div class="donate-upi__actions">
+                            <a class="hi-btn hi-btn--soft" id="open-upi" href="#">Open UPI app</a>
+                            <button class="hi-btn hi-btn--outline" type="button" data-copy-field="upi" data-copy-label="UPI ID">Copy UPI ID</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="donate-note">
+                <span class="donate-note__mark" aria-hidden="true">&#8377;</span>
+                <div>
+                    <strong>Why there is no payment gateway</strong>
+                    <p>A gateway would deduct a fee from every donation. Direct bank transfer or UPI means your entire contribution reaches the work you chose. It asks for one extra moment of care from you — see the steps below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hi-section donate-receipt">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">After your transfer</span>
+                <h2>Details for your receipt or 80G certificate</h2>
+            </header>
+
+            <p class="donate-receipt__privacy">
+                <strong>Please read:</strong> this website stores nothing. When you continue, your email app opens with a message to <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a> containing the details you enter below &mdash; including your PAN and address if you fill them in. That email is not encrypted by the website. Send it only from an account you control, and never share a banking password, card PIN, UPI PIN or OTP with anyone.
+            </p>
+
+            <form class="donate-form" id="receipt-form" novalidate>
+                <div class="donate-form__grid">
+                    <div class="donate-form__field"><label for="receipt-cause">Donation purpose</label><input id="receipt-cause" name="cause" type="text" readonly></div>
+                    <div class="donate-form__field"><label for="receipt-trust">Receiving trust</label><input id="receipt-trust" name="trust" type="text" readonly></div>
+
+                    <div class="donate-form__field"><label for="donor-name">Full name <span aria-hidden="true">*</span></label><input id="donor-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="donate-form__field"><label for="donor-email">Email address <span aria-hidden="true">*</span></label><input id="donor-email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="donate-form__field"><label for="donor-phone">Contact number <span aria-hidden="true">*</span></label><input id="donor-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,18}" required><small>With country code if outside India.</small></div>
+
+                    <div class="donate-form__field" id="pan-field"><label for="donor-pan">PAN <span aria-hidden="true">*</span></label><input id="donor-pan" name="pan" type="text" autocomplete="off" minlength="10" maxlength="10" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]" placeholder="ABCDE1234F"><small>Ten characters, no spaces. Required for an 80G certificate.</small></div>
+                    <p id="no-80g-note" hidden>This trust is registered under section 12A only, so an 80G tax-exemption certificate is not available. A plain donation receipt can still be issued &mdash; PAN is not needed for that.</p>
+
+                    <div class="donate-form__field donate-form__field--wide"><label for="donor-address">Postal address <span aria-hidden="true">*</span></label><textarea id="donor-address" name="address" rows="3" autocomplete="street-address" required></textarea><small>Include city, state and PIN code.</small></div>
+
+                    <div class="donate-form__field"><label for="donation-amount">Donation amount (&#8377;) <span aria-hidden="true">*</span></label><input id="donation-amount" name="amount" type="number" inputmode="decimal" min="1" step="1" required></div>
+                    <div class="donate-form__field"><label for="donation-date">Transfer date <span aria-hidden="true">*</span></label><input id="donation-date" name="date" type="date" required></div>
+                    <div class="donate-form__field donate-form__field--wide"><label for="donation-utr">UTR / transaction reference <span aria-hidden="true">*</span></label><input id="donation-utr" name="reference" type="text" autocomplete="off" required><small>From your bank or UPI app &mdash; it lets the trust match your details to the transfer.</small></div>
+                </div>
+
+                <label class="donate-consent">
+                    <input id="donate-consent" name="consent" type="checkbox" required>
+                    <span>I confirm these details are accurate and consent to sharing them with the receiving trust for donation verification, a receipt and, where applicable, 80G documentation.</span>
+                </label>
+
+                <div class="donate-form__actions">
+                    <button class="hi-btn hi-btn--primary" id="receipt-submit" type="submit" data-label80g="Prepare email for 80G certificate" data-labelreceipt="Prepare email for a receipt">Prepare email for 80G certificate</button>
+                    <button class="hi-btn hi-btn--outline" id="receipt-copy" type="button">Copy the details instead</button>
+                </div>
+                <p id="receipt-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <noscript><p class="donate-selector__help">JavaScript is needed to show the correct trust's details for each cause. Please contact the Mission before transferring any amount.</p></noscript>
+        </div>
+    </section>
+
+    <section class="hi-section">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">A simple, careful process</span>
+                <h2>Three steps, from intention to acknowledgement</h2>
+            </header>
+            <div class="donate-steps">
+                <article><span>01</span><h3>Choose the cause</h3><p>So the correct trust and transfer details are shown.</p></article>
+                <article><span>02</span><h3>Verify, then transfer</h3><p>Confirm the account name or UPI ID in your banking app before you authorise it.</p></article>
+                <article><span>03</span><h3>Share the reference</h3><p>Keep the UTR and send it, with the details above, for your receipt.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="hi-section" style="background:var(--bg-wash)">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">Giving safely</span>
+                <h2>A few things to keep in mind</h2>
+            </header>
+            <div class="donate-safety">
+                <article><h3>Verify before you send</h3><p>The beneficiary name your bank or UPI app shows should match the trust named on this page. Pause and contact us if it does not.</p></article>
+                <article><h3>Protect your credentials</h3><p>The Mission will never ask for your banking password, card PIN, UPI PIN or one-time password.</p></article>
+                <article><h3>Contributions from outside India</h3><p>Please contact the Mission before sending any contribution from abroad, so the correct route and current compliance position can be confirmed.</p></article>
+            </div>
+        </div>
+    </section>
+</main>

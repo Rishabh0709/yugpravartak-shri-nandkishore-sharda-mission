@@ -20,7 +20,7 @@ const TRANSLATED = new Set([
   "buddhi-vivek-yog-sadhna", "nishkam-karm-sadhna",
   "swami-vivekanand-trust", "maa-shardamani-trust",
   "gyanyogi-adhyatm-kendra", "gyan-ganga-mission",
-  "transparency", "sampark",
+  "transparency", "sampark", "donate",
   "shri-nandkishore-sharda", "basanti-manihar", "madhubala-advani",
 ]);
 

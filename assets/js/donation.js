@@ -1,213 +1,269 @@
 "use strict";
 
+/* ==========================================================
+   DONATE PAGE
+   Renders /donate.html + /en/donate.html. Reads
+   /data/donation-details.json (bank + UPI details, meant to be
+   public). No payment gateway: the page shows a trust's verified
+   account for the chosen cause, then helps the donor assemble an
+   email for their receipt. Nothing is stored or sent by the site.
+   ========================================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
-    const selector = document.querySelector("#donation-purpose");
+    const root = document.querySelector("[data-donation]");
+    if (!root) return;
 
-    if (!selector) return;
+    const lang = document.documentElement.lang === "hi" ? "hi" : "en";
+    const email = root.dataset.email || "";
+    const base = window.__BASEURL__ || "/";
 
-    let routes = {};
+    const T = {
+        hi: {
+            loading: "विवरण लोड हो रहे हैं…",
+            failed: "भुगतान विवरण अभी लोड नहीं हो सके। कृपया पृष्ठ पुनः लोड करें या राशि भेजने से पहले मिशन से सम्पर्क करें।",
+            toConfirm: "पुष्टि होना शेष",
+            incompleteNote: "इस न्यास के कुछ विवरण अभी अद्यतन किए जा रहे हैं। राशि भेजने से पहले कृपया इन्हें मिशन से सत्यापित करें।",
+            copied: (l) => `${l} कॉपी हो गया।`,
+            copyFailed: "ब्राउज़र स्वतः कॉपी नहीं कर सका। कृपया मान चुनकर मैन्युअल कॉपी करें।",
+            fillRequired: "कृपया आगे बढ़ने से पहले सभी आवश्यक जानकारी भरें।",
+            opening: "आपका ईमेल ऐप खुल रहा है। कृपया विवरण देखकर संदेश भेजें।",
+            copiedDetails: `विवरण कॉपी हो गए। आप इन्हें ${email} पर ईमेल में पेस्ट कर सकते हैं।`,
+            subject80G: "80G प्रमाण-पत्र हेतु दान विवरण",
+            subjectReceipt: "दान रसीद हेतु विवरण",
+            mailHeader: "यह संदेश दानकर्ता द्वारा वेबसाइट के माध्यम से तैयार किया गया है। इसमें दी गई जानकारी नीचे संलग्न है — इसे भेजने से पहले जाँच लें।",
+            mail: { cause: "दान का उद्देश्य", trust: "प्राप्तकर्ता न्यास", name: "पूरा नाम", email: "ईमेल", phone: "सम्पर्क नंबर", pan: "पैन", address: "डाक पता", amount: "दान राशि (₹)", date: "अंतरण तिथि", utr: "यू.टी.आर. / लेन-देन संदर्भ" }
+        },
+        en: {
+            loading: "Loading details…",
+            failed: "Payment details could not be loaded. Please reload the page, or contact the Mission before transferring any amount.",
+            toConfirm: "to be confirmed",
+            incompleteNote: "Some details for this trust are still being updated. Please verify them with the Mission before transferring any amount.",
+            copied: (l) => `${l} copied.`,
+            copyFailed: "The browser could not copy automatically. Please select the value and copy it manually.",
+            fillRequired: "Please complete all the required fields before continuing.",
+            opening: "Your email application is opening. Please review the details and send the message.",
+            copiedDetails: `Details copied. You can paste them into an email to ${email}.`,
+            subject80G: "Donation details for an 80G certificate",
+            subjectReceipt: "Donation details for a receipt",
+            mailHeader: "This message was prepared by the donor through the website. The details entered are below — please review them before sending.",
+            mail: { cause: "Donation purpose", trust: "Receiving trust", name: "Full name", email: "Email", phone: "Contact number", pan: "PAN", address: "Postal address", amount: "Donation amount (INR)", date: "Transfer date", utr: "UTR / transaction reference" }
+        }
+    }[lang];
 
-    const availablePanel = document.querySelector("#available-route");
-    const unavailablePanel = document.querySelector("#unavailable-route");
-    const status = document.querySelector("#route-status");
-    const trustName = document.querySelector("#selected-trust");
-    const activityName = document.querySelector("#selected-activity");
-    const unavailableTrust = document.querySelector("#unavailable-trust");
-    const unavailableMessage = document.querySelector("#unavailable-message");
-    const contactLink = document.querySelector("#donation-contact-link");
-    const qrImage = document.querySelector("#upi-qr");
-    const upiLink = document.querySelector("#open-upi");
-    const copyStatus = document.querySelector("#copy-status");
-    const certificateActivity = document.querySelector("#certificate-activity");
-    const certificateTrust = document.querySelector("#certificate-trust");
-    const certificateForm = document.querySelector("#certificate-form");
-    const certificateStatus = document.querySelector("#certificate-status");
-    const certificateCopyButton = document.querySelector("#copy-certificate-details");
-    const panInput = document.querySelector("#donor-pan");
-    const donationDate = document.querySelector("#donation-date");
-    const complianceLabel = document.querySelector("#compliance-label");
-    const complianceNumber = document.querySelector("#compliance-number");
-    const complianceLink = document.querySelector("#compliance-link");
+    // --- element refs ---------------------------------------------------
+    const selector = root.querySelector("#donate-cause");
+    const routeStatus = root.querySelector("#route-status");
+    const selectedTrust = root.querySelector("#selected-trust");
+    const selectedCause = root.querySelector("#selected-cause");
+    const incompleteBanner = root.querySelector("#route-incomplete");
+    const bankBlock = root.querySelector("#bank-block");
+    const upiBlock = root.querySelector("#upi-block");
+    const qrImage = root.querySelector("#upi-qr");
+    const upiIdEl = root.querySelector("#upi-id");
+    const openUpi = root.querySelector("#open-upi");
+    const complianceLabel = root.querySelector("#compliance-label");
+    const complianceNumber = root.querySelector("#compliance-number");
+    const complianceLink = root.querySelector("#compliance-link");
+    const copyStatus = root.querySelector("#copy-status");
+
+    const form = root.querySelector("#receipt-form");
+    const formCause = root.querySelector("#receipt-cause");
+    const formTrust = root.querySelector("#receipt-trust");
+    const panField = root.querySelector("#pan-field");
+    const panInput = root.querySelector("#donor-pan");
+    const no80gNote = root.querySelector("#no-80g-note");
+    const receiptSubmit = root.querySelector("#receipt-submit");
+    const receiptCopy = root.querySelector("#receipt-copy");
+    const receiptStatus = root.querySelector("#receipt-status");
+    const dateInput = root.querySelector("#donation-date");
 
     const fields = {
-        accountName: document.querySelector("#account-name"),
-        bankName: document.querySelector("#bank-name"),
-        branch: document.querySelector("#bank-branch"),
-        accountNumber: document.querySelector("#account-number"),
-        ifsc: document.querySelector("#ifsc-code"),
-        upi: document.querySelector("#upi-id")
+        accountName: root.querySelector("#account-name"),
+        bankName: root.querySelector("#bank-name"),
+        branch: root.querySelector("#bank-branch"),
+        accountNumber: root.querySelector("#account-number"),
+        ifsc: root.querySelector("#ifsc-code")
     };
 
-    const updateRoute = () => {
-        const activity = routes.activities?.[selector.value];
-        const profile = routes.paymentProfiles?.[activity?.paymentProfile];
+    let data = null;
 
+    // --- render one route --------------------------------------------------
+    const render = () => {
+        if (!data) return;
+        const activity = data.activities.find((a) => a.id === selector.value);
+        const profile = activity && data.profiles[activity.profile];
         if (!activity || !profile) return;
 
-        const route = {
-            ...profile,
-            activity: activity.label
-        };
-
-        trustName.textContent = route.trust;
-        activityName.textContent = route.activity;
-        certificateActivity.value = route.activity;
-        certificateTrust.value = route.trust;
+        const causeLabel = activity.label[lang];
+        selectedCause.textContent = causeLabel;
+        selectedTrust.textContent = profile.trust;
+        formCause.value = causeLabel;
+        formTrust.value = profile.trust;
         copyStatus.textContent = "";
 
-        if (route.available) {
-            status.textContent = "Verified details available";
-            availablePanel.hidden = false;
-            unavailablePanel.hidden = true;
+        // incomplete-data banner
+        incompleteBanner.hidden = profile.complete !== false;
+        if (profile.complete === false) incompleteBanner.textContent = T.incompleteNote;
+        routeStatus.hidden = profile.complete === false;
 
-            const displayValues = {
-                accountName: route.bank.accountName,
-                bankName: route.bank.bankName,
-                branch: route.bank.branch,
-                accountNumber: route.bank.accountNumber,
-                ifsc: route.bank.ifsc,
-                upi: route.upi.id
-            };
+        // bank fields — mark any unresolved "TRUST TO SUPPLY" value
+        const raw = {
+            accountName: profile.bank.accountName,
+            bankName: profile.bank.bankName,
+            branch: profile.bank.branch,
+            accountNumber: profile.bank.accountNumber,
+            ifsc: profile.bank.ifsc
+        };
+        Object.entries(fields).forEach(([key, el]) => {
+            if (!el) return;
+            const val = raw[key];
+            const pending = /TO SUPPLY|ENTER/i.test(val || "");
+            el.textContent = pending ? T.toConfirm : val;
+            el.classList.toggle("is-pending", pending);
+            const btn = root.querySelector(`[data-copy-field="${key}"]`);
+            if (btn) btn.hidden = pending;
+        });
 
-            Object.entries(fields).forEach(([key, element]) => {
-                if (element) element.textContent = displayValues[key];
-            });
-
-            qrImage.src = route.upi.qrImage;
-            qrImage.alt = `${route.upi.qrCodeName} for ${route.trust}`;
-            qrImage.hidden = false;
-            upiLink.href = `upi://pay?pa=${encodeURIComponent(route.upi.id)}&pn=${encodeURIComponent(route.upi.payeeName)}&cu=${encodeURIComponent(route.upi.currency || "INR")}`;
-            complianceLabel.textContent = route.compliance.label;
-            complianceNumber.textContent = route.compliance.approvalNumber;
-            complianceLink.href = route.compliance.documentsUrl;
+        // UPI
+        const upiPending = /TO SUPPLY|ENTER/i.test(profile.upi.id || "");
+        upiIdEl.textContent = upiPending ? T.toConfirm : profile.upi.id;
+        upiIdEl.classList.toggle("is-pending", upiPending);
+        const upiCopyBtn = root.querySelector('[data-copy-field="upi"]');
+        if (upiCopyBtn) upiCopyBtn.hidden = upiPending;
+        if (upiPending) {
+            qrImage.hidden = true;
+            openUpi.setAttribute("aria-disabled", "true");
+            openUpi.removeAttribute("href");
         } else {
-            status.textContent = "Details to be added";
-            availablePanel.hidden = true;
-            unavailablePanel.hidden = false;
-            unavailableTrust.textContent = route.trust;
-            unavailableMessage.textContent = ` does not yet have verified bank and UPI details for ${route.activity}. Please contact the Mission before transferring funds.`;
-            contactLink.href = `mailto:kishoreggm@gmail.com?subject=${encodeURIComponent(`Donation enquiry: ${route.activity}`)}`;
+            qrImage.src = base + profile.upi.qrImage.replace(/^\//, "");
+            qrImage.alt = `${profile.trust} — UPI QR`;
+            qrImage.hidden = false;
+            openUpi.removeAttribute("aria-disabled");
+            openUpi.href = `upi://pay?pa=${encodeURIComponent(profile.upi.id)}&pn=${encodeURIComponent(profile.upi.payeeName)}&cu=INR`;
         }
+
+        // compliance line — transparency page is language-specific
+        complianceLabel.textContent = profile.compliance.label[lang];
+        complianceNumber.textContent = profile.compliance.number;
+        const docPath = profile.compliance.documentsUrl.replace(/^\//, "");
+        complianceLink.href = base + (lang === "hi" ? "" : "en/") + docPath;
+
+        // 80G vs 12A-only
+        const has80G = profile.has80G === true;
+        panField.hidden = !has80G;
+        panInput.required = has80G;
+        no80gNote.hidden = has80G;
+        receiptSubmit.textContent = receiptSubmit.dataset[has80G ? "label80g" : "labelreceipt"];
     };
 
-    const loadRoutes = async () => {
-        selector.disabled = true;
-        status.textContent = "Loading verified details";
-
-        try {
-            const response = await fetch("../assets/data/donation-details.json", { cache: "no-store" });
-
-            if (!response.ok) throw new Error(`Donation data request failed with status ${response.status}`);
-
-            const data = await response.json();
-
-            if (!data.activities || !data.paymentProfiles) throw new Error("Donation data is incomplete");
-
-            routes = data;
-            selector.disabled = false;
-            updateRoute();
-        } catch (error) {
-            console.error("Unable to load donation details", error);
-            status.textContent = "Payment details unavailable";
-            availablePanel.hidden = true;
-            unavailablePanel.hidden = false;
-            unavailableTrust.textContent = "Payment information could not be loaded.";
-            unavailableMessage.textContent = " Please refresh the page or contact the Mission before transferring funds.";
-            contactLink.href = "mailto:kishoreggm@gmail.com?subject=Donation%20payment%20details";
-        }
-    };
-
+    // --- clipboard ------------------------------------------------------
     const copyText = async (text) => {
-        if (navigator.clipboard && window.isSecureContext) {
-            await navigator.clipboard.writeText(text);
-            return;
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(text);
+                return true;
+            }
+        } catch (_) { /* fall through */ }
+        try {
+            const ta = document.createElement("textarea");
+            ta.value = text;
+            ta.style.cssText = "position:fixed;opacity:0";
+            document.body.appendChild(ta);
+            ta.select();
+            const ok = document.execCommand("copy");
+            ta.remove();
+            return ok;
+        } catch (_) {
+            return false;
         }
-
-        const temporary = document.createElement("textarea");
-        temporary.value = text;
-        temporary.setAttribute("readonly", "");
-        temporary.style.position = "fixed";
-        temporary.style.opacity = "0";
-        document.body.appendChild(temporary);
-        temporary.select();
-        document.execCommand("copy");
-        temporary.remove();
     };
 
-    document.querySelectorAll("[data-copy-field]").forEach((button) => {
-        button.addEventListener("click", async () => {
-            const field = fields[button.dataset.copyField];
-
-            if (!field) return;
-
-            try {
-                await copyText(field.textContent.trim());
-                copyStatus.textContent = `${button.dataset.copyLabel} copied.`;
-            } catch {
-                copyStatus.textContent = "Copying was not available. Please select the value manually.";
-            }
+    root.querySelectorAll("[data-copy-field]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+            const el = btn.dataset.copyField === "upi" ? upiIdEl : fields[btn.dataset.copyField];
+            if (!el) return;
+            const ok = await copyText(el.textContent.trim());
+            copyStatus.textContent = ok ? T.copied(btn.dataset.copyLabel || "") : T.copyFailed;
         });
     });
 
-    const certificateSummary = () => {
-        const values = new FormData(certificateForm);
-
-        return [
-            "80G certificate request",
+    // --- receipt email -------------------------------------------------
+    const summary = () => {
+        const v = new FormData(form);
+        const has80G = !panField.hidden;
+        const lines = [
+            (has80G ? T.subject80G : T.subjectReceipt),
             "",
-            `Donation purpose: ${values.get("activity")}`,
-            `Receiving Trust: ${values.get("trust")}`,
-            `Donor name: ${values.get("name")}`,
-            `Contact number: ${values.get("phone")}`,
-            `Email address: ${values.get("email")}`,
-            `PAN: ${values.get("pan")}`,
-            `Postal address: ${values.get("address")}`,
-            `Donation amount: ₹${values.get("amount")}`,
-            `Transfer date: ${values.get("date")}`,
-            `UTR / transaction reference: ${values.get("reference")}`,
+            T.mailHeader,
             "",
-            "I confirm that these details are accurate and may be used for donation verification, receipt preparation and 80G documentation."
-        ].join("\n");
+            `${T.mail.cause}: ${v.get("cause")}`,
+            `${T.mail.trust}: ${v.get("trust")}`,
+            `${T.mail.name}: ${v.get("name")}`,
+            `${T.mail.email}: ${v.get("email")}`,
+            `${T.mail.phone}: ${v.get("phone")}`
+        ];
+        if (has80G) lines.push(`${T.mail.pan}: ${v.get("pan")}`);
+        lines.push(
+            `${T.mail.address}: ${v.get("address")}`,
+            `${T.mail.amount}: ${v.get("amount")}`,
+            `${T.mail.date}: ${v.get("date")}`,
+            `${T.mail.utr}: ${v.get("reference")}`
+        );
+        return lines.join("\n");
     };
 
-    const validateCertificateForm = () => {
-        if (!certificateForm.reportValidity()) {
-            certificateStatus.textContent = "Please complete all required fields before continuing.";
-            return false;
-        }
-
-        return true;
+    const check = () => {
+        if (form.reportValidity()) return true;
+        receiptStatus.textContent = T.fillRequired;
+        return false;
     };
 
-    panInput.addEventListener("input", () => {
-        panInput.value = panInput.value.toUpperCase().replace(/\s/g, "");
+    if (panInput) {
+        panInput.addEventListener("input", () => {
+            panInput.value = panInput.value.toUpperCase().replace(/\s/g, "");
+        });
+    }
+    if (dateInput) dateInput.max = new Date().toISOString().split("T")[0];
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!check()) return;
+        const subject = panField.hidden ? T.subjectReceipt : T.subject80G;
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(summary())}`;
+        receiptStatus.textContent = T.opening;
     });
 
-    donationDate.max = new Date().toISOString().split("T")[0];
-
-    certificateForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        if (!validateCertificateForm()) return;
-
-        const subject = `80G certificate request - ${certificateActivity.value}`;
-        const mailto = `mailto:kishoreggm@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(certificateSummary())}`;
-
-        certificateStatus.textContent = "Your email application is opening. Please review the details and send the message to complete your request.";
-        window.location.href = mailto;
+    receiptCopy.addEventListener("click", async () => {
+        if (!check()) return;
+        const ok = await copyText(summary());
+        receiptStatus.textContent = ok ? T.copiedDetails : T.copyFailed;
     });
 
-    certificateCopyButton.addEventListener("click", async () => {
-        if (!validateCertificateForm()) return;
-
+    // --- load ---------------------------------------------------------
+    selector.disabled = true;
+    routeStatus.hidden = false;
+    (async () => {
         try {
-            await copyText(certificateSummary());
-            certificateStatus.textContent = "Completed certificate details copied. You can paste them into an email to kishoreggm@gmail.com.";
-        } catch {
-            certificateStatus.textContent = "Copying was not available. Please use the email button instead.";
-        }
-    });
+            const res = await fetch(base + "data/donation-details.json", { cache: "no-store" });
+            if (!res.ok) throw new Error(res.status);
+            const json = await res.json();
+            if (!Array.isArray(json.activities) || !json.profiles) throw new Error("incomplete");
+            data = json;
 
-    selector.addEventListener("change", updateRoute);
-    loadRoutes();
+            selector.innerHTML = "";
+            data.activities.forEach((a) => {
+                const opt = document.createElement("option");
+                opt.value = a.id;
+                opt.textContent = a.label[lang];
+                selector.append(opt);
+            });
+            selector.disabled = false;
+            selector.addEventListener("change", render);
+            render();
+        } catch (err) {
+            console.error("donation details failed", err);
+            routeStatus.hidden = false;
+            routeStatus.textContent = T.failed;
+        }
+    })();
 });

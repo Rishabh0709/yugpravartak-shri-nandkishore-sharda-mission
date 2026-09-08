@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-09 (English site — core 16 pages translated; three-tier CSS split)
+**Last updated:** 2026-09-09 (English site — core 16 pages; donate page rebuilt on the new design system)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -46,11 +46,19 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 - **Scholarship certificates** — only SVT publishes these (per your note, 2026-09-04); the other three trusts no longer reference them.
 - **School acknowledgement letters** — SVT only (teachers send these; other trusts don't get them). Added 2026-09-08: `assets/documents/swami-vivekanand-trust/school-acknowledgements/2025-26.pdf`, wired via `documents.js` → `schoolAcknowledgements` and a folder-derived block on `transparency.html`. Earlier years to be supplied later — just drop `YYYY-YY.pdf` into the folder.
 
-### Donation details — placeholders in `src/data/donation-details.json`
-- Gyanyogi SBI branch: `"ENTER BRANCH"`
-- UPI IDs: `"ENTER_UPI_ID"` (Maa Shardamani, Gyan Ganga)
-- ~~80G approval numbers~~ — filled 2026-09-07 from the certificate PDFs (Maa Shardamani has no 80G — set to its 12A number with a "(no 80G)" label).
-- (No donation UI is built yet — this data is staged for a future donation section on `sampark.html`.)
+### Donate page — `/donate.html` + `/en/donate.html`  (rebuilt 2026-09-09)
+
+Rebuilt from `_archive/english-v1/donate.html` onto the new design system (`page-hero--plain` + `hi-section-heading` + `assets/css/pages/donate.css`; old 916-line `donation.css` deleted). `assets/js/donation.js` rewritten — bilingual (reads `documentElement.lang`), fetches `/data/donation-details.json` via `window.__BASEURL__`, builds the `<select>` from the JSON (can't drift), email target comes from `data-email` (= `site.contact.email`), transparency link is locale-aware, 80G form fields hide for a 12A-only trust, an "incomplete" banner shows for any trust whose data isn't confirmed. Linked from the footer "The trusts" group ("Support the work" / "सहयोग करें"). Not in the top nav — flag if you want it there.
+
+**[You] — `src/data/donation-details.json` still needs the trust to supply** (each is `"TRUST TO SUPPLY"` in the file and shows a "to be confirmed" state + banner on the page until filled, and `"complete": false` → `true`):
+- Gyanyogi Adhyatm Kendra — **SBI branch name**
+- Maa Shardamani Trust — **UPI ID** + `mst-upi-qr.png` (QR image missing from `assets/images/donation/`)
+- Gyan Ganga Mission — **UPI ID** + `snksggm-upi-qr.png` (QR image missing)
+- 80G / 12A numbers are already filled (from the certificate PDFs). Maa Shardamani is 12A-only — the page handles that (no PAN field, "receipt not 80G" note).
+
+**[You] — the 80G receipt step is still a `mailto:`** to `kishoreggm@gmail.com` (`site.contact.email`). It now says plainly that PAN/address go into that unencrypted email and to send only from an account you control — but a server-side form (Formspree / Google Form / a serverless endpoint) is the real fix, and the email should move to `info@manidweepjodhpur.org` when that mailbox exists.
+
+**[You]** — confirm the cause → trust routing in the JSON `activities` list (girls-school→SVT, girls-higher→Shardamani, boys/family/women→Gyanyogi, literature→Gyan Ganga).
 
 ### Decisions
 - ~~Orphan pages~~ — **done** (`97d8600`). `dignitaries-views`, `success-stories`, `student-testimonials` were redirect stubs; deleted. Content lives in `/testimonials.html` (4 sections). Fixed a dead `success-stories.html` ref in `videos.js` and a duplicate kicker on that page.
