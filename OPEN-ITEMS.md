@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-09 (English site — core 16 pages; donate page rebuilt on the new design system)
+**Last updated:** 2026-09-09 (English site — core 16 + donate + Tier A data-driven pages; rest of the second batch on hold for data)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -127,14 +127,17 @@ Say the word and I'll do these — no input needed:
 - `head.njk` locale-aware (CSS, webfont, hreflang/x-default). `.eleventy.js` `enDate` filter ("16 July 1944"). `site.json` `tagline.en` / `descriptionDefault.en`.
 - `enRedirects.js` + `src/en/fallback-redirects.njk` — every non-translated Hindi page gets a `/en/<slug>.html` stub that redirects to `/<slug>.html`, so shared nav/footer `/en/` links never 404. A real `src/en/<slug>.html` overrides the stub.
 
-**Done — 16 core pages translated** (drafts, from the Hindi + `_archive/english-v1/`, warm register; **not yet Parivar-reviewed**): `index`, `index-v2`, `about-mission`, `itihaas`, `divya-gyan`, `buddhi-vivek-yog-sadhna`, `nishkam-karm-sadhna`, the 4 trusts, `transparency`, `sampark`, and the 3 lineage bios.
+**Done — 16 core pages translated** (drafts, from the Hindi + `_archive/english-v1/`, warm register; **not yet Parivar-reviewed**): `index`, `index-v2`, `about-mission`, `itihaas`, `divya-gyan`, `buddhi-vivek-yog-sadhna`, `nishkam-karm-sadhna`, the 4 trusts, `transparency`, `sampark`, and the 3 lineage bios. Plus **`donate`** (rebuilt) and **Tier A** (2026-09-09): `news-events`, `testimonials` + `video-detail`, `gallery` — the data-driven pages whose JSON was already bilingual, so only the static shell was translated.
+
+**JS fixed for `/en/` (2026-09-09):** `news-events.js`, `videos.js` now fetch via `window.__BASEURL__` and resolve asset paths with it (relative `data/…` broke from `/en/`); `videos.js` detail view uses `.hi-shell`/`.hi-kicker` for both languages (was `.container`/`.section-eyebrow` for EN); `gallery.js` two hardcoded Hindi strings now locale-aware. `donation.js` already done. **Any other data-fetching JS (`impact-data.js`) needs the same fix before its page is translated.**
 
 **Data files touched for EN:** `timeline.json` (event `body.en` filled), `publications.json` (`divyaGyan.description.en`), `site.json`. Still Hindi-only / partial `.en`: `faq.json` (all empty), `bookReviews.json` (2/24), `publications.json` (~27/64), `image-manifest.json` `altEn` (142/157 empty — EN pages use inline `alt` instead).
 
-**Still to do:**
-- **[You]** Review the 16 English drafts for tone/accuracy with the Parivar. Confirm the term glossary (currently follows `navigation.json`: Bhaiyaji, Manidweep, Divya Gyan, Buddhi-Vivek Yoga, Nishkam Karma, Yugpravartak kept as proper nouns; "left the physical body" for चैतन्यस्वरूप).
-- **[Claude]** Second batch of EN pages: `publications`, `book-review`, `jigyasa-samadhan` (247 KB `faq-hindi.js` — needs an EN Q&A dataset or a reduced page), `faq`, `testimonials`, `impact`, `gallery`, `news-events`, `sunday-sanskar-classes`, `margdarshan-siddhant`, `shri-nandkishore-sharda-chintan`, `bhaiyaji-sadhna-kaal`, `bhaiyaji-yugpravartak`, `sadhna-places`, `sadhna-aarambh`, `adhyatmik-gyan-charcha`, `logo`. Each replaces its redirect stub. Update `enRedirects.js` `TRANSLATED` set as they land.
-- **[Claude]** `gallery.js` has two hardcoded Hindi strings (`गैलरी चित्र`, `चित्र X / Y`) — make bilingual when `gallery` is translated.
+**Still to do — the rest of the second batch is ON HOLD for actual data / Parivar input (owner's call, 2026-09-09):**
+- **[You]** Review all the English drafts for tone/accuracy with the Parivar. Confirm the term glossary (currently follows `navigation.json`: Bhaiyaji, Manidweep, Divya Gyan, Buddhi-Vivek Yoga, Nishkam Karma, Yugpravartak kept as proper nouns; "left the physical body" for चैतन्यस्वरूप).
+- **Held — need data / decision:** `faq` (`faq.json` en empty, Hindi drafts unvetted) · `jigyasa-samadhan` (247 KB `faq-hindi.js` — Maa Basanti's recorded answers, Parivar decision: skip or approve a subset) · `impact` (data ready, but page still on old `activity-*` CSS — redesign HI first) · `publications` (needs ~37 en strings in `publications.json`) · `book-review` / `bookReviews.json` (`book-review.md` is unverified — transcribed from blurry photos) · `videos.json` (7/11 testimonial items lack `en.excerpt`/`paragraphs` — cards render lighter until supplied).
+- **Held — full prose translation, no archive help:** `sunday-sanskar-classes`, `margdarshan-siddhant`, `shri-nandkishore-sharda-chintan`, `bhaiyaji-sadhna-kaal`, `bhaiyaji-yugpravartak`, `sadhna-places`, `sadhna-aarambh`, `adhyatmik-gyan-charcha`, `logo`.
+- Each held page still redirects to Hindi via its `/en/` stub. When translated: add the slug to `enRedirects.js` `TRANSLATED`.
 - **At launch:** flip `site.locales.en.enabled` → `true`, remove `noindex` from `src/en/en.11tydata.json`, re-verify hreflang + the language switcher in header/footer.
 
 ---

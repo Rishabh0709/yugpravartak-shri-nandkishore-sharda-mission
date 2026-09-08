@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = dialog.querySelector(".lightbox-next");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+    const isHi = document.documentElement.lang === "hi";
+    const L = {
+        fallbackTitle: isHi ? "गैलरी चित्र" : "Gallery image",
+        counter: (i, n) => (isHi ? `चित्र ${i} / ${n}` : `Image ${i} of ${n}`)
+    };
+
     let activeFilter = "all";
     let visibleCards = cards;
     let activeIndex = 0;
@@ -57,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         image.src = card.dataset.full || cardImage.currentSrc || cardImage.src;
         image.alt = cardImage.alt || card.dataset.title || "";
-        title.textContent = card.dataset.title || "गैलरी चित्र";
+        title.textContent = card.dataset.title || L.fallbackTitle;
         caption.textContent = card.dataset.caption || "";
-        counter.textContent = `चित्र ${activeIndex + 1} / ${visibleCards.length}`;
+        counter.textContent = L.counter(activeIndex + 1, visibleCards.length);
     }
 
     function openLightbox(card) {

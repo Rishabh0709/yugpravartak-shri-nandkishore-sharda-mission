@@ -22,10 +22,11 @@ const TRANSLATED = new Set([
   "gyanyogi-adhyatm-kendra", "gyan-ganga-mission",
   "transparency", "sampark", "donate",
   "shri-nandkishore-sharda", "basanti-manihar", "madhubala-advani",
+  "news-events", "testimonials", "gallery", "video-detail",
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.
-const SKIP = new Set(["404", "patterns", "video-detail"]);
+const SKIP = new Set(["404", "patterns"]);
 
 module.exports = () =>
   fs

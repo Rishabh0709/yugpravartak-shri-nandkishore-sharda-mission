@@ -1,7 +1,7 @@
 (function () {
     const state = {
         language: document.documentElement.lang === "hi" ? "hi" : "en",
-        root: ""
+        root: window.__BASEURL__ || ""
     };
 
     const copy = {
@@ -16,7 +16,7 @@
         if (!page) return;
 
         try {
-            const response = await fetch(`data/news-events.json`);
+            const response = await fetch(`${state.root}data/news-events.json`);
             if (!response.ok) throw new Error(`Unable to load news/events: ${response.status}`);
             const data = await response.json();
             renderEvents("[data-upcoming-events]", data.upcoming || []);
@@ -129,7 +129,7 @@
     }
 
     function shellClass() {
-        return state.language === "hi" ? "hi-shell" : "container";
+        return "hi-shell";
     }
 
     function asset(path) {

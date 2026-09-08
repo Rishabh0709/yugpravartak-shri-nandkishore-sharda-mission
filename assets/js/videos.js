@@ -2,7 +2,7 @@
     const state = {
         data: null,
         language: document.documentElement.lang === "hi" ? "hi" : "en",
-        root: "",
+        root: window.__BASEURL__ || "",
         activeCategory: "all"
     };
 
@@ -37,7 +37,7 @@
         if (!archives.length && !detail) return;
 
         try {
-            const response = await fetch(`data/videos.json`);
+            const response = await fetch(`${state.root}data/videos.json`);
             if (!response.ok) throw new Error(`Unable to load videos: ${response.status}`);
             state.data = await response.json();
             archives.forEach(renderArchive);
@@ -138,14 +138,14 @@
 
         container.innerHTML = `
             <section class="video-hero">
-                <div class="${state.language === "hi" ? "hi-shell" : "container"} video-hero__content">
-                    <span class="${state.language === "hi" ? "hi-kicker" : "section-eyebrow"}">${category ? category[state.language] : ""}</span>
+                <div class="hi-shell video-hero__content">
+                    <span class="hi-kicker">${category ? category[state.language] : ""}</span>
                     <h1>${item.title}</h1>
                     <p>${item.excerpt}</p>
                 </div>
             </section>
             <section class="video-section">
-                <div class="${state.language === "hi" ? "hi-shell" : "container"} video-detail-layout">
+                <div class="hi-shell video-detail-layout">
                     <div class="video-detail-frame">
                         ${video.videoUrl ? `<iframe src="${escapeAttr(video.videoUrl)}" title="${escapeAttr(item.title)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : `<img src="${toAsset(video.thumbnail)}" alt="${escapeAttr(item.title)}">`}
                     </div>

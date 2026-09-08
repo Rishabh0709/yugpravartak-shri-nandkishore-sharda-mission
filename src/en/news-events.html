@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: "News & Events | Manidweep Adhyatm Parivar"
+description: "News, upcoming events, recent activities and an archive of press clippings from the Manidweep Adhyatm Parivar."
+bodyClass: "english-home news-events-page"
+breadcrumb: true
+breadcrumbName: "News & Events"
+extraCss: ["/assets/css/news-events.css"]
+extraJs: ["/assets/js/news-events.js"]
+---
+<main id="main-content" data-news-events>
+        <section class="page-hero page-hero--plain" aria-labelledby="news-events-title">
+            <div class="hi-shell page-hero__content">
+                <span class="hi-kicker">Media</span>
+                <h1 id="news-events-title">News &amp; events</h1>
+                <p class="page-hero__lead">Upcoming events, recent service activities, and an archive of press clippings from the mission's journey in education, sanskar and human welfare.</p>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--upcoming" aria-labelledby="upcoming-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">Upcoming</span>
+                    <h2 id="upcoming-title">Upcoming events</h2>
+                    <p>Events and service activities in the near future.</p>
+                </header>
+                <div class="news-events-grid" data-upcoming-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--recent" aria-labelledby="recent-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">Recent</span>
+                    <h2 id="recent-title">Recent activities</h2>
+                    <p>A brief look at recent classes, gatherings and service work.</p>
+                </header>
+                <div class="news-events-grid" data-recent-events></div>
+            </div>
+        </section>
+
+        <section class="news-events-section" aria-labelledby="clippings-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">Press archive</span>
+                    <h2 id="clippings-title">Press clippings</h2>
+                    <p>Press clippings from the mission's public journey, collected as a visual record.</p>
+                </header>
+                <div class="news-range-tabs" data-news-ranges aria-label="Press clippings by year"></div>
+                <div class="news-clips-grid" data-news-clippings></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="news-modal" data-news-modal role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+        <div class="news-modal__dialog">
+            <div class="news-modal__head">
+                <h2 class="news-modal__title" id="news-modal-title" data-news-modal-title></h2>
+                <button class="news-modal__close" type="button" data-news-close aria-label="Close">&times;</button>
+            </div>
+            <div class="news-modal__body"><img data-news-modal-image alt=""></div>
+        </div>
+    </div>
