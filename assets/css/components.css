@@ -292,8 +292,8 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 .hi-knowledge-panel__content h2 {
     margin: 0 0 clamp(14px, 2vw, 20px);
     color: var(--hi-ink);
-    font-size: clamp(2rem, 3.6vw, 3.6rem);
-    line-height: 1.15;
+    font-size: clamp(1.95rem, 3.2vw, 2.95rem);
+    line-height: 1.18;
     letter-spacing: normal;
     text-wrap: balance;
     white-space: normal;
