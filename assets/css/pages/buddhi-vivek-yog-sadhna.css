@@ -259,19 +259,21 @@
             line-height: 1.76;
         }
 
+        /* full-width band directly in .hi-shell, below the two-column grid */
         .bvys-conclusion {
+            margin-top: clamp(40px, 5vw, 56px);
             padding: clamp(30px, 5vw, 54px);
             border: 1px solid var(--hi-quote-border);
             border-radius: 8px;
             background:
-                radial-gradient(circle at 16% 0%, rgba(221, 236, 240, .72), transparent 34%),
+                radial-gradient(circle at 50% 0%, rgba(221, 236, 240, .6), transparent 40%),
                 var(--hi-quote-bg);
             box-shadow: 0 22px 56px rgba(121, 43, 42, .1);
             text-align: center;
         }
 
         .bvys-conclusion blockquote {
-            max-width: 920px;
+            max-width: 60ch;
             margin: 0 auto;
             color: var(--hi-ink);
             font-family: var(--hi-serif);

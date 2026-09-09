@@ -134,16 +134,21 @@
             font-size: clamp(1.08rem, 1.45vw, 1.3rem);
         }
 
+        /* full-width band directly in .hi-shell, below the two-column grid */
         .dg-quote {
+            margin-top: clamp(40px, 5vw, 56px);
+            padding: clamp(28px, 3.6vw, 46px) clamp(24px, 4vw, 56px);
             border: 1px solid var(--hi-quote-border);
             background:
-                radial-gradient(circle at 16% 0%, rgba(221, 236, 240, .72), transparent 34%),
+                radial-gradient(circle at 50% 0%, rgba(221, 236, 240, .6), transparent 40%),
                 var(--hi-quote-bg);
             box-shadow: 0 22px 56px rgba(121, 43, 42, .1);
+            text-align: center;
         }
 
         .dg-quote blockquote {
-            margin: 0;
+            max-width: 56ch;
+            margin: 0 auto;
             color: var(--hi-ink);
             font-family: var(--hi-serif);
             font-size: clamp(1.24rem, 2vw, 1.82rem);
