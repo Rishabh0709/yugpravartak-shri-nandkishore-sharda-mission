@@ -58,7 +58,7 @@
         .shardamani-values {
             border-block: 1px solid rgba(198, 148, 53, .28);
             background:
-                linear-gradient(180deg, rgba(255, 250, 241, .94) 0%, rgba(255, 250, 241, .78) 55%, rgba(255, 250, 241, .88) 100%),
+                linear-gradient(180deg, rgba(255, 250, 241, .82) 0%, rgba(255, 250, 241, .55) 52%, rgba(255, 250, 241, .70) 100%),
                 url("../../images/gallery/sunday-sanskar-classes/11-full.webp") center / cover no-repeat;
         }
 
