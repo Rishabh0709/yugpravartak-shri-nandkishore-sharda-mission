@@ -52,10 +52,11 @@
             line-height: 1.7;
         }
 
-        /* the guiding principle — full-width band below the intro grid */
-        .gyanyogi-principle {
+        /* the guiding principle — full-width band below the intro grid.
+           selector is specific enough to beat the `.site p` margin reset */
+        .gyanyogi-section .hi-shell > .gyanyogi-principle {
             max-width: 64ch;
-            margin: clamp(40px, 5vw, 60px) auto 0;
+            margin: clamp(56px, 6.5vw, 84px) auto 0;
             padding: clamp(24px, 3.6vw, 40px) clamp(24px, 4.5vw, 56px);
             border-top: 2px solid var(--hi-gold);
             border-radius: 8px;

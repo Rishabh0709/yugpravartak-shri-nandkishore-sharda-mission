@@ -245,10 +245,10 @@
     },
     "gyanyogi-adhyatm-kendra": {
       "images": {
-        "gyanyogi-adhyatm-kendra-scholarship": {
-          "src": "assets/images/gyanyogi-adhyatm-kendra-scholarship.webp",
-          "altHi": "ज्ञानयोगी अध्यात्म केन्द्र द्वारा शिक्षा सहयोग",
-          "altEn": "Education support from the Gyanyogi Adhyatm Kendra"
+        "trust-establishment": {
+          "src": "assets/images/trust-related/06-full.webp",
+          "altHi": "ट्रस्ट की स्थापना के अवसर पर परिवार-जनों का समूह",
+          "altEn": "Family members gathered at the founding of the trust"
         },
         "16-card": {
           "src": "assets/images/gallery/scholarship-distribution/16-card.webp",
