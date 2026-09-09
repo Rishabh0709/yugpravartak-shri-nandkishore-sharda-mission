@@ -250,10 +250,10 @@
           "altHi": "ट्रस्ट की स्थापना के अवसर पर परिवार-जनों का समूह",
           "altEn": "Family members gathered at the founding of the trust"
         },
-        "16-card": {
-          "src": "assets/images/gallery/scholarship-distribution/16-card.webp",
-          "altHi": "उच्च शिक्षा के लिए छात्रवृत्ति प्राप्त विद्यार्थी",
-          "altEn": "A student who received a scholarship for higher education"
+        "scholarship-cheque": {
+          "src": "assets/images/gallery/scholarship-distribution/35-full.webp",
+          "altHi": "किसी बालक विद्यार्थी को छात्रवृत्ति की राशि भेंट करते हुए",
+          "altEn": "A scholarship being handed to a student"
         },
         "food-assistance": {
           "src": "assets/images/gallery/food-assistance/06-full.webp",
@@ -266,9 +266,9 @@
           "altEn": "A yoga and pranayama class at the Siddhapeeth"
         },
         "sewing-centre": {
-          "src": "assets/images/gallery/sewing-center/06-full.webp",
-          "altHi": "ज्ञानयोगी अध्यात्म केन्द्र के आयोजन में किसी महिला को सिलाई मशीन भेंट करते हुए",
-          "altEn": "A sewing machine being given to a woman at a Gyanyogi Adhyatm Kendra event"
+          "src": "assets/images/gallery/sewing-center/02-full.webp",
+          "altHi": "वात्सल्यमयी माँ बसन्ती जी मनिहार सिलाई केन्द्र के प्रशिक्षणार्थी और परिवार-जन",
+          "altEn": "Trainees and family members at the Vatsalyamayi Maa Basanti Manihar Sewing Centre"
         },
         "gyanyogi-adhyatm-kendra-hero": {
           "src": "assets/images/gyanyogi-adhyatm-kendra-hero.jpg",
