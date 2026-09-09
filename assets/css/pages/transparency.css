@@ -7,30 +7,21 @@
     background: var(--bg);
 }
 
-/* ---- intro callout ---------------------------------------- */
+/* ---- intro: how the money is managed --------------------- */
 .tr-intro {
-    padding: clamp(26px, 4.5vw, 44px) 0 0;
+    padding: clamp(30px, 5vw, 52px) 0 0;
 }
-.tr-callout {
-    max-width: 900px;
-    padding: clamp(20px, 3vw, 30px) clamp(22px, 3.5vw, 36px);
-    border: 1px solid var(--rule);
-    border-left: 3px solid var(--primary);
-    border-radius: 0 var(--radius) var(--radius) 0;
-    background: var(--surface);
-    box-shadow: var(--shadow-sm);
-}
-.tr-callout h2 {
-    margin: 0 0 10px;
+.tr-intro h2 {
+    margin: 0 0 12px;
     font-family: var(--font-head);
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 2.3vw, 1.75rem);
     color: var(--primary);
 }
-.tr-callout p {
+.tr-intro p {
     margin: 0;
-    max-width: 70ch;
-    font-size: .96rem;
-    line-height: 1.8;
+    max-width: 72ch;
+    font-size: .98rem;
+    line-height: 1.85;
     color: var(--ink-body);
 }
 
