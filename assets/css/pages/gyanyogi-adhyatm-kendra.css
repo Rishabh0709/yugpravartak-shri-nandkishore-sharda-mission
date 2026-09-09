@@ -40,16 +40,32 @@
             color: var(--hi-maroon);
         }
 
-        .gyanyogi-copy__stat {
-            margin: 6px 0 0;
+        /* aside boxes in the copy column — the extra classes keep the
+           margins from being reset by `.gyanyogi-copy p` above */
+        .gyanyogi-copy p.gyanyogi-copy__stat,
+        .gyanyogi-copy p.gyanyogi-copy__invite {
+            margin: 22px 0 0;
             padding: 14px 18px;
-            border-left: 3px solid var(--hi-gold);
             border-radius: 6px;
+            font-size: .98rem;
+            line-height: 1.7;
+        }
+
+        .gyanyogi-copy p.gyanyogi-copy__stat {
+            border-left: 3px solid var(--hi-gold);
             background: rgba(255, 252, 246, .72);
             color: var(--hi-maroon);
-            font-size: .98rem;
             font-weight: 700;
-            line-height: 1.7;
+        }
+
+        .gyanyogi-copy p.gyanyogi-copy__invite {
+            border-left: 3px solid var(--hi-maroon);
+            background: rgba(255, 250, 241, .9);
+            color: #5b4a41;
+        }
+
+        .gyanyogi-copy__invite .hi-text-link {
+            white-space: nowrap;
         }
 
         /* the guiding principle — full-width band below the intro grid.
