@@ -30,7 +30,7 @@ extraJs: ["/assets/js/transparency.js"]
         <div class="hi-shell">
             <div class="tr-grid">
                 {%- for trust in documents %}
-                <article class="tr-card" id="{{ trust.id }}-records" aria-labelledby="{{ trust.id }}-heading">
+                <article class="tr-card{% if loop.first %} tr-card--wide{% endif %}" id="{{ trust.id }}-records" aria-labelledby="{{ trust.id }}-heading">
                     <header class="tr-card__head">
                         <h2 id="{{ trust.id }}-heading">{{ trust.name.en }}</h2>
                         <p class="tr-card__meta">

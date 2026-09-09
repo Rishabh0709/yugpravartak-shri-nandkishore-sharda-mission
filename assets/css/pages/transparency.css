@@ -40,9 +40,48 @@
 }
 .tr-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: clamp(16px, 2.4vw, 26px);
     align-items: start;
+}
+
+/* the busiest trust (SVT) gets its own full-width row; the other
+   three sit in the row below */
+.tr-card--wide {
+    grid-column: 1 / -1;
+}
+.tr-card--wide .tr-card__body {
+    display: grid;
+    grid-template-columns: 1.5fr 1.1fr 1fr;
+    gap: clamp(20px, 3vw, 44px);
+}
+.tr-card--wide .tr-set + .tr-set {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: clamp(20px, 3vw, 44px);
+    border-top: 0;
+    border-left: 1px dashed var(--rule);
+}
+
+@media (max-width: 900px) {
+    .tr-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .tr-card--wide .tr-card__body {
+        grid-template-columns: 1fr;
+    }
+    .tr-card--wide .tr-set + .tr-set {
+        margin-top: 18px;
+        padding-top: 16px;
+        padding-left: 0;
+        border-top: 1px dashed var(--rule);
+        border-left: 0;
+    }
+}
+@media (max-width: 560px) {
+    .tr-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .tr-card {
@@ -235,8 +274,4 @@
     font-size: .98rem;
     line-height: 1.8;
     color: var(--ink-body);
-}
-
-@media (max-width: 420px) {
-    .tr-grid { grid-template-columns: 1fr; }
 }
