@@ -284,6 +284,11 @@
 
 /* ---- published-books list ---- */
 .gyan-ganga-books .hi-section-heading { margin-bottom: clamp(28px, 4vw, 44px); }
+.gyan-ganga-books__figure {
+    max-width: 900px;
+    margin: 0 auto clamp(34px, 5vw, 52px);
+}
+.gyan-ganga-books__figure img { min-height: 0; }
 .gyan-ganga-book-list {
     list-style: none;
     margin: 0;

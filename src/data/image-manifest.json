@@ -907,9 +907,14 @@
           "altEn": "Educational infrastructure built through community support"
         },
         "page-hero": {
-          "src": "assets/images/gallery/literature-distribution/01-full.webp",
+          "src": "assets/images/gallery/gyan-ganga-mission/03-full.webp",
           "altHi": "",
           "altEn": ""
+        },
+        "books-launch": {
+          "src": "assets/images/gallery/gyan-ganga-mission/14-full.webp",
+          "altHi": "किसी प्रकाशित ग्रंथ के लोकार्पण का दृश्य",
+          "altEn": "The release of one of the published books"
         }
       },
       "media": {},
