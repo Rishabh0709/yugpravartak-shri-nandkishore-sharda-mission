@@ -461,9 +461,9 @@
     "maa-shardamani-trust": {
       "images": {
         "trust-establishment": {
-          "src": "assets/images/trust-related/03-full.webp",
-          "altHi": "माँ शारदामणि ट्रस्ट की स्थापना के अवसर पर पूजन",
-          "altEn": "Worship on the occasion of the Maa Shardamani Trust's founding"
+          "src": "assets/images/trust-related/maa_shardamani_trust.webp",
+          "altHi": "माँ शारदामणि ट्रस्ट की स्थापना काल के दृश्य — पूजन और छात्रवृत्ति भेंट",
+          "altEn": "Scenes from the founding of the Maa Shardamani Trust — worship, and a scholarship being handed over"
         },
         "scholarship-handover": {
           "src": "assets/images/gallery/scholarship-distribution/27-full.webp",

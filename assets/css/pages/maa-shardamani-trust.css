@@ -36,6 +36,22 @@
             filter: saturate(1.05) contrast(1.02);
         }
 
+        /* intro: the founding photo-pair is a fixed 3600x3072 composite —
+           match the frame to it so nothing is ever cropped */
+        .shardamani-section--intro .shardamani-grid {
+            align-items: center;
+        }
+
+        .shardamani-section--intro .shardamani-media {
+            min-height: 0;
+            aspect-ratio: 3600 / 3072;
+        }
+
+        .shardamani-section--intro .shardamani-media img {
+            min-height: 0;
+            object-fit: contain;
+        }
+
         .shardamani-copy h2 {
             margin: 0 0 20px;
             color: var(--hi-ink);
@@ -187,6 +203,11 @@
             .shardamani-media,
             .shardamani-media img {
                 min-height: 320px;
+            }
+
+            .shardamani-section--intro .shardamani-media,
+            .shardamani-section--intro .shardamani-media img {
+                min-height: 0;
             }
 
         }
