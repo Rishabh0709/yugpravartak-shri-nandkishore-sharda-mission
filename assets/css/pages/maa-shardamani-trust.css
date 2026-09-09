@@ -36,7 +36,7 @@
             filter: saturate(1.05) contrast(1.02);
         }
 
-        /* intro: the founding photo-pair is a fixed 3600x3072 composite —
+        /* intro: the founding photo-pair is a fixed 1200x1024 composite —
            match the frame to it so nothing is ever cropped */
         .shardamani-section--intro .shardamani-grid {
             align-items: center;
@@ -44,7 +44,7 @@
 
         .shardamani-section--intro .shardamani-media {
             min-height: 0;
-            aspect-ratio: 3600 / 3072;
+            aspect-ratio: 1200 / 1024;
         }
 
         .shardamani-section--intro .shardamani-media img {
