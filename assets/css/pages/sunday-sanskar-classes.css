@@ -77,8 +77,13 @@
             gap: clamp(16px, 2vw, 22px);
         }
 
+        .sanskar-story__media-intro .hi-kicker {
+            display: block;
+            margin-bottom: 8px;
+        }
+
         .sanskar-story__media-lead {
-            margin: 0 0 2px;
+            margin: 0;
             color: #6d5a51;
             font-family: var(--hi-serif);
             font-size: clamp(1rem, 1.2vw, 1.1rem);
@@ -100,15 +105,21 @@
         }
 
         .sanskar-heritage-fig figcaption {
-            margin-top: 8px;
+            margin-top: 9px;
             color: #7a675d;
             font-size: .86rem;
             line-height: 1.5;
         }
 
-        /* bridge line into the values */
+        /* bridge line into the values.
+           the extra ".hi-shell" beats the global `.site p { margin-top: 0 }` reset */
+        .sanskar-section--intro .hi-shell > .sanskar-bridge {
+            margin: clamp(48px, 6.5vw, 74px) 0 clamp(20px, 2.6vw, 28px);
+        }
+        .sanskar-section--intro .hi-shell > .sanskar-story__quote {
+            margin-top: clamp(38px, 5vw, 58px);
+        }
         .sanskar-bridge {
-            margin: clamp(38px, 5vw, 56px) 0 clamp(18px, 2.4vw, 26px);
             color: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-size: clamp(1.05rem, 1.5vw, 1.28rem);
