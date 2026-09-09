@@ -142,6 +142,39 @@
             margin-top: clamp(38px, 5vw, 58px);
         }
 
+        /* archival school-visit pair — where these classes came from */
+        .sanskar-heritage {
+            max-width: 760px;
+            margin: clamp(38px, 5vw, 56px) 0 0;
+            padding-top: clamp(28px, 3.6vw, 40px);
+            border-top: 1px solid rgba(121, 43, 42, .12);
+        }
+
+        .sanskar-heritage__lead {
+            margin: 0 0 16px;
+            color: #6d5a51;
+            font-family: var(--hi-serif);
+            font-size: clamp(1rem, 1.25vw, 1.12rem);
+            line-height: 1.68;
+        }
+
+        .sanskar-heritage__grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(12px, 1.6vw, 18px);
+            align-items: start;
+        }
+
+        .sanskar-heritage__grid img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(198, 148, 53, .3);
+            border-radius: 8px;
+            background: #f4e4cc;
+            filter: saturate(1.04);
+        }
+
         .sanskar-value {
             padding: 22px;
             border: 1px solid rgba(121, 43, 42, .12);
@@ -431,6 +464,12 @@
             }
 
             .sanskar-values {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .sanskar-heritage__grid {
                 grid-template-columns: 1fr;
             }
         }
