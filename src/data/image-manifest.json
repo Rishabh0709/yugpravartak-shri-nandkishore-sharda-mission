@@ -460,10 +460,10 @@
     },
     "maa-shardamani-trust": {
       "images": {
-        "maa-shardamani-scholarship-distribution": {
-          "src": "assets/images/maa-shardamani-scholarship-distribution.jpg",
-          "altHi": "माँ शारदामणि ट्रस्ट द्वारा छात्रवृत्ति सहयोग",
-          "altEn": ""
+        "trust-establishment": {
+          "src": "assets/images/trust-related/03-full.webp",
+          "altHi": "माँ शारदामणि ट्रस्ट की स्थापना के अवसर पर पूजन",
+          "altEn": "Worship on the occasion of the Maa Shardamani Trust's founding"
         },
         "10-card": {
           "src": "assets/images/gallery/scholarship-distribution/10-card.webp",

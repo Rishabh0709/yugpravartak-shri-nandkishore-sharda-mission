@@ -1,0 +1,308 @@
+{
+  "album": "trust-related",
+  "generatedAt": "2026-09-09T10:54:20.913Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\trust-related",
+  "photographCount": 10,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-01_Im23.png",
+        "width": 589,
+        "height": 354,
+        "bytes": 281800
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8660
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 589,
+        "height": 354,
+        "bytes": 19592
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 589,
+        "height": 354,
+        "bytes": 23300
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-02_Im33.png",
+        "width": 566,
+        "height": 360,
+        "bytes": 301394
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10766
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 566,
+        "height": 360,
+        "bytes": 25580
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 566,
+        "height": 360,
+        "bytes": 30038
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-03_Im34.png",
+        "width": 573,
+        "height": 367,
+        "bytes": 341406
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13446
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 573,
+        "height": 367,
+        "bytes": 30872
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 573,
+        "height": 367,
+        "bytes": 36142
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-04_Im35.png",
+        "width": 588,
+        "height": 354,
+        "bytes": 285164
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8790
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 588,
+        "height": 354,
+        "bytes": 22658
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 588,
+        "height": 354,
+        "bytes": 27132
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-05_Im36.png",
+        "width": 589,
+        "height": 351,
+        "bytes": 360227
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13108
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 589,
+        "height": 351,
+        "bytes": 34630
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 589,
+        "height": 351,
+        "bytes": 40884
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-06_Im37.png",
+        "width": 586,
+        "height": 353,
+        "bytes": 395790
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 16372
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 586,
+        "height": 353,
+        "bytes": 44144
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 586,
+        "height": 353,
+        "bytes": 50778
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-07_Im38.png",
+        "width": 587,
+        "height": 353,
+        "bytes": 294131
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9544
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 587,
+        "height": 353,
+        "bytes": 22100
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 587,
+        "height": 353,
+        "bytes": 26392
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "trust-related",
+      "original": {
+        "file": "page-01_image-08_Im39.png",
+        "width": 588,
+        "height": 354,
+        "bytes": 413673
+      },
+      "thumbnail": {
+        "file": "08-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15258
+      },
+      "card": {
+        "file": "08-card.webp",
+        "width": 588,
+        "height": 354,
+        "bytes": 36280
+      },
+      "full": {
+        "file": "08-full.webp",
+        "width": 588,
+        "height": 354,
+        "bytes": 42162
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "09",
+      "album": "trust-related",
+      "original": {
+        "file": "trust_meeting.png",
+        "width": 589,
+        "height": 353,
+        "bytes": 307491
+      },
+      "thumbnail": {
+        "file": "09-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9678
+      },
+      "card": {
+        "file": "09-card.webp",
+        "width": 589,
+        "height": 353,
+        "bytes": 24922
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 589,
+        "height": 353,
+        "bytes": 29384
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "trust-related",
+      "original": {
+        "file": "trust_meeting2.png",
+        "width": 584,
+        "height": 352,
+        "bytes": 289349
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9240
+      },
+      "card": {
+        "file": "10-card.webp",
+        "width": 584,
+        "height": 352,
+        "bytes": 22024
+      },
+      "full": {
+        "file": "10-full.webp",
+        "width": 584,
+        "height": 352,
+        "bytes": 25912
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}
