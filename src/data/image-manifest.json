@@ -540,10 +540,15 @@
     },
     "margdarshan-siddhant": {
       "images": {
-        "bhaiyaji-portrait": {
-          "src": "assets/images/bhaiyaji-radiant-portrait.jpg",
-          "altHi": "युगप्रवर्तक श्री नन्दकिशोर शारदा",
-          "altEn": "Yugpravartak Shri Nandkishore Sharda"
+        "udbodhan-corridor": {
+          "src": "assets/images/bhaiyaji/udbodhan-corridor.webp",
+          "altHi": "विद्यालय परिसर में छात्राओं को उद्बोधन देते भैया जी",
+          "altEn": "Bhaiyaji addressing schoolgirls in a school courtyard"
+        },
+        "udbodhan-1993": {
+          "src": "assets/images/bhaiyaji/udbodhan-1993.webp",
+          "altHi": "1993 में एक विद्यालय द्वारा स्वामी विवेकानन्द ट्रस्ट-परिवार का स्वागत",
+          "altEn": "A school welcoming the Swami Vivekanand Trust team, 1993"
         }
       },
       "media": {},

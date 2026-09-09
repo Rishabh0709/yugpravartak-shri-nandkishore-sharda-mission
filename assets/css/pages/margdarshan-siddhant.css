@@ -23,6 +23,10 @@
             align-items: start;
         }
 
+        .margdarshan-grid--darshan {
+            grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+        }
+
         .margdarshan-copy p {
             margin: 0 0 18px;
             color: #5b4a41;
@@ -32,6 +36,39 @@
 
         .margdarshan-copy strong {
             color: var(--hi-maroon);
+        }
+
+        /* the three labelled facets of the philosophy */
+        .margdarshan-beats {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: clamp(22px, 3vw, 32px);
+        }
+
+        .margdarshan-beat {
+            padding-bottom: clamp(22px, 3vw, 32px);
+            border-bottom: 1px solid rgba(121, 43, 42, .12);
+        }
+        .margdarshan-beat:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .margdarshan-beat h3 {
+            margin: 0 0 10px;
+            color: var(--hi-maroon);
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: clamp(1.24rem, 1.9vw, 1.55rem);
+            line-height: 1.4;
+        }
+
+        .margdarshan-beat p {
+            margin: 0;
+            color: #5b4a41;
+            font-size: 1.05rem;
+            line-height: 1.9;
         }
 
         .margdarshan-media {
@@ -50,6 +87,37 @@
             object-fit: cover;
             object-position: center top;
             filter: saturate(1.04) contrast(1.02);
+        }
+
+        /* opening section: two archival udbodhan photos stacked, each captioned */
+        .margdarshan-darshan-photos {
+            overflow: visible;
+            border: 0;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            display: grid;
+            gap: clamp(16px, 2.2vw, 24px);
+        }
+
+        .margdarshan-darshan-photos figure {
+            margin: 0;
+        }
+
+        .margdarshan-darshan-photos img {
+            aspect-ratio: auto;
+            object-fit: cover;
+            border: 1px solid rgba(198, 148, 53, .3);
+            border-radius: 8px;
+            background: #f4e4cc;
+            box-shadow: 0 18px 46px rgba(82, 50, 34, .12);
+        }
+
+        .margdarshan-darshan-photos figcaption {
+            margin-top: 8px;
+            color: #7a675d;
+            font-size: .84rem;
+            line-height: 1.5;
         }
 
         /* philosophy pull-quote in the opening section */
@@ -184,8 +252,23 @@
                 margin-inline: auto;
             }
 
+            /* the udbodhan photos follow the beats, side by side */
+            .margdarshan-grid .margdarshan-darshan-photos {
+                order: 0;
+                max-width: none;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                align-items: start;
+            }
+
             .margdarshan-principles {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 560px) {
+
+            .margdarshan-grid .margdarshan-darshan-photos {
+                grid-template-columns: 1fr;
             }
         }
 
