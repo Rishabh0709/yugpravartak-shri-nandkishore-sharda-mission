@@ -127,8 +127,13 @@
             letter-spacing: .01em;
         }
 
+        /* the extra ".hi-shell" beats the global `.site p { margin-top: 0 }` reset */
+        .margdarshan-section--principles .hi-shell > .margdarshan-transparency-note {
+            margin-top: clamp(44px, 6vw, 68px);
+        }
         .margdarshan-transparency-note {
-            margin: clamp(28px, 4vw, 40px) auto 0;
+            margin-inline: auto;
+            margin-bottom: 0;
             max-width: 760px;
             text-align: center;
             color: #6d5a51;
