@@ -60,28 +60,88 @@
             background: #fffaf1;
         }
 
+        .sanskar-section--intro .hi-section-heading {
+            margin-bottom: clamp(26px, 3.4vw, 40px);
+        }
+
         .sanskar-story {
             display: grid;
             grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
-            gap: clamp(30px, 5vw, 68px);
+            gap: clamp(30px, 5vw, 64px);
             align-items: start;
         }
 
-        .sanskar-story__aside {
-            position: sticky;
-            top: 110px;
+        /* left column: the two archival school-visit photos */
+        .sanskar-story__media {
+            display: grid;
+            gap: clamp(16px, 2vw, 22px);
         }
 
+        .sanskar-story__media-lead {
+            margin: 0 0 2px;
+            color: #6d5a51;
+            font-family: var(--hi-serif);
+            font-size: clamp(1rem, 1.2vw, 1.1rem);
+            line-height: 1.66;
+        }
+
+        .sanskar-heritage-fig {
+            margin: 0;
+        }
+
+        .sanskar-heritage-fig img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(198, 148, 53, .3);
+            border-radius: 8px;
+            background: #f4e4cc;
+            filter: saturate(1.04);
+        }
+
+        .sanskar-heritage-fig figcaption {
+            margin-top: 8px;
+            color: #7a675d;
+            font-size: .86rem;
+            line-height: 1.5;
+        }
+
+        /* bridge line into the values */
+        .sanskar-bridge {
+            margin: clamp(38px, 5vw, 56px) 0 clamp(18px, 2.4vw, 26px);
+            color: var(--hi-maroon);
+            font-family: var(--hi-serif);
+            font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .sanskar-bridge::after {
+            content: " \2193";
+        }
+
+        /* closing quote block for the section */
         .sanskar-story__quote {
-            margin: 18px 0 0;
-            padding: 4px 0 4px clamp(16px, 1.8vw, 22px);
-            border-left: 3px solid var(--hi-gold);
+            margin: clamp(36px, 5vw, 56px) 0 0;
+            padding: clamp(24px, 3.4vw, 40px) clamp(24px, 4vw, 52px);
+            border-top: 2px solid var(--hi-gold);
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(221, 236, 240, .55), transparent 42%),
+                rgba(255, 252, 246, .82);
+            box-shadow: 0 18px 48px rgba(63, 45, 37, .08);
+            text-align: center;
             color: var(--hi-ink);
             font-family: var(--hi-serif);
-            font-size: clamp(1.3rem, 2.1vw, 1.9rem);
+            font-size: clamp(1.3rem, 2.2vw, 1.95rem);
             font-weight: 700;
             line-height: 1.55;
             text-wrap: balance;
+        }
+        .sanskar-story__quote::before {
+            content: "\201C";
+        }
+        .sanskar-story__quote::after {
+            content: "\201D";
         }
 
         .sanskar-beats {
@@ -139,40 +199,7 @@
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px;
-            margin-top: clamp(38px, 5vw, 58px);
-        }
-
-        /* archival school-visit pair — where these classes came from */
-        .sanskar-heritage {
-            max-width: 760px;
-            margin: clamp(38px, 5vw, 56px) 0 0;
-            padding-top: clamp(28px, 3.6vw, 40px);
-            border-top: 1px solid rgba(121, 43, 42, .12);
-        }
-
-        .sanskar-heritage__lead {
-            margin: 0 0 16px;
-            color: #6d5a51;
-            font-family: var(--hi-serif);
-            font-size: clamp(1rem, 1.25vw, 1.12rem);
-            line-height: 1.68;
-        }
-
-        .sanskar-heritage__grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: clamp(12px, 1.6vw, 18px);
-            align-items: start;
-        }
-
-        .sanskar-heritage__grid img {
-            display: block;
-            width: 100%;
-            height: auto;
-            border: 1px solid rgba(198, 148, 53, .3);
-            border-radius: 8px;
-            background: #f4e4cc;
-            filter: saturate(1.04);
+            margin-top: 0;
         }
 
         .sanskar-value {
@@ -459,17 +486,22 @@
                 grid-template-columns: 1fr;
             }
 
-            .sanskar-story__aside {
-                position: static;
-            }
-
             .sanskar-values {
                 grid-template-columns: 1fr;
             }
+
+            /* media column is now full-width — put the two photos side by side */
+            .sanskar-story__media {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                align-items: start;
+            }
+            .sanskar-story__media-lead {
+                grid-column: 1 / -1;
+            }
         }
 
-        @media (max-width: 620px) {
-            .sanskar-heritage__grid {
+        @media (max-width: 520px) {
+            .sanskar-story__media {
                 grid-template-columns: 1fr;
             }
         }
