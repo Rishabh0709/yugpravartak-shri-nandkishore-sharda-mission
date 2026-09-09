@@ -465,15 +465,15 @@
           "altHi": "माँ शारदामणि ट्रस्ट की स्थापना के अवसर पर पूजन",
           "altEn": "Worship on the occasion of the Maa Shardamani Trust's founding"
         },
-        "10-card": {
-          "src": "assets/images/gallery/scholarship-distribution/10-card.webp",
-          "altHi": "छात्राओं को उच्च शिक्षा के लिए मार्गदर्शन",
-          "altEn": ""
+        "scholarship-handover": {
+          "src": "assets/images/gallery/scholarship-distribution/27-full.webp",
+          "altHi": "एक छात्रा को छात्रवृत्ति की राशि भेंट करते हुए",
+          "altEn": "A scholarship being handed to a student"
         },
-        "15-card": {
-          "src": "assets/images/gallery/scholarship-distribution/15-card.webp",
-          "altHi": "छात्रवृत्ति से लाभान्वित छात्राओं का समूह",
-          "altEn": ""
+        "sanskar-class": {
+          "src": "assets/images/gallery/sunday-sanskar-classes/04-card.webp",
+          "altHi": "संस्कार कक्षा में उपस्थित छात्राएँ",
+          "altEn": "Girls attending a Sanskar class"
         },
         "page-hero": {
           "src": "assets/images/gallery/scholarship-distribution/31-full.webp",
@@ -483,7 +483,7 @@
       },
       "media": {},
       "cssBackgrounds": [
-        "/assets/images/gallery/scholarship-distribution/08-card.webp"
+        "/assets/images/gallery/scholarship-distribution/26-full.webp"
       ]
     },
     "madhubala-advani": {
