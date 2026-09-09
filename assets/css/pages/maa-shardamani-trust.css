@@ -36,34 +36,6 @@
             filter: saturate(1.05) contrast(1.02);
         }
 
-        /* two archival photos stacked, each shown in full (no crop) */
-        .shardamani-media--stack {
-            position: static;
-            display: grid;
-            gap: 16px;
-            min-height: 0;
-            overflow: visible;
-            border: 0;
-            background: none;
-            box-shadow: none;
-        }
-
-        .shardamani-media--stack img {
-            width: 100%;
-            height: auto;
-            min-height: 0;
-            object-fit: contain;
-            border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
-            background: #f7ead8;
-            box-shadow: 0 20px 54px rgba(82, 50, 34, .14);
-        }
-
-        /* balance the taller image column against the shorter copy */
-        .shardamani-grid:has(.shardamani-media--stack) {
-            align-items: center;
-        }
-
         .shardamani-copy h2 {
             margin: 0 0 20px;
             color: var(--hi-ink);
@@ -243,11 +215,6 @@
             .shardamani-media,
             .shardamani-media img {
                 min-height: 320px;
-            }
-
-            .shardamani-media--stack,
-            .shardamani-media--stack img {
-                min-height: 0;
             }
 
         }
