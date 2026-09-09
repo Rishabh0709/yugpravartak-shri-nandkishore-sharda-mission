@@ -142,18 +142,14 @@
             background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
         }
 
-        .vivekanand-reach .hi-section-heading {
-            max-width: 900px;
-            margin-inline: auto;
-        }
-
         .vivekanand-stats {
             margin-top: 34px;
         }
 
+        /* full-width band directly in .hi-shell, below the two-column grid */
         .vivekanand-quote {
-            margin-top: 34px;
-            padding: clamp(24px, 3vw, 36px);
+            margin-top: clamp(40px, 5vw, 56px);
+            padding: clamp(26px, 3.4vw, 44px) clamp(24px, 4vw, 56px);
             border-left: 4px solid var(--hi-gold);
             border-radius: 8px;
             background: rgba(255, 252, 246, .84);
@@ -167,6 +163,7 @@
             font-size: clamp(1.24rem, 1.9vw, 1.65rem);
             font-weight: 700;
             line-height: 1.75;
+            text-wrap: balance;
         }
 
         .vivekanand-closing {
@@ -175,11 +172,6 @@
             background:
                 linear-gradient(180deg, rgba(255, 250, 241, .7), rgba(255, 250, 241, .96)),
                 url("../../images/gallery/scholarship-distribution/15-card.webp") center / cover no-repeat;
-        }
-
-        .vivekanand-closing .hi-section-heading {
-            max-width: 920px;
-            margin-inline: auto;
         }
 
         .vivekanand-actions {
