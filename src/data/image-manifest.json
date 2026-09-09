@@ -556,55 +556,55 @@
     },
     "nishkam-karm-sadhna": {
       "images": {
-        "16-card": {
+        "svt-scholarship": {
           "src": "assets/images/gallery/scholarship-distribution/16-card.webp",
           "altHi": "विद्यालयी छात्रवृत्ति वितरण",
-          "altEn": ""
+          "altEn": "A school scholarship distribution"
         },
-        "01-card": {
+        "sanskar-classes": {
           "src": "assets/images/gallery/sunday-sanskar-classes/01-card.webp",
           "altHi": "संस्कार कक्षाओं में विद्यार्थी",
-          "altEn": ""
+          "altEn": "Students in the Sanskar classes"
         },
-        "maa-shardamani-scholarship-distribution": {
-          "src": "assets/images/maa-shardamani-scholarship-distribution.jpg",
+        "higher-scholarship": {
+          "src": "assets/images/gallery/scholarship-distribution/27-full.webp",
           "altHi": "उच्च शिक्षा के लिए छात्रवृत्ति सहयोग",
-          "altEn": ""
+          "altEn": "Scholarship support for higher education"
         },
-        "10-card": {
-          "src": "assets/images/gallery/scholarship-distribution/10-card.webp",
-          "altHi": "छात्राओं का शैक्षणिक मार्गदर्शन",
-          "altEn": ""
+        "college-sanskar": {
+          "src": "assets/images/gallery/sunday-sanskar-classes/04-card.webp",
+          "altHi": "छात्राओं के लिए संस्कार कक्षा",
+          "altEn": "A Sanskar class for girls"
         },
-        "gyanyogi-adhyatm-kendra-scholarship": {
+        "boys-education": {
           "src": "assets/images/gyanyogi-adhyatm-kendra-scholarship.webp",
           "altHi": "बालक शिक्षा सहयोग",
-          "altEn": ""
+          "altEn": "Support for boys' education"
         },
-        "06-card": {
-          "src": "assets/images/gallery/food-assistance/06-card.webp",
-          "altHi": "खाद्यान्न सहायता",
-          "altEn": ""
+        "food-assistance": {
+          "src": "assets/images/gallery/food-assistance/06-full.webp",
+          "altHi": "जरूरतमंद परिवारों को खाद्यान्न सहायता",
+          "altEn": "Food-grain assistance for families in need"
         },
         "yoga-class": {
           "src": "assets/images/yoga_class.jpg",
           "altHi": "योग और प्राणायाम कक्षा",
-          "altEn": ""
+          "altEn": "A yoga and pranayama class"
         },
-        "04-card": {
-          "src": "assets/images/gallery/sewing-center/04-card.webp",
+        "sewing-centre": {
+          "src": "assets/images/gallery/sewing-center/06-full.webp",
           "altHi": "महिला सिलाई प्रशिक्षण",
-          "altEn": ""
+          "altEn": "Sewing training for women"
         },
-        "01-card-2": {
-          "src": "assets/images/gallery/gyan-ganga-mission/02-card.webp",
-          "altHi": "ज्ञान गंगा मिशन का साहित्य",
-          "altEn": ""
+        "gyan-ganga-books": {
+          "src": "assets/images/gallery/gyan-ganga-mission/14-full.webp",
+          "altHi": "ज्ञान गंगा मिशन के ग्रंथ का लोकार्पण",
+          "altEn": "The release of a Gyan Ganga Mission book"
         },
-        "02-card": {
-          "src": "assets/images/gallery/gyan-ganga-mission/02-card.webp",
-          "altHi": "सद्साहित्य का निःशुल्क वितरण",
-          "altEn": ""
+        "infrastructure": {
+          "src": "assets/images/gallery/infrastructure-support/03-card.webp",
+          "altHi": "विद्यालय में कक्षा-कक्ष निर्माण",
+          "altEn": "Classroom construction at a school"
         }
       },
       "media": {},
