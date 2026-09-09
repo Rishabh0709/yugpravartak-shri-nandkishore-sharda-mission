@@ -3,136 +3,232 @@
    ============================================================ */
 
 .transparency-page {
-    color: var(--ink);
+    color: var(--ink-body);
     background: var(--bg);
 }
 
-/* ---- generic section ---- */
-.tr-section { padding: clamp(38px, 6vw, 60px) 0; }
-.tr-section + .tr-section { border-top: 1px solid var(--rule); }
-.tr-section h2 {
-    margin: 0;
-    font-family: var(--font-head);
-    font-size: clamp(1.5rem, 2.6vw, 2rem);
-    color: var(--ink);
+/* ---- intro callout ---------------------------------------- */
+.tr-intro {
+    padding: clamp(26px, 4.5vw, 44px) 0 0;
 }
-.tr-section > .hi-shell { max-width: 860px; }
-
-.tr-principle p {
-    margin: 14px 0 0;
+.tr-callout {
+    max-width: 900px;
+    padding: clamp(20px, 3vw, 30px) clamp(22px, 3.5vw, 36px);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+.tr-callout h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    color: var(--primary);
+}
+.tr-callout p {
+    margin: 0;
     max-width: 70ch;
-    font-size: .98rem;
-    line-height: 1.85;
+    font-size: .96rem;
+    line-height: 1.8;
     color: var(--ink-body);
 }
 
-/* ---- one trust ---- */
-.tr-trust__head { margin-bottom: clamp(18px, 3vw, 26px); }
-.tr-trust__head h2 { color: var(--primary); line-height: 1.35; }
-.tr-trust__meta {
-    margin: 8px 0 0;
-    font-size: .9rem;
-    color: var(--ink-muted);
+/* ---- the card grid --------------------------------------- */
+.tr-docs {
+    padding: clamp(30px, 5vw, 52px) 0 clamp(44px, 7vw, 72px);
 }
-.tr-trust__meta a { color: var(--accent); text-decoration: none; }
-.tr-trust__meta a:hover { text-decoration: underline; }
+.tr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: clamp(16px, 2.4vw, 26px);
+    align-items: start;
+}
 
-.tr-block { margin-top: clamp(20px, 3vw, 28px); }
-.tr-block h3 {
-    margin: 0 0 10px;
-    font-family: var(--font-head);
-    font-size: 1.1rem;
-    color: var(--ink);
-}
-.tr-block__intro {
-    margin: 0 0 12px;
-    font-size: .88rem;
-    color: var(--ink-muted);
-}
-.tr-note {
-    margin: 0;
-    padding: 12px 16px;
-    border-left: 3px solid var(--rule-strong);
+.tr-card {
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
     background: var(--surface);
-    font-size: .9rem;
-    color: var(--ink-muted);
+    box-shadow: var(--shadow-sm);
+    scroll-margin-top: 100px;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+.tr-card:target {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(123, 42, 40, .16), var(--shadow-md);
 }
 
-/* ---- document rows ---- */
-.tr-doclist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid var(--rule);
+/* card header */
+.tr-card__head {
+    padding: clamp(18px, 2.6vw, 24px);
+    border-bottom: 1px solid var(--rule);
+    background: var(--bg-wash);
 }
-.tr-doclist li {
+.tr-card__head h2 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: clamp(1.02rem, 1.6vw, 1.24rem);
+    line-height: 1.4;
+    color: var(--primary);
+}
+.tr-card__meta {
+    margin: 7px 0 0;
+    font-size: .84rem;
+    color: var(--ink-muted);
+}
+.tr-card__meta a {
+    color: var(--accent);
+    text-decoration: none;
+}
+.tr-card__meta a:hover { text-decoration: underline; }
+
+/* registration credential chips (in the header) */
+.tr-creds {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6px 16px;
-    padding: 13px 4px;
-    border-bottom: 1px solid var(--rule);
+    gap: 8px;
 }
-.tr-doclist__name {
-    font-size: .96rem;
+.tr-cred {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 11px;
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    font-size: .82rem;
     font-weight: 600;
     color: var(--ink);
+    text-decoration: none;
+    transition: border-color var(--transition), color var(--transition);
 }
-.tr-doclist__name--summary { color: var(--primary); }
-.tr-doclist__num {
-    display: inline-block;
-    margin-left: 8px;
-    padding: 1px 7px;
-    border-radius: 4px;
-    background: var(--bg-wash);
+.tr-cred:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.tr-cred__num {
     font-family: var(--font-latin);
-    font-size: .78rem;
+    font-size: .72rem;
     font-weight: 500;
     letter-spacing: .02em;
     color: var(--ink-muted);
 }
-.tr-doclist__link {
-    flex: none;
-    font-family: var(--font-body);
-    font-size: .86rem;
-    font-weight: 600;
+.tr-cred__go {
+    font-size: .82em;
     color: var(--accent);
-    text-decoration: none;
-    white-space: nowrap;
 }
-.tr-doclist__link:hover { color: var(--primary); text-decoration: underline; }
 
-/* ---- year grid (financial reports) ---- */
-.tr-yeargrid {
+/* card body */
+.tr-card__body {
+    padding: clamp(16px, 2.4vw, 22px);
+}
+.tr-set + .tr-set {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--rule);
+}
+.tr-set h3 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: .94rem;
+    letter-spacing: .01em;
+    color: var(--ink);
+}
+.tr-set__note {
+    margin: 0 0 10px;
+    font-size: .82rem;
+    line-height: 1.6;
+    color: var(--ink-muted);
+}
+.tr-soon {
+    margin: 0;
+    font-size: .84rem;
+    font-style: italic;
+    color: var(--ink-muted);
+}
+
+/* year / certificate pills */
+.tr-pills {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
 }
-.tr-yeargrid a {
-    display: block;
-    padding: 9px 10px;
+.tr-pills a {
+    display: inline-block;
+    padding: 6px 11px;
     border: 1px solid var(--rule);
-    border-radius: var(--radius);
-    background: var(--surface);
+    border-radius: var(--radius-pill);
+    background: var(--bg);
     font-family: var(--font-latin);
-    font-size: .84rem;
-    text-align: center;
+    font-size: .8rem;
     color: var(--ink-body);
     text-decoration: none;
+    white-space: nowrap;
     transition: border-color var(--transition), color var(--transition);
 }
-.tr-yeargrid a:hover {
+.tr-pills a:hover {
     border-color: var(--primary);
     color: var(--primary);
 }
+.tr-pills a.tr-pill--wide {
+    font-family: var(--font-body);
+    font-size: .82rem;
+    white-space: normal;
+    color: var(--primary);
+    border-color: var(--rule-strong);
+}
 
-/* ---- closing ---- */
-.tr-closing { background: var(--bg-wash); }
-.tr-closing h2 { color: var(--primary); }
+/* "show all years" disclosure */
+.tr-more {
+    margin-top: 10px;
+}
+/* keep the extra years hidden until opened (our .tr-pills sets
+   display:flex, which would otherwise defeat the native collapse) */
+.tr-more:not([open]) > .tr-pills {
+    display: none;
+}
+.tr-more > summary {
+    cursor: pointer;
+    padding: 3px 0;
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--accent);
+    list-style: none;
+}
+.tr-more > summary::-webkit-details-marker { display: none; }
+.tr-more > summary::before {
+    content: "\25B8\00A0";   /* ▸ */
+}
+.tr-more[open] > summary {
+    margin-bottom: 9px;
+}
+.tr-more[open] > summary::before {
+    content: "\25BE\00A0";   /* ▾ */
+}
+.tr-more > summary:hover {
+    color: var(--primary);
+}
+
+/* ---- closing -------------------------------------------- */
+.tr-section { padding: clamp(38px, 6vw, 60px) 0; }
+.tr-closing {
+    border-top: 1px solid var(--rule);
+    background: var(--bg-wash);
+}
+.tr-closing h2 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+    color: var(--primary);
+}
+.tr-closing > .hi-shell { max-width: 860px; }
 .tr-closing p {
     margin: 12px 0 20px;
     max-width: 62ch;
@@ -141,6 +237,6 @@
     color: var(--ink-body);
 }
 
-@media (max-width: 520px) {
-    .tr-doclist li { justify-content: flex-start; }
+@media (max-width: 420px) {
+    .tr-grid { grid-template-columns: 1fr; }
 }

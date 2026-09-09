@@ -35,6 +35,12 @@ function pdfs(...segments) {
 
 const dashYears = (s) => s.replace(/(\d)-(\d)/, "$1–$2");
 
+// newest year first (filenames start "YYYY-", so a plain string sort works)
+const byYearDesc = (a, b) => b.year.localeCompare(a.year);
+
+// how many year pills to show before the "show all" disclosure kicks in
+const RECENT = 6;
+
 module.exports = () =>
   TRUSTS.map((t) => {
     const legalFiles = pdfs(t.id, "legal");
@@ -45,28 +51,48 @@ module.exports = () =>
       url: `/assets/documents/${t.id}/legal/${d.key}.pdf`,
     }));
 
-    const financialReports = pdfs(t.id, "financial-reports").map((f) => ({
-      year: dashYears(f.replace(/\.pdf$/i, "")),
-      url: `/assets/documents/${t.id}/financial-reports/${f}`,
-    }));
+    const financialReports = pdfs(t.id, "financial-reports")
+      .map((f) => ({
+        year: dashYears(f.replace(/\.pdf$/i, "")),
+        url: `/assets/documents/${t.id}/financial-reports/${f}`,
+      }))
+      .sort(byYearDesc);
 
-    const schoolAcknowledgements = pdfs(t.id, "school-acknowledgements").map((f) => ({
-      year: dashYears(f.replace(/\.pdf$/i, "")),
-      url: `/assets/documents/${t.id}/school-acknowledgements/${f}`,
-    }));
+    const schoolAcknowledgements = pdfs(t.id, "school-acknowledgements")
+      .map((f) => ({
+        year: dashYears(f.replace(/\.pdf$/i, "")),
+        url: `/assets/documents/${t.id}/school-acknowledgements/${f}`,
+      }))
+      .sort(byYearDesc);
 
-    const scholarshipCertificates = pdfs(t.id, "scholarship-certificates").map((f) => {
-      const base = f.replace(/\.pdf$/i, "");
-      const isSummary = /summary/i.test(base);
-      const span = dashYears(base.replace(/summary-?/i, ""));
-      return {
-        label: isSummary
-          ? { hi: `${span} — संकलित सारांश`, en: `${span} — consolidated summary` }
-          : { hi: span, en: span },
-        summary: isSummary,
-        url: `/assets/documents/${t.id}/scholarship-certificates/${f}`,
-      };
-    });
+    const scholarshipCertificates = pdfs(t.id, "scholarship-certificates")
+      .map((f) => {
+        const base = f.replace(/\.pdf$/i, "");
+        const isSummary = /summary/i.test(base);
+        const span = dashYears(base.replace(/summary-?/i, ""));
+        return {
+          label: isSummary
+            ? { hi: `${span} · संकलित सारांश`, en: `${span} · consolidated summary` }
+            : { hi: span, en: span },
+          summary: isSummary,
+          // sort key: real years by year desc, the summary always last
+          sortKey: isSummary ? "0000" : base,
+          url: `/assets/documents/${t.id}/scholarship-certificates/${f}`,
+        };
+      })
+      .sort((a, b) => b.sortKey.localeCompare(a.sortKey));
 
-    return { ...t, legal, financialReports, scholarshipCertificates, schoolAcknowledgements };
+    return {
+      ...t,
+      legal,
+      financialReports,
+      // split for the transparency page's "recent + show all" pattern
+      financialReportsRecent: financialReports.slice(0, RECENT),
+      financialReportsRest: financialReports.slice(RECENT),
+      financialReportsEarliest: financialReports.length
+        ? financialReports[financialReports.length - 1].year
+        : null,
+      scholarshipCertificates,
+      schoolAcknowledgements,
+    };
   });
