@@ -224,18 +224,35 @@
         }
 
         /* ---- closing ----------------------------------------- */
+        /* the through-line, cascading to its destination */
         .karma-closing-verse {
-            max-width: 760px;
-            margin: clamp(28px, 4vw, 38px) auto 0;
-            padding: clamp(24px, 3vw, 34px);
-            border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
-            color: var(--hi-ink);
-            background: rgba(255, 252, 246, .75);
+            max-width: 640px;
+            margin: clamp(30px, 5vw, 50px) auto 0;
             font-family: var(--hi-serif);
-            font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+        }
+
+        .karma-closing-verse span {
+            display: block;
+            margin-bottom: 6px;
+            color: #62544c;
+            font-size: clamp(1.08rem, 1.8vw, 1.4rem);
+            line-height: 1.75;
+        }
+
+        .karma-closing-verse i {
+            font-style: normal;
+            font-size: .78em;
+            font-weight: 400;
+            color: var(--hi-muted);
+        }
+
+        .karma-closing-verse strong {
+            display: block;
+            margin-top: clamp(12px, 2vw, 20px);
+            color: var(--hi-maroon);
+            font-size: clamp(1.6rem, 3.6vw, 2.6rem);
             font-weight: 700;
-            line-height: 1.8;
+            line-height: 1.25;
         }
 
         .karma-actions {
