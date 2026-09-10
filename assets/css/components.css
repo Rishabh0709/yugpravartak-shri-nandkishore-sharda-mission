@@ -307,9 +307,15 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     line-height: 1.75;
 }
 
+/* Centred standfirsts span the full heading block (not the 720px measure
+   cap that suits left-aligned body copy) and balance their wrap, so a
+   short line sits on one row and a long one breaks into even halves
+   instead of one long line + an orphan word. */
 .hi-section-heading--center p,
 .hi-section-heading--center .hi-lead {
     margin-inline: auto;
+    max-width: none;
+    text-wrap: balance;
 }
 
 .hi-feature-heading {

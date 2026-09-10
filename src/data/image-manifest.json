@@ -199,13 +199,8 @@
           "altEn": ""
         },
         "wonderful-world-after-death-cover": {
-          "src": "assets/images/wonderful-world-after-death-cover.png",
+          "src": "assets/images/books/04-full.webp",
           "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
-          "altEn": ""
-        },
-        "bhaiyaji-radiant-portrait": {
-          "src": "assets/images/bhaiyaji-radiant-portrait.jpg",
-          "altHi": "भैया जी का तेजस्वी चित्र",
           "altEn": ""
         },
         "sunday-guidance-gathering": {
@@ -213,10 +208,10 @@
           "altHi": "ज्ञान चर्चा और आध्यात्मिक मार्गदर्शन का दृश्य",
           "altEn": ""
         },
-        "page-hero": {
-          "src": "assets/images/books/02-full.webp",
-          "altHi": "",
-          "altEn": ""
+        "book-release": {
+          "src": "assets/images/gallery/gyan-ganga-mission/04-full.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार का विमोचन — श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन",
+          "altEn": "The release of the book by the Shri Nandkishore Sharda Gyan Ganga Mission"
         }
       },
       "media": {},
