@@ -26,9 +26,11 @@ const TRANSLATED = new Set([
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.
-// shri-nandkishore-sharda-chintan is itself now a redirect to
-// /margdarshan-siddhant.html (the two pages were merged).
-const SKIP = new Set(["404", "patterns", "shri-nandkishore-sharda-chintan"]);
+// shri-nandkishore-sharda-chintan -> redirect to /margdarshan-siddhant.html;
+// sadhna-aarambh -> redirect to /faq.html (both pairs were merged).
+const SKIP = new Set([
+  "404", "patterns", "shri-nandkishore-sharda-chintan", "sadhna-aarambh",
+]);
 
 module.exports = () =>
   fs

@@ -1,5 +1,5 @@
 {
-  "_note": "Practical / newcomer FAQ. Renders /faq.html + FAQPage JSON-LD. DIFFERENT in purpose from /jigyasa-samadhan.html (the deep spiritual Q&A) — do not merge the two. Hindi answers below are a DRAFT assembled from existing site content; to be reviewed/corrected with the Parivar.",
+  "_note": "Practical / newcomer FAQ. Renders the 'सामान्य प्रश्न' section of /faq.html + its FAQPage JSON-LD. /faq.html now also carries the merged 'साधना कैसे आरम्भ करें' guide (formerly /sadhna-aarambh.html, now a redirect stub). DIFFERENT in purpose from /jigyasa-samadhan.html (the deep spiritual Q&A) — do not merge those two. Hindi answers below are a DRAFT assembled from existing site content; to be reviewed/corrected with the Parivar.",
 
   "faqs": [
     {
@@ -20,13 +20,6 @@
       "q": { "hi": "क्या कोई शुल्क या सदस्यता है?", "en": "" },
       "a": {
         "hi": "नहीं। साधना का मार्गदर्शन, मणिद्वीप एवं सिद्धपीठ में बैठना, योग कक्षाएँ और मिशन द्वारा प्रकाशित समस्त सद्साहित्य पूर्णतः निःशुल्क हैं। कोई सदस्यता, दीक्षा-शुल्क या अनिवार्य दान नहीं है।",
-        "en": ""
-      }
-    },
-    {
-      "q": { "hi": "बुद्धि-विवेक योग साधना कैसे आरम्भ करें?", "en": "" },
-      "a": {
-        "hi": "यह साधना ‘मणिद्वीप’ (ए-183, शास्त्री नगर, जोधपुर) एवं ‘अध्यात्मयोगी श्री नन्दकिशोर शारदा साधना-स्थली (सिद्धपीठ)’ में सिखाई जाती है, जहाँ प्रत्येक साधक की जिज्ञासा, बौद्धिक क्षमता और परिस्थिति के अनुरूप मार्गदर्शन दिया जाता है। आरम्भ के लिए ‘मृत्यु के बाद का अलौकिक संसार’ का पठन-चिंतन और मणिद्वीप में सम्पर्क — दोनों उपयुक्त प्रथम चरण हैं।",
         "en": ""
       }
     },
