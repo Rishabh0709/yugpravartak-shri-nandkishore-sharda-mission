@@ -216,13 +216,23 @@
 
 .sk-consent {
     display: flex;
+    align-items: flex-start;
     gap: 10px;
     margin: 18px 0 0;
     font-size: .88rem;
     line-height: 1.6;
     color: var(--ink-body);
 }
-.sk-consent input { margin-top: 3px; flex: none; }
+/* explicit size + no stretch: as a flex item the checkbox would otherwise
+   stretch to the wrapped label's height and, with the browser's
+   aspect-ratio:1 on form controls, balloon into a huge square */
+.sk-consent input {
+    flex: none;
+    align-self: flex-start;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}
 
 .sk-form-actions {
     display: flex;
