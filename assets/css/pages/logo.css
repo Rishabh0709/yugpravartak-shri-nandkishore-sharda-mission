@@ -196,8 +196,11 @@
             box-shadow: 0 22px 54px rgba(75, 43, 29, .08);
         }
 
-        .pratik-universal__text p {
-            max-width: 1050px;
+        /* full-width prose in this card — overrides the global 68ch
+           reading cap (lang-hi.css) so the text runs to the card edge
+           like the heading above it */
+        .pratik-universal__text.hi-prose > p {
+            max-width: none;
         }
         .pratik-sadhna-cta {
             background: linear-gradient(180deg, rgba(244, 230, 209, .72), #fffaf1 100%);
