@@ -65,6 +65,27 @@
 }
 .agc-section .hi-prose p:last-child { margin-bottom: 0; }
 
+/* ---- section photo ---- */
+.agc-figure {
+    margin: clamp(22px, 3.6vw, 34px) 0 clamp(22px, 3.6vw, 30px);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface);
+}
+.agc-figure img {
+    display: block;
+    width: 100%;
+    height: clamp(230px, 32vw, 360px);
+    object-fit: cover;
+}
+.agc-figure figcaption {
+    padding: 12px 16px 14px;
+    font-size: .88rem;
+    line-height: 1.55;
+    color: var(--ink-muted);
+}
+
 /* ---- points list ---- */
 .agc-points {
     list-style: none;

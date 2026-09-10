@@ -919,6 +919,27 @@
       },
       "media": {},
       "cssBackgrounds": []
+    },
+    "adhyatmik-gyan-charcha": {
+      "images": {
+        "page-hero": {
+          "src": "assets/images/gallery/spiritual-discourses/01-full.webp",
+          "altHi": "",
+          "altEn": ""
+        },
+        "gathering": {
+          "src": "assets/images/gallery/spiritual-discourses/03-full.webp",
+          "altHi": "मणिद्वीप में रविवारीय आध्यात्मिक ज्ञान चर्चा — मधु माँ के मार्गदर्शन में सम्मिलित परिवार",
+          "altEn": "A Sunday spiritual knowledge discussion at Manidweep"
+        },
+        "prayer": {
+          "src": "assets/images/gallery/spiritual-discourses/07-full.webp",
+          "altHi": "आध्यात्मिक ज्ञान चर्चा में प्रार्थना का क्षण — हाथ जोड़े साधक",
+          "altEn": "A moment of prayer during a spiritual knowledge discussion"
+        }
+      },
+      "media": {},
+      "cssBackgrounds": []
     }
   }
 }
