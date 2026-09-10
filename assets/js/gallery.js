@@ -19,6 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = dialog.querySelector(".lightbox-next");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+    // data-* attributes are not rewritten by Eleventy's HTML base plugin, so a
+    // root-relative data-full path (/assets/...) misses the pathPrefix in
+    // production. Resolve it against the same base the rest of the site uses.
+    const base = (window.__BASEURL__ || "/").replace(/\/$/, "");
+    const withBase = (path) => {
+        if (!path || /^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("data:")) return path;
+        return path.startsWith("/") ? base + path : path;
+    };
+
     const isHi = document.documentElement.lang === "hi";
     const L = {
         fallbackTitle: isHi ? "गैलरी चित्र" : "Gallery image",
@@ -61,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = visibleCards[activeIndex];
         const cardImage = card.querySelector("img");
 
-        image.src = card.dataset.full || cardImage.currentSrc || cardImage.src;
+        image.src = withBase(card.dataset.full) || cardImage.currentSrc || cardImage.src;
         image.alt = cardImage.alt || card.dataset.title || "";
         title.textContent = card.dataset.title || L.fallbackTitle;
         caption.textContent = card.dataset.caption || "";
