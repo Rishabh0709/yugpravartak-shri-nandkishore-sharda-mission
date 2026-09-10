@@ -67,27 +67,6 @@
             order: 2;
         }
 
-        /* §places — the two sadhana-sthal shown as an equal diptych */
-        .bvys-places__diptych {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: clamp(16px, 2.4vw, 26px);
-        }
-
-        .bvys-places__diptych .bvys-media img {
-            height: clamp(230px, 30vw, 380px);
-        }
-
-        .bvys-places__prose {
-            max-width: 70ch;
-            margin-top: clamp(26px, 3.4vw, 40px);
-        }
-
-        .bvys-places__diptych figcaption strong {
-            color: var(--hi-maroon);
-            font-weight: 800;
-        }
-
         .bvys-media {
             margin: 0;
             overflow: hidden;
@@ -321,8 +300,7 @@
 
             .bvys-essence__grid,
             .bvys-step-grid,
-            .bvys-anubhuti-grid,
-            .bvys-places__diptych {
+            .bvys-anubhuti-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -332,9 +310,5 @@
 
             .bvys-media img {
                 height: 360px;
-            }
-
-            .bvys-places__diptych .bvys-media img {
-                height: clamp(220px, 56vw, 300px);
             }
         }
