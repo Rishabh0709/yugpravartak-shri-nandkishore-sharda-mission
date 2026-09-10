@@ -162,15 +162,10 @@
           "altHi": "ज्ञान के प्रकाश और आध्यात्मिक चिंतन का वातावरण",
           "altEn": ""
         },
-        "buddhi-vivek-yog-sadhna-symbol": {
-          "src": "assets/images/buddhi-vivek-yog-sadhna-symbol.jpg",
-          "altHi": "बुद्धि-विवेक योग साधना का प्रतीक",
-          "altEn": ""
-        },
         "budhivivek": {
           "src": "assets/images/buddhi-vivek-yog-sadhna-symbol.jpg",
-          "altHi": "बुद्धि-विवेक योग साधना का कमल प्रतीक",
-          "altEn": ""
+          "altHi": "बुद्धि-विवेक योग साधना का कमल रूपक — पंखुड़ियों पर ज्ञान, विज्ञान, चिंतन, संकल्प, समर्पण, कर्म-साधना और प्रेम, शांति, आनंद अंकित",
+          "altEn": "The lotus image of the Buddhi-Vivek Yoga Sadhana with its petals marked with the six steps and three experiences"
         },
         "manidweep-office": {
           "src": "assets/images/manidweep-office.jpg",
@@ -178,7 +173,7 @@
           "altEn": ""
         },
         "page-hero": {
-          "src": "assets/images/buddhi-vivek-yog-sadhna-original.jpg",
+          "src": "assets/images/gallery/sunday-sanskar-classes/01-full.webp",
           "altHi": "",
           "altEn": ""
         }
