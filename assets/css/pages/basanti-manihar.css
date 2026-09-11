@@ -164,6 +164,17 @@
             object-fit: cover;
         }
 
+        /* §sanskar-seva and §margdarshan use wide group/gathering photos —
+           the shared clamp(330-520px) height + object-fit:cover was
+           cropping people off the sides. Let these two run at their own
+           landscape ratio instead: full image, no crop, no letterboxing. */
+        #sanskar-seva .maa-journey__media img,
+        #margdarshan .maa-journey__media img {
+            height: auto;
+            aspect-ratio: auto;
+            object-fit: contain;
+        }
+
         .maa-journey__media figcaption {
             position: absolute;
             right: 14px;
