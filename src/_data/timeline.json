@@ -1,26 +1,36 @@
 {
-  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds /itihaas.html + the homepage timeline. Bodies to be written/verified with the Parivar in Phase 3. `image` (optional) drives the milestone photo marker on /itihaas.html — only added where a genuinely representative photo exists; the spiritual-journey entries (1944-1990) intentionally stay text-only. NOTE: Maa Shardamani Trust's 2001 founding is not yet an entry here — flagged to the owner, not added without confirmation.",
+  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds /itihaas.html + the homepage timeline. Bodies to be written/verified with the Parivar in Phase 3. `image` (optional) drives the milestone photo marker on /itihaas.html; every event currently has one (owner-supplied sources, 2026-09-11) — some (1944, 1959, 1964, 1970) are representative/devotional photos rather than dated period photos of that exact year, since none survive from the actual dates.",
 
   "events": [
     { "year": "1944", "date": "1944-07-16", "phase": "spiritual-journey",
       "title": { "hi": "भैया जी का जन्म", "en": "Bhaiyaji is born" },
-      "body": { "hi": "जोधपुर में श्री नन्दकिशोर शारदा का जन्म।", "en": "Shri Nandkishore Sharda is born in Jodhpur." } },
+      "body": { "hi": "जोधपुर में श्री नन्दकिशोर शारदा का जन्म।", "en": "Shri Nandkishore Sharda is born in Jodhpur." },
+      "image": { "src": "assets/images/bhaiyaji/12-full.webp", "w": 369, "h": 499,
+        "altHi": "बाल्यकाल में श्री नन्दकिशोर शारदा", "altEn": "Shri Nandkishore Sharda in his early years" } },
 
     { "year": "1959", "phase": "spiritual-journey",
       "title": { "hi": "वैराग्य का संकल्प", "en": "The vow" },
-      "body": { "hi": "पिता के देहावसान के पश्चात्, 15 वर्ष की आयु में सत्य की खोज का संकल्प।", "en": "After his father’s passing, at the age of 15, the resolve to seek the truth." } },
+      "body": { "hi": "पिता के देहावसान के पश्चात्, 15 वर्ष की आयु में सत्य की खोज का संकल्प।", "en": "After his father’s passing, at the age of 15, the resolve to seek the truth." },
+      "image": { "src": "assets/images/bhaiyaji/10-full.webp", "w": 1201, "h": 1560,
+        "altHi": "ध्यानमग्न भैया जी", "altEn": "Bhaiyaji absorbed in meditation" } },
 
     { "year": "1964", "phase": "spiritual-journey",
       "title": { "hi": "माँ बसन्ती मनिहार का अध्यात्म-पथ पर आगमन", "en": "Maa Basanti Manihar joins the path" },
-      "body": { "hi": "", "en": "Sushri Basanti Manihar comes to the spiritual path." } },
+      "body": { "hi": "", "en": "Sushri Basanti Manihar comes to the spiritual path." },
+      "image": { "src": "assets/images/basanti-maa/16-full.webp", "w": 901, "h": 640,
+        "altHi": "माँ बसन्ती जी घर के पूजा-स्थल पर आराधना करते हुए", "altEn": "Maa Basanti in worship at a home shrine" } },
 
     { "year": "1970", "phase": "spiritual-journey",
       "title": { "hi": "कुमारी मधुबाला अडवानी का आगमन", "en": "Kumari Madhubala Advani joins the path" },
-      "body": { "hi": "", "en": "Kumari Madhubala Advani comes to the spiritual path." } },
+      "body": { "hi": "", "en": "Kumari Madhubala Advani comes to the spiritual path." },
+      "image": { "src": "assets/images/madhu_maa_sadhna.jpg", "w": 1920, "h": 1080,
+        "altHi": "मधु माँ पूजा-स्थल पर आराधना करते हुए", "altEn": "Madhu Maa in worship at a home shrine" } },
 
     { "year": "1990", "phase": "spiritual-journey",
       "title": { "hi": "चक्र धारण — गोवा", "en": "Chakra Dharan, Goa" },
-      "body": { "hi": "दक्षिण भारत की यात्रा में समुद्र के मध्य एक चट्टान पर “अब मैं चक्र धारण करता हूँ।”", "en": "On a journey through South India, on a rock amid the sea: “Now I take up the chakra.”" } },
+      "body": { "hi": "दक्षिण भारत की यात्रा में समुद्र के मध्य एक चट्टान पर “अब मैं चक्र धारण करता हूँ।”", "en": "On a journey through South India, on a rock amid the sea: “Now I take up the chakra.”" },
+      "image": { "src": "assets/images/bhaiyaji-chakra-dharan.webp", "w": 1085, "h": 1450,
+        "altHi": "गोवा में समुद्र के मध्य एक चट्टान पर भैया जी", "altEn": "Bhaiyaji on a rock amid the sea, Goa" } },
 
     { "year": "1995", "phase": "seva",
       "title": { "hi": "मणिद्वीप भवन", "en": "Manidweep is established" },
@@ -30,7 +40,15 @@
 
     { "year": "1996", "phase": "seva",
       "title": { "hi": "निष्काम कर्म साधना का आरम्भ", "en": "Nishkam Karma Sadhana begins" },
-      "body": { "hi": "‘माँ’ की आज्ञा से शिक्षा, संस्कार, छात्रवृत्ति एवं मानव सेवा के प्रकल्पों का शुभारम्भ। यहीं से मिशन का लोककल्याणकारी कार्य आरम्भ होता है।", "en": "At ‘Maa’s’ command, the projects of education, sanskar, scholarships and human service begin. The Mission’s work for public welfare starts here." } },
+      "body": { "hi": "‘माँ’ की आज्ञा से शिक्षा, संस्कार, छात्रवृत्ति एवं मानव सेवा के प्रकल्पों का शुभारम्भ। यहीं से मिशन का लोककल्याणकारी कार्य आरम्भ होता है।", "en": "At ‘Maa’s’ command, the projects of education, sanskar, scholarships and human service begin. The Mission’s work for public welfare starts here." },
+      "image": { "src": "assets/images/trust-related/08-full.webp", "w": 588, "h": 354,
+        "altHi": "स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चेरिटेबल ट्रस्ट का शिलापट्ट", "altEn": "The Swami Vivekanand Students' Welfare Charitable Trust plaque" } },
+
+    { "year": "2001", "phase": "seva",
+      "title": { "hi": "माँ शारदामणि ट्रस्ट की स्थापना", "en": "Maa Shardamani Trust founded" },
+      "body": { "hi": "विद्यालय-शिक्षा के आगे, उच्च एवं व्यावसायिक शिक्षा में बालिकाओं को छात्रवृत्ति सहयोग हेतु।", "en": "For scholarship support to girls in higher and professional education, carrying on from school-level education." },
+      "image": { "src": "assets/images/gallery/scholarship-distribution/12-full.webp", "w": 573, "h": 413,
+        "altHi": "माँ शारदामणि ट्रस्ट द्वारा छात्रवृत्ति वितरण", "altEn": "A scholarship distribution by the Maa Shardamani Trust" } },
 
     { "year": "2003", "date": "2003-01-24", "phase": "seva",
       "title": { "hi": "भैया जी चैतन्यस्वरूप; माँ बसन्ती का नेतृत्व", "en": "Bhaiyaji leaves the physical body; Maa Basanti leads" },
