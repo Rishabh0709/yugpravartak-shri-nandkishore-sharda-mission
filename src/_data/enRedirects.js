@@ -23,6 +23,7 @@ const TRANSLATED = new Set([
   "transparency", "sampark", "donate",
   "shri-nandkishore-sharda", "basanti-manihar", "madhubala-advani",
   "news-events", "testimonials", "gallery", "video-detail",
+  "samman-evam-puraskar",
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.

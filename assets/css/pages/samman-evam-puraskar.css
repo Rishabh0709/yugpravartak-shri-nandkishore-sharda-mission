@@ -1,0 +1,218 @@
+/* ============================================================
+   Awards & Recognition page
+   ============================================================ */
+
+.samman-page {
+    color: var(--ink);
+    background: var(--bg);
+}
+
+.sm-section { padding: var(--section-y) 0; }
+.sm-section + .sm-section { border-top: 1px solid var(--rule); }
+.sm-section--alt { background: var(--bg-wash); }
+.sm-section > .hi-shell { max-width: 900px; }
+
+.sm-phase { max-width: 68ch; margin-bottom: clamp(30px, 4.5vw, 46px); }
+.sm-phase .hi-kicker {
+    margin-bottom: 6px;
+    font-family: var(--font-latin);
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+.sm-phase h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    color: var(--primary);
+}
+.sm-phase p {
+    margin: 0;
+    font-size: .98rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+
+/* ---- timeline ---- */
+.sm-timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.sm-timeline::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    bottom: 14px;
+    left: 35px;
+    width: 2px;
+    z-index: 0;
+    background: linear-gradient(180deg, var(--gold), rgba(185, 138, 52, .15));
+}
+
+.sm-event {
+    position: relative;
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    grid-template-areas: "thumb year" "thumb body";
+    column-gap: 22px;
+    padding: clamp(16px, 2.4vw, 22px) 0;
+}
+.sm-event + .sm-event { border-top: 1px dashed var(--rule); }
+
+.sm-event__thumb {
+    grid-area: thumb;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px rgba(185, 138, 52, .22), 0 8px 18px rgba(43, 33, 30, .16);
+}
+.sm-section--alt .sm-event__thumb {
+    box-shadow: 0 0 0 4px var(--bg-wash), 0 0 0 6px rgba(185, 138, 52, .22), 0 8px 18px rgba(43, 33, 30, .16);
+}
+.sm-event__thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sm-event__year {
+    grid-area: year;
+    padding-top: 4px;
+    font-family: var(--font-latin);
+    font-weight: 600;
+    font-size: 1.35rem;
+    color: var(--primary);
+}
+.sm-event__body { grid-area: body; }
+.sm-event__body h3 {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 1.12rem;
+    line-height: 1.4;
+    color: var(--ink);
+}
+.sm-event__body p {
+    margin: 6px 0 0;
+    font-size: .94rem;
+    line-height: 1.75;
+    color: var(--ink-body);
+}
+
+/* ---- roads named after Bhaiyaji ---- */
+.sm-roads {
+    margin-top: clamp(48px, 6vw, 72px);
+    padding-top: clamp(40px, 5vw, 56px);
+    border-top: 1px solid var(--rule);
+}
+
+.sm-roads__title {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+    line-height: 1.3;
+}
+
+.sm-roads__intro {
+    max-width: 780px;
+    margin: 0 0 28px;
+    color: var(--ink-body);
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.sm-roads__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.sm-road {
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.sm-road__media { margin: 0; }
+.sm-road__media img {
+    display: block;
+    width: 100%;
+    height: clamp(150px, 18vw, 210px);
+    object-fit: cover;
+}
+
+.sm-road__body { padding: clamp(18px, 2.2vw, 22px); }
+
+.sm-road__city {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--primary);
+    color: var(--surface);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .02em;
+}
+
+.sm-road__name {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: 1.14rem;
+    line-height: 1.35;
+}
+
+.sm-road__date {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--gold-deep);
+    font-size: .88rem;
+    font-weight: 700;
+}
+
+.sm-road__route {
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-muted);
+    font-size: .92rem;
+    line-height: 1.65;
+}
+
+/* ---- closing ---- */
+.sm-closing { background: var(--bg-wash); text-align: center; }
+.sm-closing h2 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    color: var(--primary);
+}
+.sm-closing p {
+    margin: 0 auto 20px;
+    max-width: 62ch;
+    font-size: .98rem;
+    line-height: 1.8;
+    color: var(--ink-body);
+}
+.sm-closing .hi-actions { justify-content: center; }
+
+@media (max-width: 640px) {
+    .sm-timeline::before { left: 26px; }
+    .sm-event { grid-template-columns: 56px 1fr; column-gap: 16px; }
+    .sm-event__thumb { width: 56px; height: 56px; }
+    .sm-event__body h3 { font-size: 1.02rem; }
+    .sm-event__year { font-size: 1.1rem; }
+
+    .sm-roads__grid { grid-template-columns: 1fr; }
+}
