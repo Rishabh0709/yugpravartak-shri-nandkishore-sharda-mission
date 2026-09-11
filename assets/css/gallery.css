@@ -268,15 +268,15 @@ body.gallery-page.gallery-modal-open {
     overflow: hidden;
     padding: 88px 0;
     text-align: center;
-    background: var(--gallery-ink);
-    color: #f5eee4;
+    background: linear-gradient(145deg, #fbf7ef 0%, #f3e8d9 58%, #eedbc9 100%);
+    color: var(--gallery-ink);
 }
 
 .gallery-closing::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 0, rgba(193, 85, 44, .2), transparent 45%);
+    background: radial-gradient(circle at 50% 0, rgba(193, 85, 44, .14), transparent 45%);
 }
 
 .gallery-closing-inner {
@@ -285,19 +285,19 @@ body.gallery-page.gallery-modal-open {
 }
 
 .gallery-closing .gallery-eyebrow {
-    color: #d5ae59;
+    color: var(--gallery-gold);
 }
 
 .gallery-closing h2 {
     margin: 12px 0 18px;
-    color: #fffaf1;
+    color: var(--gallery-ink);
     font-size: clamp(2rem, 4vw, 3.4rem);
     line-height: 1.18;
 }
 
 .gallery-closing p {
     margin: 0 auto;
-    color: #d9d0dd;
+    color: var(--gallery-muted);
     font-family: "Noto Serif Devanagari", serif;
     font-size: 1.05rem;
     line-height: 1.78;
