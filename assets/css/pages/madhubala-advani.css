@@ -163,6 +163,12 @@
             object-fit: cover;
         }
 
+        /* §gyan-jwala's photo is wide (AR ~1.78) — cover was cropping it
+           inside the shared tall frame. Run it at its own ratio instead. */
+        #gyan-jwala .madhu-journey__media img {
+            height: auto;
+        }
+
         .madhu-journey__media figcaption {
             position: absolute;
             right: 14px;

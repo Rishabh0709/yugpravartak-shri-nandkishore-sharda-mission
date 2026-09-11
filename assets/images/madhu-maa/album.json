@@ -1,0 +1,158 @@
+{
+  "album": "madhu-maa",
+  "generatedAt": "2026-09-11T10:22:11.811Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\madhu-maa",
+  "photographCount": 5,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "madhu-maa",
+      "original": {
+        "file": "002.JPG",
+        "width": 2848,
+        "height": 4288,
+        "bytes": 3147823
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10350
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 731,
+        "height": 1100,
+        "bytes": 88790
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 2710,
+        "bytes": 386798
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "madhu-maa",
+      "original": {
+        "file": "05.JPG",
+        "width": 4288,
+        "height": 2848,
+        "bytes": 3168441
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 13594
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 598,
+        "bytes": 76792
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1800,
+        "height": 1196,
+        "bytes": 253142
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "madhu-maa",
+      "original": {
+        "file": "DSC_0084.JPG",
+        "width": 4288,
+        "height": 2848,
+        "bytes": 3536989
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 7432
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 598,
+        "bytes": 41708
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1800,
+        "height": 1196,
+        "bytes": 152328
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "madhu-maa",
+      "original": {
+        "file": "DSC_0100.JPG",
+        "width": 4288,
+        "height": 2848,
+        "bytes": 3632130
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12288
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 731,
+        "height": 1100,
+        "bytes": 72284
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 2710,
+        "bytes": 326928
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "madhu-maa",
+      "original": {
+        "file": "DSC_0101.JPG",
+        "width": 4288,
+        "height": 2848,
+        "bytes": 3136921
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 12068
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 731,
+        "height": 1100,
+        "bytes": 75220
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 2710,
+        "bytes": 385196
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}

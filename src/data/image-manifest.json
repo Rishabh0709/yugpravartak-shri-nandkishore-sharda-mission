@@ -500,14 +500,14 @@
           "altEn": ""
         },
         "bhaiyaji-maa-home-hero": {
-          "src": "assets/images/bhaiyaji-maa-home-hero.jpg",
-          "altHi": "भैया जी, माँ बसन्ती जी और मधु माँ से जुड़ी आध्यात्मिक स्मृति",
-          "altEn": ""
+          "src": "assets/images/madhu-maa/01-full.webp",
+          "altHi": "भैया जी के चित्र के समक्ष मधु माँ और माँ बसन्ती जी",
+          "altEn": "Madhu Maa and Maa Basanti before Bhaiyaji's portrait"
         },
         "madhu-maa-sadhna": {
-          "src": "assets/images/madhu_maa_sadhna.jpg",
-          "altHi": "मधु माँ की साधना का भावपूर्ण चित्र",
-          "altEn": ""
+          "src": "assets/images/madhu-maa/maa-bhaiya-madhu_maa.jpg",
+          "altHi": "भैया जी और माँ बसन्ती जी के आशीर्वाद में मधु माँ",
+          "altEn": "Madhu Maa in the blessing of Bhaiyaji and Maa Basanti"
         },
         "madhu-maa-transcribing-book": {
           "src": "assets/images/madhu-maa-transcribing-book.jpg",
@@ -515,14 +515,14 @@
           "altEn": ""
         },
         "madhu-story-living-leadership": {
-          "src": "assets/images/madhu-story-living-leadership.webp",
-          "altHi": "मधु माँ वर्तमान नेतृत्व और सेवा कार्यों में",
-          "altEn": ""
+          "src": "assets/images/trust_activity.jpg",
+          "altHi": "मधु माँ मार्गदर्शन में राशन-वितरण सेवा कार्यक्रम में",
+          "altEn": "Madhu Maa leading a food-grain distribution programme"
         },
         "madhu-maa-guiding-students": {
-          "src": "assets/images/madhu-maa-guiding-students.webp",
-          "altHi": "मधु माँ छात्राओं का मार्गदर्शन करती हुईं",
-          "altEn": ""
+          "src": "assets/images/madhu-maa/madhu_maa.jpg",
+          "altHi": "मधु माँ की आनन्दमयी मुस्कान",
+          "altEn": "Madhu Maa's joyful smile"
         },
         "madhu-story-expanding-care": {
           "src": "assets/images/madhu-story-expanding-care.webp",
