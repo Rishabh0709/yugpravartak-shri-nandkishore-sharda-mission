@@ -1,7 +1,6 @@
 .mission-page {
             color: var(--hi-ink);
             background: var(--bg);
-            counter-reset: mchapter;
         }
 
         .mission-glance {
@@ -45,13 +44,17 @@
             position: relative;
             overflow: hidden;
             padding-block: clamp(64px, 7.5vw, 104px);
-            counter-increment: mchapter;
         }
 
         /* a quiet rhythm between chapters instead of one flat, unbroken
-           stretch of identical background all the way down the page */
+           stretch of identical background all the way down the page —
+           the wash is drawn from the sky-to-sunrise-over-water lotus
+           artwork in §sadhna-method (buddhi-vivek-yog-sadhna-original.jpg) */
         .mission-chapter:nth-of-type(even) {
-            background: linear-gradient(180deg, #fffaf1 0%, rgba(244, 230, 209, .55) 100%);
+            background: linear-gradient(180deg,
+                rgba(205, 226, 235, .4) 0%,
+                rgba(246, 227, 176, .32) 52%,
+                rgba(179, 205, 222, .26) 100%);
         }
 
         /* a hairline between chapters that share the same background,
@@ -86,26 +89,6 @@
             width: 100%;
             height: clamp(330px, 38vw, 520px);
             object-fit: cover;
-        }
-
-        /* a quiet chapter number — the eight sections read as one
-           unfolding journey, not eight unrelated blocks */
-        .mission-chapter__media::before {
-            content: "0" counter(mchapter);
-            position: absolute;
-            top: 14px;
-            left: 14px;
-            z-index: 1;
-            display: grid;
-            place-items: center;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            color: #fffaf1;
-            background: rgba(41, 29, 37, .68);
-            font-family: var(--hi-serif);
-            font-weight: 800;
-            font-size: 1rem;
         }
 
         .mission-chapter__media figcaption {
