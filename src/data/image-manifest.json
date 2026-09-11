@@ -25,9 +25,9 @@
           "altEn": ""
         },
         "book-01": {
-          "src": "assets/images/book-01.png",
-          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक",
-          "altEn": ""
+          "src": "assets/images/books/04-full.webp",
+          "altHi": "मृत्यु के बाद का अलौकिक संसार पुस्तक का आवरण",
+          "altEn": "Cover of Mrityu ke Baad ka Alaukik Sansar"
         },
         "maa-shardamani-scholarship-distribution": {
           "src": "assets/images/maa-shardamani-scholarship-distribution.jpg",
@@ -35,19 +35,19 @@
           "altEn": ""
         },
         "ration": {
-          "src": "assets/images/ration.jpg",
-          "altHi": "खाद्यान्न वितरण सेवा",
-          "altEn": ""
+          "src": "assets/images/gallery/food-assistance/03-card.webp",
+          "altHi": "जरूरतमंद परिवारों को खाद्यान्न किट वितरण",
+          "altEn": "Food-grain kits being distributed to families in need"
         },
         "madhu-maa-transcribing-book": {
-          "src": "assets/images/madhu-maa-transcribing-book.jpg",
-          "altHi": "सद्साहित्य को लिपिबद्ध और प्रकाशित करने की सेवा",
-          "altEn": ""
+          "src": "assets/images/gallery/gyan-ganga-mission/11-full.webp",
+          "altHi": "सद्साहित्य का निःशुल्क वितरण",
+          "altEn": "The free distribution of spiritual literature"
         },
         "madhu-story-living-leadership": {
-          "src": "assets/images/madhu-story-living-leadership.webp",
-          "altHi": "मणिद्वीप के कार्यों का वर्तमान संचालन",
-          "altEn": ""
+          "src": "assets/images/madhu-maa-home-hero.webp",
+          "altHi": "मधु माँ, भैया जी और माँ बसन्ती जी के चित्रों के साथ",
+          "altEn": "Madhu Maa, seated with photographs of Bhaiyaji and Maa Basanti"
         }
       },
       "media": {},

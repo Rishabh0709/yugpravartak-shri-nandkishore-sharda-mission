@@ -1,6 +1,7 @@
 .mission-page {
             color: var(--hi-ink);
             background: var(--bg);
+            counter-reset: mchapter;
         }
 
         .mission-glance {
@@ -41,18 +42,23 @@
         }
 
         .mission-chapter {
+            position: relative;
             overflow: hidden;
-            padding-block: clamp(70px, 8vw, 116px);
+            padding-block: clamp(64px, 7.5vw, 104px);
+            counter-increment: mchapter;
         }
 
-        .mission-chapter--purpose { background: var(--bg);}
-        .mission-chapter--method { background: var(--bg);}
-        .mission-chapter--origin { background: var(--bg);}
-        .mission-chapter--knowledge { background: var(--bg);}
-        .mission-chapter--education { background: var(--bg);}
-        .mission-chapter--care { background: var(--bg);}
-        .mission-chapter--publications { background: var(--bg);}
-        .mission-chapter--continuity { background: var(--bg);}
+        /* a quiet rhythm between chapters instead of one flat, unbroken
+           stretch of identical background all the way down the page */
+        .mission-chapter:nth-of-type(even) {
+            background: linear-gradient(180deg, #fffaf1 0%, rgba(244, 230, 209, .55) 100%);
+        }
+
+        /* a hairline between chapters that share the same background,
+           so each still reads as its own beat */
+        .mission-chapter + .mission-chapter {
+            border-top: 1px solid rgba(121, 43, 42, .08);
+        }
 
         .mission-chapter__grid {
             display: grid;
@@ -80,6 +86,26 @@
             width: 100%;
             height: clamp(330px, 38vw, 520px);
             object-fit: cover;
+        }
+
+        /* a quiet chapter number — the eight sections read as one
+           unfolding journey, not eight unrelated blocks */
+        .mission-chapter__media::before {
+            content: "0" counter(mchapter);
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 1;
+            display: grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            color: #fffaf1;
+            background: rgba(41, 29, 37, .68);
+            font-family: var(--hi-serif);
+            font-weight: 800;
+            font-size: 1rem;
         }
 
         .mission-chapter__media figcaption {
@@ -119,8 +145,7 @@
             color: #8a2f2d;
         }
 
-        .mission-note,
-        .mission-mantra {
+        .mission-note {
             margin-top: 24px;
             padding: 22px 24px;
             border-left: 4px solid var(--hi-gold);
@@ -133,10 +158,35 @@
             line-height: 1.72;
         }
 
+        /* the closing mantra as a cascading verse rather than one dense,
+           bordered paragraph — it climaxes on its last line, echoing the
+           same device used for the karma-sadhana closing verse elsewhere
+           on the site */
         .mission-mantra {
+            display: grid;
+            gap: 10px;
+            margin-top: clamp(30px, 4.5vw, 44px);
+            padding-top: clamp(22px, 3vw, 30px);
+            border-top: 1px solid rgba(198, 148, 53, .32);
             text-align: center;
-            border-left: 0;
-            border-top: 4px solid var(--hi-gold);
+        }
+
+        .mission-mantra span {
+            display: block;
+            color: #6d5d53;
+            font-family: var(--hi-serif);
+            font-style: italic;
+            font-weight: 600;
+            font-size: clamp(1.04rem, 1.5vw, 1.24rem);
+            line-height: 1.7;
+        }
+
+        .mission-mantra span:last-child {
+            margin-top: 4px;
+            color: var(--hi-maroon);
+            font-style: normal;
+            font-weight: 800;
+            font-size: clamp(1.22rem, 2.1vw, 1.6rem);
         }
 
         .mission-closing {
