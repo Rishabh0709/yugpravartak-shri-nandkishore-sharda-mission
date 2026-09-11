@@ -9,11 +9,12 @@ const path = require("node:path");
  *   https://rishabh0709.github.io/yugpravartak-shri-nandkishore-sharda-mission/
  * every absolute path must be prefixed with the repo name.
  *
- * When the site is pointed at https://manidweepjodhpur.org (still
+ * When the site is pointed at https://manidweepjodhpur.com (still
  * hosted on GitHub Pages, but at the domain root), build with:
  *   ELEVENTY_PATH_PREFIX=/  npm run build
- * src/CNAME (containing manidweepjodhpur.org) is already in place and
- * copied into the build output below.
+ * src/CNAME (containing manidweepjodhpur.com) is already in place and
+ * copied into the build output below. Note: manidweepjodhpur.org is a
+ * separate, different website — not this repo.
  */
 const PATH_PREFIX =
   process.env.ELEVENTY_PATH_PREFIX || "/yugpravartak-shri-nandkishore-sharda-mission/";
