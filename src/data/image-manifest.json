@@ -61,54 +61,54 @@
           "altEn": ""
         },
         "about-maa": {
-          "src": "assets/images/about_maa.jpg",
-          "altHi": "माँ बसन्ती जी का आत्मीय चित्र",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/17-full.webp",
+          "altHi": "माँ बसन्ती जी की भावपूर्ण आराधना",
+          "altEn": "Maa Basanti in heartfelt worship"
         },
         "maa-bhaiya": {
-          "src": "assets/images/maa_bhaiya.jpg",
-          "altHi": "भैया जी और माँ बसन्ती जी का आत्मीय स्मृति चित्र",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/02-full.webp",
+          "altHi": "सुशिक्षित, सुसंस्कृत परिवार में माँ बसन्ती जी",
+          "altEn": "Maa Basanti from her well-educated, cultured family"
         },
         "maa-sadhna": {
-          "src": "assets/images/maa_sadhna.jpg",
-          "altHi": "माँ बसन्ती जी की साधना का भावपूर्ण चित्र",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/13-full.webp",
+          "altHi": "माँ बसन्ती जी की एकनिष्ठ साधना",
+          "altEn": "Maa Basanti's single-minded sadhana"
         },
         "bhaiya-maa": {
-          "src": "assets/images/bhaiya_maa.jpg",
-          "altHi": "भैया जी और माँ बसन्ती जी का चित्र",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/10-full.webp",
+          "altHi": "माँ के चरणों में सिर टिकाए भावविभोर माँ बसन्ती जी",
+          "altEn": "Maa Basanti resting her head at the shrine, overcome with love"
         },
         "manidweep-office": {
-          "src": "assets/images/manidweep-office.jpg",
-          "altHi": "मणिद्वीप भवन",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/09-full.webp",
+          "altHi": "मणिद्वीप के साधना-कक्ष में माँ बसन्ती जी",
+          "altEn": "Maa Basanti in the sadhana room at Manidweep"
         },
         "book-01": {
-          "src": "assets/images/book-01.png",
-          "altHi": "भैया जी के दिव्य ज्ञान से जुड़ा प्रकाशित साहित्य",
-          "altEn": ""
+          "src": "assets/images/basanti-maa/maa_bvys.jpg",
+          "altHi": "माँ बसन्ती जी, बुद्धि-विवेक योग साधना के कमल-चिन्ह के साथ",
+          "altEn": "Maa Basanti beside the lotus symbol of the Buddhi-Vivek Yoga Sadhana"
         },
         "sanskar-classes": {
-          "src": "assets/images/sanskar_classes.jpg",
-          "altHi": "रविवार संस्कार कक्षाओं का दृश्य",
-          "altEn": ""
+          "src": "assets/images/gallery/sunday-sanskar-classes/09-full.webp",
+          "altHi": "रविवार संस्कार कक्षा में विद्यार्थियों को सम्बोधित करते हुए",
+          "altEn": "Addressing students at a Sunday Sanskar class"
         },
         "bhaiyaji-sadhna-1": {
-          "src": "assets/images/bhaiyaji_sadhna_1.webp",
-          "altHi": "साधना-स्थली सिद्धपीठ का प्रतीकात्मक दृश्य",
-          "altEn": ""
+          "src": "assets/images/page-14_image-02_Im189.png",
+          "altHi": "सिद्धपीठ में माँ त्रिपुरसुन्दरी के चित्र की आराधना",
+          "altEn": "Worship of Maa Tripurasundari's image at the Siddhapeeth"
         },
         "sunday-guidance-gathering": {
-          "src": "assets/images/sunday-guidance-gathering.webp",
-          "altHi": "जिज्ञासुओं के मार्गदर्शन का दृश्य",
-          "altEn": ""
+          "src": "assets/images/gallery/spiritual-discourses/05-full.webp",
+          "altHi": "साधकों के परिवार सहित मार्गदर्शन-सत्र में",
+          "altEn": "A guidance session with sadhaks and their families"
         },
         "spiritual-hero-bhaiyaji-maa": {
-          "src": "assets/images/spiritual-hero-bhaiyaji-maa.jpg",
-          "altHi": "भैया जी और माँ बसन्ती जी की आध्यात्मिक स्मृति",
-          "altEn": ""
+          "src": "assets/images/about_maa.jpg",
+          "altHi": "जगत्जननी माँ के दिव्य प्रकाश में माँ बसन्ती जी",
+          "altEn": "Maa Basanti in the divine light of Jagatjanani Maa"
         }
       },
       "media": {},
