@@ -7,23 +7,23 @@ Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no
 
 ---
 
-## 0 · Launch to manidweepjodhpur.com — in progress
+## 0 · Launch to manidweepjodhpur.org — in progress
 
-**Domain note (2026-09-11):** this site launches on `manidweepjodhpur.com`, not `.org` — the owner is running two separate websites, one per domain. `manidweepjodhpur.org` is a different site entirely and is not managed by this repo; nothing here should reference or assume `.org` as this project's live domain going forward.
+**Domain note (2026-09-11, corrected same day):** the site formerly live at `manidweepjodhpur.org` is moving to `manidweepjodhpur.com` instead — a separate repo, not managed here. *This* rebuild takes over `.org`. (Config briefly pointed this repo at `.com` for a few hours based on an earlier reading of the plan; reverted once the owner clarified the domains swap the other way.)
 
-Pre-launch audit done (2026-09-11): full-site link/image crawl against a real root-domain build, 34 pages swept at mobile (375px), zero real issues found except one now-fixed bug (see "Done" below). Repo config prepared for the apex domain (`manidweepjodhpur.com`, no `www` — owner's call):
-- `src/CNAME` added (`manidweepjodhpur.com`); passthrough copy uncommented in `.eleventy.js`
-- `site.json` `origin` → `https://manidweepjodhpur.com`
+Pre-launch audit done (2026-09-11): full-site link/image crawl against a real root-domain build, 34 pages swept at mobile (375px), zero real issues found except one now-fixed bug (see "Done" below). Repo config set for the apex domain (`manidweepjodhpur.org`, no `www` — owner's call):
+- `src/CNAME` (`manidweepjodhpur.org`); passthrough copy uncommented in `.eleventy.js`
+- `site.json` `origin` → `https://manidweepjodhpur.org`
 - `.github/workflows/deploy.yml` `ELEVENTY_PATH_PREFIX` → `/`
 
 **[You] — the DNS/GitHub-side steps that finish the cutover, not code:**
 1. Merge/push this config to `main` (triggers a deploy, but nothing user-facing changes yet — still only reachable at the old `rishabh0709.github.io/...` URL until DNS points here)
-2. This repo's GitHub Settings → Pages → set custom domain to `manidweepjodhpur.com` (do this *before* touching DNS)
+2. This repo's GitHub Settings → Pages → set custom domain to `manidweepjodhpur.org` (do this *before* touching DNS) — **but not until the current `.org` site has actually been moved off to `.com`**, or this step will fail/conflict with whatever GitHub Pages config that other repo still has registered for `.org`
 3. At the registrar: point the apex at GitHub Pages' 4 A records (185.199.108/109/110/111.153) — this is the actual cutover moment
 4. Once DNS resolves, enable "Enforce HTTPS" in Settings → Pages
 5. Resubmit the sitemap in Google Search Console under the new property
 
-Rollback if needed: revert the DNS record, not the code — the old site's repo is untouched.
+Rollback if needed: revert the DNS record, not the code.
 
 ---
 
@@ -45,7 +45,7 @@ Rollback if needed: revert the DNS record, not the code — the old site's repo 
   - मधु माँ — ~50-year gap between 1971 (enrolled MA) and 2021 (leadership); "पाँच दशकों की साधना" arc is absent.
   - **Verify:** बुआ/फुफेरी family link (page says भैया जी = "बुआ के लड़के"; `people.json` says बसन्ती = "भैया जी की फुफेरी बहन" — different relationships); "आजीवन ब्रह्मचारिणी / निर्मल ब्रह्मचर्य" framing (confirm Parivar wants it public); specific family names + "बसन्त पंचमी 1995"; "जोधपुर, बालोतरा, जसोल में उनके नाम से मार्ग"; मधु माँ "सिरसा, पंजाब".
 - **"साधना कैसे आरम्भ करें"** (now the top of `/faq.html`) — confirm: is there a contact person, a form, or a specific process beyond "come to मणिद्वीप / सिद्धपीठ"? Anything to add.
-- **Contact email** — replace `kishoreggm@gmail.com` with `info@manidweepjodhpur.com` in `src/_data/site.json` once the mailbox exists.
+- **Contact email** — replace `kishoreggm@gmail.com` with `info@manidweepjodhpur.org` in `src/_data/site.json` once the mailbox exists.
 - **WhatsApp channel / mailing list** — if/when one exists, the closing CTAs and "जुड़ें" links should point to it instead of the contact page.
 
 ### Trust documents
@@ -65,7 +65,7 @@ Rebuilt from `_archive/english-v1/donate.html` onto the new design system (`page
 - Gyan Ganga Mission — **UPI ID** + `snksggm-upi-qr.png` (QR image missing)
 - 80G / 12A numbers are already filled (from the certificate PDFs). Maa Shardamani is 12A-only — the page handles that (no PAN field, "receipt not 80G" note).
 
-**[You] — the 80G receipt step is still a `mailto:`** to `kishoreggm@gmail.com` (`site.contact.email`). It now says plainly that PAN/address go into that unencrypted email and to send only from an account you control — but a server-side form (Formspree / Google Form / a serverless endpoint) is the real fix, and the email should move to `info@manidweepjodhpur.com` when that mailbox exists.
+**[You] — the 80G receipt step is still a `mailto:`** to `kishoreggm@gmail.com` (`site.contact.email`). It now says plainly that PAN/address go into that unencrypted email and to send only from an account you control — but a server-side form (Formspree / Google Form / a serverless endpoint) is the real fix, and the email should move to `info@manidweepjodhpur.org` when that mailbox exists.
 
 **[You]** — confirm the cause → trust routing in the JSON `activities` list (girls-school→SVT, girls-higher→Shardamani, boys/family/women→Gyanyogi, literature→Gyan Ganga).
 
@@ -153,6 +153,7 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
+- **Domain reverted: .com → back to .org** (2026-09-11, same day as the .org→.com switch below). Owner corrected the domain-swap direction: the *old* site currently at `.org` is the one moving to `.com` (separate repo); *this* rebuild takes over `.org`, not `.com`. Reverted `src/CNAME`, `site.json` `origin` + email note, `.eleventy.js` comment back to `manidweepjodhpur.org`. Verified with a root-domain build: `CNAME`, canonical URLs, sitemap.xml, robots.txt all resolve to `.org` again. Added a sequencing note to §0 above: this repo's GitHub Pages custom-domain setting for `.org` shouldn't be added until the old repo's `.org` custom-domain claim is removed first (GitHub Pages won't let two repos claim the same custom domain at once).
 - **Domain switched from .org to .com** (2026-09-11, follow-up to the deploy-config commit below). Owner clarified `manidweepjodhpur.org` and `manidweepjodhpur.com` are two separate, different websites — this repo launches on `.com`; `.org` is unrelated and out of scope here. Updated `src/CNAME`, `site.json` `origin` + the future-contact-email note, and `.eleventy.js`'s comment. Verified with a root-domain build: `CNAME` = `manidweepjodhpur.com`, canonical URLs / sitemap / robots.txt all resolve to `.com`.
 - **Pre-launch audit + EN breadcrumb fix** (2026-09-11). Built and crawled the site as it will actually ship (`ELEVENTY_PATH_PREFIX=/`, matching a root-domain deploy) ahead of the manidweepjodhpur.org launch: 70 HTML files, 0 broken internal links/images; all 157 `image-manifest.json` overrides + 199 `data/*.json` image refs + 24 `_data/*.json` image refs resolve; no hardcoded old-domain references outside `site.json`'s single `origin` field; 34 pages swept at mobile (375px) against the real production build, zero overflow. Found one real bug: 11 EN pages' `breadcrumbParent.href` had `/en/` baked in on top of `breadcrumb.njk`'s own `{{ pfx }}` prefix, producing a dead `/en/en/<page>.html` link (`testimonials.html` had the correct bare-path convention, which is what exposed the mismatch) — fixed across `awards`, `basanti-manihar`, `donate`, `gyan-ganga-mission`, `gyanyogi-adhyatm-kendra`, `itihaas`, `maa-shardamani-trust`, `madhubala-advani`, `shri-nandkishore-sharda`, `swami-vivekanand-trust`, `transparency`.
 - **Homepage swap: `index-v2.html` → live `/index.html`** (2026-09-11, owner approved). `src/index.html` (the old homepage) → `src/index-backup.html` (`noindex` + `eleventyExcludeFromCollections`, still builds and is reachable by direct URL, just out of nav/sitemap/search — kept per owner's request "for future reference, don't delete it"); `src/index-v2.html` → `src/index.html`, `noindex` removed. Same swap on `src/en/`. `enRedirects.js`'s `TRANSLATED` set updated (`index-v2` → `index-backup`, both locales have real backup pages so no fallback-redirect stub is generated for either). No template changes needed — `header.njk`/`breadcrumb.njk`'s "home" link already points at `/index.html` by convention, so it now resolves to the v2 content automatically; nothing else in the codebase referenced `index-v2.html` by path. Verified HI + EN at desktop and mobile (375px): no overflow, all 20 homepage images load, both old-homepage backups still serve 200 directly.

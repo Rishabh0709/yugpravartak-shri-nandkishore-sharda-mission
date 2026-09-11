@@ -1,5 +1,5 @@
 {
-  "_note": "Single source of truth for identity + contact. 'origin' is the live manidweepjodhpur.com domain (manidweepjodhpur.org hosts a separate, different website and is not part of this repo). ELEVENTY_PATH_PREFIX is set to / in the deploy workflow to match.",
+  "_note": "Single source of truth for identity + contact. 'origin' is the live manidweepjodhpur.org domain for this rebuild. The site formerly live at .org is moving to manidweepjodhpur.com instead (a separate repo, not managed here) -- the two domains swapped which site each hosts. ELEVENTY_PATH_PREFIX is set to / in the deploy workflow to match.",
 
   "name": {
     "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन",
@@ -18,7 +18,7 @@
     "en": "Yugpravartak Shri Nandkishore Sharda Mission — a spiritual journey towards world brotherhood, world peace and human welfare, through Divya Gyan, the Buddhi-Vivek Yoga practice and selfless service. Manidweep Adhyatm Parivar, Jodhpur."
   },
 
-  "origin": "https://manidweepjodhpur.com",
+  "origin": "https://manidweepjodhpur.org",
 
   "locales": {
     "hi": { "path": "", "label": "हिन्दी", "htmlLang": "hi", "ogLocale": "hi_IN", "enabled": true },
@@ -32,7 +32,7 @@
     "phoneRaw": "+919414917901",
     "phoneDisplay": "+91 94149 17901",
     "email": "kishoreggm@gmail.com",
-    "emailNote": "Replace with info@manidweepjodhpur.com once the domain mailbox is live.",
+    "emailNote": "Replace with info@manidweepjodhpur.org once the domain mailbox is live.",
     "hours": { "hi": "प्रतिदिन प्रातः 10:00 – रात्रि 8:00", "en": "Daily 10:00 am – 8:00 pm" }
   },
 
