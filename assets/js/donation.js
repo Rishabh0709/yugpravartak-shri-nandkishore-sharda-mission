@@ -2,7 +2,7 @@
 
 /* ==========================================================
    DONATE PAGE
-   Renders /donate.html + /en/donate.html. Reads
+   Renders /donate/ + /en/donate/. Reads
    /data/donation-details.json (bank + UPI details, meant to be
    public). No payment gateway: the page shows a trust's verified
    account for the chosen cause, then helps the donor assemble an

@@ -159,8 +159,13 @@ function setCurrentYear() {
 }
 
 function highlightActiveNavigation() {
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
+    // Pages are now trailing-slash directories, so compare full pathnames
+    // (normalized to always end in "/") rather than the last filename
+    // segment -- ".../foo/" has no filename to pop().
+    const normalizePath = (pathname) =>
+        pathname.endsWith("/") ? pathname : `${pathname}/`;
+
+    const currentPage = normalizePath(window.location.pathname);
     const currentHash = window.location.hash;
 
     const navigationLinks = document.querySelectorAll(
@@ -172,8 +177,7 @@ function highlightActiveNavigation() {
         if (!rawHref || /^(https?:|mailto:|tel:)/.test(rawHref)) return;
 
         const destination = new URL(rawHref, window.location.href);
-        const linkPage =
-            destination.pathname.split("/").pop() || "index.html";
+        const linkPage = normalizePath(destination.pathname);
         const samePage = linkPage === currentPage;
         const exactDestination =
             samePage &&

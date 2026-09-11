@@ -30,7 +30,7 @@
       "compliance": {
         "label": { "hi": "80G अनुमोदन क्रमांक", "en": "80G approval number" },
         "number": "AAATS3452LF20218",
-        "documentsUrl": "/transparency.html#swami-vivekanand-trust-records"
+        "documentsUrl": "/transparency/#swami-vivekanand-trust-records"
       }
     },
 
@@ -53,7 +53,7 @@
       "compliance": {
         "label": { "hi": "12A पंजीकरण (80G उपलब्ध नहीं)", "en": "12A registration (80G not available)" },
         "number": "AAATM7565JE20211",
-        "documentsUrl": "/transparency.html#maa-shardamani-trust-records"
+        "documentsUrl": "/transparency/#maa-shardamani-trust-records"
       }
     },
 
@@ -76,7 +76,7 @@
       "compliance": {
         "label": { "hi": "80G अनुमोदन क्रमांक", "en": "80G approval number" },
         "number": "AABTG5760CF20118",
-        "documentsUrl": "/transparency.html#gyanyogi-adhyatm-kendra-records"
+        "documentsUrl": "/transparency/#gyanyogi-adhyatm-kendra-records"
       }
     },
 
@@ -99,7 +99,7 @@
       "compliance": {
         "label": { "hi": "80G अनुमोदन क्रमांक", "en": "80G approval number" },
         "number": "AAFTS8734CF20213",
-        "documentsUrl": "/transparency.html#gyan-ganga-mission-records"
+        "documentsUrl": "/transparency/#gyan-ganga-mission-records"
       }
     }
   }

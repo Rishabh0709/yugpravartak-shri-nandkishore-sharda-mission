@@ -37,9 +37,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets/");
   eleventyConfig.addWatchTarget("src/data/");
 
-  // Keep the existing .html URL shape (…/bhaiyaji.html, not …/bhaiyaji/).
+  // Clean, trailing-slash URLs (…/bhaiyaji/, not …/bhaiyaji.html). The
+  // homepage (filePathStem "/index" or "/en/index") maps to "/" or "/en/".
   // Front-matter `permalink` still wins for robots.txt / sitemap.xml / redirects.
-  eleventyConfig.addGlobalData("permalink", () => (data) => `${data.page.filePathStem}.html`);
+  eleventyConfig.addGlobalData("permalink", () => (data) => {
+    const stem = data.page.filePathStem;
+    if (stem.endsWith("/index")) {
+      return stem.slice(0, -"index".length) || "/";
+    }
+    return `${stem}/`;
+  });
 
   // "/assets/x" -> "/<pathPrefix>/assets/x"  (for URLs built inside JSON/JS, not HTML)
   eleventyConfig.addFilter("prefix", (p) => {
@@ -82,13 +89,13 @@ module.exports = function (eleventyConfig) {
     if (fs.existsSync(imgDir)) walk(imgDir);
   });
 
-  // Sitemap collection: every built .html page except redirects / 404.
+  // Sitemap collection: every built page (trailing-slash URL) except
+  // utility files (robots.txt, sitemap.xml, 404.html -- none of which
+  // end in "/") and anything marked noindex.
   eleventyConfig.addCollection("sitemap", (api) =>
     api.getAll().filter((item) => {
       const url = item.url || "";
-      const isPage = url === "/" || url.endsWith(".html");
-      if (!isPage) return false;
-      if (url.endsWith("/404.html")) return false;
+      if (!url.endsWith("/")) return false;
       if (item.data.noindex) return false;
       return true;
     })

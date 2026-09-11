@@ -99,7 +99,7 @@
             const item = video[state.language] || video.en;
             const category = state.data.categories.find(entry => entry.slug === video.category);
             const thumbnail = toAsset(video.thumbnail);
-            const detailHref = state.language === "hi" ? `video-detail.html?id=${video.id}` : `video-detail.html?id=${video.id}`;
+            const detailHref = `../video-detail/?id=${video.id}`;
             const showReadMore = video.readMore !== false;
             const watchButton = video.videoUrl
                 ? `<button class="video-action video-action--primary" type="button" data-video-url="${escapeAttr(video.videoUrl)}" data-video-title="${escapeAttr(item.title)}">${copy[state.language].watch}</button>`
@@ -161,15 +161,15 @@
 
     function getVideoBackHref(video) {
         if (state.language === "hi") {
-            if (video.category === "sanskar-classes") return "testimonials.html#student-testimonials";
-            if (video.category === "dignitaries-views") return "testimonials.html#dignitaries-views";
-            if (video.category === "life-transformation") return "testimonials.html#seekers-beneficiaries";
-            return "testimonials.html#success-stories";
+            if (video.category === "sanskar-classes") return "../testimonials/#student-testimonials";
+            if (video.category === "dignitaries-views") return "../testimonials/#dignitaries-views";
+            if (video.category === "life-transformation") return "../testimonials/#seekers-beneficiaries";
+            return "../testimonials/#success-stories";
         }
 
-        if (video.category === "sanskar-classes") return "testimonials.html#student-testimonials";
-        if (video.category === "dignitaries-views") return "testimonials.html#dignitaries-views";
-        return "testimonials.html#success-stories";
+        if (video.category === "sanskar-classes") return "../testimonials/#student-testimonials";
+        if (video.category === "dignitaries-views") return "../testimonials/#dignitaries-views";
+        return "../testimonials/#success-stories";
     }
     function setupModal(scope) {
         const modal = document.querySelector("[data-video-modal]");

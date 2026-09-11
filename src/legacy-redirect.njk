@@ -1,8 +1,12 @@
 ---
+pagination:
+  data: legacyRedirects.hi
+  size: 1
+  alias: slug
+permalink: "/{{ slug }}.html"
 eleventyExcludeFromCollections: true
-noindex: true
 ---
-{%- set target = '/faq/' -%}
+{%- set target = '/' + slug + '/' -%}
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -15,8 +19,8 @@ noindex: true
 <style>body{font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;margin:15vh auto;max-width:32rem;padding:0 1.25rem;color:#574d44}a{color:#7b2a28}</style>
 </head>
 <body>
-<p>‘साधना कैसे आरम्भ करें’ अब ‘सामान्य प्रश्न’ पृष्ठ का भाग है। आपको वहाँ ले जाया जा रहा है&hellip;</p>
-<p>यदि स्वतः स्थानांतरण न हो, तो <a href="{{ target | url }}">साधना कैसे आरम्भ करें पृष्ठ पर जाएँ</a>।</p>
+<p>यह पृष्ठ अब एक नए पते पर उपलब्ध है। आपको वहाँ ले जाया जा रहा है&hellip;</p>
+<p>यदि स्वतः स्थानांतरण न हो, तो <a href="{{ target | url }}">यहाँ जाएँ</a>।</p>
 <script>location.replace({{ (target | url) | dump | safe }});</script>
 </body>
 </html>
