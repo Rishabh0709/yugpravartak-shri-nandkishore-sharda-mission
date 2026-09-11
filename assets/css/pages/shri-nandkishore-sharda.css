@@ -226,6 +226,20 @@
             color: #8a2f2d;
         }
 
+        /* Full-width section headings (§legacy, §samman) — same visual
+           weight as the two-column sections' in-copy h2, just spanning
+           the whole shell instead of being squeezed into one grid column. */
+        .bhaiya-journey .hi-section-heading {
+            margin-bottom: clamp(28px, 4vw, 44px);
+        }
+
+        .bhaiya-journey .hi-section-heading h2 {
+            max-width: 900px;
+            font-family: var(--hi-serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.16;
+        }
+
         /* §samman — the Bhamashah certificates + the road-honours grid */
         .bhaiya-roads {
             margin-top: clamp(48px, 6vw, 72px);
