@@ -601,10 +601,12 @@ ol {
     .site-nav .nav-submenu a,
     #header .nav-submenu a,
     .site-header .nav-submenu a {
-        padding: 8px 10px;
+        display: block;
+        padding: 12px 10px;
         font-family: var(--font-body);
         font-size: 0.94rem;
         font-weight: 500;
+        line-height: 1.3;
     }
 }
 
