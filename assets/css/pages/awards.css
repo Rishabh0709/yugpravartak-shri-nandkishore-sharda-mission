@@ -10,9 +10,9 @@
 .sm-section { padding: var(--section-y) 0; }
 .sm-section + .sm-section { border-top: 1px solid var(--rule); }
 .sm-section--alt { background: var(--bg-wash); }
-.sm-section > .hi-shell { max-width: 900px; }
+.sm-section > .hi-shell { max-width: 1100px; }
 
-.sm-phase { max-width: 68ch; margin-bottom: clamp(30px, 4.5vw, 46px); }
+.sm-phase { max-width: 68ch; margin-bottom: clamp(24px, 3.4vw, 36px); }
 .sm-phase .hi-kicker {
     margin-bottom: 6px;
     font-family: var(--font-latin);
@@ -21,88 +21,47 @@
     letter-spacing: .04em;
 }
 .sm-phase h2 {
-    margin: 0 0 10px;
+    margin: 0;
     font-family: var(--font-head);
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     color: var(--primary);
 }
-.sm-phase p {
-    margin: 0;
-    font-size: .98rem;
-    line-height: 1.8;
-    color: var(--ink-body);
-}
 
-/* ---- timeline ---- */
-.sm-timeline {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 4px;
-}
-.sm-timeline::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    bottom: 14px;
-    left: 35px;
-    width: 2px;
-    z-index: 0;
-    background: linear-gradient(180deg, var(--gold), rgba(185, 138, 52, .15));
-}
-
-.sm-event {
-    position: relative;
+/* ---- image + copy block ---- */
+.sm-block {
     display: grid;
-    grid-template-columns: 72px 1fr;
-    grid-template-areas: "thumb year" "thumb body";
-    column-gap: 22px;
-    padding: clamp(16px, 2.4vw, 22px) 0;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: clamp(28px, 5vw, 64px);
+    align-items: center;
 }
-.sm-event + .sm-event { border-top: 1px dashed var(--rule); }
 
-.sm-event__thumb {
-    grid-area: thumb;
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 72px;
-    height: 72px;
+.sm-block__media {
+    margin: 0;
     overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px rgba(185, 138, 52, .22), 0 8px 18px rgba(43, 33, 30, .16);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
 }
-.sm-section--alt .sm-event__thumb {
-    box-shadow: 0 0 0 4px var(--bg-wash), 0 0 0 6px rgba(185, 138, 52, .22), 0 8px 18px rgba(43, 33, 30, .16);
-}
-.sm-event__thumb img {
+.sm-block__media img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: clamp(320px, 38vw, 480px);
     object-fit: cover;
 }
 
-.sm-event__year {
-    grid-area: year;
-    padding-top: 4px;
-    font-family: var(--font-latin);
-    font-weight: 600;
-    font-size: 1.35rem;
-    color: var(--primary);
-}
-.sm-event__body { grid-area: body; }
-.sm-event__body h3 {
-    margin: 0;
-    font-family: var(--font-head);
-    font-size: 1.12rem;
-    line-height: 1.4;
-    color: var(--ink);
-}
-.sm-event__body p {
-    margin: 6px 0 0;
-    font-size: .94rem;
-    line-height: 1.75;
+.sm-block__copy p {
+    margin: 0 0 16px;
     color: var(--ink-body);
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+
+.sm-cert-trigger {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* ---- roads named after Bhaiyaji ---- */
@@ -207,12 +166,130 @@
 }
 .sm-closing .hi-actions { justify-content: center; }
 
-@media (max-width: 640px) {
-    .sm-timeline::before { left: 26px; }
-    .sm-event { grid-template-columns: 56px 1fr; column-gap: 16px; }
-    .sm-event__thumb { width: 56px; height: 56px; }
-    .sm-event__body h3 { font-size: 1.02rem; }
-    .sm-event__year { font-size: 1.1rem; }
+/* ---- certificate lightbox (shared dialog, populated per person by
+   awards.js from the matching hidden .sm-certs list) — same look as
+   gallery.html's lightbox, kept local since only this page needs it ---- */
+body.samman-page.sm-modal-open { overflow: hidden; }
 
+.sm-lightbox {
+    width: min(94vw, 1120px);
+    max-width: none;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 12px;
+    background: #17121d;
+    color: #fff;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .55);
+}
+
+.sm-lightbox::backdrop {
+    background: rgba(20, 15, 24, .88);
+    backdrop-filter: blur(7px);
+}
+
+.sm-lightbox .lightbox-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr) 64px;
+    align-items: center;
+    min-height: 72vh;
+    padding: 52px 12px 18px;
+}
+
+.sm-lightbox .lightbox-shell figure {
+    min-width: 0;
+    margin: 0;
+}
+
+.sm-lightbox .lightbox-image {
+    display: block;
+    width: 100%;
+    max-height: 68vh;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #0e0b12;
+}
+
+.sm-lightbox .lightbox-shell figcaption {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 24px;
+    row-gap: 4px;
+    padding: 16px 6px 5px;
+}
+
+.sm-lightbox .lightbox-shell figcaption strong {
+    color: #fffaf1;
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.sm-lightbox .lightbox-caption {
+    grid-column: 1;
+    color: #d1c7d6;
+    font-size: .95rem;
+    line-height: 1.55;
+}
+
+.sm-lightbox .lightbox-counter {
+    grid-column: 2;
+    grid-row: 1;
+    color: #e1bf6b;
+    font-size: .88rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.sm-lightbox .lightbox-close,
+.sm-lightbox .lightbox-arrow {
+    border: 0;
+    background: transparent;
+    color: #f8f1e9;
+    cursor: pointer;
+}
+
+.sm-lightbox .lightbox-close {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    font-size: 33px;
+    line-height: 1;
+}
+
+.sm-lightbox .lightbox-arrow {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 50%;
+    font-size: 24px;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+.sm-lightbox .lightbox-arrow:hover,
+.sm-lightbox .lightbox-arrow:focus-visible {
+    border-color: #d5ae59;
+    color: #d5ae59;
+}
+
+.sm-lightbox .lightbox-prev { justify-self: start; }
+.sm-lightbox .lightbox-next { justify-self: end; }
+
+@media (max-width: 900px) {
+    .sm-block { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
     .sm-roads__grid { grid-template-columns: 1fr; }
+
+    .sm-lightbox .lightbox-shell {
+        grid-template-columns: 40px minmax(0, 1fr) 40px;
+        padding: 46px 4px 14px;
+    }
+    .sm-lightbox .lightbox-arrow { width: 36px; height: 36px; font-size: 18px; }
+    .sm-lightbox .lightbox-shell figcaption { grid-template-columns: 1fr; }
+    .sm-lightbox .lightbox-counter { grid-row: 2; grid-column: 1; }
 }
