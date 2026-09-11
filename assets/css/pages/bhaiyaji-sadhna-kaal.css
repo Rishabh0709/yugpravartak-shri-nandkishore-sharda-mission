@@ -81,6 +81,28 @@
             object-fit: cover;
         }
 
+        /* §avataran has less copy than its neighbours (2 short paragraphs,
+           no diary quote) — the shared clamp(330px,40vw,560px) left a tall
+           portrait towering over a short text column with dead space
+           beneath it. A lower cap keeps the image in proportion here. */
+        #avataran .sadhna-arc__media img {
+            height: clamp(260px, 30vw, 400px);
+        }
+
+        /* §darshan's photo is a full devotional composite (Maa above,
+           the home shrine beside Bhaiyaji) — cover was cropping real
+           content off the top/bottom. Show it whole, letterboxed on a
+           soft ground instead of cut off. */
+        .sadhna-arc__media--contain {
+            display: grid;
+            place-items: center;
+            padding: clamp(16px, 2.4vw, 26px);
+        }
+        .sadhna-arc__media--contain img {
+            height: clamp(360px, 44vw, 620px);
+            object-fit: contain;
+        }
+
         .sadhna-arc__media figcaption {
             padding: 12px 16px 14px;
             color: #6d5d53;
