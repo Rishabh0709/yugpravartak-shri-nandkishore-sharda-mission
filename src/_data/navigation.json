@@ -45,7 +45,7 @@
       "groups": [
         { "label": { "hi": "सेवा का दर्शन", "en": "The philosophy of service" }, "links": [
           { "label": { "hi": "निष्काम कर्म साधना", "en": "Nishkam Karma Sadhana" }, "href": "/nishkam-karm-sadhna/" },
-          { "label": { "hi": "शिक्षा-दर्शन एवं मार्गदर्शन सिद्धान्त", "en": "Education philosophy & guiding principles" }, "href": "/margdarshan-siddhant/" },
+          { "label": { "hi": "शिक्षा-दर्शन एवं मार्गदर्शन सिद्धान्त", "en": "Education philosophy & guiding principles" }, "href": "/guiding-principles/" },
           { "label": { "hi": "विद्यार्थी संस्कार एवं व्यक्तित्व विकास", "en": "Sunday Sanskar classes" }, "href": "/sunday-sanskar-classes/" }
         ]},
         { "label": { "hi": "सेवा संस्थाएँ", "en": "The trusts" }, "links": [

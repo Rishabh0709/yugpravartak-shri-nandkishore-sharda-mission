@@ -14,4 +14,5 @@ module.exports = () => [
   { from: "itihaas", to: "history" },
   { from: "jigyasa-samadhan", to: "spiritual-qa" },
   { from: "adhyatmik-gyan-charcha", to: "spiritual-discussions" },
+  { from: "margdarshan-siddhant", to: "guiding-principles" },
 ];
