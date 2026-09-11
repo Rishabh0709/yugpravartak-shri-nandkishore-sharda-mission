@@ -7,7 +7,7 @@
       "groups": [
         { "links": [
           { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission/" },
-          { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/itihaas/" },
+          { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/history/" },
           { "label": { "hi": "सम्मान एवं मान्यता", "en": "Awards & Recognition" }, "href": "/awards/" }
         ]},
         { "label": { "hi": "प्रेरक व्यक्तित्व", "en": "The lineage" }, "links": [
@@ -30,11 +30,11 @@
           { "label": { "hi": "दिव्य ज्ञान", "en": "Divya Gyan" }, "href": "/divya-gyan/" },
           { "label": { "hi": "प्रतीक चिन्ह", "en": "The symbol" }, "href": "/logo/" },
           { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications/" },
-          { "label": { "hi": "जिज्ञासा समाधान", "en": "Spiritual Q&A" }, "href": "/jigyasa-samadhan/" }
+          { "label": { "hi": "जिज्ञासा समाधान", "en": "Spiritual Q&A" }, "href": "/spiritual-qa/" }
         ]},
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
           { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna/" },
-          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/adhyatmik-gyan-charcha/" },
+          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/spiritual-discussions/" },
           { "label": { "hi": "साधना आरम्भ करें एवं सामान्य प्रश्न", "en": "Getting started & FAQ" }, "href": "/faq/" }
         ]}
       ]

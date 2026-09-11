@@ -19,7 +19,7 @@
       "heading": { "hi": "जानिए", "en": "Discover" },
       "links": [
         { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/#mission" },
-        { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/itihaas/" },
+        { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/history/" },
         { "label": { "hi": "भैया जी", "en": "Bhaiyaji" }, "href": "/#bhaiyaji" },
         { "label": { "hi": "आध्यात्मिक परम्परा", "en": "The lineage" }, "href": "/#lineage" },
         { "label": { "hi": "मणिद्वीप", "en": "Manidweep" }, "href": "/#manidweep" }

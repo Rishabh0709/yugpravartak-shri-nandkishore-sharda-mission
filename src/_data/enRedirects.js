@@ -16,7 +16,7 @@ const SRC = path.join(__dirname, "..");
 
 // Pages that have a real English translation — no redirect stub for these.
 const TRANSLATED = new Set([
-  "index", "index-backup", "about-mission", "itihaas", "divya-gyan",
+  "index", "index-backup", "about-mission", "history", "divya-gyan",
   "buddhi-vivek-yog-sadhna", "nishkam-karm-sadhna",
   "swami-vivekanand-trust", "maa-shardamani-trust",
   "gyanyogi-adhyatm-kendra", "gyan-ganga-mission",

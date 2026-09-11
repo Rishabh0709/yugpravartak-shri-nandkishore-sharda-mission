@@ -1,5 +1,5 @@
 {
-  "_note": "Practical / newcomer FAQ. Renders the 'सामान्य प्रश्न' section of /faq.html + its FAQPage JSON-LD. /faq.html now also carries the merged 'साधना कैसे आरम्भ करें' guide (formerly /sadhna-aarambh.html, now a redirect stub). DIFFERENT in purpose from /jigyasa-samadhan.html (the deep spiritual Q&A) — do not merge those two. Hindi answers below are a DRAFT assembled from existing site content; to be reviewed/corrected with the Parivar.",
+  "_note": "Practical / newcomer FAQ. Renders the 'सामान्य प्रश्न' section of /faq/ + its FAQPage JSON-LD. /faq/ now also carries the merged 'साधना कैसे आरम्भ करें' guide (formerly /sadhna-aarambh/, now a redirect stub). DIFFERENT in purpose from /spiritual-qa/ (the deep spiritual Q&A, renamed 2026-09-12 from /jigyasa-samadhan/) — do not merge those two. Hindi answers below are a DRAFT assembled from existing site content; to be reviewed/corrected with the Parivar.",
 
   "faqs": [
     {

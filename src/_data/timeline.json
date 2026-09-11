@@ -1,5 +1,5 @@
 {
-  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds /itihaas.html + the homepage timeline. Bodies to be written/verified with the Parivar in Phase 3. `image` (optional) drives the milestone photo marker on /itihaas.html; every event currently has one (owner-supplied sources, 2026-09-11) — some (1944, 1959, 1964, 1970) are representative/devotional photos rather than dated period photos of that exact year, since none survive from the actual dates.",
+  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds /history/ (renamed 2026-09-12 from /itihaas/) + the homepage timeline. Bodies to be written/verified with the Parivar in Phase 3. `image` (optional) drives the milestone photo marker on /history/; every event currently has one (owner-supplied sources, 2026-09-11) — some (1944, 1959, 1964, 1970) are representative/devotional photos rather than dated period photos of that exact year, since none survive from the actual dates.",
 
   "events": [
     { "year": "1944", "date": "1944-07-16", "phase": "spiritual-journey",
