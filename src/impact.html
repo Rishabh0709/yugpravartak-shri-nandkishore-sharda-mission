@@ -2,86 +2,88 @@
 layout: base.njk
 title: "आँकड़ों में सेवा का प्रभाव | मणिद्वीप अध्यात्म परिवार"
 description: "मणिद्वीप अध्यात्म परिवार के शिक्षा, छात्रवृत्ति और परिवार-सहायता से जुड़े सेवा-प्रभाव के आँकड़े, 31 मार्च 2026 तक।"
-bodyClass: "activity-page evidence-page hindi-home hindi-impact-page"
-extraCss: ["/assets/css/activities-hub.css", "/assets/css/impact-transparency.css", "/assets/css/pages/impact.css"]
+bodyClass: "hindi-home impact-page"
+breadcrumb: true
+breadcrumbName: "आँकड़ों में सेवा का प्रभाव"
+extraCss: ["/assets/css/pages/impact.css"]
 extraJs: ["/assets/js/impact-data.js"]
 ---
 <main id="main-content">
-        <header class="evidence-hero">
-            <div class="activity-wrap">
-                <nav class="evidence-breadcrumb" aria-label="Breadcrumb">
-                    <a href="/index.html">मुख्य पृष्ठ</a><span aria-hidden="true">/</span><span>आँकड़ों में सेवा का प्रभाव</span>
-                </nav>
-                <div class="evidence-hero-grid impact-hero-grid">
-                    <div class="impact-hero-copy">
-                        <span class="activity-eyebrow">आँकड़ों में सेवा का प्रभाव</span>
-                        <h1>करुणा की सेवा-धारा, स्पष्ट आँकड़ों के साथ।</h1>
-                        <p>मणिद्वीप अध्यात्म परिवार की सेवा 1996 से निरन्तर चली आ रही है — शिक्षा, संस्कार और परिवार-सहायता के माध्यम से, गरिमा और दीर्घकालीन संबंधों की नींव पर।</p>
-                    </div>
-                    <figure class="impact-hero-media">
-                        <img data-image-key="impact.impact-hero-education" src="/assets/images/impact-hero-education.webp" width="1600" height="1067" alt="विद्यार्थी-सहयोग कार्यक्रम में मधु माँ द्वारा छात्रा को शैक्षणिक सामग्री प्रदान करते हुए" loading="eager" fetchpriority="high" decoding="async">
-                        <figcaption>हर आँकड़े के पीछे एक जीवन, एक परिवार और एक संभावना है।</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </header>
+    <section class="page-hero" aria-labelledby="impact-title">
+        <img class="page-hero__bg" data-image-key="impact.page-hero" src="/assets/images/impact-hero-education.webp" width="1600" height="1067" alt="" loading="eager" fetchpriority="high">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">आँकड़ों में सेवा का प्रभाव</span>
+            <h1 id="impact-title">करुणा की सेवा-धारा, स्पष्ट आँकड़ों के साथ</h1>
+            <p class="page-hero__lead">मणिद्वीप अध्यात्म परिवार की सेवा 1996 से निरन्तर चली आ रही है — शिक्षा, संस्कार और परिवार-सहायता के माध्यम से, गरिमा और दीर्घकालीन संबंधों की नींव पर। हर आँकड़े के पीछे एक जीवन, एक परिवार और एक संभावना है।</p>
+            <ul class="page-hero__meta">
+                <li><strong>{{ impact.metrics.studentsCombined.display.hi }}</strong><span>विद्यार्थियों को शिक्षा सहयोग</span></li>
+                <li><strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong><span>छात्रवृत्ति सहायता</span></li>
+                <li><strong>{{ impact.metrics.familiesMonthly.display.hi }}</strong><span>परिवारों को हर माह सहयोग</span></li>
+                <li><strong>{{ impact.metrics.yearsOfService.display.hi }}</strong><span>निरन्तर सेवा (1996 से)</span></li>
+            </ul>
+        </div>
+    </section>
 
-        <section class="impact-topline" aria-label="मुख्य आँकड़े एक दृष्टि में">
-            <div class="activity-wrap">
-                <ul class="impact-topline__grid">
-                    <li>
-                        <span class="impact-topline__value">{{ impact.metrics.studentsCombined.display.hi }}</span>
-                        <span class="impact-topline__label">विद्यार्थियों को शिक्षा सहयोग<small>बालिकाएँ {{ impact.metrics.studentsGirls.display.hi }} · बालक {{ impact.metrics.studentsBoys.display.hi }} · 1996 से</small></span>
-                    </li>
-                    <li>
-                        <span class="impact-topline__value">{{ impact.metrics.scholarshipCombined.display.hi }}</span>
-                        <span class="impact-topline__label">छात्रवृत्ति सहायता<small>1996 से · {{ impact.metrics.schoolsColleges.display.hi }} के माध्यम से</small></span>
-                    </li>
-                    <li>
-                        <span class="impact-topline__value">{{ impact.metrics.familiesMonthly.display.hi }}</span>
-                        <span class="impact-topline__label">परिवारों को हर माह खाद्यान्न सहायता<small>2020 से · {{ impact.metrics.familyAid.display.hi }}</small></span>
-                    </li>
-                </ul>
-                <p class="impact-topline__asof"><strong>{{ impact.metrics.yearsOfService.display.hi }}</strong> की निरन्तर जमीनी सेवा (1996 से)। सभी आँकड़े {{ impact.asOfLabel.hi }} तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित।</p>
-            </div>
-        </section>
+    <p class="imp-asof"><span class="hi-shell">सभी आँकड़े <strong>{{ impact.asOfLabel.hi }}</strong> तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित।</span></p>
 
-        <section class="evidence-section" aria-labelledby="shared-impact-title">
-            <div class="activity-wrap">
-                <header class="evidence-heading">
-                    <div><span class="activity-eyebrow">सेवा की समन्वित धारा</span><h2 id="shared-impact-title">चार प्रमुख आयाम, एक ही निष्काम सेवा-भाव से जुड़े हुए</h2></div>
-                    <p>यहाँ हर आँकड़ा अपने सेवा-कार्य से जुड़ा है — बालिका शिक्षा, उच्च शिक्षा, बालक शिक्षा और परिवार-सहायता की अलग-अलग भूमिका, और मिशन का सामूहिक प्रभाव, एक साथ।</p>
-                </header>
+    <nav class="page-nav" aria-label="पृष्ठ के अनुभाग">
+        <div class="hi-shell page-nav__links">
+            <p class="page-nav__label">इस पृष्ठ पर</p>
+            <a href="#summary">सेवा के चार आयाम</a>
+            <a href="#impact-details">विस्तृत आँकड़े</a>
+            <a href="#impact-human-title">जीवन-यात्राएँ</a>
+            <a href="#impact-closing-title">पारदर्शिता</a>
+        </div>
+    </nav>
 
-                <div class="impact-summary-grid" data-impact-summary></div>
-            </div>
-        </section>
+    <section class="imp-section" id="summary" aria-labelledby="shared-impact-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">सेवा की समन्वित धारा</span>
+                <h2 id="shared-impact-title">चार प्रमुख आयाम, एक ही निष्काम सेवा-भाव से जुड़े हुए</h2>
+                <p>यहाँ हर आँकड़ा अपने सेवा-कार्य से जुड़ा है — बालिका शिक्षा, उच्च शिक्षा, बालक शिक्षा और परिवार-सहायता की अलग-अलग भूमिका, और मिशन का सामूहिक प्रभाव, एक साथ।</p>
+            </header>
+            <div class="impact-summary-grid" data-impact-summary></div>
+        </div>
+    </section>
 
-        <section class="evidence-section evidence-section--soft impact-records" id="impact-details" aria-labelledby="detailed-impact-title">
-            <div class="activity-wrap">
-                <header class="evidence-heading">
-                    <div><span class="activity-eyebrow">विस्तृत आँकड़े</span><h2 id="detailed-impact-title">देखें, सेवा के प्रत्येक आयाम का विस्तार समय के साथ कैसे बढ़ा</h2></div>
-                    <p>प्रत्येक चार्ट में हर स्तम्भ उस रिपोर्टिंग अवधि के अंत तक वितरित कुल राशि दर्शाता है।</p>
-                </header>
+    <section class="imp-section imp-section--soft" id="impact-details" aria-labelledby="detailed-impact-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">विस्तृत आँकड़े</span>
+                <h2 id="detailed-impact-title">देखें, सेवा के प्रत्येक आयाम का विस्तार समय के साथ कैसे बढ़ा</h2>
+                <p>प्रत्येक चार्ट में हर स्तम्भ उस रिपोर्टिंग अवधि के अंत तक वितरित कुल राशि दर्शाता है।</p>
+            </header>
+            <div data-impact-records></div>
+        </div>
+    </section>
 
-                <div data-impact-records></div>
-            </div>
-        </section>
-
-        <section class="impact-human-story" aria-labelledby="impact-human-title">
-            <div class="activity-wrap impact-human-story-inner">
-                <div><span class="activity-eyebrow">आँकड़ों से आगे</span><h2 id="impact-human-title">आँकड़े विस्तार बताते हैं, जीवन-यात्राएँ परिवर्तन दिखाती हैं।</h2></div>
+    <section class="imp-section imp-human" aria-labelledby="impact-human-title">
+        <div class="hi-shell imp-human__inner">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">आँकड़ों से आगे</span>
+                <h2 id="impact-human-title">आँकड़े विस्तार बताते हैं, जीवन-यात्राएँ परिवर्तन दिखाती हैं</h2>
                 <p>पूर्व छात्राओं, साधकों और लाभार्थियों की यात्राएँ देखें, जिनमें शिक्षा, गरिमा और सतत मार्गदर्शन के वास्तविक परिणाम दिखाई देते हैं।</p>
-                <div class="evidence-actions"><a class="evidence-button primary" href="/testimonials.html#success-stories">सफलता की कहानियाँ पढ़ें</a><a class="evidence-button" href="/testimonials.html#student-testimonials">छात्रा अनुभव देखें</a></div>
+            </header>
+            <div class="hi-actions hi-actions--center">
+                <a class="hi-btn hi-btn--primary" href="/testimonials.html#success-stories">सफलता की कहानियाँ पढ़ें</a>
+                <a class="hi-btn hi-btn--outline" href="/testimonials.html#student-testimonials">छात्रा अनुभव देखें</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="evidence-closing">
-            <div class="activity-wrap">
-                <span class="activity-eyebrow">विश्वास और पारदर्शिता</span>
-                <h2>सेवा का प्रभाव तब और अर्थपूर्ण होता है, जब उसकी नींव भी स्पष्ट दिखाई दे।</h2>
+    <section class="imp-section imp-closing" aria-labelledby="impact-closing-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">विश्वास और पारदर्शिता</span>
+                <h2 id="impact-closing-title">सेवा का प्रभाव तब और अर्थपूर्ण होता है, जब उसकी नींव भी स्पष्ट दिखाई दे</h2>
                 <p>चारों ट्रस्ट आयकर अधिनियम की धारा 12A एवं 80G के अंतर्गत पंजीकृत हैं। इनके पंजीकरण दस्तावेज़, वर्ष-वार वित्तीय प्रतिवेदन और छात्रवृत्ति प्रमाण-पत्र सार्वजनिक रूप से उपलब्ध हैं।</p>
-                <div class="evidence-actions"><a class="evidence-button primary" href="/transparency.html">पंजीकरण एवं दस्तावेज़ देखें</a><a class="evidence-button" href="/nishkam-karm-sadhna.html">निष्काम कर्म साधना</a><a class="evidence-button" href="/margdarshan-siddhant.html">मार्गदर्शन सिद्धान्त</a></div>
+            </header>
+            <div class="hi-actions hi-actions--center">
+                <a class="hi-btn hi-btn--primary" href="/transparency.html">पंजीकरण एवं दस्तावेज़ देखें</a>
+                <a class="hi-btn hi-btn--outline" href="/nishkam-karm-sadhna.html">निष्काम कर्म साधना</a>
+                <a class="hi-btn hi-btn--outline" href="/margdarshan-siddhant.html">मार्गदर्शन सिद्धान्त</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>

@@ -10,7 +10,8 @@
         if (!summaryTarget && !recordsTarget) return;
 
         try {
-            const response = await fetch(`data/impact-data.json`);
+            const base = (window.__BASEURL__ || "/").replace(/\/$/, "");
+            const response = await fetch(`${base}/data/impact-data.json`);
             if (!response.ok) throw new Error(`Unable to load impact data: ${response.status}`);
             const data = await response.json();
             if (summaryTarget) renderSummary(summaryTarget, data);

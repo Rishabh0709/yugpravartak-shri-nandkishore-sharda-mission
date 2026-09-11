@@ -1,52 +1,325 @@
-body.hindi-impact-page {
-            font-family: "Noto Sans Devanagari", sans-serif;
-            background: #fffaf1;
-            color: var(--hi-ink);
-        }
+/* ============================================================
+   Impact in numbers (/impact.html)
+   ============================================================ */
 
-        .hindi-impact-page h1,
-        .hindi-impact-page h2,
-        .hindi-impact-page h3 {
-            font-family: "Noto Serif Devanagari", serif;
-            letter-spacing: 0;
-        }
+.impact-page {
+    color: var(--ink);
+    background: var(--bg);
+}
 
-        .hindi-impact-page .activity-eyebrow,
-        .hindi-impact-page .evidence-breadcrumb,
-        .hindi-impact-page .impact-summary-card a,
-        .hindi-impact-page .impact-record-footer a,
-        .hindi-impact-page .evidence-button {
-            font-family: "Noto Sans Devanagari", sans-serif;
-            letter-spacing: .08em;
-        }
+/* ---- as-of strip, right under the hero ---- */
+.imp-asof {
+    margin: 0;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink-muted);
+    font-size: .88rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.imp-asof strong {
+    color: var(--primary);
+    font-weight: 700;
+}
 
-        .hindi-impact-page .impact-hero-copy p,
-        .hindi-impact-page .evidence-heading p,
-        .hindi-impact-page .impact-summary-card p,
-        .hindi-impact-page .impact-record-header p,
-        .hindi-impact-page .impact-record-footer p,
-        .hindi-impact-page .impact-continuity-note p,
-        .hindi-impact-page .impact-definition p,
-        .hindi-impact-page .impact-human-story p,
-        .hindi-impact-page .evidence-closing p {
-            font-family: "Noto Serif Devanagari", serif;
-            line-height: 1.85;
-        }
+/* ---- sections ---- */
+.imp-section { padding: clamp(56px, 7vw, 96px) 0; }
+.imp-section + .imp-section { border-top: 1px solid var(--rule); }
+.imp-section--soft { background: var(--bg-wash); }
+.imp-section .hi-section-heading p { max-width: 68ch; }
 
-        .hindi-impact-page .impact-value,
-        .hindi-impact-page .impact-record-kpis strong,
-        .hindi-impact-page .impact-topline__value {
-            font-family: "Noto Serif Devanagari", serif;
-        }
+/* ---- §summary: the four streams ---- */
+.impact-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: clamp(28px, 4vw, 40px);
+}
+.impact-summary-card {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(20px, 2.4vw, 26px);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+.impact-value {
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-family: var(--font-head);
+    font-size: clamp(1.7rem, 2.6vw, 2.15rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+.impact-summary-card h3 {
+    margin: 0 0 8px;
+    font-family: var(--font-head);
+    font-size: 1.1rem;
+    line-height: 1.35;
+    color: var(--ink);
+}
+.impact-summary-card p {
+    margin: 0 0 16px;
+    font-size: .92rem;
+    line-height: 1.7;
+    color: var(--ink-body);
+}
+.impact-summary-card a {
+    margin-top: auto;
+    color: var(--accent);
+    font-size: .88rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.impact-summary-card a:hover { text-decoration: underline; }
 
-        .hindi-impact-page .impact-topline__label,
-        .hindi-impact-page .impact-topline__asof {
-            font-family: "Noto Sans Devanagari", sans-serif;
-        }
-    
-        .hindi-impact-page .activity-eyebrow {
-            font-family: "Noto Serif Devanagari", serif;
-            font-weight: 600;
-            letter-spacing: 0;
-            text-transform: none;
-        }
+/* ---- §details: the four records ---- */
+[data-impact-records] { display: grid; gap: clamp(28px, 4vw, 40px); margin-top: clamp(28px, 4vw, 40px); }
+
+.impact-record {
+    scroll-margin-top: 136px;
+    padding: clamp(24px, 3.2vw, 36px);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+.impact-record-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px 32px;
+    margin-bottom: clamp(20px, 3vw, 28px);
+}
+.impact-record-header .activity-eyebrow {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--gold);
+    font-family: var(--font-latin);
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.impact-record-header h3 {
+    margin: 0 0 8px;
+    font-family: var(--font-head);
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    line-height: 1.3;
+    color: var(--ink);
+}
+.impact-record-header > div > p {
+    max-width: 52ch;
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.75;
+    color: var(--ink-body);
+}
+.impact-record-kpis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: none;
+}
+.impact-record-kpis div {
+    padding: 10px 16px;
+    border-left: 3px solid var(--gold);
+    background: var(--bg-wash);
+    border-radius: 4px;
+}
+.impact-record-kpis strong {
+    display: block;
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+    color: var(--primary);
+    line-height: 1.2;
+}
+.impact-record-kpis span {
+    display: block;
+    margin-top: 2px;
+    font-size: .78rem;
+    color: var(--ink-muted);
+}
+
+/* ---- the bar charts ---- */
+.impact-chart-grid { display: grid; gap: 18px; }
+.impact-chart-card {
+    margin: 0;
+    padding: 18px 20px 8px;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--bg);
+}
+.impact-chart-card figcaption { margin-bottom: 18px; }
+.impact-chart-card figcaption strong {
+    display: block;
+    font-family: var(--font-head);
+    font-size: 1rem;
+    color: var(--ink);
+}
+.impact-chart-card figcaption span {
+    display: block;
+    margin-top: 2px;
+    font-size: .8rem;
+    color: var(--ink-muted);
+}
+.impact-chart-scroll { overflow-x: auto; }
+.impact-bars {
+    display: grid;
+    /* default (stretch) alignment: every column gets the full row height,
+       so a percentage height on the bar inside resolves against a real
+       number — align-items:end here would leave columns auto-sized to
+       their own content and the bar height calc would have nothing to
+       resolve against */
+    gap: 10px;
+    min-width: 420px;
+    height: 168px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.impact-bars--seven { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.impact-bars--six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.impact-bars li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    height: 100%;
+}
+.impact-bars b {
+    font-family: var(--font-latin);
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--ink-muted);
+    white-space: nowrap;
+}
+.impact-bars i {
+    display: block;
+    flex: none;
+    width: 100%;
+    max-width: 34px;
+    /* --bar is set inline as e.g. "82%" (a complete length, % already
+       included) — use it directly, don't multiply it by another % */
+    height: max(4px, var(--bar));
+    border-radius: 4px 4px 0 0;
+    background: linear-gradient(180deg, var(--gold), rgba(185, 138, 52, .55));
+}
+.impact-bars li.is-final i {
+    background: linear-gradient(180deg, var(--primary), rgba(123, 42, 40, .7));
+}
+.impact-bars span {
+    font-family: var(--font-latin);
+    font-size: .72rem;
+    color: var(--ink-muted);
+}
+.impact-bars li.is-final span { color: var(--primary); font-weight: 700; }
+
+.impact-continuity-note {
+    margin-top: 18px;
+    padding: 16px 20px;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-wash);
+    border-radius: 4px;
+}
+.impact-continuity-note span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.impact-continuity-note p {
+    margin: 0;
+    font-size: .92rem;
+    line-height: 1.7;
+    color: var(--ink-body);
+}
+
+.impact-record-highlight {
+    margin: 18px 0 0;
+    padding: 14px 18px;
+    border-radius: 4px;
+    background: var(--bg-wash);
+    color: var(--ink-body);
+    font-family: var(--font-head);
+    font-size: .98rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.impact-record-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 20px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+}
+.impact-record-footer p {
+    margin: 0;
+    max-width: 46ch;
+    font-size: .86rem;
+    color: var(--ink-muted);
+}
+.impact-record-footer a {
+    flex: none;
+    color: var(--accent);
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.impact-record-footer a:hover { text-decoration: underline; }
+
+/* ---- load-error state ---- */
+.impact-definition {
+    display: flex;
+    gap: 14px;
+    padding: 20px 22px;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+.impact-definition-mark {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 700;
+}
+.impact-definition strong { display: block; margin-bottom: 4px; color: var(--ink); }
+.impact-definition p { margin: 0; font-size: .9rem; color: var(--ink-muted); }
+
+/* ---- §human & §closing ---- */
+.imp-human { background: var(--bg-wash); }
+.imp-human__inner { max-width: 820px; text-align: center; }
+.imp-human .hi-section-heading p { margin-inline: auto; }
+
+.imp-closing { background: var(--bg); }
+
+@media (max-width: 980px) {
+    .impact-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+    .imp-section { scroll-margin-top: 126px; }
+    .impact-record-header { flex-direction: column; }
+}
+
+@media (max-width: 560px) {
+    .impact-summary-grid { grid-template-columns: 1fr; }
+}
