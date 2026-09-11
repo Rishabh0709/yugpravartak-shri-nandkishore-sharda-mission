@@ -1,5 +1,5 @@
 {
-  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds a future /itihaas.html page and homepage timeline. Bodies to be written/verified with the Parivar in Phase 3.",
+  "_note": "Canonical history. Pre-1996 entries are spiritual-journey milestones, NOT an organisational founding date — the humanitarian/seva work of the Mission begins in 1996. Feeds /itihaas.html + the homepage timeline. Bodies to be written/verified with the Parivar in Phase 3. `image` (optional) drives the milestone photo marker on /itihaas.html — only added where a genuinely representative photo exists; the spiritual-journey entries (1944-1990) intentionally stay text-only. NOTE: Maa Shardamani Trust's 2001 founding is not yet an entry here — flagged to the owner, not added without confirmation.",
 
   "events": [
     { "year": "1944", "date": "1944-07-16", "phase": "spiritual-journey",
@@ -24,7 +24,9 @@
 
     { "year": "1995", "phase": "seva",
       "title": { "hi": "मणिद्वीप भवन", "en": "Manidweep is established" },
-      "body": { "hi": "ए-183, शास्त्री नगर में साधना-स्थली ‘मणिद्वीप’ बनकर तैयार; 10 जून 1995 को गृह-प्रवेश।", "en": "The sadhana-sthali ‘Manidweep’ at A-183, Shastri Nagar is ready; the house-entering on 10 June 1995." } },
+      "body": { "hi": "ए-183, शास्त्री नगर में साधना-स्थली ‘मणिद्वीप’ बनकर तैयार; 10 जून 1995 को गृह-प्रवेश।", "en": "The sadhana-sthali ‘Manidweep’ at A-183, Shastri Nagar is ready; the house-entering on 10 June 1995." },
+      "image": { "src": "assets/images/manidweep-office.jpg", "w": 853, "h": 1280,
+        "altHi": "मणिद्वीप भवन, शास्त्री नगर, जोधपुर", "altEn": "The Manidweep building, Shastri Nagar, Jodhpur" } },
 
     { "year": "1996", "phase": "seva",
       "title": { "hi": "निष्काम कर्म साधना का आरम्भ", "en": "Nishkam Karma Sadhana begins" },
@@ -32,18 +34,38 @@
 
     { "year": "2003", "date": "2003-01-24", "phase": "seva",
       "title": { "hi": "भैया जी चैतन्यस्वरूप; माँ बसन्ती का नेतृत्व", "en": "Bhaiyaji leaves the physical body; Maa Basanti leads" },
-      "body": { "hi": "16 अप्रैल 2003 को सद्साहित्य प्रकाशन हेतु ‘श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन’ की स्थापना।", "en": "On 16 April 2003, the ‘Shri Nandkishore Sharda Gyan Ganga Mission’ is founded for the publishing of spiritual literature." } },
+      "body": { "hi": "16 अप्रैल 2003 को सद्साहित्य प्रकाशन हेतु ‘श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन’ की स्थापना।", "en": "On 16 April 2003, the ‘Shri Nandkishore Sharda Gyan Ganga Mission’ is founded for the publishing of spiritual literature." },
+      "image": { "src": "assets/images/gallery/gyan-ganga-mission/14-full.webp", "w": 1800, "h": 1298,
+        "altHi": "ज्ञान गंगा मिशन द्वारा प्रकाशित ग्रंथ का विमोचन", "altEn": "The release of a book published by the Gyan Ganga Mission" } },
 
     { "year": "2010", "phase": "seva",
       "title": { "hi": "ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केन्द्र की स्थापना", "en": "Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra founded" },
-      "body": { "hi": "जरूरतमंद छात्रों (बालक) को छात्रवृत्ति हेतु।", "en": "For scholarships to boys in need." } },
+      "body": { "hi": "जरूरतमंद छात्रों (बालक) को छात्रवृत्ति हेतु।", "en": "For scholarships to boys in need." },
+      "image": { "src": "assets/images/gyanyogi-adhyatm-kendra-scholarship.webp", "w": 1600, "h": 1066,
+        "altHi": "ज्ञानयोगी अध्यात्म केन्द्र से छात्रवृत्ति सहयोग", "altEn": "Scholarship support through the Gyanyogi Adhyatm Kendra" } },
 
     { "year": "2020", "phase": "seva",
       "title": { "hi": "मासिक खाद्यान्न वितरण का आरम्भ", "en": "Monthly food distribution begins" },
-      "body": { "hi": "कोरोना काल में जोधपुर एवं बालोतरा जिले के जरूरतमंद परिवारों हेतु।", "en": "During the Covid period, for families in need in Jodhpur and Balotra districts." } },
+      "body": { "hi": "कोरोना काल में जोधपुर एवं बालोतरा जिले के जरूरतमंद परिवारों हेतु।", "en": "During the Covid period, for families in need in Jodhpur and Balotra districts." },
+      "image": { "src": "assets/images/gallery/food-assistance/09-full.webp", "w": 1800, "h": 1442,
+        "altHi": "जरूरतमंद परिवार को खाद्यान्न किट देते हुए", "altEn": "A food-grain kit being given to a family in need" } },
 
     { "year": "2021", "date": "2021-05-07", "phase": "seva",
       "title": { "hi": "मधु माँ का नेतृत्व", "en": "Madhu Maa takes up the leadership" },
-      "body": { "hi": "माँ बसन्ती के चैतन्यस्वरूप होने के उपरान्त मधु माँ समस्त आध्यात्मिक एवं सेवा प्रकल्पों का संचालन कर रही हैं।", "en": "After Maa Basanti left the physical body, Madhu Maa guides all the spiritual and service projects." } }
+      "body": { "hi": "माँ बसन्ती के चैतन्यस्वरूप होने के उपरान्त मधु माँ समस्त आध्यात्मिक एवं सेवा प्रकल्पों का संचालन कर रही हैं।", "en": "After Maa Basanti left the physical body, Madhu Maa guides all the spiritual and service projects." },
+      "image": { "src": "assets/images/madhu-maa-home-hero.webp", "w": 4000, "h": 3000,
+        "altHi": "मधु माँ, भैया जी और माँ बसन्ती जी के चित्रों के साथ", "altEn": "Madhu Maa, seated with photographs of Bhaiyaji and Maa Basanti" } },
+
+    { "year": "2022", "date": "2022-06-10", "phase": "seva",
+      "title": { "hi": "योग, प्राणायाम एवं ध्यान कक्षाओं का शुभारम्भ", "en": "Free yoga, pranayama and meditation classes begin" },
+      "body": { "hi": "10 जून 2022 से सिद्धपीठ (कबूतरों का चौक) में आमजन के लिए प्रतिदिन निःशुल्क योग कक्षाएँ आरम्भ, जो निरन्तर जारी हैं।", "en": "From 10 June 2022, free daily yoga classes for the public began at the Siddhapeeth (Kabootaron ka Chowk), and continue without a break." },
+      "image": { "src": "assets/images/gallery/yoga-classes/05-full.webp", "w": 1800, "h": 1200,
+        "altHi": "सिद्धपीठ में निःशुल्क योग एवं प्राणायाम कक्षा", "altEn": "A free yoga and pranayama class at the Siddhapeeth" } },
+
+    { "year": "2025", "phase": "seva",
+      "title": { "hi": "वात्सल्यमयी माँ बसन्ती जी मनिहार सिलाई केन्द्र की स्थापना", "en": "Vatsalyamayi Maa Basanti Manihar Sewing Centre founded" },
+      "body": { "hi": "वर्षों से जरूरतमंद महिलाओं को दिए जा रहे सिलाई-सहयोग को औपचारिक निःशुल्क प्रशिक्षण केन्द्र का रूप मिला।", "en": "Years of individual sewing support to women in need took the form of a formal, free training centre." },
+      "image": { "src": "assets/images/gallery/sewing-center/04-full.webp", "w": 591, "h": 333,
+        "altHi": "सिलाई केन्द्र में प्रशिक्षण प्राप्त करती महिलाएँ", "altEn": "Women training at the sewing centre" } }
   ]
 }

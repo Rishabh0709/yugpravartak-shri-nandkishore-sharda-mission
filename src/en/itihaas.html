@@ -17,21 +17,27 @@ extraCss: ["/assets/css/pages/itihaas.css"]
     </section>
 
     {%- set phases = [
-        { key: "spiritual-journey", label: "The spiritual journey", note: "This period, before 1996, is wholly one of self-welfare and the search for truth — it is not the Mission's organisational 'founding year'." },
-        { key: "seva", label: "Nishkam Karma Sadhana", note: "At 'Maa's' command, the projects of education, sanskar and human service began in 1996. The Mission's work for public welfare starts here." }
+        { key: "spiritual-journey", label: "The spiritual journey", range: "1944 – 1990", note: "This period, before 1996, is wholly one of self-welfare and the search for truth — it is not the Mission's organisational 'founding year'." },
+        { key: "seva", label: "Nishkam Karma Sadhana", range: "1995 – present", note: "At 'Maa's' command, the projects of education, sanskar and human service began in 1996. The Mission's work for public welfare starts here." }
     ] %}
 
     {%- for phase in phases %}
     <section class="it-section" aria-labelledby="it-phase-{{ phase.key }}">
         <div class="hi-shell">
             <header class="it-phase">
+                <span class="hi-kicker">{{ phase.range }}</span>
                 <h2 id="it-phase-{{ phase.key }}">{{ phase.label }}</h2>
                 <p>{{ phase.note }}</p>
             </header>
             <ol class="it-timeline it-timeline--{{ phase.key }}">
                 {%- for event in timeline.events %}
                 {%- if event.phase == phase.key %}
-                <li class="it-event">
+                <li class="it-event{% if event.image %} it-event--photo{% endif %}">
+                    {%- if event.image %}
+                    <span class="it-event__thumb">
+                        <img src="/{{ event.image.src }}" width="{{ event.image.w }}" height="{{ event.image.h }}" alt="{{ event.image.altEn }}" loading="lazy">
+                    </span>
+                    {%- endif %}
                     <div class="it-event__year">{{ event.year }}</div>
                     <div class="it-event__body">
                         <h3>{{ event.title.en }}</h3>

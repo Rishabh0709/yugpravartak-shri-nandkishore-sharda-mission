@@ -17,21 +17,27 @@ extraCss: ["/assets/css/pages/itihaas.css"]
     </section>
 
     {%- set phases = [
-        { key: "spiritual-journey", label: "आध्यात्मिक यात्रा", note: "1996 से पूर्व का यह काल पूर्णतः आत्म-कल्याण और सत्य की खोज का है — यह मिशन का संगठनात्मक ‘स्थापना-वर्ष’ नहीं है।" },
-        { key: "seva", label: "निष्काम कर्म साधना", note: "‘माँ’ की आज्ञा से 1996 में शिक्षा, संस्कार और मानव सेवा के प्रकल्प आरम्भ हुए। मिशन का लोक-कल्याणकारी कार्य यहीं से आरम्भ होता है।" }
+        { key: "spiritual-journey", label: "आध्यात्मिक यात्रा", range: "1944 – 1990", note: "1996 से पूर्व का यह काल पूर्णतः आत्म-कल्याण और सत्य की खोज का है — यह मिशन का संगठनात्मक ‘स्थापना-वर्ष’ नहीं है।" },
+        { key: "seva", label: "निष्काम कर्म साधना", range: "1995 – वर्तमान", note: "‘माँ’ की आज्ञा से 1996 में शिक्षा, संस्कार और मानव सेवा के प्रकल्प आरम्भ हुए। मिशन का लोक-कल्याणकारी कार्य यहीं से आरम्भ होता है।" }
     ] %}
 
     {%- for phase in phases %}
     <section class="it-section" aria-labelledby="it-phase-{{ phase.key }}">
         <div class="hi-shell">
             <header class="it-phase">
+                <span class="hi-kicker">{{ phase.range }}</span>
                 <h2 id="it-phase-{{ phase.key }}">{{ phase.label }}</h2>
                 <p>{{ phase.note }}</p>
             </header>
             <ol class="it-timeline it-timeline--{{ phase.key }}">
                 {%- for event in timeline.events %}
                 {%- if event.phase == phase.key %}
-                <li class="it-event">
+                <li class="it-event{% if event.image %} it-event--photo{% endif %}">
+                    {%- if event.image %}
+                    <span class="it-event__thumb">
+                        <img src="/{{ event.image.src }}" width="{{ event.image.w }}" height="{{ event.image.h }}" alt="{{ event.image.altHi }}" loading="lazy">
+                    </span>
+                    {%- endif %}
                     <div class="it-event__year">{{ event.year }}</div>
                     <div class="it-event__body">
                         <h3>{{ event.title.hi }}</h3>
