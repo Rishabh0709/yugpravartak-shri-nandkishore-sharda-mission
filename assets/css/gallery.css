@@ -147,34 +147,22 @@ body.gallery-page.gallery-modal-open {
 }
 
 .gallery-filters {
-    position: sticky;
-    z-index: 5;
-    top: 82px;
     display: flex;
+    flex-wrap: wrap;
     gap: 9px;
-    overflow-x: auto;
     margin-bottom: 30px;
-    padding: 11px;
-    border: 1px solid rgba(152, 112, 32, .14);
-    border-radius: 999px;
-    background: rgba(255, 250, 241, .9);
-    box-shadow: 0 14px 38px rgba(82, 50, 34, .08);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    scrollbar-width: thin;
-    scrollbar-color: rgba(152, 112, 32, .35) transparent;
 }
 
 .gallery-filter {
     flex: 0 0 auto;
-    min-height: 42px;
-    padding: 9px 18px;
+    min-height: 38px;
+    padding: 7px 15px;
     border: 1px solid rgba(36, 27, 46, .13);
     border-radius: 999px;
-    background: transparent;
+    background: rgba(255, 250, 241, .9);
     color: #4e443c;
     font: inherit;
-    font-size: 1rem;
+    font-size: .92rem;
     font-weight: 800;
     cursor: pointer;
     transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
@@ -302,6 +290,7 @@ body.gallery-page.gallery-modal-open {
 
 .gallery-closing h2 {
     margin: 12px 0 18px;
+    color: #fffaf1;
     font-size: clamp(2rem, 4vw, 3.4rem);
     line-height: 1.18;
 }
@@ -494,12 +483,6 @@ body.gallery-page.gallery-modal-open {
 
     .gallery-hero-grid > p {
         padding-left: 18px;
-    }
-
-    .gallery-filters {
-        top: 72px;
-        margin-inline: -4px;
-        border-radius: 22px;
     }
 
     .gallery-archive-grid {
