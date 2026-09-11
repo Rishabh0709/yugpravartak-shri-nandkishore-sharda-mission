@@ -1,5 +1,5 @@
 {
-  "_note": "Single source of truth for identity + contact. On domain switch, change 'origin' to https://www.manidweepjodhpur.org and update ELEVENTY_PATH_PREFIX to / in .eleventy.js and the deploy workflow.",
+  "_note": "Single source of truth for identity + contact. 'origin' is now the live manidweepjodhpur.org domain; ELEVENTY_PATH_PREFIX is set to / in the deploy workflow to match.",
 
   "name": {
     "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन",
@@ -18,7 +18,7 @@
     "en": "Yugpravartak Shri Nandkishore Sharda Mission — a spiritual journey towards world brotherhood, world peace and human welfare, through Divya Gyan, the Buddhi-Vivek Yoga practice and selfless service. Manidweep Adhyatm Parivar, Jodhpur."
   },
 
-  "origin": "https://rishabh0709.github.io/yugpravartak-shri-nandkishore-sharda-mission",
+  "origin": "https://manidweepjodhpur.org",
 
   "locales": {
     "hi": { "path": "", "label": "हिन्दी", "htmlLang": "hi", "ogLocale": "hi_IN", "enabled": true },

@@ -9,10 +9,11 @@ const path = require("node:path");
  *   https://rishabh0709.github.io/yugpravartak-shri-nandkishore-sharda-mission/
  * every absolute path must be prefixed with the repo name.
  *
- * When the site is later pointed at https://www.manidweepjodhpur.org
- * (still hosted on GitHub Pages, but at the domain root), build with:
+ * When the site is pointed at https://manidweepjodhpur.org (still
+ * hosted on GitHub Pages, but at the domain root), build with:
  *   ELEVENTY_PATH_PREFIX=/  npm run build
- * and add a src/CNAME file containing: www.manidweepjodhpur.org
+ * src/CNAME (containing manidweepjodhpur.org) is already in place and
+ * copied into the build output below.
  */
 const PATH_PREFIX =
   process.env.ELEVENTY_PATH_PREFIX || "/yugpravartak-shri-nandkishore-sharda-mission/";
@@ -29,8 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/data": "data" });
   eleventyConfig.addPassthroughCopy({ "favicon.ico": "favicon.ico" });
-  // Uncomment when moving to the custom domain:
-  // eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   eleventyConfig.addWatchTarget("assets/");
   eleventyConfig.addWatchTarget("src/data/");

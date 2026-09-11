@@ -25,11 +25,11 @@ jobs:
           cache: npm
       - run: npm ci
       # PATH_PREFIX must match how the site is served.
-      #  - GitHub project URL (now):  /yugpravartak-shri-nandkishore-sharda-mission/
-      #  - Custom domain (later):      /
+      #  - Custom domain (now):        /
+      #  - GitHub project URL (was):   /yugpravartak-shri-nandkishore-sharda-mission/
       - run: npx @11ty/eleventy
         env:
-          ELEVENTY_PATH_PREFIX: /yugpravartak-shri-nandkishore-sharda-mission/
+          ELEVENTY_PATH_PREFIX: /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
