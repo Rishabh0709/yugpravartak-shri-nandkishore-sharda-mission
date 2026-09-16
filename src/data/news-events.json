@@ -1,5 +1,5 @@
 {
-  "upcoming": [
+  "events": [
     {
       "id": "sanskar-classes-2026-08-29",
       "date": "2026-08-29",
@@ -10,13 +10,11 @@
       "timeHi": "प्रातः 10:30",
       "image": "assets/images/gallery/sunday-sanskar-classes/01-card.webp",
       "en": {
-        "type": "Upcoming Event",
         "title": "Sanskar Classes",
         "meta": "29 August 2026 · 10:30 AM",
         "description": "A student guidance session focused on values, confidence and positive life conduct."
       },
       "hi": {
-        "type": "आगामी कार्यक्रम",
         "title": "संस्कार कक्षाएँ",
         "meta": "29 अगस्त 2026 · प्रातः 10:30",
         "description": "विद्यार्थियों के लिए संस्कार, आत्मविश्वास और सकारात्मक जीवन-दृष्टि पर आधारित मार्गदर्शन सत्र।"
@@ -32,13 +30,11 @@
       "timeHi": "प्रातः 10:30",
       "image": "assets/images/gallery/sunday-sanskar-classes/02-card.webp",
       "en": {
-        "type": "Upcoming Event",
         "title": "Sunday Sanskar Classes",
         "meta": "6 September 2026 · 10:30 AM",
         "description": "Regular Sunday session for students, combining education, values and spiritual awareness."
       },
       "hi": {
-        "type": "आगामी कार्यक्रम",
         "title": "रविवारीय संस्कार कक्षाएँ",
         "meta": "6 सितम्बर 2026 · प्रातः 10:30",
         "description": "शिक्षा, संस्कार और आध्यात्मिक चेतना के समन्वय पर आधारित विद्यार्थियों का नियमित रविवार सत्र।"
@@ -54,20 +50,16 @@
       "timeHi": "",
       "image": "assets/images/gallery/food-assistance/06-card.webp",
       "en": {
-        "type": "Upcoming Event",
         "title": "Monthly Food Assistance Distribution",
         "meta": "12 September 2026",
         "description": "Monthly food assistance for families connected with the service initiatives."
       },
       "hi": {
-        "type": "आगामी कार्यक्रम",
         "title": "मासिक खाद्यान्न सहायता वितरण",
         "meta": "12 सितम्बर 2026",
         "description": "सेवा प्रकल्पों से जुड़े जरूरतमंद परिवारों के लिए मासिक खाद्यान्न सहायता वितरण।"
       }
-    }
-  ],
-  "recent": [
+    },
     {
       "id": "food-assistance-independence-day-2026-08-15",
       "date": "2026-08-15",
@@ -76,13 +68,11 @@
       "monthHi": "अगस्त",
       "image": "assets/images/gallery/food-assistance/10-card.webp",
       "en": {
-        "type": "Recent Event",
         "title": "Monthly Food Assistance and 80th Independence Day Celebration",
         "meta": "15 August 2026",
         "description": "Monthly food assistance was distributed to around 300 families, along with the 80th Independence Day celebration."
       },
       "hi": {
-        "type": "हालिया कार्यक्रम",
         "title": "मासिक खाद्यान्न सहायता और 80वाँ स्वतंत्रता दिवस समारोह",
         "meta": "15 अगस्त 2026",
         "description": "लगभग 300 परिवारों को मासिक खाद्यान्न सहायता प्रदान की गई और 80वें स्वतंत्रता दिवस का उत्सव भी मनाया गया।"
@@ -96,13 +86,11 @@
       "monthHi": "अगस्त",
       "image": "assets/images/gallery/sunday-sanskar-classes/03-card.webp",
       "en": {
-        "type": "Recent Event",
         "title": "Sunday Sanskar Classes",
         "meta": "16 August 2026",
         "description": "A Sunday guidance session for students with focus on education, values and character development."
       },
       "hi": {
-        "type": "हालिया कार्यक्रम",
         "title": "रविवारीय संस्कार कक्षाएँ",
         "meta": "16 अगस्त 2026",
         "description": "विद्यार्थियों के लिए शिक्षा, संस्कार और चरित्र-निर्माण पर केंद्रित रविवार मार्गदर्शन सत्र।"
@@ -116,13 +104,11 @@
       "monthHi": "अगस्त",
       "image": "assets/images/gallery/sunday-sanskar-classes/04-card.webp",
       "en": {
-        "type": "Recent Event",
         "title": "Sunday Sanskar Classes",
         "meta": "23 August 2026",
         "description": "Students participated in the regular Sanskar Classes, reflecting the continuing tradition of value-based guidance."
       },
       "hi": {
-        "type": "हालिया कार्यक्रम",
         "title": "रविवारीय संस्कार कक्षाएँ",
         "meta": "23 अगस्त 2026",
         "description": "विद्यार्थियों ने नियमित संस्कार कक्षाओं में भाग लिया, जो मूल्य-आधारित मार्गदर्शन की निरंतर परम्परा को दर्शाता है।"

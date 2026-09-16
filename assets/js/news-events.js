@@ -5,9 +5,17 @@
     };
 
     const copy = {
-        en: { view: "View Cutting", close: "Close", empty: "Updates will be added soon." },
-        hi: { view: "कटिंग देखें", close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।" }
+        en: {
+            view: "View Cutting", close: "Close", empty: "Updates will be added soon.",
+            viewArchive: "View past activities", hideArchive: "Show fewer"
+        },
+        hi: {
+            view: "कटिंग देखें", close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।",
+            viewArchive: "सभी पिछले कार्यक्रम देखें", hideArchive: "कम दिखाएँ"
+        }
     };
+
+    const RECENT_LIMIT = 3;
 
     document.addEventListener("DOMContentLoaded", initNewsEvents);
 
@@ -19,13 +27,40 @@
             const response = await fetch(`${state.root}data/news-events.json`);
             if (!response.ok) throw new Error(`Unable to load news/events: ${response.status}`);
             const data = await response.json();
-            renderEvents("[data-upcoming-events]", data.upcoming || []);
-            renderEvents("[data-recent-events]", data.recent || []);
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            const events = (data.events || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+            const upcoming = events.filter(item => new Date(item.date) >= today);
+            const past = events.filter(item => new Date(item.date) < today).reverse();
+
+            const recentShown = past.slice(0, RECENT_LIMIT);
+            const recentRest = past.slice(RECENT_LIMIT);
+            renderEvents("[data-upcoming-events]", upcoming);
+            renderEvents("[data-recent-events]", recentShown);
+            setupRecentArchive(recentShown, recentRest);
+
             renderClippingTabs(data.clippings || []);
             setupModal();
         } catch (error) {
             page.innerHTML += `<section class="news-events-section"><div class="${shellClass()}"><div class="news-event-card__body">${copy[state.language].empty}</div></div></section>`;
         }
+    }
+
+    function setupRecentArchive(shown, rest) {
+        const toggle = document.querySelector("[data-recent-archive]");
+        if (!toggle || rest.length === 0) return;
+
+        toggle.hidden = false;
+        toggle.textContent = copy[state.language].viewArchive;
+
+        let expanded = false;
+        toggle.addEventListener("click", () => {
+            expanded = !expanded;
+            renderEvents("[data-recent-events]", expanded ? [...shown, ...rest] : shown);
+            toggle.textContent = copy[state.language][expanded ? "hideArchive" : "viewArchive"];
+        });
     }
 
     function renderEvents(selector, items) {
