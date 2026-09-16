@@ -5,14 +5,8 @@
     };
 
     const copy = {
-        en: {
-            view: "View Cutting", close: "Close", empty: "Updates will be added soon.",
-            viewArchive: "View past activities", hideArchive: "Show fewer"
-        },
-        hi: {
-            view: "कटिंग देखें", close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।",
-            viewArchive: "सभी पिछले कार्यक्रम देखें", hideArchive: "कम दिखाएँ"
-        }
+        en: { view: "View Cutting", close: "Close", empty: "Updates will be added soon." },
+        hi: { view: "कटिंग देखें", close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।" }
     };
 
     const RECENT_LIMIT = 3;
@@ -45,10 +39,8 @@
 
             renderEvents("[data-upcoming-events]", upcoming.slice(0, UPCOMING_LIMIT));
 
-            const recentShown = past.slice(0, RECENT_LIMIT);
-            const recentRest = past.slice(RECENT_LIMIT);
-            renderEvents("[data-recent-events]", recentShown);
-            setupRecentArchive(recentShown, recentRest);
+            renderEvents("[data-recent-events]", past.slice(0, RECENT_LIMIT));
+            setupRecentArchiveLink(past.length > RECENT_LIMIT);
 
             renderClippingTabs(data.clippings || []);
             setupModal();
@@ -120,19 +112,9 @@
         return `${y}-${m}-${d}`;
     }
 
-    function setupRecentArchive(shown, rest) {
-        const toggle = document.querySelector("[data-recent-archive]");
-        if (!toggle || rest.length === 0) return;
-
-        toggle.hidden = false;
-        toggle.textContent = copy[state.language].viewArchive;
-
-        let expanded = false;
-        toggle.addEventListener("click", () => {
-            expanded = !expanded;
-            renderEvents("[data-recent-events]", expanded ? [...shown, ...rest] : shown);
-            toggle.textContent = copy[state.language][expanded ? "hideArchive" : "viewArchive"];
-        });
+    function setupRecentArchiveLink(hasMore) {
+        const link = document.querySelector("[data-recent-archive]");
+        if (link && hasMore) link.hidden = false;
     }
 
     function renderEvents(selector, items) {

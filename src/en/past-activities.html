@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: "Past Activities | Manidweep Adhyatm Parivar"
+description: "A full archive of the Manidweep Adhyatm Parivar's completed events and service activities."
+bodyClass: "english-home past-activities-page page-transparent-hero"
+breadcrumb: true
+breadcrumbName: "Past Activities"
+breadcrumbParent: { "label": "News & Events", "href": "/news-events/" }
+extraCss: ["/assets/css/news-events.css"]
+extraJs: ["/assets/js/news-archive.js"]
+---
+<main id="main-content" data-news-archive>
+        <section class="page-hero page-hero--plain" aria-labelledby="past-activities-title">
+            <div class="hi-shell page-hero__content">
+                <span class="hi-kicker">Recent</span>
+                <h1 id="past-activities-title">Past Activities</h1>
+                <p class="page-hero__lead">A full archive of completed classes, gatherings and service work, newest first.</p>
+            </div>
+        </section>
+
+        <section class="news-events-section news-events-section--recent">
+            <div class="hi-shell">
+                <div class="news-events-grid" data-archive-events></div>
+            </div>
+        </section>
+    </main>
