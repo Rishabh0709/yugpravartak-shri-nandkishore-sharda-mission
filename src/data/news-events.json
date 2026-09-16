@@ -41,9 +41,9 @@
       }
     },
     {
-      "id": "food-assistance-2026-09-12",
-      "date": "2026-09-12",
-      "day": "12",
+      "id": "food-assistance-2026-09-19",
+      "date": "2026-09-19",
+      "day": "19",
       "monthEn": "Sep",
       "monthHi": "सितम्बर",
       "timeEn": "",
@@ -51,12 +51,12 @@
       "image": "assets/images/gallery/food-assistance/06-card.webp",
       "en": {
         "title": "Monthly Food Assistance Distribution",
-        "meta": "12 September 2026",
+        "meta": "19 September 2026",
         "description": "Monthly food assistance for families connected with the service initiatives."
       },
       "hi": {
         "title": "मासिक खाद्यान्न सहायता वितरण",
-        "meta": "12 सितम्बर 2026",
+        "meta": "19 सितम्बर 2026",
         "description": "सेवा प्रकल्पों से जुड़े जरूरतमंद परिवारों के लिए मासिक खाद्यान्न सहायता वितरण।"
       }
     },
