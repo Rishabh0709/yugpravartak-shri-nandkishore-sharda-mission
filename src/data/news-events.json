@@ -1,9 +1,9 @@
 {
   "events": [
     {
-      "id": "sanskar-classes-2026-08-29",
-      "date": "2026-08-29",
-      "day": "29",
+      "id": "sanskar-classes-2026-08-30",
+      "date": "2026-08-30",
+      "day": "30",
       "monthEn": "Aug",
       "monthHi": "अगस्त",
       "timeEn": "10:30 AM",
@@ -11,12 +11,12 @@
       "image": "assets/images/gallery/sunday-sanskar-classes/01-card.webp",
       "en": {
         "title": "Sanskar Classes",
-        "meta": "29 August 2026 · 10:30 AM",
+        "meta": "30 August 2026 · 10:30 AM",
         "description": "A student guidance session focused on values, confidence and positive life conduct."
       },
       "hi": {
         "title": "संस्कार कक्षाएँ",
-        "meta": "29 अगस्त 2026 · प्रातः 10:30",
+        "meta": "30 अगस्त 2026 · प्रातः 10:30",
         "description": "विद्यार्थियों के लिए संस्कार, आत्मविश्वास और सकारात्मक जीवन-दृष्टि पर आधारित मार्गदर्शन सत्र।"
       }
     },
