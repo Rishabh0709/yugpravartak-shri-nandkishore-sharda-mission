@@ -16,6 +16,11 @@
     };
 
     const RECENT_LIMIT = 3;
+    const UPCOMING_LIMIT = 3;
+
+    const EN_MONTHS_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const EN_MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const HI_MONTHS_FULL = ["जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितम्बर", "अक्टूबर", "नवम्बर", "दिसम्बर"];
 
     document.addEventListener("DOMContentLoaded", initNewsEvents);
 
@@ -31,13 +36,17 @@
             const today = new Date();
             today.setHours(0, 0, 0, 0);
 
-            const events = (data.events || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+            const manualEvents = data.events || [];
+            const recurringEvents = expandRecurring(data.recurring || [], manualEvents, today);
+            const events = manualEvents.concat(recurringEvents).sort((a, b) => a.date.localeCompare(b.date));
+
             const upcoming = events.filter(item => new Date(item.date) >= today);
             const past = events.filter(item => new Date(item.date) < today).reverse();
 
+            renderEvents("[data-upcoming-events]", upcoming.slice(0, UPCOMING_LIMIT));
+
             const recentShown = past.slice(0, RECENT_LIMIT);
             const recentRest = past.slice(RECENT_LIMIT);
-            renderEvents("[data-upcoming-events]", upcoming);
             renderEvents("[data-recent-events]", recentShown);
             setupRecentArchive(recentShown, recentRest);
 
@@ -46,6 +55,69 @@
         } catch (error) {
             page.innerHTML += `<section class="news-events-section"><div class="${shellClass()}"><div class="news-event-card__body">${copy[state.language].empty}</div></div></section>`;
         }
+    }
+
+    // Expands a recurring rule (e.g. "every Sunday until 31 Dec") into individual
+    // dated event objects, one per occurrence from today through the rule's end
+    // date -- skipping any date that already has a manually-authored entry, so a
+    // real write-up for a given Sunday always takes precedence over the filler.
+    function expandRecurring(rules, manualEvents, today) {
+        const existingDates = new Set(manualEvents.map(item => item.date));
+        const out = [];
+
+        rules.forEach(rule => {
+            const until = new Date(`${rule.until}T00:00:00`);
+            const cursor = new Date(today);
+            cursor.setDate(cursor.getDate() + ((rule.weekday - cursor.getDay() + 7) % 7));
+
+            let occurrence = 0;
+            while (cursor <= until) {
+                const iso = toISODate(cursor);
+                if (!existingDates.has(iso)) {
+                    out.push(buildRecurringEvent(rule, iso, occurrence));
+                    occurrence++;
+                }
+                cursor.setDate(cursor.getDate() + 7);
+            }
+        });
+
+        return out;
+    }
+
+    function buildRecurringEvent(rule, iso, occurrence) {
+        const d = new Date(`${iso}T00:00:00`);
+        const monthIndex = d.getMonth();
+        const day = String(d.getDate());
+        const year = d.getFullYear();
+        const images = rule.images && rule.images.length ? rule.images : [rule.image];
+
+        return {
+            id: `${rule.id}-${iso}`,
+            date: iso,
+            day,
+            monthEn: EN_MONTHS_ABBR[monthIndex],
+            monthHi: HI_MONTHS_FULL[monthIndex],
+            timeEn: rule.timeEn,
+            timeHi: rule.timeHi,
+            image: images[occurrence % images.length],
+            en: {
+                title: rule.en.title,
+                meta: `${day} ${EN_MONTHS_FULL[monthIndex]} ${year} · ${rule.timeEn}`,
+                description: rule.en.description
+            },
+            hi: {
+                title: rule.hi.title,
+                meta: `${day} ${HI_MONTHS_FULL[monthIndex]} ${year} · ${rule.timeHi}`,
+                description: rule.hi.description
+            }
+        };
+    }
+
+    function toISODate(date) {
+        const y = date.getFullYear();
+        const m = String(date.getMonth() + 1).padStart(2, "0");
+        const d = String(date.getDate()).padStart(2, "0");
+        return `${y}-${m}-${d}`;
     }
 
     function setupRecentArchive(shown, rest) {

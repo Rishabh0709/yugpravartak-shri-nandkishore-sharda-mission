@@ -115,6 +115,35 @@
       }
     }
   ],
+  "recurring": [
+    {
+      "id": "sunday-sanskar-classes",
+      "weekday": 0,
+      "until": "2026-12-31",
+      "timeEn": "10:30 AM",
+      "timeHi": "प्रातः 10:30",
+      "images": [
+        "assets/images/gallery/sunday-sanskar-classes/05-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/06-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/07-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/08-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/09-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/10-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/11-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/12-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/13-card.webp",
+        "assets/images/gallery/sunday-sanskar-classes/14-card.webp"
+      ],
+      "en": {
+        "title": "Sunday Sanskar Classes",
+        "description": "Regular Sunday session for students, combining education, values and spiritual awareness."
+      },
+      "hi": {
+        "title": "रविवारीय संस्कार कक्षाएँ",
+        "description": "शिक्षा, संस्कार और आध्यात्मिक चेतना के समन्वय पर आधारित विद्यार्थियों का नियमित रविवार सत्र।"
+      }
+    }
+  ],
   "clippings": [
     {
       "id": "2025",
