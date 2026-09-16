@@ -63,8 +63,7 @@
         ];
 
         tabs.innerHTML = ranges.map((range, index) => {
-            const count = items.filter(item => item.year >= range.min && item.year <= range.max).length;
-            return `<button class="news-range-tab${index === 0 ? " is-active" : ""}" type="button" data-news-range="${range.slug}">${range.label}<span>${count} ${state.language === "hi" ? "कटिंग" : "clippings"}</span></button>`;
+            return `<button class="news-range-tab${index === 0 ? " is-active" : ""}" type="button" data-news-range="${range.slug}">${range.label}</button>`;
         }).join("");
 
         tabs.addEventListener("click", event => {
@@ -89,8 +88,6 @@
                         <img src="${asset(item.image)}" alt="${escapeAttr(content.title)}" loading="lazy">
                     </figure>
                     <div class="news-clip-card__body">
-                        <h3>${escapeHtml(content.title)}</h3>
-                        <p>${escapeHtml(content.caption)}</p>
                         <span class="news-clip-card__action">${copy[state.language].view}</span>
                     </div>
                 </button>`;
