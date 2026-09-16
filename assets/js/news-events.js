@@ -5,8 +5,8 @@
     };
 
     const copy = {
-        en: { view: "View Cutting", close: "Close", empty: "Updates will be added soon." },
-        hi: { view: "कटिंग देखें", close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।" }
+        en: { close: "Close", empty: "Updates will be added soon." },
+        hi: { close: "बन्द करें", empty: "अपडेट शीघ्र जोड़े जाएँगे।" }
     };
 
     const RECENT_LIMIT = 3;
@@ -176,9 +176,6 @@
                     <figure class="news-clip-card__image">
                         <img src="${asset(item.image)}" alt="${escapeAttr(content.title)}" loading="lazy">
                     </figure>
-                    <div class="news-clip-card__body">
-                        <span class="news-clip-card__action">${copy[state.language].view}</span>
-                    </div>
                 </button>`;
         }).join("");
     }

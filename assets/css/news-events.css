@@ -180,13 +180,6 @@
     object-position: top center;
 }
 
-.news-clip-card__action {
-    display: inline-flex;
-    margin-top: 16px;
-    color: var(--hi-maroon, #8a2f2d);
-    font-weight: 900;
-}
-
 .news-modal {
     position: fixed;
     inset: 0;
