@@ -22,7 +22,7 @@
 
   "locales": {
     "hi": { "path": "", "label": "हिन्दी", "htmlLang": "hi", "ogLocale": "hi_IN", "enabled": true },
-    "en": { "path": "/en", "label": "English", "htmlLang": "en", "ogLocale": "en_IN", "enabled": true }
+    "en": { "path": "/en", "label": "English", "htmlLang": "en", "ogLocale": "en_IN", "enabled": false }
   },
 
   "serviceSince": "1996",
