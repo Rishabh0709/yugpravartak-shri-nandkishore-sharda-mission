@@ -104,7 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // incomplete-data banner
         incompleteBanner.hidden = profile.complete !== false;
         if (profile.complete === false) incompleteBanner.textContent = T.incompleteNote;
-        routeStatus.hidden = profile.complete === false;
+        // routeStatus is the loading/error line only -- incompleteBanner above
+        // already carries the "this trust's details are incomplete" message,
+        // so once a route has rendered successfully this always hides.
+        routeStatus.hidden = true;
 
         // bank fields — mark any unresolved "TRUST TO SUPPLY" value
         const raw = {
