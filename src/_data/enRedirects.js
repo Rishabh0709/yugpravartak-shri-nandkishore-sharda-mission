@@ -26,6 +26,8 @@ const TRANSLATED = new Set([
   "awards", "past-activities",
   "logo", "publications", "faq", "guiding-principles",
   "spiritual-discussions", "sadhna-places", "impact",
+  "bhaiyaji-sadhna-kaal", "bhaiyaji-yugpravartak",
+  "sunday-sanskar-classes", "spiritual-qa",
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.

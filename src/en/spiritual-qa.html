@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: "Spiritual Q&A | Manidweep Adhyatm Parivar"
+description: "Answers on spirituality, grounded in Bhaiyaji's divine, conscious knowledge — deep questions on human life, spirituality, sadhana, the guru-disciple relationship and the Manidweep Parivar."
+bodyClass: "english-home faq-page page-transparent-hero"
+breadcrumb: true
+breadcrumbParent: { "label": "Divya Gyan", "href": "/en/divya-gyan/" }
+extraCss: ["/assets/css/faq-hindi.css"]
+extraJs: ["/assets/js/faq-hindi.js"]
+---
+<main id="main-content">
+        <section class="page-hero page-hero--plain" aria-labelledby="faq-title">
+            <div class="hi-shell page-hero__content">
+                <span class="hi-kicker">From the accomplished word of Maa Basanti Ji Manihar</span>
+                <h1 id="faq-title">Spiritual Q&amp;A</h1>
+                <p class="page-hero__lead">An introduction to the essential nature of spirituality, grounded in the divine, conscious knowledge of Yugpravartak Adhyatmyogi Shri Nandkishore Sharda.</p>
+                <p class="page-hero__lead">These questions are not for information alone, but for self-reflection, inquiry and the awakening of discernment in life.</p>
+            </div>
+        </section>
+
+        <section class="hi-section faq-directory" aria-labelledby="faq-directory-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center">
+                    <span class="hi-kicker">Find knowledge with ease</span>
+                    <h2 id="faq-directory-title">Questions by topic</h2>
+                    <p>Choose a category, read a question, and click "View Answer" to read the full answer in a quiet pop-up.</p>
+                </header>
+                <div class="faq-toolbar" aria-label="FAQ results summary">
+                    <div class="faq-count" id="faq-count" aria-live="polite"></div>
+                </div>
+
+                <div class="faq-layout">
+                    <nav class="faq-categories" aria-label="FAQ categories">
+                        <div id="faq-category-buttons"></div>
+                        <button class="faq-category" type="button" data-category="all">
+                            <span>All questions</span>
+                        </button>
+                    </nav>
+                    <div class="faq-results" id="faq-results" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hi-section faq-closing" aria-labelledby="faq-closing-title">
+            <div class="hi-shell faq-closing__box">
+                <span class="hi-kicker">Keep the inquiry alive</span>
+                <h2 id="faq-closing-title">From reflection, inquiry; from inquiry, guidance</h2>
+                <p>Spirituality is a lifelong path, and continuous learning is an inseparable part of it. This Q&amp;A offers brief answers to some common questions, grounded in Bhaiya's knowledge.</p>
+                <p>If any questions are arising in your mind, please get in touch with the Manidweep Adhyatm Parivar. The exchange of thought stirs reflection, and settles inquiry.</p>
+                <div class="hi-actions hi-actions--center">
+                    <a class="hi-btn hi-btn--primary" href="/en/sampark/#visit">Visit Manidweep</a>
+                    <a class="hi-btn hi-btn--outline" href="/en/buddhi-vivek-yog-sadhna/">Read Buddhi-Vivek Yog Sadhna</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="faq-modal" id="faq-modal" hidden>
+        <div class="faq-modal__backdrop" data-faq-close></div>
+        <section class="faq-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="faq-modal-title" tabindex="-1">
+            <button class="faq-modal__close" type="button" data-faq-close aria-label="Close answer">&times;</button>
+            <span class="faq-modal__category" id="faq-modal-category"></span>
+            <h2 id="faq-modal-title"></h2>
+            <div class="faq-modal__answer hi-prose" id="faq-modal-answer"></div>
+        </section>
+    </div>
