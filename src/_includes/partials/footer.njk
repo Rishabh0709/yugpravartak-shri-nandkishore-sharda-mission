@@ -1,4 +1,5 @@
 {%- set pfx = "/en" if locale == "en" else "" -%}
+{%- set langBasePath = (page.url | replace("/en/", "/")) if locale == "en" else page.url -%}
 <footer class="footer">
     <div class="container footer-inner">
         <div class="footer-introduction">
@@ -25,7 +26,7 @@
                 <a href="{{ pfx }}{{ link.href }}">{{ link.label[locale] }}</a>
                 {%- endfor %}
                 {%- if loop.last and site.locales.en.enabled %}
-                <a href="{{ '/en' if locale != 'en' else '' }}{{ page.url }}" lang="{{ 'en' if locale != 'en' else 'hi' }}">{{ 'English Website' if locale != 'en' else 'हिन्दी वेबसाइट' }}</a>
+                <a href="{{ '/en' if locale != 'en' else '' }}{{ langBasePath }}" lang="{{ 'en' if locale != 'en' else 'hi' }}">{{ 'English Website' if locale != 'en' else 'हिन्दी वेबसाइट' }}</a>
                 {%- endif %}
             </nav>
             {%- endfor %}

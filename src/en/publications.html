@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: "The Unbroken Stream of Gyan Ganga | Manidweep Publications"
+description: "Sacred literature published by the Shri Nandkishore Sharda Gyan Ganga Mission — an introduction to nine books from 2003 to 2026. All books available free at Manidweep."
+bodyClass: "english-home publications-page page-transparent-hero"
+breadcrumb: true
+breadcrumbName: "Publications"
+breadcrumbParent: { "label": "Divya Gyan", "href": "/en/divya-gyan/" }
+extraCss: ["/assets/css/publications-hindi.css"]
+---
+<main id="main-content">
+    <section class="page-hero page-hero--plain" aria-labelledby="publications-title">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">Shri Nandkishore Sharda Gyan Ganga Mission</span>
+            <h1 id="publications-title">The unbroken stream of Gyan Ganga</h1>
+            <p class="page-hero__lead">Preserving, publishing and spreading eternal knowledge through sacred literature. All books are available free of charge at Manidweep for every seeking reader.</p>
+        </div>
+    </section>
+
+    <section class="hi-section publications-books" id="published-books" aria-label="Published literature">
+        <div class="hi-shell">
+            <div class="publications-booklist">
+                {%- for slug, b in publications.books %}
+                <article class="publication-card{% if b.featured %} publication-card--featured{% endif %}">
+                    <div class="publication-card__cover{% if b.coverVariant %} publication-card__cover--{{ b.coverVariant }}{% endif %}"{% if not b.cover %} role="img" aria-label="Placeholder cover for {{ b.shortTitle.en }}"{% endif %}>
+                        {%- if b.cover %}
+                        <img src="{{ b.cover }}" alt="Cover of {{ b.shortTitle.en }}" loading="lazy">
+                        {%- endif %}
+                        <span>{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+                        <strong>{{ b.shortTitle.en }}</strong>
+                    </div>
+                    <div class="publication-card__body">
+                        <span class="publication-card__year">{{ b.years }}</span>
+                        <h3>{{ b.title.en }}</h3>
+                        <p class="publication-card__meta">{{ b.credit.en }}</p>
+                        <p>{{ b.teaser.en }}</p>
+                        {%- if b.englishEdition %}
+                        <p class="publication-card__edition"><span aria-hidden="true">EN</span> {{ b.englishEdition.en | safe }}</p>
+                        {%- endif %}
+                        <details>
+                            <summary>Read a short introduction</summary>
+                            <div class="publication-card__details hi-prose">
+                                <p>{{ b.description.en }}</p>
+                            </div>
+                        </details>
+                        {%- if b.page %}
+                        <a class="hi-text-link" href="/en{{ b.page }}">Read more about this book <span aria-hidden="true">&rarr;</span></a>
+                        {%- endif %}
+                    </div>
+                </article>
+                {%- endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="hi-section publications-cta" aria-labelledby="publications-cta-title">
+        <div class="hi-shell publications-cta__box">
+            <span class="hi-kicker">Available free at Manidweep</span>
+            <h2 id="publications-cta-title">Connect with the sacred literature, carry the stream of knowledge forward</h2>
+            <p>The purpose of these books is not reading alone, but to awaken reflection, contemplation and inner transformation in life.</p>
+            <div class="hi-actions hi-actions--center">
+                <a class="hi-btn hi-btn--primary" href="/en/sampark/#visit">Visit Manidweep</a>
+                <a class="hi-btn hi-btn--outline" href="/en/gyan-ganga-mission/">About the Gyan Ganga Mission</a>
+            </div>
+        </div>
+    </section>
+</main>

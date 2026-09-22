@@ -38,6 +38,7 @@
                         {%- endfor %}
 
                         {%- if site.locales.en.enabled %}
+                        {%- set langBasePath = (page.url | replace("/en/", "/")) if locale == "en" else page.url %}
                         <li class="nav-item nav-item--language">
                             <details class="hi-language-menu">
                                 <summary aria-label="{{ 'भाषा चुनें' if locale == 'hi' else 'Choose language' }}">
@@ -45,8 +46,8 @@
                                     <span class="nav-chevron" aria-hidden="true"></span>
                                 </summary>
                                 <div class="hi-language-menu__list" role="list">
-                                    <a href="{{ page.url }}" lang="hi" hreflang="hi"{{ ' class="is-active" aria-current="page"' | safe if locale == "hi" }}>हिन्दी</a>
-                                    <a href="/en{{ page.url }}" lang="en" hreflang="en"{{ ' class="is-active" aria-current="page"' | safe if locale == "en" }}>English</a>
+                                    <a href="{{ langBasePath }}" lang="hi" hreflang="hi"{{ ' class="is-active" aria-current="page"' | safe if locale == "hi" }}>हिन्दी</a>
+                                    <a href="/en{{ langBasePath }}" lang="en" hreflang="en"{{ ' class="is-active" aria-current="page"' | safe if locale == "en" }}>English</a>
                                 </div>
                             </details>
                         </li>

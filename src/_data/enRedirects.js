@@ -24,6 +24,8 @@ const TRANSLATED = new Set([
   "shri-nandkishore-sharda", "basanti-manihar", "madhubala-advani",
   "news-events", "testimonials", "gallery", "video-detail",
   "awards", "past-activities",
+  "logo", "publications", "faq", "guiding-principles",
+  "spiritual-discussions", "sadhna-places", "impact",
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.

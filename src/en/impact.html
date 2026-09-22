@@ -1,0 +1,89 @@
+---
+layout: base.njk
+title: "Service Impact in Numbers | Manidweep Adhyatm Parivar"
+description: "Impact figures for the Manidweep Adhyatm Parivar's education, scholarship and family-support service, as of 31 March 2026."
+bodyClass: "english-home impact-page page-transparent-hero"
+breadcrumb: true
+breadcrumbName: "Service Impact in Numbers"
+extraCss: ["/assets/css/pages/impact.css"]
+extraJs: ["/assets/js/impact-data.js"]
+---
+<main id="main-content">
+    <section class="page-hero" aria-labelledby="impact-title">
+        <img class="page-hero__bg" data-image-key="impact.page-hero" src="/assets/images/impact-hero-education.webp" width="1600" height="1067" alt="" loading="eager" fetchpriority="high">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">Service impact in numbers</span>
+            <h1 id="impact-title">A stream of compassionate service, in clear numbers</h1>
+            <p class="page-hero__lead">The Manidweep Adhyatm Parivar's service has continued without interruption since 1996 — through education, sanskar and family support, on a foundation of dignity and lasting relationships. Behind every number is a life, a family and a possibility.</p>
+            <ul class="page-hero__meta">
+                <li><strong>{{ impact.metrics.studentsCombined.display.en }}</strong><span>students supported through education</span></li>
+                <li><strong>{{ impact.metrics.scholarshipCombined.display.en }}</strong><span>scholarship assistance</span></li>
+                <li><strong>{{ impact.metrics.familiesMonthly.display.en }}</strong><span>families supported each month</span></li>
+                <li><strong>{{ impact.metrics.yearsOfService.display.en }}</strong><span>years of continuous service (since 1996)</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <p class="imp-asof"><span class="hi-shell">All figures verified as of <strong>{{ impact.asOfLabel.en }}</strong>, based on the financial reports of registered public trusts.</span></p>
+
+    <nav class="page-nav" aria-label="Page sections">
+        <div class="hi-shell page-nav__links">
+            <p class="page-nav__label">On this page</p>
+            <a href="#summary">Four dimensions of service</a>
+            <a href="#impact-details">Detailed figures</a>
+            <a href="#impact-human-title">Life journeys</a>
+            <a href="#impact-closing-title">Transparency</a>
+        </div>
+    </nav>
+
+    <section class="imp-section" id="summary" aria-labelledby="shared-impact-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">A coordinated stream of service</span>
+                <h2 id="shared-impact-title">Four main dimensions, joined by one selfless spirit of service</h2>
+                <p>Here every figure is tied to its own service work — the distinct roles of girls' school education, higher education, boys' education and family support, and the mission's combined impact, all together.</p>
+            </header>
+            <div class="impact-summary-grid" data-impact-summary></div>
+        </div>
+    </section>
+
+    <section class="imp-section imp-section--soft" id="impact-details" aria-labelledby="detailed-impact-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading">
+                <span class="hi-kicker">Detailed figures</span>
+                <h2 id="detailed-impact-title">See how each dimension of service has grown over time</h2>
+                <p>In each chart, every column shows the total amount distributed by the end of that reporting period.</p>
+            </header>
+            <div data-impact-records></div>
+        </div>
+    </section>
+
+    <section class="imp-section imp-human" aria-labelledby="impact-human-title">
+        <div class="hi-shell imp-human__inner">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">Beyond the numbers</span>
+                <h2 id="impact-human-title">Numbers show the scale, life journeys show the change</h2>
+                <p>See the journeys of former students, seekers and beneficiaries, showing the real outcomes of education, dignity and sustained guidance.</p>
+            </header>
+            <div class="hi-actions hi-actions--center">
+                <a class="hi-btn hi-btn--primary" href="/en/testimonials/#success-stories">Read success stories</a>
+                <a class="hi-btn hi-btn--outline" href="/en/testimonials/#student-testimonials">See student experiences</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="imp-section imp-closing" aria-labelledby="impact-closing-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">Trust and transparency</span>
+                <h2 id="impact-closing-title">Impact means more when its foundation is just as clearly visible</h2>
+                <p>All four trusts are registered under Sections 12A and 80G of the Income Tax Act. Their registration documents, year-wise financial reports and scholarship certificates are publicly available.</p>
+            </header>
+            <div class="hi-actions hi-actions--center">
+                <a class="hi-btn hi-btn--primary" href="/en/transparency/">See registration &amp; documents</a>
+                <a class="hi-btn hi-btn--outline" href="/en/nishkam-karm-sadhna/">Nishkam Karma Sadhana</a>
+                <a class="hi-btn hi-btn--outline" href="/en/guiding-principles/">Guiding Principles</a>
+            </div>
+        </div>
+    </section>
+</main>
