@@ -24,32 +24,23 @@ extraJs: ["/assets/js/news-event-detail.js"]
     </section>
 
     <section class="news-events-section">
-        <div class="hi-shell hi-prose">
-            {%- for para in event.detail.brief.en %}
-            <p>{{ para }}</p>
-            {%- endfor %}
-        </div>
-    </section>
-
-    {%- if event.detail.photos.length %}
-    <section class="news-events-section news-events-section--recent" aria-labelledby="event-photos-title">
-        <div class="hi-shell">
-            <header class="hi-section-heading hi-section-heading--center">
-                <span class="hi-kicker">In pictures</span>
-                <h2 id="event-photos-title">Photos from the event</h2>
-            </header>
-            <div class="news-clips-grid" data-lightbox-grid>
+        <div class="hi-shell news-event-brief{% if not event.detail.photos.length %} news-event-brief--no-photos{% endif %}">
+            <div class="hi-prose news-event-brief__text">
+                {%- for para in event.detail.brief.en %}
+                <p>{{ para }}</p>
+                {%- endfor %}
+            </div>
+            {%- if event.detail.photos.length %}
+            <div class="news-event-brief__photos" aria-label="Photos from the event" data-lightbox-grid>
                 {%- for photo in event.detail.photos %}
-                <button class="news-clip-card" type="button" data-lightbox-image="{{ photo.src | url }}" data-lightbox-title="{{ photo.alt.en }}">
-                    <figure class="news-clip-card__image">
-                        <img src="{{ photo.card | url }}" alt="{{ photo.alt.en }}" loading="lazy">
-                    </figure>
+                <button class="news-event-brief__photo" type="button" data-lightbox-image="{{ photo.src | url }}" data-lightbox-title="{{ photo.alt.en }}">
+                    <img src="{{ photo.card | url }}" alt="{{ photo.alt.en }}" loading="lazy">
                 </button>
                 {%- endfor %}
             </div>
+            {%- endif %}
         </div>
     </section>
-    {%- endif %}
 
     {%- if event.detail.clippings.length %}
     <section class="news-events-section" aria-labelledby="event-clippings-title">
