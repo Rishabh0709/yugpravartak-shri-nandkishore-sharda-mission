@@ -406,9 +406,15 @@ a.news-event-card:focus-visible {
    EVENT DETAIL — brief text with a photo grid alongside it
    (news-event-detail.njk / en/news-event-detail.njk)
    ========================================================== */
+/* The text column is sized to match .hi-prose > p's own 68ch reading-
+   width cap (lang-hi.css / lang-en.css) rather than a plain 1fr --
+   with 1fr, the paragraph would stop at 68ch but the grid track kept
+   the full remaining width, leaving a dead gap before the photos. This
+   way the freed width goes to the photo column instead, so it can run
+   noticeably larger than a plain fixed sidebar would. */
 .news-event-brief {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: minmax(0, 68ch) 1fr;
     gap: 42px;
     align-items: start;
 }
@@ -420,7 +426,7 @@ a.news-event-card:focus-visible {
 .news-event-brief__photos {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 12px;
     position: sticky;
     top: 110px;
 }
