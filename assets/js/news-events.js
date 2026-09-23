@@ -123,8 +123,11 @@
         grid.innerHTML = items.map(item => {
             const content = item[state.language] || item.en;
             const month = state.language === "hi" ? item.monthHi : item.monthEn;
+            const hasDetail = Boolean(item.detail);
+            const tag = hasDetail ? "a" : "article";
+            const linkAttr = hasDetail ? ` href="${detailHref(item.id)}"` : "";
             return `
-                <article class="news-event-card">
+                <${tag} class="news-event-card"${linkAttr}>
                     <figure class="news-event-card__image">
                         <img src="${asset(item.image)}" alt="${escapeAttr(content.title)}" loading="lazy">
                         <span class="news-event-card__date"><span><strong>${escapeHtml(item.day)}</strong>${escapeHtml(month)}</span></span>
@@ -134,8 +137,13 @@
                         <p class="news-event-card__meta">${escapeHtml(content.meta)}</p>
                         <p>${escapeHtml(content.description)}</p>
                     </div>
-                </article>`;
+                </${tag}>`;
         }).join("");
+    }
+
+    function detailHref(id) {
+        const langPrefix = state.language === "en" ? "en/" : "";
+        return `${state.root}${langPrefix}news-events/${id}/`;
     }
 
     function renderClippingTabs(items) {

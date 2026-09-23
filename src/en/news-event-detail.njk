@@ -1,0 +1,89 @@
+---
+layout: base.njk
+pagination:
+  data: newsEventDetails
+  size: 1
+  alias: event
+permalink: "/en/news-events/{{ event.id }}/"
+eleventyComputed:
+  title: "{{ event.en.title }} | Manidweep Adhyatm Parivar"
+  description: "{{ event.en.description }}"
+bodyClass: "english-home news-events-page page-transparent-hero"
+breadcrumb: true
+breadcrumbParent: { "label": "News & Events", "href": "/news-events/" }
+extraCss: ["/assets/css/news-events.css"]
+extraJs: ["/assets/js/news-event-detail.js"]
+---
+<main id="main-content">
+    <section class="page-hero page-hero--plain" aria-labelledby="event-detail-title">
+        <div class="hi-shell page-hero__content">
+            <span class="hi-kicker">{{ event.en.meta }}</span>
+            <h1 id="event-detail-title">{{ event.en.title }}</h1>
+            <p class="page-hero__lead">{{ event.en.description }}</p>
+        </div>
+    </section>
+
+    <section class="news-events-section">
+        <div class="hi-shell hi-prose">
+            {%- for para in event.detail.brief.en %}
+            <p>{{ para }}</p>
+            {%- endfor %}
+        </div>
+    </section>
+
+    {%- if event.detail.photos.length %}
+    <section class="news-events-section news-events-section--recent" aria-labelledby="event-photos-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">In pictures</span>
+                <h2 id="event-photos-title">Photos from the event</h2>
+            </header>
+            <div class="news-clips-grid" data-lightbox-grid>
+                {%- for photo in event.detail.photos %}
+                <button class="news-clip-card" type="button" data-lightbox-image="{{ photo.src | url }}" data-lightbox-title="{{ photo.alt.en }}">
+                    <figure class="news-clip-card__image">
+                        <img src="{{ photo.card | url }}" alt="{{ photo.alt.en }}" loading="lazy">
+                    </figure>
+                </button>
+                {%- endfor %}
+            </div>
+        </div>
+    </section>
+    {%- endif %}
+
+    {%- if event.detail.clippings.length %}
+    <section class="news-events-section" aria-labelledby="event-clippings-title">
+        <div class="hi-shell">
+            <header class="hi-section-heading hi-section-heading--center">
+                <span class="hi-kicker">Press archive</span>
+                <h2 id="event-clippings-title">In the newspapers</h2>
+            </header>
+            <div class="news-clips-grid" data-lightbox-grid>
+                {%- for clip in event.detail.clippings %}
+                <button class="news-clip-card" type="button" data-lightbox-image="{{ clip.src | url }}" data-lightbox-title="{{ clip.alt.en }}">
+                    <figure class="news-clip-card__image">
+                        <img src="{{ clip.card | url }}" alt="{{ clip.alt.en }}" loading="lazy">
+                    </figure>
+                </button>
+                {%- endfor %}
+            </div>
+        </div>
+    </section>
+    {%- endif %}
+
+    <section class="news-events-section">
+        <div class="hi-shell hi-actions hi-actions--center">
+            <a class="hi-btn hi-btn--outline" href="{{ '/en/news-events/' | url }}">See all news & events</a>
+        </div>
+    </section>
+</main>
+
+<div class="news-modal" data-news-modal role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+    <div class="news-modal__dialog">
+        <div class="news-modal__head">
+            <h2 class="news-modal__title" id="news-modal-title" data-news-modal-title></h2>
+            <button class="news-modal__close" type="button" data-news-close aria-label="Close">&times;</button>
+        </div>
+        <div class="news-modal__body"><img data-news-modal-image alt=""></div>
+    </div>
+</div>

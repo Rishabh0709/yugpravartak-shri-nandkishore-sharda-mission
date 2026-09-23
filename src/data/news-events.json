@@ -48,7 +48,91 @@
       "monthHi": "सितम्बर",
       "timeEn": "",
       "timeHi": "",
-      "image": "assets/images/gallery/food-assistance/06-card.webp",
+      "image": "assets/images/news-events/food-assistance-2026-09-19/photo-01-card.webp",
+      "detail": {
+        "photos": [
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/photo-01.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/photo-01-card.webp",
+            "alt": {
+              "hi": "मधु आडवानी उपस्थित जनसमूह को सम्बोधित करते हुए, मेज़ पर खाद्य सामग्री",
+              "en": "Madhu Advani addressing the gathering, with food-kit items on the table"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/photo-02.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/photo-02-card.webp",
+            "alt": {
+              "hi": "अतिथिगण एवं ट्रस्ट सदस्य लाभार्थी परिवारों के साथ",
+              "en": "Guests and trust members with beneficiary families"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/photo-03.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/photo-03-card.webp",
+            "alt": {
+              "hi": "भैया जी एवं माँ बसन्ती मनिहार के चित्र के समक्ष 'माँ' खाद्य किट का वितरण",
+              "en": "Distribution of 'Maa' food kits before a portrait of Bhaiyaji and Maa Basanti Manihar"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/photo-04.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/photo-04-card.webp",
+            "alt": {
+              "hi": "खाद्यान्न किट लेने के लिए कतार में खड़े परिवारों का दृश्य",
+              "en": "Families queued to collect their food-grain kits"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/photo-05.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/photo-05-card.webp",
+            "alt": {
+              "hi": "ईशकृपा धाम के बाहर वितरण के लिए प्रतीक्षारत परिवार",
+              "en": "Families waiting outside Ishkripa Dham for the distribution"
+            }
+          }
+        ],
+        "clippings": [
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/clipping-01.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/clipping-01-card.webp",
+            "alt": {
+              "hi": "जलतेदीप में प्रकाशित समाचार",
+              "en": "Coverage in Jaltedeep"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/clipping-02.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/clipping-02-card.webp",
+            "alt": {
+              "hi": "दैनिक हिंदुस्तान बॉर्डर में प्रकाशित समाचार",
+              "en": "Coverage in Dainik Hindustan Border"
+            }
+          },
+          {
+            "src": "/assets/images/news-events/food-assistance-2026-09-19/clipping-03.webp",
+            "card": "/assets/images/news-events/food-assistance-2026-09-19/clipping-03-card.webp",
+            "alt": {
+              "hi": "समाचार पत्र में प्रकाशित रिपोर्ट",
+              "en": "Newspaper report on the distribution"
+            }
+          }
+        ],
+        "brief": {
+          "hi": [
+            "शास्त्रीनगर जी सेक्टर स्थित ईशकृपा धाम में ज्ञानयोगी श्री नन्दकिशोर शारदा अध्यात्म केंद्र एवं स्वामी विवेकानन्द स्टूडेंट्स वेलफेयर चैरिटेबल ट्रस्ट के संयुक्त तत्वावधान में शनिवार, 19 सितम्बर 2026 को 270 जरूरतमंद परिवारों को खाद्य सामग्री (राशन किट) वितरित की गई।",
+            "ट्रस्ट अध्यक्ष मधु आडवानी ने कहा कि जरूरतमंद परिवार खाद्य सामग्री को माँ अन्नपूर्णा का प्रसाद मानकर ग्रहण करते हैं और सकारात्मक विचारधारा के साथ जीवन में आगे बढ़ रहे हैं। उन्होंने युगप्रवर्तक नंदकिशोर शारदा द्वारा प्रदत्त बुद्धि-विवेक योग साधना पद्धति और उसके नौ चरणों — ज्ञान, विज्ञान, चिंतन, संकल्प, समर्पण, कर्म साधना, प्रेम, शांति और आनंद — का उल्लेख किया।",
+            "विशिष्ट अतिथि समाजसेविका सुशीला बोहरा और प्रो. वी.के. भंसाली ने भी अपने विचार रखे। कार्यक्रम में मणिद्वीप से सहयोग पाने वाली बालिकाओं — चेतना सोनी, दक्षिता आचार्य, साक्षी, डिम्पल, दीपिका कंवर और पिंकी — ने अपने अनुभव साझा किए। खाद्य सामग्री का वितरण समाजसेवी सत्यनारायण अग्रवाल, राजीव पुरोहित, कांता काबरा सहित अनेक सदस्यों ने किया।",
+            "मंच संचालक नवलकिशोर शारदा ने बताया कि मणिद्वीप में जगत्जननी माँ त्रिपुरसुंदरी की आज्ञा से पिछले 30 वर्षों से जरूरतमंद विद्यार्थियों और परिवारों को छात्रवृत्ति, सिलाई मशीन, खाद्य सामग्री, स्कूल बैग एवं फर्नीचर सहित विभिन्न प्रकार की सहायता उपलब्ध कराई जा रही है, और ट्रस्ट में कोई प्रशासनिक खर्च नहीं रखा गया है।"
+          ],
+          "en": [
+            "At Ishkripa Dham in Shastrinagar Sector, food-grain kits were distributed to 270 needy families on Saturday, 19 September 2026, jointly organised by the Gyanyogi Shri Nandkishore Sharda Adhyatm Kendra and the Swami Vivekanand Students' Welfare Charitable Trust.",
+            "Trust president Madhu Advani said the families receive this food assistance as prasad from Maa Annapurna, and are moving forward in life with a positive outlook. She spoke of the Buddhi-Vivek Yog Sadhna method given by Yugpravartak Nandkishore Sharda and its nine steps — knowledge, understanding, reflection, resolve, surrender, karma sadhana, love, peace and joy.",
+            "Special guests, the social worker Sushila Bohra and Prof. V.K. Bhansali, also shared their thoughts. Girls supported by Manidweep — Chetna Soni, Dakshita Acharya, Sakshi, Dimple, Deepika Kanwar and Pinky — shared their own experiences during the programme. The food kits were distributed by several members including the social worker Satyanarayan Agarwal, Rajeev Purohit and Kanta Kabra.",
+            "Programme convenor Navalkishore Sharda noted that, by the command of Jagatjanani Maa Tripurasundari, Manidweep has for the past 30 years provided scholarships, sewing machines, food assistance, school bags, furniture and other support to needy students and families — with no administrative cost held back by the trust."
+          ]
+        }
+      },
       "en": {
         "title": "Monthly Food Assistance Distribution",
         "meta": "19 September 2026",
