@@ -611,3 +611,49 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+/* v3 draft — "सेवा किन रूपों में होती है": the 4 trusts as a clean,
+   linked list (was a dense blockquote sentence) sitting between the
+   section's short intro and the pillar-card grid. */
+.v3-trusts-list {
+    list-style: none;
+    max-width: 620px;
+    margin: clamp(24px, 3vw, 34px) auto clamp(36px, 5vw, 54px);
+    padding: 0;
+    display: grid;
+}
+.v3-trusts-list li {
+    border-bottom: 1px solid var(--rule);
+}
+.v3-trusts-list li:first-child {
+    border-top: 1px solid var(--rule);
+}
+.v3-trusts-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 6px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: 1.05rem;
+    line-height: 1.4;
+    text-align: left;
+    text-decoration: none;
+    transition: color .2s ease, padding-left .2s ease;
+}
+.v3-trusts-list a::after {
+    content: "→";
+    flex-shrink: 0;
+    color: var(--gold-deep);
+    transition: transform .2s ease;
+}
+.v3-trusts-list a:hover,
+.v3-trusts-list a:focus-visible {
+    color: var(--primary);
+    padding-left: 12px;
+}
+.v3-trusts-list a:hover::after,
+.v3-trusts-list a:focus-visible::after {
+    transform: translateX(4px);
+}
