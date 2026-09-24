@@ -499,44 +499,68 @@
     .v2-gallery__strip { grid-auto-columns: 72%; }
 }
 
-/* v3 draft — short "People" intro strip (Bhaiyaji / Maa Basanti / Madhu Maa) */
+/* v3 draft — short "People" intro strip (Bhaiyaji / Maa Basanti / Madhu Maa)
+   Below 760px this is a horizontal row (small thumb + text) rather than a
+   stacked full-width portrait -- a tall 3:4 portrait stacked above several
+   lines of text made each card feel enormous and forced a lot of scrolling
+   through what's meant to be a quick-glance strip. */
 .v3-people-grid {
     display: grid;
-    gap: clamp(24px, 3vw, 36px);
+    gap: 22px;
     margin-top: clamp(28px, 4vw, 44px);
 }
 @media (min-width: 760px) {
-    .v3-people-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .v3-people-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 36px); }
 }
 .v3-people-card {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    text-align: left;
+}
+@media (min-width: 760px) {
+    .v3-people-card { flex-direction: column; align-items: stretch; text-align: center; }
 }
 .v3-people-card__media {
-    margin: 0 0 16px;
+    flex: none;
+    width: 96px;
+    margin: 0;
     border-radius: var(--radius);
     overflow: hidden;
     aspect-ratio: 3 / 4;
     box-shadow: var(--shadow-sm);
+}
+@media (min-width: 760px) {
+    .v3-people-card__media { width: auto; margin: 0 0 16px; }
 }
 .v3-people-card__media img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 15%;
 }
-.v3-people-card .hi-kicker { justify-content: center; }
+.v3-people-card .hi-kicker { justify-content: flex-start; }
+@media (min-width: 760px) { .v3-people-card .hi-kicker { justify-content: center; } }
 .v3-people-card h3 {
-    margin: 6px 0 10px;
+    margin: 6px 0 8px;
     color: var(--ink);
     font-family: var(--font-head);
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
+@media (min-width: 760px) { .v3-people-card h3 { margin: 6px 0 10px; font-size: 1.3rem; } }
 .v3-people-card p {
-    margin: 0 0 14px;
-    color: var(--ink-body);
-    line-height: 1.75;
-    font-size: .96rem;
+    display: none;
 }
-.v3-people-card .hi-text-link { justify-content: center; margin: 0 auto; }
+@media (min-width: 760px) {
+    .v3-people-card p {
+        display: block;
+        margin: 0 0 14px;
+        color: var(--ink-body);
+        line-height: 1.75;
+        font-size: .96rem;
+    }
+}
+.v3-people-card .hi-text-link { justify-content: flex-start; margin: 0; font-size: .88rem; }
+@media (min-width: 760px) { .v3-people-card .hi-text-link { justify-content: center; margin: 0 auto; font-size: 1rem; } }
