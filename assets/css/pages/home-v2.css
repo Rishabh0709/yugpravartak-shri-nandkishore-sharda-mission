@@ -657,3 +657,77 @@
 .v3-trusts-list a:focus-visible::after {
     transform: translateX(4px);
 }
+
+/* v3 draft — "At a Glance" moved up near the top, full-width maroon band */
+.v3-stats-band {
+    padding: clamp(48px, 7vw, 84px) 0;
+    background: linear-gradient(135deg, var(--primary-deep), var(--primary));
+    color: #fffaf1;
+}
+.v3-stats-band .hi-kicker { color: rgba(255, 250, 241, .72); }
+.v3-stats-band .hi-section-heading h2 { color: #fffaf1; }
+.v3-stats-grid {
+    list-style: none;
+    margin: clamp(32px, 4vw, 48px) 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+    text-align: center;
+}
+@media (min-width: 700px) {
+    .v3-stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.v3-stats-grid li {
+    position: relative;
+    padding-inline-start: 24px;
+}
+.v3-stats-grid li:first-child { padding-inline-start: 0; }
+.v3-stats-grid li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: rgba(255, 250, 241, .22);
+}
+.v3-stats-grid li:first-child::before { display: none; }
+@media (max-width: 699px) {
+    .v3-stats-grid li::before { display: none; }
+    .v3-stats-grid li { padding-inline-start: 0; }
+}
+.v3-stats-grid strong {
+    display: block;
+    margin-bottom: 8px;
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.1;
+    color: var(--gold);
+}
+.v3-stats-grid span {
+    display: block;
+    color: rgba(255, 250, 241, .82);
+    font-size: .92rem;
+    line-height: 1.5;
+}
+.v3-stats-band__note {
+    margin: clamp(28px, 4vw, 40px) 0 0;
+    text-align: center;
+    color: rgba(255, 250, 241, .8);
+    font-size: .92rem;
+}
+.v3-stats-band__note strong { color: #fffaf1; }
+.v3-stats-band__note a {
+    color: #fffaf1;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.v3-stats-band__note a:hover,
+.v3-stats-band__note a:focus-visible { color: var(--gold); }
+
+/* v3 draft — Book/BVYS "how useful" block now sits full-width below
+   the 2-column panel instead of nested in its narrower content
+   column, so center its heading to match the full-width card grid. */
+.hi-mini-heading--center { text-align: center; }

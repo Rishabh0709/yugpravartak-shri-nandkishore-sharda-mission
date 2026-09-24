@@ -56,6 +56,23 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
     </div>
   </section>
 
+  {# ============ 1b2 · AT A GLANCE (real numbers, impact.json — same fields/labels as impact.html's own hero stat list; full-width maroon band) ============ #}
+  <section class="v3-stats-band" aria-labelledby="v3-glance-title">
+    <div class="hi-shell">
+      <header class="hi-section-heading hi-section-heading--center">
+        <span class="hi-kicker">मिशन एक दृष्टि में</span>
+        <h2 id="v3-glance-title">तीन दशकों की निरन्तर सेवा, स्पष्ट आँकड़ों के साथ</h2>
+      </header>
+      <ul class="v3-stats-grid">
+        <li><strong>{{ impact.metrics.yearsOfService.display.hi }}</strong><span>{{ impact.metrics.yearsOfService.label.hi }}</span></li>
+        <li><strong>{{ impact.metrics.studentsCombined.display.hi }}</strong><span>{{ impact.metrics.studentsCombined.label.hi }}</span></li>
+        <li><strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong><span>{{ impact.metrics.scholarshipCombined.label.hi }}</span></li>
+        <li><strong>{{ impact.metrics.familiesMonthly.display.hi }}</strong><span>{{ impact.metrics.familiesMonthly.label.hi }}</span></li>
+      </ul>
+      <p class="v3-stats-band__note">सभी आँकड़े <strong>{{ impact.asOfLabel.hi }}</strong> तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित। <a href="/impact/">पूरे आँकड़े देखें <span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
   {# ============ 1c · THE QUEST (Bhaiyaji's search + the darshan — condensed from the live homepage's own Seeker section, same headings) ============ #}
   <section class="hi-section hi-mission" id="journey-quest" aria-labelledby="v3-quest-title">
     <div class="hi-shell hi-narrative">
@@ -99,18 +116,19 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
             <div><strong>शाश्वत</strong><p>जीवन, मृत्यु, आत्मा एवं ब्रह्माण्ड के रहस्यों का आधिकारिक मार्गदर्शक।</p></div>
           </div>
 
-          <h3 class="hi-mini-heading">यह आपके लिए कैसे उपयोगी है?</h3>
-          <div class="hi-inquiry-grid">
-            <div><strong>गहन प्रश्नों के उत्तर</strong><p>जीवन, मृत्यु, आत्मा और ईश्वर से जुड़ी अनादि जिज्ञासाओं का समाधान।</p></div>
-            <div><strong>सबके लिए सुलभ</strong><p>हर धर्म, जाति, आयु और बौद्धिक स्तर के जिज्ञासु के लिए समान रूप से ग्राह्य।</p></div>
-            <div><strong>जीवन में रूपान्तरण</strong><p>निष्पक्ष पठन-चिंतन से अनेक जिज्ञासुओं व नास्तिकों का भी आध्यात्मिक रूपान्तरण हुआ है।</p></div>
-            <div><strong>निःशुल्क उपलब्ध</strong><p>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन द्वारा जन-जन तक निःशुल्क पहुँचाया जा रहा है।</p></div>
-          </div>
-
-          <div class="hi-actions">
-            <a class="hi-btn hi-btn--primary" href="/divya-gyan/">दिव्य ज्ञान पढ़ें <span aria-hidden="true">→</span></a>
-          </div>
         </div>
+      </div>
+
+      <h3 class="hi-mini-heading hi-mini-heading--center">यह आपके लिए कैसे उपयोगी है?</h3>
+      <div class="hi-inquiry-grid hi-inquiry-grid--4">
+        <div><strong>गहन प्रश्नों के उत्तर</strong><p>जीवन, मृत्यु, आत्मा और ईश्वर से जुड़ी अनादि जिज्ञासाओं का समाधान।</p></div>
+        <div><strong>सबके लिए सुलभ</strong><p>हर धर्म, जाति, आयु और बौद्धिक स्तर के जिज्ञासु के लिए समान रूप से ग्राह्य।</p></div>
+        <div><strong>जीवन में रूपान्तरण</strong><p>निष्पक्ष पठन-चिंतन से अनेक जिज्ञासुओं व नास्तिकों का भी आध्यात्मिक रूपान्तरण हुआ है।</p></div>
+        <div><strong>निःशुल्क उपलब्ध</strong><p>श्री नन्दकिशोर शारदा ज्ञान गंगा मिशन द्वारा जन-जन तक निःशुल्क पहुँचाया जा रहा है।</p></div>
+      </div>
+
+      <div class="hi-actions hi-actions--center">
+        <a class="hi-btn hi-btn--primary" href="/divya-gyan/">दिव्य ज्ञान पढ़ें <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -140,36 +158,20 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
             <div><strong>सार्वभौमिक</strong><p>जाति, धर्म, आयु, वर्ग और देश की सीमाओं से परे सम्पूर्ण मानवता के लिए समान रूप से प्रासंगिक।</p></div>
           </div>
 
-          <h3 class="hi-mini-heading">यह आपके लिए कैसे उपयोगी है?</h3>
-          <div class="hi-inquiry-grid">
-            <div><strong>सकारात्मक सोच</strong><p>आत्मविश्वास, संयम, विवेक एवं सद्गुणों का विकास।</p></div>
-            <div><strong>सफल व सार्थक जीवन</strong><p>बुद्धि निर्मल व विवेक जागृत होकर आनन्दमय जीवन का आधार बनती है।</p></div>
-            <div><strong>सामाजिक कल्याण</strong><p>स्वयं, परिवार, समाज और मानवता के कल्याण का माध्यम बनती है।</p></div>
-            <div><strong>व्यक्तिगत मार्गदर्शन</strong><p>साधक की जिज्ञासा और परिस्थितियों के अनुरूप मणिद्वीप व सिद्धपीठ में मार्गदर्शन।</p></div>
-          </div>
-
-          <div class="hi-actions">
-            <a class="hi-btn hi-btn--primary" href="/buddhi-vivek-yog-sadhna/">साधना पद्धति जानें <span aria-hidden="true">→</span></a>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  {# ============ 2 · AT A GLANCE (real numbers, impact.json — same fields/labels as impact.html's own hero stat list) ============ #}
-  <section class="hi-section" aria-labelledby="v3-glance-title">
-    <div class="hi-shell">
-      <header class="hi-section-heading hi-section-heading--center">
-        <span class="hi-kicker">मिशन एक दृष्टि में</span>
-        <h2 id="v3-glance-title">तीन दशकों की निरन्तर सेवा, स्पष्ट आँकड़ों के साथ</h2>
-      </header>
-      <ul class="page-hero__meta" style="justify-content:center; text-align:center; margin-top:clamp(24px,3vw,36px)">
-        <li><strong>{{ impact.metrics.yearsOfService.display.hi }}</strong><span>{{ impact.metrics.yearsOfService.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.studentsCombined.display.hi }}</strong><span>{{ impact.metrics.studentsCombined.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong><span>{{ impact.metrics.scholarshipCombined.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.familiesMonthly.display.hi }}</strong><span>{{ impact.metrics.familiesMonthly.label.hi }}</span></li>
-      </ul>
-      <p class="imp-asof" style="margin-top:20px; text-align:center;">सभी आँकड़े <strong>{{ impact.asOfLabel.hi }}</strong> तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित। <a class="hi-inline-link" href="/impact/">पूरे आँकड़े देखें →</a></p>
+      <h3 class="hi-mini-heading hi-mini-heading--center">यह आपके लिए कैसे उपयोगी है?</h3>
+      <div class="hi-inquiry-grid hi-inquiry-grid--4">
+        <div><strong>सकारात्मक सोच</strong><p>आत्मविश्वास, संयम, विवेक एवं सद्गुणों का विकास।</p></div>
+        <div><strong>सफल व सार्थक जीवन</strong><p>बुद्धि निर्मल व विवेक जागृत होकर आनन्दमय जीवन का आधार बनती है।</p></div>
+        <div><strong>सामाजिक कल्याण</strong><p>स्वयं, परिवार, समाज और मानवता के कल्याण का माध्यम बनती है।</p></div>
+        <div><strong>व्यक्तिगत मार्गदर्शन</strong><p>साधक की जिज्ञासा और परिस्थितियों के अनुरूप मणिद्वीप व सिद्धपीठ में मार्गदर्शन।</p></div>
+      </div>
+
+      <div class="hi-actions hi-actions--center">
+        <a class="hi-btn hi-btn--primary" href="/buddhi-vivek-yog-sadhna/">साधना पद्धति जानें <span aria-hidden="true">→</span></a>
+      </div>
     </div>
   </section>
 
