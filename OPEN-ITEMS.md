@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-25 (New homepage draft at /index-v3/, awaiting review)
+**Last updated:** 2026-09-25 (/index-v3/ draft: added People intro strip, shared with team)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -154,6 +154,7 @@ Say the word and I'll do these — no input needed:
 
 ## Done (recent, for reference)
 
+- **`/index-v3/` draft: added a short "People" intro strip before the Our Story section** (2026-09-25, owner-requested, after sharing `/index-v3/` with the team for review). New 3-card section — Bhaiyaji, Maa Basanti, Madhu Maa — sits between the Trust/Transparency block and "Our Story". Per owner's standing instruction (no invented content): each card's one-sentence intro is lifted verbatim from that person's own bio-page hero lead paragraph (`shri-nandkishore-sharda.html`, `basanti-manihar.html`, `madhubala-advani.html`), portraits and role/name text come from `people.json` (same fields the live homepage's own Lineage section uses), kicker/heading text ("प्रेरक व्यक्तित्व" / "मिशन की परम्परा") reused verbatim from `navigation.json`'s nav-group label and the live homepage Lineage section's own aria-label. New CSS (`.v3-people-grid`/`.v3-people-card` in `home-v2.css`) — a simple 3-up portrait+kicker+name+lead+link card, 1-column on mobile. Verified: build clean, full link check (160 files, 6,004 links, same 1 pre-existing non-issue), confirmed no overflow desktop/mobile once lazy images finish loading (an `img` mid-load briefly reports its HTML width/height attribute as its rendered size until `complete` — a known rendering-timing artifact in this browser tool, not a real layout bug; forcing eager-load before measuring confirms it). This page is genuinely live at `manidweepjodhpur.org/index-v3/` (`noindex`, so it won't show up in search, but the direct link works) — already shared with the owner's team for review.
 - **New homepage draft built at `/index-v3/` — first-time-visitor-oriented, live homepage untouched** (2026-09-25, owner-requested, after flagging that the live homepage reads like an About page — founder biography, lineage, chakra dharan, book, sadhna methodology — before a first-time visitor ever sees what the mission does today or why to trust it). Built `src/index-v3.html` as a **separate, `noindex` + collections-excluded draft** (same precedent as `index-v2.html` before it went live) — does not touch `src/index.html` at all. Owner's brief: use only existing, real site content, don't invent anything, ask if something's missing. Turned out nothing was missing — the current homepage's own bottom sections (Karma Sadhna pillars, real success stories, gallery, "ways to connect", closing mantra) were already exactly the first-visitor content needed, just buried under 7 dense biographical sections; the draft promotes them and adds 3 new sections built from real copy on other pages:
   - **Hero** — verbatim, unchanged from the live homepage, + a second CTA to `/donate/`.
   - **At a glance** — NEW, 4 real stats from `impact.json` (30 वर्ष, 8,631+ students, ₹6.72 करोड़+ scholarships, ~300 families/month) in the same `.page-hero__meta` component `impact.html`'s own hero already uses.

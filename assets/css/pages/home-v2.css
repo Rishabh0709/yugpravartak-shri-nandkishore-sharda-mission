@@ -498,3 +498,45 @@
 @media (max-width: 520px) {
     .v2-gallery__strip { grid-auto-columns: 72%; }
 }
+
+/* v3 draft — short "People" intro strip (Bhaiyaji / Maa Basanti / Madhu Maa) */
+.v3-people-grid {
+    display: grid;
+    gap: clamp(24px, 3vw, 36px);
+    margin-top: clamp(28px, 4vw, 44px);
+}
+@media (min-width: 760px) {
+    .v3-people-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.v3-people-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.v3-people-card__media {
+    margin: 0 0 16px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    box-shadow: var(--shadow-sm);
+}
+.v3-people-card__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.v3-people-card .hi-kicker { justify-content: center; }
+.v3-people-card h3 {
+    margin: 6px 0 10px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+}
+.v3-people-card p {
+    margin: 0 0 14px;
+    color: var(--ink-body);
+    line-height: 1.75;
+    font-size: .96rem;
+}
+.v3-people-card .hi-text-link { justify-content: center; margin: 0 auto; }
