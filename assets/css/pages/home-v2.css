@@ -564,3 +564,36 @@
 }
 .v3-people-card .hi-text-link { justify-content: flex-start; margin: 0; font-size: .88rem; }
 @media (min-width: 760px) { .v3-people-card .hi-text-link { justify-content: center; margin: 0 auto; font-size: 1rem; } }
+
+/* v3 draft — "Two Paths" (knowledge/practice + service), what the mission does at a glance */
+.v3-paths-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: clamp(28px, 4vw, 44px);
+}
+@media (min-width: 700px) {
+    .v3-paths-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(22px, 3vw, 32px); }
+}
+.v3-path-card {
+    padding: clamp(24px, 3vw, 34px);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+}
+.v3-path-card h3 {
+    margin: 6px 0 12px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: 1.4rem;
+}
+.v3-path-card p {
+    margin: 0 0 18px;
+    color: var(--ink-body);
+    line-height: 1.8;
+}
+.v3-path-card .hi-actions {
+    margin: 0;
+    justify-content: flex-start;
+}
