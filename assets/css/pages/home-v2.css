@@ -224,7 +224,7 @@
     font-family: var(--font-head);
     font-size: clamp(1.15rem, 2vw, 1.5rem);
     line-height: 1.5;
-    color: var(--ink);
+    color: var(--primary);
 }
 
 /* ---------- buddhi-vivek yoga sadhna ---------- */
