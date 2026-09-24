@@ -281,6 +281,61 @@
 }
 .v2-bvy__close { margin-top: clamp(20px, 2.6vw, 28px); }
 
+/* Karma Sadhna — the four trusts, listed left / explained right */
+.v2-karma-trusts {
+    display: grid;
+    gap: clamp(18px, 2.4vw, 28px);
+    max-width: 1080px;
+    margin: 0 auto clamp(40px, 5vw, 60px);
+    padding: clamp(22px, 2.8vw, 32px) clamp(24px, 3.2vw, 36px);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+@media (min-width: 760px) {
+    .v2-karma-trusts { grid-template-columns: minmax(0, 320px) 1fr; gap: clamp(28px, 4vw, 48px); }
+}
+.v2-karma-trusts__intro {
+    margin: 0 0 12px;
+    color: var(--ink);
+    font-weight: 600;
+}
+.v2-karma-trusts__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+.v2-karma-trusts__list li {
+    position: relative;
+    padding-left: 22px;
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-size: 1.02rem;
+    line-height: 1.4;
+}
+.v2-karma-trusts__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .55em;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--gold-deep);
+}
+.v2-karma-trusts__text {
+    margin: 0;
+    color: var(--ink-body);
+    line-height: 1.9;
+    align-self: center;
+}
+@media (min-width: 760px) {
+    .v2-karma-trusts__list { border-inline-end: 1px solid var(--rule); padding-inline-end: clamp(24px, 3vw, 36px); }
+}
+
 /* dawn-lotus wash, drawn from the BVYS lotus image palette
    (warm sunrise glow above, pale water-blue below, over paper) */
 .hi-sadhna.v2-sadhna-band {
