@@ -7,7 +7,6 @@
       "groups": [
         { "links": [
           { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission/" },
-          { "label": { "hi": "मिशन का इतिहास", "en": "History & timeline" }, "href": "/history/" },
           { "label": { "hi": "सम्मान एवं मान्यता", "en": "Awards & Recognition" }, "href": "/awards/" }
         ]},
         { "label": { "hi": "प्रेरक व्यक्तित्व", "en": "The lineage" }, "links": [
