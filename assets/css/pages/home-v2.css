@@ -599,3 +599,15 @@
     margin: 0;
     justify-content: flex-start;
 }
+
+/* v3 draft — Book/BVYS sections: cards now sit inside the narrower
+   hi-knowledge-panel content column (2-col layout), not the full
+   section width, so force 2-up regardless of viewport instead of the
+   hi-inquiry-grid--4 modifier's 4-up-at-900px (that breakpoint reads
+   the viewport, not this narrower nested column, and would cram 4
+   tiny columns into ~half the shell width). */
+@media (min-width: 641px) {
+    .hi-knowledge-panel__content .hi-inquiry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
