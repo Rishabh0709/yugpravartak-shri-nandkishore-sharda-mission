@@ -575,13 +575,15 @@
     .v3-paths-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(22px, 3vw, 32px); }
 }
 .v3-path-card {
-    padding: clamp(24px, 3vw, 34px);
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
+    padding: clamp(26px, 3.2vw, 36px);
+    background: rgba(255, 253, 248, .92);
+    border: 1px solid rgba(121, 43, 42, .16);
+    border-top: 4px solid var(--gold);
+    border-radius: 22px;
+    box-shadow: 0 16px 42px rgba(63, 45, 37, .09);
     text-align: left;
 }
+.v3-path-card--karma { border-top-color: var(--primary); }
 .v3-path-card h3 {
     margin: 6px 0 12px;
     color: var(--ink);
