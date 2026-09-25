@@ -83,41 +83,38 @@
             object-fit: cover;
         }
 
+        /* vision section: stretch the row so the book cover's card matches
+           the text column's actual height instead of a fixed clamp() that
+           left a tall card with a mostly-empty band above a small book. */
+        #vision .dg-grid {
+            align-items: stretch;
+        }
+
         .dg-media--book {
             display: grid;
             place-items: center;
-            padding: clamp(20px, 4vw, 44px);
+            padding: 14px;
         }
 
         .dg-media--book img {
-            width: min(100%, 360px);
-            height: clamp(420px, 46vw, 590px);
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            min-height: 320px;
             object-fit: contain;
             filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .22));
         }
 
-        /* origin section: two stacked photos on the left, sized so their
-           combined height matches the text column's height instead of a
-           fixed figure height -- grid stretch gives the stack the row's
-           full height, flex splits it between the two photos. */
-        .dg-grid--origin {
-            align-items: stretch;
+        /* origin section: two separate image+text rows instead of one
+           block, so give them breathing room between rows. */
+        .dg-origin-row + .dg-origin-row {
+            margin-top: clamp(40px, 6vw, 64px);
         }
 
-        .dg-media-stack {
-            display: flex;
-            flex-direction: column;
-            gap: clamp(14px, 2vw, 20px);
-        }
-
-        .dg-media-stack .dg-media {
-            flex: 1 1 0;
-            min-height: 0;
-        }
-
-        .dg-media-stack .dg-media img {
-            height: 100%;
-            min-height: 150px;
+        /* impact section: no image, copy runs full-width -- cap it at a
+           normal reading measure instead of the full 1180px shell. */
+        .dg-copy--full {
+            max-width: 74ch;
         }
 
         .dg-media figcaption {
@@ -355,20 +352,14 @@
                 grid-template-columns: 1fr;
             }
 
-            /* single column now, so the stretch-to-match-text trick no
-               longer applies -- give each stacked photo its own normal
-               fixed height instead of splitting an inherited row height. */
-            .dg-media-stack .dg-media {
-                flex: none;
-            }
-
-            .dg-media-stack .dg-media img {
-                height: 280px;
-                min-height: 0;
-            }
-
             .dg-grid--reverse .dg-media {
                 order: 0;
+            }
+
+            /* single column now, so #vision's row-stretch trick no longer
+               applies -- give the book cover a normal fixed height. */
+            .dg-media--book img {
+                height: min(56vw, 480px);
             }
 
             .dg-essence__grid,
