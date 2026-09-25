@@ -6,6 +6,7 @@ bodyClass: "hindi-home divya-gyan-page page-transparent-hero"
 breadcrumb: true
 breadcrumbName: "दिव्य ज्ञान"
 extraCss: ["/assets/css/pages/divya-gyan.css"]
+extraJs: ["/assets/js/divya-gyan-reviews.js"]
 book: divyaGyan
 ---
 <main id="main-content">
@@ -153,19 +154,29 @@ book: divyaGyan
                             <strong>{{ r.name.hi }}</strong>
                             <span>{{ r.designation.hi }}</span>
                         </footer>
-                        <details class="dg-review__full">
-                            <summary>पूरी प्रतिक्रिया पढ़ें</summary>
+                        <button class="dg-review__trigger" type="button" data-dg-review-open>पूरी प्रतिक्रिया पढ़ें</button>
+                        <template class="dg-review__full">
                             {%- for para in r.body.hi %}
                             <p>{{ para }}</p>
                             {%- endfor %}
                             {%- if r.originalLanguage == "en" %}
                             <p class="dg-review__note">मूल प्रतिक्रिया अंग्रेज़ी में; ऊपर भावानुवाद प्रस्तुत है।</p>
                             {%- endif %}
-                        </details>
+                        </template>
                     </article>
                     {%- endfor %}
                 </div>
             </div>
         </section>
+
+        <div class="dg-review-modal" id="dg-review-modal" hidden>
+            <div class="dg-review-modal__backdrop" data-dg-review-close></div>
+            <section class="dg-review-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="dg-review-modal-title" tabindex="-1">
+                <button class="dg-review-modal__close" type="button" data-dg-review-close aria-label="प्रतिक्रिया बन्द करें">×</button>
+                <h2 id="dg-review-modal-title"></h2>
+                <span class="dg-review-modal__designation" id="dg-review-modal-designation"></span>
+                <div class="dg-review-modal__body" id="dg-review-modal-body"></div>
+            </section>
+        </div>
 
     </main>
