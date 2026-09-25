@@ -36,6 +36,7 @@
                 <address>
                     <span>{{ site.address.full[locale] | safe }}</span>
                     <a href="tel:{{ site.contact.phoneRaw }}">{{ site.contact.phoneDisplay }}</a>
+                    <a href="tel:{{ site.contact.phoneRaw2 }}">{{ site.contact.phoneDisplay2 }}</a>
                     <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
                 </address>
                 <a class="footer-map-link" href="{{ pfx }}{{ footer.mapLink.href }}">{{ footer.mapLink.label[locale] }} <span aria-hidden="true">&rarr;</span></a>
