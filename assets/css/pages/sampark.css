@@ -47,9 +47,10 @@
 }
 .sk-essentials__label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    text-align: center;
     font-family: var(--font-head);
-    font-size: 1.15rem;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
     font-weight: 700;
     letter-spacing: .01em;
     color: var(--primary);
