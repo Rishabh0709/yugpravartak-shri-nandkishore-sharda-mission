@@ -32,8 +32,7 @@
         ]},
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
           { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna/" },
-          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/spiritual-discussions/" },
-          { "label": { "hi": "साधना आरम्भ करें एवं सामान्य प्रश्न", "en": "Getting started & FAQ" }, "href": "/faq/" }
+          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/spiritual-discussions/" }
         ]}
       ]
     },

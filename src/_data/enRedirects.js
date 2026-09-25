@@ -24,17 +24,16 @@ const TRANSLATED = new Set([
   "shri-nandkishore-sharda", "basanti-manihar", "madhubala-advani",
   "news-events", "testimonials", "gallery", "video-detail",
   "awards", "past-activities",
-  "logo", "publications", "faq", "guiding-principles",
+  "logo", "publications", "guiding-principles",
   "spiritual-discussions", "sadhna-places", "impact",
   "bhaiyaji-sadhna-kaal", "bhaiyaji-yugpravartak",
   "sunday-sanskar-classes", "spiritual-qa",
 ]);
 
 // Special pages that are not part of the public nav and get no /en/ alias.
-// shri-nandkishore-sharda-chintan -> redirect to /margdarshan-siddhant.html;
-// sadhna-aarambh -> redirect to /faq.html (both pairs were merged).
+// shri-nandkishore-sharda-chintan -> redirect to /margdarshan-siddhant.html.
 const SKIP = new Set([
-  "404", "patterns", "shri-nandkishore-sharda-chintan", "sadhna-aarambh",
+  "404", "patterns", "shri-nandkishore-sharda-chintan",
 ]);
 
 module.exports = () =>
