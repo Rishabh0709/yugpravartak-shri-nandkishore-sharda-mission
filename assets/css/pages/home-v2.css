@@ -676,7 +676,7 @@
     text-align: center;
 }
 @media (min-width: 700px) {
-    .v3-stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .v3-stats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .v3-stats-grid li {
     position: relative;
@@ -711,8 +711,8 @@
     font-size: .92rem;
     line-height: 1.5;
 }
-.v3-stats-band__note {
-    margin: clamp(28px, 4vw, 40px) 0 0;
+.v3-stats-band .v3-stats-band__note {
+    margin: clamp(40px, 5.5vw, 60px) 0 0;
     text-align: center;
     color: rgba(255, 250, 241, .8);
     font-size: .92rem;

@@ -56,23 +56,6 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
     </div>
   </section>
 
-  {# ============ 1b2 · AT A GLANCE (real numbers, impact.json — same fields/labels as impact.html's own hero stat list; full-width maroon band) ============ #}
-  <section class="v3-stats-band" aria-labelledby="v3-glance-title">
-    <div class="hi-shell">
-      <header class="hi-section-heading hi-section-heading--center">
-        <span class="hi-kicker">मिशन एक दृष्टि में</span>
-        <h2 id="v3-glance-title">तीन दशकों की निरन्तर सेवा, स्पष्ट आँकड़ों के साथ</h2>
-      </header>
-      <ul class="v3-stats-grid">
-        <li><strong>{{ impact.metrics.yearsOfService.display.hi }}</strong><span>{{ impact.metrics.yearsOfService.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.studentsCombined.display.hi }}</strong><span>{{ impact.metrics.studentsCombined.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong><span>{{ impact.metrics.scholarshipCombined.label.hi }}</span></li>
-        <li><strong>{{ impact.metrics.familiesMonthly.display.hi }}</strong><span>{{ impact.metrics.familiesMonthly.label.hi }}</span></li>
-      </ul>
-      <p class="v3-stats-band__note">सभी आँकड़े <strong>{{ impact.asOfLabel.hi }}</strong> तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित। <a href="/impact/">पूरे आँकड़े देखें <span aria-hidden="true">→</span></a></p>
-    </div>
-  </section>
-
   {# ============ 1c · THE QUEST (Bhaiyaji's search + the darshan — condensed from the live homepage's own Seeker section, same headings) ============ #}
   <section class="hi-section hi-mission" id="journey-quest" aria-labelledby="v3-quest-title">
     <div class="hi-shell hi-narrative">
@@ -172,6 +155,22 @@ extraCss: ["/assets/css/home-concept.css", "/assets/css/pages/home-v2.css"]
       <div class="hi-actions hi-actions--center">
         <a class="hi-btn hi-btn--primary" href="/buddhi-vivek-yog-sadhna/">साधना पद्धति जानें <span aria-hidden="true">→</span></a>
       </div>
+    </div>
+  </section>
+
+  {# ============ 1b2 · AT A GLANCE (real numbers, impact.json — same fields/labels as impact.html's own hero stat list; full-width maroon band) ============ #}
+  <section class="v3-stats-band" aria-labelledby="v3-glance-title">
+    <div class="hi-shell">
+      <header class="hi-section-heading hi-section-heading--center">
+        <span class="hi-kicker">मिशन एक दृष्टि में</span>
+        <h2 id="v3-glance-title">तीन दशकों की निरन्तर सेवा, स्पष्ट आँकड़ों के साथ</h2>
+      </header>
+      <ul class="v3-stats-grid">
+        <li><strong>{{ impact.metrics.studentsCombined.display.hi }}</strong><span>{{ impact.metrics.studentsCombined.label.hi }}</span></li>
+        <li><strong>{{ impact.metrics.scholarshipCombined.display.hi }}</strong><span>{{ impact.metrics.scholarshipCombined.label.hi }}</span></li>
+        <li><strong>{{ impact.metrics.familiesMonthly.display.hi }}</strong><span>{{ impact.metrics.familiesMonthly.label.hi }}</span></li>
+      </ul>
+      <p class="v3-stats-band__note">सभी आँकड़े <strong>{{ impact.asOfLabel.hi }}</strong> तक सत्यापित और पंजीकृत लोक-न्यासों के वित्तीय प्रतिवेदनों पर आधारित। <a href="/impact/">पूरे आँकड़े देखें <span aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
