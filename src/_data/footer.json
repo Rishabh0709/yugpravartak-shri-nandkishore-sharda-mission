@@ -8,7 +8,7 @@
     ],
     "visit": {
       "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" },
-      "href": "/sampark/#visit",
+      "href": "/contactus/#visit",
       "image": "/assets/images/manidweep-office-footer.jpg",
       "imageAlt": { "hi": "शास्त्री नगर, जोधपुर स्थित मणिद्वीप", "en": "Manidweep, Shastri Nagar, Jodhpur" }
     }
@@ -54,7 +54,7 @@
   ],
 
   "contactHeading": { "hi": "सम्पर्क एवं आगमन", "en": "Contact & visiting" },
-  "mapLink": { "label": { "hi": "आने का मार्ग देखें", "en": "Get directions" }, "href": "/sampark/#visit" },
+  "mapLink": { "label": { "hi": "आने का मार्ग देखें", "en": "Get directions" }, "href": "/contactus/#visit" },
 
   "copyright": {
     "hi": "युगप्रवर्तक श्री नन्दकिशोर शारदा मिशन। सर्वाधिकार सुरक्षित।",

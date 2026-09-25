@@ -77,6 +77,6 @@
       ]
     },
 
-    { "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" }, "href": "/sampark/", "cta": true }
+    { "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" }, "href": "/contactus/", "cta": true }
   ]
 }

@@ -15,4 +15,5 @@ module.exports = () => [
   { from: "jigyasa-samadhan", to: "spiritual-qa" },
   { from: "adhyatmik-gyan-charcha", to: "spiritual-discussions" },
   { from: "margdarshan-siddhant", to: "guiding-principles" },
+  { from: "sampark", to: "contactus" },
 ];
