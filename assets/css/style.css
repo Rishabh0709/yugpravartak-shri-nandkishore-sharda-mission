@@ -2968,6 +2968,20 @@ body.page-transparent-hero #header.site-header:not(.is-scrolled) {
     -webkit-backdrop-filter: none;
 }
 
+/* Pages whose hero is a real photo (not the plain cream-wash hero this
+   whole transparent-header treatment was designed for) need the header
+   to stay legible against whatever the photo looks like at its very top
+   -- once the breadcrumb strip scrolls past and before the header has
+   gone fully "is-scrolled" compact, a truly transparent header floats
+   straight over the raw image with nothing behind the nav text. Give it
+   a frosted cream scrim in that window instead of full transparency. */
+body.page-transparent-hero:has(.page-hero:not(.page-hero--plain)) #header.site-header:not(.is-scrolled) {
+    background: rgba(248, 244, 236, .86);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom-color: rgba(198, 148, 53, .16);
+}
+
 body.page-transparent-hero .page-hero--plain {
     background: #fffaf0;
 }
