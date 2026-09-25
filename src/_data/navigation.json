@@ -1,5 +1,5 @@
 {
-  "_note": "Single source for the primary nav in BOTH languages. header.njk renders label.<locale> and, for the en locale, prefixes href with /en. An item with \"cta\": true renders as a highlighted button (मणिद्वीप पधारें). 6 top items + the visit CTA. 'समाचार एवं गतिविधियाँ' (News & Activities, added 2026-09-25) holds Gallery + News & Events (moved out of 'दिव्य प्रभाव') and Awards (moved out of 'हमारे बारे में') — 'दिव्य प्रभाव' now stays focused on evidence (testimonials + impact numbers).",
+  "_note": "Single source for the primary nav in BOTH languages. header.njk renders label.<locale> and, for the en locale, prefixes href with /en. An item with \"cta\": true renders as a highlighted button (मणिद्वीप पधारें). 6 top items + the visit CTA. 'मीडिया कक्ष' / 'Media Centre' (added 2026-09-25) holds Gallery + News & Events (moved out of 'दिव्य प्रभाव') and Awards (moved out of 'हमारे बारे में') — 'दिव्य प्रभाव' now stays focused on evidence (testimonials + impact numbers).",
 
   "items": [
     {
@@ -67,7 +67,7 @@
     },
 
     {
-      "label": { "hi": "समाचार एवं गतिविधियाँ", "en": "News & Activities" },
+      "label": { "hi": "मीडिया कक्ष", "en": "Media Centre" },
       "groups": [
         { "links": [
           { "label": { "hi": "समाचार एवं कार्यक्रम", "en": "News & events" }, "href": "/news-events/" },
