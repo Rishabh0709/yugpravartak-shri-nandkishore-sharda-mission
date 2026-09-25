@@ -33,19 +33,26 @@
 @media (min-width: 640px) { .sk-essentials { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .sk-essentials { grid-template-columns: repeat(4, 1fr); } }
 .sk-essentials article {
-    padding: clamp(16px, 2vw, 22px);
+    padding: clamp(20px, 2.4vw, 28px);
     border: 1px solid var(--rule);
-    border-radius: var(--radius);
+    border-top: 3px solid var(--gold);
+    border-radius: 10px;
     background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+.sk-essentials article:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 .sk-essentials__label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-family: var(--font-head);
-    font-size: .78rem;
-    font-weight: 600;
-    letter-spacing: .06em;
-    color: var(--gold-deep);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: var(--primary);
 }
 .sk-essentials p {
     margin: 0;
