@@ -748,3 +748,22 @@
    the 2-column panel instead of nested in its narrower content
    column, so center its heading to match the full-width card grid. */
 .hi-mini-heading--center { text-align: center; }
+/* the panel is its own bordered/shadowed card, so its default 24px
+   margin-top (inherited from .hi-mini-heading) reads as touching the
+   card's edge -- give it real breathing room from the panel below it. */
+.hi-knowledge-panel + .hi-mini-heading--center {
+    margin-top: clamp(40px, 5vw, 56px);
+}
+
+/* v3 draft — BVYS's emblem art is roughly square (2492x2761), not a tall
+   book-cover shape, so the shared .hi-book-stage's portrait sizing
+   (fixed min-height against a narrow width) was cropping heavily into
+   the artwork's left/right content. Match its own aspect ratio instead
+   so object-fit: cover has nothing significant left to crop. */
+.hi-book-stage--emblem {
+    width: min(420px, 94%);
+}
+.hi-book-stage--emblem img {
+    min-height: 0;
+    aspect-ratio: 2492 / 2761;
+}
