@@ -227,6 +227,17 @@
     color: var(--primary);
 }
 
+/* v3 draft — "intro" sections (Seeker, Maa Basanti, Madhu Maa): the last
+   paragraph + CTA break out of the image+text 2-column layout into a
+   full-width row below, instead of trailing under the text column only. */
+.v3-intro-tail {
+    margin-top: clamp(32px, 6vw, 72px);
+}
+.hi-profile > .v3-intro-tail {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+
 /* ---------- buddhi-vivek yoga sadhna ---------- */
 .v2-bvy { max-width: 780px; }
 .v2-bvy__standfirst {
