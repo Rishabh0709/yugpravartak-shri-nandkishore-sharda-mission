@@ -76,18 +76,14 @@
             box-shadow: 0 24px 64px rgba(63, 45, 37, .13);
         }
 
+        /* height: auto (with the img's own width/height HTML attributes
+           supplying the aspect ratio) instead of a fixed clamp() + cover --
+           shows each photo complete, sized to its own proportions instead
+           of being cropped to fill an unrelated fixed height. */
         .dg-media img {
             display: block;
             width: 100%;
-            height: clamp(330px, 40vw, 560px);
-            object-fit: cover;
-        }
-
-        /* vision section: stretch the row so the book cover's card matches
-           the text column's actual height instead of a fixed clamp() that
-           left a tall card with a mostly-empty band above a small book. */
-        #vision .dg-grid {
-            align-items: stretch;
+            height: auto;
         }
 
         .dg-media--book {
@@ -96,12 +92,12 @@
             padding: 14px;
         }
 
+        /* book cover kept at a modest, fixed-ish width instead of filling
+           the column -- a cover doesn't need to be as wide as the text
+           column, and this keeps it in proportion with a short passage. */
         .dg-media--book img {
-            width: auto;
-            height: 100%;
-            max-width: 100%;
-            min-height: 320px;
-            object-fit: contain;
+            width: min(100%, 240px);
+            height: auto;
             filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .22));
         }
 
@@ -111,10 +107,9 @@
             margin-top: clamp(40px, 6vw, 64px);
         }
 
-        /* impact section: no image, copy runs full-width -- cap it at a
-           normal reading measure instead of the full 1180px shell. */
+        /* impact section: no image, copy runs the section's full width. */
         .dg-copy--full {
-            max-width: 74ch;
+            max-width: none;
         }
 
         .dg-media figcaption {
@@ -431,12 +426,6 @@
                 order: 0;
             }
 
-            /* single column now, so #vision's row-stretch trick no longer
-               applies -- give the book cover a normal fixed height. */
-            .dg-media--book img {
-                height: min(56vw, 480px);
-            }
-
             .dg-essence__grid,
             .dg-chapter-grid,
             .dg-flow,
@@ -460,13 +449,5 @@
 
             .dg-section {
                 scroll-margin-top: 126px;
-            }
-
-            .dg-media img {
-                height: 360px;
-            }
-
-            .dg-media--book img {
-                height: min(70vh, 430px);
             }
         }
