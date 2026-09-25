@@ -768,9 +768,9 @@
     aspect-ratio: 2492 / 2761;
 }
 
-/* v3 draft — Guiding Principles summary: six short bullets standing in
-   for the "आर्थिक सहयोग का प्रबंधन" section, sourced from
-   guiding-principles.html's own six-principle card titles. */
+/* v3 draft — Guiding Principles summary: six bullets (title + brief
+   description) standing in for the "आर्थिक सहयोग का प्रबंधन" section,
+   sourced from guiding-principles.html's own six-principle cards. */
 .v3-principles-list {
     display: grid;
     gap: 1px;
@@ -786,14 +786,11 @@
 @media (min-width: 700px) {
     .v3-principles-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media (min-width: 1000px) {
-    .v3-principles-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
 .v3-principles-list li {
     display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: clamp(18px, 2.2vw, 24px) clamp(20px, 2.6vw, 26px);
+    align-items: flex-start;
+    gap: 16px;
+    padding: clamp(20px, 2.6vw, 28px);
     background: var(--surface);
 }
 .v3-principles-list__mark {
@@ -802,6 +799,7 @@
     flex: none;
     width: 34px;
     height: 34px;
+    margin-top: 2px;
     border-radius: 50%;
     background: var(--primary);
     color: var(--surface);
@@ -809,10 +807,18 @@
     font-size: .95rem;
     font-weight: 700;
 }
-.v3-principles-list li span:last-child {
+.v3-principles-list li strong {
+    display: block;
+    margin-bottom: 6px;
     font-family: var(--font-head);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--primary);
+}
+.v3-principles-list li p {
+    margin: 0;
+    font-size: .92rem;
+    line-height: 1.65;
+    color: var(--ink-body);
 }
