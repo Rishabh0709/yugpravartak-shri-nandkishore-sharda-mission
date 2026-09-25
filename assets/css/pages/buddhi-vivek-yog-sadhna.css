@@ -67,6 +67,11 @@
             order: 2;
         }
 
+        /* age section: no image, copy runs the section's full width. */
+        .bvys-copy--full {
+            max-width: none;
+        }
+
         .bvys-media {
             margin: 0;
             overflow: hidden;
