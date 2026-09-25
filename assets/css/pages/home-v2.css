@@ -237,6 +237,12 @@
     grid-column: 1 / -1;
     margin-top: 0;
 }
+/* the shared .hindi-home .hi-prose > p rule caps paragraphs at 68ch for
+   normal reading-width columns -- this row is meant to use the section's
+   full width instead, so lift the cap here specifically. */
+.v3-intro-tail.hi-prose > p {
+    max-width: none;
+}
 
 /* ---------- buddhi-vivek yoga sadhna ---------- */
 .v2-bvy { max-width: 780px; }
