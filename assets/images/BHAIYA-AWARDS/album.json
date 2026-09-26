@@ -1,0 +1,398 @@
+{
+  "album": "BHAIYA-AWARDS",
+  "generatedAt": "2026-09-11T11:37:14.493Z",
+  "sourceFolder": "E:\\MANIDWEEP\\manidweep trust's work\\updates for website\\gallery-originals\\BHAIYA-AWARDS",
+  "photographCount": 13,
+  "photographs": [
+    {
+      "id": "01",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "0.jpg",
+        "width": 8064,
+        "height": 5856,
+        "bytes": 7271198
+      },
+      "thumbnail": {
+        "file": "01-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 7584
+      },
+      "card": {
+        "file": "01-card.webp",
+        "width": 900,
+        "height": 654,
+        "bytes": 38986
+      },
+      "full": {
+        "file": "01-full.webp",
+        "width": 1800,
+        "height": 1307,
+        "bytes": 174594
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "02",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "1.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 457318
+      },
+      "thumbnail": {
+        "file": "02-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 5528
+      },
+      "card": {
+        "file": "02-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 32392
+      },
+      "full": {
+        "file": "02-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 99012
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "03",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "2.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 450116
+      },
+      "thumbnail": {
+        "file": "03-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 4958
+      },
+      "card": {
+        "file": "03-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 28712
+      },
+      "full": {
+        "file": "03-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 88442
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "04",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "3.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 518724
+      },
+      "thumbnail": {
+        "file": "04-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 6728
+      },
+      "card": {
+        "file": "04-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 39756
+      },
+      "full": {
+        "file": "04-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 120134
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "05",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "4.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 608809
+      },
+      "thumbnail": {
+        "file": "05-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8370
+      },
+      "card": {
+        "file": "05-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 49300
+      },
+      "full": {
+        "file": "05-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 147738
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "06",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "5.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 614868
+      },
+      "thumbnail": {
+        "file": "06-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 8778
+      },
+      "card": {
+        "file": "06-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 49338
+      },
+      "full": {
+        "file": "06-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 149718
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "07",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "6.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 353719
+      },
+      "thumbnail": {
+        "file": "07-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 3810
+      },
+      "card": {
+        "file": "07-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 21162
+      },
+      "full": {
+        "file": "07-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 66030
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "08",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "IMG-20170717-WA0091.jpg",
+        "width": 905,
+        "height": 1280,
+        "bytes": 126958
+      },
+      "thumbnail": {
+        "file": "08-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 7858
+      },
+      "card": {
+        "file": "08-card.webp",
+        "width": 778,
+        "height": 1100,
+        "bytes": 45644
+      },
+      "full": {
+        "file": "08-full.webp",
+        "width": 905,
+        "height": 1280,
+        "bytes": 69618
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "09",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "SKM_554e17083012140_0001.jpg",
+        "width": 2480,
+        "height": 3507,
+        "bytes": 1287225
+      },
+      "thumbnail": {
+        "file": "09-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 14092
+      },
+      "card": {
+        "file": "09-card.webp",
+        "width": 778,
+        "height": 1100,
+        "bytes": 134188
+      },
+      "full": {
+        "file": "09-full.webp",
+        "width": 1800,
+        "height": 2545,
+        "bytes": 577140
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "10",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "SKM_554e17083012180_0001.jpg",
+        "width": 3507,
+        "height": 4960,
+        "bytes": 1554419
+      },
+      "thumbnail": {
+        "file": "10-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10110
+      },
+      "card": {
+        "file": "10-card.webp",
+        "width": 778,
+        "height": 1100,
+        "bytes": 98050
+      },
+      "full": {
+        "file": "10-full.webp",
+        "width": 1800,
+        "height": 2546,
+        "bytes": 372068
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "11",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "SKM_554e17083012200_0001.jpg",
+        "width": 3507,
+        "height": 2480,
+        "bytes": 823416
+      },
+      "thumbnail": {
+        "file": "11-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 10964
+      },
+      "card": {
+        "file": "11-card.webp",
+        "width": 900,
+        "height": 637,
+        "bytes": 61476
+      },
+      "full": {
+        "file": "11-full.webp",
+        "width": 1800,
+        "height": 1273,
+        "bytes": 194844
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "12",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "SKM_554e17083012200_0002.jpg",
+        "width": 2480,
+        "height": 3507,
+        "bytes": 1050997
+      },
+      "thumbnail": {
+        "file": "12-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 9262
+      },
+      "card": {
+        "file": "12-card.webp",
+        "width": 778,
+        "height": 1100,
+        "bytes": 79398
+      },
+      "full": {
+        "file": "12-full.webp",
+        "width": 1800,
+        "height": 2545,
+        "bytes": 464812
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    },
+    {
+      "id": "13",
+      "album": "BHAIYA-AWARDS",
+      "original": {
+        "file": "SKM_554e17083012200_0003.jpg",
+        "width": 2480,
+        "height": 3507,
+        "bytes": 1134528
+      },
+      "thumbnail": {
+        "file": "13-thumb.webp",
+        "width": 320,
+        "height": 220,
+        "bytes": 15680
+      },
+      "card": {
+        "file": "13-card.webp",
+        "width": 778,
+        "height": 1100,
+        "bytes": 103070
+      },
+      "full": {
+        "file": "13-full.webp",
+        "width": 1800,
+        "height": 2545,
+        "bytes": 423376
+      },
+      "alt": "Replace with a concise description of who or what is visible.",
+      "caption": "Replace with the activity, context, location and year where known."
+    }
+  ]
+}
