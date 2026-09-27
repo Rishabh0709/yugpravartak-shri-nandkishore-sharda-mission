@@ -87,7 +87,10 @@
         background-position: center, 60% top;
         background-size: cover, 165% auto;
     }
-    .v2-hero__copy { width: 100%; padding-top: clamp(70px, 34vw, 190px); }
+    /* pulls the heading up closer to where the photo/gradient actually
+       resolves -- the old 34vw/190px cap left a noticeably empty band
+       of plain background between the photo and the heading. */
+    .v2-hero__copy { width: 100%; padding-top: clamp(56px, 26vw, 150px); }
     .v2-hero__lead { max-width: none; }
 }
 

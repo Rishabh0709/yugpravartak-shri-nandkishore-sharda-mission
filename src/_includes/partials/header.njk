@@ -7,6 +7,10 @@
 
         <div class="header-right">
             <div class="header-row header-row-bottom">
+                {%- if site.locales.en.enabled %}
+                {%- set langBasePath = (page.url | replace("/en/", "/")) if locale == "en" else page.url %}
+                <a class="nav-lang-quick" href="{{ ('/en' + langBasePath) if locale != 'en' else langBasePath }}" lang="{{ 'en' if locale != 'en' else 'hi' }}" aria-label="{{ 'अंग्रेज़ी में देखें' if locale == 'hi' else 'हिन्दी में देखें' }}">{{ 'EN' if locale != 'en' else 'हि' }}</a>
+                {%- endif %}
                 <button class="nav-toggle" type="button" aria-label="{{ 'मुख्य मेनू खोलें' if locale == 'hi' else 'Open menu' }}" aria-expanded="false" aria-controls="site-navigation">
                     <span></span><span></span><span></span>
                 </button>
