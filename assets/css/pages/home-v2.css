@@ -358,27 +358,44 @@
     margin: clamp(30px, 4vw, 44px) 0 0;
 }
 @media (min-width: 760px) { .v2-stories { grid-template-columns: repeat(3, 1fr); } }
+/* a small circular portrait + name/role byline, quote below -- reads as
+   a real person's word, not a video thumbnail grid. */
 .v2-story {
     display: flex;
     flex-direction: column;
+    padding: 22px 22px 20px;
     border: 1px solid var(--rule);
     border-radius: var(--radius);
-    overflow: hidden;
     background: var(--surface);
     box-shadow: var(--shadow-sm);
 }
-.v2-story__media { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--surface-sunk); }
-.v2-story__media img { width: 100%; height: 100%; object-fit: cover; }
-.v2-story__body { display: flex; flex-direction: column; flex: 1; padding: 20px 22px 22px; }
+.v2-story__byline { display: flex; align-items: center; gap: 12px; }
+.v2-story__media {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    background: var(--surface-sunk);
+}
+.v2-story__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.v2-story__who { display: flex; flex-direction: column; min-width: 0; }
+.v2-story__body { display: flex; flex-direction: column; flex: 1; margin-top: 14px; }
 .v2-story__quote {
+    position: relative;
     margin: 0 0 14px;
+    padding-left: 18px;
+    border-left: 2px solid var(--gold);
     font-family: var(--font-head);
-    font-size: 1.06rem;
-    line-height: 1.55;
+    font-style: italic;
+    font-size: 1.02rem;
+    line-height: 1.6;
     color: var(--ink);
 }
 .v2-story__name { font-weight: 600; color: var(--ink); }
-.v2-story__role { display: block; font-size: .86rem; color: var(--ink-muted); margin-top: 2px; }
+.v2-story__role { display: block; font-size: .82rem; color: var(--ink-muted); margin-top: 1px; }
 .v2-story__support {
     margin-top: 12px;
     padding-top: 12px;
