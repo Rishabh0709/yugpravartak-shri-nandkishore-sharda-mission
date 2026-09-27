@@ -63,7 +63,8 @@
         .bhaiya-quote-card img {
             display: block;
             width: 100%;
-            height: clamp(380px, 52vw, 640px);
+            height: auto;
+            aspect-ratio: 697 / 1016;
             object-fit: cover;
             object-position: center top;
         }
@@ -288,13 +289,14 @@
 
         .bhaiya-road__media {
             margin: 0;
+            background: #f4e9d8;
         }
 
         .bhaiya-road__media img {
             display: block;
             width: 100%;
             height: clamp(150px, 18vw, 210px);
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .bhaiya-road__body {
