@@ -1,5 +1,5 @@
 {
-  "_note": "Footer content for both languages. Broken targets from the old footer are corrected here (activities.html -> /nishkam-karm-sadhna.html, contact.html -> /sampark.html). The 'English Website' link is emitted only when locales.en.enabled is true in site.json.",
+  "_note": "Footer content for both languages. Deliberately trimmed (2026-09-28) to just 8 links across 2 groups, per owner request -- most other pages already live in the header nav, so the footer no longer tries to mirror it. Links point to real pages, not homepage anchors (the old #mission/#bhaiyaji/#lineage/#manidweep/#divya-gyan/#buddhi-vivek/#yug-parivartan anchor links were dropped; several no longer matched any section ID after the homepage redesign). The 'English Website' link is emitted only when locales.en.enabled is true in site.json.",
 
   "intro": {
     "visit": {
@@ -14,37 +14,19 @@
     {
       "heading": { "hi": "जानिए", "en": "Discover" },
       "links": [
-        { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/#mission" },
-        { "label": { "hi": "भैया जी", "en": "Bhaiyaji" }, "href": "/#bhaiyaji" },
-        { "label": { "hi": "आध्यात्मिक परम्परा", "en": "The lineage" }, "href": "/#lineage" },
-        { "label": { "hi": "मणिद्वीप", "en": "Manidweep" }, "href": "/#manidweep" }
+        { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission/" },
+        { "label": { "hi": "मणिद्वीप का निर्माण", "en": "The Making of Manidweep" }, "href": "/manidweep/" },
+        { "label": { "hi": "दिव्य ज्ञान", "en": "Divine Wisdom" }, "href": "/divya-gyan/" },
+        { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga Sadhana" }, "href": "/buddhi-vivek-yog-sadhna/" }
       ]
     },
     {
-      "heading": { "hi": "दिव्य ज्ञान", "en": "Divine Knowledge" },
+      "heading": { "hi": "सेवा एवं सहयोग", "en": "Service & Support" },
       "links": [
-        { "label": { "hi": "मृत्यु के बाद का अलौकिक संसार", "en": "The book" }, "href": "/#divya-gyan" },
-        { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/#buddhi-vivek" },
-        { "label": { "hi": "युग परिवर्तन का सूत्रपात", "en": "Chakra Dharan" }, "href": "/#yug-parivartan" }
-      ]
-    },
-    {
-      "heading": { "hi": "और देखें", "en": "More" },
-      "links": [
-        { "label": { "hi": "मानव सेवा कार्य", "en": "Seva work" }, "href": "/nishkam-karm-sadhna/" },
-        { "label": { "hi": "अनुभव एवं विचार", "en": "Experiences & reflections" }, "href": "/testimonials/" },
-        { "label": { "hi": "चित्र दीर्घा", "en": "Gallery" }, "href": "/gallery/" }
-      ]
-    },
-    {
-      "heading": { "hi": "सेवा संस्थाएँ", "en": "The trusts" },
-      "links": [
-        { "label": { "hi": "स्वामी विवेकानन्द ट्रस्ट", "en": "Swami Vivekanand Trust" }, "href": "/swami-vivekanand-trust/" },
-        { "label": { "hi": "माँ शारदामणि ट्रस्ट", "en": "Maa Shardamani Trust" }, "href": "/maa-shardamani-trust/" },
-        { "label": { "hi": "ज्ञानयोगी अध्यात्म केन्द्र", "en": "Gyanyogi Adhyatm Kendra" }, "href": "/gyanyogi-adhyatm-kendra/" },
-        { "label": { "hi": "ज्ञान गंगा मिशन", "en": "Gyan Ganga Mission" }, "href": "/gyan-ganga-mission/" },
-        { "label": { "hi": "पारदर्शिता एवं दस्तावेज़", "en": "Transparency & documents" }, "href": "/transparency/" },
-        { "label": { "hi": "सहयोग करें", "en": "Support the work" }, "href": "/donate/" }
+        { "label": { "hi": "निष्काम कर्म साधना", "en": "Nishkam Karma Sadhana" }, "href": "/nishkam-karm-sadhna/" },
+        { "label": { "hi": "सहयोग करें", "en": "Support the Work" }, "href": "/donate/" },
+        { "label": { "hi": "पारदर्शिता एवं दस्तावेज़", "en": "Transparency & Documents" }, "href": "/transparency/" },
+        { "label": { "hi": "समाचार एवं कार्यक्रम", "en": "News & Events" }, "href": "/news-events/" }
       ]
     }
   ],
