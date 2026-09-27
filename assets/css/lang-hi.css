@@ -64,6 +64,15 @@ body.hindi-home {
     max-width: 68ch;
 }
 
+/* Full-width prose rows are the deliberate exception to the cap above --
+   these blocks are designed to span the whole section, not sit in a
+   narrow reading column. Add a wrapper class here (rather than a
+   one-off max-width override in a page's own stylesheet) whenever a
+   new full-width prose block is introduced. */
+.hindi-home :is(.v3-intro-tail, .hi-narrative__full).hi-prose > p {
+    max-width: none;
+}
+
 /* The footer sits on a dark maroon ground. The Devanagari heading rule
    (color: var(--hi-ink)) otherwise makes the mission name and the
    column headings near-invisible there. */

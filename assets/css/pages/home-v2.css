@@ -221,14 +221,33 @@
    more aggressively than the lineage cards below it, which keep a portrait
    ratio at every width. Keep the same 5:6 portrait ratio on mobile instead
    of switching to landscape. */
+/* stands out from the surrounding prose through weight, italics, colour
+   and a soft callout treatment -- not a larger font-size, so it reads
+   as emphasis rather than a jump in scale. */
 .v2-seeker__vow {
+    position: relative;
     margin: 18px 0 0;
-    padding-left: 18px;
+    padding: 16px 22px 16px 48px;
     border-left: 3px solid var(--gold);
+    border-radius: 4px 10px 10px 4px;
+    background: linear-gradient(135deg, rgba(198, 148, 53, .12), rgba(156, 59, 46, .05));
     font-family: var(--font-head);
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
-    line-height: 1.5;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.7;
     color: var(--primary);
+}
+
+.v2-seeker__vow::before {
+    content: "\201C";
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    font-family: var(--font-head);
+    font-style: normal;
+    font-size: 2em;
+    line-height: 1;
+    color: var(--gold);
 }
 
 /* v3 draft — "intro" sections (Seeker, Maa Basanti, Madhu Maa): the last
@@ -241,18 +260,8 @@
     grid-column: 1 / -1;
     margin-top: 0;
 }
-/* the shared .hindi-home .hi-prose > p rule caps paragraphs at 68ch for
-   normal reading-width columns -- this row is meant to use the section's
-   full width instead, so lift the cap here specifically. */
-.v3-intro-tail.hi-prose > p {
-    max-width: none;
-}
-
-/* mission-intro closing paragraph + CTAs (hi-narrative__full) span the
-   full section width too -- same reading-width cap, same fix. */
-.hi-narrative__full.hi-prose > p {
-    max-width: none;
-}
+/* the reading-width cap is lifted for .v3-intro-tail / .hi-narrative__full
+   centrally in lang-hi.css / lang-en.css, not here. */
 
 /* ---------- buddhi-vivek yoga sadhna ---------- */
 .v2-bvy { max-width: 780px; }

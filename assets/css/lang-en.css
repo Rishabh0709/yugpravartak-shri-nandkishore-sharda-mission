@@ -56,6 +56,15 @@ body.english-home {
     max-width: 70ch;
 }
 
+/* Full-width prose rows are the deliberate exception to the cap above --
+   these blocks are designed to span the whole section, not sit in a
+   narrow reading column. Add a wrapper class here (rather than a
+   one-off max-width override in a page's own stylesheet) whenever a
+   new full-width prose block is introduced. */
+.english-home :is(.v3-intro-tail, .hi-narrative__full).hi-prose > p {
+    max-width: none;
+}
+
 /* The page stylesheets set prose leading for Devanagari (1.85–1.95).
    A Latin face at that leading reads unfocused — pull it back across
    the shared prose-column families. Page CSS loads after this sheet,
