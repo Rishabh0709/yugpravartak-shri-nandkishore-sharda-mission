@@ -2,12 +2,8 @@
   "_note": "Footer content for both languages. Broken targets from the old footer are corrected here (activities.html -> /nishkam-karm-sadhna.html, contact.html -> /sampark.html). The 'English Website' link is emitted only when locales.en.enabled is true in site.json.",
 
   "intro": {
-    "actions": [
-      { "label": { "hi": "साधना को जानें", "en": "Explore the practice" }, "href": "/buddhi-vivek-yog-sadhna/", "primary": true },
-      { "label": { "hi": "सेवा कार्य देखें", "en": "See the seva work" }, "href": "/nishkam-karm-sadhna/" }
-    ],
     "visit": {
-      "label": { "hi": "मणिद्वीप पधारें", "en": "Visit Manidweep" },
+      "label": { "hi": "मणिद्वीप", "en": "Manidweep" },
       "href": "/contactus/#visit",
       "image": "/assets/images/manidweep-office-footer.jpg",
       "imageAlt": { "hi": "शास्त्री नगर, जोधपुर स्थित मणिद्वीप", "en": "Manidweep, Shastri Nagar, Jodhpur" }

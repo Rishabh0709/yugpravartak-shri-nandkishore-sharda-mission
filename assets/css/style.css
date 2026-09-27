@@ -2547,6 +2547,7 @@ ol {
 }
 
 .footer-visit-feature {
+    position: relative;
     display: block;
     overflow: hidden;
     color: #f7f0e4;
@@ -2572,50 +2573,29 @@ ol {
     object-position: center;
 }
 
+.footer-visit-feature::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 8, 8, 0.05) 0%, rgba(20, 8, 8, 0.45) 100%);
+}
+
 .footer-visit-feature > span {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
     display: flex;
-    padding: 10px 13px 11px;
-    align-items: center;
-    justify-content: space-between;
-    color: #d8d0c5;
-    font-size: 0.83rem;
-    line-height: 1.4;
-}
-
-.footer-visit-feature b {
-    color: #d3ad5c;
-    font-weight: 400;
-}
-
-.footer-action {
-    display: inline-flex;
-    min-height: 45px;
-    padding: 11px 17px;
     align-items: center;
     justify-content: center;
-    color: #f7f0e4;
-    border: 1px solid rgba(247, 240, 228, 0.28);
-    border-radius: 999px;
+    padding: 10px 13px;
+    color: #fff7e9;
     font-family: "Cinzel", serif;
-    font-size: 0.61rem;
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
     text-align: center;
-    text-transform: uppercase;
-    transition: color var(--transition), border-color var(--transition), background var(--transition), transform var(--transition);
-}
-
-.footer-action:hover {
-    color: #4b2222;
-    border-color: #fff7e9;
-    background: #fff7e9;
-    transform: translateY(-2px);
-}
-
-.footer-action--primary {
-    color: #4b2222;
-    border-color: #d3ad5c;
-    background: #d3ad5c;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .footer-navigation {
@@ -2709,19 +2689,6 @@ ol {
     align-items: center;
     gap: 28px;
     border-top: 1px solid rgba(247, 240, 228, 0.1);
-}
-
-.footer-intro-actions {
-    display: flex;
-    margin-top: 22px;
-    align-items: center;
-    gap: 8px;
-}
-
-.footer-intro-actions .footer-action {
-    min-height: 40px;
-    padding: 9px 15px;
-    font-size: 0.56rem;
 }
 
 .footer .copyright {
@@ -2871,16 +2838,6 @@ ol {
     .footer-social {
         grid-column: auto;
         justify-content: center;
-    }
-
-    .footer-intro-actions {
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .footer-intro-actions .footer-action {
-        width: 100%;
     }
 
     .footer-top-link {

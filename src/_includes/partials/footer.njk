@@ -6,15 +6,10 @@
             <div class="footer-identity">
                 <h2 class="footer-title">{{ site.name[locale] }}</h2>
                 <p class="footer-tagline">{{ site.tagline[locale] }}</p>
-                <div class="footer-intro-actions">
-                    {%- for action in footer.intro.actions %}
-                    <a class="footer-action{{ ' footer-action--primary' if action.primary }}" href="{{ pfx }}{{ action.href }}">{{ action.label[locale] }}</a>
-                    {%- endfor %}
-                </div>
             </div>
             <a class="footer-visit-feature" href="{{ pfx }}{{ footer.intro.visit.href }}" aria-label="{{ footer.intro.visit.imageAlt[locale] }}">
                 <img src="{{ footer.intro.visit.image }}" width="1280" height="713" alt="{{ footer.intro.visit.imageAlt[locale] }}" loading="lazy">
-                <span>{{ footer.intro.visit.label[locale] }} <b aria-hidden="true">&rarr;</b></span>
+                <span>{{ footer.intro.visit.label[locale] }}</span>
             </a>
         </div>
 
