@@ -44,6 +44,16 @@
     filter: saturate(1.16) contrast(1.06) brightness(1.02);
 }
 
+.hi-book-stage figcaption {
+    margin-top: 16px;
+    color: #7a675d;
+    font-family: var(--font-head);
+    font-size: .94rem;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+}
+
 
 .hi-knowledge-panel__content h2 {
     margin: 0 0 clamp(14px, 2vw, 20px);
