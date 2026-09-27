@@ -86,7 +86,7 @@
         .bhaiya-facts {
             position: relative;
             z-index: 2;
-            margin-top: -34px;
+            margin-top: -64px;
         }
 
         .bhaiya-facts__grid {
@@ -123,17 +123,21 @@
 
         .bhaiya-journey {
             overflow: hidden;
-            padding-block: clamp(70px, 8vw, 116px);
+            padding-block: clamp(52px, 6vw, 84px);
         }
 
+        /* alternating "chapter" wash instead of one flat background for
+           every section -- gives the page-long story some rhythm instead
+           of each section reading as an unconnected island. Order follows
+           the sections' actual position on the page. */
         .bhaiya-journey--birth { background: var(--bg);}
-        .bhaiya-journey--awakening { background: var(--bg);}
+        .bhaiya-journey--awakening { background: var(--bg-wash);}
         .bhaiya-journey--darshan { background: var(--bg);}
-        .bhaiya-journey--wisdom { background: var(--bg);}
+        .bhaiya-journey--wisdom { background: var(--bg-wash);}
         .bhaiya-journey--service { background: var(--bg);}
-        .bhaiya-journey--sadhna { background: var(--bg);}
-        .bhaiya-journey--honors { background: var(--bg);}
+        .bhaiya-journey--sadhna { background: var(--bg-wash);}
         .bhaiya-journey--legacy { background: var(--bg);}
+        .bhaiya-journey--honors { background: var(--bg-wash);}
 
         .bhaiya-journey__grid {
             display: grid;
@@ -216,12 +220,16 @@
             max-width: 760px;
         }
 
+        /* sized so the longest heading ("बुद्धि-विवेक योग साधना: आज के
+           युग के लिए सरल मार्ग") still fits on one line within the
+           narrower of the two alternating copy columns -- the previous
+           4rem max never fit any of these headings on a single line. */
         .bhaiya-journey__copy h2 {
             margin: 10px 0 18px;
             color: var(--hi-ink);
             font-family: var(--hi-serif);
-            font-size: clamp(2rem, 4vw, 4rem);
-            line-height: 1.16;
+            font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+            line-height: 1.25;
             letter-spacing: 0;
         }
 
@@ -244,9 +252,9 @@
         }
 
         .bhaiya-journey .hi-section-heading h2 {
-            max-width: 900px;
+            max-width: none;
             font-family: var(--hi-serif);
-            font-size: clamp(2rem, 4vw, 4rem);
+            font-size: clamp(2rem, 4.6vw, 3.5rem);
             line-height: 1.16;
         }
 
