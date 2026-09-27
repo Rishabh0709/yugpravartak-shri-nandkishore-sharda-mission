@@ -16,4 +16,5 @@ module.exports = () => [
   { from: "adhyatmik-gyan-charcha", to: "spiritual-discussions" },
   { from: "margdarshan-siddhant", to: "guiding-principles" },
   { from: "sampark", to: "contactus" },
+  { from: "manidweep-nirman", to: "manidweep" },
 ];

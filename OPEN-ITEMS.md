@@ -1,7 +1,7 @@
 # Open items & action items
 
 Running backlog for the Hindi site rebuild. Updated as work progresses.
-**Last updated:** 2026-09-27 (English/Hindi language toggle switched on site-wide; new `/manidweep-nirman/` page added; several EN pages updated from owner-supplied reference docs)
+**Last updated:** 2026-09-27 (mobile-view fixes; `/manidweep-nirman/` renamed to `/manidweep/`; removed the quick-facts strip from about-mission, manidweep, bhaiyaji-sadhna-kaal, spiritual-discussions, sunday-sanskar-classes; English/Hindi language toggle switched on site-wide; several EN pages updated from owner-supplied reference docs)
 
 Legend: **[You]** needs your content/decision · **[Claude]** ready to build, no input needed · **[Verify]** a number/fact to confirm
 
@@ -152,6 +152,12 @@ Say the word and I'll do these — no input needed:
 ---
 
 ## Done (recent, for reference)
+
+- **Mobile-view fixes; `/manidweep-nirman/` renamed to `/manidweep/`; removed the "quick facts" strip from 5 pages** (2026-09-27). Owner review of the live site surfaced several issues, fixed in this pass:
+  - **Mobile hero heading**: `.v2-hero__copy`'s padding-top (`clamp(70px, 34vw, 190px)`) left a noticeably empty band between the hero photo and the heading; reduced to `clamp(56px, 26vw, 150px)`.
+  - **Mobile language toggle**: the Hindi/English switch only lived inside the hamburger drawer on mobile (the desktop dropdown is hidden there). Added a compact `EN`/`हि` link beside the hamburger, mobile-only. Along the way found `.nav-toggle`'s `margin-left: auto` in `responsive.css` (not `style.css`, which has a lower-specificity, inactive duplicate of the same rule) was swallowing the new link into a large gap — fixed to a fixed `10px`.
+  - **Removed the 4-column "quick facts" strip** (`<span>label</span><strong>value</strong>` grid, right under the hero) from `about-mission.html`, `bhaiyaji-sadhna-kaal.html`, `manidweep.html`, `spiritual-discussions.html`, `sunday-sanskar-classes.html` — both languages, 10 files total. Owner felt it looked out of place. The now-unused CSS (`.mission-glance`, `.sadhna-kaal-strip`, `.agc-glance`, `.sanskar-glance` and their descendants, in each page's own stylesheet) was left in place — harmless, no visual effect — rather than risk a wider cleanup pass.
+  - **Renamed `manidweep-nirman` → `manidweep`** (both languages: files, CSS file, `bodyClass`, `extraCss` path, `navigation.json`, `enRedirects.js`'s `TRANSLATED` set, the cross-link from `/sadhna-places/`). Registered the old slug in `renamedPages.js` (`{ from: "manidweep-nirman", to: "manidweep" }`) so the existing redirect-stub system covers old bookmarks/links at both `/manidweep-nirman/` and `/manidweep-nirman.html`, in both languages.
 
 - **`site.locales.en.enabled` flipped to `true`; new `/manidweep-nirman/` page added; several EN pages updated against owner-supplied reference docs** (2026-09-27). Owner supplied a series of Word docs (Hindi + paired English matter) as source material; each was cross-checked against the live Hindi page before any edit, and only genuinely new or better-translated content was pulled in — figures already verified in `impact.json` were explicitly left alone per owner instruction. Summary:
   - **New page**, both languages: `src/manidweep-nirman.html` / `src/en/manidweep-nirman.html` ("मणिद्वीप का निर्माण" / "The Making of Manidweep") — the story of the 1991 promise of a bungalow, the plot's two mango trees, the 1993 naming (Kailash Lok → Vaikunth → Manidweep, the "island"/Bhavsagar exchange), and the 1995 move. Reuses the `bhaiyaji-sadhna-kaal.css` component styles; added `assets/css/pages/manidweep-nirman.css` for one scoped override (the shared "From the diary" quote label doesn't fit a spoken quote here). Added to the nav (`navigation.json`, under "About → Bhaiyaji's journey") and cross-linked from the Manidweep card on `/sadhna-places/` in both languages.

@@ -2,10 +2,10 @@
    every quote "From the diary" — but the quotes on this page are spoken
    words recalled in the account, not diary excerpts. Override the label
    text for this page only. */
-.manidweep-nirman-page .sadhna-diary::before {
+.manidweep-page .sadhna-diary::before {
     content: "उनके शब्दों में";
 }
 
-body.english-home.manidweep-nirman-page .sadhna-diary::before {
+body.english-home.manidweep-page .sadhna-diary::before {
     content: "In her words";
 }
