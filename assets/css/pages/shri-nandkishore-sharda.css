@@ -198,9 +198,15 @@
             box-shadow: none;
         }
 
+        /* height follows each image's own aspect-ratio (set inline per
+           image) instead of a fixed box -- a fixed height forced heavy
+           letterboxing for images that aren't book-cover-shaped (the
+           lotus symbol, the bhaiya_maa portrait), leaving a large gap
+           between the visible picture and its caption below. */
         .bhaiya-journey__media--book img {
             width: min(100%, 380px);
-            height: clamp(430px, 46vw, 610px);
+            max-height: 610px;
+            height: auto;
             object-fit: contain;
             filter: drop-shadow(0 22px 34px rgba(63, 45, 37, .24));
         }
