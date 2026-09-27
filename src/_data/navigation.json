@@ -3,7 +3,7 @@
 
   "items": [
     {
-      "label": { "hi": "हमारे बारे में", "en": "About" },
+      "label": { "hi": "हमारे बारे में", "en": "About Us" },
       "groups": [
         { "links": [
           { "label": { "hi": "मिशन का परिचय", "en": "About the Mission" }, "href": "/about-mission/" }
@@ -26,20 +26,20 @@
       "label": { "hi": "दिव्य ज्ञान एवं साधना", "en": "Knowledge & Practice" },
       "groups": [
         { "label": { "hi": "ज्ञान", "en": "The knowledge" }, "links": [
-          { "label": { "hi": "दिव्य ज्ञान", "en": "Divya Gyan" }, "href": "/divya-gyan/" },
-          { "label": { "hi": "प्रतीक चिन्ह", "en": "The symbol" }, "href": "/logo/" },
+          { "label": { "hi": "दिव्य ज्ञान", "en": "Divine Wisdom" }, "href": "/divya-gyan/" },
+          { "label": { "hi": "प्रतीक चिन्ह", "en": "Our Logo" }, "href": "/logo/" },
           { "label": { "hi": "सद्साहित्य", "en": "Publications" }, "href": "/publications/" },
           { "label": { "hi": "जिज्ञासा समाधान", "en": "Spiritual Q&A" }, "href": "/spiritual-qa/" }
         ]},
         { "label": { "hi": "साधना और स्वाध्याय", "en": "Practice & study" }, "links": [
-          { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek Yoga" }, "href": "/buddhi-vivek-yog-sadhna/" },
-          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual discussions" }, "href": "/spiritual-discussions/" }
+          { "label": { "hi": "बुद्धि-विवेक योग साधना", "en": "Buddhi-Vivek-Yog-Sadhna" }, "href": "/buddhi-vivek-yog-sadhna/" },
+          { "label": { "hi": "आध्यात्मिक ज्ञान चर्चाएँ", "en": "Spiritual Discourse" }, "href": "/spiritual-discussions/" }
         ]}
       ]
     },
 
     {
-      "label": { "hi": "निष्काम कर्म", "en": "Nishkam Karma" },
+      "label": { "hi": "निष्काम कर्म", "en": "Selfless Service" },
       "groups": [
         { "label": { "hi": "सेवा का दर्शन", "en": "The philosophy of service" }, "links": [
           { "label": { "hi": "निष्काम कर्म साधना", "en": "Nishkam Karma Sadhana" }, "href": "/nishkam-karm-sadhna/" },
