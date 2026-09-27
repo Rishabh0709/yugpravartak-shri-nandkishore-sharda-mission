@@ -248,6 +248,12 @@
     max-width: none;
 }
 
+/* mission-intro closing paragraph + CTAs (hi-narrative__full) span the
+   full section width too -- same reading-width cap, same fix. */
+.hi-narrative__full.hi-prose > p {
+    max-width: none;
+}
+
 /* ---------- buddhi-vivek yoga sadhna ---------- */
 .v2-bvy { max-width: 780px; }
 .v2-bvy__standfirst {
