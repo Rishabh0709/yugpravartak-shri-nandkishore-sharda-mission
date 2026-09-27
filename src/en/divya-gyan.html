@@ -6,6 +6,7 @@ bodyClass: "english-home divya-gyan-page page-transparent-hero"
 breadcrumb: true
 breadcrumbName: "divine wisdom"
 extraCss: ["/assets/css/pages/divya-gyan.css"]
+extraJs: ["/assets/js/divya-gyan-reviews.js"]
 book: divyaGyan
 ---
 <main id="main-content">
@@ -26,6 +27,7 @@ book: divyaGyan
                 <a href="#chapters">A chapter-by-chapter guide</a>
                 <a href="#mission">The Gyan Ganga Mission</a>
                 <a href="#impact">Faith and self-knowledge</a>
+                <a href="#reviews">What scholars say</a>
             </div>
         </nav>
 
@@ -136,5 +138,45 @@ book: divyaGyan
                 </div>
             </div>
         </section>
+
+        <section class="dg-section dg-section--reviews" id="reviews" aria-labelledby="reviews-title">
+            <div class="hi-shell">
+                <header class="hi-section-heading hi-section-heading--center dg-section-heading">
+                    <span class="hi-kicker">Appreciation from the scholarly community</span>
+                    <h2 id="reviews-title">What Scholars Say</h2>
+                    <p>Considered responses from scholars of the judiciary, universities and the world of education.</p>
+                </header>
+                <div class="dg-reviews-grid">
+                    {%- for r in bookReviews.reviews %}
+                    <article class="dg-review">
+                        <blockquote>&ldquo;{{ r.excerpt.en }}&rdquo;</blockquote>
+                        <footer>
+                            <strong>{{ r.name.en }}</strong>
+                            <span>{{ r.designation.en }}</span>
+                        </footer>
+                        <button class="dg-review__trigger" type="button" data-dg-review-open>Read the full response</button>
+                        <template class="dg-review__full">
+                            {%- for para in r.body.en %}
+                            <p>{{ para }}</p>
+                            {%- endfor %}
+                            {%- if r.originalLanguage != "en" %}
+                            <p class="dg-review__note">Translated from the original Hindi.</p>
+                            {%- endif %}
+                        </template>
+                    </article>
+                    {%- endfor %}
+                </div>
+            </div>
+        </section>
+
+        <div class="dg-review-modal" id="dg-review-modal" hidden>
+            <div class="dg-review-modal__backdrop" data-dg-review-close></div>
+            <section class="dg-review-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="dg-review-modal-title" tabindex="-1">
+                <button class="dg-review-modal__close" type="button" data-dg-review-close aria-label="Close response">&times;</button>
+                <h2 id="dg-review-modal-title"></h2>
+                <span class="dg-review-modal__designation" id="dg-review-modal-designation"></span>
+                <div class="dg-review-modal__body" id="dg-review-modal-body"></div>
+            </section>
+        </div>
 
     </main>
