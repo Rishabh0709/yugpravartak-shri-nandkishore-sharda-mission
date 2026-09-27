@@ -2572,7 +2572,6 @@ ol {
 }
 
 .footer-visit-feature {
-    position: relative;
     display: block;
     overflow: hidden;
     color: #f7f0e4;
@@ -2598,29 +2597,19 @@ ol {
     object-position: center;
 }
 
-.footer-visit-feature::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(20, 8, 8, 0.05) 0%, rgba(20, 8, 8, 0.45) 100%);
+.footer-visit-feature > span {
+    display: flex;
+    padding: 10px 13px 11px;
+    align-items: center;
+    justify-content: space-between;
+    color: #d8d0c5;
+    font-size: 0.83rem;
+    line-height: 1.4;
 }
 
-.footer-visit-feature > span {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 13px;
-    color: #fff7e9;
-    font-family: "Cinzel", serif;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    line-height: 1.4;
-    text-align: center;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+.footer-visit-feature b {
+    color: #d3ad5c;
+    font-weight: 400;
 }
 
 .footer-navigation {
