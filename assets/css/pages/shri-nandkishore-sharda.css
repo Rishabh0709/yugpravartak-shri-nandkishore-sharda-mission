@@ -175,6 +175,15 @@
             font-weight: 700;
         }
 
+        /* keeps the same landscape box as the base card, but shows the
+           whole photo (letterboxed) instead of cropping into it -- for
+           images whose subject doesn't survive a centred cover-crop
+           (e.g. a portrait-ish symbol, or faces near the frame edge). */
+        .bhaiya-journey__media--contain img {
+            object-fit: contain;
+            background: #fffaf1;
+        }
+
         .bhaiya-journey__media--book {
             display: grid;
             place-items: center;
