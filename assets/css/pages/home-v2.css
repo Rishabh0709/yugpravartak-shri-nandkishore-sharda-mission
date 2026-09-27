@@ -495,15 +495,6 @@
     background: var(--bg-wash);
     border-block: 1px solid var(--rule);
 }
-.v2-gallery__title {
-    margin: 0 0 clamp(16px, 2vw, 22px);
-    text-align: center;
-    font-family: var(--font-head);
-    font-size: .82rem;
-    font-weight: 600;
-    letter-spacing: .12em;
-    color: var(--gold-deep);
-}
 .v2-gallery__strip {
     list-style: none;
     margin: 0;
@@ -518,11 +509,16 @@
     overflow: hidden;
     box-shadow: var(--shadow-sm);
 }
+/* the source photos range from 1.33:1 to 1.81:1 -- 4:3 (1.33) forced the
+   widest of them (the scholarship-distribution photo) to lose ~26% of
+   its width off the sides, cropping into the people standing at the
+   edges of the frame. 3:2 sits closer to the middle of that range, so
+   no photo in the strip loses more than ~17%. */
 .v2-gallery__strip img {
     display: block;
     width: 100%;
     height: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     transition: transform var(--transition);
 }
