@@ -792,6 +792,11 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     font-size: 1.08rem;
 }
 
+.hi-narrative__full {
+    grid-column: 1 / -1;
+    font-size: 1.08rem;
+}
+
 .hi-inline-link {
     color: var(--color-flame, #9c3b2e);
     text-decoration: underline;
