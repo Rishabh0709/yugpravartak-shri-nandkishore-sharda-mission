@@ -1857,6 +1857,16 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
         grid-template-columns: 1fr;
     }
 
+    /* .hi-profile--reverse swaps the media to the second grid column on
+       desktop via order:2; once the grid collapses to a single column
+       here, that same order would strand the photo below all the text
+       instead of leading the section (confirmed live on the homepage's
+       Madhu Maa card, which uses --reverse). Reset it so every profile
+       card shows its photo first on mobile, matching the non-reversed
+       cards' natural source order. */
+    .hi-profile--reverse .hi-profile__media {
+        order: -1;
+    }
 
     .hi-seva-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));

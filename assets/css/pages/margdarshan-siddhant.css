@@ -224,11 +224,10 @@
                 grid-template-columns: 1fr;
             }
 
-            /* text first, then its photo, in both bands */
-            .margdarshan-grid--darshan .margdarshan-copy {
-                order: -1;
-            }
+            /* photo first, then its text, in both bands (mobile-wide rule:
+               images lead every stacked section) */
             .margdarshan-grid--darshan .margdarshan-darshan-fig {
+                order: -1;
                 max-width: 460px;
             }
 
