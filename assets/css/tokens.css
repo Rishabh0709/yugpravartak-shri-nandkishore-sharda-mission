@@ -54,6 +54,17 @@
     --shadow-sm: 0 1px 2px rgba(45, 30, 15, .05), 0 6px 16px rgba(45, 30, 15, .06);
     --shadow-md: 0 2px 6px rgba(45, 30, 15, .06), 0 18px 44px rgba(45, 30, 15, .09);
 
+    /* ---- image aspect ratios: the default crop for each media role.
+       A component with a documented reason to crop differently (a tall
+       portrait that loses too much on a wide crop, a strip tuned against
+       a specific set of source photos, a box sized to one exact asset)
+       keeps its own value — these four are the shared defaults, not a
+       hard rule. ---- */
+    --ratio-card:     4 / 3;   /* the default photo card / thumbnail */
+    --ratio-wide:     16 / 10; /* wide feature cards, video thumbnails */
+    --ratio-portrait: 4 / 5;   /* upright portrait cards */
+    --ratio-video:    16 / 9;  /* video iframes and their poster images */
+
     /* ---- layout ---- */
     --container:         1200px;
     --container-content: 1180px;

@@ -1664,7 +1664,7 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 }
 
 .hi-seva-grid--pillars .hi-seva-card--scholarship .hi-seva-card__media {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: var(--ratio-card);
     min-height: 0;
 }
 
@@ -1705,7 +1705,7 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
     }
 
     .hi-seva-card--scholarship .hi-seva-card__media {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: var(--ratio-card);
         min-height: 0;
     }
 }
@@ -1719,7 +1719,7 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 .hi-seva-card__media {
     position: relative;
     margin: 0;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: var(--ratio-card);
     overflow: hidden;
     background: #e2ddce;
 }

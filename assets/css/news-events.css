@@ -59,7 +59,7 @@ a.news-event-card:focus-visible {
 .news-clip-card__image {
     position: relative;
     margin: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--ratio-wide);
     overflow: hidden;
     background: #f3e5cf;
 }
@@ -188,7 +188,7 @@ a.news-event-card:focus-visible {
 }
 
 .news-clip-card__image {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: var(--ratio-portrait);
 }
 
 .news-clip-card__image img {
@@ -453,7 +453,7 @@ a.news-event-card:focus-visible {
 .news-event-brief__photo img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: var(--ratio-card);
     object-fit: cover;
 }
 

@@ -1753,7 +1753,7 @@ ol {
 
 .activity-card__media {
     position: relative;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: var(--ratio-card);
     background: #ece3d2;
 }
 
@@ -2592,7 +2592,7 @@ ol {
 .footer-visit-feature img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: var(--ratio-video);
     object-fit: cover;
     object-position: center;
 }

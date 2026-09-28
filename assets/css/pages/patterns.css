@@ -125,7 +125,7 @@ code {
     letter-spacing: .1em;
     text-transform: uppercase;
 }
-.pt-ph--4x3 { aspect-ratio: 4 / 3; }
+.pt-ph--4x3 { aspect-ratio: var(--ratio-card); }
 
 /* ---- 6b steps ---- */
 .pt-steps { list-style: none; margin: 0; padding: 0; counter-reset: s; }
