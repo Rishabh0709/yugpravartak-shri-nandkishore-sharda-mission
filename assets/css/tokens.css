@@ -54,6 +54,17 @@
     --shadow-sm: 0 1px 2px rgba(45, 30, 15, .05), 0 6px 16px rgba(45, 30, 15, .06);
     --shadow-md: 0 2px 6px rgba(45, 30, 15, .06), 0 18px 44px rgba(45, 30, 15, .09);
 
+    /* ---- image aspect ratios: the default crop for each media role.
+       A component with a documented reason to crop differently (a tall
+       portrait that loses too much on a wide crop, a strip tuned against
+       a specific set of source photos, a box sized to one exact asset)
+       keeps its own value — these four are the shared defaults, not a
+       hard rule. ---- */
+    --ratio-card:     4 / 3;   /* the default photo card / thumbnail */
+    --ratio-wide:     16 / 10; /* wide feature cards, video thumbnails */
+    --ratio-portrait: 4 / 5;   /* upright portrait cards */
+    --ratio-video:    16 / 9;  /* video iframes and their poster images */
+
     /* ---- layout ---- */
     --container:         1200px;
     --container-content: 1180px;
@@ -72,37 +83,16 @@
     --color-bg:            var(--bg);
     --color-surface:       var(--surface);
     --color-white:         #ffffff;
-    --color-ink:           var(--ink);
-    --color-paper:         var(--bg);
-    --color-parchment:     var(--bg);
-    --color-paper-soft:    var(--bg);
-    --color-paper-deep:    var(--surface-sunk);
-    --color-cream-text:    #efe7d8;
     --color-gold:          var(--gold);
     --color-gold-dark:     var(--gold-deep);
     --color-maroon:        var(--primary);
-    --color-maroon-deep:   var(--primary-deep);
-    --color-maroon-warm:   #71362b;
-    --color-flame:         #a94e2e;
-    --color-flame-bright:  #cf6c3f;
     --color-blue:          var(--accent);
-    --color-blue-deep:     #24384c;
-    --color-navy:          #202a36;
-    --color-navy-soft:     #2b3745;
-    --color-aubergine:     #20182a;
-    --color-rose:          #9c4749;
     --color-text:          var(--ink-body);
     --color-muted:         var(--ink-muted);
-    --color-muted-strong:  #5b5149;
     --color-border:        var(--rule);
-    --color-line:          var(--rule);
     --font-heading:        var(--font-head);
-    --font-devotional:     var(--font-head);
-    --font-label:          var(--font-body);
-    --font-devanagari:     var(--font-head);
     --shadow-soft:         var(--shadow-md);
     --shadow-hover:        var(--shadow-md);
-    --radius-sm:           var(--radius);
     --radius-md:           var(--radius);
     --radius-lg:           var(--radius);
 
@@ -110,12 +100,8 @@
     --hi-ink:          var(--ink);
     --hi-body:         var(--ink-body);
     --hi-maroon:       var(--primary);
-    --hi-saffron:      #b06a26;
     --hi-gold:         var(--gold);
     --hi-cream:        var(--surface);
-    --hi-sand:         var(--bg-wash);
-    --hi-blue:         #dfe9ec;
-    --hi-sage:         #dee6d9;
     --hi-radius:       var(--radius);
     --hi-shadow:       var(--shadow-md);
     --hi-serif:        var(--font-head);
@@ -125,6 +111,5 @@
     --hi-quote-ink:    var(--ink);
     --hi-quote-muted:  #6f5333;
     --hi-quote-border: var(--rule-strong);
-    --hi-quote-glow:   rgba(185, 138, 52, .14);
     --hi-quote-bg:     linear-gradient(125deg, #fffdf8 0%, #f5ecda 60%, #eef1ea 100%);
 }

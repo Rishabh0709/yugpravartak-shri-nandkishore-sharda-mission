@@ -85,7 +85,7 @@
 
 .video-card__media {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--ratio-wide);
     overflow: hidden;
     background: #f3e5cf;
 }
@@ -243,7 +243,7 @@
 }
 
 .video-modal__frame {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: var(--ratio-video);
     background: #120d13;
 }
 
@@ -272,7 +272,7 @@
 .video-detail-frame iframe,
 .video-detail-frame img {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: var(--ratio-video);
     display: block;
     border: 0;
     object-fit: cover;

@@ -225,7 +225,7 @@ body.gallery-page.gallery-modal-open {
 .gallery-archive-card img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: var(--ratio-card);
     object-fit: cover;
     background: #eadfce;
     transition: transform .35s ease, filter .35s ease;

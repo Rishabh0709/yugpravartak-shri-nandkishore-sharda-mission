@@ -89,7 +89,7 @@
         .gyan-ganga-note img {
             display: block;
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: var(--ratio-card);
             object-fit: contain;
         }
 
