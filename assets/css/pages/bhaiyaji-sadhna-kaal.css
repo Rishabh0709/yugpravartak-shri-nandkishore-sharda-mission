@@ -78,7 +78,11 @@
             display: block;
             width: 100%;
             height: clamp(330px, 40vw, 560px);
-            object-fit: cover;
+            object-fit: contain;
+        }
+
+        .sadhna-arc__tail {
+            margin-top: clamp(28px, 5vw, 56px);
         }
 
         /* §avataran has less copy than its neighbours (2 short paragraphs,
