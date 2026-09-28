@@ -21,6 +21,7 @@
     background-size: cover, cover;
 }
 .v2-hero__inner { position: relative; z-index: 1; }
+.v2-hero__break { display: none; }
 .v2-hero__copy { width: min(700px, 66%); }
 .v2-hero .hi-kicker { color: var(--primary); margin-bottom: 12px; }
 .v2-hero h1 {
@@ -91,6 +92,7 @@
        resolves -- the old 56/150px cap still left a noticeably empty
        band of plain background between the header and the heading. */
     .v2-hero__copy { width: 100%; padding-top: clamp(24px, 12vw, 70px); }
+    .v2-hero__break { display: inline; }
     .v2-hero__lead { max-width: none; }
 }
 
