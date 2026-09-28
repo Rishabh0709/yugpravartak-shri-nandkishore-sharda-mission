@@ -77,7 +77,7 @@
     display: block;
     width: 100%;
     height: clamp(230px, 32vw, 360px);
-    object-fit: cover;
+    object-fit: contain;
 }
 .agc-figure figcaption {
     padding: 12px 16px 14px;

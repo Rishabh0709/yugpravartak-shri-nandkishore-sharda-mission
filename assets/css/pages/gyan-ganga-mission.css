@@ -29,7 +29,7 @@
             display: block;
             width: 100%;
             min-height: 390px;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .gyan-ganga-media figcaption {
@@ -90,7 +90,7 @@
             display: block;
             width: 100%;
             aspect-ratio: 4 / 3;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .gyan-ganga-note p {

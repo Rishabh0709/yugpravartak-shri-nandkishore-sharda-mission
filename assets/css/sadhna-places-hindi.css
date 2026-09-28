@@ -126,7 +126,7 @@
     display: block;
     width: 100%;
     aspect-ratio: 1.34 / 1;
-    object-fit: cover;
+    object-fit: contain;
     filter: saturate(1.08) contrast(1.04) brightness(1.02);
     transition: transform .5s ease, filter .5s ease;
 }
