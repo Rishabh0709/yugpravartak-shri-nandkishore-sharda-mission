@@ -69,7 +69,7 @@ body.hindi-home {
    narrow reading column. Add a wrapper class here (rather than a
    one-off max-width override in a page's own stylesheet) whenever a
    new full-width prose block is introduced. */
-.hindi-home :is(.v3-intro-tail, .hi-narrative__full).hi-prose > p {
+.hindi-home :is(.v3-intro-tail, .hi-narrative__full, .hi-shell).hi-prose > p {
     max-width: none;
 }
 
