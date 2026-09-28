@@ -125,7 +125,7 @@
             display: block;
             width: 100%;
             height: clamp(330px, 38vw, 520px);
-            object-fit: cover;
+            object-fit: contain;
         }
 
         /* §gyan-jwala's photo is wide (AR ~1.78) — cover was cropping it
