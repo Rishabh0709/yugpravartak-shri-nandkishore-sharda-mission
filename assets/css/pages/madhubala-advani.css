@@ -26,10 +26,6 @@
         .madhu-hero__grid {
             position: relative;
             z-index: 1;
-            display: grid;
-            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
-            gap: clamp(32px, 6vw, 78px);
-            align-items: center;
         }
 
         .madhu-hero h1 {
@@ -49,37 +45,6 @@
             font-size: clamp(1.18rem, 1.85vw, 1.55rem);
             font-weight: 500;
             line-height: 1.78;
-        }
-
-        .madhu-quote-card {
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(198, 148, 53, .35);
-            border-radius: 8px;
-            background: rgba(255, 252, 246, .78);
-            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
-        }
-
-        .madhu-quote-card img {
-            display: block;
-            width: 100%;
-            height: clamp(390px, 52vw, 640px);
-            object-fit: cover;
-            object-position: center top;
-        }
-
-        .madhu-quote-card figcaption {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 86px 26px 26px;
-            color: #fffaf1;
-            font-family: var(--hi-serif);
-            font-size: clamp(1.16rem, 1.75vw, 1.5rem);
-            font-weight: 700;
-            line-height: 1.58;
-            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
         }
 
         .madhu-facts {
@@ -260,7 +225,6 @@
         }
 
         @media (max-width: 980px) {
-            .madhu-hero__grid,
             .madhu-journey__grid {
                 grid-template-columns: 1fr;
             }
@@ -272,7 +236,7 @@
 
         @media (max-width: 640px) {
             .madhu-hero {
-                padding-top: 126px;
+                padding-top: 48px;
             }
 
             .madhu-hero h1 {
@@ -287,7 +251,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .madhu-quote-card img,
             .madhu-journey__media img {
                 height: 360px;
             }

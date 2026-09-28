@@ -26,10 +26,6 @@
         .bhaiya-hero__grid {
             position: relative;
             z-index: 1;
-            display: grid;
-            grid-template-columns: minmax(0, 1.04fr) minmax(310px, .86fr);
-            gap: clamp(32px, 6vw, 78px);
-            align-items: center;
         }
 
         .bhaiya-hero h1 {
@@ -49,38 +45,6 @@
             font-size: clamp(1.18rem, 1.85vw, 1.55rem);
             font-weight: 500;
             line-height: 1.78;
-        }
-
-        .bhaiya-quote-card {
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(198, 148, 53, .35);
-            border-radius: 8px;
-            background: rgba(255, 252, 246, .78);
-            box-shadow: 0 28px 76px rgba(63, 45, 37, .16);
-        }
-
-        .bhaiya-quote-card img {
-            display: block;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 697 / 1016;
-            object-fit: cover;
-            object-position: center top;
-        }
-
-        .bhaiya-quote-card figcaption {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 84px 26px 26px;
-            color: #fffaf1;
-            font-family: var(--hi-serif);
-            font-size: clamp(1.24rem, 2vw, 1.72rem);
-            font-weight: 700;
-            line-height: 1.55;
-            background: linear-gradient(180deg, transparent, rgba(40, 24, 31, .86));
         }
 
         .bhaiya-facts {
@@ -380,7 +344,6 @@
         }
 
         @media (max-width: 980px) {
-            .bhaiya-hero__grid,
             .bhaiya-journey__grid {
                 grid-template-columns: 1fr;
             }
@@ -400,7 +363,7 @@
 
         @media (max-width: 640px) {
             .bhaiya-hero {
-                padding-top: 126px;
+                padding-top: 48px;
             }
 
             .bhaiya-hero h1 {
@@ -415,7 +378,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .bhaiya-quote-card img,
             .bhaiya-journey__media img {
                 height: 360px;
             }
