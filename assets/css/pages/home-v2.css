@@ -80,7 +80,7 @@
 @media (max-width: 900px) {
     .v2-hero {
         min-height: 0;
-        padding: 104px 0 clamp(44px, 9vw, 68px);
+        padding: 88px 0 clamp(44px, 9vw, 68px);
         background-image:
             linear-gradient(180deg, rgba(247, 236, 218, .28) 0%, rgba(247, 236, 218, .68) 28%, var(--bg-wash) 52%, var(--bg-wash) 100%),
             url("../../images/hi-home-hero-background.webp");
@@ -88,9 +88,9 @@
         background-size: cover, 165% auto;
     }
     /* pulls the heading up closer to where the photo/gradient actually
-       resolves -- the old 34vw/190px cap left a noticeably empty band
-       of plain background between the photo and the heading. */
-    .v2-hero__copy { width: 100%; padding-top: clamp(56px, 26vw, 150px); }
+       resolves -- the old 56/150px cap still left a noticeably empty
+       band of plain background between the header and the heading. */
+    .v2-hero__copy { width: 100%; padding-top: clamp(24px, 12vw, 70px); }
     .v2-hero__lead { max-width: none; }
 }
 
