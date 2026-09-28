@@ -88,7 +88,7 @@
             display: block;
             width: 100%;
             height: clamp(330px, 38vw, 520px);
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .mission-chapter__media figcaption {
