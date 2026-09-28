@@ -132,14 +132,16 @@ const FAQ_ITEMS = [
         "categoryId": "life-conduct",
         "question": {
             "hi": "मनुष्य क्या है?",
-            "en": "What is a human being?"
+            "en": "What Is a Human Being?"
         },
         "answer": {
             "hi": [
                 "मनुष्य ईश्वर की सर्वश्रेष्ठ कृति है क्यों कि वह दो शरीर का संयोजन है-भौतिक शरीर एवं चैतन्य शरीर, जिसमें ईश्वर का अंश है। मनुष्य को ईश्वर ने बुद्धि-विवेक, भावनाएं, वाणी आदि अद्भुत शक्तियाँ प्रदान की है। मनुष्य में तीनों गुण- सतोगुण, रजोगुण एवं तमोगुण विद्यमान होते हैं। वह कर्म करने को स्वतंत्र है और परिवर्तनशील भी है। अतः उसके जीवन में असीमित सम्भावनाएं हैं।"
             ],
             "en": [
-                "A human being is God's finest creation, for they are a union of two bodies -- the physical body and the conscious body, which carries a portion of God within it. God has given human beings the wondrous powers of intellect, discernment, feeling and speech. All three gunas -- satoguna, rajoguna and tamoguna -- are present within a human being. They are free to act, and they are also capable of change. Hence there are unlimited possibilities within a human life."
+                "A human being is regarded as God's highest creation, as human existence is a union of two bodies—the physical body and the conscious body, which is imbued with a divine essence.",
+                "God has endowed human beings with remarkable faculties such as Buddhi–Vivek (intellect and discrimination), emotions and speech. All three gunas—Sattva, Rajas and Tamas—are present within human nature.",
+                "Human beings are free to act and capable of transformation. Therefore, every human life holds boundless potential for growth, development and spiritual evolution."
             ]
         },
         "categoryTitle": {
@@ -148,7 +150,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "मनुष्य ईश्वर की सर्वश्रेष्ठ कृति है क्यों कि वह दो शरीर का संयोजन है-भौतिक शरीर एवं चैतन्य शरीर, जिसमें ईश्वर का अंश है। मनुष्य को ईश्वर ने बुद्धि-विवेक, भावनाएं, वाणी आद...",
-            "en": "A human being is God's finest creation, for they are a union of two bodies -- the physical body and the conscious body, which carries a portion of God within it. God has given h..."
+            "en": "A human being is regarded as God's highest creation, as human existence is a union of two bodies—the physical body and the conscious body, which is imbued with a divine essence..."
         }
     },
     {
@@ -157,14 +159,16 @@ const FAQ_ITEMS = [
         "categoryId": "life-conduct",
         "question": {
             "hi": "मनुष्य जीवन क्या है?",
-            "en": "What is human life?"
+            "en": "What Is Human Life?"
         },
         "answer": {
             "hi": [
                 "जन्म से लेकर मृत्यु तक के बीच की अवधि ही मनुष्य जीवन है। यह एक कर्मक्षेत्र है जहाँ किये गये कर्म निश्चित रुप से फलिभूत होते हैं। मनुष्य जीवन में ही व्यक्ति चाहे तो उन्नत होकर मनुष्यत्व से देवत्व व देवत्व से ईश्वरत्व तक प्राप्त कर सकता है। अन्यथा अवनति के गहरे गर्त में भी गिर सकता है। मनुष्य जीवन में व्यक्ति न तो खाली हाथ आता है और न ही खाली हाथ जाता है। वह अपने प्रारब्ध और पूर्व जन्म के संस्कार साथ लेकर आता है और इस जन्म में पिछले जन्म के प्रारब्ध काटकर अपने नए प्रारब्ध और कर्मों का संग्रह करता है जिसे उसका चैतन्य शरीर मृत्यु के बाद अपने साथ ले जाता है। ईश्वर प्रदत्त मनुष्य जीवन दिव्य गुणों से भरपूर, बहुत ही महत्वपूर्ण, दुर्लभ, अनमोल, अमृतमय, आनन्दमय, अनुपम उपहार है।"
             ],
             "en": [
-                "Human life is the span between birth and death. It is a field of action where every deed sown certainly bears fruit. Only in human life can a person, by rising, attain divinity from humanity, and godhood from divinity -- or, equally, fall into the depths of decline. In human life a person arrives neither empty-handed nor leaves empty-handed. They bring with them their prarabdha and the imprints of past lives, and in this life, having worked through the prarabdha of the last birth, they gather a new prarabdha and new deeds, which their conscious body carries onward after death. This God-given human life, full of divine qualities, is an exceedingly important, rare, priceless, nectar-like and incomparable gift."
+                "Human life is the period between birth and death. It is a field of action where the deeds performed by an individual inevitably bear their results. Within this life, a person has the potential to rise from humanity to divinity, and from divinity to God-realisation. Conversely, one may also fall into the depths of decline.",
+                "A person neither comes into human life empty-handed nor leaves empty-handed. One carries the effects of past actions and impressions from previous births, while also working through the accumulated results of those actions and creating new impressions and karmic consequences in the present life. These are carried forward by the conscious body beyond death.",
+                "Human life, bestowed by God, is therefore a precious, rare and invaluable gift, filled with divine qualities and the potential for immortality, joy and spiritual fulfilment."
             ]
         },
         "categoryTitle": {
@@ -173,7 +177,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "जन्म से लेकर मृत्यु तक के बीच की अवधि ही मनुष्य जीवन है। यह एक कर्मक्षेत्र है जहाँ किये गये कर्म निश्चित रुप से फलिभूत होते हैं। मनुष्य जीवन में ही व्यक्ति चाहे तो उन्नत...",
-            "en": "Human life is the span between birth and death. It is a field of action where every deed sown certainly bears fruit. Only in human life can a person, by rising, attain divinity ..."
+            "en": "Human life is the period between birth and death. It is a field of action where the deeds performed by an individual inevitably bear their results. Within this life, a person h..."
         }
     },
     {
@@ -182,7 +186,7 @@ const FAQ_ITEMS = [
         "categoryId": "life-conduct",
         "question": {
             "hi": "मनुष्य जीवन लेने का उद्देश्य क्या है?",
-            "en": "What is the purpose of taking human life?"
+            "en": "What Is the Purpose of Human Life?"
         },
         "answer": {
             "hi": [
@@ -195,13 +199,13 @@ const FAQ_ITEMS = [
                 "ईश्वर से निःस्वार्थ प्रेम करते हुए उनका स्मरण करना।"
             ],
             "en": [
-                "The purpose of taking human life is --",
-                "To know, accept and attain truth.",
-                "To develop virtue within oneself and rise from humanity to divinity.",
-                "To live with joy, peace and happiness while keeping spirituality and worldly life in harmony.",
-                "To fulfil one's familial, social and moral responsibilities without attachment, while staying connected to one's chosen deity.",
-                "To work through the prarabdha of past lives and gather spiritual wealth for the journey of life after death.",
-                "To remember God with selfless love."
+                "The purpose of human life is to:",
+                "1. Know, accept and realise the Truth.",
+                "2. Cultivate noble qualities within oneself and progress from humanity towards divinity.",
+                "3. Harmonise the spiritual and material dimensions of life, and live with joy, peace and contentment.",
+                "4. Fulfil one's family, social and moral responsibilities with detachment, while remaining connected with one's chosen Deity.",
+                "5. Work through the accumulated effects of past actions and gather spiritual wealth for the journey beyond physical life.",
+                "6. Remember and love God with selfless devotion."
             ]
         },
         "categoryTitle": {
@@ -210,7 +214,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "मनुष्य जीवन लेने का उद्देश्य है- सत्य को जानना, स्वीकारना एवं पाना। स्वयं में सद्गुणों का विकास कर मनुष्यत्व से देवत्व की प्राप्ति करना। अध्यात्म एवं भौतिक जीवन में सामंज...",
-            "en": "The purpose of taking human life is --"
+            "en": "The purpose of human life is to:"
         }
     },
     {
@@ -467,14 +471,15 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "ऐसी कौन सी शक्ति है जो मनुष्य जीवन को चलायमान रखती है?",
-            "en": "What is the power that keeps human life in motion?"
+            "en": "What Is the Force That Sustains Human Life?"
         },
         "answer": {
             "hi": [
                 "पृथवी पर माता-पिता द्वारा निर्मित भौतिक शरीर में ईश्वर प्रदत्त, उन्हीं का अंश, चैतन्य शरीर प्रविष्ट होता है। यही चैतन्य शक्ति मनुष्य जीवन को चलायमान रखती है। जब यह चैतन्य शक्ति मनुष्य शरीर को छोड़ कर निकल जाती है तब यह भौतिक शरीर मृत कहलाता है। चैतन्य शरीर बुद्धि-विवेक, भावनाओं, इच्छाओं से परिपूर्ण अति तेजोमय व अत्यन्त ही शक्तिशाली है।"
             ],
             "en": [
-                "Into the physical body formed by one's parents on earth enters the conscious body, given by God and a portion of God himself. It is this conscious power that keeps human life in motion. When this conscious power leaves the human body, the physical body is called dead. The conscious body, full of intellect, discernment, feelings and desires, is exceedingly radiant and exceedingly powerful."
+                "The physical body, formed through the parents, becomes animated by the conscious body, which is bestowed by God and regarded as a manifestation of the Divine within the human being. It is this conscious force that gives life to the physical body and sustains the processes of human existence.",
+                "When the conscious force leaves the physical body, the body becomes lifeless and is considered dead. The conscious body is described as immensely powerful and radiant, carrying within it Buddhi–Vivek, emotions and desires."
             ]
         },
         "categoryTitle": {
@@ -483,7 +488,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "पृथवी पर माता-पिता द्वारा निर्मित भौतिक शरीर में ईश्वर प्रदत्त, उन्हीं का अंश, चैतन्य शरीर प्रविष्ट होता है। यही चैतन्य शक्ति मनुष्य जीवन को चलायमान रखती है। जब यह चैतन्य...",
-            "en": "Into the physical body formed by one's parents on earth enters the conscious body, given by God and a portion of God himself. It is this conscious power that keeps human life in..."
+            "en": "The physical body, formed through the parents, becomes animated by the conscious body, which is bestowed by God and regarded as a manifestation of the Divine within the human be..."
         }
     },
     {
@@ -492,7 +497,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "भौतिकवाद क्या है?",
-            "en": "What is materialism?"
+            "en": "What Is Materialism?"
         },
         "answer": {
             "hi": [
@@ -500,8 +505,11 @@ const FAQ_ITEMS = [
                 "भौतिकवाद इतना लुभावना होता है कि मनुष्य इसके मायाजाल में और सुख-प्राप्ति की मृगतृष्णा में उलझता ही चला जाता है। और अज्ञानतावश गलत कर्म व अवगुण एकत्रित कर लेता है, जिनसे उन्हें सिवाय दुःख और अशांति के कुछ प्राप्त नहीं होता। इसके विपरीत भैया के ज्ञान से वह सद्गुणों का विकास कर सुखमयी जीवन व्यतीत कर सकता है। भौतिकवाद स्थायी नहीं है क्योंकि भौतिक जगत् की सभी वस्तुएं व सम्बन्ध परिवर्तनशील हैं और अंततः नश्वर है।"
             ],
             "en": [
-                "Materialism is the worldly life created to maintain a human being's physical body and to help fulfil the real purpose of their birth on earth. When the physical body is left behind, materialism too is left behind for that person. Materialism includes: family, society, relationships with other people, wealth, property, the means of gaining worldly comfort, all visible objects and activities, wealth, sensual attachment, fame, and so on.",
-                "Materialism is so alluring that a human being goes on getting entangled in its web of illusion and in the mirage of seeking pleasure. And out of ignorance they accumulate wrong deeds and vices, from which they gain nothing but sorrow and unrest. In contrast, through Bhaiya's knowledge, they can develop virtue and lead a joyful life. Materialism is not permanent, because all the things and relationships of the material world are subject to change and are, in the end, transient."
+                "Materialism refers to the material dimension of human life, created to sustain the physical body and help fulfil the practical purpose of human existence on Earth. When the physical body comes to an end, the material dimension associated with that individual also comes to an end.",
+                "It encompasses family, society, relationships, wealth, possessions, means of material comfort, and all visible objects and activities, including the pursuit of money, desire and recognition.",
+                "Materialism can be so alluring that a person may become entangled in its illusions and spend life chasing fleeting pleasures. Out of ignorance, one may accumulate negative actions and undesirable tendencies, ultimately experiencing little beyond sorrow and unrest.",
+                "According to Bhaiya Ji's teachings, however, a person can cultivate noble qualities and lead a happier and more fulfilling life while engaging with the material world.",
+                "Materialism is inherently impermanent because everything in the material world—including possessions and relationships—is subject to change and ultimately passes away."
             ]
         },
         "categoryTitle": {
@@ -510,7 +518,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "मनुष्य के भौतिक शरीर के रखरखाव के लिए और उसके धरती पर जन्म लेने के वास्तविक उद्देश्य की पूर्ति में सहायतार्थ रचा गया भौतिक जीवन ही भौतिकवाद है। भौतिक शरीर के छूटने पर उस...",
-            "en": "Materialism is the worldly life created to maintain a human being's physical body and to help fulfil the real purpose of their birth on earth. When the physical body is left beh..."
+            "en": "Materialism refers to the material dimension of human life, created to sustain the physical body and help fulfil the practical purpose of human existence on Earth. When the physi..."
         }
     },
     {
@@ -519,7 +527,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "अध्यात्मवाद क्या है? कैसे किया जा सकता है?",
-            "en": "What is spirituality? How can it be practised?"
+            "en": "What Is Spirituality and How Can It Be Practised?"
         },
         "answer": {
             "hi": [
@@ -527,8 +535,9 @@ const FAQ_ITEMS = [
                 "अगर व्यक्ति भैया जी द्वारा दिए गए ज्ञान को जीवन में धारण करे और उनके द्वारा दी गई ’बुद्धि-विवेक योग साधना पद्धति’ से जिए तो वह सरलता से अपने सभी भौतिक कर्त्तव्यों का पालन अनासक्त भाव से करते हुए गृहस्थ में रहकर भी अध्यात्मवाद कर सकता है। भैया जी के अनुसार भौतिकता अध्यात्म की नींव है और भौतिक सुख-दुःख अस्थाई है। यदि मनुष्य मायाजाल में न उलझकर बुद्धि-विवेक का उपयोग करते हुए आवश्यकतानुसार भौतिकता को काम में ले और जिस उद्देश्य के लिए उसने जन्म लिया है, उसकी पूर्ति के लिए भी थोड़ा प्रयास करे तो वह भौतिकता में भी आनन्द, शांति, खुशी से रह सकता है और साथ-साथ मृत्यु के बाद के जीवन की भी तैयारी कर सकता है। अपने जीवन में ईश्वरीय कृपा का अनुभव करते हुए सहर्ष परिस्थितियों को स्वीकार करना, उनसे सीखना, अपनी बुद्धि-विवेक-गुणों का विकास करना, इष्टदेव से जुड़ना, निःस्वार्थ प्रेम से ’उनका’ स्मरण-गुणगान करना, सतर्कता से सही कर्म करना, भौतिक कर्त्तव्यों का निष्ठापूर्वक-निश्चिंतता व अनासक्ति रखते हुए पालन करना, मार्गदर्शक से जो अध्यात्म का मार्ग व ज्ञान मिला है उन्हें उनकी आज्ञा से दूसरों के साथ साझा करना- यह समग्रता में अध्यात्मवाद को मनुष्य जीवन में सम्भव कराता है।"
             ],
             "en": [
-                "To gain the right knowledge of God's and one's own true, eternal, essential nature, and to live accordingly, is spirituality. Just as materialism is tied to the physical body, spirituality is tied to the God-given conscious body. As long as a human being remains in earth, this field of action, they are free to act. After death, the transient physical body will be left right here, and the conscious body will receive the fruit of the good and bad deeds done through its whole life -- so preparing for the life after death is an integral and important aspect of spirituality. Spirituality can be practised through the self-realised knowledge, blessing and selfless guidance of a true guide received by God's grace.",
-                "If a person carries into their life the knowledge given by Bhaiyaji and lives by the 'Buddhi-Vivek Yog Sadhna' method he gave, they can easily fulfil all their worldly duties without attachment while remaining a householder, and still practise spirituality. According to Bhaiyaji, materialism is the foundation of spirituality, and worldly happiness and sorrow are temporary. If a person, without becoming entangled in the web of illusion, uses discernment to engage with worldly life as needed, and also makes a little effort towards the purpose for which they were born, they can live with joy, peace and happiness even within worldly life, while also preparing for the life after death. Experiencing God's grace in one's life, gladly accepting circumstances and learning from them, developing one's intellect, discernment and virtues, connecting with one's chosen deity, remembering and praising 'them' with selfless love, acting rightly with alertness, fulfilling worldly duties faithfully with equanimity and without attachment, and sharing, by the guide's command, the spiritual path and knowledge received from the guide with others -- taken together, this is what makes spirituality possible in human life."
+                "Spirituality is the right understanding of God and of one's own eternal, true nature, and living in accordance with that understanding. Just as materialism is connected with the physical body, spirituality is connected with the consciousness bestowed by God. As long as a human being lives in this earthly realm of action, one is free to act. After death, the perishable physical body is left behind, while the conscious self experiences the fruits of the good and bad actions performed throughout life. Therefore, preparing for life beyond death is an integral and important aspect of spirituality. Spirituality can be practised through the self-realised knowledge, blessings and selfless guidance of a true spiritual guide received through Divine grace.",
+                "If a person imbibes the wisdom imparted by Bhaiya Ji and practises the Buddhi–Vivek Yog Sadhana Paddhati taught by him, spirituality can be practised even while living a family life and fulfilling all worldly responsibilities with detachment. According to Bhaiya Ji, material life is the foundation upon which spirituality rests, and worldly pleasures and sorrows are temporary. If a person does not become entangled in the illusion of material life, but uses intellect and discrimination wisely, engages with material resources only as needed, and makes sincere efforts to fulfil the purpose for which they were born, they can live with peace, happiness and inner joy while simultaneously preparing for life beyond death.",
+                "To experience Divine grace in everyday life, accept circumstances with joy, learn from them, cultivate the qualities of intellect and discrimination, remain connected with one's chosen Deity, remember and praise the Divine with selfless love, act with awareness and discernment, and fulfil worldly duties sincerely, responsibly and without attachment. The spiritual knowledge and path received from the spiritual guide should, with their permission and guidance, be shared with others. Together, these practices make spirituality a living and meaningful part of human life."
             ]
         },
         "categoryTitle": {
@@ -537,7 +546,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "ईश्वर और स्वयं के सत्य, शाश्वत् मूल स्वरूप का सही ज्ञान प्राप्त कर तदनुसार जीना अध्यात्मवाद है। जैसे भौतिक शरीर से भौतिकवाद जुड़ता है, उसी प्रकार ईश्वर-प्रदत्त चैतन्य शरीर...",
-            "en": "To gain the right knowledge of God's and one's own true, eternal, essential nature, and to live accordingly, is spirituality. Just as materialism is tied to the physical body, s..."
+            "en": "Spirituality is the right understanding of God and of one's own eternal, true nature, and living in accordance with that understanding. Just as materialism is connected with th..."
         }
     },
     {
@@ -546,7 +555,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "अध्यात्म क्यों करना चाहिये?",
-            "en": "Why should one practise spirituality?"
+            "en": "Why Should One Practise Spirituality?"
         },
         "answer": {
             "hi": [
@@ -554,8 +563,10 @@ const FAQ_ITEMS = [
                 "यह जानते हुए कि भौतिक जीवन की सारी वस्तुएं नश्वर हैं और पृथवी पर संचित वस्तुओं को मृत्यु के बाद साथ नहीं ले जा सकते, इसलिये यह ज़रूरी है कि ऐसी वस्तुओं का संग्रह करें जिन्हें मृत्यु के बाद चैतन्य शरीर साथ ले जा सके जैसे ईश्वर आराधना, सत्कर्म, सदगुण, ईश्वर पर अटूट आस्था, श्रद्धा और विश्वास, ईश्वर के चरणों में आनन्दमय जीवन व्यतीत करना, यह अध्यात्म के माध्यम से ही सम्भव है। इस प्रकार अध्यात्म के द्वारा इस लोक एवं परलोक में भी आनन्दमय जीवन जीया जा सकता है। यानी दोनों हाथों में लड्डू।"
             ],
             "en": [
-                "One should practise spirituality because there is life after death, and the conscious body retains memory. Living with joy, peace and happiness is itself spirituality. Spirituality is the right art of living -- in this life, and after it too (after death). Through it, even while knowing that all things of worldly life are transient and cannot be carried along after death, worldly life is lived with joy, peace and happiness. Without spirituality there remains sorrow, depression, despair, frustration and anger, which are as painful as hell, and this priceless life is wasted -- and after death one has to bear the fruit of the wrong deeds committed in the absence of spirituality, which will certainly be extremely painful.",
-                "Knowing that all things of worldly life are transient, and that whatever is gathered on earth cannot be taken along after death, it becomes necessary to gather instead the things the conscious body can carry after death -- such as worship of God, right action, virtue, unwavering faith and trust in God, reverence, and living a joyful life at God's feet -- and this is possible only through spirituality. In this way, through spirituality, a joyful life can be lived both in this world and the next. That is, the best of both."
+                "Spirituality should be practised because life continues beyond death, and the conscious self carries its impressions beyond the physical body. To live with joy, peace and happiness is itself the essence of spirituality. Spirituality is the art of living rightly—not only in this life, but also in the life beyond death.",
+                "Even while knowing that everything in material life is impermanent and cannot be carried with us after death, spirituality enables us to live our earthly life with joy, peace and happiness. Without spirituality, life may become filled with sorrow, depression, disappointment, frustration and anger—suffering that can make this precious human life seem futile. Moreover, in the absence of spiritual awareness, one may commit wrong actions whose consequences must be faced after death, causing profound suffering.",
+                "Knowing that all material possessions are temporary and cannot be taken beyond death, it is important to cultivate what the conscious self can carry with it—devotion to God, righteous actions, noble qualities, unwavering faith, reverence and trust in God, and a life lived joyfully at His feet. Spirituality makes the cultivation of these enduring treasures possible.",
+                "Thus, through spirituality, one can learn to live a joyful and fulfilling life both in this world and beyond—truly making the most of both worlds."
             ]
         },
         "categoryTitle": {
@@ -564,7 +575,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "अध्यात्म इसलिये करना चाहिये क्योंकि मृत्यु के बाद जीवन है एवं चैतन्य शरीर में स्मृति रहती है। आनन्द, शांति व खुशी से रहना ही अध्यात्म है। अध्यात्म जीवन जीने की एक सही कला...",
-            "en": "One should practise spirituality because there is life after death, and the conscious body retains memory. Living with joy, peace and happiness is itself spirituality. Spiritual..."
+            "en": "Spirituality should be practised because life continues beyond death, and the conscious self carries its impressions beyond the physical body. To live with joy, peace and happine..."
         }
     },
     {
@@ -573,7 +584,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "अध्यात्म धन क्या है?",
-            "en": "What is spiritual wealth?"
+            "en": "What Is Spiritual Wealth?"
         },
         "answer": {
             "hi": [
@@ -585,12 +596,13 @@ const FAQ_ITEMS = [
                 "अध्यात्म धन अर्जित करने की कोई सीमा नहीं होती। जितना अधिक मनुष्य धरती पर अध्यात्म धन कमाता है, उतना ही उसका आनन्द बढ़ता जाता है और मृत्यु के बाद की तैयारी भी साथ में वह कर पाता है।"
             ],
             "en": [
-                "The earth is a field of action, where a human being, by connecting with God, can journey from humanity to divinity.",
-                "Just as in the material world a human being gathers material wealth through hard work, dedication, enthusiasm and zeal so that they may live happily amid materialism, in the same way, in spirituality too, a human being can gather spiritual wealth through body, mind, wealth, enthusiasm and zeal -- wealth that will serve them greatly, as capital, in the conscious world after death. The question then arises -- what is spiritual wealth?",
-                "The first is virtue, which is of three kinds -- satoguna, rajoguna and tamoguna. When, through Bhaiya's knowledge, a person develops virtue within themselves, their conscious body is uplifted and attains joy, peace and happiness. That is, by renouncing tamoguna, balancing rajoguna as needed in one's daily worldly activities, and developing satoguna through right action, a human being can become virtuous and, as a result, attain spiritual wealth.",
-                "One in whom virtue resides always remains calm, joyful and loving. They are ready to work not only for their own sake but for others' good as well. In this way they gather right actions, which fall into the category of spiritual wealth. These right actions become auspicious prarabdha, bearing good fruit in the life after death. The blessings received through right action, too, are a person's capital.",
-                "The third is the name of God. When a person, having understood the truth, remains like a lotus flower, unattached even within the mire of materialism, and, understanding the importance of God, chants their name with selfless love, that too accumulates as their spiritual wealth. Being established in this knowledge, they do not spend God's name or their own sadhana in fulfilling material desires.",
-                "There is no limit to how much spiritual wealth one may earn. The more spiritual wealth a human being earns on earth, the more their joy grows, and alongside it they are also able to prepare for the life after death."
+                "The Earth is a field of action where human beings can establish a connection with God and undertake the journey from humanity to divinity.",
+                "Just as in the material world, a person accumulates material wealth through hard work, dedication, enthusiasm and effort so that he may live comfortably, in the same way, through body, mind, dedication and devotion, a person can accumulate spiritual wealth. This spiritual wealth becomes a valuable asset that serves him in the realm of consciousness even after death. This raises the question: What is spiritual wealth?",
+                "Spiritual wealth consists of noble qualities, righteous actions, and selfless remembrance of God.",
+                "There are three qualities in human nature—Sattva, Rajas and Tamas. Through the wisdom imparted by Bhaiya Ji, when a person develops noble qualities within, his consciousness becomes elevated, bringing him greater joy, peace and happiness. By overcoming Tamas, balancing Rajas according to the needs of daily life in the material world, performing righteous actions, and cultivating Sattva, a person can become virtuous and thereby accumulate spiritual wealth.",
+                "A person endowed with noble qualities remains peaceful, joyful and loving. He does not think only of himself but is always willing to work for the welfare of others. In this way, he performs righteous deeds, which become part of his spiritual wealth. Such righteous actions bear auspicious fruit in life after death, becoming a form of beneficial spiritual inheritance. The blessings received through good deeds are also a valuable part of this wealth.",
+                "When a person understands the Truth and, even while living amidst the attractions of materialism, remains detached like a lotus blossoming in muddy waters, and, recognizing the significance of God, remembers His name with selfless love, that remembrance becomes part of his spiritual wealth. With the awakening of wisdom, he no longer spends his spiritual effort and devotion merely in fulfilling material desires.",
+                "There is no limit to the accumulation of spiritual wealth. The more spiritual wealth a person earns during his life on Earth, the greater his inner joy becomes, while at the same time he prepares himself for the journey beyond death."
             ]
         },
         "categoryTitle": {
@@ -599,7 +611,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "पृथवी एक कर्मक्षेत्र है, जहाँ मनुष्य ईश्वर से सम्पर्क बना कर मनुष्यत्व से देवत्व की यात्रा कर सकता है। जिस तरह भौतिक जगत में मनुष्य मेेहनत, लगन, उत्साह, उमंग से भौतिक धन...",
-            "en": "The earth is a field of action, where a human being, by connecting with God, can journey from humanity to divinity."
+            "en": "The Earth is a field of action where human beings can establish a connection with God and undertake the journey from humanity to divinity."
         }
     },
     {
@@ -608,7 +620,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "क्या भौतिकवाद अध्यात्म में बाधक है?",
-            "en": "Is materialism an obstacle to spirituality?"
+            "en": "Is Materialism a Hindrance to Spirituality?"
         },
         "answer": {
             "hi": [
@@ -616,8 +628,10 @@ const FAQ_ITEMS = [
                 "यह समझना आवश्यक है कि अध्यात्म की सारी क्रियाएं जैसे जप, तप, ध्यान आदि इस भौतिक शरीर के माध्यम से ही सम्भव हैं इसलिए भौतिक शरीर को स्वस्थ रखना आवश्यक है व उसको चलायमान रखने के लिए भौतिक वस्तुएं आवश्यक हैं जैसे भोजन, पानी, आराम, आदि। परिवार, माता-पिता, संतान, रिश्ते-नाते यह सब ईश्वर प्रदत्त हैं अतः इन्हें ईश्वर की धरोहर मान अनासक्त भाव से इनके प्रति अपने कर्त्तव्य का पालन करना भी अध्यात्म का ही भाग है।"
             ],
             "en": [
-                "Materialism is not an obstacle to spirituality, but rather complements it. Through Bhaiya's knowledge we have certainly come to understand that materialism is transient. By not holding attachment to materialism, using it only as needed, loving God selflessly, and developing virtue within oneself, one can move towards spirituality. Until there is harmony in a person's family life, they cannot practise spirituality with focus. By bringing coordination between spirituality and materialism, one can move towards spirituality.",
-                "It is important to understand that all activities of spirituality -- chanting, austerity, meditation and so on -- are possible only through this physical body; hence it is necessary to keep the physical body healthy, and material things are necessary to keep it functioning, such as food, water, rest, and so on. Family, parents, children, relationships -- all these are given by God; hence, holding them as God's trust and fulfilling one's duty towards them without attachment is itself a part of spirituality."
+                "Materialism is not a hindrance to spirituality; rather, it complements it. Through Bhaiya Ji's teachings, we have come to understand that materialism is transient. By remaining free from attachment to material possessions and using them only according to our needs, we can cultivate selfless love for God, develop noble qualities within ourselves, and progress towards spirituality.",
+                "However, unless there is harmony in a person's family life, it is difficult for him to remain focused and pursue the spiritual path. Therefore, by bringing about a harmonious balance between material life and spirituality, one can steadily move towards spiritual growth.",
+                "It is important to understand that all spiritual practices—Japa, Tapasya, meditation and the like—are performed through the physical body. Therefore, keeping the body healthy is essential. The physical necessities required to sustain and keep the body active—such as food, water and adequate rest—are therefore necessary.",
+                "Our family, parents, children and relationships are all gifts entrusted to us by God. Therefore, regarding them as a sacred responsibility entrusted to us by God and fulfilling our duties towards them without attachment is also an integral part of spirituality."
             ]
         },
         "categoryTitle": {
@@ -626,7 +640,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "भौतिकवाद अध्यात्म में बाधक नहीं वरन् पूरक है। भैया के ज्ञान से निश्चित रूप से हम समझ चुके हैं कि भौतिकवाद नश्वर है। भौतिकवाद में आसक्ति न रखकर ज़रूरत के आधार पर उपयोग कर ई...",
-            "en": "Materialism is not an obstacle to spirituality, but rather complements it. Through Bhaiya's knowledge we have certainly come to understand that materialism is transient. By not ..."
+            "en": "Materialism is not a hindrance to spirituality; rather, it complements it. Through Bhaiya Ji's teachings, we have come to understand that materialism is transient. By remaining ..."
         }
     },
     {
@@ -635,7 +649,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "मैं कौन हूँ? मैं कहाँ से आया हूँ? मैं क्यों आया हूँ? कहाँ जाऊँगा",
-            "en": "Who am I? Where have I come from? Why have I come? Where will I go?"
+            "en": "Who Am I? Where Have I Come From? Why Have I Come? Where Will I Go?"
         },
         "answer": {
             "hi": [
@@ -647,12 +661,15 @@ const FAQ_ITEMS = [
                 "मनुष्य चैतन्यस्वरूप है, मृत्यु तो भौतिक देह की होती है और चैतन्य शरीर जो अजर, अमर, अविनाशी है वह इस भौतिक शरीर को त्यागने के बाद में कर्मों के अनुसार उपयुक्त चैतन्य लोकों में जाता है और कर्मों को भोगने के बाद चैतन्य जगत् के नियमानुसार नया जन्म लेता है।"
             ],
             "en": [
-                "I am the conscious body, which is ageless, deathless and imperishable. I am the operator that uses the physical body as an instrument. I am a portion of God, arrived from the divine realms situated within inner consciousness. I have come here to work through the prarabdha of past lives and, through right action, to build good prarabdha, and to develop virtue within myself, so that after death I may go to the realm of my chosen deity.",
-                "According to the knowledge Bhaiya received by taking Jagatjanani Maa as his guru, he gave a new concept -- that a human being has two bodies. One is the physical body given by one's parents, which, as is well known, is made of physical particles. Besides this there is a complete, well-ordered, invisible conscious body, which is a portion of God and is made of conscious particles. It is ageless, deathless, imperishable and invisible. It does not follow the laws of the material world, because the laws of the conscious realm are different. It is radiant, blissful, keeps this physical body in motion, and at the same time it also holds a connection with God.",
-                "The physical body is the instrument, and the invisible conscious body is the operator. When the conscious body leaves the physical body, the human being reaches death. So I am, in truth, not the physical body but the conscious body, which is ageless, deathless and imperishable.",
-                "Ordinarily, every person assumes that they are the physical body, and becomes attached, in one form or another, to people, objects, thoughts, vices, circumstances and the like. Through Bhaiya's knowledge, they come to know that they are, in truth, the conscious body. Learning this, they are astonished. Once this truth is absorbed, a fundamental change takes place in their conduct, thinking and so on.",
-                "The question then arises -- why have I, the conscious body, come here? God's play is boundless. It is truly astonishing that, though supremely powerful in its conscious form, it cannot on its own perform any act on earth. That is possible only through the physical body. For this reason it becomes necessary to take birth on earth and assume a physical body. I first came here so that I might enjoy God's great creation, but became entangled in the web of illusion and caught in the cycle of coming and going. The earth alone is the place where I can work through the prarabdha of past lives and build good prarabdha through right action, and try to connect with my conscious parents, so that after death I may return once more to their realm.",
-                "A human being is, in essence, conscious in nature; it is the physical body that dies, and the conscious body, which is ageless, deathless and imperishable, upon leaving this physical body, goes according to its deeds to the appropriate conscious realm, and after experiencing the fruits of those deeds, takes a new birth according to the laws of the conscious world."
+                "I am a body of consciousness—eternal, immortal and indestructible. I am the force that enables the physical body to function as an instrument. I have come from the divine realms of consciousness, as a spark of God dwelling within. I have come to work through my accumulated prarabdha from past lives, to create a better destiny through righteous actions, and to cultivate noble qualities within myself, so that after death I may reach the realm of my chosen Deity.",
+                "From the knowledge Bhaiya Ji received after accepting Jagatjanani Maa as his Guru, he presented a new understanding: a human being has two bodies. One is the physical body given by the parents, which is known to be composed of physical matter. In addition, there is a complete, well-ordered and invisible body of consciousness, which is a spark of God and is composed of particles of consciousness.",
+                "This consciousness body is eternal, immortal, indestructible and invisible. It does not function according to the laws of the physical world, because the laws governing the realm of consciousness are different. It is radiant and blissful; it gives life and movement to the physical body while also remaining connected with God.",
+                "The physical body is the instrument, while the invisible consciousness body is the one that operates it. When the consciousness body leaves the physical body, a person experiences death. Thus, I am not merely the physical body; in reality, I am the consciousness body, which is eternal, immortal and indestructible.",
+                "Ordinarily, every person goes through life believing that he is the physical body. As a result, he develops attachment in one form or another to people, possessions, thoughts, shortcomings, circumstances and many other aspects of material life. Through Bhaiya Ji's teachings, he comes to realize that his true identity is the consciousness body. This realization can be deeply transformative. When this truth is truly assimilated, it brings a fundamental change in his conduct, thoughts and way of life.",
+                "The question then arises: Why have I, a being of consciousness, come here?",
+                "The divine play of God is boundless and mysterious. It is indeed remarkable that, although the consciousness within is supremely powerful, it cannot act independently in the physical world. Action on Earth is possible only through the physical body. Therefore, it is necessary for consciousness to take birth on Earth and assume a physical body.",
+                "I came here, first and foremost, to experience and participate in the magnificence of God's creation. Yet, becoming entangled in the illusion of Maya, I became caught in the cycle of birth and death. Earth is the field where I can work through my accumulated prarabdha from past lives, create better prarabdha through righteous actions, and strive to reconnect with my spiritual source—the Divine Mother of my consciousness—so that after death I may return to Her realm.",
+                "A human being is, in essence, a being of consciousness. Death belongs to the physical body. The consciousness body, which is eternal, immortal and indestructible, leaves the physical body at death and proceeds, according to its karma, to the appropriate realms of consciousness. After experiencing the results of its karma, it takes a new birth in accordance with the laws governing the realm of consciousness."
             ]
         },
         "categoryTitle": {
@@ -661,7 +678,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "मैं चैतन्य शरीर हूँ जो अजर-अमर-अविनाशी है। मैं भौतिक शरीर को यंत्र के समान कार्य में लेने वाली यंत्री हूँ। मैं ईश्वर का अंश आंतरिक चैतन्य में स्थित दिव्य लोकों से आया हूँ...",
-            "en": "I am the conscious body, which is ageless, deathless and imperishable. I am the operator that uses the physical body as an instrument. I am a portion of God, arrived from the di..."
+            "en": "I am a body of consciousness—eternal, immortal and indestructible. I am the force that enables the physical body to function as an instrument. I have come from the divine realm..."
         }
     },
     {
@@ -670,7 +687,7 @@ const FAQ_ITEMS = [
         "categoryId": "spiritual-concepts",
         "question": {
             "hi": "चैतन्य शरीर के गुण-धर्म और उसका महत्व उजागर करिए।",
-            "en": "Bring out the qualities and nature of the conscious body, and its importance."
+            "en": "Explain the Nature, Qualities and Significance of the Conscious Body"
         },
         "answer": {
             "hi": [
@@ -686,16 +703,17 @@ const FAQ_ITEMS = [
                 "चैतन्य शरीर के इन विशेष गुण धर्म के कारण मनुष्य जीवन में उसकी क्षमतायें अनन्त एवं सर्वव्यापक हैं। जीवन के किसी भी क्षेत्र में वह अपनी ऊर्जा शक्तियों के माध्यम से दक्षता हासिल कर सर्वोत्कृष्ट सफलता भी प्राप्त कर सकता है। वह अपने जीवन का लक्ष्य निर्धारित कर उसको प्राप्त करने के लिए स्वतंत्र होता है।"
             ],
             "en": [
-                "The qualities and nature of the conscious body are as follows --",
-                "The conscious body is a portion of God and has a direct connection with God.",
-                "It is formed of the divine particles of the conscious realm, and is therefore ageless, deathless and imperishable.",
-                "It is invisible, and no law of the material world applies to it.",
-                "It is, in itself, a complete, intelligent unit, free to act, capable of deciding right from wrong; it carries a complete power of thought, and has within it the capacity to display every kind of feeling, such as love, the experience of joy, and the expression of fear.",
-                "It possesses firm willpower -- if it resolves, it can accomplish even the most impossible of tasks, whether in materialism or in spirituality.",
-                "It has incomparable energy and memory, along with the power to distinguish good deeds from bad.",
-                "It has the inquiry to gain knowledge, and the longing and capacity to develop intellect and discernment.",
-                "It also has the inner strength to sacrifice itself for some great cause, for the attainment of its purpose.",
-                "Because of these special qualities and nature of the conscious body, a human being's capacities in life are infinite and all-pervading. In any field of life, they can, through their own energies, attain expertise and even the finest success. They are free to set the goal of their life and to attain it."
+                "The principal nature and qualities of the Conscious Body are as follows:",
+                "1. Direct connection with the Divine — The Conscious Body is a part of the Divine and has a direct relationship with God.",
+                "2. Eternal and imperishable — It is formed from the fundamental particles of the Conscious Universe and is therefore ageless, immortal and indestructible.",
+                "3. Beyond the laws of the physical world — It is invisible and is not governed by the laws that apply to the physical world.",
+                "4. Intelligent, independent and capable of thought and feeling — The Conscious Body is a complete intelligent entity. It is free to act and capable of discerning right from wrong. It possesses the power of thought and the capacity to experience and express various emotions, including love, joy and fear.",
+                "5. Possesses powerful will — It possesses a strong will. When firmly resolved, it can accomplish even what may appear impossible, whether in the material or spiritual realm.",
+                "6. Possesses immense energy and memory — It has immeasurable energy and a powerful faculty of memory. It also possesses the ability to distinguish between good and harmful actions.",
+                "7. Capacity for knowledge and the development of Buddhi–Vivek — It possesses a natural curiosity to acquire knowledge, along with the capacity and aspiration to develop intellect and discrimination.",
+                "8. Capacity for self-sacrifice — It possesses the inner strength to dedicate and sacrifice itself for a great cause and for the fulfilment of its higher purpose.",
+                "Because of these distinctive qualities and attributes, the potential of the Conscious Body in human life is limitless and all-encompassing. In any sphere of life, a person can develop excellence and achieve a high degree of success by harnessing these inner energies and capacities.",
+                "The Conscious Body also gives a person the freedom to determine the purpose of life and to strive independently towards its fulfilment."
             ]
         },
         "categoryTitle": {
@@ -704,7 +722,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "चैतन्य शरीर के गुण-धर्म निम्न हैं - चैतन्य शरीर ईश्वर का अंश है और इसका ईश्वर से सीधा सम्बन्ध है। यह चैतन्य जगत् के ब्रह्मकणों द्वारा निर्मित है इसलिए अजर, अमर, अविनाशी ह...",
-            "en": "The qualities and nature of the conscious body are as follows --"
+            "en": "The principal nature and qualities of the Conscious Body are as follows:"
         }
     },
     {
@@ -1220,7 +1238,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "किस घटना ने भैया के जीवन को नई और सही दिशा दी? उस समय भैया का क्या चिंतन था और उन्होंने कौन सा संकल्प लिया? किस प्रकार भैया ने उस संकल्प को पूर्ण किया?",
-            "en": "Which event gave Bhaiya's life a new and right direction? What was Bhaiya's reflection at that time, and what resolve did he make? How did Bhaiya fulfil that resolve?"
+            "en": "Which Event Marked a Turning Point in Bhaiya Ji's Life? What Thoughts Arose Within Him at That Time, What Resolve Did He Make, and How Did He Fulfil It?"
         },
         "answer": {
             "hi": [
@@ -1233,13 +1251,15 @@ const FAQ_ITEMS = [
                 "वहीं पर उनकी साधना कठोर से कठोरतम होती गई। वे उनके बच्चे बन पूरी तरह उनके प्रेम में साधनारत रहने लगे। कई कई दिन भूखे प्यासे दिन भर में सिर्फ एक पाव कच्चा पालक पर ही निर्वाह करते हुए ’माँ’ के उस जागृत मंदिर में भावविभोर होकर प्रेम में डूबे रहते एवं दर्शनार्थ प्रार्थना करते रहते। भैया जी ने निःस्वार्थ भाव से अपना अस्तित्व मिटा कर पूर्ण समर्पण कर जगत्जननी माँ से माँ-बेटे का सम्बन्ध स्थापित किया। ’माँ’ भी उनके सच्चे निःस्वार्थ निश्छल प्रेम से दूर न रह सकी और उन्हें साक्षात् दर्शन दिए। आगे चलकर ’माँ’ उनकी आध्यात्मिक गुरु भी बन गयीं एवं जनकल्याणार्थ आज के युग के अनुरूप दिव्य ज्ञान प्रदान किया। इस तरह भैया ने अपना संकल्प पूर्ण किया।"
             ],
             "en": [
-                "At the young age of just 15, the passing of Bhaiya's revered father gave Bhaiya's life a new and right direction. He went for the first time to the cremation ground and saw death at close hand. This event shook him to his core. At the cremation ground he came to two realisations --",
-                "1. The realisation of the transience and impermanence of the human body.",
-                "2. The realisation that the material things gathered throughout life cannot be carried with us after death.",
-                "At the cremation ground, before the flames of his father's pyre, he made a resolve to himself that he would seek out and find the power that keeps this physical body in motion. He remained engaged in that very search for the rest of his life.",
-                "This was not some fleeting renunciation born of a cremation ground, and to fulfil this resolve he applied himself with his full dedication, passion, enthusiasm, firm determination and zeal. In this connection he met sadhus, saints, mahants, acharyas, tantrics and practitioners of mantra, but none could show him the right path. Despite all this he did not become despondent or disheartened, and applied himself to fulfilling his resolve with redoubled enthusiasm.",
-                "His search for truth came to fruition when, wandering around the fort, he found himself drawn towards Tekri, and some unseen power inspired him to climb up to the temple situated atop it. Inside stood the most beautiful image of Jagatjanani Maa, and the moment he sat there he experienced boundless peace and joy, and fell into meditation right there. In time this became his place of sadhana, and he became absorbed in the worship of 'Maa'.",
-                "There, his sadhana grew more and more rigorous. Becoming her child, he remained engaged in sadhana, wholly in her love. Going hungry and thirsty for many days at a stretch, surviving on just a quarter-pound of raw spinach a day, he would remain, overwhelmed with feeling, absorbed in love at that awakened temple of 'Maa', praying for her darshan. With a selfless spirit, Bhaiyaji erased his own existence, surrendered completely, and established a mother-son relationship with Jagatjanani Maa. 'Maa', too, could not remain distant from his true, selfless, guileless love, and gave him her direct darshan. In time 'Maa' also became his spiritual guru, and gave, for the welfare of humanity, divine knowledge suited to this age. In this way Bhaiya fulfilled his resolve."
+                "At the tender age of fifteen, the passing of his revered father became a turning point in Bhaiya Ji's life, giving it a new and profound direction. It was the first time he visited a cremation ground and encountered death at close quarters. The experience deeply shook him and awakened two profound realizations within him:",
+                "1. The transience and impermanence of the human body.",
+                "2. The realization that none of the material possessions accumulated throughout life can accompany a person after death.",
+                "Standing before the flames of his father's funeral pyre, he made a solemn resolve within himself: \"I shall discover the Power that gives life to and sustains this physical body.\" From that moment until the end of his life, this search remained the central purpose of his existence.",
+                "This was not a momentary feeling of renunciation. With complete dedication, enthusiasm, determination and unwavering zeal, he devoted himself to fulfilling this resolve. In his search, he met sadhus, saints, spiritual masters, acharyas, tantriks and practitioners of various traditions. Yet none could show him the path he was seeking. Despite these disappointments, he neither lost hope nor abandoned his quest. Instead, his determination grew stronger, and he continued his search with renewed intensity.",
+                "His search for Truth reached a profound turning point when, while wandering near the fort, he found himself drawn towards Tekri. An unseen force seemed to guide him towards the temple situated atop the hill. Inside, he encountered the beautiful sacred image of Jagatjanani Maa Tripursundari. The moment he sat there, he experienced an overwhelming sense of peace and bliss and became absorbed in meditation. In time, the place became his principal centre of spiritual practice, and he immersed himself completely in the worship of Maa.",
+                "There, his spiritual discipline became increasingly intense. Like a child surrendering himself completely to his Mother, he remained absorbed in devotion and spiritual practice. For days, he would endure hunger and thirst, sometimes sustaining himself on only a small quantity of raw papaya, while remaining immersed in love and prayer before the awakened presence of Maa, yearning for Her divine vision.",
+                "Through selfless devotion, Bhaiya Ji gradually dissolved his sense of individual existence and surrendered himself completely to Jagatjanani Maa. A profound Mother–Son relationship unfolded between them. In response to his pure, selfless and unwavering love, Maa revealed Herself to him. In time, She became his spiritual Guru and bestowed upon him profound spiritual knowledge and divine wisdom suited to the needs of the present age, for the welfare of humanity.",
+                "Thus, Bhaiya Ji fulfilled the resolve he had made before his father's funeral pyre: to seek the Power that sustains the human body. His lifelong search for Truth culminated in a direct spiritual relationship with Jagatjanani Maa Tripursundari and became the foundation of his mission for the welfare of humanity."
             ]
         },
         "categoryTitle": {
@@ -1248,7 +1268,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "मात्र 15 वर्ष की अल्पायु में भैया के पूज्य पिताजी के देहावसान की घटना ने भैया के जीवन को नई और सही दिशा प्रदान की। वे पहली बार श्मशान घाट गए और उन्होंने मृत्यु को नज़दीक स...",
-            "en": "At the young age of just 15, the passing of Bhaiya's revered father gave Bhaiya's life a new and right direction. He went for the first time to the cremation ground and saw deat..."
+            "en": "At the tender age of fifteen, the passing of his revered father became a turning point in Bhaiya Ji's life, giving it a new and profound direction. It was the first time he visit..."
         }
     },
     {
@@ -1257,7 +1277,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "टेकरी माँ के मंदिर में भैया का दैवीय कृपा से किस व्यक्ति से मिलना हुआ? इस मिलन के महत्व को समझाइए।",
-            "en": "At the Tekri Maa temple, through divine grace, whom did Bhaiya come to meet? Explain the importance of this meeting."
+            "en": "Whom Did Bhaiya Shri Nandkishore Ji Sharda Meet at Tekri Maa Temple Through Divine Grace? Explain the Significance of This Meeting."
         },
         "answer": {
             "hi": [
@@ -1267,10 +1287,13 @@ const FAQ_ITEMS = [
                 "अंततः रामजी 03 जुलाई 2019 को इस भौतिक शरीर का त्याग कर अपने अनुज से मिलने दिव्य लोक प्रस्थान कर गये।"
             ],
             "en": [
-                "Immersed up to his throat in the selfless, tender love of Jagatjanani Maa, Bhaiyaji spent most of his time before Jagatjanani Maa at Tekri. Worldliness and materialism did not appeal to him at all. He would pray to Maa, \"unite me with an elder brother who can bear my responsibilities, so that I may remain immersed, every moment, in your remembrance and love.\" In 1963, while he was once praying to 'Maa', a person, Shri Ram Singh Ji Taak (Ramji), opened the small door of Tekri and entered. The moment he saw Bhaiyaji he recognised him -- this was the boy who, on Swami Vivekananda's birth anniversary in 1959, had given such a spirited, heartfelt speech on Swami Vivekananda's life that his moving expression had so deeply affected every listener that they were overcome with emotion, and this very boy had won first prize. From their very first meeting it felt to them as though the two had known each other across lifetimes. In a knowledge-discussion of about five hours, they discussed in depth several profound subjects, such as the creation of the universe, the mysteries of creation, the Big Bang theory, scientific achievements, and spiritual matters such as who Jagatjanani Maa is, where the divine realms are, and the purpose of human life -- and Ramji listened to all of it, spellbound.",
-                "The meetings and knowledge-discussions between Bhaiya and Ramji continued on afterwards too. Their brotherly love kept growing. Bhaiyaji regarded Ramji as his elder brother, and Ramji regarded Bhaiyaji as his younger brother. Ramji was so struck by Nandkishore Ji Bhaiya's singular devotion to 'Maa', his selfless action, his attaining Maa's darshan through love and surrender, his taking 'Maa' herself as his guru and receiving knowledge from her, his spiritual uniqueness, his spirit of selfless service, and his gifted talent, that he came to regard Bhaiyaji as his own spiritual guide, and gave him the special title of 'Yogeshwar Kishore'.",
-                "In this modern, scientific, materialistic age, an example like Bhaiya's Satyuga-like friendship with Ramji seems almost impossible. After some time Ramji moved abroad, but the selfless friendship between these two friends only grew deeper and deeper -- distance could not diminish their love in any way. Even after going abroad, contact was maintained by phone and letter. Distance, rather than weakening spiritual love, deepens it further. Even while apart, they always found each other close.",
-                "In the end, on 3 July 2019, Ramji gave up this physical body and departed for the divine realm, to meet his younger brother."
+                "Immersed in the selfless and motherly love of Jagatjanani Maa, Bhaiya Ji spent most of his time in meditation and prayer before Her at the Tekri temple. He had little interest in worldly possessions or material pursuits. He would pray to Maa: \"Please send me someone like my elder brother who can share my responsibilities, so that I may remain absorbed in Your remembrance and love at every moment.\"",
+                "In 1963, while Bhaiya Ji was offering this very prayer, the small door of the Tekri temple opened and Shri Ram Singh Ji Tak (Ramji) entered. The moment he saw Bhaiya Ji, Ramji recognized him as the same young boy who, on Vivekananda Jayanti in 1959, had delivered a powerful and deeply moving speech on the life of Swami Vivekananda. His words and heartfelt expression had moved the entire audience, and he had received the first prize.",
+                "From their very first meeting, both felt an extraordinary sense of having known each other for ages. Their first conversation extended for nearly five hours and touched upon profound subjects—the creation of the universe, the mysteries of creation, the theory of the Big Bang, scientific discoveries, and spiritual questions such as Who is Jagatjanani Maa? Where are the divine realms? What is the purpose of human life? Ramji listened with deep fascination and remained captivated by the breadth and depth of Bhaiya Ji's thoughts.",
+                "Their meetings and discussions continued thereafter, and their bond of affection grew steadily deeper. Bhaiya Ji regarded Ramji as his elder brother, while Ramji regarded Bhaiya Ji as his younger brother.",
+                "Ramji was deeply inspired by Bhaiya Ji's unwavering devotion to Maa, his selfless actions, complete surrender in love, spiritual distinction, spirit of selfless service, and exceptional intellectual abilities. Bhaiya Ji's realization of Maa through unwavering devotion and selfless action, and his acceptance of Maa as his Guru and source of spiritual knowledge, left a profound impression on Ramji. He came to regard Bhaiya Ji as his spiritual guide and lovingly addressed him as \"Yogeshwar Kishore.\"",
+                "In an age increasingly shaped by modern science and materialism, the friendship between Bhaiya Ji and Ramji stands as a remarkable example of a deeply selfless and spiritually rooted bond. Some time later, Ramji moved abroad, yet distance could not diminish the depth of their affection. They remained connected through letters and telephone calls, and their spiritual friendship continued to grow stronger. Even when physically separated, they remained inwardly close to one another.",
+                "On 3 July 2019, Ramji finally left his physical body and departed for the Divine Realm, to reunite with his beloved younger brother, Bhaiya Ji."
             ]
         },
         "categoryTitle": {
@@ -1279,7 +1302,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "जगत्जननी माँ के निःस्वार्थ एवं वात्सल्यमय प्रेम में आकण्ठ डूबे भैया जी अपना अधिकतर समय जगत्जननी माँ के समक्ष टेकरी में बिताते थे। उन्हें दुनियादारी, भौतिकता बिल्कुल नहीं...",
-            "en": "Immersed up to his throat in the selfless, tender love of Jagatjanani Maa, Bhaiyaji spent most of his time before Jagatjanani Maa at Tekri. Worldliness and materialism did not a..."
+            "en": "Immersed in the selfless and motherly love of Jagatjanani Maa, Bhaiya Ji spent most of his time in meditation and prayer before Her at the Tekri temple. He had little interest i..."
         }
     },
     {
@@ -1288,7 +1311,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "भैया की साधना लीक से हटकर किस प्रकार मौलिक थी?",
-            "en": "In what way was Bhaiya's sadhana original, departing from the conventional path?"
+            "en": "What Made Bhaiya Ji's Sadhna (Spiritual Practice) Distinctive and Unique?"
         },
         "answer": {
             "hi": [
@@ -1302,14 +1325,16 @@ const FAQ_ITEMS = [
                 "अंततः ’माँ’ बच्चे की पुकार सुनकर अपने को रोक नहीं सकीं और उन्हें दर्शन दिए और उन्हें पुत्र स्वीकार किया। भैया के प्रेम में बन्धित ’माँ’ स्वयं मणिद्वीप में, भौतिक जगत् में उनके साथ आकर रहने लग गईं और वे ही उसे संचालित करने लगीं।"
             ],
             "en": [
-                "Ordinarily, seekers practise sadhana in the form of power -- through mantra and tantra -- to attain worldly things, power and accomplishment. But Bhaiyaji practised sadhana in the form of vatsalya, tender maternal love -- pure love for 'Maa', sadhana purely for the love of 'Maa'.",
-                "Maa is omnipotent, is great, is a mass of radiant light, is everything -- but Maa is also, simply, a mother. Maa is like a sun of love; we are her children, and if we love Maa truly, no power can hold back the power of love that flows from our soul.",
-                "'Maa's' heart is exceedingly tender; it melts only at the pure, loving call arising from a child's heart.",
-                "Bhaiya laid emphasis, for spiritual upliftment, on the path of devotion alone. Weeping in love for 'Maa' is the only way to please 'Maa'. Bound by the love of two tears shed from a true heart, Maa comes drawn along, as if pulled by a fine thread.",
-                "The 'Maa'-child relationship is one of complete surrender -- with no worldly self-interest in the child, no ambition, no desire -- only the joy of weeping, overwhelmed, in love for 'Maa'.",
-                "Bhaiya developed an original sadhana -- establishing a relationship with one's chosen deity. Bhaiya practised an original sadhana of love and surrender with Jagatjanani Maa, in the form of 'Maa'. For him, accomplishments and powers were secondary; the relationship was primary. A pure mother-child relationship, in which the seeker becomes a child calling out to 'Maa', and, resting entirely on 'Maa's' will, joyfully fulfils the duties 'Maa' has shown.",
-                "Bhaiya held Jagatjanani 'Maa' not only as the mother of his conscious body, but also as the mother of his physical body.",
-                "In the end, 'Maa', hearing her child's call, could not hold herself back, and gave him her darshan and accepted him as her son. Bound by Bhaiya's love, 'Maa' herself came to live with him at Manidweep, in the material world, and began directing it herself."
+                "Traditionally, spiritual seekers often undertake practices involving mantras, tantra and various disciplines to attain spiritual powers and accomplishments. Bhaiya Ji's path was fundamentally different. His sadhana was rooted in the tender love of a child for the Divine Mother—a pure and selfless love offered to Maa for no other reason than love itself.",
+                "The Divine Mother is omnipotent, supreme and radiant, the source of all that exists. Yet, above all, She is a Mother. A mother is like a sun of love, and we are Her children. When our love for the Mother is pure and genuine, no power can stand between the soul and the love that rises from its depths.",
+                "The heart of Maa is infinitely tender. It melts at the pure, heartfelt call of a child. Bhaiya Ji therefore placed profound emphasis on the path of devotion as the means to spiritual elevation. He believed that tears shed in love for Maa were the purest offering that could touch Her heart. As he expressed it:",
+                "\"Bound by the love in two tears shed from a true heart, the Mother comes drawn by a thread more delicate than the finest fibre.\"",
+                "The relationship between Maa and Her child is one of complete surrender. The child seeks neither material gain nor fulfilment of personal desires. There is no ambition or expectation—only the joy of becoming completely absorbed in the Mother's love and calling out to Her with a pure heart.",
+                "Bhaiya Ji developed a distinctive form of spiritual practice based on establishing a living relationship with the Divine through love and surrender. He worshipped Jagatjanani Maa Tripursundari as his Mother, entering into a deeply personal Mother–Son relationship with Her. For him, spiritual powers and attainments were secondary; the relationship itself was paramount.",
+                "In this pure Mother–Child relationship, the seeker becomes a child who calls upon Maa with complete innocence and surrender, while living entirely according to Her will and joyfully fulfilling the duties and responsibilities entrusted by Her.",
+                "Bhaiya Ji regarded Jagatjanani Maa not only as the Divine Mother of the spiritual realm, but also as his Mother in the physical world. His relationship with Her transcended the conventional boundaries between the seeker and the Divine.",
+                "Ultimately, Maa could no longer remain unmoved by the pure call of Her child. She revealed Herself to Bhaiya Ji, accepted him as Her son, and, bound by his profound love, manifested Her presence in Manidweep in the physical world, where She began to guide and oversee its spiritual activities.",
+                "Thus, Bhaiya Ji's sadhana was distinguished by a simple yet profound principle: not the pursuit of power, but the awakening of pure love; not attainment, but surrender; not seeking something from the Divine, but giving oneself completely to the Divine."
             ]
         },
         "categoryTitle": {
@@ -1318,7 +1343,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "साधारणतया साधक भौतिकवाद की प्राप्ति के लिए, शक्ति व सिद्धि प्राप्ति के लिए मंत्र, तंत्र, शक्ति रूपेण साधना करते हैं। लेकिन भैया जी ने वात्सल्य रूपेण साधना की, ’माँ’ से वि...",
-            "en": "Ordinarily, seekers practise sadhana in the form of power -- through mantra and tantra -- to attain worldly things, power and accomplishment. But Bhaiyaji practised sadhana in t..."
+            "en": "Traditionally, spiritual seekers often undertake practices involving mantras, tantra and various disciplines to attain spiritual powers and accomplishments. Bhaiya Ji's path was..."
         }
     },
     {
@@ -1327,7 +1352,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "भैया ने आज के युग में अध्यात्म के क्षेत्र में क्या प्रतिपादित किया और उसका क्या महत्व है?",
-            "en": "What did Bhaiya establish in the field of spirituality for this age, and what is its importance?"
+            "en": "What New Dimensions of Spirituality Did Bhaiya Ji Reveal for the Present Age, and What Is Their Significance?"
         },
         "answer": {
             "hi": [
@@ -1340,13 +1365,17 @@ const FAQ_ITEMS = [
                 "बुद्धि, विवेक, इच्छाएं, आकांक्षाएं सभी चैतन्य शरीर का अंश हैं। भौतिक शरीर तो चैतन्य शरीर के कार्यकलापों को प्रदर्शित करता है। भैया ने आज के युग में अध्यात्म के क्षेत्र में यह प्रतिपादित किया कि यदि साधक में जिज्ञासा, जुनून, संकल्प, दृढ़निश्चय, निःस्वार्थ प्रेम एवं मार्गदर्शक में अटूट आस्था विश्वास हो तो वह निश्चित रूप से अपने जीवन के कल्याण का लक्ष्य प्राप्त कर सकता है।"
             ],
             "en": [
-                "In the field of spirituality, for this age, Bhaiya established that --",
-                "Jagatjanani Maa exists, gives direct darshan, and we can meet her.",
-                "A unique, selfless relationship of love can be established between 'Maa' and child.",
-                "Bhaiya established, beyond dispute, the reality of the conscious realm, and brought to light the mysteries of the universe.",
-                "He gave the concept of two bodies -- one the physical body given by one's parents, the other the conscious body given by God, which keeps the physical body in motion. The yoga sadhana based on intellect and discernment that Bhaiyaji gave is a revolutionary experiment in the spiritual field, through which a person, through a change in thought, a shift in outlook and positive thinking, can bring joy to their worldly life -- without any severe austerity, penance or renunciation -- while advancing spiritually at the same time.",
-                "Bhaiyaji explained the importance of the body's need on earth, made though it is of inert physical particles and though it is transient -- because if there were no physical body, into what would the conscious body, which is a portion of God and has come for its own advancement, on the journey from humanity towards divinity, descend? It is the physical body alone that gives the conscious body stability on earth; otherwise it could not remain here at all. The physical body is exceedingly important on earth. Hence everything related to it is important -- the body's health, home, family, awareness of law and order, and cordial relations with society -- all of these are necessary, so that, bringing them into harmony, the conscious body may connect with God without hindrance. The conscious body, on one hand, gives conscious energy to keep the physical body in motion within materialism, and on the other hand, uses that very consciousness to build a relationship with God -- that is, the conscious body alone is the means of advancement in both worldly life and conscious life.",
-                "Intellect, discernment, desires and aspirations are all part of the conscious body. The physical body merely displays the activities of the conscious body. Bhaiya established, in the field of spirituality for this age, that if a seeker has inquiry, passion, resolve, firm determination, selfless love, and unwavering faith and trust in their guide, they can certainly attain the goal of their life's welfare."
+                "Bhaiya Ji presented several profound ideas in the field of spirituality that are particularly relevant to the present age:",
+                "1. Jagatjanani Maa is a living Divine Presence who can reveal Herself and can be experienced directly by the seeker.",
+                "2. A unique, selfless bond of love can be established between the Divine Mother and Her child (seeker).",
+                "3. Bhaiya Ji firmly established the existence of the conscious spiritual world and revealed the mysteries of the universe.",
+                "4. He presented the concept of two bodies: the physical body, given through one's parents, and the Conscious Body, bestowed by the Divine, which sustains and animates the physical body.",
+                "His Buddhi–Vivek Yog Sadhana, based on the refinement of intellect and discrimination, represents a distinctive approach in the spiritual field. Through transforming one's thoughts, changing one's perspective and cultivating positive thinking, a person can experience greater fulfilment in worldly life while simultaneously progressing spiritually—without necessarily resorting to severe austerities, penance or renunciation.",
+                "Bhaiya Ji emphasized that although the physical body, composed of material elements, is perishable, its role in human evolution is indispensable. Without the physical body, the Conscious Body—the divine aspect within us that has come to the human realm for its journey from humanity towards divinity—would have no vehicle through which to express itself and evolve.",
+                "The physical body therefore provides the Conscious Body with a means to remain and function in the earthly world. For this reason, every aspect connected with physical life has significance: maintaining good health, having a home and family, understanding laws and social responsibilities, and cultivating harmonious relationships within society. By bringing these dimensions of life into balance, the individual can allow the Conscious Body to establish a deeper and more effortless connection with the Divine.",
+                "The Conscious Body serves a dual purpose. On one hand, it provides the energy that sustains the physical body and enables a person to function in the material world. On the other, it provides the awareness through which one can establish a relationship with the Divine. Thus, the Conscious Body becomes the means of progress in both dimensions of life—the material and the spiritual.",
+                "Intellect, discrimination, desires and aspirations are all expressions of the Conscious Body, while the physical body serves as the instrument through which these inner faculties are expressed.",
+                "Bhaiya Ji's message for the present age was that spiritual progress does not necessarily require withdrawal from worldly life. If a seeker possesses genuine curiosity, intense aspiration, firm resolve, unwavering determination, selfless love and unshakable faith in the spiritual guide, he or she can certainly move towards the fulfilment of life's higher purpose."
             ]
         },
         "categoryTitle": {
@@ -1355,7 +1384,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "भैया ने आज के युग में अध्यात्म के क्षेत्र में यह प्रतिपादित किया कि- जगत्जननी माँ हैं, साक्षात् दर्शन देती हैं और हम उनसे मिल सकते हैं। ’माँ’ और बच्चे के अनूठे निःस्वार्थ...",
-            "en": "In the field of spirituality, for this age, Bhaiya established that --"
+            "en": "Bhaiya Ji presented several profound ideas in the field of spirituality that are particularly relevant to the present age:"
         }
     },
     {
@@ -1364,7 +1393,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "भैया जी के ज्ञान में किन तीन विचारधाराओं को प्रमुखता दी गई है? स्पष्ट कीजिए।",
-            "en": "Which three lines of thought are given prominence in Bhaiya's knowledge? Explain."
+            "en": "What Are the Three Fundamental Ideas at the Heart of Bhaiya Ji's Spiritual Thought?"
         },
         "answer": {
             "hi": [
@@ -1375,11 +1404,14 @@ const FAQ_ITEMS = [
                 "बुद्धि-विवेक के सही उपयोग व विकास द्वारा विचारों में व देखने के दृष्टिकोण में सकारात्मक परिवर्तन व सद्गुणों का विकास कर पाना स्वयं सिद्ध है।"
             ],
             "en": [
-                "In the true, eternal, universal knowledge that Bhaiyaji received from Jagatjanani Maa, the following three things are prominent.",
-                "'Maa' exists, gives darshan, and a relationship can be formed with her. Through selfless love for Jagatjanani Maa, taking her as the parent of one's conscious body, a relationship can be established with her -- that is, 'Maa' can be pleased not through sadhana in the form of power, but through sadhana in the form of a mother-child bond.",
-                "The concept of two bodies -- the human body is a union of two bodies. One is the physical body, given by one's physical parents, and the other is the conscious body, a portion of God, which has come, taking up a physical body on earth, to develop within itself divine virtues and advance from humanity towards divinity.",
-                "The importance of the physical body has been shown -- that without the physical body, the conscious body cannot remain stable on earth, because the physical body is made of inert elements, which, because of earth's gravity, can remain stable upon it. Engaging in worldly life while dwelling in the physical body is just as necessary as advancing the conscious body. Keeping the physical body healthy is necessary; the two complement each other.",
-                "That through the right use and development of intellect and discernment, a positive change in thought and outlook, and the development of virtue, is achievable is self-evident."
+                "The eternal, universal knowledge of Truth received by Bhaiya Ji from Jagatjanani Maa gives prominence to the following three fundamental ideas:",
+                "1. Jagatjanani Maa is present, grants divine vision, and a relationship can be established with Her.",
+                "Through selfless love for Jagatjanani Maa, one can regard Her as the Mother of the Conscious Body and establish a relationship with Her. In other words, rather than approaching Her through spiritual practices aimed at attaining powers, one can approach and worship Maa in the form of the Mother, through pure love and devotion, and thereby please Her.",
+                "2. The concept of two bodies",
+                "A human being is a combination of two bodies: the physical body, received from one's physical parents, and the Conscious Body, which is a part of the Divine. The Conscious Body has come to the earthly realm by taking on a physical body so that it may develop divine virtues within itself and progress from human existence towards divinity.",
+                "Bhaiya Ji emphasized the importance of the physical body. Without the physical body, the Conscious Body cannot remain established on Earth, because the physical body is composed of material elements that can remain grounded on Earth through the force of gravity. Therefore, while living through the physical body, it is equally important to engage responsibly with material life and to develop the Conscious Body. The physical and Conscious Bodies are complementary to one another, and maintaining the health of the physical body is essential.",
+                "3. Transformation through the proper use and development of Buddhi–Vivek",
+                "Through the proper use and development of Buddhi–Vivek—intellect and discrimination—a person can bring positive changes in their thoughts and perspective and cultivate noble qualities. This transformation is itself a form of spiritual accomplishment."
             ]
         },
         "categoryTitle": {
@@ -1388,7 +1420,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "जगत्जननी माँ द्वारा सत्य, शाश्वत्, सार्वभौमिक ज्ञान जो भैया जी को मिला उसमें निम्नलिखित तीन चीजें प्रमुख है। ’माँ’ हैं और दर्शन देती हैं और उनसे सम्बन्ध बनाये जा सकते हैं...",
-            "en": "In the true, eternal, universal knowledge that Bhaiyaji received from Jagatjanani Maa, the following three things are prominent."
+            "en": "The eternal, universal knowledge of Truth received by Bhaiya Ji from Jagatjanani Maa gives prominence to the following three fundamental ideas:"
         }
     },
     {
@@ -1397,7 +1429,7 @@ const FAQ_ITEMS = [
         "categoryId": "bhaiya-ji",
         "question": {
             "hi": "आधुनिक भौतिकवादी उपभोक्तावादी समाज में भैया के ज्ञान की प्रासंगिकता समझाएं।",
-            "en": "Explain the relevance of Bhaiya's knowledge in today's materialistic, consumerist society."
+            "en": "What Is the Relevance of Bhaiya Ji's Gyaan in Today's Materialistic and Consumerist Society?"
         },
         "answer": {
             "hi": [
@@ -1408,11 +1440,15 @@ const FAQ_ITEMS = [
                 "भैया जी ने बहुत ही सरल ’बुद्धि-विवेक योग साधना पद्धति’ दी है जो कि दिव्य, सत्य, शाश्वत्, सात्विक व सार्वभौमिक, व्यावहारिक, सरल, सहज, जीवन के प्रत्येक क्षेत्र में कारगर, दिव्य ज्ञान पर आधारित है जो कि आज के वैज्ञानिक भौतिकवादी युग के अनुकूल एवं महत्वपूर्ण भी है। आज के उपभोक्तावादी युग में समय की कमी से हम कठिन व लम्बे समय तक ध्यान व साधना कर नहीं पाते हैं तो सिर्फ विचारों का परिवर्तन कर सकारात्मक विचारधारा अपनाकर सकारात्मक दृष्टिकोण बनाकर हम भौतिक जीवन में आनन्द, खुशी व शांति ला सकते हैं। ’बुद्धि-विवेक योग साधना’ हम 24 घंटे कर सकते हैं क्योंकि स्वयं को ही करना है, स्वयं की सोच को ही बदलना है। सकारात्मक सोच अर्थात ईश्वर की ओर बढ़ना और नकारात्मक सोच अर्थात केवल भौतिकता के दलदल में फंस कर अवनत होना। यह पद्धति बहुत ही सरल व प्रभावशाली है। इसे अपनाकर कोई भी अपने भौतिकवाद को व्यवस्थित कर, अध्यात्म में भी आनन्द, शांति व स्थायी आंतरिक खुशी प्राप्त कर सकता है।"
             ],
             "en": [
-                "In today's materialistic age, following the ancient methods of sadhana often seems difficult -- rigorous chanting, austerity, renunciation and asceticism are not possible for an ordinary person, and so, at present, people are increasingly turning away from spirituality. In today's age, so full of materialistic, scientific dazzle, people have neither the time nor the interest for spirituality. Science has given so many comforts that a person keeps wandering, lost, in the very search for happiness -- because materialism is visible, while spirituality is invisible, and no reasoned knowledge is readily available to prove its authenticity.",
-                "In today's scientific, materialistic age, life has been reduced to a web of illusion, a blind race, competition and a struggle for existence. Material comforts and indulgence have become the sole purpose of human life, and there is no interest left towards spirituality. A mistaken belief has formed that spirituality is something practised only in old age -- that before that age it has neither importance nor place in life. As a result, dissatisfaction, fear, hatred and unrest have spread on all sides, and the accumulation of material things has remained the sole purpose of life. It is an irony that most people do not even stop to think that all of this is transient, that it must be left behind, and they see God merely as a means to fulfil their own wishes and ambitions.",
-                "Through Bhaiya's knowledge, in this atmosphere full of ignorance, faith arises in the existence of the conscious body and 'Maa', and inquiry towards spirituality is born. It comes to feel that applying one's energy in this field is not wasted effort. The belief that it is not possible, in Kalyuga, to attain darshan of God and establish a relationship with them, weakens. In truth, there is no age at which spirituality must begin. Bhaiya has proven, on a scientific footing, that God exists, that conscious powers exist, and that their realms exist -- that everything described in the scriptures and Puranas is not mere fancy. Through sadhana, their grace can be attained, through which life becomes filled with love and joy. Through love, unwavering reverence and faith in one's chosen deity, the goal can undoubtedly be attained. There is life after death, and preparation for it should begin without delay. Without delay, because death is certain, and it can come at any time. Efforts made towards spirituality are never wasted. The purpose of human life is not merely to attain material achievements -- these are only aids. The real achievement is to uplift the ageless, deathless, imperishable conscious body, and to build a relationship with one's chosen deity.",
-                "He gave the concept of two bodies, conscious and physical. So, engaging with materialism in the world as needed, saving time, one should also build a relationship with God, because God is one's true parent. After death, one must carry with them the record of the deeds done during one's lifetime.",
-                "Bhaiyaji has given a very simple 'Buddhi-Vivek Yog Sadhna' method, which is divine, true, eternal, wholesome, universal, practical, simple, natural, effective in every field of life, and grounded in divine knowledge -- suited to, and important for, today's scientific, materialistic age. In today's consumerist age, with its shortage of time, we are unable to undertake difficult, prolonged meditation and sadhana -- but simply by changing our thoughts, adopting a positive line of thinking and a positive outlook, we can bring joy, happiness and peace into worldly life. We can practise 'Buddhi-Vivek Yog Sadhna' for all 24 hours of the day, because it is oneself who must do it, and it is one's own thinking that must change. Positive thinking means moving towards God, and negative thinking means simply sinking further into the mire of materialism. This method is very simple and effective. By adopting it, anyone can bring order to their worldly life while also attaining joy, peace and lasting inner happiness in spirituality."
+                "In today's materialistic age, following the rigorous spiritual practices of ancient times often appears difficult. Practices involving intense austerity, prolonged chanting, penance, renunciation and detachment may seem beyond the reach of an ordinary person. As a result, people are gradually becoming distant from spirituality. Surrounded by scientific advancement and technological comforts, people neither have sufficient time nor, often, an inclination towards spiritual pursuits. Science has provided numerous means of comfort, and people remain absorbed in the pursuit of material happiness. Material things are visible and tangible, whereas spirituality deals with the unseen, and its truths are not always understood through conventional reasoning.",
+                "In the present scientific and materialistic age, life has increasingly become entangled in competition, a relentless race and the struggle for survival. Material comforts and indulgence have become the primary objectives of life, while spirituality is often neglected. A misconception has also developed that spirituality is meant only for old age and has little relevance during the earlier stages of life. Consequently, dissatisfaction, fear, hatred and unrest have spread around us, while the accumulation of material possessions has become a major objective of life. Ironically, many people do not pause to reflect that all material possessions are temporary and must ultimately be left behind. God, too, is often approached merely as a means of fulfilling desires and ambitions.",
+                "Bhaiya Ji's gyaan dispels this ignorance and awakens an understanding of the subtle, conscious body, faith in the existence of Maa, and a genuine curiosity about spirituality. It helps one realise that investing time and effort in the spiritual dimension of life is not futile. It also removes the misconception that, in the present age, it is impossible to experience God or establish a relationship with Him. In truth, there is no prescribed age for beginning the spiritual journey.",
+                "Bhaiya Ji explained, through a scientific and experiential approach, that God exists, that conscious spiritual forces exist, and that higher realms of existence are real—not merely imaginary ideas described in scriptures and Puranas. Through spiritual practice, one can receive divine grace and experience a life filled with love and joy. With love for one's chosen Deity, unwavering faith and devotion, the spiritual goal can certainly be attained. Life continues beyond death, and preparation for that journey should begin without delay, because death is certain and may come at any moment. No sincere effort made for spiritual growth is ever wasted.",
+                "The purpose of human life is therefore not limited to achieving material success. Material achievements have their place, but they are only supportive means. The true achievement lies in elevating the eternal, immortal and indestructible conscious self and establishing a relationship with one's chosen Deity.",
+                "Bhaiya Ji presented the concept of two bodies—the physical body and the conscious body. Therefore, while meeting the practical requirements of material life, one should also make time to establish a relationship with God, who is our eternal source and Divine Parent. After death, one carries the spiritual account of the actions performed during life.",
+                "Bhaiya Ji gave a remarkably simple method—the Buddhi–Vivek Yog Sadhana Paddhati. It is divine, truthful, eternal, sattvic and universal; practical, simple, natural and effective in every sphere of life. Rooted in divine wisdom, it is particularly relevant in today's scientific, materialistic and consumer-oriented age.",
+                "In today's consumerist society, when lack of time makes prolonged meditation and intensive spiritual practices difficult, we can still transform our lives by changing our thoughts, cultivating a positive outlook and developing a constructive perspective. This can bring greater joy, happiness and peace into our material lives.",
+                "Buddhi–Vivek Yog Sadhana can be practised throughout the day because it does not require elaborate rituals—it begins with transforming one's own thoughts. Positive thinking means moving towards God, while negative thinking means becoming increasingly trapped in the mire of materialism. This simple yet powerful method enables a person to bring balance to material life while also experiencing inner peace, lasting happiness and spiritual fulfilment."
             ]
         },
         "categoryTitle": {
@@ -1421,7 +1457,7 @@ const FAQ_ITEMS = [
         },
         "excerpt": {
             "hi": "आज के भौतिकवादी युग में प्राचीन काल की साधना पद्धति से चलना प्रायः कठिन लगता है जैसे कठिन जप, तप, त्याग, वैराग्य सामानय व्यक्ति के लिये सम्भव नहीं है इसलिये वर्तमान में व...",
-            "en": "In today's materialistic age, following the ancient methods of sadhana often seems difficult -- rigorous chanting, austerity, renunciation and asceticism are not possible for an..."
+            "en": "In today's materialistic age, following the rigorous spiritual practices of ancient times often appears difficult. Practices involving intense austerity, prolonged chanting, penan..."
         }
     },
     {
