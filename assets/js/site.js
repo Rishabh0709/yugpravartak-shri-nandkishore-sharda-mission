@@ -22,12 +22,10 @@ function initHeaderScroll() {
         return;
     }
 
-    const isHindiHome =
-        document.body.classList.contains("hindi-home") &&
-        document.body.classList.contains("hi-home-page");
+    const isHomeV2 = document.body.classList.contains("hi-home-page");
 
-    const collapseAt = isHindiHome ? 28 : 150;
-    const expandAt = isHindiHome ? 4 : 24;
+    const collapseAt = isHomeV2 ? 28 : 150;
+    const expandAt = isHomeV2 ? 4 : 24;
     let isCompact = false;
     let ticking = false;
 
