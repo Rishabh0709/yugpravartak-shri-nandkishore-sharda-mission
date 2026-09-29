@@ -1,13 +1,14 @@
+/* was a bespoke radial/linear-gradient blend found nowhere else on the
+   site (the same one-off pattern logo.html had) -- the four place cards
+   below are self-contained (own border/shadow/background), so there's
+   no "chapter" here to alternate; the page itself just needed the
+   standard ground instead of its own gradient. */
 .sadhna-places-page {
-    background:
-        radial-gradient(circle at 8% 8%, rgba(221, 236, 240, .42), transparent 28%),
-        linear-gradient(180deg, var(--surface-warm) 0%, #f7ead8 46%, var(--surface-warm) 100%);
+    background: var(--bg);
 }
 
 .sadhna-places-list {
     padding-top: clamp(28px, 4vw, 52px);
-    background:
-        linear-gradient(180deg, var(--surface-warm), rgba(244, 230, 209, .72));
 }
 
 .sadhna-places-prelude {
