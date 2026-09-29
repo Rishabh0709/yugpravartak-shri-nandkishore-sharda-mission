@@ -1,6 +1,6 @@
 .news-events-page {
     background: var(--bg);
-    color: var(--hi-ink, #2b1b2d);
+    color: var(--hi-ink, #2c2130);
 }
 
 .news-events-section {
@@ -117,7 +117,7 @@ a.news-event-card:focus-visible {
 .news-event-card h3,
 .news-clip-card h3 {
     margin: 0 0 10px;
-    color: var(--hi-ink, #2b1b2d);
+    color: var(--hi-ink, #2c2130);
     font-size: clamp(1.22rem, 1.65vw, 1.52rem);
     line-height: 1.38;
 }
@@ -233,7 +233,7 @@ a.news-event-card:focus-visible {
 
 .news-modal__title {
     margin: 0;
-    color: var(--hi-ink, #2b1b2d);
+    color: var(--hi-ink, #2c2130);
     font-size: 1.08rem;
     line-height: 1.4;
 }
