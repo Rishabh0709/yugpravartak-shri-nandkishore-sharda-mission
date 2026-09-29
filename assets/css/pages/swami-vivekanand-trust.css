@@ -44,9 +44,16 @@
             padding-top: 42px;
         }
 
+        /* named "soft" for the wash it was meant to carry, but was set to
+           plain var(--bg) -- same as the default, so it alternated nothing.
+           Also added a rule for the one plain section with no modifier at
+           all (aria-labelledby="sankalp-title"), keyed the same way the
+           trust pages elsewhere in this pass use ids. */
         .vivekanand-section--soft {
-            background:
-                var(--bg);}
+            background: var(--bg-wash);
+        }
+
+        .vivekanand-section[aria-labelledby="sankalp-title"] { background: var(--bg); }
 
         .vivekanand-grid {
             display: grid;
@@ -139,7 +146,7 @@
         }
 
         .vivekanand-reach {
-            background: linear-gradient(180deg, var(--surface-warm) 0%, #f7ead8 100%);
+            background: var(--bg);
         }
 
         .vivekanand-stats {

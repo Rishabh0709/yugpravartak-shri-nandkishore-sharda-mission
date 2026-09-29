@@ -7,8 +7,16 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
-        .gyan-ganga-section--soft {
-            background: var(--bg);}
+        /* alternating "chapter" wash -- .gyan-ganga-books, .gyan-ganga-band
+           and .gyan-ganga-list had no background rule at all (flat var(--bg)
+           from the page wrapper the whole way down), and the one section
+           class reused twice (--compact) needed its two instances told
+           apart since they're different chapters. */
+        .gyan-ganga-books { background: var(--bg-wash); }
+        .gyan-ganga-band  { background: var(--bg-wash); }
+        .gyan-ganga-list  { background: var(--bg); }
+        .gyan-ganga-section--compact[aria-label]  { background: var(--bg); }
+        .gyan-ganga-section--compact[aria-labelledby="community-support-title"] { background: var(--bg-wash); }
 
         .gyan-ganga-split {
             display: grid;

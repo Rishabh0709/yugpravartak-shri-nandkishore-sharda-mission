@@ -90,14 +90,17 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
+        /* alternating "chapter" wash -- every modifier was set to var(--bg),
+           so this page had no rhythm despite having a class per chapter to
+           hang it on. Order follows the sections' position on the page. */
         .madhu-journey--arrival { background: var(--bg);}
-        .madhu-journey--meeting { background: var(--bg);}
+        .madhu-journey--meeting { background: var(--bg-wash);}
         .madhu-journey--foundation { background: var(--bg);}
-        .madhu-journey--accepted { background: var(--bg);}
+        .madhu-journey--accepted { background: var(--bg-wash);}
         .madhu-journey--sadhna { background: var(--bg);}
-        .madhu-journey--granth { background: var(--bg);}
+        .madhu-journey--granth { background: var(--bg-wash);}
         .madhu-journey--leadership { background: var(--bg);}
-        .madhu-journey--karuna { background: var(--bg);}
+        .madhu-journey--karuna { background: var(--bg-wash);}
         .madhu-journey--living { background: var(--bg);}
 
         .madhu-journey__grid {

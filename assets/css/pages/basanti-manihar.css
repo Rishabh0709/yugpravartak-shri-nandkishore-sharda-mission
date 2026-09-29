@@ -90,16 +90,19 @@
             padding-block: clamp(70px, 8vw, 116px);
         }
 
+        /* alternating "chapter" wash -- every modifier was set to var(--bg),
+           so this page had no rhythm despite having a class per chapter to
+           hang it on. Order follows the sections' position on the page. */
         .maa-journey--calling { background: var(--bg);}
-        .maa-journey--birth { background: var(--bg);}
+        .maa-journey--birth { background: var(--bg-wash);}
         .maa-journey--surrender { background: var(--bg);}
-        .maa-journey--diary { background: var(--bg);}
+        .maa-journey--diary { background: var(--bg-wash);}
         .maa-journey--manidweep { background: var(--bg);}
-        .maa-journey--knowledge { background: var(--bg);}
+        .maa-journey--knowledge { background: var(--bg-wash);}
         .maa-journey--sanskar { background: var(--bg);}
-        .maa-journey--siddhpeeth { background: var(--bg);}
+        .maa-journey--siddhpeeth { background: var(--bg-wash);}
         .maa-journey--guidance { background: var(--bg);}
-        .maa-journey--chaitanya { background: var(--bg);}
+        .maa-journey--chaitanya { background: var(--bg-wash);}
 
         .maa-journey__grid {
             display: grid;

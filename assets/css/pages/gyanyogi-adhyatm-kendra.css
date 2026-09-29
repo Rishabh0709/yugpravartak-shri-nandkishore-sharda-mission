@@ -10,6 +10,15 @@
             padding-top: 42px;
         }
 
+        /* alternating "chapter" wash -- the four plain sections after the
+           intro had no background rule at all, so the whole page was one
+           flat var(--bg) from the page wrapper. Keyed off each section's
+           heading id since none of them have their own modifier class. */
+        .gyanyogi-section[aria-labelledby="education-title"] { background: var(--bg-wash); }
+        .gyanyogi-section[aria-labelledby="food-title"]      { background: var(--bg); }
+        .gyanyogi-section[aria-labelledby="yoga-title"]      { background: var(--bg-wash); }
+        .gyanyogi-section[aria-labelledby="women-title"]     { background: var(--bg); }
+
         .gyanyogi-grid {
             display: grid;
             grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
