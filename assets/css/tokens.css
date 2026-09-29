@@ -12,6 +12,9 @@
     /* ---- surfaces ---- */
     --bg:            #f8f4ec;   /* the one warm paper ground */
     --bg-wash:       #ecdfc0;   /* the one alternate "chapter" wash */
+    --bg-scrim:      #f2ead6;   /* --bg-wash, lightened toward --bg -- for a
+                                    transparent-header hero, where the full
+                                    wash would fight with the floating nav */
     --surface:       #fffdf8;   /* cards, panels */
     --surface-sunk:  #efe7d5;   /* insets, image placeholders */
     --ink:           #2c2130;   /* headings */
