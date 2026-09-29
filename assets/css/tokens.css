@@ -11,7 +11,7 @@
 :root {
     /* ---- surfaces ---- */
     --bg:            #f8f4ec;   /* the one warm paper ground */
-    --bg-wash:       #f1e9d9;   /* the one alternate "chapter" wash */
+    --bg-wash:       #ecdfc0;   /* the one alternate "chapter" wash */
     --surface:       #fffdf8;   /* cards, panels */
     --surface-sunk:  #efe7d5;   /* insets, image placeholders */
     --ink:           #2c2130;   /* headings */

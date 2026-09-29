@@ -2895,7 +2895,7 @@ ol {
    BREADCRUMB  (opt-in via `breadcrumb: true` front matter)
    ========================================================== */
 .breadcrumb {
-    background: var(--bg-wash, #f1e9d9);
+    background: var(--bg-wash, #ecdfc0);
     border-bottom: 1px solid var(--rule, rgba(120,80,40,.16));
 }
 .breadcrumb__inner {
