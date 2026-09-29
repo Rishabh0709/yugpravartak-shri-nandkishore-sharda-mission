@@ -6,6 +6,11 @@
 
 .donate-page .hi-section { padding-block: clamp(48px, 6vw, 88px); }
 
+/* alternating "chapter" wash -- was an inline style on the section
+   itself; moved to a class so it's consistent with how every other
+   page on the site marks its alternating sections. */
+.donate-safety-section { background: var(--bg-wash); }
+
 /* ---- principles strip ------------------------------------ */
 .donate-principles {
     display: grid;

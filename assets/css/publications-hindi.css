@@ -1,6 +1,5 @@
 .publications-page {
-    background:
-        linear-gradient(180deg, rgba(255, 250, 241, .96), rgba(255, 247, 233, .9) 46%, rgba(250, 239, 220, .94));
+    background: var(--bg);
 }
 
 .publications-books {

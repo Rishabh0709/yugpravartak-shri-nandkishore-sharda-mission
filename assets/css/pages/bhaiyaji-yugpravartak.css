@@ -62,12 +62,15 @@
             scroll-margin-top: 136px;
         }
 
+        /* alternating "chapter" wash -- every modifier was set to var(--bg),
+           so this page had no rhythm despite having a class per chapter to
+           hang it on. Order follows the sections' position on the page. */
         .yug-section--surrender { background: var(--bg);}
-        .yug-section--knowledge { background: var(--bg);}
+        .yug-section--knowledge { background: var(--bg-wash);}
         .yug-section--diary { background: var(--bg);}
-        .yug-section--service { background: var(--bg);}
+        .yug-section--service { background: var(--bg-wash);}
         .yug-section--education { background: var(--bg);}
-        .yug-section--sadhna { background: var(--bg);}
+        .yug-section--sadhna { background: var(--bg-wash);}
         .yug-section--legacy { background: var(--bg);}
 
         .yug-grid {

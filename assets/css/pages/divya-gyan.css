@@ -49,12 +49,15 @@
             scroll-margin-top: 136px;
         }
 
+        /* alternating "chapter" wash -- every modifier was set to var(--bg),
+           so this page had no rhythm despite having a class per chapter to
+           hang it on. Order follows the sections' position on the page. */
         .dg-section--origin { background: var(--bg);}
-        .dg-section--vision { background: var(--bg);}
+        .dg-section--vision { background: var(--bg-wash);}
         .dg-section--chapters { background: var(--bg);}
-        .dg-section--mission { background: var(--bg);}
+        .dg-section--mission { background: var(--bg-wash);}
         .dg-section--impact { background: var(--bg);}
-        .dg-section--reviews { background: var(--bg);}
+        .dg-section--reviews { background: var(--bg-wash);}
 
         .dg-grid {
             display: grid;

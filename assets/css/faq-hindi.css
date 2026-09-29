@@ -1,7 +1,5 @@
 .faq-page {
-    background:
-        radial-gradient(circle at 9% 12%, rgba(221, 236, 240, .46), transparent 30%),
-        linear-gradient(180deg, var(--surface-warm) 0%, #f6ead8 48%, var(--surface-warm) 100%);
+    background: var(--bg);
 }
 
 .faq-directory {

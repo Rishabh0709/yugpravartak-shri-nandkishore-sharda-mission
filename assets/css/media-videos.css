@@ -1,6 +1,6 @@
 .video-archive-page,
 .video-detail-page {
-    background: linear-gradient(180deg, var(--surface-warm) 0%, #f7ead8 46%, var(--surface-warm) 100%);
+    background: var(--bg);
     color: var(--hi-ink, #2b1b2d);
 }
 
