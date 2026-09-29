@@ -120,7 +120,12 @@
             overflow: hidden;
             border: 1px solid rgba(198, 148, 53, .26);
             border-radius: 8px;
-            background: #fffaf1;
+            /* transparent, not a fixed color: this card sits on sections that
+               alternate --bg / --bg-wash, so a hardcoded fill would only
+               match one of the two and show as a mismatched patch on the
+               other. Only visible where --contain lets a portrait image
+               letterbox inside the box below. */
+            background: transparent;
             box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
         }
 
@@ -150,7 +155,7 @@
            (e.g. a portrait-ish symbol, or faces near the frame edge). */
         .bhaiya-journey__media--contain img {
             object-fit: contain;
-            background: #fffaf1;
+            background: transparent;
         }
 
         .bhaiya-journey__media--book {
