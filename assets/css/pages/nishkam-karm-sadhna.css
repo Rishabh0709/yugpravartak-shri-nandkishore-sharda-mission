@@ -9,7 +9,7 @@
 
         .karma-section--why,
         .karma-section--institutions {
-            background: #fffaf1;
+            background: var(--surface-warm);
         }
 
         .karma-section--institutions {
@@ -20,7 +20,7 @@
             text-align: center;
             background:
                 radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
-                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+                linear-gradient(180deg, #f7ead8 0%, var(--surface-warm) 100%);
         }
 
         /* ---- the vision ---------------------------------------- */
@@ -36,7 +36,7 @@
         }
 
         .karma-prose {
-            color: #62544c;
+            color: var(--ink-soft);
             font-size: clamp(1.03rem, 1.28vw, 1.16rem);
             line-height: 1.95;
         }
@@ -50,7 +50,7 @@
         .karma-thesis__note {
             padding: clamp(24px, 3vw, 34px);
             border: 1px solid rgba(198, 148, 53, .26);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .78);
             box-shadow: 0 24px 60px rgba(63, 45, 37, .1);
         }
@@ -58,7 +58,7 @@
         .karma-thesis__note strong {
             display: block;
             margin-bottom: 12px;
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-size: clamp(1.3rem, 2.2vw, 1.85rem);
             line-height: 1.35;
@@ -66,7 +66,7 @@
 
         .karma-thesis__note p {
             margin: 0 0 16px;
-            color: #62544c;
+            color: var(--ink-soft);
             line-height: 1.84;
         }
 
@@ -95,9 +95,9 @@
         .karma-dimensions li {
             padding: 8px 16px;
             border: 1px solid rgba(198, 148, 53, .3);
-            border-radius: 999px;
+            border-radius: var(--radius-pill);
             background: rgba(255, 252, 246, .7);
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-size: clamp(.9rem, 1.3vw, 1.02rem);
             font-weight: 700;
@@ -116,7 +116,7 @@
             align-items: start;
             padding: clamp(22px, 3.5vw, 42px);
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .82);
             box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
         }
@@ -133,8 +133,8 @@
             height: 46px;
             margin-bottom: 18px;
             border-radius: 50%;
-            color: #fffaf1;
-            background: #8a2f2d;
+            color: var(--surface-warm);
+            background: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-weight: 900;
         }
@@ -149,14 +149,14 @@
 
         .karma-trust__subtitle {
             margin: 0 0 16px;
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-size: .96rem;
             font-weight: 800;
             line-height: 1.6;
         }
 
         .karma-trust__intro p {
-            color: #62544c;
+            color: var(--ink-soft);
             line-height: 1.84;
         }
 
@@ -175,8 +175,8 @@
             display: block;
             overflow: hidden;
             border: 1px solid rgba(121, 43, 42, .1);
-            border-radius: 8px;
-            background: #fffaf1;
+            border-radius: var(--radius-sm);
+            background: var(--surface-warm);
             text-decoration: none;
             transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
         }
@@ -219,7 +219,7 @@
 
         .karma-activity p {
             margin: 0;
-            color: #62544c;
+            color: var(--ink-soft);
             font-size: .96rem;
             line-height: 1.7;
         }
@@ -235,7 +235,7 @@
         .karma-closing-verse span {
             display: block;
             margin-bottom: 6px;
-            color: #62544c;
+            color: var(--ink-soft);
             font-size: clamp(1.08rem, 1.8vw, 1.4rem);
             line-height: 1.75;
         }

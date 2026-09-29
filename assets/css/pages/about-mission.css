@@ -14,21 +14,21 @@
             gap: 14px;
             padding: 16px;
             border: 1px solid rgba(121, 43, 42, .12);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .92);
             box-shadow: 0 18px 54px rgba(63, 45, 37, .1);
         }
 
         .mission-glance__item {
             padding: 18px 18px 16px;
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: linear-gradient(180deg, rgba(244, 230, 209, .58), rgba(255, 250, 241, .92));
         }
 
         .mission-glance__item span {
             display: block;
             margin-bottom: 7px;
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-size: .82rem;
             font-weight: 800;
         }
@@ -79,8 +79,8 @@
             margin: 0;
             overflow: hidden;
             border: 1px solid rgba(198, 148, 53, .26);
-            border-radius: 8px;
-            background: #fffaf1;
+            border-radius: var(--radius-sm);
+            background: var(--surface-warm);
             box-shadow: 0 24px 60px rgba(63, 45, 37, .12);
         }
 
@@ -97,8 +97,8 @@
             bottom: 14px;
             left: 14px;
             padding: 10px 14px;
-            border-radius: 8px;
-            color: #fffaf1;
+            border-radius: var(--radius-sm);
+            color: var(--surface-warm);
             background: rgba(41, 29, 37, .74);
             font-size: .9rem;
             font-weight: 700;
@@ -119,20 +119,20 @@
 
         .mission-chapter__copy p {
             margin: 0 0 16px;
-            color: #62544c;
+            color: var(--ink-soft);
             font-size: clamp(1.03rem, 1.34vw, 1.18rem);
             line-height: 1.9;
         }
 
         .mission-chapter__copy strong {
-            color: #8a2f2d;
+            color: var(--hi-maroon);
         }
 
         .mission-note {
             margin-top: 24px;
             padding: 22px 24px;
             border-left: 4px solid var(--hi-gold);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             color: #4c3a36;
             background: rgba(255, 252, 246, .78);
             font-family: var(--hi-serif);
@@ -176,7 +176,7 @@
             text-align: center;
             background:
                 radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
-                linear-gradient(180deg, #fffaf1 0%, #f4e6d2 100%);
+                linear-gradient(180deg, var(--surface-warm) 0%, #f4e6d2 100%);
         }
 
         .mission-closing .hi-section-heading {

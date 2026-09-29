@@ -93,7 +93,7 @@ body.english-home {
    colour (var(--hi-ink)) is near-invisible there. Mirrors the
    Hindi layer. */
 .english-home .footer .footer-title {
-    color: #fffaf1;
+    color: var(--surface-warm);
 }
 .english-home .footer h2,
 .english-home .footer h3 {

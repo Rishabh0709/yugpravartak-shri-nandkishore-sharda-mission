@@ -103,7 +103,7 @@ code {
     align-items: flex-end;
     padding: 8px;
     border: 1px solid var(--rule);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
 }
 .pt-swatch code { background: rgba(255, 255, 255, .8); }
 .pt-swatch--dark code { background: rgba(0, 0, 0, .35); color: #fff; }
@@ -142,7 +142,7 @@ code {
     position: absolute; left: 0; top: -2px;
     width: 32px; height: 32px;
     display: grid; place-items: center;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: var(--primary); color: #fff;
     font-family: var(--font-latin); font-size: .9rem; font-weight: 600;
 }
@@ -177,7 +177,7 @@ code {
 .pt-timeline { position: relative; list-style: none; margin: 0; padding: 0 0 0 4px; max-width: 480px; }
 .pt-timeline::before { content: ""; position: absolute; top: 10px; bottom: 10px; left: 6px; border-left: 2px dashed var(--gold); opacity: .6; }
 .pt-timeline li { position: relative; display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: baseline; padding: 9px 0 9px 26px; }
-.pt-timeline li::before { content: ""; position: absolute; left: 0; top: 14px; width: 12px; height: 12px; border-radius: 999px; background: var(--gold); box-shadow: 0 0 0 5px var(--bg); }
+.pt-timeline li::before { content: ""; position: absolute; left: 0; top: 14px; width: 12px; height: 12px; border-radius: var(--radius-pill); background: var(--gold); box-shadow: 0 0 0 5px var(--bg); }
 .pt-timeline li.is-seva::before { background: var(--primary); }
 .pt-timeline__y { font-family: var(--font-latin); font-weight: 600; font-size: 1.1rem; color: var(--primary); }
 .pt-timeline li > span:last-child { font-size: .92rem; color: var(--ink-body); }

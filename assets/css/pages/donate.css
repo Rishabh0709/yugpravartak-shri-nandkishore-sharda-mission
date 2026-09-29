@@ -83,7 +83,7 @@
     color: #7a3c12;
     background: #f7ecd9;
     border: 1px solid #e4c9a1;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
 }
 
 .donate-route__grid {
@@ -147,7 +147,7 @@
     color: var(--accent);
     background: transparent;
     border: 1px solid var(--rule-strong);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     cursor: pointer;
 }
 .donate-copy:hover { background: var(--bg-wash); }
@@ -227,7 +227,7 @@
     color: var(--ink-body);
     background: var(--surface);
     border: 1px solid var(--rule-strong);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
 }
 .donate-form__field input[readonly] { background: var(--surface-sunk); color: var(--ink-muted); }
 .donate-form__field small { font-size: var(--step-cap); color: var(--ink-muted); }
@@ -239,7 +239,7 @@
     font-size: var(--step-sm);
     background: #f7ecd9;
     border: 1px solid #e4c9a1;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
 }
 
 .donate-consent {

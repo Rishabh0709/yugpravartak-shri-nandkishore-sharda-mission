@@ -22,7 +22,7 @@
             overflow: hidden;
             min-height: 420px;
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: #f7ead8;
             box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
         }
@@ -94,7 +94,7 @@
             min-height: 210px;
             padding: 28px;
             border: 1px solid rgba(198, 148, 53, .2);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .82);
             box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
         }
@@ -108,7 +108,7 @@
             margin-bottom: 18px;
             border-radius: 50%;
             background: var(--hi-maroon);
-            color: #fffaf1;
+            color: var(--surface-warm);
             font-family: "Noto Serif Devanagari", serif;
             font-size: 1.25rem;
             font-weight: 800;
@@ -128,7 +128,7 @@
         }
 
         .shardamani-journey {
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+            background: linear-gradient(180deg, var(--surface-warm) 0%, #f7ead8 100%);
         }
 
         .shardamani-timeline {
@@ -141,7 +141,7 @@
         .shardamani-step {
             padding: 28px;
             border-left: 4px solid var(--hi-gold);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .84);
             box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
         }
