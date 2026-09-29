@@ -46,12 +46,16 @@
             scroll-margin-top: 136px;
         }
 
+        /* alternating "chapter" wash instead of one flat background for
+           every section -- was every modifier set to var(--bg), so this
+           page had no rhythm at all despite having a class per chapter
+           to hang it on. Order follows the sections' position on the page. */
         .sadhna-arc--intro { background: var(--bg);}
-        .sadhna-arc--birth { background: var(--bg);}
+        .sadhna-arc--birth { background: var(--bg-wash);}
         .sadhna-arc--diary { background: var(--bg);}
-        .sadhna-arc--search { background: var(--bg);}
+        .sadhna-arc--search { background: var(--bg-wash);}
         .sadhna-arc--tekri { background: var(--bg);}
-        .sadhna-arc--darshan { background: var(--bg);}
+        .sadhna-arc--darshan { background: var(--bg-wash);}
         .sadhna-arc--wisdom { background: var(--bg);}
 
         .sadhna-arc__grid {

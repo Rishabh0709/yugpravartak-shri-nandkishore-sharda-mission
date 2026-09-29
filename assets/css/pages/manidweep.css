@@ -1,3 +1,16 @@
+/* This page reuses the bare .sadhna-arc / .hi-section classes from
+   bhaiyaji-sadhna-kaal.css with no per-chapter modifier of its own, so
+   none of its sections ever picked up a background -- every section sat
+   on one flat, unbroken --bg all the way down the page. Give it the same
+   alternating "chapter" wash the rest of the site uses, keyed off each
+   section's own id since there's no modifier class to hang it on. */
+#promise    { background: var(--bg); }
+#mango      { background: var(--bg-wash); }
+#naming     { background: var(--bg); }
+#atmosphere { background: var(--bg-wash); }
+#why        { background: var(--bg); }
+#seva       { background: var(--bg-wash); }
+
 /* The shared .sadhna-diary component (from bhaiyaji-sadhna-kaal.css) labels
    every quote "From the diary" — but the quotes on this page are spoken
    words recalled in the account, not diary excerpts. Override the label
