@@ -478,7 +478,7 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 
 .hi-hero__motto span {
     margin-inline: .35em;
-    color: var(--hi-gold);
+    color: var(--gold-deep);
 }
 
 .hi-hero__purpose {
@@ -1769,7 +1769,7 @@ body.site.hi-home-page .site-header:not(.is-scrolled) .site-brand-logo {
 .hi-seva-card__mark {
     display: block;
     margin-bottom: 11px;
-    color: var(--hi-gold);
+    color: var(--gold-deep);
     font-size: 1.05rem;
     line-height: 1;
 }

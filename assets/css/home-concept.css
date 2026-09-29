@@ -92,7 +92,7 @@
 .hi-inquiry-grid span {
     display: inline-block;
     margin-bottom: 12px;
-    color: var(--hi-gold);
+    color: var(--gold-deep);
     font-family: var(--hi-serif);
     font-size: 1.42rem;
     font-weight: 700;
