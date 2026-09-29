@@ -20,7 +20,7 @@ body.english-home.manidweep-page .sadhna-diary::before {
 .seva-stream {
     padding: 20px 20px 18px;
     border: 1px solid var(--rule);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: linear-gradient(180deg, var(--bg-wash), var(--bg));
 }
 

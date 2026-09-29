@@ -77,7 +77,7 @@ body.hindi-home {
    (color: var(--hi-ink)) otherwise makes the mission name and the
    column headings near-invisible there. */
 .hindi-home .footer .footer-title {
-    color: #fffaf1;
+    color: var(--surface-warm);
 }
 .hindi-home .footer h2,
 .hindi-home .footer h3 {

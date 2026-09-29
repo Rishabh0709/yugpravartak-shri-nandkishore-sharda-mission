@@ -1,5 +1,5 @@
 .news-events-page {
-    background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 45%, #fffaf1 100%);
+    background: linear-gradient(180deg, var(--surface-warm) 0%, #f7ead8 45%, var(--surface-warm) 100%);
     color: var(--hi-ink, #2b1b2d);
 }
 
@@ -14,7 +14,7 @@
 .news-events-section--recent {
     background:
         radial-gradient(circle at 12% 12%, rgba(222, 238, 236, .68), transparent 32%),
-        linear-gradient(135deg, #fffaf1 0%, #f4e6d2 52%, #eaf1ee 100%);
+        linear-gradient(135deg, var(--surface-warm) 0%, #f4e6d2 52%, #eaf1ee 100%);
 }
 
 .news-events-grid {
@@ -34,7 +34,7 @@
 .news-clip-card {
     overflow: hidden;
     border: 1px solid rgba(198, 148, 53, .22);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: rgba(255, 252, 246, .9);
     box-shadow: 0 20px 52px rgba(82, 50, 34, .09);
 }
@@ -87,9 +87,9 @@ a.news-event-card:focus-visible {
     min-height: 76px;
     display: grid;
     place-items: center;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: rgba(255, 250, 241, .94);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     text-align: center;
     font-weight: 900;
     box-shadow: 0 12px 28px rgba(43, 27, 45, .16);
@@ -131,7 +131,7 @@ a.news-event-card:focus-visible {
 
 .news-event-card__meta {
     margin: 0 0 14px;
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     font-weight: 800;
     line-height: 1.55;
 }
@@ -147,10 +147,10 @@ a.news-event-card:focus-visible {
 .news-range-tab {
     min-height: 64px;
     border: 1px solid rgba(121, 43, 42, .12);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 14px 18px;
     background: rgba(255, 252, 246, .82);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     cursor: pointer;
     font: inherit;
     font-size: clamp(1.04rem, 1.6vw, 1.35rem);
@@ -161,9 +161,9 @@ a.news-event-card:focus-visible {
 .news-range-tab.is-active,
 .news-range-tab:hover,
 .news-range-tab:focus-visible {
-    border-color: var(--hi-maroon, #8a2f2d);
-    background: var(--hi-maroon, #8a2f2d);
-    color: #fffaf1;
+    border-color: var(--hi-maroon);
+    background: var(--hi-maroon);
+    color: var(--surface-warm);
     outline: none;
 }
 
@@ -217,8 +217,8 @@ a.news-event-card:focus-visible {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     overflow: hidden;
-    border-radius: 8px;
-    background: #fffaf1;
+    border-radius: var(--radius-sm);
+    background: var(--surface-warm);
     box-shadow: 0 28px 90px rgba(0, 0, 0, .32);
 }
 
@@ -242,9 +242,9 @@ a.news-event-card:focus-visible {
     width: 40px;
     height: 40px;
     border: 1px solid rgba(121, 43, 42, .16);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: rgba(255, 252, 246, .9);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     cursor: pointer;
     font-size: 1.4rem;
     line-height: 1;
@@ -276,10 +276,10 @@ a.news-event-card:focus-visible {
 .news-range-tab {
     min-height: 64px;
     border: 1px solid rgba(121, 43, 42, .12);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 14px 18px;
     background: rgba(255, 252, 246, .82);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     cursor: pointer;
     font: inherit;
     font-size: clamp(1.04rem, 1.6vw, 1.35rem);
@@ -290,9 +290,9 @@ a.news-event-card:focus-visible {
 .news-range-tab.is-active,
 .news-range-tab:hover,
 .news-range-tab:focus-visible {
-    border-color: var(--hi-maroon, #8a2f2d);
-    background: var(--hi-maroon, #8a2f2d);
-    color: #fffaf1;
+    border-color: var(--hi-maroon);
+    background: var(--hi-maroon);
+    color: var(--surface-warm);
     outline: none;
 }
 
@@ -322,10 +322,10 @@ a.news-event-card:focus-visible {
 .news-range-tab {
     min-height: 64px;
     border: 1px solid rgba(121, 43, 42, .12);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 14px 18px;
     background: rgba(255, 252, 246, .82);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     cursor: pointer;
     font: inherit;
     font-size: clamp(1.04rem, 1.6vw, 1.35rem);
@@ -336,9 +336,9 @@ a.news-event-card:focus-visible {
 .news-range-tab.is-active,
 .news-range-tab:hover,
 .news-range-tab:focus-visible {
-    border-color: var(--hi-maroon, #8a2f2d);
-    background: var(--hi-maroon, #8a2f2d);
-    color: #fffaf1;
+    border-color: var(--hi-maroon);
+    background: var(--hi-maroon);
+    color: var(--surface-warm);
     outline: none;
 }
 
@@ -369,10 +369,10 @@ a.news-event-card:focus-visible {
 .news-range-tab {
     min-height: 64px;
     border: 1px solid rgba(121, 43, 42, .12);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 14px 18px;
     background: rgba(255, 252, 246, .82);
-    color: var(--hi-maroon, #8a2f2d);
+    color: var(--hi-maroon);
     cursor: pointer;
     font: inherit;
     font-size: clamp(1.04rem, 1.6vw, 1.35rem);
@@ -383,9 +383,9 @@ a.news-event-card:focus-visible {
 .news-range-tab.is-active,
 .news-range-tab:hover,
 .news-range-tab:focus-visible {
-    border-color: var(--hi-maroon, #8a2f2d);
-    background: var(--hi-maroon, #8a2f2d);
-    color: #fffaf1;
+    border-color: var(--hi-maroon);
+    background: var(--hi-maroon);
+    color: var(--surface-warm);
     outline: none;
 }
 
@@ -436,7 +436,7 @@ a.news-event-card:focus-visible {
     overflow: hidden;
     padding: 0;
     border: 1px solid rgba(198, 148, 53, .22);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: rgba(255, 252, 246, .9);
     box-shadow: 0 12px 28px rgba(82, 50, 34, .08);
     cursor: pointer;

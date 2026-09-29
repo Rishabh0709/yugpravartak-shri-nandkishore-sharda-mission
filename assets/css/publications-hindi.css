@@ -6,7 +6,7 @@
 .publications-books {
     padding-top: clamp(34px, 5vw, 62px);
     background:
-        linear-gradient(180deg, #fffaf1, rgba(244, 230, 209, .72));
+        linear-gradient(180deg, var(--surface-warm), rgba(244, 230, 209, .72));
 }
 
 .publications-booklist {
@@ -240,7 +240,7 @@
 
 .publications-cta {
     padding-top: clamp(56px, 7vw, 100px);
-    background: linear-gradient(180deg, rgba(244, 230, 209, .72), #fffaf1);
+    background: linear-gradient(180deg, rgba(244, 230, 209, .72), var(--surface-warm));
 }
 
 .publications-cta__box {

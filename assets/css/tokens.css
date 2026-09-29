@@ -16,9 +16,16 @@
                                     transparent-header hero, where the full
                                     wash would fight with the floating nav */
     --surface:       #fffdf8;   /* cards, panels */
+    --surface-warm:  #fffaf1;   /* the actual dominant card/panel tone in
+                                    practice (~90 uses) -- warmer than
+                                    --surface; formalized rather than merged
+                                    into it, to not shift ~90 elements' tone */
     --surface-sunk:  #efe7d5;   /* insets, image placeholders */
     --ink:           #2c2130;   /* headings */
     --ink-body:      #574d44;   /* body copy */
+    --ink-soft:      #62544c;   /* the actual dominant body-copy tone on
+                                    several page-specific stylesheets --
+                                    lighter/warmer than --ink-body */
     --ink-muted:     #786e64;   /* captions, meta */
     --rule:          rgba(120, 80, 40, .16);   /* hairline borders */
     --rule-strong:   rgba(120, 80, 40, .30);
@@ -48,8 +55,12 @@
     --sp-8: 32px; --sp-12: 48px; --sp-16: 64px; --sp-24: 96px; --sp-32: 128px;
     --section-y: clamp(64px, 8vw, 112px);
 
-    /* ---- radius: one value (+ pill, + one signature "leaf") ---- */
+    /* ---- radius ---- */
     --radius:       14px;
+    --radius-sm:    8px;   /* the actual dominant radius in the codebase --
+                               formalized rather than forced to --radius, so
+                               tokenizing it doesn't visibly change ~100 cards
+                               and buttons that already agreed on this value */
     --radius-pill:  999px;
     --radius-leaf:  22px 22px 96px 22px;   /* used once: the founder's portrait */
 
@@ -114,5 +125,5 @@
     --hi-quote-ink:    var(--ink);
     --hi-quote-muted:  #6f5333;
     --hi-quote-border: var(--rule-strong);
-    --hi-quote-bg:     linear-gradient(125deg, #fffdf8 0%, #f5ecda 60%, #eef1ea 100%);
+    --hi-quote-bg:     linear-gradient(125deg, var(--surface) 0%, #f5ecda 60%, #eef1ea 100%);
 }

@@ -731,10 +731,10 @@
 .v3-stats-band {
     padding: clamp(48px, 7vw, 84px) 0;
     background: linear-gradient(135deg, var(--primary-deep), var(--primary));
-    color: #fffaf1;
+    color: var(--surface-warm);
 }
 .v3-stats-band .hi-kicker { color: rgba(255, 250, 241, .72); }
-.v3-stats-band .hi-section-heading h2 { color: #fffaf1; }
+.v3-stats-band .hi-section-heading h2 { color: var(--surface-warm); }
 .v3-stats-grid {
     list-style: none;
     margin: clamp(32px, 4vw, 48px) 0 0;
@@ -786,9 +786,9 @@
     color: rgba(255, 250, 241, .8);
     font-size: .92rem;
 }
-.v3-stats-band__note strong { color: #fffaf1; }
+.v3-stats-band__note strong { color: var(--surface-warm); }
 .v3-stats-band__note a {
-    color: #fffaf1;
+    color: var(--surface-warm);
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 3px;

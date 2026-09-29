@@ -1,7 +1,7 @@
 .faq-page {
     background:
         radial-gradient(circle at 9% 12%, rgba(221, 236, 240, .46), transparent 30%),
-        linear-gradient(180deg, #fffaf1 0%, #f6ead8 48%, #fffaf1 100%);
+        linear-gradient(180deg, var(--surface-warm) 0%, #f6ead8 48%, var(--surface-warm) 100%);
 }
 
 .faq-directory {
@@ -22,7 +22,7 @@
     align-items: center;
     padding: 8px 14px;
     color: #6d5b50;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: rgba(255, 252, 246, .68);
     font-size: .94rem;
     font-weight: 700;
@@ -74,7 +74,7 @@
     position: absolute;
     inset: 10px auto 10px 10px;
     width: 4px;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: transparent;
     transition: background-color .25s ease, box-shadow .25s ease;
 }
@@ -113,7 +113,7 @@
     border-color: rgba(121, 43, 42, .28);
     background:
         radial-gradient(circle at 92% 18%, rgba(221, 236, 240, .72), transparent 34%),
-        linear-gradient(135deg, #fffaf1 0%, #f6ead8 58%, #edf3ed 100%);
+        linear-gradient(135deg, var(--surface-warm) 0%, #f6ead8 58%, #edf3ed 100%);
     box-shadow:
         0 20px 46px rgba(121, 43, 42, .12),
         inset 0 1px 0 rgba(255, 255, 255, .82);
@@ -211,7 +211,7 @@
     padding: 9px 16px;
     color: var(--hi-maroon);
     border: 1px solid rgba(121, 43, 42, .24);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: transparent;
     cursor: pointer;
     font: inherit;
@@ -265,7 +265,7 @@
     border-radius: 28px;
     background:
         radial-gradient(circle at 90% 0%, rgba(221, 236, 240, .62), transparent 30%),
-        #fffaf1;
+        var(--surface-warm);
     box-shadow: 0 34px 90px rgba(18, 12, 18, .28);
 }
 
@@ -291,7 +291,7 @@
     margin-bottom: 14px;
     padding: 4px 12px;
     color: var(--hi-maroon);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background: rgba(121, 43, 42, .08);
     font-size: .82rem;
     font-weight: 800;
@@ -360,7 +360,7 @@
         min-height: 48px;
         max-width: min(76vw, 320px);
         padding: 11px 18px;
-        border-radius: 999px;
+        border-radius: var(--radius-pill);
         white-space: nowrap;
         box-shadow: 0 10px 24px rgba(75, 43, 29, .06);
     }
@@ -424,7 +424,7 @@
 
 .faq-closing {
     padding-top: clamp(50px, 6vw, 86px);
-    background: linear-gradient(180deg, rgba(244, 230, 209, .62), #fffaf1 100%);
+    background: linear-gradient(180deg, rgba(244, 230, 209, .62), var(--surface-warm) 100%);
 }
 
 .faq-closing__box {

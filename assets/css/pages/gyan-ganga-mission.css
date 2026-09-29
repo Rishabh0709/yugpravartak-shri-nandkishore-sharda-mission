@@ -20,8 +20,8 @@
         .gyan-ganga-media {
             overflow: hidden;
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
-            background: #fffaf1;
+            border-radius: var(--radius-sm);
+            background: var(--surface-warm);
             box-shadow: 0 22px 58px rgba(63, 45, 37, .08);
         }
 
@@ -54,7 +54,7 @@
         .gyan-ganga-band p,
         .gyan-ganga-list p,
         .gyan-ganga-closing p {
-            color: #62544c;
+            color: var(--ink-soft);
             font-size: 1.04rem;
             line-height: 1.88;
         }
@@ -75,14 +75,14 @@
             margin: -28px auto 0;
             padding: clamp(18px, 3vw, 28px);
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .78);
         }
 
         .gyan-ganga-note figure {
             margin: 0;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             border: 1px solid rgba(123, 43, 39, .18);
         }
 
@@ -130,7 +130,7 @@
 
         .gyan-ganga-support-note h2 {
             margin: 0 0 8px;
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-size: clamp(2rem, 4vw, 3.25rem);
             line-height: 1.05;
@@ -172,7 +172,7 @@
         .gyan-ganga-list-card {
             padding: 24px 22px;
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .82);
             box-shadow: 0 16px 42px rgba(63, 45, 37, .06);
         }
@@ -180,7 +180,7 @@
         .gyan-ganga-card span {
             display: inline-block;
             margin-bottom: 14px;
-            color: #8a2f2d;
+            color: var(--hi-maroon);
             font-size: .82rem;
             font-weight: 900;
             letter-spacing: .08em;
@@ -200,7 +200,7 @@
         .gyan-ganga-card p,
         .gyan-ganga-list-card p {
             margin: 0;
-            color: #62544c;
+            color: var(--ink-soft);
             line-height: 1.8;
         }
 
@@ -245,7 +245,7 @@
             margin: 42px auto 0;
             padding: clamp(24px, 3vw, 36px);
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             color: var(--hi-ink);
             background: rgba(255, 252, 246, .76);
             font-family: var(--hi-serif);
@@ -259,7 +259,7 @@
             text-align: center;
             background:
                 radial-gradient(circle at 50% 0%, rgba(198, 148, 53, .16), transparent 36%),
-                linear-gradient(180deg, #f7ead8 0%, #fffaf1 100%);
+                linear-gradient(180deg, #f7ead8 0%, var(--surface-warm) 100%);
         }
 
         .gyan-ganga-closing p {
