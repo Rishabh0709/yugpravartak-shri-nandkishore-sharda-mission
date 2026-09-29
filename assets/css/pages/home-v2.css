@@ -205,6 +205,21 @@
 }
 
 /* ---------- seeker ---------- */
+/* same card treatment as .hi-lineage .hi-profile (components.css) just
+   below it on the page -- the two lineage profiles sit in a bordered,
+   translucent-white card, and Bhaiyaji's own intro sat directly on the
+   section background with no card at all. Matching it here instead of
+   reusing .hi-profile because the markup underneath (a heading above the
+   grid, then .v2-seeker__grid, then .v3-intro-tail) doesn't share
+   .hi-profile's structure. */
+.hi-bhaiyaji__card {
+    padding: clamp(30px, 4vw, 54px);
+    border: 1px solid rgba(121, 43, 42, .11);
+    border-radius: 32px;
+    background: rgba(255, 255, 255, .68);
+    box-shadow: 0 20px 60px rgba(80, 48, 35, .08);
+}
+
 .v2-seeker__grid {
     display: grid;
     gap: clamp(32px, 6vw, 72px);
