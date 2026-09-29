@@ -2954,11 +2954,11 @@ body.page-transparent-hero:has(.page-hero:not(.page-hero--plain)) #header.site-h
 }
 
 body.page-transparent-hero .page-hero--plain {
-    background: #fffaf0;
+    background: var(--bg-scrim);
 }
 
 body.page-transparent-hero .breadcrumb {
-    background: #fffaf0;
+    background: var(--bg-scrim);
 }
 
 /* Whichever sits first below the (now zero-height) header
