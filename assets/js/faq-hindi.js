@@ -235,19 +235,19 @@ const FAQ_ITEMS = [
             ],
             "en": [
                 "God is beyond the three gunas (qualities of nature), whereas all three—Sattva, Rajas and Tamas—are generally present in human beings in varying proportions. The predominance of one or another influences a person’s thoughts, behaviour and way of life.",
-                "Sattva Guna",
+                "## Sattva Guna",
                 "Sattva is derived from Sat, meaning Truth. Since this quality is associated with Truth, it is known as Sattva. Just as the Divine is eternal and blissful, Sattva brings lasting peace, contentment and inner joy.",
                 "Sattvic qualities include simplicity, truthfulness, contentment, honesty, patience, tolerance, diligence, compassion, readiness to serve others and positive thinking. A person dominated by Sattva performs noble actions and, through the right perspective, experiences greater contentment even in material life. Such a person is also receptive to divine grace.",
-                "Rajas Guna",
+                "## Rajas Guna",
                 "Rajas refers to an active, restless and desire-driven nature. Its foundation is the endless pursuit of material pleasures—wealth, possessions, recognition, status and worldly success.",
                 "When Rajas predominates, a person generally experiences happiness only as long as desires are being fulfilled. Since every desire cannot always be satisfied, the mind remains restless and dissatisfied. Much of life may then be spent acquiring material comforts, only for one desire to give rise to another.",
                 "Greed, the desire for praise and recognition, criticising others to gain superiority, dissatisfaction, and the wish to acquire greater wealth with less effort are expressions of Rajas. The constant thought—“May I have the most, the best and remain the happiest and most successful”—can make a person increasingly self-centred. Jealousy, envy and dishonesty may gradually obscure the better qualities within.",
                 "While a Sattvic person is inclined towards righteous action, a Rajasic person may increasingly engage in actions driven by material desires and ego, which ultimately lead to dissatisfaction and suffering.",
-                "Tamas Guna",
+                "## Tamas Guna",
                 "Tamas means darkness. It refers to qualities that obscure the conscious self and create distance from the Divine. It is therefore regarded as a negative and limiting quality.",
                 "A person dominated by Tamas becomes increasingly surrounded by undesirable tendencies and gradually moves towards decline. The mind becomes negative and self-centred, while harmful and destructive tendencies may begin to emerge. Such a person can move away from the very purpose for which human life has been given.",
                 "From the perspective of human values, qualities such as ego, anger, hatred, exploitation and causing harm to others for personal pleasure are expressions of Tamas. A Tamasic person becomes increasingly distant from genuine peace, happiness and inner joy, and may become trapped in narrow thinking and harmful actions.",
-                "Transforming the Three Gunas",
+                "## Transforming the Three Gunas",
                 "Human beings come to this world with the opportunity to grow and evolve. Along with the freedom to act, Divine grace has also given us the capacity for inner transformation. The proportions of Sattva, Rajas and Tamas are not necessarily fixed.",
                 "With sincere effort, Tamas can be overcome, Rajas can be disciplined through knowledge, and Sattva can be cultivated and strengthened through higher inspiration and spiritual practice.",
                 "Through remembrance of God, prayer, righteous action, a clearly defined purpose and firm determination, a person can consciously work towards inner transformation. Such sincere effort can help overcome the consequences of past actions and gradually remove the layers of negative tendencies that obscure the inner self.",
@@ -1002,9 +1002,9 @@ const FAQ_ITEMS = [
                 "When a person engages in righteous actions, the effects of past negative actions gradually diminish, and blessings and prayers are received. These prayers can serve as a strong protective shield during adverse circumstances in life.",
                 "6. Kavach of Awareness/ Alertness",
                 "Awareness of displeasing the Divine or the spiritual guide keeps the seeker alert and encourages steadfastness in one’s resolve. The principle “There is no love without fear” points towards transforming this fear into awareness. Such awareness protects a person from making wrong decisions and ultimately becomes a support for spiritual progress.",
-                "How Can Kavach Be Strengthened?",
+                "## How Can Kavach Be Strengthened?",
                 "Kavach can be strengthened through continuous reflection, awareness and practice. In addition to the forms described above, there is another indispensable Kavach:",
-                "The Blessings of the Spiritual Guide",
+                "## The Blessings of the Spiritual Guide",
                 "The blessings of the spiritual guide are a priceless Kavach for the seeker. Through timely guidance, the spiritual guide helps the seeker move forward on the path of Sadhana. Even the guide’s admonition or reprimand protects the seeker from allowing Sadhana to become an exercise in self-display or spiritual self-indulgence.",
                 "In truth, the spiritual guide is the seeker’s greatest Kavach on the spiritual path."
             ]
@@ -1813,6 +1813,48 @@ const FAQ_ITEMS = [
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
 
+    // Answer paragraphs are plain strings, with two optional authoring markers:
+    //   "N. text"  -- an item in a numbered list
+    //   "## text"  -- a subheading
+    // Consecutive numbered paragraphs become one <ol>; a non-numbered paragraph
+    // that falls between two numbered ones (an item's own explanation) nests
+    // inside that item's <li> rather than breaking the list.
+    const isNumberedPara = (text) => /^\d+\.\s+/.test(text);
+    const isHeadingPara = (text) => text.startsWith("## ");
+    const renderParagraph = (text) => isHeadingPara(text)
+        ? `<h4>${escapeHtml(text.slice(3))}</h4>`
+        : `<p>${escapeHtml(text)}</p>`;
+
+    const renderAnswer = (paragraphs) => {
+        const numberedIndices = paragraphs.reduce((acc, text, i) => {
+            if (isNumberedPara(text)) acc.push(i);
+            return acc;
+        }, []);
+
+        if (!numberedIndices.length) {
+            return paragraphs.map(renderParagraph).join("");
+        }
+
+        const first = numberedIndices[0];
+        const last = numberedIndices[numberedIndices.length - 1];
+
+        let list = "";
+        for (let i = first; i <= last; i++) {
+            const text = paragraphs[i];
+            if (isNumberedPara(text)) {
+                if (list) list += "</li>";
+                list += `<li>${escapeHtml(text.replace(/^\d+\.\s+/, ""))}`;
+            } else {
+                list += renderParagraph(text);
+            }
+        }
+        list += "</li>";
+
+        return paragraphs.slice(0, first).map(renderParagraph).join("")
+            + `<ol class="faq-modal__answer-list">${list}</ol>`
+            + paragraphs.slice(last + 1).map(renderParagraph).join("");
+    };
+
     const getVisibleItems = () => FAQ_ITEMS.filter((item) =>
         activeCategory === "all" || item.categoryId === activeCategory
     );
@@ -1869,7 +1911,7 @@ const FAQ_ITEMS = [
         lastFocusedElement = document.activeElement;
         modalTitle.textContent = item.question[language];
         modalCategory.textContent = item.categoryTitle[language];
-        modalAnswer.innerHTML = item.answer[language].map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
+        modalAnswer.innerHTML = renderAnswer(item.answer[language]);
         modal.hidden = false;
         document.body.style.overflow = "hidden";
         modalDialog?.focus();
