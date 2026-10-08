@@ -1,5 +1,5 @@
 {
-  "_note": "Reader/scholar reviews of 'मृत्यु के बाद का अलौकिक संसार' (Wonderful World After Death), extracted from photographed pages of the book's front-matter (2026-09-05). Only the 6 reviews that were transcribed with high confidence are included here — see book-review.md at the repo root for the full extraction, including 5 more that need verification against the physical book before use.",
+  "_note": "Reader/scholar reviews of 'मृत्यु के बाद का अलौकिक संसार' (Wonderful World After Death), transcribed verbatim from photographs of the book's front-matter pages (2026-10-08). Only these 4 reviews are published for now, by owner's choice -- each is the only one supplied with a photo of the reviewer.",
   "book": "divyaGyan",
   "reviews": [
     {
@@ -33,29 +33,24 @@
       "id": "ram-harsh-singh",
       "name": { "hi": "प्रो. राम हर्ष सिंह", "en": "Prof. Ram Harsh Singh" },
       "designation": { "hi": "कुलपति, राजस्थान आयुर्वेद विश्वविद्यालय, जोधपुर", "en": "Vice-Chancellor, Rajasthan Ayurved University, Jodhpur" },
-      "sourcePage": "27",
+      "photo": "/assets/images/reviews/ram-harsh-singh.webp",
+      "sourcePage": "27–28",
       "originalLanguage": "en",
-      "excerpt": { "hi": "इस पुस्तक के लेखक, जो स्वयं एक साधक और आध्यात्मिक चिन्तक होने के साथ-साथ एक वैज्ञानिक भी रहे, ने इस विषय में जाँच-पड़ताल के नये आयाम अवश्य खोले हैं।", "en": "However the author of this book who himself was a Sadhak and spiritual thinker besides being a scientist has definitely opened newer vistas of investigations in this subject." },
+      "excerpt": { "hi": "फिर भी इस पुस्तक के लेखक, जो स्वयं एक साधक और आध्यात्मिक चिन्तक होने के साथ-साथ एक वैज्ञानिक भी रहे, ने इस विषय में जाँच-पड़ताल के नये आयाम अवश्य खोले हैं।", "en": "However the author of this book who himself was a Sadhak and spiritual thinker besides being a scientist has definitely opened newer vistas of investigations in this subject." },
       "body": {
         "hi": [
           "मैंने पुस्तक \"मृत्यु के बाद का अलौकिक संसार\" (Wonderful World After Death) कई बार पढ़ी है और इस अत्यंत सूक्ष्म विषय पर नया प्रकाश डालने के इस प्रयास की सराहना करता हूँ। मुझे एक से अधिक बार \"मणिद्वीप\" परिवार में जाने और आदरणीया बसन्तीजी से ज्ञानवर्धक संवाद करने का अवसर भी मिला। इन सबसे मेरे आध्यात्मिक स्तर में निश्चित रूप से वृद्धि हुई है।",
-          "श्री नन्दकिशोर द्वारा रचित यह पुस्तक, जो एक सुपरिचित साधक और चिन्तक हैं, भारतीय अध्यात्म में गम्भीर वैज्ञानिक अंतर्दृष्टि वाली एक रोचक पुस्तिका है। यह पुस्तक परम्परागत अध्यात्म और समकालीन विज्ञान के व्यापक ढाँचे में मृत्यु और मृत्यु के बाद के जीवन के अत्यंत सूक्ष्म विषय की पड़ताल करने का प्रयास करती है।",
-          "इस प्रकार भारतीय अध्यात्म जीवन की निरंतरता को \"आत्मा\" मानता है, और इस अर्थ में \"मृत्यु\" कोई वास्तविक सत्ता नहीं, वह केवल स्थूल शरीर से सम्बन्धित है। किन्तु प्राचीन जीवन-विज्ञान सूक्ष्म शरीर की अवधारणा प्रस्तुत करता है, जो मृत्यु के पश्चात् पूर्वजन्म के कर्मों और संस्कारों के आवरण सहित एक स्थूल शरीर से दूसरे स्थूल शरीर में स्थानान्तरित होता है।",
+          "श्री नन्दकिशोर द्वारा रचित यह पुस्तक, जो एक सुपरिचित साधक और चिन्तक हैं, भारतीय अध्यात्म में गम्भीर वैज्ञानिक अंतर्दृष्टि वाली एक रोचक पुस्तिका है। यह पुस्तक परम्परागत अध्यात्म और समकालीन विज्ञान के व्यापक ढाँचे में मृत्यु और मृत्यु के बाद के जीवन के अत्यंत सूक्ष्म विषय की पड़ताल करने का प्रयास करती है। जीवन, मृत्यु और पुनर्जन्म को लेकर शास्त्रों में परस्पर विरोधाभासी मान्यताओं तथा कर्म-सिद्धान्त के एक अनूठे समन्वय के कारण यह विषय सहज ही समझ में आने वाला नहीं है।",
+          "उपनिषद और बुद्ध द्वारा मनुष्य के वास्तविक स्वरूप तथा बाह्य सत्य के विषय में पहुँचे गये दार्शनिक निष्कर्ष भिन्न-भिन्न हैं। उपनिषद एक शाश्वत, स्थायी आत्मा अथवा 'आत्मन्' तथा एक विश्व-व्यापी आत्मा अर्थात् 'ब्रह्म' के अस्तित्व में विश्वास करता है। बुद्ध इन्हें नकारते हैं। किन्तु दोनों ही सम्प्रदाय मानव-दुःख के एकमात्र कारण — अर्थात् अज्ञान या अविद्या — में विश्वास करते हैं। आध्यात्मिक उपलब्धि सांसारिक जीवन से परे जाने की माँग करती है, और मनुष्य जीवन का अंतिम लक्ष्य मोक्ष अथवा निर्वाण है।",
+          "इस प्रकार भारतीय अध्यात्म जीवन की निरंतरता को \"आत्मा\" मानता है, और इस अर्थ में \"मृत्यु\" कोई वास्तविक सत्ता नहीं, वह केवल स्थूल शरीर से सम्बन्धित है। किन्तु प्राचीन जीवन-विज्ञान सूक्ष्म शरीर की अवधारणा प्रस्तुत करता है, जो ऊर्जा के अठारह घटकों — पाँच तन्मात्राएँ, पाँच ज्ञानेन्द्रियाँ, पाँच कर्मेन्द्रियाँ, मन, बुद्धि और अहंकार — से निर्मित है। यह सूक्ष्म शरीर ही है जो मृत्यु के पश्चात् पूर्वजन्म के कर्मों और संस्कारों के आवरण सहित एक स्थूल शरीर से दूसरे स्थूल शरीर में स्थानान्तरित होता है। वास्तविक अर्थ में आत्मा सूक्ष्म शरीर का अभिन्न अंग नहीं है, किन्तु एक निरपेक्ष तत्व के रूप में उसकी उपस्थिति ही इन सब घटनाओं को सम्भव बनाती है। इस प्रकार तथाकथित \"मृत्यु के बाद के अलौकिक संसार\" की प्रकृति प्रत्येक मामले में सूक्ष्म शरीर, संक्रमणशील कर्मों और संस्कारों के गुणों के अनुसार भिन्न-भिन्न हो सकती है।",
           "यह सम्पूर्ण विषय बौद्धिक दृष्टि से समझना कठिन प्रतीत होता है। हमारी बुद्धि बाह्य जगत को देखने और समझने के लिये बनी है, वह आत्मा और ब्रह्म रूपी आंतरिक जगत के रहस्य को समझने में उतनी सक्षम नहीं है। फिर भी इस पुस्तक के लेखक, जो स्वयं एक साधक और आध्यात्मिक चिन्तक होने के साथ-साथ एक वैज्ञानिक भी रहे, ने इस विषय में जाँच-पड़ताल के नये आयाम अवश्य खोले हैं।"
         ],
         "en": [
           "I have read the book \"Wonderful World After Death\" several times and appreciate the efforts made in this write-up to throw a new light on this very subtle subject. I had also an opportunity more than once to visit \"Mani-Dweep\" family and had enlightening dialogue with respected Basantiji. All this has definitely enriched my spiritual levels.",
-          "The book \"Wonderful World after Death\" authored by Shri Nand Kishore, a well known Sadhak and thinker, is an interesting hand book containing a serious scientific insight in Indian Spirituality.",
-          "Thus the Indian spirituality believes in continuity of life is \"soul\" and as such \"death\" is a non entity. Death only relates to the gross body. However, the ancient life sciences propound the concept of Suksma Sharira... which transmigrates from one gross body to another one after death alongwith the veils of the Karmas and Samskaras of the previous life.",
-          "The entire subject seems to be difficult to perceive intellectually... However the author of this book who himself was a Sadhak and spiritual thinker besides being a scientist has definitely opened newer vistas of investigations in this subject."
-        ]
-      },
-      "originalText": {
-        "en": [
-          "I have read the book \"Wonderful World After Death\" several times and appreciate the efforts made in this write-up to throw a new light on this very subtle subject. I had also an opportunity more than once to visit \"Mani-Dweep\" family and had enlightening dialogue with respected Basantiji. All this has definitely enriched my spiritual levels.",
-          "The book \"Wonderful World after Death\" authored by Shri Nand Kishore, a well known Sadhak and thinker, is an interesting hand book containing a serious scientific insight in Indian Spirituality.",
-          "Thus the Indian spirituality believes in continuity of life is \"soul\" and as such \"death\" is a non entity. Death only relates to the gross body. However, the ancient life sciences propound the concept of Suksma Sharira... which transmigrates from one gross body to another one after death alongwith the veils of the Karmas and Samskaras of the previous life.",
-          "The entire subject seems to be difficult to perceive intellectually... However the author of this book who himself was a Sadhak and spiritual thinker besides being a scientist has definitely opened newer vistas of investigations in this subject."
+          "The book \"Wonderful World after Death\" authored by Shri Nand Kishore, a well known Sadhak and thinker, is an interesting hand book containing a serious scientific insight in Indian Spirituality. The book attempts to examine the most subtle subject of death and life beyond death in the comprehensive frame work of traditional spirituality and contemporary science. The subject is not easy to comprehend because of conflicting scriptural views about life, death and rebirth with an unique blend of the theory of Karma.",
+          "The metaphysical conclusions reached by Upanishad and by Buddha regarding true nature of human being and the external reality are different. Upanishad believe in the existence of an abiding permanent soul or Atman and a cosmic soul i.e. Brahman. Buddha denies them. But both schools believe in the single cause of human suffering viz. ignorance or Avidya. The spiritual attainment demands transcendence of worldly life and final goal of human life is Moksha or Nirvana.",
+          "Thus the Indian spirituality believes in continuity of life is \"soul\" and as such \"death\" is a non entity. Death only relates to the gross body. However, the ancient life sciences propound the concept of Suksma Sharira which is composed of the subtle elements of 18 components in energetic dimensions, viz. Five Tanmatras, Five Jnanendriyas, Five Karmendryas, Manas, Budhi and Ahamkara. The suksma sharira is the subtle body which transmigrates from one gross body to another one after death alongwith the veils of the Karmas and Samskaras of the previous life. The Atma in real sense is not the integral part of Suksma Sharira but its presence as a Nirpeksa factor allows things to happen. Thus the quality of the so said \"Wonderful world after Death\" could be greatly modified in each case with the qualities of Suksma Sharira, the transmigrating Karmas and Samskaras.",
+          "The entire subject seems to be difficult to perceive intellectually. Our intelligence is designed to perceive and analyze the outer world, it is not equipped to understand and analyze the mystery of Inner World i.e. the Atmans and Brahman. However the author of this book who himself was a Sadhak and spiritual thinker besides being a scientist has definitely opened newer vistas of investigations in this subject."
         ]
       }
     },
@@ -63,68 +58,24 @@
       "id": "amarsingh-faroda",
       "name": { "hi": "डॉ. अमरसिंह फरोदा", "en": "Dr. Amar Singh Faroda" },
       "designation": { "hi": "पूर्व अध्यक्ष, कृषि वैज्ञानिक चयन मण्डल, नई दिल्ली एवं पूर्व कुलपति, राजस्थान कृषि विश्वविद्यालय, उदयपुर", "en": "Former Chairman, Agricultural Scientists Recruitment Board, New Delhi, and Former Vice-Chancellor, Rajasthan Agricultural University, Udaipur" },
+      "photo": "/assets/images/reviews/amarsingh-faroda.webp",
       "sourcePage": "31–32",
       "originalLanguage": "hi",
       "excerpt": { "hi": "इस पुस्तक को बार-बार पढ़ने पर मैं इस निष्कर्ष पर पहुँचा हूँ कि श्री शारदाजी ने माँ का वर्षों तक चिन्तन करके अपने ज्ञान से जो आध्यात्मिक विचार लिखे हैं वे सत्य हैं।", "en": "Having read this book again and again, I have arrived at the conclusion that the spiritual thoughts Shri Sharda ji has written, drawn from his knowledge after years of contemplation upon Maa, are true." },
       "body": {
         "hi": [
-          "श्री नन्दकिशोर शारदा द्वारा लिखित \"मृत्यु के बाद का अलौकिक संसार\" पुस्तक का मैंने कई बार अध्ययन किया है। इस पुस्तक में कुल सात अध्याय हैं। लेखक ने इन सात अध्यायों में सम्पूर्ण ब्रह्माण्ड के विभिन्न पहलुओं जैसे पूर्वजों, संतों एवं अध्यात्म प्रवर्तकों ने जो ब्रह्माण्ड एवं मृत्यु के बाद आत्मा पर चिन्तन किया है तथा वैज्ञानिकों ने ब्रह्माण्ड पर जो अब तक खोज की, उनका विस्तार से वर्णन किया है।",
-          "इस पुस्तक में आध्यात्मिक पहलुओं पर विचार श्री नन्दकिशोर शारदा जी की माँ त्रिपुर सुन्दरी की कई सालों की तपस्या एवं गहन चिन्तन पर, जो शारदा जी ने ज्ञान ग्रहण किया था, उस पर आधारित है। लेखक ने अपने द्वारा अर्जित आध्यात्मिक ज्ञान को आधार मानकर इस पुस्तक में लिखा है कि मनुष्य पृथ्वी पर बाकी अन्य प्राणियों से बिल्कुल भिन्न है — मनुष्य की आत्मा अजर-अमर है तथा वह परमात्मा का अंश है।",
-          "इस पुस्तक में सभी पहलुओं पर वैज्ञानिक दृष्टिकोण से भी विस्तार से प्रकाश डाला गया है। पुस्तक में लिखा गया है कि पिछले सैकड़ों सालों में हजारों वैज्ञानिकों ने पूरे ब्रह्माण्ड में बहुत खोज की है तथा प्रकृति के रहस्यों को खोजने के लिये अनवरत प्रयत्न किये।",
-          "इस पुस्तक को बार-बार पढ़ने पर मैं इस निष्कर्ष पर पहुँचा हूँ कि श्री शारदाजी ने माँ का वर्षों तक चिन्तन करके अपने ज्ञान से जो आध्यात्मिक विचार लिखे हैं वे सत्य हैं। जो मनुष्य आध्यात्मिक विचारधाराओं पर विश्वास करते हैं, उनके ज्ञानवर्धन के लिये यह पुस्तक बहुत उपयोगी है। उनको यह पुस्तक पढ़नी चाहिये। मुझे यह पुस्तक बहुत अच्छी लगी।"
+          "श्री नन्दकिशोर शारदा द्वारा लिखित \"मृत्यु के बाद का अलौकिक संसार\" पुस्तक का मैंने कई बार अध्ययन किया है। इस पुस्तक में कुल सात अध्याय हैं। लेखक ने इन सात अध्यायों में सम्पूर्ण ब्रह्माण्ड के विभिन्न पहलुओं जैसे पूर्वजों, संतो एवं अध्यात्म प्रवर्तकों ने जो ब्रह्माण्ड एवं मृत्यु के बाद आत्मा पर चिन्तन किया है तथा वैज्ञानिकों ने ब्रह्माण्ड पर जो अब तक खोज का उनका विस्तार से वर्णन किया है।",
+          "इस पुस्तक में आध्यात्मिक पहलुओं पर विचार श्री नन्दकिशोर शारदा जी की माँ त्रिपुर सुन्दरी की कई सालों की तपस्या एवं गहन चिन्तन पर जो शारदा जी ने ज्ञान ग्रहण किया था, उस पर आधारित है। लेखक ने अपने द्वारा अर्जित आध्यात्मिक ज्ञान को आधार मान कर इस पुस्तक में लिखा है कि मनुष्य पृथ्वी पर बाकी अन्य प्राणियों से बिल्कुल भिन्न है। एक ओर जहाँ पृथ्वी पर मनुष्य के अलावा सभी छोटे-बड़े प्राणी आनुवंशिकता के नियमों के अन्तर्गत जन्मते ही अपने सभी कार्य-कलाप करने में स्वयं ही सक्षम होते हैं। इनकी आत्मा अजर-अमर नहीं होती तथा मृत्यु के पश्चात् यह सब प्राणी नष्ट हो जाते हैं, दूसरी ओर मनुष्य की आत्मा अजर-अमर है तथा वह परमात्मा का अंश है। मनुष्य की मृत्यु के पश्चात् उसकी आत्मा शरीर से निकल कर अपने कर्मों के अनुसार दैवलोक, शिवलोक, विष्णुलोक, ब्रह्मलोक अथवा प्रेतलोक में जाती है तथा कर्मफलों को भोगने पर फिर से जन्म लेती है। मनुष्य का भौतिक शरीर जो पाँच तत्वों — पृथ्वी, जल, वायु, अग्नि एवं आकाश का बना होता है, उन्हीं में लीन हो जाता है। इस पुस्तक में यह भी लिखा है कि आत्मा जब मनुष्य शरीर से चैतन्य स्वरूप ज्योति के रूप में बाहर निकलती है तो इसे सामान्य आँखों से नहीं देखा जा सकता। इस चैतन्य स्वरूप ज्योति को देखने के लिये दिव्य दृष्टि चाहिये जो साधारण मनुष्य के पास नहीं है। यह दिव्य दृष्टि ऋषियों, संतों-साधुओं द्वारा घोर तपस्या के पश्चात् ही प्राप्त होती है।",
+          "इस पुस्तक में यह भी लिखा है कि सम्पूर्ण जगत का निर्माण एक निराकार, अनन्त शक्तिशाली, अजर-अमर महाशक्ति ने किया है जिसे परमात्मा, ईश्वर, खुदा, गौड इत्यादि नामों से पुकारा जाता है।",
+          "इस पुस्तक में सभी पहलुओं पर वैज्ञानिक दृष्टिकोण से भी विस्तार से प्रकाश डाला गया है। पुस्तक में लिखा गया है कि पिछले सैकड़ों सालों में हजारों वैज्ञानिकों ने पूरे ब्रह्माण्ड में बहुत खोज की है तथा प्रकृति के रहस्यों को खोजने के लिये अनवरत प्रयत्न किये। विज्ञान यह तो मानता है कि मनुष्य तथा दूसरे हर जीवित प्राणी में चेतना है परन्तु मृत्यु के पश्चात् मनुष्य की आत्मा नष्ट नहीं होती तथा वह अजर-अमर है, इस बात को वैज्ञानिक अभी मानने को तैयार नहीं है। वैज्ञानिकों का कहना है कि उन्होंने सारे ब्रह्माण्ड को छान मारा है परन्तु उन्हें अभी तक ऐसे देवलोक, शिवलोक इत्यादि सारे ब्रह्माण्ड में नहीं मिले जहाँ देवताओं का वास हो तथा जहाँ पर मनुष्य की मृत्यु के पश्चात् उसकी अजर-अमर कही जाने वाली आत्मा जाती हो।",
+          "इस पुस्तक को बार बार पढ़ने पर मैं इस निष्कर्ष पर पहुँचा हूँ कि श्री शारदाजी ने माँ का वर्षों तक चिन्तन करके अपने ज्ञान से जो आध्यात्मिक विचार लिखे हैं वे सत्य हैं। जो मनुष्य आध्यात्मिक विचारधाराओं पर विश्वास करते हैं उनके ज्ञानवर्धन के लिये यह पुस्तक बहुत उपयोगी है। उनको यह पुस्तक पढ़नी चाहिये। मुझे यह पुस्तक बहुत अच्छी लगी।"
         ],
         "en": [
-          "I have studied Shri Nandkishore Sharda's book 'The Wonderful World After Death' many times. The book has seven chapters in all. Across these seven chapters, the author describes in detail various aspects of the entire cosmos — the reflections that ancestors, saints and spiritual masters have offered on the cosmos and on the soul after death, as well as everything scientists have discovered about the universe so far.",
-          "The spiritual reflections in this book are grounded in the knowledge Shri Nandkishore Sharda ji gained through years of tapasya and deep contemplation upon Maa Tripurasundari. Taking the spiritual knowledge he acquired as his foundation, the author writes in this book that the human being is entirely distinct from all other creatures on earth — the human soul is imperishable and eternal, and is a part of the Divine.",
-          "The book also sheds detailed light on every aspect from a scientific point of view. It records that over the past several hundred years, thousands of scientists have carried out extensive research across the universe, making ceaseless efforts to uncover the mysteries of nature.",
+          "I have studied Shri Nandkishore Sharda's book 'The Wonderful World After Death' many times. The book has seven chapters in all. Across these seven chapters, the author describes in detail the various aspects of the entire cosmos on which ancestors, saints and spiritual masters have reflected — the cosmos itself, and the soul after death — as well as everything scientists have discovered about the universe so far.",
+          "The spiritual reflections in this book are grounded in the knowledge Shri Nandkishore Sharda ji gained through years of tapasya and deep contemplation that his mother, Maa Tripurasundari, undertook. Taking the spiritual knowledge he thus acquired as his foundation, the author writes in this book that the human being is entirely distinct from every other creature on earth. On the one hand, every other creature, small or great, is able — by the laws of heredity alone, from the moment of birth — to carry out all its own activities; its soul is not imperishable, and after death the creature simply ceases to exist. The human soul, on the other hand, is imperishable and eternal, and is a part of the Divine. After a human being's death, the soul leaves the body and, according to its deeds, travels to Devlok, Shivlok, Vishnulok, Brahmalok or Pretlok, taking a new birth once it has borne the fruits of its karma. The physical body, composed of the five elements — earth, water, air, fire and sky — merges back into them. The book also states that when the soul leaves the human body in the form of a conscious light, it cannot be seen with ordinary eyes. Seeing this conscious light requires a divine sight that an ordinary human being does not possess — a sight attained only by sages and saints after intense tapasya.",
+          "The book also states that the entire universe was created by a single, formless, infinitely powerful, imperishable supreme force, called by such names as Paramatma, Ishwar, Khuda or God.",
+          "The book also sheds detailed light on every aspect from a scientific point of view. It records that over the past several hundred years, thousands of scientists have carried out extensive research across the universe, making ceaseless efforts to uncover the mysteries of nature. Science does accept that consciousness exists in human beings and in every other living creature, but it is not yet willing to accept that after death the human soul does not perish and is instead imperishable. Scientists say they have searched the entire universe, yet they have still not found any Devlok, Shivlok or the like anywhere in it — no realm where gods dwell, nor any place to which a human being's so-called imperishable soul goes after death.",
           "Having read this book again and again, I have arrived at the conclusion that the spiritual thoughts Shri Sharda ji has written, drawn from his knowledge after years of contemplation upon Maa, are true. For those who have faith in spiritual thought, this book is of great value in deepening their understanding. They should read this book. I found it excellent."
-        ]
-      }
-    },
-    {
-      "id": "a-d-bohra",
-      "name": { "hi": "प्रो० ए. डी. बोहरा", "en": "Prof. A. D. Bohra" },
-      "designation": { "hi": "पूर्व सीनियर इंडस्ट्रियल एडवाइजर, यूनिडो एवं अमेरिकन सोसाइटी ऑफ मेटल, यू.एस.ए.", "en": "Former Senior Industrial Advisor, UNIDO, and American Society of Metals, U.S.A." },
-      "sourcePage": "33",
-      "originalLanguage": "hi",
-      "excerpt": { "hi": "इस जटिल किन्तु विज्ञान-सम्मत, गहन विचारोत्तेजक ग्रंथ ने अनेक महत्वपूर्ण प्रश्न उठाये हैं, जो अत्यन्त विचारणीय हैं।", "en": "This complex yet science-based and deeply thought-provoking work raises many important questions, which are well worth serious reflection." },
-      "body": {
-        "hi": [
-          "अध्यात्म पुरुष श्री नन्दकिशोर जी शारदा की विलक्षण प्रतिभा का दर्पण, उनके द्वारा रचित एवं ज्ञान गंगा मिशन द्वारा प्रकाशित ग्रंथ \"मृत्यु के बाद का अलौकिक संसार\", निःसन्देह एक अनूठी कृति है। इस कृति में इस युग के एक मूर्धन्य समाजसेवी, सेवाव्रती, दानवीर एवं कर्मठ तथा समर्पित व्यक्तित्व का चरम विकास अध्यात्म पुरुष के रूप में उजागर होता हुआ स्पष्ट परिलक्षित है।",
-          "इस जटिल किन्तु विज्ञान-सम्मत, गहन विचारोत्तेजक ग्रंथ ने अनेक महत्वपूर्ण प्रश्न उठाये हैं, जो अत्यन्त विचारणीय हैं। इस रचना \"मृत्यु के बाद का अलौकिक संसार\" पर \"पंथे शुभम्\" का आशीर्वचन प्रदान करते हुए मुझे अत्यन्त प्रसन्नता हो रही है।",
-          "आशा करता हूँ कि उनकी आत्म-साधना और स्वानुभवों पर आधारित यह ग्रंथ साधारण जनसमुदाय को प्रेरणा प्रदान करेगा तथा प्रज्ञापुरुष एवं स्वाध्यानुष्ठान में समर्पित मानवों को जीवनोपयोगी गम्भीर विषयों के अध्ययन हेतु प्रोत्साहित करेगा।"
-        ],
-        "en": [
-          "'The Wonderful World After Death,' authored by the spiritual figure Shri Nandkishore Ji Sharda and published by the Gyan Ganga Mission, is a mirror to his exceptional genius, and is undoubtedly a work unlike any other. In this work, one can clearly see the culmination of a leading social worker, devoted servant, generous benefactor and tireless, dedicated personality of this age, unfolding into the figure of a spiritual man.",
-          "This complex yet science-based and deeply thought-provoking work raises many important questions, which are well worth serious reflection. It gives me great joy to offer my blessing of 'panthe shubham' (may your path be blessed) upon this work, 'The Wonderful World After Death.'",
-          "I hope that this work, grounded in his self-practice and personal experience, will inspire the common people, and will encourage those devoted to wisdom and to the discipline of self-study to take up the study of life's deeper and more serious subjects."
-        ]
-      }
-    },
-    {
-      "id": "p-mishra",
-      "name": { "hi": "डॉ. पी. मिश्रा", "en": "Dr. P. Mishra" },
-      "designation": { "hi": "भूतपूर्व प्राचार्य, महिला महाविद्यालय, जोधपुर", "en": "Former Principal, Mahila Mahavidyalaya, Jodhpur" },
-      "sourcePage": "54",
-      "originalLanguage": "en",
-      "excerpt": { "hi": "जिज्ञासु मन वालों के लिये यह पुस्तक अवश्य-पठनीय है।", "en": "The book is a must for all searching minds." },
-      "body": {
-        "hi": [
-          "मानव-इतिहास के आरम्भ से ही मनुष्य की जिज्ञासा उसे स्वयं, प्रकृति और ब्रह्माण्ड के विषय में अनेक खोजों की ओर ले गई है। इनमें सबसे रहस्यमय प्रश्नों में से एक जन्म और मृत्यु से जुड़ा प्रश्न है — ऐसे प्रश्न, निरंतर प्रयासों के बावजूद, आज भी अनुत्तरित बने हुए हैं। श्री एन.के. शारदा ने ऐसे ही प्रश्नों का एक अद्भुत और विचारोत्तेजक अध्ययन किया है, जिसे उन्होंने अपनी मरणोपरांत प्रकाशित पुस्तक \"मृत्यु के बाद का अलौकिक संसार\" में अभिव्यक्त किया है।",
-          "यह पुस्तक कुछ सबसे उलझन भरे प्रश्नों पर प्रकाश डालती है, और पाठक तुरन्त अनुभव कर सकता है कि यह चिन्तन उनके अल्प जीवन में बरसों तक फैला रहा है, क्योंकि श्री एन.के. शारदा ने मात्र 15 वर्ष की अल्पायु में ही आध्यात्मिक विषयों पर चिन्तन आरम्भ कर दिया था। उनका जीवन, यद्यपि अल्प था, किन्तु उसमें एक ऐसी गुणवत्ता और श्रेष्ठता थी जो विरले ही मिलती है।",
-          "जिज्ञासु मन वालों के लिये यह पुस्तक अवश्य-पठनीय है। मैं \"मणिद्वीप\" के सदस्यों को भी श्री एन.के. शारदा द्वारा आरम्भ किये गये इस मिशन को निष्ठा और समर्पण के साथ आगे बढ़ाने के लिये बधाई देना चाहूँगा।"
-        ],
-        "en": [
-          "Right from the beginning of human history, man's curiosity has led to various enquiries regarding his own self, nature and the universe. One of the most obscure questions is regarding birth and death... Shri N.K. Sharda has done a wonderful and thought-provoking study of such problems, given expression in his book \"Wonderful World After Death\", published posthumously.",
-          "This book throws light on some of the most perplexing questions... Shri N.K. Sharda started reflecting on spiritual problems from a very early age of 15 years. His life, though short, had a quality and excellence rarely found.",
-          "The book is a must for all searching minds. I would also like to congratulate the members of \"Manidweep\" for continuing with sincerity and dedication, the mission started by Shri N.K. Sharda."
-        ]
-      },
-      "originalText": {
-        "en": [
-          "Right from the beginning of human history, man's curiosity has led to various enquiries regarding his own self, nature and the universe. One of the most obscure questions is regarding birth and death... Shri N.K. Sharda has done a wonderful and thought-provoking study of such problems, given expression in his book \"Wonderful World After Death\", published posthumously.",
-          "This book throws light on some of the most perplexing questions... Shri N.K. Sharda started reflecting on spiritual problems from a very early age of 15 years. His life, though short, had a quality and excellence rarely found.",
-          "The book is a must for all searching minds. I would also like to congratulate the members of \"Manidweep\" for continuing with sincerity and dedication, the mission started by Shri N.K. Sharda."
         ]
       }
     },
@@ -132,16 +83,17 @@
       "id": "v-k-bhansali",
       "name": { "hi": "प्रो. (डॉ.) वी. के. भन्साली", "en": "Prof. (Dr.) V. K. Bhansali" },
       "designation": { "hi": "पूर्व विभागाध्यक्ष, इलेक्ट्रिकल इंजीनियरिंग संकाय, एम.बी.एम. इंजीनियरिंग कॉलेज एवं निदेशक, जोधपुर इंस्टीट्यूट ऑफ इंजीनियरिंग एण्ड टैक्नोलॉजी", "en": "Former Head, Department of Electrical Engineering, M.B.M. Engineering College, and Director, Jodhpur Institute of Engineering and Technology" },
+      "photo": "/assets/images/reviews/v-k-bhansali.webp",
       "sourcePage": "45",
       "originalLanguage": "hi",
       "excerpt": { "hi": "दर्शन शास्त्र और विज्ञान का जो समन्वय किया गया है, वह अपने आप में एक अनूठा प्रयोग है।", "en": "The synthesis achieved here between philosophy and science is, in itself, a unique experiment." },
       "body": {
         "hi": [
-          "प्रकृति के रहस्यों को जानने की इच्छा सदैव मानव में रही है। यह सत्य है कि ब्रह्माण्ड के गूढ़ रहस्यों को केवल दिव्य साधना द्वारा ही अनुभव किया जा सकता है। यह भाषा से परे होते हैं। अतः शब्दों द्वारा इन्हें पूर्णतया समझना असम्भव है। मानव जाति के लाभार्थ इन दिव्य अनुभवों को भाषा में, जहाँ तक सम्भव हो, समझाने का प्रयास महापुरुष सदैव करते आये हैं।",
+          "प्रकृति के रहस्यों को जानने की इच्छा सदैव मानव में रही है। यह सत्य है कि ब्रह्माण्ड के गूढ़ रहस्यों को केवल दिव्य साधना द्वारा ही अनुभव किया जा सकता है। यह भाषा से परे होते हैं। अतः शब्दों द्वारा इन्हें पूर्णतया समझना असम्भव है। मानव जाति के लाभार्थ इन दिव्य अनुभवों को भाषा में, जहाँ तक सम्भव हो, समझाने का प्रयास महापुरुष सदैव करते आये हैं। इसी कठिन कार्य में श्रद्धेय श्री नन्दकिशोर जी शारदा द्वारा लिखित पुस्तक \"मृत्यु के बाद का अलौकिक संसार\" को इसी दृष्टि से देखा जाना चाहिये।",
           "श्री शारदा ने विज्ञान-सम्मत सरल तर्कों द्वारा दिव्य अनुभूति को समझाने का जो प्रयास किया है, यही इस पुस्तक की विशेषता है। दर्शन शास्त्र और विज्ञान का जो समन्वय किया गया है, वह अपने आप में एक अनूठा प्रयोग है। यह पुस्तक न केवल प्रबुद्ध पाठकों की इस क्षेत्र में जिज्ञासा को शान्त करेगी, बल्कि उन्हें दिव्य साधना के लिये प्रेरित भी करेगी।"
         ],
         "en": [
-          "The desire to know the mysteries of nature has always existed in mankind. It is true that the profound mysteries of the universe can be experienced only through divine sadhana. These lie beyond language, and so it is impossible to grasp them fully through words. For the benefit of humankind, great souls have always endeavoured to explain these divine experiences in language, as far as it is possible to do so.",
+          "The desire to know the mysteries of nature has always existed in mankind. It is true that the profound mysteries of the universe can be experienced only through divine sadhana. These lie beyond language, and so it is impossible to grasp them fully through words. For the benefit of humankind, great souls have always endeavoured to explain these divine experiences in language, as far as it is possible to do so. It is in this light that the revered Shri Nandkishore ji Sharda's book 'The Wonderful World After Death' should be viewed.",
           "Shri Sharda's effort to explain divine experience through simple, science-based reasoning is precisely what distinguishes this book. The synthesis achieved here between philosophy and science is, in itself, a unique experiment. This book will not only satisfy the curiosity of discerning readers in this field, but will also inspire them towards divine sadhana."
         ]
       }
