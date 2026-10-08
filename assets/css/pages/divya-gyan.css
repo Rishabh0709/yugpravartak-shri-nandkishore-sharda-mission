@@ -290,19 +290,36 @@
         }
 
         .dg-review footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             margin-top: auto;
             padding-top: 14px;
             border-top: 1px solid rgba(121, 43, 42, .13);
         }
 
-        .dg-review footer strong {
+        .dg-review__avatar {
+            flex: none;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 2px solid rgba(198, 148, 53, .4);
+        }
+
+        .dg-review__byline {
+            min-width: 0;
+        }
+
+        .dg-review__byline strong {
             display: block;
             color: var(--hi-maroon);
             font-family: var(--hi-serif);
             font-size: 1.02rem;
         }
 
-        .dg-review footer span {
+        .dg-review__byline span {
             display: block;
             margin-top: 3px;
             color: #7a6c62;
