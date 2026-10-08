@@ -151,8 +151,13 @@ book: divyaGyan
                     <article class="dg-review">
                         <blockquote>&ldquo;{{ r.excerpt.en }}&rdquo;</blockquote>
                         <footer>
-                            <strong>{{ r.name.en }}</strong>
-                            <span>{{ r.designation.en }}</span>
+                            {%- if r.photo %}
+                            <img class="dg-review__avatar" src="{{ r.photo }}" alt="{{ r.name.en }}" width="56" height="56" loading="lazy">
+                            {%- endif %}
+                            <div class="dg-review__byline">
+                                <strong>{{ r.name.en }}</strong>
+                                <span>{{ r.designation.en }}</span>
+                            </div>
                         </footer>
                         <button class="dg-review__trigger" type="button" data-dg-review-open>Read the full response</button>
                         <template class="dg-review__full">
