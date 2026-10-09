@@ -161,13 +161,13 @@
 
     function getVideoBackHref(video) {
         if (state.language === "hi") {
-            if (video.category === "sanskar-classes") return "../testimonials/#student-testimonials";
+            if (video.category === "sanskar-classes") return "../testimonials/#seekers-beneficiaries";
             if (video.category === "dignitaries-views") return "../testimonials/#dignitaries-views";
             if (video.category === "life-transformation") return "../testimonials/#seekers-beneficiaries";
             return "../testimonials/#success-stories";
         }
 
-        if (video.category === "sanskar-classes") return "../testimonials/#student-testimonials";
+        if (video.category === "sanskar-classes") return "../testimonials/#seekers-beneficiaries";
         if (video.category === "dignitaries-views") return "../testimonials/#dignitaries-views";
         return "../testimonials/#success-stories";
     }
