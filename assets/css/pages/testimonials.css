@@ -1,0 +1,18 @@
+/* Shrinks the video-card thumbnails on the testimonials/video-experiences
+   page specifically (scoped to .testimonials-video-page), without touching
+   .video-card/.video-grid's shared base rules in media-videos.css, which
+   sunday-sanskar-classes.html also relies on at full size. Mirrors the
+   homepage's "सेवा का जीवंत प्रभाव" section, where the photo was shrunk so
+   the quote/text carries the card instead of a large image. */
+
+.testimonials-video-page .video-card__media {
+    aspect-ratio: 2.3 / 1;
+}
+
+.testimonials-video-page .video-card__play {
+    width: 38px;
+    height: 38px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1rem;
+}
