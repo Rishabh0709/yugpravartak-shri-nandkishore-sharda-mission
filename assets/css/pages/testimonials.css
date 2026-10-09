@@ -1,18 +1,71 @@
-/* Shrinks the video-card thumbnails on the testimonials/video-experiences
-   page specifically (scoped to .testimonials-video-page), without touching
-   .video-card/.video-grid's shared base rules in media-videos.css, which
-   sunday-sanskar-classes.html also relies on at full size. Mirrors the
-   homepage's "सेवा का जीवंत प्रभाव" section, where the photo was shrunk so
-   the quote/text carries the card instead of a large image. */
+/* Restyles the video-card thumbnails on the testimonials/video-experiences
+   page as small circular byline photos (name + role beside the photo,
+   quote-style excerpt below) -- matching the homepage's "सेवा का जीवंत
+   प्रभाव" cards (.v2-story__media, 52px circle), instead of the site-wide
+   large 16:10 "hero" thumbnail with a play button overlaid on it.
+
+   The existing "वीडियो देखें" button in the card's actions row remains the
+   way to actually play the video, so the overlaid play button on the (now
+   tiny) photo is hidden rather than resized.
+
+   Scoped to .testimonials-video-page rather than editing the shared
+   .video-card/.video-grid rules in media-videos.css directly --
+   sunday-sanskar-classes.html renders the exact same markup (via
+   assets/js/videos.js) and should keep its full-size thumbnails. */
+
+.testimonials-video-page .video-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px;
+}
 
 .testimonials-video-page .video-card__media {
-    aspect-ratio: 2.3 / 1;
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid rgba(198, 148, 53, .28);
+}
+
+.testimonials-video-page .video-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .testimonials-video-page .video-card__play {
-    width: 38px;
-    height: 38px;
-    right: 10px;
-    bottom: 10px;
-    font-size: 1rem;
+    display: none;
+}
+
+.testimonials-video-page .video-card__body {
+    flex: 1 1 0%;
+    min-width: 0;
+    padding: 0;
+}
+
+.testimonials-video-page .video-card__body h2,
+.testimonials-video-page .video-card__body h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.3;
+}
+
+.testimonials-video-page .video-card__meta {
+    margin: 2px 0 0;
+    font-size: .85rem;
+}
+
+.testimonials-video-page .video-card__excerpt {
+    margin: 14px 0 0;
+    padding-left: 14px;
+    border-left: 2px solid var(--hi-gold, #c69435);
+    font-style: italic;
+}
+
+.testimonials-video-page .video-card__actions {
+    margin-top: 16px;
 }
