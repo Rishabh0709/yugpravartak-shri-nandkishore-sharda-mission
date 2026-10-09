@@ -80,8 +80,8 @@
     },
     {
       "id": "jyoti-soni",
-      "category": "life-transformation",
-      "thumbnail": "assets/images/video_thumbnails/life-transformation/jyoti-soni.png",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/jyoti-soni.png",
       "videoUrl": "https://drive.google.com/file/d/1wbj7UIM2IAeWLzgwtunA6bJ5DViH81bH/preview",
       "en": {
         "title": "Jyoti Soni",
@@ -131,6 +131,62 @@
           "डॉ. कुमुदिनी दाधीच को कक्षा 6 से पीएच.डी. तक शिक्षा-सहयोग मिला। कक्षा 10 में आर्थिक कठिनाइयों के कारण पढ़ाई छोड़ने जैसी स्थिति बन गई थी।",
           "ट्रस्ट ने उस महत्वपूर्ण समय पर सहायता और प्रेरणा देकर उनकी पढ़ाई जारी रखने में सहयोग किया।",
           "आज वे राजस्थान शिक्षा विभाग में रसायन विज्ञान व्याख्याता हैं और प्राप्त संस्कारों को आगे बढ़ा रही हैं।"
+        ]
+      }
+    },
+    {
+      "id": "meenu-tanwar",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/meenu-tanwar.png",
+      "videoUrl": "https://drive.google.com/file/d/1uCgBMn3nchQ2J60zwtq6JxBvdHPM_5o5/preview",
+      "en": {
+        "title": "Meenu Tanwar",
+        "meta": "M.Com Gold Medalist, JNVU Jodhpur",
+        "excerpt": "Freed from financial worry, she channelled her energy into her studies and earned a Gold Medal in M.Com from JNVU Jodhpur — the top distinction in her class.",
+        "hook": "Excellence, when rooted in gratitude and purpose, is not arrogance — it is responsibility.",
+        "paragraphs": [
+          "Meenu Tanwar pursued her M.Com at Jai Narain Vyas University (JNVU), Jodhpur, with the support of the Swami Vivekanand Students Welfare Charitable Trust.",
+          "Freed from the financial pressures of higher education, she was able to devote her full energy to her studies, grounding her effort in the values of gratitude, leadership and service that the Trust instills.",
+          "Her dedication earned her a Gold Medal in M.Com — the highest academic distinction in her class — and she credits the Trust's support for making that pursuit of excellence possible."
+        ]
+      },
+      "hi": {
+        "title": "मीनू तंवर",
+        "meta": "एम.कॉम. गोल्ड मेडलिस्ट, जे.एन.वी.यू., जोधपुर",
+        "excerpt": "आर्थिक चिंता से मुक्त होकर उन्होंने अपनी पूरी ऊर्जा पढ़ाई में लगाई और जे.एन.वी.यू., जोधपुर से एम.कॉम. में स्वर्ण पदक — अपनी कक्षा का सर्वोच्च सम्मान — अर्जित किया।",
+        "hook": "कृतज्ञता और उद्देश्य में निहित श्रेष्ठता अहंकार नहीं, उत्तरदायित्व है।",
+        "paragraphs": [
+          "मीनू तंवर ने स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट के सहयोग से जय नारायण व्यास विश्वविद्यालय (जे.एन.वी.यू.), जोधपुर से एम.कॉम. की पढ़ाई पूर्ण की।",
+          "उच्च शिक्षा की आर्थिक चिंता से मुक्त होकर वे अपनी पूरी ऊर्जा पढ़ाई में लगा सकीं, और ट्रस्ट द्वारा सिखाए गए कृतज्ञता, नेतृत्व एवं समाज-सेवा के मूल्यों को अपने प्रयासों का आधार बनाया।",
+          "उनकी लगन ने उन्हें एम.कॉम. में स्वर्ण पदक — अपनी कक्षा का सर्वोच्च सम्मान — दिलाया, और वे इस उपलब्धि का श्रेय ट्रस्ट के सहयोग को देती हैं।"
+        ]
+      }
+    },
+    {
+      "id": "sejal-rathore",
+      "category": "success-stories",
+      "thumbnail": "assets/images/video_thumbnails/success-stories/sejal-rathore.png",
+      "videoUrl": "https://drive.google.com/file/d/1nLAPMmEkuyYnpqZhU1VgfMpvBxgQATwW/preview",
+      "en": {
+        "title": "Sejal Rathore",
+        "meta": "Software Engineer, Wells Fargo",
+        "excerpt": "Backed by the Trust's financial support and mentorship, she built the confidence to aim far beyond her immediate circumstances — today she is a Software Engineer at Wells Fargo.",
+        "hook": "The Trust saw a future in me before I could see it myself.",
+        "paragraphs": [
+          "Sejal Rathore's journey from Jodhpur to a career in software engineering at the global financial institution Wells Fargo was made possible by the Swami Vivekanand Students Welfare Charitable Trust's sustained support.",
+          "While financial relief cleared her immediate path, it was the mentorship and confidence instilled through the Trust's guidance and Sunday classes that allowed her to dream beyond her immediate circumstances.",
+          "Today she stands as an example of how timely, sustained support can carry a girl from Jodhpur onto the global technology stage."
+        ]
+      },
+      "hi": {
+        "title": "सेजल राठौड़",
+        "meta": "सॉफ्टवेयर इंजीनियर, वेल्स फार्गो",
+        "excerpt": "ट्रस्ट के आर्थिक सहयोग और मार्गदर्शन से उन्होंने अपनी परिस्थितियों से कहीं आगे सोचने का आत्मविश्वास पाया — आज वे वेल्स फार्गो में सॉफ्टवेयर इंजीनियर हैं।",
+        "hook": "ट्रस्ट ने मुझमें वह भविष्य देखा, जिसे मैं स्वयं अभी देख भी नहीं पाई थी।",
+        "paragraphs": [
+          "सेजल राठौड़ की जोधपुर से वैश्विक वित्तीय संस्था वेल्स फार्गो में सॉफ्टवेयर इंजीनियर बनने तक की यात्रा स्वामी विवेकानन्द स्टूडेन्ट्स वेलफेयर चैरिटेबल ट्रस्ट के निरन्तर सहयोग से सम्भव हुई।",
+          "आर्थिक सहयोग ने जहाँ उनका मार्ग सरल किया, वहीं ट्रस्ट के मार्गदर्शन और रविवारीय कक्षाओं से मिले आत्मविश्वास ने उन्हें अपनी परिस्थितियों से कहीं आगे सपने देखने का साहस दिया।",
+          "आज वे इस बात का जीवंत उदाहरण हैं कि समय पर मिला सतत सहयोग एक छात्रा को जोधपुर से वैश्विक तकनीकी मंच तक पहुँचा सकता है।"
         ]
       }
     },
