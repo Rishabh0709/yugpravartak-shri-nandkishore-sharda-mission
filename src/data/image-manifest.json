@@ -643,6 +643,11 @@
     },
     "sadhna-places": {
       "images": {
+        "chakra-dharan-goa": {
+          "src": "assets/images/bhaiyaji-chakra-dharan.webp",
+          "altHi": "गोवा में समुद्र के मध्य चट्टान पर चक्र धारण की मुद्रा में भैया जी",
+          "altEn": "Bhaiyaji in the gesture of taking up the chakra, on a rock amid the sea in Goa"
+        },
         "08-card": {
           "src": "assets/images/sadhna-places/08-card.webp",
           "altHi": "टेकरी माँ मंदिर की स्थानापन्न छवि",
