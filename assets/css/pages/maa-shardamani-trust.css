@@ -10,6 +10,13 @@
             padding-top: 40px;
         }
 
+        /* the plain sections (no photo, no gradient of their own) had no
+           background at all -- alternating "chapter" wash like every other
+           page, keyed off each section's heading id since there's no
+           per-chapter modifier class here. */
+        .shardamani-section[aria-labelledby="purpose-title"] { background: var(--bg-wash); }
+        .shardamani-section[aria-labelledby="achievement-title"] { background: var(--bg); }
+
         .shardamani-grid {
             display: grid;
             grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
@@ -22,7 +29,7 @@
             overflow: hidden;
             min-height: 420px;
             border: 1px solid rgba(198, 148, 53, .24);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: #f7ead8;
             box-shadow: 0 26px 70px rgba(82, 50, 34, .15);
         }
@@ -94,7 +101,7 @@
             min-height: 210px;
             padding: 28px;
             border: 1px solid rgba(198, 148, 53, .2);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .82);
             box-shadow: 0 20px 52px rgba(82, 50, 34, .08);
         }
@@ -108,7 +115,7 @@
             margin-bottom: 18px;
             border-radius: 50%;
             background: var(--hi-maroon);
-            color: #fffaf1;
+            color: var(--surface-warm);
             font-family: "Noto Serif Devanagari", serif;
             font-size: 1.25rem;
             font-weight: 800;
@@ -128,7 +135,7 @@
         }
 
         .shardamani-journey {
-            background: linear-gradient(180deg, #fffaf1 0%, #f7ead8 100%);
+            background: var(--bg-wash);
         }
 
         .shardamani-timeline {
@@ -141,7 +148,7 @@
         .shardamani-step {
             padding: 28px;
             border-left: 4px solid var(--hi-gold);
-            border-radius: 8px;
+            border-radius: var(--radius-sm);
             background: rgba(255, 252, 246, .84);
             box-shadow: 0 18px 48px rgba(82, 50, 34, .08);
         }

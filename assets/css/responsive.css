@@ -283,7 +283,7 @@ body {
         flex-direction: column;
         background:
             radial-gradient(circle at top right, rgba(200, 161, 59, 0.13), transparent 36%),
-            #fffdf8;
+            var(--surface);
         box-shadow: -20px 0 60px rgba(40, 31, 20, 0.15);
         transform: translateX(105%);
         visibility: hidden;
@@ -677,8 +677,8 @@ body {
         align-items: center;
         color: #5c3a32;
         border: 1px solid rgba(116, 84, 35, 0.17);
-        border-radius: 999px;
-        background: #fffdf8;
+        border-radius: var(--radius-pill);
+        background: var(--surface);
         font-family: "Cinzel", serif;
         font-size: 0.66rem;
         font-weight: 600;

@@ -97,7 +97,7 @@
 .impact-record-header .activity-eyebrow {
     display: block;
     margin-bottom: 6px;
-    color: var(--gold);
+    color: var(--gold-deep);
     font-family: var(--font-latin);
     font-size: .74rem;
     font-weight: 700;

@@ -246,7 +246,7 @@
           "altEn": "Family members gathered at the founding of the trust"
         },
         "scholarship-cheque": {
-          "src": "assets/images/gallery/scholarship-distribution/35-full.webp",
+          "src": "assets/images/gyanyogi-adhyatm-kendra-scholarship.webp",
           "altHi": "किसी बालक विद्यार्थी को छात्रवृत्ति की राशि भेंट करते हुए",
           "altEn": "A scholarship being handed to a student"
         },
@@ -485,7 +485,7 @@
           "altEn": ""
         },
         "madhu-maa-home-hero": {
-          "src": "assets/images/madhu-maa-home-hero.jpg",
+          "src": "assets/images/madhu-maa-home-hero.webp",
           "altHi": "मधु माँ का शांत और करुणामय चित्र",
           "altEn": ""
         },
@@ -643,6 +643,11 @@
     },
     "sadhna-places": {
       "images": {
+        "chakra-dharan-goa": {
+          "src": "assets/images/bhaiyaji-chakra-dharan.webp",
+          "altHi": "गोवा में समुद्र के मध्य चट्टान पर चक्र धारण की मुद्रा में भैया जी",
+          "altEn": "Bhaiyaji in the gesture of taking up the chakra, on a rock amid the sea in Goa"
+        },
         "08-card": {
           "src": "assets/images/sadhna-places/08-card.webp",
           "altHi": "टेकरी माँ मंदिर की स्थानापन्न छवि",
@@ -650,8 +655,8 @@
         },
         "03-card": {
           "src": "assets/images/sadhna-places/03-card.webp",
-          "altHi": "टेकरी तपोभूमि की स्थानापन्न छवि",
-          "altEn": ""
+          "altHi": "भैया जी टेकरी माँ की गुफा में साधना करते हुए",
+          "altEn": "Bhaiyaji in sadhana inside Tekri Maa's cave shrine"
         },
         "07-card": {
           "src": "assets/images/sadhna-places/07-card.webp",
@@ -664,9 +669,9 @@
           "altEn": ""
         },
         "07-card-2": {
-          "src": "assets/images/sadhna-places/07-card.webp",
-          "altHi": "वात्सल्यपीठ की स्थानापन्न छवि",
-          "altEn": ""
+          "src": "assets/images/sadhna-places/vatsalyapeeth-entrance.webp",
+          "altHi": "वात्सल्यपीठ का द्वार — माँ बसन्ती मनिहार की साधना स्थली",
+          "altEn": "The doorway of Vatsalyapeeth — Maa Basanti Manihar's place of sadhana"
         },
         "01-card": {
           "src": "assets/images/sadhna-places/01-card.webp",

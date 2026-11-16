@@ -151,8 +151,13 @@ book: divyaGyan
                     <article class="dg-review">
                         <blockquote>“{{ r.excerpt.hi }}”</blockquote>
                         <footer>
-                            <strong>{{ r.name.hi }}</strong>
-                            <span>{{ r.designation.hi }}</span>
+                            {%- if r.photo %}
+                            <img class="dg-review__avatar" src="{{ r.photo }}" alt="{{ r.name.hi }}" width="56" height="56" loading="lazy">
+                            {%- endif %}
+                            <div class="dg-review__byline">
+                                <strong>{{ r.name.hi }}</strong>
+                                <span>{{ r.designation.hi }}</span>
+                            </div>
                         </footer>
                         <button class="dg-review__trigger" type="button" data-dg-review-open>पूरी प्रतिक्रिया पढ़ें</button>
                         <template class="dg-review__full">

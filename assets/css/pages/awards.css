@@ -206,7 +206,7 @@ body.samman-page.sm-modal-open { overflow: hidden; }
     width: 100%;
     max-height: 68vh;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: #0e0b12;
 }
 
@@ -219,7 +219,7 @@ body.samman-page.sm-modal-open { overflow: hidden; }
 }
 
 .sm-lightbox .lightbox-shell figcaption strong {
-    color: #fffaf1;
+    color: var(--surface-warm);
     font-family: var(--font-head);
     font-size: 1.25rem;
     line-height: 1.4;
