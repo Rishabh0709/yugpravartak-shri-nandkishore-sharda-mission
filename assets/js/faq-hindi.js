@@ -600,13 +600,9 @@ const FAQ_ITEMS = [
             "en": "Fundamental Spiritual Concepts"
         },
         "excerpt": {
-<<<<<<< HEAD
+
             "hi": "अध्यात्म इसलिये करना चाहिये क्योंकि मृत्यु के बाद जीवन है एवं चैतन्य शरीर में स्मृति रहती है। आनन्द, शान्ति व खुशी से रहना ही अध्यात्म है। अध्यात्म जीवन जीने की एक सही कला...",
             "en": "Spirituality should be practised because life continues beyond death, and the conscious self carries its impressions beyond the physical body. To live with joy, peace and happine..."
-=======
-            "hi": "अध्यात्म इसलिये करना चाहिये क्योंकि मृत्यु के बाद जीवन है एवं चैतन्य शरीर में स्मृति रहती है। आनन्द, शांति व खुशी से रहना ही अध्यात्म है। अध्यात्म जीवन जीने की एक सही कला...",
-            "en": "Spirituality should be practised because life continues beyond death, and the conscious self carries its impressions beyond the physical body. To live with joy, peace and happin..."
->>>>>>> b93f5078a0077e34ce0e99347e069ecc34645b69
         }
     },
     {
@@ -967,13 +963,9 @@ const FAQ_ITEMS = [
             "en": "Spiritual Practice & Sadhana Principles"
         },
         "excerpt": {
-<<<<<<< HEAD
-            "hi": "साधना के द्वारा मनुष्य वास्तविक शान्ति, खुशी, आनन्द प्राप्त करना चाहता है और अपने इष्टदेव से तारतम्य जोड़ना चाहता है। इसमें अवगुण और अज्ञानता बाधक बनते हैं। जैसेः- क्रोध, ल...",
-            "en": "Through sadhana a human being seeks true peace, happiness and joy, and wishes to attune themselves to their chosen deity. Vice and ignorance become obstacles to this -- for exam..."
-=======
             "hi": "साधना के द्वारा मनुष्य वास्तविक शांति, खुशी, आनन्द प्राप्त करना चाहता है और अपने इष्टदेव से तारतम्य जोड़ना चाहता है। इसमें अवगुण और अज्ञानता बाधक बनते हैं। जैसेः- क्रोध, ल...",
             "en": "Through Sadhana, a person seeks to attain true peace, happiness and inner joy and to establish harmony with the Divine. In this journey, negative tendencies and ignorance can be..."
->>>>>>> b93f5078a0077e34ce0e99347e069ecc34645b69
+
         }
     },
     {
